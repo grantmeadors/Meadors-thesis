@@ -1,0 +1,342 @@
+\begin{thebibliography}{10}
+
+\bibitem{Abbott2004}
+B.~Abbott, R.~Abbott, R.~Adhikari, A.~Ageev, B.~Allen, R.~Amin, S.B. Anderson,
+  W.G. Anderson, M.~Araya, H.~Armandula, and et~al.
+\newblock Analysis of {LIGO} data for gravitational waves from binary neutron
+  stars.
+\newblock {\em Phys. Rev. D}, 69:122001, 2004.
+
+\bibitem{Abbott2007}
+B.~Abbott, R.~Abbott, R.~Adhikari, J.~Agresti, P.~Ajith, B.~Allen, R.~Amin,
+  S.B. Anderson, W.G. Anderson, M.~Arain, and et~al.
+\newblock Upper limit map of a background of gravitational waves.
+\newblock Technical Report astro-ph/0703234v1, arXiv, 2007-03-09.
+
+\bibitem{Abbott2006}
+B.~Abbott, R.~Abbott, R.~Adhikari, J.~Agresti, P.~Ajith, B.~Allen, R.~Amin,
+  S.B. Anderson, W.G. Anderson, M.~Araya, and et~al.
+\newblock Searching for a stochastic background of gravitational waves with
+  {LIGO}.
+\newblock Technical Report astro-ph/0608606v1, arXiv, 2006-08-28.
+
+\bibitem{AbbottPulsar2006}
+B.~Abbott and et~al.
+\newblock Coherent searches for periodic gravitational waves from unknown
+  isolated sources and {S}corpius {X-1}: results from the second {LIGO} science
+  run.
+\newblock {\em Phys. Rev. D}, 76(8):082001, 2007.
+
+\bibitem{LSCPowerFlux2009}
+B.~Abbott~et al.
+\newblock {\em Phys. {R}ev. {L}ett}, 102(111102), 2009.
+
+\bibitem{LSCPulsar2006}
+B.l Abbott~et al.
+\newblock {\em Phys. {R}ev. {D}}, 76(082001), 2007.
+
+\bibitem{AdhikariThesis}
+R.~Adhikari.
+\newblock {\em Sensitivity and Noise Analysis of 4 km Laser Interferometric
+  Gravitational Wave Antennae}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 2004.
+
+\bibitem{Allen1997}
+B.~Allen and A.C. Ottewill.
+\newblock Detection of anisotropies in the gravitational-wave stochastic
+  background.
+\newblock {\em Phys. Rev. D}, 56(2), 1997.
+
+\bibitem{Allen1999}
+B.~Allen and {J.D.} Romano.
+\newblock Detecting a stochastic background of gravitational radiation: signal
+  processing strategies and sensitivities.
+\newblock {\em Phys. Rev. D}, 59:102001, 1999.
+
+\bibitem{NeutrinosSolarTheoretical}
+J.N. Bahcall.
+\newblock Solar neutrinos. i. theoretical.
+\newblock {\em Phys. Rev. Lett.}, 12(11):300, 1964.
+
+\bibitem{NeutrinoReview}
+J.N. Bahcall.
+\newblock Astrophysical neutrinos: 20th century and beyond.
+\newblock {\em Nucl. Phys. B (Proc. Suppl.)}, 91:9, 2001.
+
+\bibitem{BallmerThesis}
+S.~W. Ballmer.
+\newblock {\em LIGO interferometer operating at design sensitivity with
+  application to gravitational radiometry}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 2006.
+
+\bibitem{Radiometer2006}
+S.W. Ballmer.
+\newblock A radiometer for stochastic gravitiatonal waves.
+\newblock {\em Class. Quantum Grav.}, 23:S179, 2006.
+
+\bibitem{EBubble2005}
+C.~Beal and R.M. Wilson.
+\newblock A report on the research and development of the e-bubble
+  collaboration.
+\newblock Web: http://www.nevis.columbia.edu/reu/2005/ebub.pdf, August 2005.
+
+\bibitem{PDHNotes}
+E.~Black.
+\newblock Notes on the pound-drever-hall technique.
+\newblock Technical Report T980045-00-D, Laser Interferometer Gravitational
+  Wave Observatory, April 1998.
+
+\bibitem{Caldwell1981}
+J.A.R Caldwell and J.P Ostriker.
+\newblock {\em Ap{J}}, 251(61), 1981.
+
+\bibitem{Carroll1997}
+S.M. Carroll.
+\newblock Lecture notes on general relativity.
+\newblock Technical Report gr-qc/9712019v1, arXiv.
+
+\bibitem{ChuaThesis}
+Sheon S.~Y. Chua.
+\newblock {\em In preparation}.
+\newblock PhD thesis, Australian National University, In preparation.
+
+\bibitem{ChuaBackscatteredLight}
+S.S.Y. Chua, S.~Dwyer, L.~Barsotti, D.~Sigg, R.M.S. Schofield, V.V. Frolov,
+  K.~Kawabe, M.~Evans, G.D. Meadors, M.~Factourovich, R.~Gustafson,
+  N.~Smith-Lefebvre, C.~Vorvick, M.~Landry, A.~Khalaidovski, M.S. Stefszky,
+  C.M. Mow-Lowry, B.C. Buckler, D.A. Shaddock, P.K Lam, R.~Schnabel,
+  N.~Mavalvala, and D.E. McClelland.
+\newblock Impact of backscattered-light in a squeezing-enhanced interferometric
+  gravitational-wave detector.
+\newblock In preparation.
+
+\bibitem{DergachevThesis}
+V.~Dergachev.
+\newblock {\em An all-sky search for continuous gravitational waves}.
+\newblock PhD thesis, University of Michigan, 2009.
+
+\bibitem{Deschrijver2008}
+D.~Deschrijver~et al.
+\newblock {\em IEEE {M}icrowave {W}ire. {Comp}. Lett.}, 18(6), 2008.
+
+\bibitem{DooleyThesis}
+Katherine~Laird Dooley.
+\newblock {\em Design and performance of high laser power interferometers for
+  gravitational-wave detection}.
+\newblock PhD thesis, University of Florida, 2011.
+
+\bibitem{DwyerPhaseNoise}
+S.~Dwyer, L.~Barsotti, S.S.Y. Chua, M.~Evans, M.~Factourovich, D.~Gustafson,
+  T.~Isogai, K.~Kawabe, A.~Khalaidovski, P.K. Lam, M.~Landry, N.~Mavalvala,
+  D.~McClelland, G.D. Meadors, C.M. Mow-Lowry, R.~Schabel, N.~Smith-Lefebvre,
+  M.~Stefszky, C.~Vorvick, and D.~Sigg.
+\newblock Squeezed quadrature fluctuations in a gravitational wave detector
+  using squeezed light.
+\newblock In preparation.
+
+\bibitem{DwyerThesis}
+Sheila~E Dwyer.
+\newblock {\em Quantum noise reduction using squeezed states in LIGO}.
+\newblock PhD thesis, Massachusetts Institute of Technology, February 2013.
+
+\bibitem{FotopoulosThesis}
+Nickolas Fotopoulos.
+\newblock Searching for stochastic gravitational waves using co-located
+  interferometric detectors.
+\newblock Master's thesis, Massachusetts Institute of Technology, September
+  2006.
+
+\bibitem{Fricke2009}
+T.F. Fricke, N.D. Smith-Lefebvre, R.~Abbott, R.~Adhikari, K.L. Dooley,
+  M.~Evans, P.~Fritschel, V.V. Frolov, K.~Kawabe, J.S. Kissel, B.J.J.
+  Slagmolen, and S.J. Waldman.
+\newblock {DC} readout experiment in {E}nhanced ligo.
+\newblock {\em Classical and {Q}uantum {G}ravity}, 29(6):065005, 2012.
+
+\bibitem{FrickeThesis}
+Tobin~Thomas Fricke.
+\newblock {\em Homodyne detection for laser-interferometeric gravitational wave
+  detectors}.
+\newblock PhD thesis, Louisiana State University, December 2011.
+
+\bibitem{ReadoutGWA}
+Peter Fritschel, Rolf Bork, Gabriela Gonz\'{a}lez, Nergis Mavalvala, Dale
+  Ouimette, Haisheng Rong, Daniel Sigg, and Michael Zucker.
+\newblock Readout and control of a power-recycled interferometric gravitational
+  wave antenna.
+\newblock {\em Appl. Opt.}, 40(28):4988--4998, 2001.
+
+\bibitem{GoetzThesis}
+Evan~A. Goetz.
+\newblock {\em Gravitational wave studies: detector calibration and an all-sky
+  search for spinning neutron stars in binary systems}.
+\newblock PhD thesis, University of Michigan, 2010.
+
+\bibitem{GriffithsE}
+D.J. Griffiths.
+\newblock {\em Introduction to Electrodynamics}.
+\newblock Prentice Hall, Upper Saddle River, N.J., third edition, 1999.
+
+\bibitem{Gustavsen2006}
+B.~Gustavsen.
+\newblock {\em IEEE {T}rans. {P}ower {D}elivery}, 21(3), 2006.
+
+\bibitem{Gustavsen1999}
+B.~Gustavsen and A.~Semlyen.
+\newblock {\em IEEE {T}rans. {P}ower {D}elivery}, 14(3), 1999.
+
+\bibitem{KissellPRCMICH}
+J.~Kissel.
+\newblock Mich and prc coupling into darm.
+\newblock Web:
+  http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detector\&
+  date\_to\_view=06/16/2009\&anchor\_to\_scroll\_to=2009:06:16:23:51:59-kissel,
+  June 2009.
+
+\bibitem{KisselThesis}
+Jeffrey~S. Kissel.
+\newblock {\em Calibrating and improving the sensitivity of the {LIGO}
+  detectors}.
+\newblock PhD thesis, Louisiana State University, December 2010.
+
+\bibitem{CDAnderson}
+R.B. Leighton, C.D. Anderson, and A.J. Seriff.
+\newblock The energy spectrum of the decay particles and the mass and spin of
+  the mesotron.
+\newblock {\em Phys. Rev.}, 75(9):1432, 1949.
+
+\bibitem{Maggiore2000}
+M.~Maggiore.
+\newblock Gravitational wave experiments and early universe cosmology.
+\newblock Technical Report gr-qc/990901v4, arXiv, 2000-02-06.
+
+\bibitem{MavalvalaThesis}
+N.~Mavalvala.
+\newblock {\em Alignment issues in laser interferometer gravitational-wave
+  detectors}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 1997.
+
+\bibitem{McKee1977}
+C.F. McKee and J.P. Ostriker.
+\newblock {\em Ap{J}}, 218(148), 1977.
+
+\bibitem{MeadorsHanford2005}
+G.D. Meadors.
+\newblock Study of the {LHO} 4{K} recycling cavity sideband and carrier
+  response to excitation and perturbations.
+\newblock {LIGO} technical report: {LIGO-T050276-00-I} (advisor: {R}ichard
+  {G}ustafson), September 2005.
+
+\bibitem{MeadorsNevis2006}
+G.D. Meadors.
+\newblock E-bubble: seeing the sun's center.
+\newblock {C}olumbia {U}niversity technical report, web:
+  http://www.nevis.columbia.edu/reu/2006/Meadors\_Report.pdf (advisor: {J}eremy
+  {D}odd), August 2006.
+
+\bibitem{MeadorsCaltech2007}
+G.D. Meadors.
+\newblock Searching for a gravitational wave stochastic background.
+\newblock {LIGO} technical report (advisors: {V}uk {M}andic, {S}tefan
+  {B}allmer), October 2007.
+
+\bibitem{MeadorsThesis2008}
+G.D. Meadors.
+\newblock Re-searching galactic structure with {Reed's} radio telescope.
+\newblock {R}eed {C}ollege bachelor's thesis (advisor: {R}obert {R}eynolds),
+  May 2008.
+
+\bibitem{michelson}
+A.A. Michelson.
+\newblock {\em The velocity of light}.
+\newblock (U of Chicago P, Chicago, 1902).
+
+\bibitem{MisnerThorneWheeler}
+C.W. Misner, K.S. Thorne, and J.A. Wheeler.
+\newblock {\em Gravitation}.
+\newblock Freeman, New York, 1970.
+
+\bibitem{CODATA}
+P.J. Mohr and B.N. Taylor.
+\newblock {CODATA} recommended values of the fundamental physical constants:
+  1998.
+\newblock {\em Rev. Mod. Phys.}, 72(2):351, 2000.
+
+\bibitem{Muciaccia1997}
+P.F. Muciaccia, P.~Natoli, and N.~Vittorio.
+\newblock Fast spherical harmonic analysis: a quick algorithm for generating
+  and/or inverting full-sky, high-resolution cosmic microwave background
+  anisotropy maps.
+\newblock {\em Astrophys. J.}, 488:L63, 1997.
+
+\bibitem{Prix2006}
+R.~Prix.
+\newblock {\em Neutron stars and pulsars}, page 651.
+\newblock Springer, Berlin, 2009.
+
+\bibitem{ResponsesFP}
+M.~Rakhmanov and R.~Savage.
+\newblock Measurement of dynamic responses of the 4-km ligo fabry-perot arm
+  cavities.
+\newblock Technical Report G040045-00-Z, Laser Interferometer Gravitational
+  Wave Observatory, February 2004.
+
+\bibitem{ResonanceFP}
+M.~Rakhmanov, R.L.~Jr. Savage, D.H. Reitze, and D.B. Tanner.
+\newblock Dynamic resonance of light in fabry-perot cavities.
+\newblock Technical Report P010013-00-D, Laser Interferometer Gravitational
+  Wave Observatory, January 2001.
+
+\bibitem{Saulson}
+P.~Saulson.
+\newblock {\em Fundamentals of interferometric gravitational wave detectors}.
+\newblock World Scientific, Singapore, 1994.
+
+\bibitem{SmithThesis}
+Nicol\'{a}s~{de Mateo} Smith-Lefebvre.
+\newblock {\em Techniques for improving the readout sensitivity of
+  gravitational wave antennae}.
+\newblock PhD thesis, Massachusetts Institute of Technology, June 2012.
+
+\bibitem{BarsottiNatureSqueezing}
+{The LIGO Scientific Collaboration}.
+\newblock Enhancement of the astrophysical reach of a gravitational wave
+  observatory using squeezed states of light.
+\newblock In preparation.
+
+\bibitem{LALAPPSrepo}
+{The LIGO Scientific Collaboration}.
+\newblock {LALApps} repository.
+\newblock Web: http://www.lsc-group.phys.uwm.edu/daswg/.
+
+\bibitem{GEO600NatureSqueezing}
+{The LIGO Scientific Collaboration}.
+\newblock A gravitational-wave observatory operating beyond the quantum
+  shot-noise limit.
+\newblock {\em Nature {P}hysics}, 7(12):962--965, 2011.
+
+\bibitem{LIGOStochasticNature2009}
+{The LIGO Scientific Collaboration and The Virgo Collaboration}.
+\newblock An upper limit on the stochastic gravitational-wave background of
+  cosmological origin.
+\newblock {\em Nature}, 460:990--4, 2009.
+
+\bibitem{Waldman2011}
+S.~Waldman and S.~Chua.
+\newblock eligo hanford output mode cleaner repair.
+\newblock Technical Report T1100562, LIGO, 2011.
+
+\bibitem{WeisbergTaylor2004}
+Joel~M. Weisberg and Joseph~H. Taylor.
+\newblock Relativistic binary pulsar {B}1913+16: Thirty years of observations
+  and analysis.
+\newblock In {\em Aspen Winter Conference on Astrophysics: Binary Radio
+  Pulsars}, Aspen, July 2004.
+
+\bibitem{LIGOWorks}
+R.~Weiss.
+\newblock {The LIGO interferometers: how they work and how well they work}.
+\newblock Technical Report G030024-00-D, Laser Interferometer Gravitational
+  Wave Observatory, February 2003.
+
+\end{thebibliography}

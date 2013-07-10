@@ -1,0 +1,202 @@
+% This is an AMS-LaTeX v. 1.2 File.
+
+\documentclass[leqno]{report}
+%\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+%\usepackage{amsfonts}
+\usepackage{amsxtra}     % Use various AMS packages
+\usepackage{rac}                        % Use Rackham thesis macros
+\usepackage{dbl12}
+%\usepackage{srcltx}
+\usepackage{epsfig}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{doi}
+\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Redefine margins and other page formatting
+
+\setlength{\oddsidemargin}{0.5in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Various theorem environments. All of the following have the same numbering
+% system as theorem.
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{introduction}[theorem]{Introduction}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\include{header}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\numberwithin{theorem}{chapter}        % Numbers theorems "x.y" where x
+                                        % is the section number, y is the
+                                        % theorem number
+
+%\renewcommand{\thetheorem}{\arabic{chapter}.\arabic{theorem}}
+
+%\makeatletter                          % This sequence of commands will
+%\let\c@equation\c@theorem              % incorporate equation numbering
+%\makeatother                           % into the theorem numbering scheme
+
+%\renewcommand{\theenumi}{(\roman{enumi})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%This command creates a box marked ``To Do'' around text.
+%To use type \todo{  insert text here  }.
+
+\newcommand{\todo}[1]{\vspace{5 mm}\par \noindent
+\marginpar{\textsc{ToDo}}
+\framebox{\begin{minipage}[c]{0.95 \textwidth}
+\tt #1 \end{minipage}}\vspace{5 mm}\par}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\bibliographystyle{plain}       % Set the bibliography style to AMS
+                                % alphabetized. (Can use ``amsalpha'' or
+                                % ``abbrv''instead.)
+
+% Title page as required by Rackham dissertation guidelines
+
+
+
+
+\titlepage{Directed searches for continuous gravitational waves from spinning neutron stars in binary systems }{Grant David Meadors}{Doctor of Philosophy}
+{Physics} {2013}
+{ Professor John Keith Riles, Chair \\
+  Professor Fred Adams\\
+  Professor Timothy McKay\\
+  Professor Stephen Rand\\
+  Professor Nuria Calvet\\
+  Research Scientist Harold Richard Gustafson }
+
+
+% Begin the front matter as required by Rackham dissertation guidelines
+
+\initializefrontsections
+
+%\unnumberedpage
+\copyrightpage{Grant David Meadors}
+% Copyright page
+
+\setcounter{page}{1}
+
+%\dedicationpage{Put a dedication here}
+% Dedication page
+
+\startacknowledgementspage
+% Acknowledgements page
+
+This author should give thanks far beyond a simple page. It is too soon to write something so important.
+
+%{Put Acknowledgements here}
+
+
+% Table of contents, list of figures, etc.
+\tableofcontents
+\listoffigures
+
+\startthechapters 
+% The individual files for each of the chapters are put here.
+% Save each chapter of your thesis to a seperate tex file
+% and then use the \input command to include this file in your
+% thesis.  For instance you can save a file to "intro.tex" and 
+% then type \input{intro}". 
+
+
+\chapter{Introduction}
+\label{intro} 
+\input{intro}
+% General relativity, history, mathematics
+% Also include...
+% Early phase camera work, explanation of LIGO and
+% the summer of 2009 doing small projects, e.g. Omega scans
+% and detector characterization with Rana, Mike and Keita
+\chapter{Feedforward: Auxiliary MICH-PRC Subtraction}
+\label{chap2}
+\input{chap2}
+% Feedforward (Auxiliary MICH-PRC Subtraction)
+\chapter{Squeezing: Quantum Vacuum Phase Noise}
+\label{chap3}
+\input{chap3}
+% Squeezing contributions
+\chapter{TwoSpect: Binary Pulsar Searches}
+\label{chap4}
+\input{chap4}
+% Binary neutron star search
+\chapter{Exhibit: World Science Festival}
+\label{chap5}
+\input{chap5}
+% World Science Festival exhibit
+\chapter{Conclusion}
+\label{conclusion}
+\input{conclusion}
+% Summary of all results
+
+
+%\startappendices
+%\label{appendix}
+%\input{appendix}
+
+%\bibliography{biblio}   % Use the BibTeX file ``biblio.bib''.
+\bibliography{bibliography}
+
+%Abstract Page
+
+\startabstractpage
+{Directed searches for continuous gravitational waves from spinning neutron stars in binary systems } {Grant David Meadors} {Chair: John Keith Riles}
+
+Gravitational wave (GW) detectors would reveal the universe in a way unlike any existing kind of telescope. These waves, predicted by general relativity, radiate from accelerating gravitational quadrupoles, such as black holes, neutron stars and the Big Bang. Indirect evidence for GW comes from the work of Hulse and Taylor; the Laser Interferometer Gravitational Wave Observatory (LIGO) and allies seek to observe gravitational waves directly. In this thesis, I discuss the goals and history of the LIGO project and the theory and practice of its operation, including my contributions to the scientific collaboration in feedforward signal filtering, directed binary pulsar star searches, and scientific outreach and education to the next generation of young scientists. (Probably conclude with a sentence describing numerical results of my projects, when known.)
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

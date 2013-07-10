@@ -1,0 +1,172 @@
+
+
+
+
+    \section{Gravitational waves in astrophysics}
+    \label{grav_waves_astro}
+
+        Space's metric echoes with gravitational waves. Light told the tale of the cosmos for most of history; now, the earliest epochs and secret reaches of stars might be seen in light interfering after travels transformed by gravity. General Relativity and ensuing theories of gravitation posit that accelerating quadropolar masses will radiate, much as accelerating dipolar charges do electromagnetically. In those waves we might see black holes and neutron stars colliding, supernova, the dawn of the Big Bang and rotating neutron stars -- and the potential for unanticipated insights, into other objects or law of gravity, is too tantalazing to ignore. Hulse and Taylor observed a neutron star in a binary system, PSR 1913+16, with an orbit accelerating just as gravitational radiation would entail; kilometer-scale interferometers were build at the end of the last millenium to look. Laser light in these instruments travels orthogonal paths and is reflected back; shifts in the combined pattern are scrutinized for indications that gravitational waves stretched space itself. As yet, no direct detections are known. This thesis describes efforts to make that search more sensitive with quantum optics at the observatories, by filtering the data of noise and by refining a search for the promising candidate source of neutrons stars in binary systems.
+
+		Astronomy has grown from humanity's first glimpses into the night sky with the unaided eye. With every new instrument, from Galileo's telescope through radio antennae and neutrino detectors, our understanding of the cosmos has grown. Gravity pervades the universe like no other force: we must hear its tale. We know some of what to expect: astronomers have predictions for four categories of cosmic sources. We know how it would be emitted: Einstein's general relativity predicts the intensity, speed and polarization of gravitational waves. Most recently, LIGO, VIRGO, GEO600 and soon KAGRA have built gravitational wave antennae that stand on the threshold of detection. This thesis will focus on those antennae. Their sensitivity can be honed by tweaking Heisenberg's uncertainty principle with quantum optical squeezing, and even improved post-facto by feedforward filtering of recorded servo data. Neutrons stars in low-mass X-ray binary systems would live astronomically long lives, earning the attention of a dedicated Fourier-domain frequentist search. Each project is an element of a field that promises to make audible the echoes of the metric of space.
+
+        
+        \subsection{Cosmic sources of gravitational waves}
+        \label{cosmic_sources}
+      
+           --- Cosmic origins believed to generate GW. (note: should sprinkle citations as needed, not just where it says "cite") ---
+
+		Gravity's power to induce ripples in space is a matter of fact. Pulsar 1913+16, discovered by Hulse and Taylor, not only followed a pattern of orbital decay consistent with radiative loss of orbital decay to gravitational radiation -- it continued to do so~\cite{WeisbergTaylor2004}, even after Hulse and Taylor won the 1993 Nobel Prize in physics. We still may ask whether the waves are detectable on Earth. We may ask whether they appear in detectors in a way consistent with general relativity. The basic fact of their emission, however, appears settled.
+
+		Before delving into the specifics of general relativity, we might consider all the astrophysical sources we expect to emit gravitational waves. Physics prompts our search, but astronomy makes it exciting.
+
+		Gravitational waves (henceforth also abbreviated GW) searches presently focus on four distinct types of cosmic sources. This thesis concentrates on continuous waves, which are sine waves -- perhaps modulated by orbital motion, spin-up or spin-down. Continuous waves are most likely to be detectable from neutron stars. Given a sufficiently large ellipticity, which might be on the order of $\epsilon \approx 10^{-6}$ [CITE] or smaller for a neutron star rotating on the order of 1 kHz, a deformation of the crust would radiate sufficient gravitational radiation to be a plausibly-detectable source. Indeed, the radiation would rapidly deplete the rotational energy of the neutron star [CITE], which is why binary systems, where the neutron star could be recycled and spun-up by a partner, prove a promising target [CITE]. Scorpius X-1 offers a canonical case, although our discussion of the TwoSpect analysis will elaborate the abundance of other low-mass X-ray binary (LMXB) systems of interest. Given the paucity of information on the interiors of collapsed stellar remnants, direct detection of gravitational waves from neutron stars could prove informative. We might infer details favoring one equation of state [CITE], might extract parameters suggesting the existence of quark stars or gravitars [CITE], and will have an unparalleled peek into the interior of the densest stable three-dimensional objects in the universe. Their simple waveforms might even facilitate the calibration of other types of gravitational wave data [CITE]. From any source, continuous waves are a conceptually-elegant and astronomically-enticing target.
+
+		Yet other sources of gravitational waves, as will be discussed in more detail later, have a comparable pull on our attention. Oft discussed, inspirals or compact binary coalescences occur when two stellar remnants draw nearer in their orbits, radiating gravitational radiation and finally merging in a titanic release of energy. While sometimes invisible -- the merging of black holes in short-hard gamma ray burts (GRBs) proving an exception -- these events compete eagerly with supernovae as the most explosive in the modern universe. Were we to detect them directly with gravitational waves, we would see their waveforms, which in turn can be predicted through post-Newtonian approximation and numerical relativity. As the amplitude would diminish linearly with distance, we would then have standard candles or 'sirens' by which to calibrate and measure the universe. Advanced LIGO may prove sensitive to neutron star-neutron star and stellar mass black hole-neutron star mergers, and, if low-frequency sensitivity is sufficient and the sources exist, to intermediate-mass black holes. Space-based observatories such as the longsuffering Laser Interferometer Space Antenna (LISA), the DeciHertz Gravitational-wave Observatory (DECIGO), Big Bang Observer (BBO) and proposed others could detect supermassive black hole mergers. If fortunate, they would see a low-frequency noise floor due not to seismic vibration, as in LIGO, but to white dwarf binaries throughout the galaxy. Since the waveforms are well-predicted, we could even investigate deviations from general relativity, perhaps seeing new physics in the ringdown of black holes.
+
+		Physical insight could also come from burst searches. Bursts share with inspiral searches the property of looking for a single event, as opposed to a source spread over duration. Burst is a somewhat general term, and analyses for them can sometimes be applied to inspiral or detector characterization tasks as well, yet the immediate focus lies with supernovae and perhaps gamma-ray bursts. Because the waveform is unknown, burst searches rely significantly more on the coincidence between multiple detectors to distinguish signal from noise. Just as with neutrino observations of supernova 1987A, the burst program would hope for a fortuitously nearby cataclysm to be seen simultaneously -- or nearly so, the time of flight indicating a direction -- in a global gravitational-wave detector network. Due to the versatility of this method, some researchers have proposed looking for non-general relativitic terms, such as longitudinal polarization in addition to plus and cross orthogonal polarization. Any detection would be quiet exciting for probing systems still mysterious with electromagnetic and neutrino measurements, and it would help, in conjunction with multi-messenger coordinated searches with those observatories, to ascertain at precisely what speed gravity travels through space-time and to what extent it is attenuated or altered.
+
+The background of space-time itself may itself how interesting physics and gravitational wave signatures. Searches for the stochastic gravitational wave background look not for events but for many months of correlated signals between networks of detectors. In doing so, they hope in particular to see the earliest turbulence of the universe -- long before the cosmic electromagnetic background, now microwaves, was emitted 380000 years after the Big Bang, gravitational waves were travelling unimpeded. While the opacity of the infant cosmos conflates electromagnetic signals from different times and places, the transparency of the universe to gravity means that we might see the inflationary epoch or earlier, the Planck time, in gravitational waves. Unfortunately, this signal is thought to be far below the sensitivity of existing detectors. While LIGO did set a new upper limit on the energy density of gravitational waves, measured as a fraction, $\Omega_{gw}$ of the critical closure density of the universe~\cite{LIGOStochasticNature2009}, the inflationary background at LIGO frequencies is predicted to be about ten orders of magnitude lower. Alternative theories, such as ekpyrotic/cyclic universes, make other predictions, so an anomalously high stochastic background could prove cosmologically significant.
+
+All gravitational waves searches look for something. While the most exciting possibility remains that we will see the unexpected, we think that our present divisions will permit serendipity while efficiently categorizing the computational challenges we do expect. Continuous wave and inspiral methods both search against waveform templates; burst and stochastic have no template and rely on correlation and coincidence. Continuous wave and stochastic analyze weeks, months, even years of data in search of persistant features; inspiral and burst look for transient events. In the abstract dimensions of search groups, we are complete. Our blind spots are in what data we provide to those groups -- in the focus on audio frequencies of tens to a few thousand Hertz at present -- blindness that will in time be rectified by CMB polarization, pulsar-timing and space-based interferometry for low frequencies and possibly by atom interferometry for high frequencies. To appreciate our choice of focus in these nascent days of the field, we must turn back a century to understand its origins in Einstein's mathematics.
+
+        \subsection{History from general relativity}
+        \label{history_GR}
+
+            Historical brief of Einstein.
+
+		It all began in 1915. In 1916, Einstein predicted gravitational waves, although he got some things wrong. Probably good to consult Gravitation~\cite{MisnerThorneWheeler} and Sean Carroll~\cite{Carroll1997} as well as proper history books. 
+ 
+        \subsection{Contrast with electromagnetic and particle astronomy}
+        \label{contrast_astro}
+
+            Contrast with electromagnetism, compare with radio/X-ray/et cetera astro. Can make analogy to radio waves and make note of the ease with which one can operate a small radio telescope, as I did in my thesis~\cite{MeadorsThesis2008}, compared the the difficulty of gravitational wave detection. Muons from space were detected long ago, as in C.D. Anderson's 1949 paper on what was then called the mesotron,~\cite{CDAnderson}. Compare with neutrinos as in the John Bahcall review paper~\cite{NeutrinoReview}, which were a well-established field by the turn of the millenium, including the detection of supernova 1987A. Might be worth comparing to the focus in new neutrino detectors that I had in my research and development work on them~\cite{EBubble2005},~\cite{MeadorsNevis2006}. Even with those detectors, however, astrophysically-oriented detectors could be cross-referenced against terrestrial generators. Bahcall's search for solar neutrinos, which were theoretical in 1964,~\cite{NeutrinosSolarTheoretical}, at least had the certainty that neutrinos had been detected from the Savannah River nuclear reactor. Yet when those solar neutrinos were detected, it a significant confirmation of nuclear theory. General relativity has been established by the 1913+16 pulsar~\cite{WeisbergTaylor2004} and would likely be much boosted by direct detection, and it might reach surprising new insights, analogous to neutrino oscillation found by looking at the solar neutrino spectrum.
+        
+
+    \section{General relativity}
+    \label{general_relativity}
+
+        General relativity (the mathematics). The ideal reference here is Sean Carroll's lecture notes on general relativity,~\cite{Carroll1997}, although I should also cite Will Farr's thesis if it is elegant. Farr is good for citing things like the Palatini action. Of course, I should also "dig down" and cite the original sources that they reference too, where applicable. Can also cite Misner, Thorne and Wheeler~\cite{MisnerThorneWheeler}.
+
+        \subsection{Symmetry and action principles}
+        \label{principles}
+
+            Like electricity and magnetism, GR is the product of symmetry, action. This is the right place for~\cite{Carroll1997}.
+
+        \subsection{Derivation of field equations}
+        \label{field_equations}
+
+            Derive field equations as extremized curvature.
+
+		It's all about the Ricci tensor and the Einstein-Hilbert action. This might be the right place for~\cite{Farr2010} and other sources.
+
+        \subsection{Radiation from quadrupoles}
+        \label{radiation}
+  
+            Predict power from rotating quadrupole. Might also be a good place to invoke Vladimir's thesis~\cite{DergachevThesis} as well as original primary sources. Note that just as light travels at the speed of light, which is measureable~\cite{CODATA} and which can be derived from electromagnetic theory~\cite{GriffithsE}, so we think that gravity should travel at the speed of light. Note that this radiation should not be affected by the interstellar medium. I think that Ostriker is the source to reference on the ISM~\cite{Caldwell1981},~\cite{McKee1977}.
+
+    \section{Astrophysical estimates}
+    \label{estimates}
+
+        Astrophysical estimates and predictions.
+
+        \subsection{Sources: burst, continuous, inspiral and stochastic}
+        \label{source_types}
+
+            Describe the four types of sources: burst, continuous, inspiral and stochastic.
+
+		Mostly above, but clarify exact how much we should see. Cite the 2009 Nature stochastic paper et al~\cite{LIGOStochasticNature2009}. The importance to early universe cosmology was initially handled by Maggiore~\cite{Maggiore2000}. Before that, of course, once can reference the Allen and Romano methods paper~\cite{Allen1999}, anything interesting from Nick Fotopoulos's thesis~\cite{FotopoulosThesis}, and the various mid-2000s stochastic work that I was familiar with~\cite{Abbott2006},~\cite{Abbott2007}. Note the interesting meaning of anisotropies~\cite{Allen1997} and point out how not only Stefan's radiometer search can find them but how it can be adapted to many other purposes, such as spherical harmonics, which is useful for the cosmic microwave background~\cite{Muciaccia1997} and was briefly my work~\cite{MeadorsCaltech2007} and the Scorpius X-1 search; Stefan's canonical radiometer reference is in Classical Quantum Gravity~\cite{Radiometer2006}.
+
+        \subsection{Continuous waves from neutron stars}
+        \label{continuous_waves}
+
+            Continuous -- specifically, binary neutron stars and rate predictions. Describe archetypical search methods as in the Abbott et al paper~\cite{LSCPulsar2006} and the most interesting to date, Vladimir's PowerFlux~\cite{LSCPowerFlux2009}. Discuss earlier results from the earliest period~\cite{Abbott2004} and an early search for Scorpius X-1~\cite{AbbottPulsar2006}. Reinhard Prix is probably another good source~\cite{Prix2006}.
+
+		Rates go in here.
+
+    \section{Laser Interferometer Gravitational-wave Observatories}
+    \label{LIGO}
+        
+        LIGO observatories. The most fun part to write. Cite Nergis Mavalvala~\cite{MavalvalaThesis}, Stefan Ballmer~\cite{BallmerThesis}, Rana Adhikari~\cite{AdhikariThesis}, Nicolas de Mateo Smith-Lefevbre~\cite{SmithThesis} and, of course, Peter Saulson~\cite{Saulson}.
+
+        \subsection{From Weber bars to interferometry}
+        \label{bars_to_interferometry}
+
+            History lesson: Weber bars progress to interferometers. Use Saulson, but Nic's thesis has links to some of the original sources~\cite{Saulson},~\cite{SmithThesis}.           
+
+        \subsection{Gravitational wave interferometry methods}
+        \label{methods}
+
+		Michelson was one of the first to use interferometers~\cite{michelson}. He is famous for having done so to try to measure the velocity of the Earth with respect to the luminerferous ether and finding it to be unmeasurable.
+
+            Why GW interferometers work. Null measurements, a zeroed operating point. The specifics are best handled by Saulson~\cite{Saulson}. The idea of a Pound-Drever-Hall lock is most elegantly explained by Black~\cite{PDHNotes}. Rai Weiss may have some neat details, possibly historical, albeit that it is in a presentation~\cite{LIGOWorks}. The details of Fabry-Perot cavities in LIGO are handled by Rakhmanov, Savage et al~\cite{ResonanceFP},~\cite{ResponsesFP}. The motivation for the evolution to Enhanced LIGO and its DC readout methods is covered well in the corresponding CQG article~\cite{Fricke2009} and specific details of its construction and operation are in Tobin Fricke's thesis~\cite{FrickeThesis}.
+
+            \subsubsection{Interferometer theory}
+            \label{interferometer_theory}
+        
+                GW interferometry theory: differential arm motion, key noise sources. Again, the main source is Saulson~\cite{Saulson}, although we also need another source in the Advanced Detector Era.
+
+            \subsubsection{Observatory operation}
+            \label{observatory_operation}
+
+                Operating LIGO: controls, Detector Characterization. One of the first sources from initial LIGO to read up on is a paper by Fritscel, Bork, Mavalvala et al~\cite{ReadoutGWA}. Initially this system made a detection based on heterodyne readout using gravitational wave sidebands, which, among other troubles, could be unequal in the recycling cavity~\cite{MeadorsHanford2005}.
+
+                \paragraph{Detector characterization}
+                \label{detchar}
+            
+                    DetChar methods: omega scans, line hunting and glitches
+
+                \paragraph{Feedforward filtering}
+                \label{feedforward_filters}
+
+                    Example of feedforward: 60 Hz magnetometer. The only source that mentions this is, I think, Nic's thesis~\cite{SmithThesis}. Yet the most pertinent example is one that has long been applied to LIGO: MICH and PRC feedforward. The specific needed are mention in the thesis of Adhikari~\cite{AdhikariThesis} and Ballmer~\cite{BallmerThesis}, but immediately before Keita Kawabe and I began our project, these parameters had been tuned by Jeff Kissel~\cite{KissellPRCMICH}
+
+                \paragraph{Phase camera}
+                \label{phase_camera}
+
+                    Future devices: overview of phase camera with Vladimir. Vladimir's thesis definitely talks about it~\cite{DergachevThesis}. We can discuss the fundamentals behind the need for angular stabilization and control from Nergis Mavalvala's thesis~\cite{MavalvalaThesis}, but we can refresh it with a modern reference from Kate Dooley's thesis~\cite{DooleyThesis}.
+
+
+        \subsection{Advanced observatories and beyond}
+        \label{advanced}
+  
+            Advanced LIGO and beyond -- squeezing and prospects?
+
+        \subsection{Worldwide network}
+        \label{worldwide}
+ 
+            Allies: LIGO India, KAGRA, Advanced VIRGO, Einstein Telescope, LISA
+
+    \section{Summary}
+    \label{intro_summary}
+ 
+        Summary: strong motivation and instruments, need to find evidence of GW.    
+            
+%        --------------------
+%
+%	Here is a sample chapter file. The chapters of the thesis
+%	should be saved to seperate files such as
+%	\textit{chapter1.tex}. In the file \textit{thesis.tex} the
+%	\textit{input} command then includes these chapters into the
+%	thesis. Note that none of the chapter files need any headers.
+%	This header for each of these files is contained in
+%	\textit{thesis.tex}. The file \textit{thesis.tex} also
+%	includes the numbers system for the sections, figures,
+%	theorems lemmas etc...
+
+%\section{Sample Section}
+%\label{sample_section}
+%
+%	This is what a sample section looks like. Let's conclude this
+%	section with a sample theorem statement and proof.
+%
+%	\begin{theorem}
+%	\label{sample_theorem}
+%	The are an infinite number of prime numbers
+%	\end{theorem}
+%
+%	\emph{Proof:} On the contrary assume there are a finite number
+%	of primes $P_1, P_2, ... P_n$. Consider $\mathcal{P} = P_1 P_2
+%	\cdots P_n+1$. $\mathcal{P}$ is not divisible by any of the
+%	primes in our finite set. (Contradiction) $\square$
+  
+

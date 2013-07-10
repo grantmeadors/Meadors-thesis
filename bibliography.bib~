@@ -1,0 +1,1959 @@
+% Bibliography by Grant David Meadors
+% meadorsg@reed.edu
+% gmeadors@umich.edu
+% gdmeadors@gmail.com
+
+@ARTICLE{feyn54,
+   author = "R. P. Feynman",
+   year = "1954",
+   journal = "Phys.\ Rev.",
+   volume = "94",
+   pages = "262"
+}
+
+@ARTICLE{epr,
+   author = "A. Einstein and B. Podolsky and N. Rosen",
+   year = "1935",
+   journal = "Phys.\ Rev.",
+   volume = "47",
+   pages = "777"
+}
+
+@ARTICLE{airfract,
+   author = "H. Fang and A. Picard and P. Juncar",
+   year = "2002",
+   journal = "Rev. Sci. Instrum.",
+   volume = "73",
+   number = "4",
+   pages = "1935"
+}
+
+@ARTICLE{Ciddor,
+   author = "Ciddor, P.E.",
+   year = "1996",
+   journal = "Appl. Opt.",
+   volume = "35",
+   number = "9",
+   pages = "1566-1573"
+}
+
+@ARTICLE{Edlen,
+   author = "K.P. Birch and M.J. Downs",
+   year = "1993",
+   journal = "Metrologia",
+   volume = "30",
+   number = "3",
+   pages = "155--162"
+}
+
+@ARTICLE{Crandall,
+   author = "Crandall, R.E.",
+   year = "1982",
+   journal = "Am. J. Phys.",
+   volume = "50",
+   number = "12",
+   pages = "1157"
+   
+}
+
+@ARTICLE{James,
+   author = "James, M.B. and Ormond, R.B. and Stasch, A.J.",
+   year = "1999",
+   journal = "Am. J. Phys.",
+   volume = "67",
+   number = "8",
+   pages = "681"
+}
+
+@ARTICLE{ReadoutGWA,
+   author = "Fritschel, Peter and Bork, Rolf and Gonz\'{a}lez, Gabriela and Mavalvala, Nergis and Ouimette, Dale and Rong, Haisheng and Sigg, Daniel and Zucker, Michael",
+   title = "Readout and control of a power-recycled interferometric gravitational wave antenna",
+   year = "2001",
+   journal = "Appl. Opt.",
+   volume = "40",
+   number = "28",
+   pages = "4988--4998",
+   doi = {10.1364/AO.40.004988}
+}
+
+@ARTICLE{Bradley,
+   author = "Bradley, D.S. and Massey, J.L. and Mallik, R.R. and Henriksen, P.N.",
+   title = "Production and separation of C_{60} and C_{70} as an undergraduate experiment",
+   year = "1994",
+   journal = "Am. J. Phys.",
+   volume = "62",
+   number = "1",
+   pages = "85"
+}
+
+@ARTICLE{Scrivens,
+   author = "Scrivens, W.A. and Tour, J.M.",
+   title = "Synthesis of gram quantities of C_{60} by plasma discharge in a modified round-bottomed flask. Key parameters for yield optimization and purification",
+   year = "1992",
+   journal = "J. Org. Chem",
+   volume = "57",
+   number = "25",
+   pages = "6932"
+}
+
+@ARTICLE{Craig,
+   author = "Craig, N.C. and Gilbert, G.C. and Johnson, A.R.",
+   title = "C_{60} and C_{70} made simply",
+   year = "1992",
+   journal = "J. Chem. Ed.",
+   volume = "69",
+   number = "8",
+   pages = "664"
+}
+
+@ARTICLE{Ajie,
+   author = "Ajie, H. and Alvarez, M.M. and Anz, S.J. and Beck, R.D. and Diederich, F. and Fostiropoulos, K. and Huffman, D.R. and Kraetschmer, W. and Rubin, Y. and Schriver, K.E. and Sensharma, D. and Whetten, R.L.",
+   title = "Characterization of the Soluble All-Carbon Molecules C_{60} and C_{70}",
+   year = "1990",
+   journal = "J. Phys. Chem.",
+   volume = "94",
+   number = " 24",
+   pages = "8630"
+}
+
+@ARTICLE{Haufler,
+   author = "Haufler, R.E. and Conceicao, J. and Chibante, L.P.F. and Chai, Y. and Byrne, N.E. and Flanagan, S. and Haley, M.M. and O'Brien, S.C. and Pan, C. and Xiao, Z. and Billups, W.E. an Ciufolini, M.A. and Hauge, R.H. and Margrave, J.L. and Wilson, L.J. and Curf, R.F. and Smalley, R.E.",
+   title = "Efficient Production of C_{60} (Buckminsterfullerene), C_{60}H_{36}, and the Solvated Buckide Ion",
+   year = "1990",
+   journal = "J. Phys. Chem",
+   volume = "94",
+   number = "24",
+   pages = "8634"
+}
+
+@ARTICLE{Parker,
+   author = "Parker, D.H. and Wurz, P. and Chatterjee, K. and Lykke, K.R. and Hunt, J.E. and Pellin, M.J. and Hemminger, J.C. and Gruen, D.M. and Stock, L.M.",
+   title = "High-Yield Synthesis, Separation, and Mass-Spectrometric Characterization of Fullerenes C_{60} to C_{266}",
+   year = "1991",
+   journal = "J. Am. Chem. Soc",
+   volume = "113",
+   number = "20",
+   pages = "7499"
+}
+
+@ARTICLE{Curl,
+   author = "Curl, R.F. and Smalley, R.E.",
+   title = "Probing C_{60}",
+   year = "1988",
+   journal = "Science",
+   volume = "242",
+   number = "4881",
+   pages = "1017"
+}
+
+@ARTICLE{Kraetschmer,
+   author = "Kraetschmer, W. and Lamb, L.D. and Fostiropoulos K. and Huffman, D.R.",
+   title = "Solid C_{60}: a new form of carbon",
+   year = "1990",
+   journal = "Nature",
+   volume = "347",
+   number = "6291",
+   pages = "354"
+}
+
+@ARTICLE{Allemand,
+   author = "Allemand, P.M. and Koch, A. and Wudl, F. and Rubin, R. and Diederich, F. and Alvarez, M.M. and Anz, S.J. and Whetten, R.L. ",
+   title = "Two Different Fullerenes Have the Same Cyclic Voltammetry",
+   year = "1991",
+   journal = "J. Am. Chem. Soc.",
+   volume = "113",
+   number = "3",
+   pages = "1050"
+}
+
+@ARTICLE{IdP1991,
+	author = "de Pater, I.",
+	title = "Radio images of Jupiter's synchrotron radiation at 6, 20, and 90 cm",
+	year= "1991",
+	journal = "Astron. J.",
+	volume = "102",
+	number = "2",
+	pages = "795"
+}
+
+@ARTICLE{IdP1995,
+	author = "de Parter, I. and Heiles, C. and Wong, M. and Maddalena, R.J. and Bird, M.K. and Funke, O. and Neidhoefer, J. and Price, R.M. and Kesteven, M. and Calabretta, M. and Klein, M.J. and Gulkis, S. and Bolton, S.J. and Foster, R.S. and Sukumar, S. and Strom, R.G. and LePoole, R.S. and Spoelstra, T. and Robison, M. and Hunstead, R.W. and Campbell-Wilson, D. and Ye, T. and Dulk, G. and Leblanc, Y. and Galopeau, P. and Gerard, E. and Lecacheux, A.",
+	title = "Outburst of Jupiter's Synchrotron Radiation after the Impact of Comet Shoemaker-Levy 9",
+	year= "1995",
+	journal = "Science",
+	volume = "268",
+	number = "5219",
+	pages = "1879"
+}
+
+@ARTICLE{ADJR,
+	author = "Franklin, K.L",
+	title = "An Account of the Discovery of Jupiter as a Radio Source",
+	year= "1959",
+	journal = "Astron. J.",
+	volume = "64",
+	number = "2",
+	pages = "37"
+}
+
+@ARTICLE{IoA,
+	author = "Imai, K. and Riihimaa, J.J. and Reyes, F. and Carr, T.D.",
+	title = "Measurement of Jupiter's decametric radio source parameters by the modulation lane method",
+	year= "2002",
+	journal = "J. Geophys. Res.",
+	volume = "107",
+	number = "A6",
+	pages = "1081"
+}
+
+@ARTICLE{Bardon,
+   author = "Bardon, M. and Norton, P. and Peoples, J. and Sachs, A.M. and Lee-Franzini, J.",
+   title = "Measurement of the momentum spectrum of positrons from muon decay",
+   year = "1965",
+   journal = "Phys. Rev. Lett.",
+   volume = "14",
+   number = "12",
+   pages = "449"
+}
+
+@ARTICLE{Plano,
+   author = "Plano, R.J.",
+   title = "Momentum and asymmetry spectrum of mu-meson decay",
+   year = "1960",
+   journal = "Phys. Rev.",
+   volume = "119",
+   number = "4",
+   pages = "1400"
+}
+
+@ARTICLE{Brode,
+   author = "Brode, R.B.",
+   title = "The mass of the cosmic-ray mesotrons",
+   year = "1949",
+   journal = "Phys. Rev.",
+   volume = "75",
+   number = "5",
+   pages = "904"
+}
+
+@ARTICLE{CDAnderson,
+   author = "Leighton, R.B. and Anderson, C.D. and Seriff, A.J.",
+   title = "The energy spectrum of the decay particles and the mass and spin of the mesotron",
+   year = "1949",
+   journal = "Phys. Rev.",
+   volume = "75",
+   number = "9",
+   pages = "1432"
+}
+
+ @ARTICLE{CODATA,
+   author = "Mohr, P.J. and Taylor, B.N.",
+   title = "{CODATA} recommended values of the fundamental physical constants: 1998",
+   year = "2000",
+   journal = "Rev. Mod. Phys.",
+   volume = "72",
+   number = "2",
+   pages = "351"
+}
+
+@ARTICLE{NeutrinoScatter,
+  author = "Bahcall, J.N.",
+  title = "Neutrino-electron scattering and solar neutrino experiments",
+  year = "1987",
+  journal = "Rev. Mod. Phys.",
+  volume = "59",
+  number = "2",
+  pages = "505"
+  
+}
+
+@ARTICLE{NeutrinoUnderground,
+  author = "Formaggio, J.A. and Martoff, C.J.",
+  title = "Backgrounds to sensitive experiments underground",
+  year = "2004",
+  journal = "Annu. Rev. Nucl. Part. Sci.",
+  volume = "54",
+  pages = "361"
+
+}
+
+@ARTICLE{NeutrinoReview,
+  author = "Bahcall, J.N.",
+  title = "Astrophysical neutrinos: 20th century and beyond",
+  year = "2001",
+  journal = "Nucl. Phys. B (Proc. Suppl.)",
+  volume = "91",
+  pages = "9"
+
+}
+
+@ARTICLE{NeutrinoSolarTemperature,
+  author = "Bahcall, J.N. and Ulmer, A.",
+  title = "Temperature dependence of solar neutrino fluxes",
+  year = "1996",
+  journal = "Phys. Rev. D",
+  volume = "58",
+  number = "8",
+  pages = "4202"
+
+}
+
+@ARTICLE{NeutrinoSolarOscillations,
+  author = "Bahcall, J.N. and Pena-Garay, C.",
+  title = "Solar models and solar neutrino oscillations",
+  year = "2004",
+  journal = "New J. Phys.",
+  volume = "6",
+  number = "63",
+  pages = "1",
+
+}
+
+@ARTICLE{NeutrinosSolarTheoretical,
+  author = "Bahcall, J.N.",
+  title = "Solar neutrinos. I. theoretical",
+  year = "1964",
+  journal = "Phys. Rev. Lett.",
+  volume = "12",
+  number = "11",
+  pages = "300",
+  
+}
+
+@ARTICLE{LENSPrototype,
+  author = "Motta, D. and Buck, C. and Hartmann, F.X. and Lasserre, Th. and Schoenert, S. and Schwan, U.",
+  title = "Prototype scintillator cell for an In-based solar neutrino detector",
+  year = "2005",
+  journal = "Nucl. Inst. \& Meth. A"
+
+}
+
+@ARTICLE{MOONSpectroscopy,
+  author = "Ejiri, H. and Engel, J. and Hazama, R. and Krastev, P. and Kudomi, N. and Robertson, R.G.H.",
+  title = "Spectroscopy of double-beta and inverse-beta decays from 100-Mo for neutrinos",
+  year = "2000",
+  journal = "Phys. Rev. Lett.",
+  volume = "85",
+  number = "14",
+  pages = "2917"  
+
+}
+
+@ARTICLE{GENIUSObservatory,
+  author = "Klapdor-Kleingrothaus, H.V.",
+  title = "GENIUS - a new underground observatory for non-accelerator particle physics",  
+  journal = "Nucl. Phys. B",
+  volume = "110",
+  year = "2002",
+  pages = "364"
+
+}
+
+@ARTICLE{ElectronBubbles,
+  author = "Kuper, C.G.",
+  title = "Theory of negative ions in liquid helium",
+  journal = "Phys. Rev.",
+  volume = "122",
+  number = "4",
+  year = "1961",
+  pages = "1007"
+
+}
+
+@ARTICLE{NeutrinoElectronSpectrum,
+  author = "Bahcall, J.N. and Kamionkowski, M. and Sirlin, A.",
+  title = "Solar neutrinos: radiative corrections in neutrino-electron scattering experiments",
+  journal = "Phys. Rev. D",
+  volume = "51",
+  number = "11",
+  year = "1995",
+  pages = "6146"
+  
+}
+
+@ARTICLE{SolarNeutrinoFluxes,
+  title = "New solar neutrino flux calculations and implications regarding neutrino oscillations",
+  author = "Bahcall, J.N. and Lubow, S.H. and Huebner, W.F. and Magee, Jr, N.H. and Merts, A.L and Argo, M.F. and Parker, P.D. and Rosznyai, B. and Ulrich, R.K.",
+  journal = "Phys. Rev. Lett.",
+  volume = "45",
+  number = "11",
+  year = "1980",
+  pages = "946" 
+
+}
+
+@ARTICLE{SuperK1998,
+  author = "Fukuda, Y. and others",
+  title = "Evidence for oscillation of atmospheric neutrinos",
+  journal = "Phys. Rev. Lett.",
+  volume = "81",
+  number = "8",
+  year = "1998",
+  pages = "1562" 
+
+}
+
+@ARTICLE{Challis,
+  author = "Challis, L.J.",
+  title = "Physics in less than three dimensions",
+  journal = "Cont. Phys.",
+  volume = "33",
+  number = "2",
+  year = "1992",
+  pages = "111" 
+
+}
+
+@ARTICLE{Bohr1913,
+  author = "Bohr, N.",
+  title = "On the constitution of atoms and molecules, part I",
+  journal = "Philos. Mag.",
+  volume = "26",
+  year = "1913",
+  pages = "1"
+}
+
+@ARTICLE{Moseley1913,
+  author = "Moseley, H.G.J.",
+  title = "The high-frequency spectra of the elements",
+  journal = "Philos. Mag.",
+  volume = "26",
+  year = "1913",
+  pages = "1024"
+}
+
+@ARTICLE{Moseley1914,
+  author = "Moseley, H.G.J.",
+  title = "The high-frequency spectra of the elements",
+  journal = "Philos. Mag.",
+  volume = "27",
+  year = "1914",
+  pages = "703"
+  }
+
+@ARTICLE{Planck1901,
+  author = "Planck, M.",
+  title = "On the Law of Distribution of Energy in the Normal Spectrum",
+  journal = "Ann. D. Phys.",
+  volume = "4",
+  year = "1901",
+  pages = "553".
+  }
+
+  @ARTICLE{CODATA2002,
+  author = "Mohr, P.J. and Taylor, B.N.",
+  title = "CODATA recommended values of the fundamental physics constants: 2002",
+  journal = "Rev. Mod. Phys.",
+  volume = "77",
+  year = "2005",
+  pages = "1"
+  }
+
+@ARTICLE{McElhaneyZnS,
+author = "McElhaney, S.A. and Ramsey, J.A. and Bauer, M.L and Chiles, M.M.",
+title = "A more rugged ZnS(Ag) alpha scintillation detector",
+journal = "IEEE Trans. Nuc. Sci.",
+volume = "37",
+number = "2",
+year = "1990",
+pages= "868"
+}
+
+@ARTICLE{KatzBeta,
+author = "Katz, L. and Penfold, A.S.",
+title = "Range-energy relations for electrons and the determination of beta-ray end-point energies by absorption",
+journal = "Rev. Mod. Phys",
+volume = "24",
+number = "1",
+year = "1952",
+pages = "28"
+}
+
+@ARTICLE{RutherfordAlpha,
+author = "Rutherford, E.",
+title = "Uranium radiation and the electrical conduction produced by it",
+journal = "Phil. Mag.",
+volume = "xlvii",
+number = "5",
+year = "1899",
+pages = "109"
+}
+
+@ARTICLE{EndtGamma,
+author = "Endt, P.M.",
+title = "Energy Levels of A = 21-44 Nuclei (VII)",
+journal = "Nucl. Phys.",
+volume = "A521",
+pages = "1",
+year = "1990"
+}
+
+@ARTICLE{Matsushita1984,
+author = "Matsushita, M. and Sano, M. and Hayawaka, Y. and Honjo, H. and Sawada, Y.",
+title = "Fractal structures of zinc metal leaves grown by electrodeposition",
+journal = "Phys. Rev. Lett.",
+volume = "53",
+number = "3",
+pages = "286",
+year = "1984"
+}
+
+@ARTICLE{Nagatani1989,
+author = "Nagatani, T.",
+title = "Laplacian growth phenomena with the third boundary condition: crossover from dense structures to diffusion-limited aggregation fractal",
+journal = "Phys. Rev. A",
+volume = "40",
+number = "12",
+pages = "7286",
+year = "1989"
+}
+
+@ARTICLE{Grier1985,
+author = "Grier, D. and Ben-Jacob, E. and Clarke, R. and Sander, L.M.",
+title = "Morphology and microstructure in electrochemical depositon of zinc",
+journal = "Phys. Rev. Lett.",
+volume = "56",
+number = "12",
+pages = "1264",
+year = "1986"
+}
+
+@ARTICLE{Grier1987,
+author = "Grier, D.G. and Kessler, D.A. and Sander, L.M.",
+title = "Stability of the dense radial morphology in diffusive pattern formation",
+journal = "Phys. Rev. Lett.",
+volume = "59",
+number = "20",
+pages = "2315",
+year = "1987"
+
+}
+
+@ARTICLE{Duvall2000,
+author = "Duvall,P. and Keesling, J. and Vince, A.",
+title = "The Haussdorf dimension of the boundary of a self-similar tile",
+journal = "J London Math Soc",
+volume = "61",
+pages = "748",
+year = "2000"
+
+}
+
+@ARTICLE{Witten1981,
+author = "Witten, T.A. and Sander, L.M.",
+title = "Diffusion-limited aggregation, a kinetic critical phenomenon",
+journal = "Phys. Rev. Lett.",
+volume = "47",
+number = "19",
+pages = "1400",
+year = "1981"
+}
+
+@ARTICLE{Sawada1986,
+author = "Sawada, Y. and Dougherty, A. and Gollub, J.P.",
+title = "Dendritic and fractal patterns in electrolytic metal deposits",
+journal = "Phys. Rev. Lett.",
+volume = "56",
+number = "12",
+pages = "1260",
+year = "1986."
+}
+
+@ARTICLE{Abbott2004,
+author = "Abbott, B. and Abbott, R. and Adhikari, R. and Ageev, A. and Allen, B. and Amin, R. and Anderson, S.B. and Anderson, W.G. and Araya, M. and Armandula, H. and et al.",
+title = "Analysis of {LIGO} data for gravitational waves from binary neutron stars",
+journal = "Phys. Rev. D",
+volume = "69",
+pages = "122001",
+year = "2004"
+}
+
+@ARTICLE{AbbottPulsar2006,
+        author = "Abbott, B. and et al",
+        title = "Coherent searches for periodic gravitational waves from unknown isolated sources and {S}corpius {X-1}: results from the second {LIGO} science run",
+        journal = "Phys. Rev. D",
+        volume = "76",
+        number = "8",
+        pages = "082001",
+        year = "2007"
+}
+
+@ARTICLE{Allen1999,
+author = "Allen, B. and Romano, {J.D.}",
+title = "Detecting a stochastic background of gravitational radiation: signal processing strategies and sensitivities",
+journal = "Phys. Rev. D",
+volume = "59",
+pages = "102001",
+year = "1999"
+}
+
+@ARTICLE{Boyle2004,
+author = "Boyle, L.A. and Steinhardt, P.J. and Turok, N.",
+journal = "Phys. Rev. D",
+volume = "69",
+pages = "127302",
+year = "2004"
+}
+
+@ARTICLE{DePaolis2001,
+author = "{De Paolis}, F. and Ingrosso, G. and Nucita, A.A.",
+title = "Astrophysical implications of gravitational microlensing of gravitational waves",
+journal = "Astron. Astrophys.",
+number = "366",
+pages = "1065",
+year = "2001"
+}
+
+@ARTICLE{Seljak1997,
+author = "Seljak, U. and Zaldarriaga, M.",
+title = "Signature of gravity waves in the polarization of the microwave background",
+journal = "Phys. Rev. Lett.",
+volume = "78",
+number = "11",
+year = "1997"
+}
+
+@ARTICLE{Allen1997,
+author = "Allen, B. and Ottewill, A.C.",
+title = "Detection of anisotropies in the gravitational-wave stochastic background",
+journal = "Phys. Rev. D",
+volume = "56",
+number = "2",
+year = "1997"
+}
+
+@ARTICLE{Muciaccia1997,
+author = "Muciaccia, P.F. and Natoli, P. and Vittorio, N.",
+title = "Fast spherical harmonic analysis: a quick algorithm for generating and/or inverting full-sky, high-resolution cosmic microwave background anisotropy maps",
+journal = "Astrophys. J.",
+volume = "488",
+pages = "L63",
+year = "1997"
+}
+
+@ARTICLE{Radiometer2006,
+	author = "Ballmer, S.W.",
+	title = "A radiometer for stochastic gravitiatonal waves",
+	journal = "Class. Quantum Grav.",
+	volume = "23",
+	pages = "S179",
+	year = "2006"
+}
+
+@ARTICLE{Sturman1990,
+author = "Sturman, Peter C.",
+title = "Cranes above {K}aifeng: the auspicious image at the court of {H}uizong",
+journal = "Ars {O}rientalis",
+volume = "20",
+pages = "34-68",
+year = "1990"
+}
+
+@ARTICLE{Moule1921,
+author = "Moule, A.C.",
+title = "The wonder of the capital",
+journal = "New {C}hina {R}eview",
+volume = "3",
+number = "1",
+year = "1921",
+pages = "12-17, 357-367"
+}
+
+@ARTICLE{Sofue2001,
+author = "Sofue, Y. and Rubin, V.C.",
+journal = "Annu. {R}ev. {A}str",
+volume = "39",
+number = "137",
+year = "2001"
+}
+
+@ARTICLE{Clowe2006,
+author = "Clowe, D. et al",
+journal = "Ap{JL}",
+volume = "648",
+number = "109",
+year = "2006"
+}
+
+@ARTICLE{Jungman1996,
+author = "Jungman, G. and Kamionkowski, M. and Griest, K.",
+journal = "Phys. {R}ept.",
+volume = "267",
+number = "195",
+year = "1996"
+}
+
+@ARTICLE{Angloher2005,
+author = "Angloher, G.",
+journal = "Astropart. {P}hys",
+volume = "23",
+number = "325",
+year = "2005"
+}
+
+@ARTICLE{Ellis2002,
+author = "Ellis, J. et al",
+journal = "Eur. {P}hys. {J}.",
+volume = "C24",
+number = "311",
+year = "2002"
+}
+
+@ARTICLE{Gould2001,
+author = " Gould, A. and Alam, S.M.K.",
+journal = "Ap{J}",
+volume = "549",
+number = "79",
+year = "2001"
+}
+
+@ARTICLE{Bahcall1998,
+author = "Bahcall, J.",
+journal = "Nucl. {P}hys. {A}",
+volume = "631",
+number = "29",
+year = "1998"
+}
+
+@ARTICLE{Diemand2007,
+author = "Diemand, J. and Kuhlen, M. and Madau, P.",
+journal = "Ap{J}",
+volume = "657",
+number = "1",
+year = "2007"
+}
+
+@ARTICLE{Vollier1993,
+author = "Vollier, R.D. and Trautman, D. and Tupper, G.B.",
+journal = "Phys. {L}ett.",
+volume = "B306",
+number = "79",
+year = "1993"
+}
+
+@ARTICLE{Caldwell1981,
+author = "Caldwell, J.A.R and Ostriker, J.P",
+journal = "Ap{J}",
+volume = "251",
+number = "61",
+year = "1981"
+}
+
+@ARTICLE{McKee1977,
+author = "McKee, C.F. and Ostriker, J.P.",
+journal = "Ap{J}",
+volume = "218",
+number = "148",
+year = "1977"
+}
+
+@ARTICLE{HorowitzKadau2009,
+author = "Horowitz, C.J. and Kadau, K.",
+journal = "Phys. {R}ev. {L}ett.",
+volume = "102",
+number = "191102",
+year = "2009"
+}
+
+@ARTICLE{LSCPulsar2006,
+author = "Abbott et al, B.l",
+journal = "Phys. {R}ev. {D}",
+volume = "76",
+number = "082001",
+year = "2007"
+}
+
+@ARTICLE{LSCPowerFlux2009,
+author = "Abbott et al, B.",
+journal = "Phys. {R}ev. {L}ett",
+volume = "102",
+number = "111102",
+year = "2009"
+}
+
+@ARTICLE{Gustavsen1999,
+author="Gustavsen, B. and Semlyen, A.",
+journal="IEEE {T}rans. {P}ower {D}elivery",
+volume="14",
+number="3",
+year="1999"
+}
+
+@ARTICLE{Gustavsen2006,
+author="Gustavsen, B.",
+journal="IEEE {T}rans. {P}ower {D}elivery",
+volume="21",
+number="3",
+year="2006"
+}
+
+@ARTICLE{Deschrijver2008,
+author="Deschrijver et al, D.",
+journal="IEEE {M}icrowave {W}ire. {Comp}. Lett.",
+volume="18",
+number="6",
+year="2008"
+}
+
+@ARTICLE{LIGOStochasticNature2009,
+author="{The LIGO Scientific Collaboration and The Virgo Collaboration}",
+title = "An upper limit on the stochastic gravitational-wave background of cosmological origin",
+journal = "Nature",
+volume = "460",
+pages = "990-4",
+year = "2009"
+}
+
+@ARTICLE{Fricke2009,
+author = "Fricke, T.F. and Smith-Lefebvre, N.D. and Abbott, R. and Adhikari, R. and Dooley, K.L. and Evans, M. and Fritschel, P. and Frolov, V.V. and Kawabe, K. and Kissel, J.S. and Slagmolen, B.J.J. and Waldman, S.J.",
+title = "{DC} readout experiment in {E}nhanced LIGO",
+journal = "Classical and {Q}uantum {G}ravity",
+volume = "29",
+number = "6",
+pages = "065005",
+year = "2012"
+}
+
+@ARTICLE{GEO600NatureSqueezing,
+author = "{The LIGO Scientific Collaboration}",
+title = "A gravitational-wave observatory operating beyond the quantum shot-noise limit",
+journal = "Nature {P}hysics",
+volume = "7",
+number = "12",
+pages = "962-965",
+year = "2011"
+}
+
+@UNPUBLISHED{BarsottiNatureSqueezing,
+author = "{The LIGO Scientific Collaboration}",
+title = "Enhancement of the astrophysical reach of a gravitational wave observatory using squeezed states of light",
+note = "In preparation."
+}
+
+@UNPUBLISHED{ChuaBackscatteredLight,
+author = "Chua, S.S.Y. and Dwyer, S. and Barsotti, L. and Sigg, D. and Schofield, R.M.S. and Frolov, V.V. and Kawabe, K. and Evans, M. and Meadors, G.D. and Factourovich, M. and Gustafson, R. and Smith-Lefebvre, N. and Vorvick, C. and Landry, M. and Khalaidovski, A. and Stefszky, M.S. and Mow-Lowry, C.M. and Buckler, B.C. and Shaddock, D.A. and Lam, P.K and Schnabel, R. and Mavalvala, N. and McClelland, D.E.",
+title = "Impact of backscattered-light in a squeezing-enhanced interferometric gravitational-wave detector",
+note = "In preparation."
+}
+
+@UNPUBLISHED{DwyerPhaseNoise,
+author = "Dwyer, S. and Barsotti, L. and Chua, S.S.Y. and Evans, M. and Factourovich, M. and Gustafson, D. and Isogai, T. and Kawabe, K. and Khalaidovski, A. and Lam, P.K. and Landry, M. and Mavalvala, N. and McClelland, D. and Meadors, G.D. and Mow-Lowry, C.M. and Schabel, R. and Smith-Lefebvre, N. and Stefszky, M. and Vorvick, C. and Sigg, D.",
+title ="Squeezed quadrature fluctuations in a gravitational wave detector using squeezed light",
+note = "In preparation."
+}
+
+@INBOOK{Prix2006,
+author = "Prix, R.",
+title = "Neutron stars and pulsars",
+publisher = "Springer",
+address = "Berlin",
+year = "2009",
+pages = "651"
+}
+
+@CONFERENCE{GoetzTwoSpec2009,
+ author = "Goetz, E. and Riles, K.",
+ title = "TwoSpect presentation",
+ booktitle = "13th Gravitational Wave Data Analysis Workshop",
+ month = "January",
+ year = "2009",
+ address = "San Juan"
+ }
+ 
+ @CONFERENCE{WeisbergTaylor2004,
+ author = "Weisberg, Joel M. and Taylor, Joseph H.",
+ title = "Relativistic binary pulsar {B}1913+16: Thirty years of observations and analysis",
+ booktitle = "Aspen Winter Conference on Astrophysics: Binary Radio Pulsars",
+ month = "July",
+ year = "2004",
+ address = "Aspen"
+ }
+
+@INBOOK{Mair2001,
+author = "Mair, Victor H. and Steinhardt, Nancy S. and Goldin, Paul R.",
+title = "Hawai'i reader in traditional {C}hinese culture ",
+publisher = "Hawai'i",
+address = "Honolulu",
+year = "2001",
+pages = "405-422"
+}
+
+@INBOOK{Foulk,
+author = "Foulk, T. Griffith",
+title = "The Koan: texts and context in {Z}en {B}uddhism",
+publisher = "Oxford",
+address = "Oxford",
+year = "2000",
+pages = "15-45"
+}
+
+@CONFERENCE{Bragg1922,
+  author = "Bragg, W.L.",
+  title = "The diffraction of X-rays by crystal",
+  booktitle = "Nobel Physics lecture",
+  month = "September",
+  year = "1922",
+  address = "Stockholm, Sweden"
+  }
+
+
+
+@INCOLLECTION{GEMFraga,
+  author = "Fraga, F.A.F. and Margato, L.M.S. and Fetal, S.T.G. and Ferreira Marques, R. and Policarpo, A.J.P.L.",
+  title = "Performance of a tracking device based on the GEM scintillation ",
+  booktitle = "Nuclear science symposium and medical imaging conference",
+  publisher = "IEEE Trans. Nucl. Sci.",
+  address = "Lyon, France",
+  month = "October",
+  year = "2000"
+}
+
+@MISC{witten2001,
+   author = "Edward Witten",
+   eprint = "hep-th/0106109"
+}
+
+@MISC{NISTrefract,
+   author = "J.A. Stone and J.H. Zimmerman",
+   note = "National Institute of Standards and Technology, Manufacturing Engineering Laboratory, Precision Engineering. Engineering metrology toolbox. Available at http://emtoolbox.nist.gov/Wavelength/Documentation.asp."
+   }
+   
+@MISC{GSFCNeutronStar,
+        author = "Goddard",
+        note = "Goddard Space Flight Center."
+}   
+
+
+@MANUAL{training,
+	title = "Training manual",
+	organization = "Reed Reactor Facility",
+	month = "September",
+	year = "2004"
+}
+
+@MANUAL{lab,
+	title = "Physics 200 lab manual: Modern physics experiments",
+	organization = "Reed College Physics Department",
+	month = "(Spring",
+	year = "2005)"
+}
+
+@MANUAL{pasco,
+	title = "Instruction manual and experiment guide for the PASCO scientific model TD-8553/8554A/8555 thermal radiation system",
+	organization = "Pasco Scientific",
+	address = "Roseville, CA",
+	month = "(March",
+	year = "1999)",
+	note = "Available online at ftp://ftp.pasco.com/manuals/English/TD/TD-8553/012-04695D/012-04695D.pdf."
+}
+
+@MANUAL{AD736,
+	title = "AD736: Low cost, low power, true RMS-to-DC converter",
+	organization = "Analog Devices",
+	address = "Norwood, MA",
+	month = "(May",
+	year = "2005)",	 
+}
+
+@MANUAL{LF411,
+	title = "LF411 Low Offset, Low Drift JFET Input Operational Amplifier",
+	organization = "National Semiconductor",
+	address = "Santa Clara, CA",
+	month = "August",
+	year = "2000",	 
+}
+
+@MANUAL{2N3904,
+	title = "2N3904/ MMBT3904 / PZT3904 NPN General Purpose Amplifier",
+	organization = "Fairchild Semiconductor",
+	address = "South Portland, ME",
+	}
+
+@MANUAL{Ortec925,
+	title = "ACE-MATE: Amplifier, Pre-Amplifier, Bias Supply and SCA; 925-SCINT",
+	organization = "Ortec",
+	address = "Oak Ridge, Tenessee",
+	month = "April",
+	year = "2002"
+	}
+	
+@MANUAL{BurlePhoto,
+	title = "Photomultiplier Handbook",
+	organization = "Burle Industries",
+	address = "Lancaster, Pennsylvania",
+	month = "October",
+	year = "1989"
+	}
+	
+@MANUAL{BIPM8,
+	title = "The International System of Units: SI (8th Edition)",
+	organization = "Bureau International des poids et mesures",
+	address = "Paris, France",
+	year = "2006"
+}
+	
+@BOOK{taylor,
+	author = "Taylor, J.R.",
+	title = "Introduction to error analysis: the study of uncertainties in physical measurements",
+	publisher = "(University Science Books",
+	edition = "Second",
+	year = "1997)"
+	
+}
+
+@BOOK{giancoli,
+	author = "Giancoli, D.C.",
+	title = "Physics for scientists and engineers",
+	publisher = "(Prentice Hall",
+	edition = "Third",
+	year = "2000)",
+	pages = "720--721"
+	
+}
+
+@BOOK{anderson,
+	author = "Anderson, D.L.",
+	title = "The discovery of the electron: the development of the atomic concept of electricity",
+	publisher = "(Van Nostrand",
+	address = "Princeton",
+	year = "1964)",
+	pages = "41--53"
+	
+}
+
+@BOOK{schuster,
+	author = "Schuster, A.",
+	title = "The progress of physics during 33 years (1875-1908): four lectures delivered to the University of Calcutta during March 1908",
+	publisher = "(Cambridge UP",
+	year = "1911)",
+	pages = "65--68"
+	
+}
+
+@BOOK{thomson,
+	author = "Thomson, J.J.",
+	title = "Conduction of electricity through gases",
+	publisher = "(Cambridge UP",
+	year = "1906)",
+	pages = "117--121"
+	
+}
+
+@BOOK{planck,
+	author = "Planck, M.",
+	title = "A survey of physics: a collection of lectures and essays",
+	publisher = "(Dutton",
+	year = "1925)",
+	pages = "160--161",
+	note = "Translated by R. Jones and D.H. Williams."
+	
+}
+
+@BOOK{boltzmann,
+	author = "Boltzmann, L.",
+	title = "Lectures on gas theory",
+	publisher = "(U of California P",
+	address = "Berkeley",
+	year = "1964)",
+	pages = "97--99",
+	note = "Translated by S.G. Brush."
+	
+}
+
+@BOOK{kuhn,
+	author = "Kuhn, T.S.",
+	title = "Black-body theory and the quantum discontinuity: 1894-1912",
+	publisher = "(Oxford UP",
+	address = "New York",
+	year = "1978)"
+	
+}
+
+@BOOK{froome,
+	author = "Froome, K.D. and Essen, L.",
+	title = "The velocity of light and radio waves",
+	publisher = "(Academic",
+	address = "London",
+	year = "1969)"
+	
+}
+
+@BOOK{michelson,
+	author = "Michelson, A.A.",
+	title = "The velocity of light",
+	publisher = "(U of Chicago P",
+	address = "Chicago",
+	year = "1902)"
+	
+}
+
+@BOOK{Baierlein,
+	author = "Baierlein, R.",
+	title = "Newton to Einstein : the trail of light : an excursion to the wave-particle duality and the special theory of relativity",
+	publisher = "Cambridge UP,",
+	address = "Cambridge",
+	year = "1992"
+	
+}
+
+@BOOK{Saulson,
+	author = "Saulson, P.",
+	title = "Fundamentals of interferometric gravitational wave detectors",
+	publisher = "World Scientific",
+	address = "Singapore",
+	year = "1994"
+
+}
+
+@BOOK{MisnerThorneWheeler,
+        author = "Misner, C.W. and Thorne, K.S. and Wheeler, J.A.",
+        title = "Gravitation",
+        publisher = "Freeman",
+        address = "New York",
+        year = "1970"
+}
+
+@BOOK{Simpson,
+	author = "Simpson, R.",
+	title = "Introductory electronics: for scientists and engineers",
+	publisher = "Allyn and Bacon",
+	address = "Upper Saddle River, N.J.",
+	year = "1987"
+
+}
+
+@BOOK{Boas,
+	author = "Boas, M.",
+	title = "Mathematical methods in the physical sciences",
+	publisher = "Wiley",
+	edition = "Second",
+	year = "1983"
+
+}
+
+@BOOK{GriffithsE,
+	author = "Griffiths, D.J.",
+	title = "Introduction to Electrodynamics",
+	publisher = "Prentice Hall",
+	address = "Upper Saddle River, N.J.",
+	edition = "Third",
+	year = "1999"
+	
+}
+
+@BOOK{GriffithsQ,
+	author = "Griffiths, D.J.",
+	title = "Introduction to Quantum Mechanics",
+	publisher = "Pearson Prentice Hall",
+	address = "Upper Saddle River, N.J.",
+	edition = "Second",
+	year = "2005"
+	
+}
+
+@BOOK{Marsden,
+	author = "Marsden, J.E. and Hoffman, M.J.",
+	title = "Basic Complex Analysis",
+	publisher = "Freeman",
+	address = "New York",
+	edition = "Third",
+	year = "1999"
+	
+}
+
+@BOOK{FIS,
+	author = "Friedberg, S.H. and Insel, A.J. and Spence, L.E.",
+	title = "Linear Algebra",
+	publisher = "Prentice Hall",
+	address = "Upper Saddle River, N.J.",
+	edition = "Fourth",
+	year = "2003"
+
+}
+
+@BOOK{NeutrinoBeyond,
+  author = "Huchra, J.P. and others",
+  title = "Neutrinos and Beyond",
+  publisher = "National Academies",
+  address = "Washington, D.C.",
+  year = "2003"
+
+}
+
+@BOOK{SolidState1976,
+  author = "Ashcroft, N.W. and Mermin, N.D.",
+  title = "Solid state physics",
+  publisher = "Harcourt",
+  address = "New York",
+  year = "1976"
+  }
+  
+@BOOK{Knoll,
+author = "Knoll, G.F.",
+title = "Radiation detection and measurement",
+publisher = "Wiley",
+address = "Hoboken, N.J.",
+edition = "Third",
+year = "2000"
+}
+
+@BOOK{DelaneyFinch,
+author = "Delaney, C.F.G. and Finch, E.C.",
+title = "Radiation detectors",
+publisher = "Oxford",
+address = "Oxford",
+year = "1992"
+}
+
+@BOOK{Analects,
+author = "Confucius",
+note = "Translated by Edward Slingerland",
+title = "Analects: with selections from traditional commentaries",
+publisher = "Hackett",
+address = "Indianapolis",
+year = "2003"
+}
+
+@BOOK{Anthology,
+author = "Owen, Stephen",
+title = "An anthology of Chinese literature: beginnings to 1911",
+publisher = "Norton",
+address = "New York",
+year = "1996"
+}
+
+@BOOK{HsunTzu,
+author = "Hsun Tzu",
+note = "Translated by Burton Watson",
+title = "Hsun Tzu: Basic Writings",
+publisher = "Columbia University",
+address = "New York",
+year = "1996"
+}
+
+@BOOK{IChing,
+author = "Wang Bi",
+note = "Translated by Richard John Lynn",
+title = "The Classic of Changes: a new translation of the I Ching",
+publisher = "Columbia",
+address = "New York",
+year = "1994"
+}
+
+@BOOK{QinHan,
+author = "Mark Edward Lewis",
+title = "The early Chinese empires: Qin and Han",
+publisher = "Belknap Harvard",
+address = "Cambridge",
+year = "2007"
+}
+
+@BOOK{LotusSutra,
+author = "Kumarijiva",
+note = "Translated by Burton Watson",
+title = "The Lotus Sutra",
+publisher = "Columbia",
+address = "New York",
+year = "1993"
+}
+
+@BOOK{PlatformSutra,
+author= "Tun-huang",
+note = "Translated by Phillip B. Yampolsky",
+title = "The Platform Sutra of the Sixth Patriarch: the text of the {T}un-{H}uang manuscript",
+publisher = "Columbia",
+address = "New York",
+year = "1967"
+}
+
+@BOOK{Wenchang,
+author = "Kleeman, Terry F.",
+title = "A God's Own Tale",
+publisher = "SUNY",
+address = "Albany",
+year = "1994"
+}
+
+@BOOK{ChuHsi,
+author = "Chu Hsi",
+title = "Learning to be a sage: selections from the {C}onversations of {M}aster {C}hu, arranged topically",
+note = "Translated by Daniel K. Gardner",
+publisher = "California",
+address = "Berkeley",
+year = "1990"
+}
+
+@INBOOK{morgan,
+	author = "Morgan, F.J.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "2",
+	pages = "487--488"
+	
+}
+
+@INBOOK{stewart,
+	author = "Stewart, G.S.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "2",
+	pages = "418--419"
+	
+}
+
+@INBOOK{brehme,
+	author = "Brehme, R.W.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "2",
+	pages = "886--887"
+	
+}
+
+@INBOOK{edwards,
+	author = "Edwards, A.K.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "2",
+	pages = "482--483"
+	
+}
+
+@INBOOK{gatland,
+	author = "Gatland, I.R.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "4",
+	pages = "1667--1670"
+	
+}
+
+@INBOOK{neuenschwander,
+	author = "Nueunschwander",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "1",
+	pages = "112--114"
+	
+}
+
+@INBOOK{bruno,
+	author = "Bruno, M.S.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "3",
+	pages = "1315--1318"
+	
+}
+@INBOOK{keller,
+	author = "Keller, F.J.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "3",
+	pages = "1104"
+	
+}
+
+@INBOOK{distefano,
+	author = "Di Stefano, M.C.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "2",
+	pages = "406--408"
+	
+}
+
+@INBOOK{caldwell,
+	author = "Caldwell, C.D.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "2",
+	pages = "778"
+	
+}
+
+@INBOOK{head,
+	author = "Head, C.E.",
+	title = "MacMillan encyclopedia of physics",
+	note ="Edited by J.S. Rigden",
+	publisher = "(Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996)",
+	volume = "3",
+	pages = "1348--1350"
+	
+}
+
+@INCOLLECTION{HERONProject,
+  author = "Adams, J.S. and Huang, Y.H. and Kim, Y.H and Lanou, R.E. and Maris, H.J. and Seidel, G.M.",
+  title = "The HERON project",
+  booktitle = "Low energy solar neutrino detection",
+  publisher = "World Scientific Publishing",
+  year = "2001",
+  pages = "70"
+
+}
+
+@INCOLLECTION{waldman,
+	author = "Waldman, G.",
+	title = "Light",
+	booktitle = "MacMillan Encyclopedia of Physics",
+	editor ="J.S. Rigden",
+	publisher = "Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996",
+	volume = "2",
+	pages = "855"
+	
+}
+
+@INCOLLECTION{Compton,
+	author = "Compton, R.N.",
+	title = "Oscilloscope",
+	booktitle = "MacMillan Encyclopedia of Physics",
+	editor ="J.S. Rigden",
+	publisher = "Simon and Schuster MacMillan",
+	address = "New York",
+	year = "1996",
+	volume = "3",
+	pages = "1131"
+	
+}
+
+@UNPUBLISHED{SBATalk,
+	author = "Gustafon, D.",
+	title = "Sideband and carrier analyzer system",
+	note = "Unpublished",
+	month = "February",
+	year = "2005"
+	
+}
+
+@UNPUBLISHED{EBCAssay,
+  author = "Addessi, L.J.",
+  title = "Complete set of AutoCAD drawings for e-bubble chamber",
+  note = "Web: http://www.nevis.columbia.edu/\~ebubble/review/EBC\_drawing\_Assy.pdf",
+  year = "2001"
+  
+  }
+
+@UNPUBLISHED{Qingming,
+author = "Zhang Zeduan",
+title = "Qingming Shanghe Tu",
+note = "Web: http://academic.reed.edu/chinese/qingming/scrollV2/, courtesy of Reed College and the Palace Museum, Beijing"
+year = "c. 1120"
+}
+
+@UNPUBLISHED{EBCDescription,
+  author = "Ju, Y.",
+  title = "Introduction and test procedures
+for Nevis LHe electron bubble chamber
+cryostat",
+  note = "Web: http://www.nevis.columbia.edu/\~ebubble/review/Introduction.pdf",
+  month = "November",
+  year = "2003"
+  
+}
+
+@UNPUBLISHED{EBubble2005,
+  author = "Beal, C. and Wilson, R.M.",
+  title = "A report on the research and development of the e-Bubble collaboration",
+  note = "Web: http://www.nevis.columbia.edu/reu/2005/ebub.pdf",
+  month = "August",
+  year = "2005"
+}
+
+@UNPUBLISHED{MeadorsHanfordPres2005,
+author = "Meadors, G.D.",
+title = "Dynamics of the 4-kilometer recycling cavity carrier and sideband response to excitation",
+note = "{LIGO} presentation",
+month = "August",
+year = "2005"
+}
+
+@UNPUBLISHED{MeadorsHanford2005,
+author = "Meadors, G.D.", 
+title = "Study of the {LHO} 4{K} Recycling Cavity Sideband and Carrier Response to Excitation and Perturbations",
+note = "{LIGO} technical report: {LIGO-T050276-00-I} (advisor: {R}ichard {G}ustafson)",
+month = "September",
+year = "2005"
+}
+
+@UNPUBLISHED{MeadorsNevisPres2006,
+author = "Meadors, G.D.",
+title = "E-bubble: seeing the sun's center",
+note = "{C}olumbia {U}niversity presentation",
+month = "August",
+year = "2006"
+}
+
+@UNPUBLISHED{MeadorsNevis2006,
+author = "Meadors, G.D.",
+title = "E-Bubble: seeing the Sun's Center",
+note = "{C}olumbia {U}niversity technical report, web: http://www.nevis.columbia.edu/reu/2006/Meadors\_Report.pdf (advisor: {J}eremy {D}odd)",
+month = "August",
+year = "2006"
+}
+
+@UNPUBLISHED{MeadorsGoldwater2007,
+author = "Meadors, G.D.",
+title = "In the stars, in ourselves: dark matter's distribution through the cosmos",
+note = "{B}arry {M.} {G}oldwater scholarship foundation essay",
+month = "January",
+year = "2007"
+}
+
+@UNPUBLISHED{MeadorsCaltechPres2007,
+author = "Meadors, G.D.",
+title = "Beyond dawn: {B}ig {B}ang gravitational wave background searches",
+note = "{LIGO} presentation (advisors: {V}uk {M}andic, {S}tefan {B}allmer)",
+month = "August",
+year = "2007"
+}
+
+@UNPUBLISHED{MeadorsCaltech2007,
+author = "Meadors, G.D.",
+title = "Searching for a gravitational wave stochastic background",
+note = "{LIGO} technical report  (advisors: {V}uk {M}andic, {S}tefan {B}allmer)",
+month = "October",
+year = "2007"
+}
+
+@UNPUBLISHED{MeadorsThesisPres2008,
+author = "Meadors, G.D.",
+title = "Re-searching galactic structure with {Reed's} radio telescope",
+note = "{R}eed {C}ollege thesis presentation (advisor: {R}obert {R}eynolds)",
+month = "March",
+year = "2008"
+}
+
+@UNPUBLISHED{MeadorsThesis2008,
+author = "Meadors, G.D.", 
+title = "Re-searching galactic structure with {Reed's} radio telescope",
+note = "{R}eed {C}ollege bachelor's thesis (advisor: {R}obert {R}eynolds)",
+month = "May",
+year = "2008"
+}
+
+@UNPUBLISHED{WikiSphericalHarmonics,
+author = "Dang, C.",
+title = "Harmoniques spheriques positif negatif",
+note = "Web: http://en.wikipedia.org/wiki/Spherical\_harmonics",
+month = "December",
+year = "2004"
+
+}
+
+@UNPUBLISHED{CalvertSphericalHarmonics,
+author = "Calvert, J.B.",
+title = "Spherical harmonics",
+note = "Web: http://www.du.edu/~jcalvert/math/harmonic/harmonic.htm",
+month = "March",
+year = "2001"
+
+}
+
+@UNPUBLISHED{BetheBNLT7,
+author = "Bethe, H.A.",
+title = "Brookhaven National Laboratory Report BNL-T-7",
+note = "U.S. Atomic Energy Commission Document",
+year = "1949."
+}
+
+ @UNPUBLISHED{KissellPRCMICH,
+ author = "J. Kissel",
+ title = "MICH and PRC coupling into DARM",
+ note = "Web: http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detector\& date\_to\_view=06/16/2009\&anchor\_to\_scroll\_to=2009:06:16:23:51:59-kissel",
+ month = "June",
+ year = "2009"
+ }
+ 
+  @UNPUBLISHED{KissellPRCMICHtiny,
+ author = "J. Kissel",
+ title = "MICH and PRC coupling into DARM",
+ note = "Web: http://tinyurl.com/yg3gvv2",
+ month = "June",
+ year = "2009"
+ }
+
+@UNPUBLISHED
+
+@TECHREPORT{MonitorRC,
+	author = "Gustafson, D.",
+	title = "Analyzing system and reference beam for individually monitoring recycling cavity and carrier dynamics",
+	institution = "Laser Interferometer Gravitational Wave Observatory",
+	number = "T050004-00-I",
+	month = "January",
+	year = "2005"
+
+}
+
+@TECHREPORT{FieldsRC,
+	author = "Gretarsson, A.M. and Frolov, V. and O'Reilly, B. and D'Ambrosio, E. and Fritschel, P.K.",
+	title = "Fields in the recycling cavity at the LIGO Livingston Observatory",
+	institution = "Laser Interferometer Gravitational Wave Observatory",
+	number = "T050040-00-D",
+	month = "March",
+	year = "2005"
+	
+}
+
+@UNPUBLISHED{LaserStabPDH,
+	author = "Doermann, G.R. and Christensen, D. and Daniels, J. and Stanley, N.",
+	title = "Laser stabilization using the Pound-Drever-Hall method",
+	note = "Unpublished"
+
+}
+
+@TECHREPORT{PDHNotes,
+ author = "Black, E.",
+ title = "Notes on the Pound-Drever-Hall technique",
+ institution = "Laser Interferometer Gravitational Wave Observatory",
+ number = "T980045-00-D",
+ month = "April",
+ year = "1998"
+}
+
+@TECHREPORT{ResonanceFP,
+	author = "Rakhmanov, M. and Savage, R.L. Jr. and Reitze, D.H. and Tanner, D.B.",
+	title = "Dynamic resonance of light in Fabry-Perot cavities",
+	institution = "Laser Interferometer Gravitational Wave Observatory",
+	number = "P010013-00-D", 
+	month = "January",
+	year = "2001",
+
+}
+
+@TECHREPORT{LIGOWorks,
+	author = "Weiss, R.",
+	title = "{The LIGO interferometers: how they work and how well they work}",
+	institution = "Laser Interferometer Gravitational Wave Observatory",
+	number = "G030024-00-D",
+	month = "February",
+	year = "2003"
+
+}
+
+@TECHREPORT{ResponsesFP,
+	author = "Rakhmanov, M. and Savage, R.",
+	title = "Measurement of dynamic responses of the 4-km LIGO Fabry-Perot arm cavities",
+	institution = "Laser Interferometer Gravitational Wave Observatory",
+	number = "G040045-00-Z",
+	month = "February",
+	year = "2004"
+	
+}
+
+@TECHREPORT{NeutrinoAPSMatrix,
+  author = "Freedman, S. and Kayser, B.",
+  title = "The Neutrino Matrix",
+  institution = "American Physical Society Multidivisional Neutrino Study",
+  month = "November",
+  year = "2004"
+
+}
+
+@TECHREPORT{NeutrinoAPSSolar,
+  author = "Back, H. and others",
+  title = "Report of the Solar and Atmospheric Neutrino Experiments Working Group of the APS Multidivisional Neutrino Study",
+  institution = "American Physical Society Multidivisional Neutrino Study",
+  month = "January",
+  year = "2005"
+
+}
+
+@MASTERSTHESIS{GEMProfile,
+  author = "Wallmark, M.",
+  title = "Operating range of a gas electron multiplier for portal imaging",
+  school = "Karolinska Institutet, Stockholm",
+  year = "2000"
+  
+}
+
+@MISC{ml1,
+	author = "Imai, K.",
+	howpublished = "Web: $http://www.ee.kochi-ct.ac.jp/~imai/jupiter/ml1.jpg$",
+	note ="Courtesy of Prof. Kazumasa Imai of the Kochi National College of Techology"
+}
+
+@MISC{ScopeIdP,
+	author = "de Pater, I.",
+	howpublished = "In Astron. J., de Pater, 1991",
+	note ="Courtesy of Imke de Pater."
+}
+
+@MISC{jupiter22cm,
+	author = "Dulk, G.A. and Leblanc, Y. and Sault, R. and Hunstead, R.W.",
+	howpublished = "Web: http://wwwatnf.atnf.csiro.au/people/rsault/jupiter/images/",
+	note ="Courtesy of the Australia Telescope National Facility and CSIRO Australia"
+}
+
+@MISC{auroras,
+	author = "Clarke, J. and other",
+	howpublished = "Web: http://hubblesite.org/newscenter/newsdesk/ archive/releases/1998/04/image/a",
+	note ="Courtesy of John Clarke (University of Michigan), et al, and NASA."
+}
+
+@MISC{jupiter-aurora,
+	author = "Clarke, J. and others",
+	howpublished = "Web: http://www.jupiterradio.com/jove-emission.php",
+	note ="Courtesy of John Clarke (University of Michigan), et al, and NASA."
+}
+
+@MISC{CassA,
+	author = "Rudnick, L. and others",
+	howpublished = "Web: http//www.nrao.edu/imagegallery/ php/level3.php?id=395",
+	note ="Thanks to National Radio Astronomy Observatory/Associated Universities, Inc./National Science Foundation"
+}
+
+@MISC{Sun,
+	howpublished = "Web: http://web.haystack.mit.edu/SRT/files/sun.pdf",
+	note ="Thanks to Haystack Observatory and the Massachusetts Institute of Technology"
+}
+
+@MISC{RadioJove,
+	howpublished = "Web: http://radiojove.gsfc.nasa.gov/control/predictions0506.htm",
+	note ="Thanks to James Gass, James Thieman, Goddard Space Flight Center, the University of Florida, and NASA"
+}
+
+@MISC{SRT,
+	howpublished = "Web: http://web.haystack.mit.edu/SRT/",
+	note ="Thanks to Haystack Observatory and the Massachusetts Institute of Technology"
+}
+
+@MISC{NeonSpectrum,
+	author = "Koeppen, J.",
+	howpublished = "Web: http://astro.u-strasbg.fr/~koppen/discharge/",
+	note ="Thanks to J. Koeppen, the Astronomical Data Center"
+}
+
+@MISC{GEMTransfer,
+  author = "Sauli, F.",
+  title = "Gas electron multiplier (GEM): robust, high-performance ionizing radiation detector",
+  howpublished = "Web: http://cern.ch/TTdb/Technologies/GEM",
+  note = "Thanks to F. Sauli and CERN Technology Transfer"
+
+  }
+
+  @MISC{NISTPlanck,
+  title = "{The NIST reference on constants, units, and uncertainty: fundamental physics constants, Planck's constant \textit{h}. Web: http://physics.nist.gov/cgi-bin/cuu/Value?h}"
+  howpublished = "Web: http://physics.nist.gov/cgi-bin/cuu/Value?h",
+  note = "Thanks to the National Institute of Standards and Technology."
+  }
+
+@MISC{NISTAStarWater,
+title = "Stopping power and range tables for electrons, protons, and helium ions.",
+author = "Berger, M.J. and Coursey, J.S. and Zucker, M.A. and Chang, J.",
+howpublished = "Web: http://www.physics.nist.gov/PhysRefData/Star/Text/contents.html",
+note = "Thanks to the National Institute of Standards and Technology."
+}
+
+@MISC{LALAPPSrepo,
+author = "{The LIGO Scientific Collaboration}",
+title = "{LALApps} repository",
+howpublished = "Web: http://www.lsc-group.phys.uwm.edu/daswg/" 
+}
+
+@TECHREPORT{Maggiore2000,
+author = "Maggiore, M.",
+title = "Gravitational wave experiments and early universe cosmology",
+institution = "arXiv",
+number = "gr-qc/990901v4",
+year = "2000-02-06"
+}
+
+@TECHREPORT{Carroll1997,
+author = "Carroll, S.M.",
+title = "Lecture notes on General Relativity",
+institution = "arXiv",
+number = "gr-qc/9712019v1".
+year = "1997-12-03"
+}
+
+@TECHREPORT{Abbott2006,
+author = "Abbott, B. and Abbott, R. and Adhikari, R. and Agresti, J. and Ajith, P. and Allen, B. and Amin, R. and Anderson, S.B. and Anderson, W.G. and Araya, M. and et al.",
+title = "Searching for a stochastic background of gravitational waves with {LIGO}",
+institution = "arXiv",
+number = "astro-ph/0608606v1",
+year = "2006-08-28"
+}
+
+@TECHREPORT{Abbott2007,
+author = "Abbott, B. and Abbott, R. and Adhikari, R. and Agresti, J. and Ajith, P. and Allen, B. and Amin, R. and Anderson, S.B. and Anderson, W.G. and Arain, M. and et al.",
+title = "Upper limit map of a background of gravitational waves",
+institution = "arXiv",
+number = "astro-ph/0703234v1",
+year = "2007-03-09"
+}
+
+@TECHREPORT{Ballmer2006,
+author = "Ballmer, S.",
+title = "Limits on a stochastic background of gravitational waves",
+institution = "LIGO",
+number = "G06051-00-0",
+year = "2006-10-23"
+}
+
+@TECHREPORT{Mandic2005,
+author = "Mandic, V.",
+title = "Searching for a stochastic background with LIGO: results and implications for pre-Big Bang models",
+institution = "LIGO",
+number = "G050622-00",
+year = "2005-12-06"
+}
+
+@TECHREPORT{Stochastic2006,
+author = "Stochastic background group",
+title = "Overview of {Matlab} code used for the S3 analysis",
+institution = "LIGO",
+number = "T050029-01-Z",
+year = "2006-03-17"
+}
+
+@TECHREPORT{Formulae2007,
+	author = "Ballmer, S. and Romano, J. and Mandic, V.and Mitra, S.",
+	title = "Formulae for stochastic multipole search",
+	institution = "LIGO",
+	number = "T070045-00-U",
+	year = "2007"
+}
+
+@TECHREPORT{Direct2006,
+	author = "Ballmer, S.",
+	title = "Note on direct maximum likelihood estimation of SGWB",
+	institution = "LIGO",
+	number = "T06xxxx-xx-x",
+	year = "2006"
+}
+
+@TECHREPORT{Waldman2011,
+author = "Waldman, S. and Chua, S.",
+title = "eLIGO Hanford Output Mode Cleaner Repair",
+institution = "LIGO",
+number = "T1100562",
+year = "2011"
+}
+
+@PHDTHESIS{BallmerThesis,
+author = "Ballmer, S. W.",
+title = "LIGO interferometer operating at design sensitivity with application to gravitational radiometry",
+school = "Massachusetts Institute of Technology",
+year = "2006"
+}
+
+@PHDTHESIS{AdhikariThesis,
+author = "Adhikari, R.",
+title = "Sensitivity and Noise Analysis of 4 km Laser Interferometric Gravitational Wave Antennae",
+school = "Massachusetts Institute of Technology",
+year = "2004"
+}
+
+@PHDTHESIS{MavalvalaThesis,
+author = "Mavalvala, N.",
+title = "Alignment issues in laser interferometer gravitational-wave detectors",
+school = "Massachusetts Institute of Technology",
+year = "1997"
+}
+
+@PHDTHESIS{DergachevThesis,
+author = "Dergachev, V.",
+title = "An all-sky search for continuous gravitational waves",
+school = "University of Michigan",
+year = "2009"
+}
+
+@PHDTHESIS{GoetzThesis,
+author = "Goetz, Evan A.",
+title = "Gravitational wave studies: detector calibration and an all-sky search for spinning neutron stars in binary systems",
+school = "University of Michigan",
+year = "2010"
+}
+
+@PHDTHESIS{SmithThesis,
+author = "Smith-Lefebvre, Nicol\'{a}s {de Mateo}",
+title = "Techniques for improving the readout sensitivity of gravitational wave antennae",
+school = "Massachusetts Institute of Technology",
+month = jun,
+year = 2012"
+}
+
+@PHDTHESIS{FarrThesis,
+author = "Farr, Will M.",
+title = "Numerical relativity from a gauge theory perspective",
+school = "Massachusetts Institute of Technology",
+month = feb,
+year = "2010"
+}
+
+@PHDTHESIS{DooleyThesis,
+author = "Katherine Laird Dooley",
+title = "Design and performance of high laser power interferometers for gravitational-wave detection",
+school = "University of Florida",
+year = "2011"
+}
+
+@PHDTHESIS{FrickeThesis,
+author = "Tobin Thomas Fricke",
+title = "Homodyne detection for laser-interferometeric gravitational wave detectors",
+school = "Louisiana State University",
+month = dec,
+year = "2011"
+}
+
+@PHDTHESIS{KisselThesis,
+author = "Jeffrey S. Kissel",
+title = "Calibrating and improving the sensitivity of the {LIGO} detectors",
+school = "Louisiana State University",
+month = dec,
+year = "2010"
+}
+
+@PHDTHESIS{DwyerThesis,
+author = "Sheila E Dwyer",
+title = "Quantum noise reduction using squeezed states in LIGO",
+school = "Massachusetts Institute of Technology",
+month = feb,
+year = "2013"
+}
+
+@PHDTHESIS{ChuaThesis,
+author = ""
+}
+
+@MASTERSTHESIS{FotopoulosThesis,
+author = "Fotopoulos, Nickolas",
+title = "Searching for stochastic gravitational waves using co-located interferometric detectors",
+school = "Massachusetts Institute of Technology",
+month = sep,
+year = "2006"
+}
