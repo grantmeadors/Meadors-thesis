@@ -165,7 +165,7 @@ By minimizing the transfer function and thus our fitted filter where it would be
         \subsection{Wiener filters}
         \label{wiener_filters}
 
-            Rana and Jenne's 40 m Wiener filtering attempts and why that fails here. Klimenko?
+            Rana and Jenne's 40 m Wiener filtering attempts \cite{Driggers2012ActiveNoise} and why that fails here. Klimenko?
 
             Wiener filtering searches for an optimal filter of a particular kind: it minimizes the squared error. That error can be the difference between the estimated signal and the time-delayed signal. However, the error is over the entire spectrum. For our problem, we would have to band-pass the spectrum into many sub-spectra, then evaluate the error over those, or else the estimation would be overwhelmed by the power at low-frequencies. The coherence at low-frequencies is low, so basing a filter on those, especially at the expense of higher frequencies, would be unjustified and futile.
 

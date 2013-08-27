@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  9 JUL 2013 23:07
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  27 AUG 2013 18:51
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -791,18 +791,18 @@ File: sample.eps Graphic file (type eps)
 <sample.eps>) (./thesis.bbl [38] [39
 
 ] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 189--195
+Underfull \hbox (badness 10000) in paragraph at lines 194--200
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--195
+Underfull \hbox (badness 10000) in paragraph at lines 194--200
 \OT1/cmr/m/n/10 http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detecto
 r&
  []
 
 [41]
-Underfull \hbox (badness 2376) in paragraph at lines 308--311
+Underfull \hbox (badness 2376) in paragraph at lines 313--316
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
@@ -821,12 +821,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3660 strings out of 95847
- 47674 string characters out of 1195216
- 121504 words of memory out of 1000001
- 6495 multiletter control sequences out of 10000+50000
+ 3661 strings out of 95847
+ 47699 string characters out of 1195216
+ 121549 words of memory out of 1000001
+ 6496 multiletter control sequences out of 10000+50000
  13849 words of font info for 53 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
  33i,10n,36p,1676b,402s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (50 pages, 187052 bytes).
+Output written on thesis.dvi (50 pages, 187656 bytes).

@@ -26,21 +26,21 @@ I was expecting a `,' or a `}'---line 1474 of file bibliography.bib
  : year = "c. 1120"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 1611 of file bibliography.bib
+I was expecting a `{' or a `('---line 1618 of file bibliography.bib
  : 
  : @TECHREPORT{MonitorRC,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1770 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1777 of file bibliography.bib
  :   
  :   howpublished = "Web: http://physics.nist.gov/cgi-bin/cuu/Value?h",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1799 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1806 of file bibliography.bib
  : number = "gr-qc/9712019v1"
  :                           .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1907 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1921 of file bibliography.bib
  : year = 2012
  :            "
 I'm skipping whatever remains of this entry
@@ -53,45 +53,45 @@ Warning--empty title in Deschrijver2008
 Warning--empty title in Gustavsen2006
 Warning--empty title in Gustavsen1999
 Warning--empty title in McKee1977
-You've used 58 entries,
+You've used 59 entries,
             2118 wiz_defined-function locations,
-            838 strings with 13178 characters,
-and the built_in function-call counts, 16024 in all, are:
-= -- 1498
-> -- 973
+            845 strings with 13397 characters,
+and the built_in function-call counts, 16335 in all, are:
+= -- 1526
+> -- 996
 < -- 10
-+ -- 399
-- -- 334
-* -- 1131
-:= -- 3015
-add.period$ -- 167
-call.type$ -- 58
-change.case$ -- 319
++ -- 408
+- -- 342
+* -- 1156
+:= -- 3073
+add.period$ -- 170
+call.type$ -- 59
+change.case$ -- 326
 chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 554
-empty$ -- 1029
-format.name$ -- 334
-if$ -- 3102
+cite$ -- 67
+duplicate$ -- 564
+empty$ -- 1047
+format.name$ -- 342
+if$ -- 3162
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 32
-newline$ -- 286
-num.names$ -- 116
-pop$ -- 297
+int.to.str$ -- 59
+missing$ -- 33
+newline$ -- 291
+num.names$ -- 118
+pop$ -- 302
 preamble$ -- 1
-purify$ -- 283
+purify$ -- 289
 quote$ -- 0
-skip$ -- 367
+skip$ -- 375
 stack$ -- 0
-substring$ -- 496
-swap$ -- 55
+substring$ -- 501
+swap$ -- 56
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 222
+type$ -- 226
 warning$ -- 8
-while$ -- 131
-width$ -- 60
-write$ -- 613
+while$ -- 133
+width$ -- 61
+write$ -- 624
 (There were 9 error messages)
