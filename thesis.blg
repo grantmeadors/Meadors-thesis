@@ -21,26 +21,26 @@ I was expecting a `,' or a `}'---line 440 of file bibliography.bib
  :   pages = "553"
  :                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1474 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1483 of file bibliography.bib
  : 
  : year = "c. 1120"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 1618 of file bibliography.bib
+I was expecting a `{' or a `('---line 1620 of file bibliography.bib
  : 
  : @TECHREPORT{MonitorRC,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1777 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1779 of file bibliography.bib
  :   
  :   howpublished = "Web: http://physics.nist.gov/cgi-bin/cuu/Value?h",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1806 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1808 of file bibliography.bib
  : number = "gr-qc/9712019v1"
  :                           .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1921 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1916 of file bibliography.bib
  : year = 2012
  :            "
 I'm skipping whatever remains of this entry
