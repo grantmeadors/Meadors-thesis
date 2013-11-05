@@ -21,77 +21,85 @@ I was expecting a `,' or a `}'---line 440 of file bibliography.bib
  :   pages = "553"
  :                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1483 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1582 of file bibliography.bib
  : 
  : year = "c. 1120"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 1620 of file bibliography.bib
- : 
- : @TECHREPORT{MonitorRC,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1779 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1905 of file bibliography.bib
  :   
  :   howpublished = "Web: http://physics.nist.gov/cgi-bin/cuu/Value?h",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1808 of file bibliography.bib
+I was expecting a `,' or a `}'---line 1934 of file bibliography.bib
  : number = "gr-qc/9712019v1"
  :                           .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1916 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2057 of file bibliography.bib
  : year = 2012
  :            "
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Farr2010"
+Warning--empty title in LIGOCal2010
 Warning--empty title in LSCPowerFlux2009
 Warning--empty title in LSCPulsar2006
+Warning--empty title in Antares2013
+Warning--empty title in Black2001
 Warning--empty title in Caldwell1981
 Warning--empty year in Carroll1997
 Warning--empty title in Deschrijver2008
+Warning--empty title in Swift2012
+Warning--empty title in Grishchuk1974
 Warning--empty title in Gustavsen2006
 Warning--empty title in Gustavsen1999
+Warning--empty title in HulseTaylor1975
+Warning--empty title in Kuroda2010
+Warning--empty title in Lindblom1995
 Warning--empty title in McKee1977
-You've used 59 entries,
+Warning--empty title in Ott2009
+Warning--empty title in Sathyaprakash2009
+Warning--empty publisher in Matlab2012a
+Warning--empty title in Welch1967
+Warning--empty title in Willke2002
+You've used 89 entries,
             2118 wiz_defined-function locations,
-            845 strings with 13397 characters,
-and the built_in function-call counts, 16335 in all, are:
-= -- 1526
-> -- 996
-< -- 10
-+ -- 408
-- -- 342
-* -- 1156
-:= -- 3073
-add.period$ -- 170
-call.type$ -- 59
-change.case$ -- 326
+            1025 strings with 16817 characters,
+and the built_in function-call counts, 24305 in all, are:
+= -- 2273
+> -- 1403
+< -- 12
++ -- 568
+- -- 472
+* -- 1716
+:= -- 4516
+add.period$ -- 249
+call.type$ -- 89
+change.case$ -- 454
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 564
-empty$ -- 1047
-format.name$ -- 342
-if$ -- 3162
+cite$ -- 110
+duplicate$ -- 876
+empty$ -- 1654
+format.name$ -- 472
+if$ -- 4769
 int.to.chr$ -- 0
-int.to.str$ -- 59
-missing$ -- 33
-newline$ -- 291
-num.names$ -- 118
-pop$ -- 302
+int.to.str$ -- 89
+missing$ -- 63
+newline$ -- 429
+num.names$ -- 180
+pop$ -- 427
 preamble$ -- 1
-purify$ -- 289
+purify$ -- 402
 quote$ -- 0
-skip$ -- 375
+skip$ -- 608
 stack$ -- 0
-substring$ -- 501
-swap$ -- 56
-text.length$ -- 10
+substring$ -- 792
+swap$ -- 85
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 226
-warning$ -- 8
-while$ -- 133
-width$ -- 61
-write$ -- 624
-(There were 9 error messages)
+type$ -- 340
+warning$ -- 21
+while$ -- 201
+width$ -- 91
+write$ -- 931
+(There were 8 error messages)

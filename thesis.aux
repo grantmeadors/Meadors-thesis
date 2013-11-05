@@ -125,241 +125,346 @@
 \newlabel{worldwide}{{1.4.4}{11}{Worldwide network\relax }{subsection.1.4.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.5}Summary}{11}{section.1.5}}
 \newlabel{intro_summary}{{1.5}{11}{Summary\relax }{section.1.5}{}}
+\citation{Thorne300}
 \@writefile{toc}{\hbox { }}
 \@writefile{toc}{\contentsline {chap}{\numberline {\hbox { }\hfill \bf  II.\hspace  {5pt}}{\bf  Feedforward: Auxiliary MICH-PRC Subtraction}}{12}{chapter.2}}
 \@writefile{toc}{\hbox { }}
 \newlabel{chap2}{{II}{12}{Feedforward: Auxiliary MICH-PRC Subtraction\relax }{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Motivation and mathematics for feedforward}{12}{section.2.1}}
-\newlabel{motive_math}{{2.1}{12}{Motivation and mathematics for feedforward\relax }{section.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces MICH noise seen as DARM/(arm gain); PRC too seen in DARM}}{14}{figure.2.1}}
-\newlabel{arms}{{2.1}{14}{Motivation and mathematics for feedforward\relax }{figure.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Auxiliary noise coherence at sensitive frequencies}{15}{subsection.2.1.1}}
-\newlabel{aux_noise}{{2.1.1}{15}{Auxiliary noise coherence at sensitive frequencies\relax }{subsection.2.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Predicted and empirical correction}{16}{subsection.2.1.2}}
-\newlabel{correction}{{2.1.2}{16}{Predicted and empirical correction\relax }{subsection.2.1.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{12}{section.2.1}}
+\newlabel{introduction}{{2.1}{12}{Introduction\relax }{section.2.1}{}}
+\citation{Willke2002,Hild2009}
+\citation{Acernese2005}
+\citation{LIGOFirst2004,Fricke2009}
+\citation{HulseTaylor1975}
+\citation{Lindblom1995,AbbottPulsar2006}
+\citation{Sathyaprakash2009}
+\citation{Chandrasekhar1969,Ott2009}
+\citation{Grishchuk1974}
+\citation{Riles2013}
+\citation{Kuroda2010}
 \citation{Saulson}
+\citation{Black2001}
+\citation{Fricke2009}
+\citation{MatappsRepository}
+\citation{AllenHuaOttewill1999}
+\citation{Fricke2009}
+\citation{AdhikariThesis,BallmerThesis}
 \citation{KisselThesis}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Filter mathematics: in-loop and out-of-loop}{17}{subsection.2.1.3}}
-\newlabel{filter_math}{{2.1.3}{17}{Filter mathematics: in-loop and out-of-loop\relax }{subsection.2.1.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Estimating optimal filters}{17}{subsection.2.1.4}}
-\newlabel{filter_est}{{2.1.4}{17}{Estimating optimal filters\relax }{subsection.2.1.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Statistically-significant coherence justifies fit}}{18}{figure.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Transfer function fit in coherent band}}{18}{figure.2.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Fits for 1024 s windows in a science segment}}{19}{figure.2.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Subtracted spectrum for one window}}{19}{figure.2.5}}
+\citation{Matlab2012a}
+\citation{Deschrijver2008,Gustavsen1999,Gustavsen2006}
+\citation{Willke2002}
+\citation{LIGOFirst2004}
+\citation{Acernese2005}
+\citation{Kuroda2010}
+\citation{LIGOFirst2004,ReadoutGWA}
+\citation{AllenHuaOttewill1999,AdhikariThesis}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Description of the feedforward method}{15}{section.2.2}}
+\newlabel{motive_math}{{2.2}{15}{Description of the feedforward method\relax }{section.2.2}{}}
+\newlabel{hoftDef}{{2.1}{16}{Description of the feedforward method\relax }{equation.2.1}{}}
+\newlabel{CARMdef}{{2.2}{16}{Description of the feedforward method\relax }{equation.2.2}{}}
+\newlabel{DARMdef}{{2.3}{16}{Description of the feedforward method\relax }{equation.2.2}{}}
+\newlabel{PRCdef}{{2.4}{16}{Description of the feedforward method\relax }{equation.2.2}{}}
+\newlabel{MICHdef}{{2.5}{16}{Description of the feedforward method\relax }{equation.2.2}{}}
+\newlabel{Lydef}{{2.6}{16}{Description of the feedforward method\relax }{equation.2.6}{}}
+\newlabel{Lxdef}{{2.7}{16}{Description of the feedforward method\relax }{equation.2.6}{}}
+\newlabel{lydef}{{2.8}{16}{Description of the feedforward method\relax }{equation.2.6}{}}
+\newlabel{lxdef}{{2.9}{16}{Description of the feedforward method\relax }{equation.2.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Gravitational wave strain $h(t)$ is derived from differential arm motion (DARM), read-out from a photodiode downstream of the antisymmetric port. A small ghost beam from a reflection off an anti-reflective coating, on either the beam-splitter (BS) or an inner test mass (ITM), provides the Michelson (MICH) channel. The DARM readout channel predominantly measures the small change in different arm length, $\delta (L_-) \equiv \delta (L_y - L_x)$, while MICH measures that in the Michelson length $\delta (l_-) \equiv \delta (l_y - l_x)$. There is also a small coupling from $\delta (l_-)$ to the DARM channel. To a lesser extent, changes in the length of PRC, which is defined as $\delta (l_+) \equiv \delta (l_y + l_x)/2$ and is measured in quadrature demodulation with respect to the MICH pick-off, also add noise to DARM.}}{17}{figure.2.1}}
+\newlabel{arms}{{2.1}{17}{Description of the feedforward method\relax }{figure.2.1}{}}
+\citation{ReadoutGWA,BallmerThesis}
+\citation{Boashash1990}
+\citation{MendellCohere2013}
+\newlabel{rcfactor}{{2.10}{18}{Description of the feedforward method\relax }{equation.2.10}{}}
+\citation{AllenHuaOttewill1999}
+\citation{Matlab2012a}
+\citation{LIGOCal2010}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Auxiliary noise coherence at sensitive frequencies}{19}{subsection.2.2.1}}
+\newlabel{aux_noise}{{2.2.1}{19}{Auxiliary noise coherence at sensitive frequencies\relax }{subsection.2.2.1}{}}
+\newlabel{coherenceDef}{{2.11}{19}{Auxiliary noise coherence at sensitive frequencies\relax }{equation.2.11}{}}
+\newlabel{CohereProb}{{2.12}{19}{Auxiliary noise coherence at sensitive frequencies\relax }{equation.2.11}{}}
+\citation{Deschrijver2008,Gustavsen2006,Gustavsen1999}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Estimating optimal filters}{20}{subsection.2.2.2}}
+\newlabel{filter_est}{{2.2.2}{20}{Estimating optimal filters\relax }{subsection.2.2.2}{}}
+\citation{AllenHuaOttewill1999}
+\newlabel{Txy}{{2.13}{22}{Estimating optimal filters\relax }{equation.2.13}{}}
+\newlabel{Pyx}{{2.14}{22}{Estimating optimal filters\relax }{equation.2.14}{}}
+\newlabel{Pyxext}{{2.15}{22}{Estimating optimal filters\relax }{equation.2.14}{}}
+\newlabel{crossCovar}{{2.16}{22}{Estimating optimal filters\relax }{equation.2.14}{}}
+\newlabel{gcf}{{2.17}{22}{Estimating optimal filters\relax }{equation.2.17}{}}
+\newlabel{hatsf}{{2.18}{22}{Estimating optimal filters\relax }{equation.2.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Sample coherence measurements between $h(t)$ and auxiliary control channels for LIGO Hanford Observatory, H1: 2010 March 21. $h(t)$-to-MICH coherence on left, $h(t)$-to-PRC coherence on right. Statistically significant coherence justifies fitting; in frequency bands where coherence rose above background levels, the transfer function fit was weighted more heavily.}}{23}{figure.2.2}}
+\newlabel{coherenceGraph}{{2.2}{23}{Estimating optimal filters\relax }{figure.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Sample transfer function measurements (amplitude and phase) from LIGO Hanford Observatory, H1: 2010 March 21; MICH on left, PRC on right. Transfer function fit in coherent band -- note the difference between raw data residual and the 'pre-processed residual', which has been smoothed and weighted to emphasize known-coherent bands.}}{24}{figure.2.3}}
+\newlabel{tfGraph}{{2.3}{24}{Estimating optimal filters\relax }{figure.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Sample Bode plots of fitted ZPK filter functions (amplitude and phase) for multiple 1024 s windows in a science segment, at LIGO Hanford Observatory, H1: 2010 March 21; MICH on left, PRC on right.}}{25}{figure.2.4}}
+\newlabel{BodePlots}{{2.4}{25}{Estimating optimal filters\relax }{figure.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Sample subtracted spectra for one window, representing the applied feedforward corrections for each channel during that window, at LIGO Hanford Observatory, H1: 2010 March 21; MICH on left, PRC on right. }}{25}{figure.2.5}}
+\newlabel{subtractedSpectrum}{{2.5}{25}{Estimating optimal filters\relax }{figure.2.5}{}}
 \citation{Driggers2012ActiveNoise}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Prior programs}{20}{section.2.2}}
-\newlabel{prior_programs}{{2.2}{20}{Prior programs\relax }{section.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Manually-designed rational filtering}{20}{subsection.2.2.1}}
-\newlabel{manual_design}{{2.2.1}{20}{Manually-designed rational filtering\relax }{subsection.2.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Vector-fitted filter functions}{20}{subsection.2.2.2}}
-\newlabel{vectfit}{{2.2.2}{20}{Vector-fitted filter functions\relax }{subsection.2.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Wiener filters}{20}{subsection.2.2.3}}
-\newlabel{wiener_filters}{{2.2.3}{20}{Wiener filters\relax }{subsection.2.2.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Feedforward in-loop}{20}{section.2.3}}
-\newlabel{in-loop}{{2.3}{20}{Feedforward in-loop\relax }{section.2.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Filter fitting}{20}{subsection.2.3.1}}
-\newlabel{filter_fitting_in-loop}{{2.3.1}{20}{Filter fitting\relax }{subsection.2.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces \textit  {Feedforward filtering pipeline}}}{21}{figure.2.6}}
-\newlabel{pipeline}{{2.6}{21}{Feedforward out-of-loop\relax }{figure.2.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Real-time filtering}{21}{subsection.2.3.2}}
-\newlabel{real-time}{{2.3.2}{21}{Real-time filtering\relax }{subsection.2.3.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Feedforward out-of-loop}{21}{section.2.4}}
-\newlabel{out-of-loop}{{2.4}{21}{Feedforward out-of-loop\relax }{section.2.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Filter fitting across science segments}{22}{subsection.2.4.1}}
-\newlabel{filter_fitting-out-of-loop}{{2.4.1}{22}{Filter fitting across science segments\relax }{subsection.2.4.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Data frame generation}{22}{subsection.2.4.2}}
-\newlabel{data_frames}{{2.4.2}{22}{Data frame generation\relax }{subsection.2.4.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Post-processing diagnostics}{22}{subsection.2.4.3}}
-\newlabel{diagnostics}{{2.4.3}{22}{Post-processing diagnostics\relax }{subsection.2.4.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces \textit  {Windowing}}}{23}{figure.2.7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemplar, +1.1 Mpc (5.9\% inspiral range) \textit  {(GPS 953164819 to 953165839, 2010-03-21)}}}{23}{figure.2.8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Best seen, +4.4 Mpc (29\% inspiral range) \textit  {(GPS 955187679 to 955188191, 2010-04-13)}}}{24}{figure.2.9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Arithmetic (black) \& harmonic (red) mean, 200 jobs: \textit  {(before-after)} (L), \textit  {(before-after)/before} (R)}}{24}{figure.2.10}}
-\citation{AdhikariThesis}
-\citation{BallmerThesis}
-\citation{Deschrijver2008}
-\citation{Gustavsen2006}
-\citation{Gustavsen1999}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}Feedforward benefits and potential}{25}{subsection.2.4.4}}
-\newlabel{benefits}{{2.4.4}{25}{Feedforward benefits and potential\relax }{subsection.2.4.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Inspiral range vs time: LHO (L) gains 0.69 Mpc, LLO (R) gains 0.43 Mpc}}{26}{figure.2.11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Inspiral range \textit  {fractional gain} vs time: LHO (L) 4.13\% better, LLO (R) 3.60\% better}}{27}{figure.2.12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Webpages, window-by-window: \newline  \texttt  {https://ldas-jobs.ligo.caltech.edu/} \texttt  {\~{}pulsar/feedforward/diagnostics}}}{27}{figure.2.13}}
+\citation{Sigg2005}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Feedforward in-loop and alternative programs}{26}{section.2.3}}
+\newlabel{prior_programs}{{2.3}{26}{Feedforward in-loop and alternative programs\relax }{section.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Manually-designed rational filtering}{26}{subsection.2.3.1}}
+\newlabel{manual_design}{{2.3.1}{26}{Manually-designed rational filtering\relax }{subsection.2.3.1}{}}
+\citation{Wiener1949}
+\citation{KlimenkoSite}
+\citation{Driggers2012ActiveNoise}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Vector-fitted filter functions}{27}{subsection.2.3.2}}
+\newlabel{vectfit}{{2.3.2}{27}{Vector-fitted filter functions\relax }{subsection.2.3.2}{}}
+\newlabel{RMSerrorDefinition}{{2.19}{27}{Vector-fitted filter functions\relax }{equation.2.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Wiener filters}{27}{subsection.2.3.3}}
+\newlabel{wiener_filters}{{2.3.3}{27}{Wiener filters\relax }{subsection.2.3.3}{}}
+\citation{Swift2012,Antares2013}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Real-time in-loop filtering}{28}{subsection.2.3.4}}
+\newlabel{real-time}{{2.3.4}{28}{Real-time in-loop filtering\relax }{subsection.2.3.4}{}}
+\citation{Matlab2012a,Welch1967}
+\citation{FinnInspiral1993}
+\citation{LIGOBurst2012}
+\citation{Findchirp2012,PetersMatthews1963}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Safeguards and vetoes}{29}{section.2.4}}
+\newlabel{safeguards}{{2.4}{29}{Safeguards and vetoes\relax }{section.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Runtime safeguards}{29}{subsection.2.4.1}}
+\newlabel{runtimeSafeguards}{{2.4.1}{29}{Runtime safeguards\relax }{subsection.2.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Post-processing safeguards}{30}{subsection.2.4.2}}
+\newlabel{postprocessingSafeguards}{{2.4.2}{30}{Post-processing safeguards\relax }{subsection.2.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Calibration line test: before-feedforward mean of the 393.1 Hz line and two neighboring FFT bins was $1.3082 \times 10^{-21}$, after was $1.3128 \times 10^{-21}$. Feedforward made the calibration line region noisier by $4.6 \times 10^{-24}$ or 0.35\%, suggesting that we correctly apply Hann-windowed feedforward without subtracting true $h(t)$ signal. Moreover, no spectral line combs are observed to either side of the calibration line peak at 393.1 Hz, indicating that the method does not introduce windowing artifacts.}}{31}{figure.2.6}}
+\newlabel{calLineTest}{{2.6}{31}{Post-processing safeguards\relax }{figure.2.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Time-domain plot of diagnostic channels from a burst injection: the simultaneous envelope increase after 1.8 s indicates that the burst injection is correctly time-stamped in the new data. Before-feedforward and after-feedforward traces occult each other in the graph, because they are almost identical.}}{32}{figure.2.7}}
+\newlabel{timeDomainInjection}{{2.7}{32}{Post-processing safeguards\relax }{figure.2.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Cross-correlation pairwise between pre-, post-feedforward, and injection data: the extrema and zero-crossings match. Note both before-feedforward (blue) and after-feedforward (green) strain traces are almost identical and therefore overlap. The strains appear inverted, but in the same way, due to a sign error in the hardware injections at this time.}}{32}{figure.2.8}}
+\newlabel{crossCorrelationGraph}{{2.8}{32}{Post-processing safeguards\relax }{figure.2.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Feedforward filtering pipeline to read in Hoft (calibrated DARM), MICH, PRC, and write out AMPS (clean calibrated DARM). Code can be found in the LIGO Matapps SVN: \texttt  {matapps/packages/detchar/AMPS/trunk/aletheia.m}}}{33}{figure.2.9}}
+\newlabel{pipelineGraph}{{2.9}{33}{Feedforward applied to MICH and PRC channels\relax }{figure.2.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Feedforward applied to MICH and PRC channels}{33}{section.2.5}}
+\newlabel{out-of-loop}{{2.5}{33}{Feedforward applied to MICH and PRC channels\relax }{section.2.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Filter fitting across science segments}{34}{subsection.2.5.1}}
+\newlabel{filter_fitting-out-of-loop}{{2.5.1}{34}{Filter fitting across science segments\relax }{subsection.2.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces A depiction of windowing for one cluster job, containing one LIGO science segment, illustrates windowing after an initial half-window offset. Filters are calculated for 1024-s windows, then the 50\%-overlapping Hann windows merged, whereupon AMPS $h(t)$ frames are written. Code can be found in the LIGO Matapps SVN: \texttt  {matapps/packages/detchar/AMPS/trunk/eleutheria.m}}}{35}{figure.2.10}}
+\newlabel{windowingScience}{{2.10}{35}{Filter fitting across science segments\relax }{figure.2.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemplar of a typical case, +1.1 Mpc (5.9\% inspiral range) \textit  {(GPS time 953164819 to 953165839, 2010 March 21)}}}{36}{figure.2.11}}
+\newlabel{typicalInspiralGraph}{{2.11}{36}{Post-processing diagnostics\relax }{figure.2.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Post-processing diagnostics}{36}{subsection.2.5.2}}
+\newlabel{diagnostics}{{2.5.2}{36}{Post-processing diagnostics\relax }{subsection.2.5.2}{}}
+\citation{FinnInspiral1993}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Best improvement seen in S6 for H1, +4.4 Mpc (29\% inspiral range) \textit  {(GPS 955187679 to 955188191, 2010 April 13)}}}{37}{figure.2.12}}
+\newlabel{bestInspiralGraph}{{2.12}{37}{Post-processing diagnostics\relax }{figure.2.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Harmonic mean, 200 jobs from GPS second $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit  {(before-after)} (L), \textit  {(before-after)/before} (R); greater than zero is improvement.}}{38}{figure.2.13}}
+\newlabel{SFTgraph}{{2.13}{38}{Post-processing diagnostics\relax }{figure.2.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Feedforward benefits and potential}{38}{subsection.2.5.3}}
+\newlabel{benefits}{{2.5.3}{38}{Feedforward benefits and potential\relax }{subsection.2.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces Inspiral range vs time for Science Run 6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30): LIGO Hanford Observatory, H1 (top) gains 0.23 Mpc; LIGO Livingston Observatory, L1 (bottom) gains 0.84 Mpc}}{39}{figure.2.14}}
+\newlabel{S6inspiralRange}{{2.14}{39}{Feedforward benefits and potential\relax }{figure.2.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces Inspiral range \textit  {fractional gain} vs time for Science Run 6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30): LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better}}{40}{figure.2.15}}
+\newlabel{S6inspiralRangeGain}{{2.15}{40}{Feedforward benefits and potential\relax }{figure.2.15}{}}
+\citation{MatappsRepository}
+\citation{BarsottiNatureSqueezing,DwyerPhaseNoise}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces Screenshot of diagnostic web pages, indexed by window.}}{41}{figure.2.16}}
+\newlabel{diagnosticWebpages}{{2.16}{41}{Feedforward benefits and potential\relax }{figure.2.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Conclusion}{41}{section.2.6}}
 \citation{DwyerThesis}
 \citation{ChuaThesis}
 \@writefile{toc}{\hbox { }}
-\@writefile{toc}{\contentsline {chap}{\numberline {\hbox { }\hfill \bf  III.\hspace  {5pt}}{\bf  Squeezing: Quantum Vacuum Phase Noise}}{29}{chapter.3}}
+\@writefile{toc}{\contentsline {chap}{\numberline {\hbox { }\hfill \bf  III.\hspace  {5pt}}{\bf  Squeezing: Quantum Vacuum Phase Noise}}{43}{chapter.3}}
 \@writefile{toc}{\hbox { }}
-\newlabel{chap3}{{III}{29}{Squeezing: Quantum Vacuum Phase Noise\relax }{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Squeezing theory}{29}{section.3.1}}
-\newlabel{squeezing_theory}{{3.1}{29}{Squeezing theory\relax }{section.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Quantum shot noise and radiation pressure}{29}{subsection.3.1.1}}
-\newlabel{quantum_noise}{{3.1.1}{29}{Quantum shot noise and radiation pressure\relax }{subsection.3.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Problems with lasers: thermal compensation}{29}{subsection.3.1.2}}
-\newlabel{TCS}{{3.1.2}{29}{Problems with lasers: thermal compensation\relax }{subsection.3.1.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Squeezing filter cavities against alternatives}{29}{subsection.3.1.3}}
-\newlabel{third-gen_squeezing}{{3.1.3}{29}{Squeezing filter cavities against alternatives\relax }{subsection.3.1.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}LIGO Hanford Observatory quantum vacuum squeezing}{29}{section.3.2}}
-\newlabel{LHO_squeeze}{{3.2}{29}{LIGO Hanford Observatory quantum vacuum squeezing\relax }{section.3.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Collaboration and contributions}{29}{subsection.3.2.1}}
-\newlabel{contributions}{{3.2.1}{29}{Collaboration and contributions\relax }{subsection.3.2.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Optical table support assembly}{29}{section*.7}}
-\newlabel{table_legs}{{3.2.1}{29}{Optical table support assembly\relax }{section*.7}{}}
+\newlabel{chap3}{{III}{43}{Squeezing: Quantum Vacuum Phase Noise\relax }{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Squeezing theory}{43}{section.3.1}}
+\newlabel{squeezing_theory}{{3.1}{43}{Squeezing theory\relax }{section.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Quantum shot noise and radiation pressure}{43}{subsection.3.1.1}}
+\newlabel{quantum_noise}{{3.1.1}{43}{Quantum shot noise and radiation pressure\relax }{subsection.3.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Problems with lasers: thermal compensation}{43}{subsection.3.1.2}}
+\newlabel{TCS}{{3.1.2}{43}{Problems with lasers: thermal compensation\relax }{subsection.3.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Squeezing filter cavities against alternatives}{43}{subsection.3.1.3}}
+\newlabel{third-gen_squeezing}{{3.1.3}{43}{Squeezing filter cavities against alternatives\relax }{subsection.3.1.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}LIGO Hanford Observatory quantum vacuum squeezing}{43}{section.3.2}}
+\newlabel{LHO_squeeze}{{3.2}{43}{LIGO Hanford Observatory quantum vacuum squeezing\relax }{section.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Collaboration and contributions}{43}{subsection.3.2.1}}
+\newlabel{contributions}{{3.2.1}{43}{Collaboration and contributions\relax }{subsection.3.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Optical table support assembly}{43}{section*.7}}
+\newlabel{table_legs}{{3.2.1}{43}{Optical table support assembly\relax }{section*.7}{}}
 \citation{SmithThesis}
 \citation{Waldman2011}
-\@writefile{toc}{\contentsline {subsubsection}{Faraday isolator measurement}{30}{section*.8}}
-\newlabel{Faraday}{{3.2.1}{30}{Faraday isolator measurement\relax }{section*.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{In-vacuum installation}{30}{section*.9}}
-\newlabel{In-vacuum}{{3.2.1}{30}{In-vacuum installation\relax }{section*.9}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Data digitization}{30}{section*.10}}
-\newlabel{data_digitization}{{3.2.1}{30}{Data digitization\relax }{section*.10}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Figures of merit: inspiral range}{30}{section*.11}}
-\newlabel{range_est}{{3.2.1}{30}{Figures of merit: inspiral range\relax }{section*.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Faraday isolator measurement}{44}{section*.8}}
+\newlabel{Faraday}{{3.2.1}{44}{Faraday isolator measurement\relax }{section*.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{In-vacuum installation}{44}{section*.9}}
+\newlabel{In-vacuum}{{3.2.1}{44}{In-vacuum installation\relax }{section*.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Data digitization}{44}{section*.10}}
+\newlabel{data_digitization}{{3.2.1}{44}{Data digitization\relax }{section*.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Figures of merit: inspiral range}{44}{section*.11}}
+\newlabel{range_est}{{3.2.1}{44}{Figures of merit: inspiral range\relax }{section*.11}{}}
 \citation{BarsottiNatureSqueezing}
 \citation{GEO600NatureSqueezing}
 \citation{DwyerPhaseNoise}
 \citation{ChuaBackscatteredLight}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Success and Advanced LIGO prospects}{31}{subsection.3.2.2}}
-\newlabel{squeezing_success}{{3.2.2}{31}{Success and Advanced LIGO prospects\relax }{subsection.3.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sample Figure}}{32}{figure.3.1}}
-\newlabel{sample_figure}{{3.1}{32}{Success and Advanced LIGO prospects\relax }{figure.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Success and Advanced LIGO prospects}{45}{subsection.3.2.2}}
+\newlabel{squeezing_success}{{3.2.2}{45}{Success and Advanced LIGO prospects\relax }{subsection.3.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sample Figure}}{46}{figure.3.1}}
+\newlabel{sample_figure}{{3.1}{46}{Success and Advanced LIGO prospects\relax }{figure.3.1}{}}
 \citation{GoetzThesis}
 \citation{LALAPPSrepo}
 \@writefile{toc}{\hbox { }}
-\@writefile{toc}{\contentsline {chap}{\numberline {\hbox { }\hfill \bf  IV.\hspace  {5pt}}{\bf  TwoSpect: Binary Pulsar Searches}}{33}{chapter.4}}
+\@writefile{toc}{\contentsline {chap}{\numberline {\hbox { }\hfill \bf  IV.\hspace  {5pt}}{\bf  TwoSpect: Binary Pulsar Searches}}{47}{chapter.4}}
 \@writefile{toc}{\hbox { }}
-\newlabel{chap4}{{IV}{33}{TwoSpect: Binary Pulsar Searches\relax }{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Neutron stars in binary systems}{33}{section.4.1}}
-\newlabel{binary_NS}{{4.1}{33}{Neutron stars in binary systems\relax }{section.4.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Binary spin-up and detectable lifetime}{33}{subsection.4.1.1}}
-\newlabel{spin-up}{{4.1.1}{33}{Binary spin-up and detectable lifetime\relax }{subsection.4.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Detection rate projections}{33}{subsection.4.1.2}}
-\newlabel{rate_projections}{{4.1.2}{33}{Detection rate projections\relax }{subsection.4.1.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}TwoSpect all-sky searches}{33}{section.4.2}}
-\newlabel{all-sky}{{4.2}{33}{TwoSpect all-sky searches\relax }{section.4.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Two spectra: a double Fourier transform}{33}{subsection.4.2.1}}
-\newlabel{two_spectra}{{4.2.1}{33}{Two spectra: a double Fourier transform\relax }{subsection.4.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Infering neutron stars with companions}{33}{subsection.4.2.2}}
-\newlabel{inference}{{4.2.2}{33}{Infering neutron stars with companions\relax }{subsection.4.2.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Directed TwoSpect}{34}{section.4.3}}
-\newlabel{directed}{{4.3}{34}{Directed TwoSpect\relax }{section.4.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Target, directed and all-sky search sensitivity}{34}{subsection.4.3.1}}
-\newlabel{tradeoffs}{{4.3.1}{34}{Target, directed and all-sky search sensitivity\relax }{subsection.4.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Enhancements enabled by directed searching}{34}{subsection.4.3.2}}
-\newlabel{directed_enhancements}{{4.3.2}{34}{Enhancements enabled by directed searching\relax }{subsection.4.3.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Scorpius X-1 and results from Directed TwoSpect}{34}{section.4.4}}
-\newlabel{directed_results}{{4.4}{34}{Scorpius X-1 and results from Directed TwoSpect\relax }{section.4.4}{}}
+\newlabel{chap4}{{IV}{47}{TwoSpect: Binary Pulsar Searches\relax }{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Neutron stars in binary systems}{47}{section.4.1}}
+\newlabel{binary_NS}{{4.1}{47}{Neutron stars in binary systems\relax }{section.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Binary spin-up and detectable lifetime}{47}{subsection.4.1.1}}
+\newlabel{spin-up}{{4.1.1}{47}{Binary spin-up and detectable lifetime\relax }{subsection.4.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Detection rate projections}{47}{subsection.4.1.2}}
+\newlabel{rate_projections}{{4.1.2}{47}{Detection rate projections\relax }{subsection.4.1.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}TwoSpect all-sky searches}{47}{section.4.2}}
+\newlabel{all-sky}{{4.2}{47}{TwoSpect all-sky searches\relax }{section.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Two spectra: a double Fourier transform}{47}{subsection.4.2.1}}
+\newlabel{two_spectra}{{4.2.1}{47}{Two spectra: a double Fourier transform\relax }{subsection.4.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Infering neutron stars with companions}{47}{subsection.4.2.2}}
+\newlabel{inference}{{4.2.2}{47}{Infering neutron stars with companions\relax }{subsection.4.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Directed TwoSpect}{48}{section.4.3}}
+\newlabel{directed}{{4.3}{48}{Directed TwoSpect\relax }{section.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Target, directed and all-sky search sensitivity}{48}{subsection.4.3.1}}
+\newlabel{tradeoffs}{{4.3.1}{48}{Target, directed and all-sky search sensitivity\relax }{subsection.4.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Enhancements enabled by directed searching}{48}{subsection.4.3.2}}
+\newlabel{directed_enhancements}{{4.3.2}{48}{Enhancements enabled by directed searching\relax }{subsection.4.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Scorpius X-1 and results from Directed TwoSpect}{48}{section.4.4}}
+\newlabel{directed_results}{{4.4}{48}{Scorpius X-1 and results from Directed TwoSpect\relax }{section.4.4}{}}
 \@writefile{toc}{\hbox { }}
-\@writefile{toc}{\contentsline {chap}{\numberline {\hbox { }\hfill \bf  V.\hspace  {5pt}}{\bf  Exhibit: World Science Festival}}{35}{chapter.5}}
+\@writefile{toc}{\contentsline {chap}{\numberline {\hbox { }\hfill \bf  V.\hspace  {5pt}}{\bf  Exhibit: World Science Festival}}{49}{chapter.5}}
 \@writefile{toc}{\hbox { }}
-\newlabel{chap5}{{V}{35}{Exhibit: World Science Festival\relax }{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{35}{section.5.1}}
-\newlabel{prototypes}{{5.1}{35}{Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum\relax }{section.5.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}World Science Festival interferometer manufacture}{35}{section.5.2}}
-\newlabel{manufacture}{{5.2}{35}{World Science Festival interferometer manufacture\relax }{section.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Laser, optics and display}{35}{subsection.5.2.1}}
-\newlabel{laser_display}{{5.2.1}{35}{Laser, optics and display\relax }{subsection.5.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Aluminum baseboard}{35}{subsection.5.2.2}}
-\newlabel{baseplate}{{5.2.2}{35}{Aluminum baseboard\relax }{subsection.5.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Plexiglass enclosure}{35}{subsection.5.2.3}}
-\newlabel{enclosure}{{5.2.3}{35}{Plexiglass enclosure\relax }{subsection.5.2.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{35}{section.5.3}}
-\newlabel{exhibitions}{{5.3}{35}{Exhibitions: New York City, Portsmouth, Fort Wayne\relax }{section.5.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Exhibit overview}{35}{subsection.5.3.1}}
-\newlabel{exhibit_overview}{{5.3.1}{35}{Exhibit overview\relax }{subsection.5.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}World Science Festival 2010}{36}{subsection.5.3.2}}
-\newlabel{WSF2010}{{5.3.2}{36}{World Science Festival 2010\relax }{subsection.5.3.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Portsmouth and Fort Wayne}{36}{subsection.5.3.3}}
-\newlabel{secondary_installations}{{5.3.3}{36}{Portsmouth and Fort Wayne\relax }{subsection.5.3.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Future LIGO outreach}{36}{section.5.4}}
-\newlabel{future_outreach}{{5.4}{36}{Future LIGO outreach\relax }{section.5.4}{}}
+\newlabel{chap5}{{V}{49}{Exhibit: World Science Festival\relax }{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{49}{section.5.1}}
+\newlabel{prototypes}{{5.1}{49}{Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum\relax }{section.5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}World Science Festival interferometer manufacture}{49}{section.5.2}}
+\newlabel{manufacture}{{5.2}{49}{World Science Festival interferometer manufacture\relax }{section.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Laser, optics and display}{49}{subsection.5.2.1}}
+\newlabel{laser_display}{{5.2.1}{49}{Laser, optics and display\relax }{subsection.5.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Aluminum baseboard}{49}{subsection.5.2.2}}
+\newlabel{baseplate}{{5.2.2}{49}{Aluminum baseboard\relax }{subsection.5.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Plexiglass enclosure}{49}{subsection.5.2.3}}
+\newlabel{enclosure}{{5.2.3}{49}{Plexiglass enclosure\relax }{subsection.5.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{49}{section.5.3}}
+\newlabel{exhibitions}{{5.3}{49}{Exhibitions: New York City, Portsmouth, Fort Wayne\relax }{section.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Exhibit overview}{49}{subsection.5.3.1}}
+\newlabel{exhibit_overview}{{5.3.1}{49}{Exhibit overview\relax }{subsection.5.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}World Science Festival 2010}{50}{subsection.5.3.2}}
+\newlabel{WSF2010}{{5.3.2}{50}{World Science Festival 2010\relax }{subsection.5.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Portsmouth and Fort Wayne}{50}{subsection.5.3.3}}
+\newlabel{secondary_installations}{{5.3.3}{50}{Portsmouth and Fort Wayne\relax }{subsection.5.3.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Future LIGO outreach}{50}{section.5.4}}
+\newlabel{future_outreach}{{5.4}{50}{Future LIGO outreach\relax }{section.5.4}{}}
 \@writefile{toc}{\hbox { }}
-\@writefile{toc}{\contentsline {chap}{\numberline {\hbox { }\hfill \bf  VI.\hspace  {5pt}}{\bf  Conclusion}}{37}{chapter.6}}
+\@writefile{toc}{\contentsline {chap}{\numberline {\hbox { }\hfill \bf  VI.\hspace  {5pt}}{\bf  Conclusion}}{51}{chapter.6}}
 \@writefile{toc}{\hbox { }}
-\newlabel{conclusion}{{VI}{37}{Conclusion\relax }{chapter.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Cycles of science}{37}{section.6.1}}
-\newlabel{cycles}{{6.1}{37}{Cycles of science\relax }{section.6.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Improvements to observatories}{37}{subsection.6.1.1}}
-\newlabel{observatories_better}{{6.1.1}{37}{Improvements to observatories\relax }{subsection.6.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Understanding instruments}{37}{subsection.6.1.2}}
-\newlabel{instrumental_understanding}{{6.1.2}{37}{Understanding instruments\relax }{subsection.6.1.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.3}Refining data}{37}{subsection.6.1.3}}
-\newlabel{data_refinements}{{6.1.3}{37}{Refining data\relax }{subsection.6.1.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.4}Searching deep-space}{37}{subsection.6.1.4}}
-\newlabel{searching_space}{{6.1.4}{37}{Searching deep-space\relax }{subsection.6.1.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.5}Reaching out, looking up}{37}{subsection.6.1.5}}
-\newlabel{reaching_out}{{6.1.5}{37}{Reaching out, looking up\relax }{subsection.6.1.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Scientific merit: filtering and analysis}{37}{section.6.2}}
-\newlabel{merit}{{6.2}{37}{Scientific merit: filtering and analysis\relax }{section.6.2}{}}
+\newlabel{conclusion}{{VI}{51}{Conclusion\relax }{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Cycles of science}{51}{section.6.1}}
+\newlabel{cycles}{{6.1}{51}{Cycles of science\relax }{section.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Improvements to observatories}{51}{subsection.6.1.1}}
+\newlabel{observatories_better}{{6.1.1}{51}{Improvements to observatories\relax }{subsection.6.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Understanding instruments}{51}{subsection.6.1.2}}
+\newlabel{instrumental_understanding}{{6.1.2}{51}{Understanding instruments\relax }{subsection.6.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.3}Refining data}{51}{subsection.6.1.3}}
+\newlabel{data_refinements}{{6.1.3}{51}{Refining data\relax }{subsection.6.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.4}Searching deep-space}{51}{subsection.6.1.4}}
+\newlabel{searching_space}{{6.1.4}{51}{Searching deep-space\relax }{subsection.6.1.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.5}Reaching out, looking up}{51}{subsection.6.1.5}}
+\newlabel{reaching_out}{{6.1.5}{51}{Reaching out, looking up\relax }{subsection.6.1.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Scientific merit: filtering and analysis}{51}{section.6.2}}
+\newlabel{merit}{{6.2}{51}{Scientific merit: filtering and analysis\relax }{section.6.2}{}}
 \bibdata{bibliography}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Feedforward improvement to LIGO data}{38}{subsection.6.2.1}}
-\newlabel{feedforward_end}{{6.2.1}{38}{Feedforward improvement to LIGO data\relax }{subsection.6.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}TwoSpect directed search for neutron stars in binary systems}{38}{subsection.6.2.2}}
-\newlabel{TwoSpect_end}{{6.2.2}{38}{TwoSpect directed search for neutron stars in binary systems\relax }{subsection.6.2.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Entering the advanced detector era}{38}{section.6.3}}
-\newlabel{advanced_detector_era}{{6.3}{38}{Entering the advanced detector era\relax }{section.6.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Vision of a dark sky}{38}{section.6.4}}
-\newlabel{dark_sky}{{6.4}{38}{Vision of a dark sky\relax }{section.6.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Sample Figure}}{38}{figure.6.1}}
-\newlabel{sample_figure}{{6.1}{38}{Vision of a dark sky\relax }{figure.6.1}{}}
-\@writefile{toc}{\contentsline {chapter}{BIBLIOGRAPHY}{39}{figure.6.1}}
-\bibcite{Abbott2004}{1}
-\bibcite{Abbott2007}{2}
-\bibcite{Abbott2006}{3}
-\bibcite{AbbottPulsar2006}{4}
-\bibcite{LSCPowerFlux2009}{5}
-\bibcite{LSCPulsar2006}{6}
-\bibcite{AdhikariThesis}{7}
-\bibcite{Allen1997}{8}
-\bibcite{Allen1999}{9}
-\bibcite{NeutrinosSolarTheoretical}{10}
-\bibcite{NeutrinoReview}{11}
-\bibcite{BallmerThesis}{12}
-\bibcite{Radiometer2006}{13}
-\bibcite{EBubble2005}{14}
-\bibcite{PDHNotes}{15}
-\bibcite{Caldwell1981}{16}
-\bibcite{Carroll1997}{17}
-\bibcite{ChuaThesis}{18}
-\bibcite{ChuaBackscatteredLight}{19}
-\bibcite{DergachevThesis}{20}
-\bibcite{Deschrijver2008}{21}
-\bibcite{DooleyThesis}{22}
-\bibcite{Driggers2012ActiveNoise}{23}
-\bibcite{DwyerPhaseNoise}{24}
-\bibcite{DwyerThesis}{25}
-\bibcite{FotopoulosThesis}{26}
-\bibcite{Fricke2009}{27}
-\bibcite{FrickeThesis}{28}
-\bibcite{ReadoutGWA}{29}
-\bibcite{GoetzThesis}{30}
-\bibcite{GriffithsE}{31}
-\bibcite{Gustavsen2006}{32}
-\bibcite{Gustavsen1999}{33}
-\bibcite{KissellPRCMICH}{34}
-\bibcite{KisselThesis}{35}
-\bibcite{CDAnderson}{36}
-\bibcite{Maggiore2000}{37}
-\bibcite{MavalvalaThesis}{38}
-\bibcite{McKee1977}{39}
-\bibcite{MeadorsHanford2005}{40}
-\bibcite{MeadorsNevis2006}{41}
-\bibcite{MeadorsCaltech2007}{42}
-\bibcite{MeadorsThesis2008}{43}
-\bibcite{michelson}{44}
-\bibcite{MisnerThorneWheeler}{45}
-\bibcite{CODATA}{46}
-\bibcite{Muciaccia1997}{47}
-\bibcite{Prix2006}{48}
-\bibcite{ResponsesFP}{49}
-\bibcite{ResonanceFP}{50}
-\bibcite{Saulson}{51}
-\bibcite{SmithThesis}{52}
-\bibcite{BarsottiNatureSqueezing}{53}
-\bibcite{LALAPPSrepo}{54}
-\bibcite{GEO600NatureSqueezing}{55}
-\bibcite{LIGOStochasticNature2009}{56}
-\bibcite{Waldman2011}{57}
-\bibcite{WeisbergTaylor2004}{58}
-\bibcite{LIGOWorks}{59}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Feedforward improvement to LIGO data}{52}{subsection.6.2.1}}
+\newlabel{feedforward_end}{{6.2.1}{52}{Feedforward improvement to LIGO data\relax }{subsection.6.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}TwoSpect directed search for neutron stars in binary systems}{52}{subsection.6.2.2}}
+\newlabel{TwoSpect_end}{{6.2.2}{52}{TwoSpect directed search for neutron stars in binary systems\relax }{subsection.6.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Entering the advanced detector era}{52}{section.6.3}}
+\newlabel{advanced_detector_era}{{6.3}{52}{Entering the advanced detector era\relax }{section.6.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Vision of a dark sky}{52}{section.6.4}}
+\newlabel{dark_sky}{{6.4}{52}{Vision of a dark sky\relax }{section.6.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Sample Figure}}{52}{figure.6.1}}
+\newlabel{sample_figure}{{6.1}{52}{Vision of a dark sky\relax }{figure.6.1}{}}
+\@writefile{toc}{\contentsline {chapter}{BIBLIOGRAPHY}{53}{figure.6.1}}
+\bibcite{BarsottiNatureSqueezing}{1}
+\bibcite{LIGOCal2010}{2}
+\bibcite{LIGOBurst2012}{3}
+\bibcite{Abbott2004}{4}
+\bibcite{Abbott2007}{5}
+\bibcite{Abbott2006}{6}
+\bibcite{LIGOFirst2004}{7}
+\bibcite{AbbottPulsar2006}{8}
+\bibcite{LSCPowerFlux2009}{9}
+\bibcite{LSCPulsar2006}{10}
+\bibcite{Acernese2005}{11}
+\bibcite{AdhikariThesis}{12}
+\bibcite{Antares2013}{13}
+\bibcite{Findchirp2012}{14}
+\bibcite{Allen1997}{15}
+\bibcite{Allen1999}{16}
+\bibcite{AllenHuaOttewill1999}{17}
+\bibcite{NeutrinosSolarTheoretical}{18}
+\bibcite{NeutrinoReview}{19}
+\bibcite{BallmerThesis}{20}
+\bibcite{Radiometer2006}{21}
+\bibcite{EBubble2005}{22}
+\bibcite{PDHNotes}{23}
+\bibcite{Black2001}{24}
+\bibcite{Caldwell1981}{25}
+\bibcite{Carroll1997}{26}
+\bibcite{Chandrasekhar1969}{27}
+\bibcite{ChuaThesis}{28}
+\bibcite{ChuaBackscatteredLight}{29}
+\bibcite{DergachevThesis}{30}
+\bibcite{Deschrijver2008}{31}
+\bibcite{DooleyThesis}{32}
+\bibcite{Driggers2012ActiveNoise}{33}
+\bibcite{DwyerPhaseNoise}{34}
+\bibcite{DwyerThesis}{35}
+\bibcite{Swift2012}{36}
+\bibcite{FinnInspiral1993}{37}
+\bibcite{FotopoulosThesis}{38}
+\bibcite{Fricke2009}{39}
+\bibcite{FrickeThesis}{40}
+\bibcite{ReadoutGWA}{41}
+\bibcite{GoetzThesis}{42}
+\bibcite{GriffithsE}{43}
+\bibcite{Grishchuk1974}{44}
+\bibcite{Gustavsen2006}{45}
+\bibcite{Gustavsen1999}{46}
+\bibcite{Hild2009}{47}
+\bibcite{HulseTaylor1975}{48}
+\bibcite{KissellPRCMICH}{49}
+\bibcite{KisselThesis}{50}
+\bibcite{KlimenkoSite}{51}
+\bibcite{Kuroda2010}{52}
+\bibcite{CDAnderson}{53}
+\bibcite{MatappsRepository}{54}
+\bibcite{Lindblom1995}{55}
+\bibcite{Maggiore2000}{56}
+\bibcite{MavalvalaThesis}{57}
+\bibcite{McKee1977}{58}
+\bibcite{MeadorsHanford2005}{59}
+\bibcite{MeadorsNevis2006}{60}
+\bibcite{MeadorsCaltech2007}{61}
+\bibcite{MeadorsThesis2008}{62}
+\bibcite{MendellCohere2013}{63}
+\bibcite{michelson}{64}
+\bibcite{MisnerThorneWheeler}{65}
+\bibcite{CODATA}{66}
+\bibcite{Muciaccia1997}{67}
+\bibcite{Ott2009}{68}
+\bibcite{PetersMatthews1963}{69}
+\bibcite{Prix2006}{70}
+\bibcite{ResponsesFP}{71}
+\bibcite{ResonanceFP}{72}
+\bibcite{Riles2013}{73}
+\bibcite{Sathyaprakash2009}{74}
+\bibcite{Saulson}{75}
+\bibcite{Sigg2005}{76}
+\bibcite{SmithThesis}{77}
+\bibcite{LALAPPSrepo}{78}
+\bibcite{GEO600NatureSqueezing}{79}
+\bibcite{LIGOStochasticNature2009}{80}
+\bibcite{Matlab2012a}{81}
+\bibcite{Thorne300}{82}
+\bibcite{Waldman2011}{83}
+\bibcite{WeisbergTaylor2004}{84}
+\bibcite{LIGOWorks}{85}
+\bibcite{Welch1967}{86}
+\bibcite{Boashash1990}{87}
+\bibcite{Wiener1949}{88}
+\bibcite{Willke2002}{89}

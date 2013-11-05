@@ -1,5 +1,21 @@
 \begin{thebibliography}{10}
 
+\bibitem{BarsottiNatureSqueezing}
+J.~Aasi et~al.
+\newblock Enhancing the sensitivity of the {LIGO} gravitational wave detector
+  by using squeezed states of light.
+\newblock {\em Nature {P}hotonics}, 7(613), 2013.
+
+\bibitem{LIGOCal2010}
+J.~Abadie et~al.
+\newblock {\em Nucl. {I}nstrum. {M}eth.}, A624(223), 2010.
+
+\bibitem{LIGOBurst2012}
+J.~Abadie et~al.
+\newblock All-sky search for gravitational-wave burst in the second joint
+  ligo-virgo run.
+\newblock {\em Phys. {R}ev. {D}}, 85(122007), 2012.
+
 \bibitem{Abbott2004}
 B.~Abbott, R.~Abbott, R.~Adhikari, A.~Ageev, B.~Allen, R.~Amin, S.B. Anderson,
   W.G. Anderson, M.~Araya, H.~Armandula, and et~al.
@@ -20,8 +36,14 @@ B.~Abbott, R.~Abbott, R.~Adhikari, J.~Agresti, P.~Ajith, B.~Allen, R.~Amin,
   {LIGO}.
 \newblock Technical Report astro-ph/0608606v1, arXiv, 2006-08-28.
 
+\bibitem{LIGOFirst2004}
+B.~Abbott et~al.
+\newblock Detector description and performance for the first coincidence
+  observations between ligo and geo.
+\newblock {\em Nucl. {I}nstrum. {M}eth.}, A517:154--179, 2004.
+
 \bibitem{AbbottPulsar2006}
-B.~Abbott and et~al.
+B.~Abbott et~al.
 \newblock Coherent searches for periodic gravitational waves from unknown
   isolated sources and {S}corpius {X-1}: results from the second {LIGO} science
   run.
@@ -35,11 +57,26 @@ B.~Abbott~et al.
 B.l Abbott~et al.
 \newblock {\em Phys. {R}ev. {D}}, 76(082001), 2007.
 
+\bibitem{Acernese2005}
+F.~Acernese et~al.
+\newblock Status of {V}irgo.
+\newblock {\em Classical and {Q}uantum {G}ravity}, 22(18):S869, 2005.
+
 \bibitem{AdhikariThesis}
 R.~Adhikari.
 \newblock {\em Sensitivity and Noise Analysis of 4 km Laser Interferometric
   Gravitational Wave Antennae}.
 \newblock PhD thesis, Massachusetts Institute of Technology, 2004.
+
+\bibitem{Antares2013}
+S.~Adri\'{a}n-Mart\'{i}nez et~al.
+\newblock {\em {JCAP}}, 1306(008), 2013.
+
+\bibitem{Findchirp2012}
+B.~Allen, W.G. Anderson, P.R. Brady, D.A. Brown, and J.D.E. Creighton.
+\newblock {FINDCHIRP}: {A}n algorithm for detection of gravitational waves from
+  inspiraling compact binaries.
+\newblock {\em {P}hys {R}ev {D}}, 85(12), 2012.
 
 \bibitem{Allen1997}
 B.~Allen and A.C. Ottewill.
@@ -52,6 +89,11 @@ B.~Allen and {J.D.} Romano.
 \newblock Detecting a stochastic background of gravitational radiation: signal
   processing strategies and sensitivities.
 \newblock {\em Phys. Rev. D}, 59:102001, 1999.
+
+\bibitem{AllenHuaOttewill1999}
+Bruce Allen, Wensheng Hua, and Adrian~C. Ottewill.
+\newblock Automatic cross-talk removal from multi-channel data.
+\newblock Technical Report gr-qc/9909083v1, arXiv, 1999.
 
 \bibitem{NeutrinosSolarTheoretical}
 J.N. Bahcall.
@@ -86,6 +128,10 @@ E.~Black.
 \newblock Technical Report T980045-00-D, Laser Interferometer Gravitational
   Wave Observatory, April 1998.
 
+\bibitem{Black2001}
+E.~Black.
+\newblock {\em Amer. J. Phys.}, 69(79), 2001.
+
 \bibitem{Caldwell1981}
 J.A.R Caldwell and J.P Ostriker.
 \newblock {\em Ap{J}}, 251(61), 1981.
@@ -94,6 +140,11 @@ J.A.R Caldwell and J.P Ostriker.
 S.M. Carroll.
 \newblock Lecture notes on general relativity.
 \newblock Technical Report gr-qc/9712019v1, arXiv.
+
+\bibitem{Chandrasekhar1969}
+S.~Chandrasekhar.
+\newblock {\em Ellisoidal Figures of Equilibrium}.
+\newblock Yale, New {H}aven, 1969.
 
 \bibitem{ChuaThesis}
 Sheon S.~Y. Chua.
@@ -116,7 +167,7 @@ V.~Dergachev.
 \newblock PhD thesis, University of Michigan, 2009.
 
 \bibitem{Deschrijver2008}
-D.~Deschrijver~et al.
+D.~Deschrijver et~al.
 \newblock {\em IEEE {M}icrowave {W}ire. {Comp}. Lett.}, 18(6), 2008.
 
 \bibitem{DooleyThesis}
@@ -137,12 +188,22 @@ S.~Dwyer, L.~Barsotti, S.S.Y. Chua, M.~Evans, M.~Factourovich, D.~Gustafson,
   M.~Stefszky, C.~Vorvick, and D.~Sigg.
 \newblock Squeezed quadrature fluctuations in a gravitational wave detector
   using squeezed light.
-\newblock In preparation.
+\newblock {\em Optics {E}xpress}, 21(16), 2013.
 
 \bibitem{DwyerThesis}
 Sheila~E Dwyer.
 \newblock {\em Quantum noise reduction using squeezed states in LIGO}.
 \newblock PhD thesis, Massachusetts Institute of Technology, February 2013.
+
+\bibitem{Swift2012}
+P.A. Evans et~al.
+\newblock {\em {ApJS}}, 203(28), 2012.
+
+\bibitem{FinnInspiral1993}
+L.S. Finn and D.~F. Chernoff.
+\newblock Observing binary inspiral in gravitational radiation: one
+  interferometer.
+\newblock {\em Phys {R}ev {D}}, 47:2198--2219, 1993.
 
 \bibitem{FotopoulosThesis}
 Nickolas Fotopoulos.
@@ -182,6 +243,10 @@ D.J. Griffiths.
 \newblock {\em Introduction to Electrodynamics}.
 \newblock Prentice Hall, Upper Saddle River, N.J., third edition, 1999.
 
+\bibitem{Grishchuk1974}
+L.P. Grishchuk.
+\newblock {\em Sov. {J}. {E}xp. \& {T}heor. {P}hys.}, 40(409), 1974.
+
 \bibitem{Gustavsen2006}
 B.~Gustavsen.
 \newblock {\em IEEE {T}rans. {P}ower {D}elivery}, 21(3), 2006.
@@ -189,6 +254,17 @@ B.~Gustavsen.
 \bibitem{Gustavsen1999}
 B.~Gustavsen and A.~Semlyen.
 \newblock {\em IEEE {T}rans. {P}ower {D}elivery}, 14(3), 1999.
+
+\bibitem{Hild2009}
+S.~Hild, H.~Grote, J.~Degallaix, S.~Chelkowski, K.~Danzmann, A.~Freise,
+  M.~Hewitson, J.~Hough, H~Luck, M.~Prijatelj, K.A. Strain, J.R. Smith, and
+  B.~Willke.
+\newblock {DC}-readout of a signal-recycled gravitational wave detector.
+\newblock {\em Classical and {Q}uantum {G}ravity}, 26(5):055012, 2009.
+
+\bibitem{HulseTaylor1975}
+R.A. Hulse and J.H. Taylor.
+\newblock {\em Astroph. J.}, 195(L51), 1975.
 
 \bibitem{KissellPRCMICH}
 J.~Kissel.
@@ -204,11 +280,30 @@ Jeffrey~S. Kissel.
   detectors}.
 \newblock PhD thesis, Louisiana State University, December 2010.
 
+\bibitem{KlimenkoSite}
+S.~Klimenko.
+\newblock Line noise investigation.
+\newblock Web: http://www.phys.ufl.edu/LIGO/LINE/, 2000.
+
+\bibitem{Kuroda2010}
+K.~Kuroda et~al.
+\newblock {\em Classical and {Q}uantum {G}ravity}, 27(084004), 2010.
+
 \bibitem{CDAnderson}
 R.B. Leighton, C.D. Anderson, and A.J. Seriff.
 \newblock The energy spectrum of the decay particles and the mass and spin of
   the mesotron.
 \newblock {\em Phys. Rev.}, 75(9):1432, 1949.
+
+\bibitem{MatappsRepository}
+{LIGO Scientific Collaboration}.
+\newblock Matapps software repository.
+\newblock Web: https://www.lsc-group.phys.uwm.edu/daswg/projects/matapps.html,
+  2013.
+
+\bibitem{Lindblom1995}
+L.~Lindblom and G.~Mendell.
+\newblock {\em Astrophys. {J}}, 444(804), 1995.
 
 \bibitem{Maggiore2000}
 M.~Maggiore.
@@ -251,6 +346,12 @@ G.D. Meadors.
 \newblock {R}eed {C}ollege bachelor's thesis (advisor: {R}obert {R}eynolds),
   May 2008.
 
+\bibitem{MendellCohere2013}
+G.~Mendell.
+\newblock Significance of the magnitude squared coherence.
+\newblock {LIGO} presentation {G}1300070, presented at the {LIGO-VIRGO
+  Conference}, {Bethesda, Maryland}, 2013.
+
 \bibitem{michelson}
 A.A. Michelson.
 \newblock {\em The velocity of light}.
@@ -274,6 +375,15 @@ P.F. Muciaccia, P.~Natoli, and N.~Vittorio.
   anisotropy maps.
 \newblock {\em Astrophys. J.}, 488:L63, 1997.
 
+\bibitem{Ott2009}
+C.D. Ott.
+\newblock {\em Classical and {Q}uantum {G}ravity}, 26(063001), 2009.
+
+\bibitem{PetersMatthews1963}
+P.C. Peters and J.~Matthews.
+\newblock Gravitational radiation from point masses in a {K}eplerian orbit.
+\newblock {\em {P}hys {R}ev}, 131(435-440), 1963.
+
 \bibitem{Prix2006}
 R.~Prix.
 \newblock {\em Neutron stars and pulsars}, page 651.
@@ -292,22 +402,30 @@ M.~Rakhmanov, R.L.~Jr. Savage, D.H. Reitze, and D.B. Tanner.
 \newblock Technical Report P010013-00-D, Laser Interferometer Gravitational
   Wave Observatory, January 2001.
 
+\bibitem{Riles2013}
+K.~Riles.
+\newblock Gravitational waves: sources, detectors and searches.
+\newblock {\em Prog. in {P}article \& {N}ucl. {P}hys.}, 68(1), 2013.
+
+\bibitem{Sathyaprakash2009}
+B.S. Sathyaprakash and B.S. Schutz.
+\newblock {\em Living {R}ev. {R}elativity}, 12(2), 2009.
+
 \bibitem{Saulson}
 P.~Saulson.
 \newblock {\em Fundamentals of interferometric gravitational wave detectors}.
 \newblock World Scientific, Singapore, 1994.
+
+\bibitem{Sigg2005}
+D.~Sigg.
+\newblock Implementing an {IIR} filter in hardware.
+\newblock Technical Report T050060, LIGO, 2005.
 
 \bibitem{SmithThesis}
 Nicol\'{a}s~{de Mateo} Smith-Lefebvre.
 \newblock {\em Techniques for improving the readout sensitivity of
   gravitational wave antennae}.
 \newblock PhD thesis, Massachusetts Institute of Technology, June 2012.
-
-\bibitem{BarsottiNatureSqueezing}
-{The LIGO Scientific Collaboration}.
-\newblock Enhancement of the astrophysical reach of a gravitational wave
-  observatory using squeezed states of light.
-\newblock In preparation.
 
 \bibitem{LALAPPSrepo}
 {The LIGO Scientific Collaboration}.
@@ -326,6 +444,17 @@ Nicol\'{a}s~{de Mateo} Smith-Lefebvre.
   cosmological origin.
 \newblock {\em Nature}, 460:990--4, 2009.
 
+\bibitem{Matlab2012a}
+{The MathWorks, Inc.}
+\newblock {\em MATLAB and Signal Processing Toolbox Release 2012a,}.
+\newblock Natick, Massachusetts, 2012.
+
+\bibitem{Thorne300}
+K.S. Thorne.
+\newblock 300 {Y}ears of {G}ravitation.
+\newblock In S.W. Hawking and W.~Israel, editors, {\em 300 {Y}ears of
+  {G}ravitation}. Cambridge, Cambridge, 1987.
+
 \bibitem{Waldman2011}
 S.~Waldman and S.~Chua.
 \newblock eligo hanford output mode cleaner repair.
@@ -343,5 +472,26 @@ R.~Weiss.
 \newblock {The LIGO interferometers: how they work and how well they work}.
 \newblock Technical Report G030024-00-D, Laser Interferometer Gravitational
   Wave Observatory, February 2003.
+
+\bibitem{Welch1967}
+P.D. Welch.
+\newblock {\em {IEEE} {T}rans. on {A}udio {E}lectroacoustics}, AU-15:70--73,
+  1967.
+
+\bibitem{Boashash1990}
+L.B. White and B.~Boashash.
+\newblock Cross spectral analysis of non-stationary procesess.
+\newblock {\em {IEEE} {T}ransactions on {I}nformation {T}heory},
+  36(4):830--835, 1990.
+
+\bibitem{Wiener1949}
+N.~Wiener.
+\newblock {\em Extrapolation, interpolation, and smoothing of stationary time
+  series: with engineering applications}.
+\newblock MIT, Cambridge, Massachusetts, 1949.
+
+\bibitem{Willke2002}
+B.~Willke et~al.
+\newblock {\em Classical and {Q}uantum {G}ravity}, 19:1377--1387, 2002.
 
 \end{thebibliography}

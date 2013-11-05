@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  4 NOV 2013 22:04
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  4 NOV 2013 22:51
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -207,6 +207,9 @@ File: pdfmark.def 2003/01/22 v6.73n Hyperref definitions for pdfmark specials
 \Fld@listcount=\count108
 \@outlinefile=\write3
 )))
+(/opt/local/teTeX/share/texmf/tex/latex/cite/cite.sty
+Package: cite 2001/10/14  v 3.9
+)
 \c@theorem=\count109
 
 \@input{header.aux}
@@ -220,46 +223,46 @@ LaTeX Warning: Label `sample_figure' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-Package hyperref Info: Link coloring OFF on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+Package hyperref Info: Link coloring OFF on input line 77.
  (/opt/local/teTeX/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2001/01/27 v2.19 Cross-referencing by name of section
 \c@section@level=\count110
 )
-LaTeX Info: Redefining \ref on input line 76.
-LaTeX Info: Redefining \pageref on input line 76.
+LaTeX Info: Redefining \ref on input line 77.
+LaTeX Info: Redefining \pageref on input line 77.
  (./thesis.out)
 (./thesis.out)
 \openout3 = `thesis.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 94.
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
  (/opt/local/teTeX/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 94.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 (/opt/local/teTeX/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
@@ -268,17 +271,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 102.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 103.
 
  (/opt/local/teTeX/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
  [1]
 
 Package hyperref Warning: No destination for bookmark of \addcontentsline,
-(hyperref)                destination is added on input line 110.
+(hyperref)                destination is added on input line 111.
 
 [2] (./thesis.toc [3])
 \tf@toc=\write4
@@ -290,27 +293,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
  []
 
 
-Overfull \hbox (15.04381pt too wide) in paragraph at lines 9--9
+Overfull \hbox (3006.95189pt too wide) in paragraph at lines 2--2
  [][] [] []  
  []
 
 
-Overfull \hbox (11.23817pt too wide) in paragraph at lines 10--10
+Overfull \hbox (1226.80138pt too wide) in paragraph at lines 3--3
  [][] [] []  
  []
 
 
-Overfull \hbox (55.69807pt too wide) in paragraph at lines 11--11
+Overfull \hbox (1140.90552pt too wide) in paragraph at lines 4--4
  [][] [] []  
  []
 
 
-Overfull \hbox (2.93407pt too wide) in paragraph at lines 13--13
+Overfull \hbox (523.29341pt too wide) in paragraph at lines 5--5
  [][] [] []  
  []
 
 
-Overfull \hbox (115.94176pt too wide) in paragraph at lines 14--14
+Overfull \hbox (563.37674pt too wide) in paragraph at lines 6--6
+ [][] [] []  
+ []
+
+
+Overfull \hbox (1794.65431pt too wide) in paragraph at lines 7--7
+ [][] [] []  
+ []
+
+
+Overfull \hbox (953.83574pt too wide) in paragraph at lines 8--8
+ [][] [] []  
+ []
+
+
+Overfull \hbox (1165.03043pt too wide) in paragraph at lines 9--9
+ [][] [] []  
+ []
+
+
+Overfull \hbox (649.67992pt too wide) in paragraph at lines 10--10
+ [][] [] []  
+ []
+
+
+Overfull \hbox (1310.81755pt too wide) in paragraph at lines 11--11
+ [][] [] []  
+ []
+
+
+Overfull \hbox (128.72694pt too wide) in paragraph at lines 12--12
+ [][] [] []  
+ []
+
+
+Overfull \hbox (140.12164pt too wide) in paragraph at lines 13--13
+ [][] [] []  
+ []
+
+
+Overfull \hbox (421.18474pt too wide) in paragraph at lines 14--14
+ [][] [] []  
+ []
+
+
+Overfull \hbox (591.98819pt too wide) in paragraph at lines 15--15
+ [][] [] []  
+ []
+
+
+Overfull \hbox (638.72708pt too wide) in paragraph at lines 16--16
  [][] [] []  
  []
 
@@ -325,55 +378,55 @@ Package hyperref Warning: bookmark level for unknown chap defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 130.
+(hyperref)                removing `\<def>-command' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@encoding' on input line 130.
+(hyperref)                removing `\f@encoding' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<let>-command' on input line 130.
+(hyperref)                removing `\<let>-command' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 130.
+(hyperref)                removing `\<def>-command' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@family' on input line 130.
+(hyperref)                removing `\f@family' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 130.
+(hyperref)                removing `\<def>-command' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@series' on input line 130.
+(hyperref)                removing `\f@series' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 130.
+(hyperref)                removing `\<def>-command' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@shape' on input line 130.
+(hyperref)                removing `\f@shape' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 130.
+(hyperref)                removing `\<def>-command' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\font@name' on input line 130.
+(hyperref)                removing `\font@name' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\OT1/cmr/m/n/10' on input line 130.
+(hyperref)                removing `\OT1/cmr/m/n/10' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\ignorespaces' on input line 130.
+(hyperref)                removing `\ignorespaces' on input line 131.
 
 (./intro.tex [1
 
@@ -395,420 +448,461 @@ Package hyperref Warning: bookmark level for unknown chap defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 138.
+(hyperref)                removing `\<def>-command' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@encoding' on input line 138.
+(hyperref)                removing `\f@encoding' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<let>-command' on input line 138.
+(hyperref)                removing `\<let>-command' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 138.
+(hyperref)                removing `\<def>-command' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@family' on input line 138.
+(hyperref)                removing `\f@family' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 138.
+(hyperref)                removing `\<def>-command' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@series' on input line 138.
+(hyperref)                removing `\f@series' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 138.
+(hyperref)                removing `\<def>-command' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@shape' on input line 138.
+(hyperref)                removing `\f@shape' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 138.
+(hyperref)                removing `\<def>-command' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\font@name' on input line 138.
+(hyperref)                removing `\font@name' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\OT1/cmr/m/n/10' on input line 138.
+(hyperref)                removing `\OT1/cmr/m/n/10' on input line 139.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\ignorespaces' on input line 138.
+(hyperref)                removing `\ignorespaces' on input line 139.
 
 (./chap2.tex [12
 
-] [13]
-File: ligo_michdamp.eps Graphic file (type eps)
- <ligo_michdamp.eps>
-Overfull \hbox (25.2538pt too wide) in paragraph at lines 41--42
-[][] 
+] [13] [14]
+Overfull \hbox (8.1875pt too wide) in paragraph at lines 116--117
+[]\OT1/cmr/m/n/12 LIGO core op-tics in-clude the beam-splitter (BS) and power-r
+ecycling mir-ror (PRM),
  []
 
-[14] [15] [16]
-File: clip-MICH-coh.eps Graphic file (type eps)
- <clip-MICH-coh.eps>
-File: clip-PRC-coh.eps Graphic file (type eps)
- <clip-PRC-coh.eps>
-File: clip-MICH-fit.eps Graphic file (type eps)
- <clip-MICH-fit.eps>
-File: clip-PRC-fit.eps Graphic file (type eps)
-
-<clip-PRC-fit.eps>
-File: clip-MICH-many.eps Graphic file (type eps)
- <clip-MICH-many.eps>
-File: clip-PRC-many.eps Graphic file (type eps)
- <clip-PRC-many.eps>
-File: clip-MICH-sub.eps Graphic file (type eps)
-
-<clip-MICH-sub.eps>
-File: clip-PRC-sub.eps Graphic file (type eps)
- <clip-PRC-sub.eps> [17] [18] [19] [20]
-File: pipeline.eps Graphic file (type eps)
- <pipeline.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 197--201
-
+[15]
+File: figure1.eps Graphic file (type eps)
+ <figure1.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 138
+\OT1/cmr/m/n/10 Figure 2.1: []
  []
 
-[21]
-File: hann-windows.eps Graphic file (type eps)
- <hann-windows.eps>
-File: clip-exemplar-ASD.eps Graphic file (type eps)
- <clip-exemplar-ASD.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 234
+[16] [17] [18] [19] [20] [21] [22]
+File: figure2a.eps Graphic file (type eps)
+ <figure2a.eps>
+File: figure2b.eps Graphic file (type eps)
+ <figure2b.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 256
+\OT1/cmr/m/n/10 Figure 2.2: []
+ []
+
+File: figure3a.eps Graphic file (type eps)
+<figure3a.eps>
+File: figure3b.eps Graphic file (type eps)
+ <figure3b.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 264
+\OT1/cmr/m/n/10 Figure 2.3: []
+ []
+
+File: figure4a.eps Graphic file (type eps)
+<figure4a.eps>
+File: figure4b.eps Graphic file (type eps)
+ <figure4b.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 272
+\OT1/cmr/m/n/10 Figure 2.4: []
+ []
+
+File: figure5a.eps Graphic file (type eps)
+<figure5a.eps>
+File: figure5b.eps Graphic file (type eps)
+ <figure5b.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 280
+\OT1/cmr/m/n/10 Figure 2.5: []
+ []
+
+[23] [24] [25] [26] [27] [28] [29] [30]
+File: figure6.eps Graphic file (type eps)
+ <figure6.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 357
+\OT1/cmr/m/n/10 Figure 2.6: []
+ []
+
+File: figure7.eps Graphic file (type eps)
+<figure7.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 365
+\OT1/cmr/m/n/10 Figure 2.7: []
+ []
+
+File: figure8.eps Graphic file (type eps)
+<figure8.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 373
 \OT1/cmr/m/n/10 Figure 2.8: []
  []
 
-File: title_spectrum.eps Graphic file (type eps)
-<title_spectrum.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 239
+[31] [32]
+File: figure9.eps Graphic file (type eps)
+ <figure9.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 387
 \OT1/cmr/m/n/10 Figure 2.9: []
  []
 
-File: clip-diff.eps Graphic file (type eps)
-<clip-diff.eps>
-File: clip-diff-ratio.eps Graphic file (type eps)
- <clip-diff-ratio.eps>
-Overfull \hbox (54.889pt too wide) detected at line 245
+[33]
+File: figure10.eps Graphic file (type eps)
+ <figure10.eps>
+Overfull \hbox (54.889pt too wide) detected at line 410
 \OT1/cmr/m/n/10 Figure 2.10: []
  []
 
-[22] [23] [24]
-File: clip-range-LHO-new.eps Graphic file (type eps)
- <clip-range-LHO-new.eps>
-File: clip-range-LLO-new.eps Graphic file (type eps)
- <clip-range-LLO-new.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
-[][]
+[34] [35]
+File: figure11.eps Graphic file (type eps)
+ <figure11.eps>
+Overfull \hbox (54.889pt too wide) detected at line 435
+\OT1/cmr/m/n/10 Figure 2.11: []
  []
 
-File: clip-gain-LHO-new.eps Graphic file (type eps)
-<clip-gain-LHO-new.eps>
-File: clip-gain-LLO-new.eps Graphic file (type eps)
- <clip-gain-LLO-new.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 268--271
-[][]
+File: figure12.eps Graphic file (type eps)
+<figure12.eps>
+Overfull \hbox (54.889pt too wide) detected at line 443
+\OT1/cmr/m/n/10 Figure 2.12: []
  []
 
-File: croppedWebpage.eps Graphic file (type eps)
-<croppedWebpage.eps>
-Overfull \hbox (54.889pt too wide) detected at line 275
+[36]
+File: figure13a.eps Graphic file (type eps)
+ <figure13a.eps>
+File: figure13b.eps Graphic file (type eps)
+ <figure13b.eps>
+Overfull \hbox (54.889pt too wide) detected at line 455
 \OT1/cmr/m/n/10 Figure 2.13: []
  []
 
-
-Overfull \hbox (68.90994pt too wide) in paragraph at lines 281--283
-[]\OT1/cmr/m/n/12 . AMPS frames for S6 LHO & LLO ex-ist at CIT: \OT1/cmtt/m/n/1
-2 /archive/frames/S6/pulsar/feedforward 
+[37]
+File: figure14a.eps Graphic file (type eps)
+ <figure14a.eps>
+File: figure14b.eps Graphic file (type eps)
+ <figure14b.eps>
+Overfull \hbox (54.889pt too wide) detected at line 472
+\OT1/cmr/m/n/10 Figure 2.14: []
  []
 
-) [25] [26] [27] [28]
+File: figure15a.eps Graphic file (type eps)
+<figure15a.eps>
+File: figure15b.eps Graphic file (type eps)
+ <figure15b.eps>
+Overfull \hbox (54.889pt too wide) detected at line 481
+\OT1/cmr/m/n/10 Figure 2.15: []
+ []
+
+File: figure16.eps Graphic file (type eps)
+<figure16.eps> [38] [39] [40] [41]
+Overfull \hbox (1.82634pt too wide) in paragraph at lines 505--506
+[]\OT1/cmr/m/n/12 LIGO was con-structed by the Cal-i-for-nia In-sti-tute of Tec
+h-nol-ogy and Mas-sachusetts
+ []
+
+) [42]
 CHAPTER III.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 142.
+(hyperref)                removing `\<def>-command' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@encoding' on input line 142.
+(hyperref)                removing `\f@encoding' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<let>-command' on input line 142.
+(hyperref)                removing `\<let>-command' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 142.
+(hyperref)                removing `\<def>-command' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@family' on input line 142.
+(hyperref)                removing `\f@family' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 142.
+(hyperref)                removing `\<def>-command' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@series' on input line 142.
+(hyperref)                removing `\f@series' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 142.
+(hyperref)                removing `\<def>-command' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@shape' on input line 142.
+(hyperref)                removing `\f@shape' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 142.
+(hyperref)                removing `\<def>-command' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\font@name' on input line 142.
+(hyperref)                removing `\font@name' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\OT1/cmr/m/n/10' on input line 142.
+(hyperref)                removing `\OT1/cmr/m/n/10' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\ignorespaces' on input line 142.
+(hyperref)                removing `\ignorespaces' on input line 143.
 
-(./chap3.tex [29
+(./chap3.tex [43
 
-] [30]
+] [44]
 
-LaTeX Warning: Reference `sample_section' on page 31 undefined on input line 87
+LaTeX Warning: Reference `sample_section' on page 45 undefined on input line 87
 .
 
 
-LaTeX Warning: Reference `sample_theorem' on page 31 undefined on input line 88
+LaTeX Warning: Reference `sample_theorem' on page 45 undefined on input line 88
 .
 
-[31]
+[45]
 File: sample.eps Graphic file (type eps)
- <sample.eps>) [32]
+ <sample.eps>) [46]
 CHAPTER IV.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 146.
+(hyperref)                removing `\<def>-command' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@encoding' on input line 146.
+(hyperref)                removing `\f@encoding' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<let>-command' on input line 146.
+(hyperref)                removing `\<let>-command' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 146.
+(hyperref)                removing `\<def>-command' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@family' on input line 146.
+(hyperref)                removing `\f@family' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 146.
+(hyperref)                removing `\<def>-command' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@series' on input line 146.
+(hyperref)                removing `\f@series' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 146.
+(hyperref)                removing `\<def>-command' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@shape' on input line 146.
+(hyperref)                removing `\f@shape' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 146.
+(hyperref)                removing `\<def>-command' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\font@name' on input line 146.
+(hyperref)                removing `\font@name' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\OT1/cmr/m/n/10' on input line 146.
+(hyperref)                removing `\OT1/cmr/m/n/10' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\ignorespaces' on input line 146.
+(hyperref)                removing `\ignorespaces' on input line 147.
 
-(./chap4.tex [33
+(./chap4.tex [47
 
-]) [34]
+]) [48]
 CHAPTER V.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 150.
+(hyperref)                removing `\<def>-command' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@encoding' on input line 150.
+(hyperref)                removing `\f@encoding' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<let>-command' on input line 150.
+(hyperref)                removing `\<let>-command' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 150.
+(hyperref)                removing `\<def>-command' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@family' on input line 150.
+(hyperref)                removing `\f@family' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 150.
+(hyperref)                removing `\<def>-command' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@series' on input line 150.
+(hyperref)                removing `\f@series' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 150.
+(hyperref)                removing `\<def>-command' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@shape' on input line 150.
+(hyperref)                removing `\f@shape' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 150.
+(hyperref)                removing `\<def>-command' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\font@name' on input line 150.
+(hyperref)                removing `\font@name' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\OT1/cmr/m/n/10' on input line 150.
+(hyperref)                removing `\OT1/cmr/m/n/10' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\ignorespaces' on input line 150.
+(hyperref)                removing `\ignorespaces' on input line 151.
 
-(./chap5.tex [35
+(./chap5.tex [49
 
-]) [36]
+]) [50]
 CHAPTER VI.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 154.
+(hyperref)                removing `\<def>-command' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@encoding' on input line 154.
+(hyperref)                removing `\f@encoding' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<let>-command' on input line 154.
+(hyperref)                removing `\<let>-command' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 154.
+(hyperref)                removing `\<def>-command' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@family' on input line 154.
+(hyperref)                removing `\f@family' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 154.
+(hyperref)                removing `\<def>-command' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@series' on input line 154.
+(hyperref)                removing `\f@series' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 154.
+(hyperref)                removing `\<def>-command' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\f@shape' on input line 154.
+(hyperref)                removing `\f@shape' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<def>-command' on input line 154.
+(hyperref)                removing `\<def>-command' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\font@name' on input line 154.
+(hyperref)                removing `\font@name' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\OT1/cmr/m/n/10' on input line 154.
+(hyperref)                removing `\OT1/cmr/m/n/10' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\ignorespaces' on input line 154.
+(hyperref)                removing `\ignorespaces' on input line 155.
 
-(./conclusion.tex [37
+(./conclusion.tex [51
 
 ]
 
-LaTeX Warning: Reference `sample_section' on page 38 undefined on input line 66
+LaTeX Warning: Reference `sample_section' on page 52 undefined on input line 66
 .
 
 
-LaTeX Warning: Reference `sample_theorem' on page 38 undefined on input line 67
+LaTeX Warning: Reference `sample_theorem' on page 52 undefined on input line 67
 .
 
 File: sample.eps Graphic file (type eps)
-<sample.eps>) (./thesis.bbl [38] [39
+<sample.eps>) (./thesis.bbl [52] [53
 
-] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 194--200
+] [54] [55]
+Underfull \hbox (badness 10000) in paragraph at lines 270--276
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--200
+Underfull \hbox (badness 10000) in paragraph at lines 270--276
 \OT1/cmr/m/n/10 http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detecto
 r&
  []
 
-[41]
-Underfull \hbox (badness 2376) in paragraph at lines 313--316
+[56]
+Underfull \hbox (badness 2376) in paragraph at lines 431--434
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-[42]) [43]
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+[57]) [58]
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
@@ -821,12 +915,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3661 strings out of 95847
- 47699 string characters out of 1195216
- 121549 words of memory out of 1000001
- 6496 multiletter control sequences out of 10000+50000
- 13849 words of font info for 53 fonts, out of 500000 for 1000
+ 3766 strings out of 95847
+ 48837 string characters out of 1195216
+ 124934 words of memory out of 1000001
+ 6597 multiletter control sequences out of 10000+50000
+ 13148 words of font info for 51 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
- 33i,10n,36p,1676b,402s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 33i,10n,36p,1676b,447s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (50 pages, 187656 bytes).
+Output written on thesis.dvi (65 pages, 263728 bytes).
