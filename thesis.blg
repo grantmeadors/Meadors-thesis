@@ -35,10 +35,6 @@ I was expecting a `,' or a `}'---line 1934 of file bibliography.bib
  : number = "gr-qc/9712019v1"
  :                           .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2057 of file bibliography.bib
- : year = 2012
- :            "
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Farr2010"
 Warning--empty title in LIGOCal2010
 Warning--empty title in LSCPowerFlux2009
@@ -61,45 +57,45 @@ Warning--empty title in Sathyaprakash2009
 Warning--empty publisher in Matlab2012a
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 89 entries,
+You've used 91 entries,
             2118 wiz_defined-function locations,
-            1025 strings with 16817 characters,
-and the built_in function-call counts, 24305 in all, are:
-= -- 2273
-> -- 1403
+            1034 strings with 17025 characters,
+and the built_in function-call counts, 24701 in all, are:
+= -- 2315
+> -- 1417
 < -- 12
-+ -- 568
-- -- 472
-* -- 1716
-:= -- 4516
-add.period$ -- 249
-call.type$ -- 89
-change.case$ -- 454
++ -- 574
+- -- 476
+* -- 1736
+:= -- 4596
+add.period$ -- 255
+call.type$ -- 91
+change.case$ -- 460
 chr.to.int$ -- 0
-cite$ -- 110
-duplicate$ -- 876
-empty$ -- 1654
-format.name$ -- 472
-if$ -- 4769
+cite$ -- 112
+duplicate$ -- 894
+empty$ -- 1682
+format.name$ -- 476
+if$ -- 4845
 int.to.chr$ -- 0
-int.to.str$ -- 89
+int.to.str$ -- 91
 missing$ -- 63
-newline$ -- 429
-num.names$ -- 180
-pop$ -- 427
+newline$ -- 439
+num.names$ -- 184
+pop$ -- 433
 preamble$ -- 1
-purify$ -- 402
+purify$ -- 408
 quote$ -- 0
-skip$ -- 608
+skip$ -- 620
 stack$ -- 0
-substring$ -- 792
-swap$ -- 85
+substring$ -- 802
+swap$ -- 87
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 340
+type$ -- 348
 warning$ -- 21
-while$ -- 201
-width$ -- 91
-write$ -- 931
-(There were 8 error messages)
+while$ -- 205
+width$ -- 93
+write$ -- 953
+(There were 7 error messages)
