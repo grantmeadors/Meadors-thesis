@@ -4,7 +4,7 @@
 J.~Aasi et~al.
 \newblock Enhancing the sensitivity of the {LIGO} gravitational wave detector
   by using squeezed states of light.
-\newblock {\em Nature {P}hotonics}, 7(613), 2013.
+\newblock {\em Nature {P}hoton.}, 7(613), 2013.
 
 \bibitem{LIGOCal2010}
 J.~Abadie et~al.
@@ -70,13 +70,13 @@ R.~Adhikari.
 
 \bibitem{Antares2013}
 S.~Adri\'{a}n-Mart\'{i}nez et~al.
-\newblock {\em {JCAP}}, 1306(008), 2013.
+\newblock {\em {J}. {C}osmol. {A}stropart. {P}hys.}, 1306(008), 2013.
 
 \bibitem{Findchirp2012}
 B.~Allen, W.G. Anderson, P.R. Brady, D.A. Brown, and J.D.E. Creighton.
 \newblock {FINDCHIRP}: {A}n algorithm for detection of gravitational waves from
   inspiraling compact binaries.
-\newblock {\em {P}hys {R}ev {D}}, 85(12), 2012.
+\newblock {\em {P}hys. {R}ev. {D}}, 85(12), 2012.
 
 \bibitem{Allen1997}
 B.~Allen and A.C. Ottewill.
@@ -139,7 +139,7 @@ J.A.R Caldwell and J.P Ostriker.
 \bibitem{Carroll1997}
 S.M. Carroll.
 \newblock Lecture notes on general relativity.
-\newblock Technical Report gr-qc/9712019v1, arXiv.
+\newblock Technical Report gr-qc/9712019v1, arXiv, 1997-12-03.
 
 \bibitem{Chandrasekhar1969}
 S.~Chandrasekhar.
@@ -166,6 +166,12 @@ V.~Dergachev.
 \newblock {\em An all-sky search for continuous gravitational waves}.
 \newblock PhD thesis, University of Michigan, 2009.
 
+\bibitem{DeRosa2012FF}
+Ryan De{R}osa, Jennifer~C. Driggers, Dani Atkinson, Haixing Miao, Valera
+  Frolov, Michael Landry, Joseph~A. Giaime, and Rana~X. Adhikari.
+\newblock Global feed-forward vibration isolation in a km scale interferometer.
+\newblock {\em {C}lassical and {Q}uantum {G}ravity}, 29(215008), 2012.
+
 \bibitem{Deschrijver2008}
 D.~Deschrijver et~al.
 \newblock {\em IEEE {M}icrowave {W}ire. {Comp}. Lett.}, 18(6), 2008.
@@ -179,7 +185,12 @@ Katherine~Laird Dooley.
 \bibitem{Driggers2012ActiveNoise}
 Jennifer~C. Driggers, Matthew Evans, Keenan Pepper, and Rana Adhikari.
 \newblock Active noise cancellation in a suspended interferometer.
-\newblock {\em Review of Scientific Instruments}, 83(024501), 2012.
+\newblock {\em Rev. {S}ci. {I}nstrum.}, 83(024501), 2012.
+
+\bibitem{Driggers2012NN}
+Jennifer~C. Driggers, Jan Harms, and Rana~X. Adhikari.
+\newblock Subtraction of newtonian noise using optimized sensor arrays.
+\newblock {\em {P}hys. {R}ev. {D}}, 86(102001), 2012.
 
 \bibitem{DwyerPhaseNoise}
 S.~Dwyer, L.~Barsotti, S.S.Y. Chua, M.~Evans, M.~Factourovich, D.~Gustafson,
@@ -188,7 +199,7 @@ S.~Dwyer, L.~Barsotti, S.S.Y. Chua, M.~Evans, M.~Factourovich, D.~Gustafson,
   M.~Stefszky, C.~Vorvick, and D.~Sigg.
 \newblock Squeezed quadrature fluctuations in a gravitational wave detector
   using squeezed light.
-\newblock {\em Optics {E}xpress}, 21(16), 2013.
+\newblock {\em Opt. {E}xpress}, 21(16), 2013.
 
 \bibitem{DwyerThesis}
 Sheila~E Dwyer.
@@ -208,7 +219,7 @@ Will~M. Farr.
 L.S. Finn and D.~F. Chernoff.
 \newblock Observing binary inspiral in gravitational radiation: one
   interferometer.
-\newblock {\em Phys {R}ev {D}}, 47:2198--2219, 1993.
+\newblock {\em Phys. {R}ev. {D}}, 47:2198--2219, 1993.
 
 \bibitem{FotopoulosThesis}
 Nickolas Fotopoulos.
@@ -387,7 +398,7 @@ C.D. Ott.
 \bibitem{PetersMatthews1963}
 P.C. Peters and J.~Matthews.
 \newblock Gravitational radiation from point masses in a {K}eplerian orbit.
-\newblock {\em {P}hys {R}ev}, 131(435-440), 1963.
+\newblock {\em {P}hys. {R}ev.}, 131(435-440), 1963.
 
 \bibitem{Prix2006}
 R.~Prix.
@@ -412,11 +423,6 @@ K.~Riles.
 \newblock Gravitational waves: sources, detectors and searches.
 \newblock {\em Prog. in {P}article \& {N}ucl. {P}hys.}, 68(1), 2013.
 
-\bibitem{RomeroThesis}
-Ethan~Obie Romero-Severson.
-\newblock {\em Sexual volatility and the spread of HIV}.
-\newblock PhD thesis, University of Michigan, Ann Arbor, 2011.
-
 \bibitem{Sathyaprakash2009}
 B.S. Sathyaprakash and B.S. Schutz.
 \newblock {\em Living {R}ev. {R}elativity}, 12(2), 2009.
@@ -425,6 +431,11 @@ B.S. Sathyaprakash and B.S. Schutz.
 P.~Saulson.
 \newblock {\em Fundamentals of interferometric gravitational wave detectors}.
 \newblock World Scientific, Singapore, 1994.
+
+\bibitem{SiggFreq1997}
+D.~Sigg.
+\newblock Frequency {R}esponse of the {LIGO} {I}nterferometer.
+\newblock Technical Report T970084, LIGO, 1997.
 
 \bibitem{Sigg2005}
 D.~Sigg.
@@ -446,7 +457,7 @@ Nicol\'{a}s~{de Mateo} Smith-Lefebvre.
 {The LIGO Scientific Collaboration}.
 \newblock A gravitational-wave observatory operating beyond the quantum
   shot-noise limit.
-\newblock {\em Nature {P}hysics}, 7(12):962--965, 2011.
+\newblock {\em Nature {P}hys.}, 7(12):962--965, 2011.
 
 \bibitem{LIGOStochasticNature2009}
 {The LIGO Scientific Collaboration and The Virgo Collaboration}.
@@ -457,7 +468,7 @@ Nicol\'{a}s~{de Mateo} Smith-Lefebvre.
 \bibitem{Matlab2012a}
 {The MathWorks, Inc.}
 \newblock {\em MATLAB and Signal Processing Toolbox Release 2012a,}.
-\newblock Natick, Massachusetts, 2012.
+\newblock {The MathWorks, Inc.}, Natick, Massachusetts, 2012.
 
 \bibitem{Thorne300}
 K.S. Thorne.

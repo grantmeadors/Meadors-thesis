@@ -17,32 +17,14 @@ I was expecting a `{' or a `('---line 6 of file bibliography.bib
  : @ARTICLE{feyn54,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 440 of file bibliography.bib
- :   pages = "553"
- :                .
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1582 of file bibliography.bib
- : 
- : year = "c. 1120"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1905 of file bibliography.bib
- :   
- :   howpublished = "Web: http://physics.nist.gov/cgi-bin/cuu/Value?h",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1934 of file bibliography.bib
- : number = "gr-qc/9712019v1"
- :                           .
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Farr2010"
+Warning--I didn't find a database entry for "RomeroThesis"
 Warning--empty title in LIGOCal2010
 Warning--empty title in LSCPowerFlux2009
 Warning--empty title in LSCPulsar2006
 Warning--empty title in Antares2013
 Warning--empty title in Black2001
 Warning--empty title in Caldwell1981
-Warning--empty year in Carroll1997
 Warning--empty title in Deschrijver2008
 Warning--empty title in Swift2012
 Warning--empty title in Grishchuk1974
@@ -54,48 +36,47 @@ Warning--empty title in Lindblom1995
 Warning--empty title in McKee1977
 Warning--empty title in Ott2009
 Warning--empty title in Sathyaprakash2009
-Warning--empty publisher in Matlab2012a
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 91 entries,
+You've used 93 entries,
             2118 wiz_defined-function locations,
-            1034 strings with 17025 characters,
-and the built_in function-call counts, 24701 in all, are:
-= -- 2315
-> -- 1417
-< -- 12
-+ -- 574
-- -- 476
-* -- 1736
-:= -- 4596
-add.period$ -- 255
-call.type$ -- 91
-change.case$ -- 460
+            1046 strings with 17462 characters,
+and the built_in function-call counts, 25419 in all, are:
+= -- 2379
+> -- 1478
+< -- 13
++ -- 598
+- -- 498
+* -- 1794
+:= -- 4732
+add.period$ -- 261
+call.type$ -- 93
+change.case$ -- 478
 chr.to.int$ -- 0
 cite$ -- 112
-duplicate$ -- 894
-empty$ -- 1682
-format.name$ -- 476
-if$ -- 4845
+duplicate$ -- 914
+empty$ -- 1719
+format.name$ -- 498
+if$ -- 4984
 int.to.chr$ -- 0
-int.to.str$ -- 91
-missing$ -- 63
-newline$ -- 439
-num.names$ -- 184
-pop$ -- 433
+int.to.str$ -- 93
+missing$ -- 65
+newline$ -- 449
+num.names$ -- 188
+pop$ -- 443
 preamble$ -- 1
-purify$ -- 408
+purify$ -- 423
 quote$ -- 0
-skip$ -- 620
+skip$ -- 636
 stack$ -- 0
-substring$ -- 802
-swap$ -- 87
-text.length$ -- 12
+substring$ -- 812
+swap$ -- 89
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 348
-warning$ -- 21
-while$ -- 205
-width$ -- 93
-write$ -- 953
-(There were 7 error messages)
+type$ -- 356
+warning$ -- 19
+while$ -- 209
+width$ -- 95
+write$ -- 977
+(There were 3 error messages)
