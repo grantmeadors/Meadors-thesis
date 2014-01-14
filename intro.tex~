@@ -1,7 +1,6 @@
 
 
 
-
     \section{Gravitational waves in astrophysics}
     \label{grav_waves_astro}
 
@@ -45,7 +44,9 @@ All gravitational waves searches look for something. While the most exciting pos
     \section{General relativity}
     \label{general_relativity}
 
-        General relativity (the mathematics). The ideal reference here is Sean Carroll's lecture notes on general relativity,~\cite{Carroll1997}, although I should also cite Will Farr's thesis if it is elegant. Farr is good for citing things like the Palatini action. Of course, I should also "dig down" and cite the original sources that they reference too, where applicable. Can also cite Misner, Thorne and Wheeler~\cite{MisnerThorneWheeler}.
+        General relativity (the mathematics). The ideal reference here is Sean Carroll's lecture notes on general relativity,~\cite{Carroll1997}, although I should also cite Will Farr's thesis~\cite{FarrThesis} if it is elegant. Farr is good for citing things like the Palatini action. Of course, I should also "dig down" and cite the original sources that they reference too, where applicable. Can also cite Misner, Thorne and Wheeler~\cite{MisnerThorneWheeler}.
+
+Intro to GR -- right motivation is least action Ricci tensor, implying field equation and phase/time-of-flight implying interferometry.
 
         \subsection{Symmetry and action principles}
         \label{principles}
@@ -83,6 +84,15 @@ All gravitational waves searches look for something. While the most exciting pos
 
 		Rates go in here.
 
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=120mm, width=160mm]{neutron_star_structure.eps}
+	\caption{Hypothetical internal structure of a neutron star (INCLUDE CITATION FROM PRELIM DEFENSE: found at http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron\_star\_structure.html) Possibly original Frank Shu? Fred would probably know, being a student of Frank}
+	\label{neutron_star_structure}
+	\end{center}
+	\end{figure}
+
+
     \section{Laser Interferometer Gravitational-wave Observatories}
     \label{LIGO}
         
@@ -118,7 +128,7 @@ All gravitational waves searches look for something. While the most exciting pos
                 \paragraph{Feedforward filtering}
                 \label{feedforward_filters}
 
-                    Example of feedforward: 60 Hz magnetometer. The only source that mentions this is, I think, Nic's thesis~\cite{SmithThesis}. Yet the most pertinent example is one that has long been applied to LIGO: MICH and PRC feedforward. The specific needed are mention in the thesis of Adhikari~\cite{AdhikariThesis} and Ballmer~\cite{BallmerThesis}, but immediately before Keita Kawabe and I began our project, these parameter had been tuned by Jeff Kissel~\cite{KissellPRCMICH}
+                    Example of feedforward: 60 Hz magnetometer. The only source that mentions this is, I think, Nic's thesis~\cite{SmithThesis}. Yet the most pertinent example is one that has long been applied to LIGO: MICH and PRC feedforward. The specific needed are mention in the thesis of Adhikari~\cite{AdhikariThesis} and Ballmer~\cite{BallmerThesis}, but immediately before Keita Kawabe and I began our project, these parameters had been tuned by Jeff Kissel~\cite{KissellPRCMICH}
 
                 \paragraph{Phase camera}
                 \label{phase_camera}
