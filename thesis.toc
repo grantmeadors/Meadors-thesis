@@ -8,103 +8,103 @@
 \hbox { }
 \contentsline {section}{\numberline {1.1}Gravitational waves in astrophysics}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Cosmic sources of gravitational waves}{2}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}History from general relativity}{6}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Contrast with electromagnetic and particle astronomy}{6}{subsection.1.1.3}
-\contentsline {section}{\numberline {1.2}General relativity}{7}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Symmetry and action principles}{8}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Derivation of field equations}{8}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Radiation from quadrupoles}{8}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Astrophysical estimates}{8}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Sources: burst, continuous, inspiral and stochastic}{8}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Continuous waves from neutron stars}{9}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Laser Interferometer Gravitational-wave Observatories}{9}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}From Weber bars to interferometry}{9}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Gravitational wave interferometry methods}{9}{subsection.1.4.2}
-\contentsline {subsubsection}{Interferometer theory}{11}{section*.2}
-\contentsline {subsubsection}{Observatory operation}{11}{section*.3}
-\contentsline {paragraph}{Detector characterization}{11}{section*.4}
-\contentsline {paragraph}{Feedforward filtering}{11}{section*.5}
-\contentsline {paragraph}{Phase camera}{12}{section*.6}
-\contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{12}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{12}{subsection.1.4.4}
-\contentsline {section}{\numberline {1.5}Summary}{12}{section.1.5}
+\contentsline {subsection}{\numberline {1.1.2}History from general relativity}{7}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Contrast with electromagnetic and particle astronomy}{7}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}General relativity}{8}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Symmetry and action principles}{9}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Derivation of field equations}{9}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Radiation from quadrupoles}{9}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Astrophysical estimates}{9}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Sources: burst, continuous, inspiral and stochastic}{9}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Continuous waves from neutron stars}{10}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Laser Interferometer Gravitational-wave Observatories}{10}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}From Weber bars to interferometry}{10}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Gravitational wave interferometry methods}{10}{subsection.1.4.2}
+\contentsline {subsubsection}{Interferometer theory}{12}{section*.2}
+\contentsline {subsubsection}{Observatory operation}{12}{section*.3}
+\contentsline {paragraph}{Detector characterization}{12}{section*.4}
+\contentsline {paragraph}{Feedforward filtering}{12}{section*.5}
+\contentsline {paragraph}{Phase camera}{14}{section*.6}
+\contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{14}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{17}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Summary}{17}{section.1.5}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf II.\hspace {5pt}}{\bf Feedforward: Auxiliary MICH-PRC Subtraction}}{13}{chapter.2}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf II.\hspace {5pt}}{\bf Feedforward: Auxiliary MICH-PRC Subtraction}}{18}{chapter.2}
 \hbox { }
-\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}
-\contentsline {section}{\numberline {2.2}Description of the feedforward method}{16}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Auxiliary noise coherence at sensitive frequencies}{20}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Estimating filters}{23}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Feedforward in-loop and alternative program methods}{26}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Manually designed rational filtering in-loop}{26}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Vector-fitted filter functions}{30}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Wiener filters}{30}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Prospects for almost-real-time filtering}{31}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Safeguard and veto methods}{32}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Runtime safeguards}{32}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Post-processing safeguards}{33}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Feedforward results and discussion: MICH and PRC channels}{35}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Filter fitting across science segments}{36}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Post-processing diagnostics}{40}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Feedforward benefits and potential}{45}{subsection.2.5.3}
-\contentsline {section}{\numberline {2.6}Conclusion}{45}{section.2.6}
+\contentsline {section}{\numberline {2.1}Introduction}{18}{section.2.1}
+\contentsline {section}{\numberline {2.2}Description of the feedforward method}{21}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Auxiliary noise coherence at sensitive frequencies}{25}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Estimating filters}{28}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Feedforward in-loop and alternative program methods}{31}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Manually designed rational filtering in-loop}{31}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Vector-fitted filter functions}{35}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Wiener filters}{35}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Prospects for almost-real-time filtering}{36}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Safeguard and veto methods}{37}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Runtime safeguards}{37}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Post-processing safeguards}{38}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Feedforward results and discussion: MICH and PRC channels}{40}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Filter fitting across science segments}{41}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Post-processing diagnostics}{45}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Feedforward benefits and potential}{50}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}Conclusion}{50}{section.2.6}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf III.\hspace {5pt}}{\bf Squeezing: Quantum Vacuum Phase Noise}}{50}{chapter.3}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf III.\hspace {5pt}}{\bf Squeezing: Quantum Vacuum Phase Noise}}{55}{chapter.3}
 \hbox { }
-\contentsline {section}{\numberline {3.1}Squeezing theory}{50}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Quantum shot noise and radiation pressure}{50}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Problems with lasers: thermal compensation}{50}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Squeezing filter cavities against alternatives}{50}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}LIGO Hanford Observatory quantum vacuum squeezing}{50}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Collaboration and contributions}{50}{subsection.3.2.1}
-\contentsline {subsubsection}{Optical table support assembly}{51}{section*.7}
-\contentsline {subsubsection}{Faraday isolator measurement}{51}{section*.8}
-\contentsline {subsubsection}{In-vacuum installation}{51}{section*.9}
-\contentsline {subsubsection}{Data digitization}{51}{section*.10}
-\contentsline {subsubsection}{Figures of merit: inspiral range}{51}{section*.11}
-\contentsline {subsection}{\numberline {3.2.2}Success and Advanced LIGO prospects}{52}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.1}Squeezing theory}{55}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Quantum shot noise and radiation pressure}{55}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Problems with lasers: thermal compensation}{55}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Squeezing filter cavities against alternatives}{55}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}LIGO Hanford Observatory quantum vacuum squeezing}{55}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Collaboration and contributions}{55}{subsection.3.2.1}
+\contentsline {subsubsection}{Optical table support assembly}{56}{section*.7}
+\contentsline {subsubsection}{Faraday isolator measurement}{56}{section*.8}
+\contentsline {subsubsection}{In-vacuum installation}{56}{section*.9}
+\contentsline {subsubsection}{Data digitization}{56}{section*.10}
+\contentsline {subsubsection}{Figures of merit: inspiral range}{56}{section*.11}
+\contentsline {subsection}{\numberline {3.2.2}Success and Advanced LIGO prospects}{57}{subsection.3.2.2}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf IV.\hspace {5pt}}{\bf TwoSpect: Search for Scorpius X-1}}{53}{chapter.4}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf IV.\hspace {5pt}}{\bf TwoSpect: Search for Scorpius X-1}}{58}{chapter.4}
 \hbox { }
-\contentsline {section}{\numberline {4.1}Neutron stars in binary systems}{53}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Binary spin-up and detectable lifetime}{53}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Detection rate projections}{53}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}TwoSpect all-sky searches}{53}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Two spectra: a double Fourier transform}{53}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Infering neutron stars with companions}{53}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Scorpius X-1 and results from Directed TwoSpect}{54}{section.4.3}
+\contentsline {section}{\numberline {4.1}Neutron stars in binary systems}{58}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Binary spin-up and detectable lifetime}{58}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Detection rate projections}{58}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}TwoSpect all-sky searches}{58}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Two spectra: a double Fourier transform}{58}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Infering neutron stars with companions}{58}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Scorpius X-1 and results from Directed TwoSpect}{59}{section.4.3}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf Directed TwoSpect: Neutron Star Binaries}}{55}{chapter.5}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf Directed TwoSpect: Neutron Star Binaries}}{60}{chapter.5}
 \hbox { }
-\contentsline {section}{\numberline {5.1}Directed TwoSpect}{55}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Target, directed and all-sky search sensitivity}{55}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Enhancements enabled by directed searching}{55}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Quantifying Directedness}{55}{section.5.2}
+\contentsline {section}{\numberline {5.1}Directed TwoSpect}{60}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Target, directed and all-sky search sensitivity}{60}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Enhancements enabled by directed searching}{60}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Quantifying Directedness}{60}{section.5.2}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Exhibit: World Science Festival}}{56}{chapter.6}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Exhibit: World Science Festival}}{61}{chapter.6}
 \hbox { }
-\contentsline {section}{\numberline {6.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{56}{section.6.1}
-\contentsline {section}{\numberline {6.2}World Science Festival interferometer manufacture}{56}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Laser, optics and display}{56}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Aluminum baseboard}{56}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{56}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{56}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{56}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}World Science Festival 2010}{60}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{60}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Future LIGO outreach}{60}{section.6.4}
+\contentsline {section}{\numberline {6.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{61}{section.6.1}
+\contentsline {section}{\numberline {6.2}World Science Festival interferometer manufacture}{61}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Laser, optics and display}{61}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Aluminum baseboard}{61}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{61}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{61}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{61}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}World Science Festival 2010}{65}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{65}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Future LIGO outreach}{65}{section.6.4}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{61}{chapter.7}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{66}{chapter.7}
 \hbox { }
-\contentsline {section}{\numberline {7.1}Cycles of science}{61}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{61}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{61}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Refining data}{61}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{61}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{61}{subsection.7.1.5}
-\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{61}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{62}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{62}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{62}{section.7.3}
-\contentsline {section}{\numberline {7.4}Vision of a dark sky}{62}{section.7.4}
-\contentsline {chapter}{BIBLIOGRAPHY}{63}{section.7.4}
+\contentsline {section}{\numberline {7.1}Cycles of science}{66}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{66}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{66}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Refining data}{66}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{66}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{66}{subsection.7.1.5}
+\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{66}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{67}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{67}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{67}{section.7.3}
+\contentsline {section}{\numberline {7.4}Vision of a dark sky}{67}{section.7.4}
+\contentsline {chapter}{BIBLIOGRAPHY}{68}{section.7.4}

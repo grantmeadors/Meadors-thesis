@@ -16,6 +16,14 @@
 
 		Gravity's power to induce ripples in space is a matter of fact. Pulsar 1913+16, discovered by Hulse and Taylor, not only followed a pattern of orbital decay consistent with radiative loss of orbital decay to gravitational radiation -- it continued to do so~\cite{WeisbergTaylor2004}, even after Hulse and Taylor won the 1993 Nobel Prize in physics. We still may ask whether the waves are detectable on Earth. We may ask whether they appear in detectors in a way consistent with general relativity. The basic fact of their emission, however, appears settled.
 
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=120mm, width=160mm]{500px-PSR_B1913+16_period_shift_graph.eps}
+	\caption{The Hulse-Taylor binary}
+	\label{Hulse-Taylor_binary}
+	\end{center}
+	\end{figure}
+
 		Before delving into the specifics of general relativity, we might consider all the astrophysical sources we expect to emit gravitational waves. Physics prompts our search, but astronomy makes it exciting.
 
 		Gravitational waves (henceforth also abbreviated GW) searches presently focus on four distinct types of cosmic sources. This thesis concentrates on continuous waves, which are sine waves -- perhaps modulated by orbital motion, spin-up or spin-down. Continuous waves are most likely to be detectable from neutron stars. Given a sufficiently large ellipticity, which might be on the order of $\epsilon \approx 10^{-6}$ [CITE] or smaller for a neutron star rotating on the order of 1 kHz, a deformation of the crust would radiate sufficient gravitational radiation to be a plausibly-detectable source. Indeed, the radiation would rapidly deplete the rotational energy of the neutron star [CITE], which is why binary systems, where the neutron star could be recycled and spun-up by a partner, prove a promising target [CITE]. Scorpius X-1 offers a canonical case, although our discussion of the TwoSpect analysis will elaborate the abundance of other low-mass X-ray binary (LMXB) systems of interest. Given the paucity of information on the interiors of collapsed stellar remnants, direct detection of gravitational waves from neutron stars could prove informative. We might infer details favoring one equation of state [CITE], might extract parameters suggesting the existence of quark stars or gravitars [CITE], and will have an unparalleled peek into the interior of the densest stable three-dimensional objects in the universe. Their simple waveforms might even facilitate the calibration of other types of gravitational wave data [CITE]. From any source, continuous waves are a conceptually-elegant and astronomically-enticing target.
@@ -120,6 +128,15 @@ Intro to GR -- right motivation is least action Ricci tensor, implying field equ
 
                 Operating LIGO: controls, Detector Characterization. One of the first sources from initial LIGO to read up on is a paper by Fritscel, Bork, Mavalvala et al~\cite{ReadoutGWA}. Initially this system made a detection based on heterodyne readout using gravitational wave sidebands, which, among other troubles, could be unequal in the recycling cavity~\cite{MeadorsHanford2005}.
 
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=120mm, width=160mm]{Screen_shot_2010-07-21_at_04.25.16_.eps}
+	\caption{Screenshot of MEDM control panel}
+	\label{ScreenshotMEDM}
+	\end{center}
+	\end{figure}
+
+
                 \paragraph{Detector characterization}
                 \label{detchar}
             
@@ -129,6 +146,30 @@ Intro to GR -- right motivation is least action Ricci tensor, implying field equ
                 \label{feedforward_filters}
 
                     Example of feedforward: 60 Hz magnetometer. The only source that mentions this is, I think, Nic's thesis~\cite{SmithThesis}. Yet the most pertinent example is one that has long been applied to LIGO: MICH and PRC feedforward. The specific needed are mention in the thesis of Adhikari~\cite{AdhikariThesis} and Ballmer~\cite{BallmerThesis}, but immediately before Keita Kawabe and I began our project, these parameters had been tuned by Jeff Kissel~\cite{KissellPRCMICH}
+
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=120mm, width=160mm]{servo_loop.eps}
+	\caption{Real-time servo loop diagram}
+	\label{servo_loop_realtime}
+	\end{center}
+	\end{figure}
+
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=120mm, width=160mm]{newNOISEfilter.eps}
+	\caption{Real-time work on a LIGO noise filter}
+	\label{newNOISEfilter}
+	\end{center}
+	\end{figure}
+
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=120mm, width=160mm]{2011-03-08_filter-01.eps}
+	\caption{Early work on post-facto noise filtering}
+	\label{filter_early}
+	\end{center}
+	\end{figure}
 
                 \paragraph{Phase camera}
                 \label{phase_camera}
