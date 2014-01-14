@@ -19,7 +19,7 @@
 	\begin{figure}
 	\begin{center}
 	\includegraphics[height=120mm, width=160mm]{500px-PSR_B1913+16_period_shift_graph.eps}
-	\caption{The Hulse-Taylor binary}
+	\caption{The Hulse-Taylor binary, orbital period change over time consistent with emission of gravitational radiation from its system}
 	\label{Hulse-Taylor_binary}
 	\end{center}
 	\end{figure}
@@ -130,7 +130,7 @@ Intro to GR -- right motivation is least action Ricci tensor, implying field equ
 
 	\begin{figure}
 	\begin{center}
-	\includegraphics[height=120mm, width=160mm]{Screen_shot_2010-07-21_at_04.25.16_.eps}
+	\includegraphics[height=120mm, width=160mm]{Screen_shot_2010-07-21_at_042516_.eps}
 	\caption{Screenshot of MEDM control panel}
 	\label{ScreenshotMEDM}
 	\end{center}
