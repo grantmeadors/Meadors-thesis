@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  12 MAY 2014 22:47
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  12 MAY 2014 23:26
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -305,22 +305,22 @@ Overfull \hbox (2938.75732pt too wide) in paragraph at lines 8--8
  []
 
 
-Overfull \hbox (1609.7535pt too wide) in paragraph at lines 9--9
+Overfull \hbox (1578.42699pt too wide) in paragraph at lines 9--9
  [][] [] []  
  []
 
 
-Overfull \hbox (1515.42007pt too wide) in paragraph at lines 10--10
+Overfull \hbox (1556.38773pt too wide) in paragraph at lines 10--10
  [][] [] []  
  []
 
 
-Overfull \hbox (1532.83679pt too wide) in paragraph at lines 11--11
+Overfull \hbox (1776.58253pt too wide) in paragraph at lines 11--11
  [][] [] []  
  []
 
 
-Overfull \hbox (843.30783pt too wide) in paragraph at lines 12--12
+Overfull \hbox (1152.23192pt too wide) in paragraph at lines 12--12
  [][] [] []  
  []
 
@@ -330,52 +330,52 @@ Overfull \hbox (1766.26537pt too wide) in paragraph at lines 13--13
  []
 
 
-Overfull \hbox (2721.50555pt too wide) in paragraph at lines 14--14
+Overfull \hbox (2855.49548pt too wide) in paragraph at lines 14--14
  [][] [] []  
  []
 
 
-Overfull \hbox (1165.03043pt too wide) in paragraph at lines 15--15
+Overfull \hbox (2272.40501pt too wide) in paragraph at lines 15--15
  [][] [] []  
  []
 
 
-Overfull \hbox (1362.01451pt too wide) in paragraph at lines 16--16
+Overfull \hbox (1140.87787pt too wide) in paragraph at lines 16--16
  [][] [] []  
  []
 
 
-Overfull \hbox (1457.62332pt too wide) in paragraph at lines 17--17
+Overfull \hbox (1200.96828pt too wide) in paragraph at lines 17--17
  [][] [] []  
  []
 
 
-Overfull \hbox (128.72694pt too wide) in paragraph at lines 18--18
+Overfull \hbox (2282.69228pt too wide) in paragraph at lines 18--18
  [][] [] []  
  []
 
 
-Overfull \hbox (482.80833pt too wide) in paragraph at lines 19--19
+Overfull \hbox (1895.22269pt too wide) in paragraph at lines 19--19
  [][] [] []  
  []
 
 
-Overfull \hbox (421.18474pt too wide) in paragraph at lines 20--20
+Overfull \hbox (2492.86871pt too wide) in paragraph at lines 20--20
  [][] [] []  
  []
 
 
-Overfull \hbox (1003.54451pt too wide) in paragraph at lines 21--21
+Overfull \hbox (1799.40706pt too wide) in paragraph at lines 21--21
  [][] [] []  
  []
 
 
-Overfull \hbox (638.72708pt too wide) in paragraph at lines 22--22
+Overfull \hbox (990.33884pt too wide) in paragraph at lines 22--22
  [][] [] []  
  []
 
 
-Overfull \hbox (51.02864pt too wide) in paragraph at lines 26--26
+Overfull \hbox (51.02864pt too wide) in paragraph at lines 25--25
  [][] [] []  
  []
 
@@ -455,11 +455,7 @@ Overfull \hbox (49.88899pt too wide) detected at line 22
 \OT1/cmr/m/n/10 Figure 1.1: []
  []
 
-[2] [3] [4] [5] [6] [7] [8]
-
-LaTeX Warning: Citation `Farr2010' on page 9 undefined on input line 69.
-
-[9]
+[2] [3] [4] [5] [6] [7] [8] [9]
 File: neutron_star_structure.eps Graphic file (type eps)
  <neutron_star_structure.eps>
 Overfull \hbox (25.27916pt too wide) in paragraph at lines 97--98
@@ -579,20 +575,20 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 (./chap2.tex [18
 
-] [19] [20] [21]
+] [19] [20]
 Overfull \hbox (8.1875pt too wide) in paragraph at lines 100--101
 []\OT1/cmr/m/n/12 LIGO core op-tics in-clude the beam-splitter (BS) and power-r
 ecycling mir-ror (PRM),
  []
 
-[22]
+[21]
 File: figure1.eps Graphic file (type eps)
  <figure1.eps>
 Overfull \hbox (49.88899pt too wide) detected at line 122
 \OT1/cmr/m/n/10 Figure 2.1: []
  []
 
-[23] [24] [25] [26] [27] [28] [29]
+[22] [23] [24] [25]
 File: figure2a.eps Graphic file (type eps)
  <figure2a.eps>
 File: figure2b.eps Graphic file (type eps)
@@ -625,66 +621,70 @@ Overfull \hbox (49.88899pt too wide) detected at line 226
 \OT1/cmr/m/n/10 Figure 2.5: []
  []
 
-[30] [31] [32] [33] [34] [35] [36] [37] [38] [39]
+[26]
+Overfull \hbox (3.20059pt too wide) in paragraph at lines 233--234
+\OT1/cmr/m/n/12 cho-sen method. Sec-tion [][][][] dis-cusses safe-guards and ve
+-toes, and Sec-tions [][][][] and [][][][]
+ []
+
+[27] [28] [29] [30] [31] [32] [33] [34] [35] [36]
 File: figure6.eps Graphic file (type eps)
  <figure6.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 295
+Overfull \hbox (49.88899pt too wide) detected at line 364
 \OT1/cmr/m/n/10 Figure 2.6: []
  []
 
 File: figure7.eps Graphic file (type eps)
 <figure7.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 303
+Overfull \hbox (49.88899pt too wide) detected at line 372
 \OT1/cmr/m/n/10 Figure 2.7: []
  []
 
 File: figure8.eps Graphic file (type eps)
 <figure8.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 311
+Overfull \hbox (49.88899pt too wide) detected at line 380
 \OT1/cmr/m/n/10 Figure 2.8: []
  []
 
 File: figure9.eps Graphic file (type eps)
 <figure9.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 324
+Overfull \hbox (49.88899pt too wide) detected at line 394
 \OT1/cmr/m/n/10 Figure 2.9: []
  []
 
-[40] [41] [42] [43] [44]
+[37] [38] [39] [40] [41]
 File: figure10.eps Graphic file (type eps)
  <figure10.eps>
-Overfull \hbox (54.889pt too wide) detected at line 364
+Overfull \hbox (54.889pt too wide) detected at line 433
 \OT1/cmr/m/n/10 Figure 2.10: []
  []
 
-[45] [46]
+[42]
 File: figure11.eps Graphic file (type eps)
  <figure11.eps>
-Overfull \hbox (54.889pt too wide) detected at line 380
+Overfull \hbox (54.889pt too wide) detected at line 451
 \OT1/cmr/m/n/10 Figure 2.11: []
  []
 
 File: figure12.eps Graphic file (type eps)
 <figure12.eps>
-Overfull \hbox (54.889pt too wide) detected at line 388
+Overfull \hbox (54.889pt too wide) detected at line 459
 \OT1/cmr/m/n/10 Figure 2.12: []
  []
 
-[47] [48]
 File: figure13a.eps Graphic file (type eps)
- <figure13a.eps>
+<figure13a.eps>
 File: figure13b.eps Graphic file (type eps)
  <figure13b.eps>
-Overfull \hbox (54.889pt too wide) detected at line 400
+Overfull \hbox (54.889pt too wide) detected at line 470
 \OT1/cmr/m/n/10 Figure 2.13: []
  []
 
-[49]
 File: figure14a.eps Graphic file (type eps)
- <figure14a.eps>
+<figure14a.eps>
 File: figure14b.eps Graphic file (type eps)
  <figure14b.eps>
-Overfull \hbox (54.889pt too wide) detected at line 417
+Overfull \hbox (54.889pt too wide) detected at line 487
 \OT1/cmr/m/n/10 Figure 2.14: []
  []
 
@@ -692,18 +692,23 @@ File: figure15a.eps Graphic file (type eps)
 <figure15a.eps>
 File: figure15b.eps Graphic file (type eps)
  <figure15b.eps>
-Overfull \hbox (54.889pt too wide) detected at line 426
+Overfull \hbox (54.889pt too wide) detected at line 496
 \OT1/cmr/m/n/10 Figure 2.15: []
  []
 
-File: figure16.eps Graphic file (type eps)
-<figure16.eps> [50] [51] [52] [53]
-Overfull \hbox (1.82634pt too wide) in paragraph at lines 448--449
+
+Overfull \hbox (2.05617pt too wide) in paragraph at lines 516--517
+\OT1/cmr/m/n/12 strain sen-si-tiv-ity and in-spi-ral range. Frequency-domain-de
+rived, time-domain-applied
+ []
+
+[43] [44] [45] [46] [47] [48]
+Overfull \hbox (1.82634pt too wide) in paragraph at lines 520--521
 []\OT1/cmr/m/n/12 LIGO was con-structed by the Cal-i-for-nia In-sti-tute of Tec
 h-nol-ogy and Mas-sachusetts
  []
 
-) [54]
+[49]) [50]
 CHAPTER III.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -760,9 +765,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 148.
 
-(./chap3.tex [55
+(./chap3.tex [51
 
-] [56]) [57]
+] [52]) [53]
 CHAPTER IV.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -819,9 +824,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 152.
 
-(./chap4.tex [58
+(./chap4.tex [54
 
-]) [59]
+]) [55]
 CHAPTER V.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -880,9 +885,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 (./chap5.tex
 
-LaTeX Warning: Citation `RomeroThesis' on page 60 undefined on input line 26.
+LaTeX Warning: Citation `RomeroThesis' on page 56 undefined on input line 26.
 
-) [60
+) [56
 
 ]
 CHAPTER VI.
@@ -971,9 +976,9 @@ Overfull \hbox (25.24333pt too wide) in paragraph at lines 71--72
  [] 
  []
 
-[61
+[57
 
-] [62] [63] [64]) [65]
+] [58] [59] [60]) [61]
 CHAPTER VII.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1030,28 +1035,28 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 164.
 
-(./conclusion.tex [66
+(./conclusion.tex [62
 
-]) (./thesis.bbl [67] [68
+]) (./thesis.bbl [63] [64
 
-] [69] [70]
-Underfull \hbox (badness 10000) in paragraph at lines 286--292
+] [65] [66]
+Underfull \hbox (badness 10000) in paragraph at lines 299--305
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--292
+Underfull \hbox (badness 10000) in paragraph at lines 299--305
 \OT1/cmr/m/n/10 http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detecto
 r&
  []
 
-[71] [72]
-Underfull \hbox (badness 2376) in paragraph at lines 452--455
+[67] [68]
+Underfull \hbox (badness 2376) in paragraph at lines 454--457
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-) [73]
+) [69]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
@@ -1062,12 +1067,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3806 strings out of 95847
- 49578 string characters out of 1195216
- 127361 words of memory out of 1000001
+ 3804 strings out of 95847
+ 49592 string characters out of 1195216
+ 127403 words of memory out of 1000001
  6625 multiletter control sequences out of 10000+50000
- 13148 words of font info for 51 fonts, out of 500000 for 1000
+ 12979 words of font info for 50 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
- 33i,10n,36p,2107b,447s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 33i,10n,36p,1676b,477s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (82 pages, 300620 bytes).
+Output written on thesis.dvi (78 pages, 289120 bytes).

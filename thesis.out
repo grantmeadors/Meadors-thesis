@@ -26,19 +26,21 @@
 \BOOKMARK [1][-]{section.2.2}{Description of the feedforward method}{chapter.2}
 \BOOKMARK [2][-]{subsection.2.2.1}{Auxiliary noise coherence at sensitive frequencies}{section.2.2}
 \BOOKMARK [2][-]{subsection.2.2.2}{Estimating filters}{section.2.2}
-\BOOKMARK [1][-]{section.2.3}{Feedforward in-loop and alternative program methods}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{Feedforward in- and out-of-loop methods}{chapter.2}
 \BOOKMARK [2][-]{subsection.2.3.1}{Manually designed rational filtering in-loop}{section.2.3}
-\BOOKMARK [2][-]{subsection.2.3.2}{Vector-fitted filter functions}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.2}{Frequency-domain automated filter design}{section.2.3}
 \BOOKMARK [2][-]{subsection.2.3.3}{Wiener filters}{section.2.3}
-\BOOKMARK [2][-]{subsection.2.3.4}{Prospects for almost-real-time filtering}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.4}{Prospects for near-real-time filtering}{section.2.3}
 \BOOKMARK [1][-]{section.2.4}{Safeguard and veto methods}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.4.1}{Runtime safeguards}{section.2.4}
-\BOOKMARK [2][-]{subsection.2.4.2}{Post-processing safeguards}{section.2.4}
-\BOOKMARK [1][-]{section.2.5}{Feedforward results and discussion: MICH and PRC channels}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.4.1}{Calibration integrity}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.2}{Runtime safeguards}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.3}{Post-processing safeguards}{section.2.4}
+\BOOKMARK [1][-]{section.2.5}{Feedforward with MICH and PRC channels}{chapter.2}
 \BOOKMARK [2][-]{subsection.2.5.1}{Filter fitting across science segments}{section.2.5}
-\BOOKMARK [2][-]{subsection.2.5.2}{Post-processing diagnostics}{section.2.5}
-\BOOKMARK [2][-]{subsection.2.5.3}{Feedforward benefits and potential}{section.2.5}
-\BOOKMARK [1][-]{section.2.6}{Conclusion}{chapter.2}
+\BOOKMARK [1][-]{section.2.6}{Results of feedforward}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.6.1}{Post-processing diagnostics}{section.2.6}
+\BOOKMARK [2][-]{subsection.2.6.2}{Feedforward benefits and potential}{section.2.6}
+\BOOKMARK [1][-]{section.2.7}{Conclusion}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{Squeezing: Quantum Vacuum Phase Noise}{}
 \BOOKMARK [1][-]{section.3.1}{Squeezing theory}{chapter.3}
 \BOOKMARK [2][-]{subsection.3.1.1}{Quantum shot noise and radiation pressure}{section.3.1}

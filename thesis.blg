@@ -17,7 +17,6 @@ I was expecting a `{' or a `('---line 6 of file bibliography.bib
  : @ARTICLE{feyn54,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Farr2010"
 Warning--I didn't find a database entry for "RomeroThesis"
 Warning--empty title in LIGOCal2010
 Warning--empty title in LSCPowerFlux2009
@@ -38,45 +37,45 @@ Warning--empty title in Ott2009
 Warning--empty title in Sathyaprakash2009
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 93 entries,
+You've used 94 entries,
             2118 wiz_defined-function locations,
-            1046 strings with 17462 characters,
-and the built_in function-call counts, 25419 in all, are:
-= -- 2379
-> -- 1478
-< -- 13
-+ -- 598
-- -- 498
-* -- 1794
-:= -- 4732
-add.period$ -- 261
-call.type$ -- 93
-change.case$ -- 478
+            1056 strings with 17829 characters,
+and the built_in function-call counts, 26380 in all, are:
+= -- 2460
+> -- 1563
+< -- 12
++ -- 631
+- -- 530
+* -- 1898
+:= -- 4890
+add.period$ -- 264
+call.type$ -- 94
+change.case$ -- 496
 chr.to.int$ -- 0
-cite$ -- 112
-duplicate$ -- 914
-empty$ -- 1719
-format.name$ -- 498
-if$ -- 4984
+cite$ -- 113
+duplicate$ -- 932
+empty$ -- 1773
+format.name$ -- 530
+if$ -- 5175
 int.to.chr$ -- 0
-int.to.str$ -- 93
-missing$ -- 65
-newline$ -- 449
-num.names$ -- 188
-pop$ -- 443
+int.to.str$ -- 94
+missing$ -- 68
+newline$ -- 454
+num.names$ -- 190
+pop$ -- 459
 preamble$ -- 1
-purify$ -- 423
+purify$ -- 440
 quote$ -- 0
-skip$ -- 636
+skip$ -- 649
 stack$ -- 0
-substring$ -- 812
-swap$ -- 89
-text.length$ -- 13
+substring$ -- 883
+swap$ -- 91
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 356
+type$ -- 360
 warning$ -- 19
-while$ -- 209
-width$ -- 95
-write$ -- 977
+while$ -- 214
+width$ -- 96
+write$ -- 989
 (There were 3 error messages)

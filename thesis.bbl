@@ -132,6 +132,14 @@ E.~Black.
 E.~Black.
 \newblock {\em Amer. J. Phys.}, 69(79), 2001.
 
+\bibitem{Buskulic2000}
+D.~Buskulic, L.~Derome, R.~Flaminio, R.~Hermel, J.C. Lacotte, F.~Marion,
+  A.~Masserot, L.~Massonnet, B.~Mours, R.~Morand, P.~Puppo, D.~Verkindt, and
+  M.~Yvert.
+\newblock Monitoring and adaptive removal of the power supply harmonics applied
+  to the {V}irgo readout-out noise.
+\newblock {\em IJMPD}, 9(1):263--267, 2000.
+
 \bibitem{Caldwell1981}
 J.A.R Caldwell and J.P Ostriker.
 \newblock {\em Ap{J}}, 251(61), 1981.
@@ -181,6 +189,11 @@ Katherine~Laird Dooley.
 \newblock {\em Design and performance of high laser power interferometers for
   gravitational-wave detection}.
 \newblock PhD thesis, University of Florida, 2011.
+
+\bibitem{Drever1983}
+R.W.P. Drever et~al.
+\newblock Laser phase and frequency stabilization using an optical resonator.
+\newblock {\em Appl. {P}hys. {B}}, 31:97--105, 1983.
 
 \bibitem{Driggers2012ActiveNoise}
 Jennifer~C. Driggers, Matthew Evans, Keenan Pepper, and Rana Adhikari.
@@ -362,12 +375,6 @@ G.D. Meadors.
 \newblock {R}eed {C}ollege bachelor's thesis (advisor: {R}obert {R}eynolds),
   May 2008.
 
-\bibitem{MendellCohere2013}
-G.~Mendell.
-\newblock Significance of the magnitude squared coherence.
-\newblock {LIGO} presentation {G}1300070, presented at the {LIGO-VIRGO
-  Conference}, {Bethesda, Maryland}, 2013.
-
 \bibitem{michelson}
 A.A. Michelson.
 \newblock {\em The velocity of light}.
@@ -437,11 +444,6 @@ D.~Sigg.
 \newblock Frequency {R}esponse of the {LIGO} {I}nterferometer.
 \newblock Technical Report T970084, LIGO, 1997.
 
-\bibitem{Sigg2005}
-D.~Sigg.
-\newblock Implementing an {IIR} filter in hardware.
-\newblock Technical Report T050060, LIGO, 2005.
-
 \bibitem{SmithThesis}
 Nicol\'{a}s~{de Mateo} Smith-Lefebvre.
 \newblock {\em Techniques for improving the readout sensitivity of
@@ -480,6 +482,11 @@ K.S. Thorne.
 S.~Waldman and S.~Chua.
 \newblock eligo hanford output mode cleaner repair.
 \newblock Technical Report T1100562, LIGO, 2011.
+
+\bibitem{Weisberg2010}
+J.M. Weisberg, D.J. Nice, and J.H. Taylor.
+\newblock Timing measurements of the relativistic binary pulsar {PSR B1913+16}.
+\newblock {\em ApJ}, 722:1030--1034, 2010.
 
 \bibitem{WeisbergTaylor2004}
 Joel~M. Weisberg and Joseph~H. Taylor.
