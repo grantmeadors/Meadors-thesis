@@ -67,49 +67,49 @@
 \contentsline {subsection}{\numberline {3.2.2}Success and Advanced LIGO prospects}{53}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Squeezing large interferometers}{54}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Squeezing's scientific benefit}{54}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Squeezing summary}{55}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Squeezing summary}{57}{subsection.3.3.2}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf IV.\hspace {5pt}}{\bf TwoSpect: Search for Scorpius X-1}}{56}{chapter.4}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf IV.\hspace {5pt}}{\bf TwoSpect: Search for Scorpius X-1}}{58}{chapter.4}
 \hbox { }
-\contentsline {section}{\numberline {4.1}Neutron stars in binary systems}{56}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Binary spin-up and detectable lifetime}{56}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Detection rate projections}{56}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}TwoSpect all-sky searches}{56}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Two spectra: a double Fourier transform}{56}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Infering neutron stars with companions}{56}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Scorpius X-1 and results from Directed TwoSpect}{57}{section.4.3}
+\contentsline {section}{\numberline {4.1}Neutron stars in binary systems}{58}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Binary spin-up and detectable lifetime}{58}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Detection rate projections}{58}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}TwoSpect all-sky searches}{58}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Two spectra: a double Fourier transform}{58}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Infering neutron stars with companions}{58}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Scorpius X-1 and results from Directed TwoSpect}{59}{section.4.3}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf Directed TwoSpect: Neutron Star Binaries}}{58}{chapter.5}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf Directed TwoSpect: Neutron Star Binaries}}{60}{chapter.5}
 \hbox { }
-\contentsline {section}{\numberline {5.1}Directed TwoSpect}{58}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Target, directed and all-sky search sensitivity}{58}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Enhancements enabled by directed searching}{58}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Quantifying Directedness}{58}{section.5.2}
+\contentsline {section}{\numberline {5.1}Directed TwoSpect}{60}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Target, directed and all-sky search sensitivity}{60}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Enhancements enabled by directed searching}{60}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Quantifying Directedness}{60}{section.5.2}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Exhibit: World Science Festival}}{59}{chapter.6}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Exhibit: World Science Festival}}{61}{chapter.6}
 \hbox { }
-\contentsline {section}{\numberline {6.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{59}{section.6.1}
-\contentsline {section}{\numberline {6.2}World Science Festival interferometer manufacture}{59}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Laser, optics and display}{59}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Aluminum baseboard}{59}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{59}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{59}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{59}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}World Science Festival 2010}{63}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{63}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Future LIGO outreach}{63}{section.6.4}
+\contentsline {section}{\numberline {6.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{61}{section.6.1}
+\contentsline {section}{\numberline {6.2}World Science Festival interferometer manufacture}{61}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Laser, optics and display}{61}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Aluminum baseboard}{61}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{61}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{61}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{61}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}World Science Festival 2010}{65}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{65}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Future LIGO outreach}{65}{section.6.4}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{64}{chapter.7}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{66}{chapter.7}
 \hbox { }
-\contentsline {section}{\numberline {7.1}Cycles of science}{64}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{64}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{64}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Refining data}{64}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{64}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{64}{subsection.7.1.5}
-\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{64}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{65}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{65}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{65}{section.7.3}
-\contentsline {section}{\numberline {7.4}Vision of a dark sky}{65}{section.7.4}
-\contentsline {chapter}{BIBLIOGRAPHY}{66}{section.7.4}
+\contentsline {section}{\numberline {7.1}Cycles of science}{66}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{66}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{66}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Refining data}{66}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{66}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{66}{subsection.7.1.5}
+\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{66}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{67}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{67}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{67}{section.7.3}
+\contentsline {section}{\numberline {7.4}Vision of a dark sky}{67}{section.7.4}
+\contentsline {chapter}{BIBLIOGRAPHY}{68}{section.7.4}

@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  13 MAY 2014 01:45
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  13 MAY 2014 02:04
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -770,7 +770,22 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 ] [52] [53]
 File: lisabar-1289966130.eps Graphic file (type eps)
- <lisabar-1289966130.eps> [54]) [55]
+ <lisabar-1289966130.eps>
+File: lisabar-1300943141.eps Graphic file (type eps)
+ <lisabar-1300943141.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+[][]
+ []
+
+File: range_integrand.eps Graphic file (type eps)
+<range_integrand.eps>
+File: range_integrand_difference.eps Graphic file (type eps)
+ <range_integrand_difference.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
+[][]
+ []
+
+[54] [55] [56]) [57]
 CHAPTER IV.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -827,9 +842,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 152.
 
-(./chap4.tex [56
+(./chap4.tex [58
 
-]) [57]
+]) [59]
 CHAPTER V.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -886,7 +901,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 156.
 
-(./chap5.tex) [58
+(./chap5.tex) [60
 
 ]
 CHAPTER VI.
@@ -975,9 +990,9 @@ Overfull \hbox (25.24333pt too wide) in paragraph at lines 71--72
  [] 
  []
 
-[59
+[61
 
-] [60] [61] [62]) [63]
+] [62] [63] [64]) [65]
 CHAPTER VII.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1034,11 +1049,11 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 164.
 
-(./conclusion.tex [64
+(./conclusion.tex [66
 
-]) (./thesis.bbl [65] [66
+]) (./thesis.bbl [67] [68
 
-] [67] [68]
+] [69] [70]
 Underfull \hbox (badness 10000) in paragraph at lines 299--305
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1049,25 +1064,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--305
 r&
  []
 
-[69] [70]
+[71] [72]
 Underfull \hbox (badness 2376) in paragraph at lines 459--462
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-) [71]
+) [73]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 3813 strings out of 95847
- 49743 string characters out of 1195216
+ 3819 strings out of 95847
+ 49885 string characters out of 1195216
  128826 words of memory out of 1000001
- 6632 multiletter control sequences out of 10000+50000
+ 6635 multiletter control sequences out of 10000+50000
  12979 words of font info for 50 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
  33i,14n,36p,1676b,450s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (80 pages, 294280 bytes).
+Output written on thesis.dvi (82 pages, 295512 bytes).
