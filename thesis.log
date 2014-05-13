@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  13 MAY 2014 02:04
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  13 MAY 2014 02:25
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -844,7 +844,10 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 (./chap4.tex [58
 
-]) [59]
+] [59] [60]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 166.
+ [61] [62] [63] [64]) [65]
 CHAPTER V.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -901,7 +904,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 156.
 
-(./chap5.tex) [60
+(./chap5.tex) [66
 
 ]
 CHAPTER VI.
@@ -990,9 +993,9 @@ Overfull \hbox (25.24333pt too wide) in paragraph at lines 71--72
  [] 
  []
 
-[61
+[67
 
-] [62] [63] [64]) [65]
+] [68] [69] [70]) [71]
 CHAPTER VII.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1049,40 +1052,40 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 164.
 
-(./conclusion.tex [66
+(./conclusion.tex [72
 
-]) (./thesis.bbl [67] [68
+]) (./thesis.bbl [73] [74
 
-] [69] [70]
-Underfull \hbox (badness 10000) in paragraph at lines 299--305
+] [75] [76]
+Underfull \hbox (badness 10000) in paragraph at lines 311--317
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--305
+Underfull \hbox (badness 10000) in paragraph at lines 311--317
 \OT1/cmr/m/n/10 http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detecto
 r&
  []
 
-[71] [72]
-Underfull \hbox (badness 2376) in paragraph at lines 459--462
+[77] [78]
+Underfull \hbox (badness 2376) in paragraph at lines 476--479
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-) [73]
+) [79]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 3819 strings out of 95847
- 49885 string characters out of 1195216
- 128826 words of memory out of 1000001
- 6635 multiletter control sequences out of 10000+50000
- 12979 words of font info for 50 fonts, out of 500000 for 1000
+ 3845 strings out of 95847
+ 50322 string characters out of 1195216
+ 130934 words of memory out of 1000001
+ 6660 multiletter control sequences out of 10000+50000
+ 13234 words of font info for 51 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
  33i,14n,36p,1676b,450s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (82 pages, 295512 bytes).
+Output written on thesis.dvi (88 pages, 322816 bytes).

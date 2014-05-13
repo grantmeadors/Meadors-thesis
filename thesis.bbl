@@ -149,6 +149,12 @@ S.M. Carroll.
 \newblock Lecture notes on general relativity.
 \newblock Technical Report gr-qc/9712019v1, arXiv, 1997-12-03.
 
+\bibitem{Chakrabarty2003}
+D.~Chakrabarty et~al.
+\newblock Nuclear-powered millisecond pulsars and the maximum spin frequency of
+  neutron stars.
+\newblock {\em Nature}, 424:42, 2003.
+
 \bibitem{Chandrasekhar1969}
 S.~Chandrasekhar.
 \newblock {\em Ellisoidal Figures of Equilibrium}.
@@ -260,6 +266,12 @@ Peter Fritschel, Rolf Bork, Gabriela Gonz\'{a}lez, Nergis Mavalvala, Dale
 \newblock Readout and control of a power-recycled interferometric gravitational
   wave antenna.
 \newblock {\em Appl. Opt.}, 40(28):4988--4998, 2001.
+
+\bibitem{GoetzTwoSpectMethods2011}
+E.~Goetz and K.~Riles.
+\newblock An all-sky search algorithm for continuous gravitational waves from
+  spinning neutron stars in binary systems.
+\newblock {\em {C}lass. {Q}uant. {G}rav.}, 28(215006), 2011.
 
 \bibitem{GoetzThesis}
 Evan~A. Goetz.
@@ -402,6 +414,11 @@ P.F. Muciaccia, P.~Natoli, and N.~Vittorio.
 C.D. Ott.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 26(063001), 2009.
 
+\bibitem{PapaloizouPringle1978}
+J.~Papaloizou and J.E. Pringle.
+\newblock Gravitational radiation and the stability of rotating stars.
+\newblock {\em M.{N}.{R}.{A}.{S}.}, 184(501), 1978.
+
 \bibitem{PetersMatthews1963}
 P.C. Peters and J.~Matthews.
 \newblock Gravitational radiation from point masses in a {K}eplerian orbit.
@@ -482,6 +499,11 @@ K.S. Thorne.
 \newblock 300 {Y}ears of {G}ravitation.
 \newblock In S.W. Hawking and W.~Israel, editors, {\em 300 {Y}ears of
   {G}ravitation}. Cambridge, Cambridge, 1987.
+
+\bibitem{Wagoner1984}
+R.V. Wagoner.
+\newblock Gravitational radiation from accreting neutron stars.
+\newblock {\em {A}p. {J}.}, 278(345), 1984.
 
 \bibitem{Waldman2011}
 S.~Waldman and S.~Chua.
