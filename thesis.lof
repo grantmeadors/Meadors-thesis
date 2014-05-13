@@ -26,7 +26,11 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Integrand of inspiral range as a function of frequency}}{56}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Net effect of squeezing on inspiral range integrand \newline Scientific benefit at few hundred Hz $\rightarrow $ all ways to improve are good }}{56}{figure.3.4}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 40'' \{H1\} 5 Hz band} \newline p-value (based on R statistic) in red \newline all (frequency, modulation depth) templates }}{61}{figure.4.1}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Interferometer fringes during construction in Ann Arbor}}{68}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Inteferometer assembly in Ann Arbor, Michigan}}{69}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces World Science Festival interferometer installed in the New York City exhibition hall, June 2010.}}{70}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Helping to host the exhibit at the World Science Festival.}}{71}{figure.6.4}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Heatmaps \{H1, L1, V1\} of 11x11 templates centered around \newline \textbf {Scorpius X-1 MDC ``pulsar 8''} }}{62}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 8'' \{H1\} 5 Hz band} \newline $3.6\times 10^{5}$ templates, 10-22 mHz mod. depth, 120-125 Hz frequency \newline Signal at about (df = 0.019, f = 121.9) Hz }}{63}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \textbf {Scorpius X-1 MDC statistics} \newline \emph {Currently refining: }plots lack full set of cuts, \newline \emph {understanding noise, temporal gap \& spectral leakage} \newline establishing signal threshold p-value $\sim $ false alarm probability of 1\% \newline Re-calibrate p-values for trials factor, differences from all-sky }}{64}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces All-sky maps \{H1, L1, V1\} for fixed right ascension and declination \newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates) }}{67}{figure.4.5}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Interferometer fringes during construction in Ann Arbor}}{71}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Inteferometer assembly in Ann Arbor, Michigan}}{72}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces World Science Festival interferometer installed in the New York City exhibition hall, June 2010.}}{73}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Helping to host the exhibit at the World Science Festival.}}{74}{figure.6.4}
