@@ -67,27 +67,27 @@
 \contentsline {subsection}{\numberline {3.2.2}Success and Advanced LIGO prospects}{53}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Squeezing large interferometers}{54}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Squeezing's scientific benefit}{54}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Squeezing summary}{57}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Squeezing summary}{54}{subsection.3.3.2}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf IV.\hspace {5pt}}{\bf TwoSpect: Search for Scorpius X-1}}{58}{chapter.4}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf IV.\hspace {5pt}}{\bf TwoSpect: Search for Scorpius X-1}}{57}{chapter.4}
 \hbox { }
-\contentsline {section}{\numberline {4.1}Neutron stars in binary systems}{58}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Binary spin-up and detectable lifetime}{58}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Detection rate projections}{58}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}TwoSpect all-sky searches}{58}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Two spectra: a double Fourier transform}{58}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Infering neutron stars with companions}{58}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Scorpius X-1 and results from Directed TwoSpect}{59}{section.4.3}
-\contentsline {section}{\numberline {4.4}Searches for neutron stars in binary systems}{59}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Neutron stars in binary systems}{59}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}TwoSpect algorithm for all-sky binary searches}{59}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Directed TwoSpect's greater sensitivity}{60}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Scorpius X-1 mock data challenge}{61}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Fully-templated search for Scorpius X-1}{61}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Narrow-band heat maps in parameter space}{61}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Wide-band heat maps in parameter space}{61}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Revisiting \& refining detection criteria}{61}{subsection.4.5.4}
-\contentsline {section}{\numberline {4.6}Plans for improvement}{61}{section.4.6}
+\contentsline {section}{\numberline {4.1}Neutron stars in binary systems}{57}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Binary spin-up and detectable lifetime}{57}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Detection rate projections}{57}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}TwoSpect all-sky searches}{57}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Two spectra: a double Fourier transform}{57}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Infering neutron stars with companions}{57}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Scorpius X-1 and results from Directed TwoSpect}{58}{section.4.3}
+\contentsline {section}{\numberline {4.4}Searches for neutron stars in binary systems}{58}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Neutron stars in binary systems}{58}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}TwoSpect algorithm for all-sky binary searches}{58}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Directed TwoSpect's greater sensitivity}{59}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Scorpius X-1 mock data challenge}{60}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Fully-templated search for Scorpius X-1}{60}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Narrow-band heat maps in parameter space}{60}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Wide-band heat maps in parameter space}{60}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Revisiting \& refining detection criteria}{60}{subsection.4.5.4}
+\contentsline {section}{\numberline {4.6}Plans for improvement}{60}{section.4.6}
 \contentsline {section}{\numberline {4.7}Summary}{62}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}Scorpius X-1 parameters}{62}{subsection.4.7.1}
 \contentsline {subsection}{\numberline {4.7.2}Polarization addendum}{63}{subsection.4.7.2}

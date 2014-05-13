@@ -21,6 +21,11 @@
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Inspiral range vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30): LIGO Hanford Observatory, H1 (top) gains 0.23 Mpc; LIGO Livingston Observatory, L1 (bottom) gains 0.84 Mpc. In this first month of S6, L1 saw greater benefit from post-facto feedforward correction; later data from H1 and L1 would improve by fluctuating amounts thanks to better real-time feedforward servos. Although H1 is less improved than L1 here, real-time tunings were made soon after.}}{47}{figure.2.14}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Inspiral range \textit {fractional gain} vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30): LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for we also show absolute gain.}}{48}{figure.2.15}
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Screenshot of diagnostic web pages, indexed by window.}}{49}{figure.2.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Image by Lisa Barsotti in Hanford eLog \newline CC from LL, Dwyer, Barsotti, Mow-Lowry, Meadors }}{55}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Table legs (\& helped w/ Faraday isolator, data channels) }}{55}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Integrand of inspiral range as a function of frequency}}{56}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Net effect of squeezing on inspiral range integrand \newline Scientific benefit at few hundred Hz $\rightarrow $ all ways to improve are good }}{56}{figure.3.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 40'' \{H1\} 5 Hz band} \newline p-value (based on R statistic) in red \newline all (frequency, modulation depth) templates }}{61}{figure.4.1}
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Interferometer fringes during construction in Ann Arbor}}{68}{figure.6.1}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Inteferometer assembly in Ann Arbor, Michigan}}{69}{figure.6.2}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces World Science Festival interferometer installed in the New York City exhibition hall, June 2010.}}{70}{figure.6.3}
