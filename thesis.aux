@@ -178,7 +178,7 @@
 \newlabel{Lxdef}{{2.7}{22}{Description of the feedforward method\relax }{equation.2.6}{}}
 \newlabel{lydef}{{2.8}{22}{Description of the feedforward method\relax }{equation.2.6}{}}
 \newlabel{lxdef}{{2.9}{22}{Description of the feedforward method\relax }{equation.2.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Gravitational wave strain $h(t)$ is derived from differential arm motion (DARM), read-out from a photodiode downstream of the antisymmetric port. An internal reflection off an anti-reflective coating, on either the beam-splitter (BS) or an input test mass (ITM), provides the Michelson (MICH) channel. The DARM readout channel predominantly measures the small change in different arm length, $\delta (L_-) \equiv \delta (L_y - L_x)$, while MICH measures that in the Michelson length $\delta (l_-) \equiv \delta (l_y - l_x)$. There is also a small coupling from $\delta (l_-)$ to the DARM channel. To a lesser extent, changes in the length of PRC, which is defined as $\delta (l_+) \equiv \delta (l_y + l_x)/2$ and is measured in quadrature demodulation with respect to the MICH pick-off, also add noise to DARM.}}{23}{figure.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Gravitational wave strain $h(t)$ is derived from differential arm motion (DARM), read-out from a photodiode downstream of the antisymmetric port. An internal reflection off an anti-reflective coating, on either the beam-splitter (BS) or an input test mass (ITM), provides the Michelson (MICH) channel. The DARM readout channel predominantly measures the small change in differential arm length, $\delta (L_-) \equiv \delta (L_y - L_x)$, while MICH measures that in the Michelson length $\delta (l_-) \equiv \delta (l_y - l_x)$. There is also a small coupling from $\delta (l_-)$ to the DARM channel. To a lesser extent, changes in the length of PRC, which is defined as $\delta (l_+) \equiv \delta (l_y + l_x)/2$ and is measured in quadrature demodulation with respect to the MICH pick-off, also add noise to DARM.}}{23}{figure.2.1}}
 \newlabel{arms}{{2.1}{23}{Description of the feedforward method\relax }{figure.2.1}{}}
 \citation{SiggFreq1997}
 \citation{Boashash1990}
@@ -257,18 +257,20 @@
 \newlabel{diagnostics}{{2.6.1}{43}{Post-processing diagnostics\relax }{subsection.2.6.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Feedforward benefits and potential}{43}{subsection.2.6.2}}
 \newlabel{benefits}{{2.6.2}{43}{Feedforward benefits and potential\relax }{subsection.2.6.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.7}Conclusion}{43}{section.2.7}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemplar of a typical case, +1.1 Mpc (5.9\% inspiral range) \textit  {(GPS time 953164819 to 953165839, 2010 March 21)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. The most benefit is seen in the 80 to 400 Hz band, especially around 150 Hz, where LIGO is most sensitive. The main fundamental limit in this band is thermal suspension noise, but historically auxiliary channel noise has been a major contaminant. Note that the 60 Hz and harmonic lines are not subtracted, although a separate magnetometer servo does reduce their impact. The 330 Hz violin mode is not likely amenable to feedforward.}}{44}{figure.2.11}}
 \newlabel{typicalInspiralGraph}{{2.11}{44}{Post-processing diagnostics\relax }{figure.2.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Best improvement seen in S6 for H1 $h(t)$, +4.4 Mpc (29\% inspiral range) \textit  {(GPS 955187679 to 955188191, 2010 April 13)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. Such a loud cross-coupling would be noticed in real-time by the on-site staff. The elevated noise floor is unusual in science mode, but the fact that feedforward corrects it suggests the importance of controlling auxiliary channels to prevent such glitches. The post-feedforward spectrum is comparatively normal for science mode, as in Figure\nobreakspace  \ref  {typicalInspiralGraph}.}}{45}{figure.2.12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Best improvement seen in S6 for H1 $h(t)$, +4.4 Mpc (29\% inspiral range) \textit  {(GPS 955187679 to 955188191, 2010 April 13)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. Such a loud cross-coupling would be noticed in real-time by the on-site staff. The elevated noise floor is unusual in science mode, but the fact that feedforward corrects it suggests the importance of controlling auxiliary channels to prevent such glitches. The post-feedforward spectrum is comparatively normal for science mode}}{45}{figure.2.12}}
 \newlabel{bestInspiralGraph}{{2.12}{45}{Post-processing diagnostics\relax }{figure.2.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Harmonic mean, GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit  {(before-after)} (L), \textit  {(before-after)/before} (R); greater than zero is improvement. The mean shows the absolute and relative difference of before and after, between the average of many spectra such as Figures\nobreakspace  \ref  {typicalInspiralGraph} and\nobreakspace  \ref  {bestInspiralGraph}, although the algorithm differs. Improvement from 80 to 400 Hz is noticeable; at higher frequencies there is degradation, negligible in relative terms, due to high-frequency filter rolloff. Frequencies below 50 Hz should be disregarded; they are usually not searched by LIGO, so spectra for this plot were generated with a high-pass filter at 38 Hz.}}{46}{figure.2.13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Harmonic mean, GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit  {(before-after)} (L), \textit  {(before-after)/before} (R); greater than zero is improvement. The mean shows the absolute and relative difference of before and after, between the average of many spectra. Improvement from 80 to 400 Hz is noticeable; at higher frequencies there is degradation, negligible in relative terms, due to high-frequency filter rolloff. Frequencies below 50 Hz should be disregarded; they are usually not searched by LIGO, so spectra for this plot were generated with a high-pass filter at 38 Hz.}}{46}{figure.2.13}}
 \newlabel{SFTgraph}{{2.13}{46}{Post-processing diagnostics\relax }{figure.2.13}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces Inspiral range vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30): LIGO Hanford Observatory, H1 (top) gains 0.23 Mpc; LIGO Livingston Observatory, L1 (bottom) gains 0.84 Mpc. In this first month of S6, L1 saw greater benefit from post-facto feedforward correction; later data from H1 and L1 would improve by fluctuating amounts thanks to better real-time feedforward servos. Although H1 is less improved than L1 here, real-time tunings were made soon after.}}{47}{figure.2.14}}
 \newlabel{S6inspiralRange}{{2.14}{47}{Feedforward benefits and potential\relax }{figure.2.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces Inspiral range \textit  {fractional gain} vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30): LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for which Figure\nobreakspace  \ref  {S6inspiralRange} shows absolute gain.}}{48}{figure.2.15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces Inspiral range \textit  {fractional gain} vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30): LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for we also show absolute gain.}}{48}{figure.2.15}}
 \newlabel{S6inspiralRangeGain}{{2.15}{48}{Feedforward benefits and potential\relax }{figure.2.15}{}}
 \citation{BarsottiNatureSqueezing,DwyerPhaseNoise}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces Screenshot of diagnostic web pages, indexed by window.}}{49}{figure.2.16}}
+\newlabel{diagnosticWebpages}{{2.16}{49}{Feedforward benefits and potential\relax }{figure.2.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Conclusion}{49}{section.2.7}}
 \citation{DwyerThesis}
 \citation{ChuaThesis}
 \@writefile{toc}{\hbox { }}
@@ -475,20 +477,21 @@
 \bibcite{ResponsesFP}{75}
 \bibcite{ResonanceFP}{76}
 \bibcite{Riles2013}{77}
-\bibcite{Sathyaprakash2009}{78}
-\bibcite{Saulson}{79}
-\bibcite{SiggFreq1997}{80}
-\bibcite{SmithThesis}{81}
-\bibcite{LALAPPSrepo}{82}
-\bibcite{GEO600NatureSqueezing}{83}
-\bibcite{LIGOStochasticNature2009}{84}
-\bibcite{Matlab2012a}{85}
-\bibcite{Thorne300}{86}
-\bibcite{Waldman2011}{87}
-\bibcite{Weisberg2010}{88}
-\bibcite{WeisbergTaylor2004}{89}
-\bibcite{LIGOWorks}{90}
-\bibcite{Welch1967}{91}
-\bibcite{Boashash1990}{92}
-\bibcite{Wiener1949}{93}
-\bibcite{Willke2002}{94}
+\bibcite{RomeroThesis}{78}
+\bibcite{Sathyaprakash2009}{79}
+\bibcite{Saulson}{80}
+\bibcite{SiggFreq1997}{81}
+\bibcite{SmithThesis}{82}
+\bibcite{LALAPPSrepo}{83}
+\bibcite{GEO600NatureSqueezing}{84}
+\bibcite{LIGOStochasticNature2009}{85}
+\bibcite{Matlab2012a}{86}
+\bibcite{Thorne300}{87}
+\bibcite{Waldman2011}{88}
+\bibcite{Weisberg2010}{89}
+\bibcite{WeisbergTaylor2004}{90}
+\bibcite{LIGOWorks}{91}
+\bibcite{Welch1967}{92}
+\bibcite{Boashash1990}{93}
+\bibcite{Wiener1949}{94}
+\bibcite{Willke2002}{95}

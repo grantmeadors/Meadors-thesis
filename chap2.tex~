@@ -1,314 +1,543 @@
-h
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    INSTITUTE OF PHYSICS PUBLISHING                                   %
+%                                                                      %
+%   `Preparing an article for publication in an Institute of Physics   %
+%    Publishing journal using LaTeX'                                   %
+%                                                                      %
+%    LaTeX source code `ioplau2e.tex' used to generate `author         %
+%    guidelines', the documentation explaining and demonstrating use   %
+%    of the Institute of Physics Publishing LaTeX preprint files       %
+%    `iopart.cls, iopart12.clo and iopart10.clo'.                      %
+%                                                                      %
+%    `ioplau2e.tex' itself uses LaTeX with `iopart.cls'                %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% First we have a character check
+%
+% ! exclamation mark    " double quote  
+% # hash                ` opening quote (grave)
+% & ampersand           ' closing quote (acute)
+% $ dollar              % percent       
+% ( open parenthesis    ) close paren.  
+% - hyphen              = equals sign
+% | vertical bar        ~ tilde         
+% @ at sign             _ underscore
+% { open curly brace    } close curly   
+% [ open square         ] close square bracket
+% + plus sign           ; semi-colon    
+% * asterisk            : colon
+% < open angle bracket  > close angle   
+% , comma               . full stop
+% ? question mark       / forward slash 
+% \ backslash           ^ circumflex
+%
+% ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+% abcdefghijklmnopqrstuvwxyz 
+% 1234567890
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\documentclass[12pt]{iopart}
+%\newcommand{\gguide}{{\it Preparing graphics for IOP journals}}
+%%Uncomment next line if AMS fonts required
+%\usepackage{amsthm}
+%\usepackage{amssymb}
+%\usepackage{iopams}  
+%%\usepackage{amsxtra}
+%\usepackage{epsfig}
+%\usepackage{verbatim}
+%\usepackage{hyperref}
+%\usepackage{harvard}
+%\usepackage{url}
+%\usepackage{cite}
+%\begin{document}
+
+%\title[Increasing LIGO sensitivity by feedforward subtraction]{Increasing LIGO sensitivity by feedforward subtraction of auxiliary length control noise}
+
+%\author{Grant David Meadors$^1$, Keita Kawabe$^2$, Keith Riles$^1$}
+
+%\address{$^1$ Department of Physics, University of Michigan, 450 Church Street, Ann Arbor, MI~48109, US}
+%\address{$^2$ LIGO Hanford Observatory, PO Box 159, Richland, WA 99352-0159, US}
+%\eads{\mailto{gmeadors@umich.edu}, \mailto{kawabe\_k@ligo-wa.caltech.edu}, \mailto{kriles@umich.edu}}
+%\begin{abstract}
+LIGO, the Laser Interferometer Gravitational-wave Observatory, has been designed and constructed to measure gravitational wave strain via differential arm length. The LIGO 4-km Michelson arms with Fabry-Perot cavities have auxiliary length control servos for suppressing Michelson motion of the beam-splitter and arm cavity input mirrors, which degrades interferometer sensitivity. We demonstrate how a post-facto pipeline (AMPS) improves a data sample from LIGO Science Run~6 with feedforward subtraction. Dividing data into 1024-second windows, we numerically fit filter functions representing the frequency-domain transfer functions from Michelson length channels into the gravitational-wave strain data channel for each window, then subtract the filtered Michelson channel noise (witness) from the strain channel (target). In this paper we describe the algorithm, assess achievable improvements in sensitivity to astrophysical sources, and consider relevance to future interferometry.
+
+%\end{abstract}
+
+%Uncomment for PACS numbers title message
+%\pacs{00.00, 20.00, 42.10}
+%\pacs{04.80.Nn, 95.55.Ym, 07.60.Ly, 07.05.Dz}
+% Keywords required only for MST, PB, PMB, PM, JOA, JOB? 
+%\vspace{2pc}
+%\noindent{\it Keywords}: Article preparation, IOP journals
+% Uncomment for Submitted to journal title message
+%\submitto{\JPA}
+% Comment out if separate title page not required
+%\maketitle
+
+    \section{Introduction}
+    \label{introduction}
+
+Antennae for gravitational wave observations~\cite{Thorne300} require precise understanding of noise sources to attain peak sensitivity. Some of these noises arise from auxiliary degrees of freedom in interferometric antennae. Feedforward control can correct these auxiliary control noises. Cluster computing on archived data makes previous methods of feedforward correction scalable to year-long science runs. Computing can also adjust for the non-stationarity inherent in these noise couplings. This paper describes such a computational method and the improvements it might provide for searches with LIGO (Laser Interferometer Gravitational-wave Observatory).
+
+	As a network with GEO600~\cite{Willke2002,Hild2009} and Virgo~\cite{Acernese2005}, Enhanced LIGO~\cite{LIGOFirst2004,Fricke2009} produced data during LIGO Science Run 6 (S6) that was the most sensitive yet taken in the search for gravitational waves of astrophysical origin reaching the Earth: in this paper, we further enhance LIGO sensitivity via post-run software corrections. Radio astronomy of pulsar systems such as PSR 1913+16~\cite{HulseTaylor1975,Weisberg2010} provides indirect evidence for gravitational radiation, and direct detections could elucidate the structure of neutron stars~\cite{Lindblom1995,AbbottPulsar2006} and illuminate black holes~\cite{Sathyaprakash2009}, supernovae~\cite{Chandrasekhar1969,Ott2009}, cosmology~\cite{Grishchuk1974}, and related tests of the strong-field validity of general relativity~\cite{Riles2013}. This potential motivates new observatories, such as KAGRA~\cite{Kuroda2010}, and improvements to existing observatories. 
+
+LIGO infers gravitational-wave strain $h(t)$ at each of its two observatories [Hanford, Washington and Livingston, Louisiana] from the length difference between 4-km Michelson interferometer arms~\cite{Saulson} using a calibration response function~\cite{LIGOCal2010}. Each arm contains a Fabry-Perot resonant cavity locked using the Pound-Drever-Hall technique~\cite{Drever1983,Black2001}, comprised of an input test mass, near the Michelson beam-splitter, and an end test mass. A power-recycling mirror sits between the laser and the beam-splitter. These six core optics form coupled optical cavities with four length degrees of freedom, each of which is servoed to maintain optical resonance by minimizing motion (see Section~\ref{motive_math}). The effective change in the differential arm length $L_-$ (colloquially DARM) caused by gravitational waves is encoded in the intensity of the light reaching the anti-symmetric port of the Michelson interferometer and is read out by DC homodyne~\cite{Fricke2009}. Auxiliary length control for the beam-splitter and input mirrors is becoming more complex, as in Advanced LIGO, which will add a signal recycling cavity. This paper describes post-facto software improvements of detector noise using adaptive feedforward subtraction in a pipeline called Auxiliary MICH-PRC Subtraction (AMPS)~\cite{MatappsRepository}: these improvements refine LIGO's gravitational-wave sensitivity to astrophysical sources.
+
+AMPS improves LIGO S6 data (2009 July 07 to 2010 October 20), as this paper will show. S6 gravitational wave strain (target) is corrected based on auxiliary length noise measurements (witness). Enhanced LIGO generated the S6 data with high laser power and DC readout to prepare for Advanced LIGO. The motion of the beam-splitter and input mirrors of the Fabry-Perot cavities is known~\cite{AdhikariThesis,BallmerThesis} to cause cross-talk in the gravitational wave strain channel, which compounds a noise floor fundamentally limited by seismic, thermal suspension, and laser shot noise. Observed S6 cross-talk included differential Michelson (MICH) as well as power-recycling cavity length (PRC). The DARM readout, as explained in Section~\ref{motive_math}, is intrinsically sensitive to MICH divided by a factor of arm cavity gain, Equation~\ref{rcfactor}. (Theoretically, physical $h(t)$ is imprinted in MICH, but the cavity gain and relative smallness of the Michelson cavity make the effect about five orders of magnitude smaller than in DARM, so it is ignored). Methods~\cite{KisselThesis} to tune real-time feedforward filters for LIGO servo cross-talk are our starting point, but we seek to automate and improve retuning.
+
+Post-facto, adaptive feedforward simplifies cross-talk subtraction. AMPS uses Matlab 2012a~\cite{Matlab2012a}. The witness-to-target transfer function is estimated in discrete time windows of 1024 seconds and fit to a zero-pole-gain filter with Vectfit~\cite{Deschrijver2008,Gustavsen1999,Gustavsen2006}. Safeguards ensure a statistically significant fit that does not further degrade the target signal. Noise from the witnesses passes through respective filters, then is subtracted from the strain target channel. The correction lowers the noise floor, benefitting any gravitational-wave searches using this data.
 
 
-
-    \section{Motivation and mathematics for feedforward}
+    \section{Description of the feedforward method}
     \label{motive_math}
 
-LIGO, the Laser Interferometer Gravitational-wave Observatory [Hanford, Washington and Livingston, Louisiana] measures the differential length of 4-km Michelson arms with Fabry-Perot cavities. Length changes could indicate strain caused by astrophysical sources of gravitational waves. Fundamentally limited by seismic noise, thermal suspension noise, and laser shot noise in different frequency bands, a LIGO interferometer's sensitivity can also be degraded by additional relative motion of the inner arm cavity mirrors due to imperfectly-servoed Michelson motion. In this project we seek to subtract the effects of this residual motion by feedforward correction of the gravitational-wave data channel. We divide data from LIGO's sixth science run into 1024-second time windows and numerically fit a filter representing the frequency-domain transfer function from Michelson servo noise to gravitational wave channel for each window. Finally, the Michelson servo channel is processed through the filter and is subtracted from the gravitational-wave signal channel. The algorithm used in this procedure will be described with a preliminary assessment of the achievable sensitivity improvement.
 
-        Before delving into the details of the algorithm, a primer on the motivation and mathematics should follow. LIGO and its predecessors have long relied on servo control using feedforward and feedback to stabilize interferometers. At the 40 meter interferometer at Caltech, an early experiment to subtract noise post-facto was attempted (Bruce Allen? Find earliest citation -- Keith or Rana would know). Yet most schemes in the modern era have relied on realtime methods. Fundamental noise sources would be unapproachable if we did not.
+Gravitational-wave antennae around the world share features and form a collaborative network. Amongst kilometer-scale Michelson interferometers, GEO600 in Hannover, Germany uses folded arms with both power- and signal-recycling, LIGO, and Virgo use Fabry-Perot cavities coupled with power- (and potentially signal-) recycling cavities. The Japanese interferometer KAGRA, under construction, will have a similar optical layout to LIGO and Virgo but with cryogenically-cooled mirrors in an underground laboratory. Although nomenclature here pertains to LIGO, the core problem of this paper applies directly to all power-recycled Michelson interferometers with Fabry-Perot arms. It could extend to other instruments with multiple degrees of freedom that obtain a signal from a target contaminated by control noise from auxiliary degrees of freedom, especially when those auxiliaries are controlled using a lower signal-to-noise ratio (SNR) error signal than for the target and when the witnesses are highly independent.
 
-        LIGO by design should be limited only by fundamental, physical sources of noise. Initial and Enhanced LIGO are bound at low frequencies by seismic noise, at its middle and most sensitive frequencies by thermal noise from its suspensions, and at its highest frequencies by laser shot noise. Advanced LIGO, if commissioning succeeds, will be purely quantum mechanically limited: radiation pressure will dominate the low frequencies and shot noise the high. These sources can only be ameliorated with better hardware. Yet we have reason to suspect that the real instruments are not so perfect: some noise remains that is both caused by and can be fixed by better software -- in particular, better servos.  
+LIGO core optics include the beam-splitter (BS) and power-recycling mirror (PRM), which is situated between the laser and the beam-splitter. The four LIGO mirror test masses (TM) are named by arm (X or Y) and input (I) vs end (E) of the Fabry-Perot cavities. LIGO controls four optical pathlength degrees of freedom~\cite{ReadoutGWA}. DARM is a signal of \textit{differential arm} length, which is calibrated into the primary part of the gravitational strain measurement, \textit{h(t)}. CARM yields \textit{common arm} length, and is controlled with a common mode servo using laser frequency. MICH \textit{Michelson} and PRC \textit{power-recycling cavity} length refer only to input test masses.
 
-        Myriad LIGO systems are servoed, from laser frequency to mirror position. The entire aim of these servos is to provide a more sensitive measurement of differential arm motion, which directly corresponds to \textit{h(t)}, the gravitational wave signal. Some servos affect \textit{h(t)} more directly than others. The differential arm motion of the outer mirrors is itself refered to as $DARM$, and the three other motions of the mirrors have a special importance as well: $CARM$, the common outer arm motion, $MICH$, the differential "Michelson" motion of the inner mirrors, and $PRC$, the "power recycling cavity" common motion of the inner mirrors.   
+        \begin{eqnarray}
+        \textup{Strain: } h(t) = \frac{\delta \left(L_{-}(t) \right)}{\langle L_{+}\rangle}, \label{hoftDef}
+        \end{eqnarray}
+        \begin{eqnarray}
+        \textup{Common arm length: } \textup{CARM} \propto \delta(L_{+}) = \frac{\delta(L_y + L_x)}{2}, \label{CARMdef} \\
+        \textup{Differential arm length: } \textup{DARM} \propto \delta(L_{-}) = \delta(L_y - L_x), \label{DARMdef} \\
+        \textup{Power-recycling cavity length: }\textup{PRC} \propto \delta(l_{+}) = \frac{\delta(l_y + l_x)}{2}, \label{PRCdef} \\
+        \textup{(Inner) Michelson length: } \textup{MICH} \propto \delta(l_{-}) = \delta(l_y - l_x), \label{MICHdef}
+        \end{eqnarray}
 
-The four LIGO mirror test masses (TM) are named by arm (X or Y) and inner (I) vs end (E) of the Fabry-Perot cavities. LIGO controls four length degrees of freedom.
-
-        $$
-        \textit{CARM} = L_{+} = \frac{L_y + L_x}{2},
-        $$
-        $$
-        \textit{DARM} = L_{-} = L_y - L_x,
-        $$
-        $$
-        \textit{PRC} = l_{+} = \frac{l_y + l_x}{2},
-        $$
-        $$
-        \textit{MICH} = l_y = l_y - l_x,
-        $$
-
-        $$
-        L_y \equiv d(\textit{ETMY} - \textit{ITMY}),
-        $$
-        $$
-        L_x \equiv d(\textit{ETMX} - \textit{ITMX}),
-        $$
-        $$
-        l_y \equiv d(\textit{ITMY} - \textit{RM}),
-        $$
-        $$
-        l_x \equiv d(\textit{ITMX} - \textit{RM}).
-        $$
+        \begin{eqnarray}
+        L_y \equiv z(\textup{ETMY}) - z(\textup{ITMY}), \label{Lydef} \\
+        L_x \equiv z(\textup{ETMX}) - z(\textup{ITMX}), \label{Lxdef} \\
+        l_y \equiv z(\textup{ITMY}) - z(\textup{RM}), \label{lydef} \\
+        l_x \equiv z(\textup{ITMX}) - z(\textup{RM}). \label{lxdef}
+        \end{eqnarray}
 
 \begin{figure}
-\includegraphics[height=90mm,width=160mm]{ligo_michdamp.eps}
-\caption{MICH noise seen as DARM/(arm gain); PRC too seen in DARM}
+\begin{center}
+\includegraphics[height=135mm,width=150mm]{figure1.eps}
+\caption{Gravitational wave strain $h(t)$ is derived from differential arm motion (DARM), read-out from a photodiode downstream of the antisymmetric port. An internal reflection off an anti-reflective coating, on either the beam-splitter (BS) or an input test mass (ITM), provides the Michelson (MICH) channel. The DARM readout channel predominantly measures the small change in different arm length, $\delta(L_-) \equiv \delta(L_y - L_x)$, while MICH measures that in the Michelson length $\delta(l_-) \equiv \delta(l_y - l_x)$. There is also a small coupling from $\delta(l_-)$ to the DARM channel. To a lesser extent, changes in the length of PRC, which is defined as $\delta(l_+) \equiv \delta(l_y + l_x)/2$ and is measured in quadrature demodulation with respect to the MICH pick-off, also add noise to DARM.}
 \label{arms}
+\end{center}
 \end{figure}
 
-        In initial LIGO, for historical interest, but not precisely so in enhanced or advanced LIGO,
 
-        $$
-        \aleph \equiv 4 J_0 (\Gamma) J_1 (\Gamma) P \cos \omega_m t,
-        $$
-        $$
-        [L_{-} \rightarrow \textit{AS}_Q] = -\aleph g_{cr}t_sb r_c ' \frac{1}{1 + if/f_c} k \delta L_{-},
-        $$
-        $$
-        [l_{-} \rightarrow \textit{AS}_Q] = \aleph g_{cr} t_{sb} r_c \frac{1}{1+if/f_c} k \delta l_{-}.
-        $$
+        Average arm length is $\langle L_+\rangle$, about 4 km in LIGO. The distance function $z(\mathcal{X})$ indicates the distance (note that $z(\textup{ITMY})$ is a function of both the ITMY and BS position), along the optical path, from the laser to an optic $\mathcal{X}$. The variation $\delta$ denotes a change with respect to nominal value. DARM length is thus defined as $\delta(L_y - L_x)$ and MICH length as $\delta(l_y - l_x)$. In practice, DARM and MICH are the names given to the channels that predominantly measure those quantities. Unless stated otherwise, the terms DARM, MICH, PRC and CARM will refer to the measured channels, which are related to the lengths through calibration and are cross-contaminated (e.g., DARM = $\delta(L_{-}) + \pi/(2 \mathcal{F}) \delta(l_{-})$, where $\mathcal{F}$ is cavity finesse). The terms will not refer to the ideal physical lengths in Equations~\ref{CARMdef} through~\ref{MICHdef}. 
 
-        %\begin{figure}[htb]
-        %\begin{center]
-        %\includegraphics[width = 0.45\paperwidth, keepaspectratio]{servo_loop.jpg}
-        %\caption{Servo loop}
-        %\label{Servo loop}
-        %\end{center}
-        %\end{figure}
+        As Equation~\ref{DARMdef} and~\ref{MICHdef} imply and Figure~\ref{arms} illustrates, MICH noise ambiguates the physical interpretation of DARM. An arm cavity gain $r_{c}'/r_c \simeq 139/0.990$, where $r_c$ is the arm cavity reflectivity for the LIGO laser carrier frequency and $r_{c}'$ is the derivative of $r_c$ with respect to round trip phase~\cite{ReadoutGWA,BallmerThesis}, amplifies DARM motion for Initial and Enhanced LIGO. Where $\mathcal{F} \simeq 219$, the gain is given by Equation~\ref{rcfactor}:
 
-        Conclusion about MICH-DARM coupling: Noisy MICH resembles DARM \textit{sans} arm gain.
+        \begin{eqnarray}
+        \frac{r_{c}'}{r_c} = \frac{2 \mathcal{F}}{\pi} \simeq (139/0.990). \label{rcfactor}
+        \end{eqnarray}
 
-        $$
-        r_{c}' = \pi / (2F) \approx 137 r_c
-        $$
+        \textit{A priori} MICH noise will leak into measurements of DARM with a transfer function equal to the inverse of Equation~\ref{rcfactor}~\cite{SiggFreq1997}. Coherence measurements confirm this coupling dominates the transfer function, but residuals suggest other effects exist. PRC is also indirectly correlated with DARM. These correlations are physical consequences of the interferometer design. 
 
-        
+In Enhanced LIGO, DARM is measured with a photodiode at the interferometer `dark' antisymmetric port of the beams-splitter. Independent photodiodes for MICH and PRC, used for feedback on their respective auxiliary length control servos, provide the witness channels for canceling cross-talk into DARM. The MICH and PRC photodiodes receive a beam from an internal reflection in the beam-splitter. This beam carries a radio-frequency modulation; one demodulation quadrature provides MICH, the other PRC.
 
         \subsection{Auxiliary noise coherence at sensitive frequencies}
         \label{aux_noise}
 
-	    DARM is coherent with MICH and PRC, as can be seen in figures (ADD LABELS), in the most sensitive band for gravitational wave detection. Coherence is the frequency-dependant analog of statistical correlation: on a scale of 0 to 1, it represents the normalized fraction of a frequency bin in the spectrum of one channel that is in a constant phase and amplitude relation with the corresponding frequency bin in the spectrum of another channel. It thus represents the degree of linear coupling between those channels. Channels that have a low value of coherence across their spectrum can be viewed as relatively linearly indepedent of one another. 
+	 Coherence, the Fourier frequency-dependent analog of statistical covariance, quantifies cross-talk. On a scale of 0 (none) to 1 (full), magnitude-squared-coherence (MS-coherence) represents the normalized fraction of power of a frequency bin in the spectrum of one channel that can be found in the same frequency bin in the spectrum of another channel. First, we must define the cross-power of a two time-series. Where $P_{xy}$ is cross-power spectral density, 
+%as in Equation~\ref{Pyx}.
+%
+%	Continuous and discrete definitions of cross-power $P$ follow; the operator $E$ denotes an expectation value, and $p$ and $q$ are discrete indices:
+% 
+%            \begin{eqnarray}
+%            P_{yx} (f) = \int_{-\infty}^{+\infty} \left(\int_{-\infty}^{+\infty} y^{*} (\tau) x(t+\tau) d \tau \right) e^{i 2 \pi f t} dt; \label{Pyx} \\
+%            P_{yx} (f, t) = \Sigma_{q=-t}^{t} R_{yx} (q) e^{-2 \pi i f q}, \label{Pyxext} \\
+%            R_{yx} (q) = E\left[ y_{p+q} x_p^* \right] \label{crossCovar}.
+%            \end{eqnarray}
+%
+we can describe how the coherence at a given frequency $f$ and time $t$~\cite{Boashash1990} is given by Equation~\ref{coherenceDef}. 
+%For $L$ segments, the false positive rate $\alpha$ is described using a one-sided confidence limit $c$ in~\cite{Bortel2007} by Equation~\ref{CohereProb}
+\begin{eqnarray}
+C_{xy}(f, t) = \sqrt{\frac{\left| P_{xy}(f, t) \right|^2}{P_{xx}(f, t) P_{yy} (f, t)}}\label{coherenceDef}.
+%c = 1 - \alpha^{1/(L-1)} \label{CohereProb};
+\end{eqnarray}
 
-        For the coherence between MICH and DARM, values of up to 0.1 were seen in the band of a few hundred Hertz before Keita Kawabe and I implemented the realtime version of our version. The PRC-to-DARM coherence was several times smaller and thus deemed insignificant. When we implemented our filter, the MICH values diminished several-fold (ADD SCREENSHOT?), demonstrating the filter's efficacy.
+%Equation~\ref{CohereProb} is for non-overlapping measurements of coherence. Overlapping measurements can use less data by a factor of $w_{\textup{ind}}$ and samples-per-segment $M$:
 
-	In the post-facto work, we had to design a system that could effectively fit a filter in the most-coherent band across many different segments. We surveyed S6 LIGO science segments until focusing on the 80 to 400 Hz (DOUBLE CHECK) band as the most coherent for both MICH and PRC coupling into DARM, or rather, its calibrated counterpart, Hoft. Note that coherence is, ideally, transitive. Since Hoft is simply DARM passed through a linear filter, the coherence between any channel and Hoft should be, to within numerical precision, identical to the coherence between that channel and DARM. We then decided to fit heavily in this region. As referenced by Greg Mendell (cite his 2013 March LVC talk if necessary), the statistical significance of a transfer function -- and thus our measure of the coupling from noise into signal -- is assessed through coherence. By fitting only in regions where the coherence was typically greater than 0.03 (CHECK: is this about the right number?), we verified that the uncertainty in our transfer function was no greater than (CHECK: what is the number?). Outside this band we both deweighted the fit to the transfer function and pre-processed the transfer function, surpressing it by factors of $(f/f_\textup{knee})^\alpha$, where $\alpha$ = 8 at low frequencies and -8 at high. Both the deweighting and the pre-processsing must be carefully-tuned to avoid monopolizing a scarce set of free parameters, the poles and zeros that float to fit the transfer function.
+%\begin{eqnarray}
+%L_{\textup{ovrlp}} = L_{\textup{no-ovrlp}} \frac{\Sigma_k w^2_{\textup{ind}}[k]}{M}.
+%\end{eqnarray}
 
-By minimizing the transfer function and thus our fitted filter where it would be incoherent, we avoid adding noise.
+The calibrated strain channel for $h(t)$ (internally, the discrete-time calibrated strain channel for the physical strain $h(t)$ is called `Hoft'), is, with high confidence, coherent with MICH and PRC, as seen in Figure~\ref{coherenceGraph}. MICH-$h(t)$ coherence is sometimes as large as 0.1 in the 100 to 300 Hz band; PRC-$h(t)$ is an order of magnitude lower. Unfortunately, this is the most sensitive band for Initial and Enhanced LIGO. 
 
-        \subsection{Predicted and empirical correction}
-        \label{correction}
 
-            Manual, constant correction long applied, known \textit{a priori} cause.
-
-            Draw on Stefan Ballmer/Rana Adhikari and trace down the origin of the MICH and PRC estimates, possibly reiterate with citation. Emphasize that it is frequency-independent, flat, whereas the observed residual coherence is not perfectly flat.
-
-        \subsection{Filter mathematics: in-loop and out-of-loop}
-        \label{filter_math}
-
-            Mathematics of in-loop/out-of-loop filtering.
-
-            Discuss servos, including the usual terminology of plants, gain. Principle references: Saulson~\cite{Saulson}, Luca Matone's lectures, possibily some EE texts such as Horowitz and Hill.
-
-	We should also quote Jeff Kissel's thesis~\cite{KisselThesis}, which in chapter 3 has an extensive discussion of DARM, its calibration and response function, the actuation and sensing functions, filters and plants.
-
-        \subsection{Estimating optimal filters}
+        \subsection{Estimating filters}
         \label{filter_est}
 
-            Transfer functions to second-order systems.
+	Allen, Hua, and Ottewill (AHO)~\cite{AllenHuaOttewill1999} proposed the filtering scheme that this paper employs. Where there is a strong correlation between a signal (target) channel and a noise (witness) channel, the noise can be partially cancelled if a witness-to-target transfer function, convolved with the witness, is applied to the measured target.
+	Equations~\ref{gcf} through~\ref{hatsf} capture this method. It is analogous to frequency-domain principal component analysis (PCA) using Gram-Schmidt orthogonalization. In the original theory, superscript $^{(b)}$ indicates a frequency band that we denote as domain $(f)$. 
+Equation 8 in AHO corresponds to Equation~\ref{hatsf} here.
+%$Their Equations~7, 8, and 11 correspond, respectively, to Equations~\ref{Pyx},~\ref{hatsf} and~\ref{Txy} here.
 
-		Transfer functions are frequency-domain fit to
-		32-pole ZPK (zero-pole-gain) filters, applied in time domain.
+The transfer function $T_{xy}$, from the cross-power ratio of arbitrary channels $x$ and $y$, 
+%            \begin{eqnarray}
+%            T_{xy} (f) = \frac{P_{yx}(f)}{P_{xx}(f)}. \label{Txy}
+%            \end{eqnarray}
+guides the estimated feedforward filter $g$. Figure~\ref{tfGraph} shows the fit to the transfer function. Viewed as an inverse Fourier transform $F^{-1}$, decoupling signal (target, subscript $s$) from noise (witness, subscript $n$):
+            \begin{eqnarray}
+            g(t) = F^{-1} \left( \textup{fit} \left[ T_{sn} (f) \right] \right) \label{gcf}.
+            \end{eqnarray}
+\noindent Finally, the post-filtering signal (target) $\hat{s}$ is given by the convolution ($\times$) with $\gamma$, the transfer function coupling noise (witness) into signal (target), $s$ pre-filter signal, $n$ noise, and with channels indexed by $j$ and curly brackets indicating an observable quantity: 
+            \begin{eqnarray}
+            \hat{s} (t) = \left\{ s + \Sigma_j \left(\gamma_j \times n_j\right)\right\} (t) - \Sigma_j \left(g_{j} (t) \times \left\{ n_{j} \right\} (t)\right) \label{hatsf}.
+            \end{eqnarray}
 
-            Frequency domain subtraction filtering.
 
-            $$
-            T_{xy} (f) = \frac{P_{yx}(f)}{P_{xx}(f)},
-            $$
-            $$
-            P_{yx} (f) = \int_{-\infty}^{+\infty} \left(\int_{-\infty}^{+\infty} y^{*} (\tau) x(t+\tau) d \tau \right) e^{i 2 \pi f t} dt,
-            $$
-            $$
-            g_c(f) = T_{sn} (f),
-            $$
-            $$
-            \hat{s} (f) = (s + g_s \times n)_{m} (f) - g_c (f) \times n_m (f).
-            $$
+Blind application of this method could produce incorrect noise reduction. 
+Application of this paper's method to uncorrelated channels would lead to arbitrary noise reduction by an average analytic factor of $(1 - 1/F)$, where $F$ is the number of bins in a fitted frequency span (equal to the the number of time-domain averages). 
+Given 1-s windowing with 50\%-overlap on 1024 s, $F = 2047$, for a false noise reduction of about 0.05\%. 
+The ideal of 1024-s windows is not always achievable with LIGO duty cycles. In these cases, AMPS incorporates some filters estimated on as little as 32 s of data, for which the reduction would be 3\%, but only when these filters are averaged together with longer-duration (512 s or greater) filters. No isolated filter uses less than 60 s of data, which could yield a false reduction of 1.5\%. AHO clarify that subtraction is tenable so long as covariance is present at a statistically significant level. They set a benchmark of an order-of-magnitude above the magnitude-square covariance expectation value of $1/F$. Since the AMPS pipeline emphasize fits in regions where the magnitude-squared coherence is greater than 3\%, and often 10\% or more, it usually satisfies their criterion.
 
-            Where $\hat{s}$ is the post-filter signal, $s$ is the pre-filter signal, $n$ is the noise, $g_s$ is the transfer function coupling noise into signal, $g_c$ is the estimated feedforward filter decoupling noise from signal, and the subscript $m$ indicates an observable or measurable quantity.
-
-\textbf{Sample feedforward from LIGO Hanford Observatory}\\
-\textit{2010-03-21T0000Z: MICH on left, PRC on right.}
 
 \begin{figure}
-\includegraphics[height=75mm, width=60mm]{clip-MICH-coh.eps}
-\includegraphics[height=75mm, width=60mm]{clip-PRC-coh.eps}
-\caption{Statistically-significant coherence justifies fit}
+\begin{center}
+\includegraphics[height=80mm, width=75mm]{figure2a.eps}
+\includegraphics[height=80mm, width=75mm]{figure2b.eps}
+\caption{Sample coherence measurements between $h(t)$ and auxiliary control channels for LIGO Hanford Observatory, H1: 2010 March 21. MICH-$h(t)$ coherence on left, PRC-$h(t)$ coherence on right. Statistically significant coherence justifies fitting; in frequency bands, about 80 to 400 Hz, where coherence rose above background levels, the transfer function fit was weighted more heavily. Units of coherence spectral density (Hz$^{-1/2}$) vs frequency (Hz).}
+\label{coherenceGraph}
+\end{center}
 \end{figure}
 \begin{figure}
-\includegraphics[height=80mm, width=60mm]{clip-MICH-fit.eps}
-\includegraphics[height=80mm, width=60mm]{clip-PRC-fit.eps}
-\caption{Transfer function fit in coherent band}
+\begin{center}
+\includegraphics[height=100mm, width=75mm]{figure3a.eps}
+\includegraphics[height=100mm, width=75mm]{figure3b.eps}
+\caption{Sample transfer function measurements (amplitude and phase) from LIGO Hanford Observatory, H1: 2010 March 21; MICH-$h(t)$ on left, PRC-$h(t)$ on right. Transfer function fit in coherent band -- note the difference between raw data residual and the `pre-processed residual', which has been smoothed and weighted to emphasize known-coherent bands. Units of amplitude spectral density (Hz$^{-1/2}$) and phase (degrees) vs frequency (Hz).}
+\label{tfGraph}
+\end{center}
 \end{figure}
 \begin{figure}
-\includegraphics[height=80mm, width=60mm]{clip-MICH-many.eps}
-\includegraphics[height=80mm, width=60mm]{clip-PRC-many.eps}
-\caption{Fits for 1024 s windows in a science segment}
+\begin{center}
+\includegraphics[height=100mm, width=75mm]{figure4a.eps}
+\includegraphics[height=100mm, width=75mm]{figure4b.eps}
+\caption{Sample Bode plots of fitted ZPK filter functions (amplitude and phase) for multiple 1024 s windows in a science segment, at LIGO Hanford Observatory, H1: 2010 March 21; MICH-$h(t)$ on left, PRC-$h(t)$ on right. Colors only represent different time windows. The similarity in the high-coherence, 80 to 400 Hz band leads us to conclude that the filter design is fairly stable throughout a science segment. Units of amplitude spectral density (Hz$^{-1/2}$) and phase (degrees) vs frequency (Hz).}
+\label{BodePlots}
+\end{center}
 \end{figure}
 \begin{figure}
-\includegraphics[height=75mm, width=60mm]{clip-MICH-sub.eps}
-\includegraphics[height=75mm, width=60mm]{clip-PRC-sub.eps}
-\caption{Subtracted spectrum for one window}
+\begin{center}
+\includegraphics[height=80mm, width=75mm]{figure5a.eps}
+\includegraphics[height=80mm, width=75mm]{figure5b.eps}
+\caption{Sample subtracted spectra for one window, representing the applied feedforward corrections for each channel during that window, at LIGO Hanford Observatory, H1: 2010 March 21; MICH-$h(t)$ correction on left, PRC-$h(t)$ correction (after MICH-$h(t)$ correction is applied) on right. Units of amplitude spectral density (Hz$^{-1/2}$) vs frequency (Hz).}
+\label{subtractedSpectrum}
+\end{center}
 \end{figure}
 
-    \section{Prior programs}
+As detailed in Section~\ref{filter_fitting-out-of-loop}, filters for each 1024-s window are blended to estimate the target. Figure~\ref{BodePlots} illustrates the short-term consistency of transfer functions during a few-hour science segment, presenting Bode plots of MICH-$h(t)$ and PRC-$h(t)$ transfer function fits for consecutive windows from 2010 March 21 at LIGO Hanford Observatory (magnitude, top and phase, bottom vs frequency [Hz]).  Figure~\ref{subtractedSpectrum} presents sample subtractions. These figures show that AMPS efficiently builds on AHO for operational data for a kilometer-scale gravitational wave interferometer.
+
+Section~\ref{prior_programs} compares transfer function estimators, with Section~\ref{vectfit} being the chosen method. Section~\ref{safeguards} discusses safeguards and vetoes, and Sections~\ref{out-of-loop} and~\ref{filter_fitting-out-of-loop} discuss the details of implementation and verification.
+
+    \section{Feedforward in- and out-of-loop methods}
     \label{prior_programs}
    
-        Keita's and Rana's prior programs.
+        Feedforward subtraction must meet operational constraints. Existing manually-designed filters have long worked, but are more labor-intensive than automated design; new methods, such as Wiener filtering now being considered for seismic and gravity-gradient cancellation~\cite{Driggers2012ActiveNoise} could lead to future improved performance.
         
-        \subsection{Manually-designed rational filtering}
+        \subsection{Manually designed rational filtering in-loop}
         \label{manual_design}
 
-            Keita's by-hand rational-filter
+            Manual designs of feedforward functions prove time-consuming. Transfer functions must be manually measured, fit, copied and incorporated into the control system. Additional transfer functions are needed for servo in-loop gain and actuation functions. Manual design is an inefficient choice: it is labor-intensive, and S6 suggests that filter redesign should be performed often.
 
-        \subsection{Vector-fitted filter functions}
+	While involved, manual-designed rational filtering of MICH and PRC in-loop provides a key part of servo controls to date. Auxiliary controls introduce noise into the DARM channel, so  without real-time correction, the performance would be much worse than design. Most MICH \& PRC subtraction so far comes from real-time corrections; our pipeline makes one to two orders of magnitude smaller corrections.
+
+        \subsection{Frequency-domain automated filter design}
         \label{vectfit}
 
-            Rana and Jenne's and Dani's work with vectfit.
+            AMPS uses Vectfit for periodic re-design. Since the dynamic range in magnitude for transfer functions varies over tens of orders of magnitude, data is pre-processed and weighted to emphasize the most sensitive band.
+The method fits an infinite impulse response (IIR) filter onto the witness-to-target transfer function. Since coherence and AHO are linear and transitive, it targets $h(t)$ rather than DARM (noise coupling enters the signal there, but it is wasteful to duplicate the response function).
+
+Each transfer function for a typical 1024 s of data is the average of 1024 independent ratios-of-Fourier-transforms (2047 Hann-windowed, 50\%-overlapping FFTs of 1 s samples). Since FFT error scales with the inverse square root of the number of averages, the relative accuracy is $\mathcal{O}\left(1024^{-1/2}\right)$. The minimum data length, 32 s, yields $\mathcal{O}\left(32^{-1/2}\right)$ relative accuracy. Outside the sensitive band, the fit is deweighted and the transfer function pre-processed, suppressing it by factors of $(f/f_\textup{knee})^\alpha$, where $\alpha = 8$ at low frequencies and $-8$ at high. The $f_\textup{knee}$ values are, respectively, 50 and 400 Hz. AMPS smooths and deweights (Figure~\ref{tfGraph}) known spectral peaks, including 60 Hz harmonics, the LIGO suspension violin modes, and calibration lines. Violin modes are internal resonances of mirror suspensions caused by thermal noise; calibration lines are injections used to track the response function. De-weighting and pre-processsing prevent biasing the filter design with transfer function bands where coherence is low, which would introduce noise. This process leads to convergence with fewer parameters.
+
+ Vectfit converges iteratively, starting with a posited set of poles (32nd order here). About five iterations can converge to a good least-squares-fit for the state-space model, but we require fifteen and complex left-half-plane stability for safety. Root-mean-square (RMS) error, is the threshold for rejecting the filter regression. 
+From empirical studies, RMS error above $10^{-18}$ indicates poor fit. 
+This test isolates a bad MICH-$h(t)$ correction from a good PRC-$h(t)$ one, or vice versa. 
+	We fit one channel at a time, as Section~\ref{out-of-loop} discusses. After this test, the transfer function model is extracted. 
+
+Zero-pole-gain (ZPK) format is used to trim out-of-band zeroes and poles and multiply by a 2nd order Butterworth low-pass filter just below the Nyquist frequency of 8192 Hz, placing poles at 7 kHz to keep causality. A scale factor keeps the filter gain at 150 Hz the same value as without the low-pass filter. Then the ZPK model is refactored into second-order-sections (SOS) for numerical stability. Instead of the inverse Fourier transform of Equation~\ref{gcf}, the model is converted from continuous time (or $s$-domain) to discrete time (or $z$-domain). 
+
+Each filter is applied to its respective witness: the estimated true $h(t)$ target equals the original $h(t)$ measurement minus the filtered witnesses. 
+This procedure assumes that coupling from each witness into $h(t)$ is linear. Further, it assumes that 2nd-order coupling, from one witness into the other, is negligible (we estimate the relative contributions to be $\mathcal{O}(10^{-5})$). Spot-checks confirm that these simplifications are justified.  
+
+% where the fit residual of frequency bin $i$ is $\Delta_i$ ($i \in [1,...,N]$), and RMS error $\sigma$ is defined by Equation~\ref{RMSerrorDefinition}:
+% where the fit residual of frequency bin $i$ is $\Delta_i$ ($i \in [1,...,N]$), and RMS error $\sigma$ is defined by Equation~\ref{RMSerrorDefinition}:
+%\begin{eqnarray}
+%\sigma = \frac{\sqrt{\Sigma_{i=1}^N \left| \Delta_i \right|^2}}{\sqrt{N}}\label{RMSerrorDefinition}.
+%\end{eqnarray}
 
         \subsection{Wiener filters}
         \label{wiener_filters}
 
-            Rana and Jenne's 40 m Wiener filtering attempts and why that fails here. Klimenko?
+            Wiener filtering~\cite{Wiener1949} would give an optimal filter that minimizes the squared error of the residual, for all the spectrum. Low-frequency MS-coherence of MICH \& PRC with $h(t)$ is small, but Wiener fits them due to high RMS error in that band. Filtering at high RMS power, such as the seismic and Newtonian gravity gradient bands, can allow Wiener filtering directly, but MICH \& PRC would need other methods. Noise whitening~\cite{Driggers2012NN,DeRosa2012FF} uses cost functions to limit out-of-band noise. Wiener filtering sub-spectra could also circumvent contamination, as with wavelet transforms~\cite{KlimenkoSite}.  
 
-            Wiener filtering searches for an optimal filter of a particular kind: it minimizes the squared error. That error can be the difference between the estimated signal and the time-delayed signal. However, the error is over the entire spectrum. For our problem, we would have to band-pass the spectrum into many sub-spectra, then evaluate the error over those, or else the estimation would be overwhelmed by the power at low-frequencies. The coherence at low-frequencies is low, so basing a filter on those, especially at the expense of higher frequencies, would be unjustified and futile.
+% At the Caltech 40m prototype, Wiener filtering has been studied for Newton~\cite{Driggers2012ActiveNoise}. Wiener filtering is theoretically the optimal kind of filtering for balancing the gain from feedforward correction against the harm done when witness channels are themselves noisy. In the case of MICH and PRC, the channels are relatively good witnesses, but in other situations, Wiener filtering might provide superior performance. There is no reason to think that Wiener filtering would not provide MICH and PRC feedforward subtraction equal to what is obtained using a numerically determined transfer function (fit to IIR form using Vectfit). The latter was computationally-compelling for the AMPS pipeline. 
 
-    \section{Feedforward in-loop}
-    \label{in-loop}
 
-        Feedforward program structure: in-loop.
-
-        \subsection{Filter fitting}
-        \label{filter_fitting_in-loop}
-
-            Matlab: obtain frame data, fit, integrate existing filters, export.
-
-        \subsection{Real-time filtering}
+        \subsection{Prospects for near-real-time filtering}
         \label{real-time}
       
-            Foton: real-time SOS filtering.
+            AMPS runs a few times faster than real-time on a single 2013 CPU core whilst conducting tests and safeguards, documented in Section~\ref{safeguards}. 
+The minimal time lag for a modal sample is one window (1024 s), undesirable for electromagnetic follow-up and multi-messenger astronomy~\cite{Swift2012,Antares2013} sought for Advanced LIGO. 
+Such speed is acceptable for secondary $h(t)$-reconstruction when another $h(t)$ exists but inadequate for in-loop, real-time production. 
 
-    \section{Feedforward out-of-loop}
+Near-real-time filtering might be useful for countering upconversion and non-linear cross-coupling, using recent data for training sets, but this is not yet implemented. Until then, the existing method can generate a filter as-needed for real-time use, as prototyped on H1 in the last month of S6.
+
+\section{Safeguard and veto methods}
+\label{safeguards}
+
+%    Gravitational wave strain, $h(t)$, is LIGO's observable; we must ensure its integrity and calibration. Searches typically do not apply any correction based on auxiliary channel data. Real-time servos work, and if a problem is detected, it can often be fixed quickly. Yet sometimes, the problem is an ephemeral `glitch' with no cure. Absent a fix, it is advantageous to have methods for attempting a correction after the fact.
+
+  \subsection{Calibration integrity}
+  \label{CalibrationSection}
+
+It is of vital importance for our noise subtraction scheme to keep the integrity of the calibration of LIGO instruments intact.
+If the witness channel contains a cross coupled term proportional to the differential arm length motion $\delta(L_-)$, this term is subtracted from the target and thus could change the calibration of the target in theory.
+A simple calculation shows that, for a known coupling mechanism, this effect is on the order of $10^{-5}$ for LIGO and other similarly configured instruments.
+
+Even without considering any feedback control mechanism, theoretically MICH and DARM signal both have cross contamination terms proportional to $\pi/2\mathcal{F}$~\cite{SiggFreq1997}:
+\begin{eqnarray}
+\textup{DARM} \propto \delta(L_-) + \frac{\pi}{2 \mathcal{F}} \delta(l_-) \label{CalDARMdef}, \\
+\textup{MICH} \propto \delta(l_{-,0}) + \frac{\pi}{2 \mathcal{F}} \delta(L_-) + n \label{CalMICHdef},
+\end{eqnarray}
+where $\mathcal{F}$ is the finesse of the arm cavities, $n$ the sensing noise of the MICH, and $\delta(l_{-,0})$ the natural fluctuation of the Michelson path difference caused by seismic motion etc.
+Since  $\delta(l_{-,0})$  is not coherent with $ \delta(L_-)$, and since MICH is dominated by $n$ in our frequency band of interest, we can ignore $\delta(l_{-,0})$ in this discussion.
+
+The servo system with an open loop transfer function of $G_M$ to keep MICH from going out of linear range would inject $\frac{\pi}{2 \mathcal{F}} \delta(L_-) + n$ term to the physical Michelson length difference $\delta(l_-)$, which in turn affects the DARM signal:
+\begin{eqnarray}
+\delta(l_{-}) = - \frac{G_M}{1+G_M} \left( \frac{\pi}{2 \mathcal{F}}\delta(L_-) + n \right) \label{offsetMICHsignal}\\
+%
+\textup{DARM} \propto \delta(L_-) -\frac{\pi}{2 \mathcal{F}} \frac{G_M}{1+G_M} \left( \frac{\pi}{2 \mathcal{F}}\delta(L_-) + n \right). \label{offsetDARMsignal}
+\end{eqnarray}
+The DARM signal, uncorrected by feedforward, is now contaminated by MICH noise term $n$ as well as a small correction term for $ \delta(L_-)$, both due to the MICH feedback. Note that $G_M/(1+G_M)$ is on the order of 1 or smaller, and  $(\pi/2 \mathcal{F})^2$ is on the order of $10^{-5}$, so the correction term is on the order of $10^{-5}$ or smaller.
+
+Feedforward subtraction looks at the MICH control signal,
+\begin{equation}
+\textup{MICH}_{ctrl} \propto \frac{\pi}{2\mathcal{F}}\delta(L_-) +n,\label{offsetMICHCTRL}
+\end{equation}
+and subtracts $n$ from DARM, and in the process also subtracts $\frac{\pi}{2\mathcal{F}}\delta(L_-)$. Looking at Eqs.~\ref{offsetDARMsignal} and~\ref{offsetMICHCTRL}, as far as the noise reduction is observed in DARM, the small $\delta(L_-)$ term is also reduced, and the impact on the calibration is on the order of $(\pi/2 \mathcal{F})^2=O(10^{-5})$ at most.
+
+A similar argument can be made for PRC, but this time the cross coupling is not only dependent on $(\pi/2\mathcal{F})$ but also on the asymmetry of the arms, further reducing the coupling.
+
+Note that the above mentioned discussion is equally applicable to real time as well as post-facto feedforward. LIGO uses real time feedforward, and the online feedforward described in this paper subtracts only a small amount of noise left uncaught by the real time system. Virgo implements similar real time feedforward to remove 50Hz line successfully~\cite{Buskulic2000}. In both of these cases, no measurable effect caused by feedforward has been reported.
+
+Nevertheless, two checks were performed to see if there is any unknown mechanism to compromise the calibration of DARM, which are explained in Section~\ref{postprocessingSafeguards}.
+
+\subsection{Runtime safeguards}
+    \label{runtimeSafeguards}
+
+
+Safeguards and vetoes then verify data integrity against possible issues. These issues include degrading data, offsetting and incorrectly time-stamping the data, incorrectly subtracting $h(t)$ from itself, and introducing windowing artifacts.
+
+Amplitude spectral density (using Welch's method~\cite{Welch1967}) leads to an estimate of inspiral range $\mathcal{R}$. Inspiral range~\cite{FinnInspiral1993} in LIGO detector characterization refers to the orientation-and-direction-averaged distance at which a 1.4-1.4 solar mass neutron star binary coalescence could be detected with an SNR of 8. A window's filtered data is used only if it passes two cuts. The post-filter $\mathcal{R}$ must be at least 99.9\% of unfiltered $\mathcal{R}$. None of the 40 points in a `comb' (each point being 5/16 Hz wide) of quiet bands can be noisier than 1.2 times uncorrected $h(t)$. The factors are chosen empirically to permit expected noise fluctuations; most surviving data is superior.  
+
+If cuts are triggered, the filter is rejected. To avoid discontinuities and add robustness against non-stationarity, the windowing procedure (Section~\ref{filter_fitting-out-of-loop}) is re-run to merge successfully-filtered data smoothly with unfiltered $h_0$. Cut tests are also re-run; if passed, the data is used, else the unfiltered data is progressively weighted further for eight more attempts. If all fail, the final attempt is written and the program proceeds. Empirically, almost all written data is an improvement.
+
+    \subsection{Post-processing safeguards}
+    \label{postprocessingSafeguards}
+
+Diagnostics check whether 
+calibration lines (Figure~\ref{calLineTest}) are preserved
+and 
+injections (Figures~\ref{timeDomainInjection} and \ref{crossCorrelationGraph}) are recovered.
+
+Calibration line studies seek to answer two questions: whether feedforward distorts the signal or adds noise. 
+
+In post-processing, `Short Fourier Transforms' (SFTs) were made with a frequency resolution (1/1800 Hz) from corrected $h(t)$. These SFTs are much shorter than the science run; 1800 s is standard for continuous wave searches. 
+Signal distortion is evaluated using the mean of three bins in [393.1 - 1/1800, 393.1 + 1/1800] Hz.
+Evaluating multiple bins accounts for some spectral leakage; the bin-centered central line is much larger. 
+For the $10^6$ s of H1 science time analyzed, the before-feedforward mean was $8.7261 \times 10^{-22} (\textup{Hz})^{-1/2}$, whereas after it was $8.7569 \times 10^{-22} (\textup{Hz})^{-1/2}$. Feedforward made the calibration line region noisier by $3.1 \times 10^{-24} (\textup{Hz})^{-1/2}$ or 0.35\%, perhaps due to a deweighted fit around the 393.1 Hz line, to avoid biasing more sensitive parts of the spectrum. It does not affect the calibration, since it is consistent with MICH and PRC leakage merely raising noise floor near the line. We also check the calibration line at 1144.3 Hz (before: $3.1190 \times 10^{-20} (\textup{Hz})^{-1/2}$, after: $3.1188 \times 10^{-20} (\textup{Hz})^{-1/2}$), which is actually less noisy. The 46.7 Hz line is too low-frequency to measure with these SFTs. 
+
+To test for noise addition, we searched for windowing artifacts, e.g., spectral combs with spacing of 1/1024 or 1/512 Hz, around a prominent line.
+No new combs or other artifacts were obvious in our 1800-s, 50\%-overlapping Hann-windowed SFTs before/after comparison of approximately $10^6$ s of H1 science time between GPS times $931.0 \times 10^6$ (2009 July 07) and $932.8 \times 10^6$ (2009 July 28), 
+focused on the 393.1 Hz calibration line. Strictly speaking, the line visible in $h(t)$ is a residual from imperfect cancellation of control and error signals used in $h(t)$ construction from DARM error and control signals. The nature of the line does not affect our analysis, because neither MICH nor PRC contain or affect it.
+
+Injection studies first examined compact binary coalescence and sine-Gaussian injections~\cite{LIGOBurst2012} for GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8 \times 10^6$ (2009 July 28). We then calculated the matched-filter SNR of each injection in S6. Each SNR is directly proportional to the distance at which such a signal \textit{can} be observed, and therefore also to the instrumental sensitivity to signals of that type~\cite{Findchirp2012,PetersMatthews1963}. Higher SNR (mean 3.99\% H1, 2.77\% L1) was found. Effective distance as \textit{recovered} is inversely proportional to signal, appeared nearly unchanged in these injections (mean -0.00347\% H1, +0.307\% L1), establishing that the SNR increase came from N decreasing rather than S increasing. The constant injection effective distance reinforces that the calibration is unchanged. These tests affirmed that feedforward data contains recoverable (slightly higher SNR ratio) injections at the correct time and phase. 
+
+We conclude that we are not subtracting $h(t)$ from itself.
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=75mm, width=150mm]{figure6.eps}
+\caption{Calibration line test: before-feedforward mean of the 393.1 Hz line and two neighboring FFT bins was $8.7261 \times 10^{-22}$, after was $8.7569 \times 10^{-22}$. Feedforward made the calibration line region noisier by $3.1 \times 10^{-24}$ or 0.35\%, suggesting that we correctly apply Hann-windowed feedforward without subtracting true $h(t)$. Moreover, no spectral line combs are observed to either side of the calibration line peak at 393.1 Hz, indicating that the method does not introduce windowing artifacts.}
+\label{calLineTest}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=75mm, width=150mm]{figure7.eps}
+\caption{Time-domain plot of diagnostic channels from a burst injection. Colors are illustrative only to the fact that the envelopes of the traces increase after 1.8 s, indicating that the burst injection time is correct in the new data. `Before feedforward' and `after feedforward' traces occult each other in the graph, because they are almost identical. `Before feedforward' is $h(t)$ data; `after feedforward` is $h(t)$ with feedforward subtraction. `Injection estimated strain' is the digital injection as intended to be introduced into strain, but the actual injection is made on the end test mass X (ETMX), so the calibrated `Injection estimated ETMX' is also displayed. Raw `DARM\_ERR' and `ETMX\_EXC\_DAQ' are redundant but reinforce the trend.}
+\label{timeDomainInjection}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=75mm, width=150mm]{figure8.eps}
+\caption{Cross-correlation pairwise between $h(t)$ pre-, post-feedforward, and ETMX injection data: the extrema and zero-crossings match.  Note both before-feedforward (blue) and after-feedforward (green) strain traces are almost identical and therefore overlap. The strains appear inverted, but in the same way, due to a sign error in the hardware injections at this time. The absence of a time lag shift between before and after indicates that feedforward has not altered the phase of the data, at least for this injection. The equivalence in cross-correlation magnitude indicates that amplitude also is unaffected.}
+\label{crossCorrelationGraph}
+\end{center}
+\end{figure}
+
+
+
+
+    \section{Feedforward with MICH and PRC channels}
     \label{out-of-loop}
 
 \begin{figure}
-%\includegraphics[height=110mm,bb=25 169 579 609]{jm.fig5.eps}
-\includegraphics[height=95mm,width=120mm]{pipeline.eps}
-\caption{\textit{Feedforward filtering pipeline}}
-\label{pipeline}
+\begin{center}
+\includegraphics[height=80mm,width=150mm]{figure9.eps}
+\caption{Feedforward subtraction pipeline to read in $h(t)$, MICH, PRC, and write out AMPS-corrected $h(t)$. Data flows schematically from left to right; the MICH-$h(t)$ stage output is used as input for the PRC-$h(t)$ stage, then data is written. Code online: \texttt{http://ligo-vcs.phys.uwm.edu/wsvn/MatApps/packages/detchar/AMPS/}\newline \texttt{trunk/aletheia.m}}
+\label{pipelineGraph}
+\end{center}
 \end{figure}    
-\textup{Read in Hoft (calibrated DARM), MICH, PRC,
-write out AMPS (clean calibrated DARM). Code in LIGO SVN:}\\
-\texttt{matapps/packages/detchar/} \\ 
-\texttt{AMPS/trunk/aletheia.m}
-\\
 
+A post-facto, linear filter is fitted and applied to either MICH or PRC (serially). Fits occur in the frequency-domain, and application occurs in time-domain. Reading in $h(t)$, correcting it with MICH and PRC, and writing the result (including data quality and state vectors), the pipeline is shown in Figure~\ref{pipelineGraph}. 
 
-        A critical point: we use the entire set of data for a window to produce a filter, then apply that filter back to the entire set of data. Those familiar with a machine learning view may worry that this is overfitting, that we are not training the data. But that worry really is not justified. The concept of training and over-fitting are valid in the frequency-domain aspect of this work, where we take steps to correct it, such as the pre-processing of the spectrum shape and the post-processing vetos. But in the time-domain, overfit should we restrict the filter-training to a subset of the data? That might make sense if we assumed the data to be stationary and were going to let it run into the future, or if we wanted to learn something scientific about the meaing of the filter coefficients. None of those assumptions hold. We assume the data to be non-stationary, although a complaint could be made that we are unsure about the timescales of non-stationarity. We do not let the filter run arbitrarily into the future, but explicitly window it. Finally, we do not have ambitions to extract scientific meaning from the filter coefficients, although that may change -- even if we did go down that route, it would probably be based more on the original spectra than on the fit to them.
 
         \subsection{Filter fitting across science segments}
         \label{filter_fitting-out-of-loop}
 
-            Matlab: obtain frame data, fit, window across science segments.
+We run one job process per science segment. Segments range in duration from seconds to days, with a median of hours. The interferometer is locked during each segment, meaning it is held fixed on a fringe, by servo control. Lock loss or noise degradations can define a segment end. Segments are divided into 50\%-overlapping Hann windows, filtered, and smoothly re-merged. Windowing is idempotent for $h(t)$ itself; the difference from window to window is the correction added. The first 512 s derive only from the first window; every 512 s afterward, a new window commences, as in Figure~\ref{windowingScience}.
+
+Using Equation~\ref{hatsf} with filters $g$, target $S = \left\{ s + \Sigma_j \left(\gamma_j \times n_j\right)\right\}$ and witness $N_j = \left\{ n_{j} \right\}$, we can evaluate  $\hat{s} (t)$. Since the filters for different channels are calculated in series, with transfer functions $T$, Equation~\ref{hatexpand} has $g_1 \sim T_{S,N_1}$ but $g_2 \sim T_{\left( S-g_1 \times N_1 \right),N_2}$. Here, $S$, $N_1$ and $N_2$ are respectively $h(t)$, MICH and PRC.
+
+            \begin{eqnarray}
+            \hat{s} (t) &=& S (t) - \Sigma_j \left(g_{j} (t) \times N (t)\right) \label{hatexpand}, \\
+		&=& S (t) - g_1 (t) \times N_1 (t) - g_2 (t) \times N_2 (t) \label{hatexpanded},\\
+&\sim& S (t) - F^{-1} \textup{fit}\left[ T_{S,N_1} \right] \times N_1 (t) - F^{-1} \textup{fit}\left[T_{\left( S-g_1 \times N_1 \right),N_2} \right] \times N_2 (t).
+            \end{eqnarray} 
+		
+
+	Since $N_1(t)$ and $N_2(t)$ are added linearly to $S(t)$, we can analyze them independently. 
+Analyze the first two terms of Equation~\ref{hatexpanded} and take $N(t) = N_1(t)$. Let $g_{A}$ and $g_{B}$ be the earlier and later filters for $N(t)$ being time-domain merged in a Hann-window; they are respectively calculated from overlapping data sets $[S_A, N_A]$ and $[S_B, N_B]$. The sets are identical at time $t$, so $S(t)=S_A(t) = S_B(t)$, $N(t)=N_A(t) = N_B(t)$. Windowing merges data streams $\hat{s}_A$ and $\hat{s}_B$ over $\tau = 1024$ s, per Equation~\ref{windowexpand}: 
+
+	\begin{eqnarray}
+        \hat{s} (t) &=& \frac{\hat{s}_A (t)}{2} \left[1 - \cos \frac{2 \pi (t+\frac{\tau}{2})}{\tau} \right] + \frac{\hat{s}_B (t)}{2}\left[1 - \cos \frac{2 \pi (t+\tau)}{\tau} \right] \label{windowexpand}, \\
+	  &=& \frac{1}{2} \left( \hat{s}_A (t) + \hat{s}_B (t) + \cos \frac{2 \pi t}{\tau} \left[\hat{s}_A (t) - \hat{s}_B (t) \right]\right),\\
+	&=& \frac{2 S(t) - (g_{A} + g_{B})\times N(t)}{2} - \frac{g_{A} - g_{B}}{2} \times N(t) \cos \frac{2 \pi t}{\tau},\\
+          &=& S(t) - \frac{1}{2} \left( g_{A} \left [1 + \cos \frac{2 \pi t}{\tau} \right] + g_{B} \left [1 - \cos \frac{2 \pi t}{\tau} \right] \right) \times N (t) \label{windowexpanded}.
+	\end{eqnarray}
+
+	Equation~\ref{windowexpanded} shows that the windowing process equates to evolving filter coefficients with a 512 s cadence. Substitute $\hat{s}(t)$ into $S(t)$ with $N(t) = N_2(t)$ for the next noise channel to extend the result.
+
+            Science segments are subdivided into at most 16384 s. These subdivisions overlap for 512 s, so each side calculates identical filters for the overlap, but only the latter half writes the overlap, to avoid race conditions. Label $g_W, g_X, g_Y, g_Z$ the final filters calculated in job 1; $g_A, g_B, g_C, g_D$ are the first in job 2. Where each parenthesis contains 512 s and the addition sign denotes Hann-windowing of the filters, the end of job 1 is $\ldots(g_W+g_X)(g_X+g_Y)(g_Y+g_Z)$ and the start of job 2 is $(g_A+g_B)(g_B+g_C)(g_C+g_D)$. Overlap denotes that filter $g_A$ is derived from the same data as filter $g_Y$, and likewise $g_B \simeq g_Z$. Thus $(g_A+g_B)=(g_Y+g_Z)$. Segments shorter than 60 s are not filtered, and dangling windows shorter than 32 s are rolled into their predecessors. These provisions prevent filters based on insufficient data. 
 
 \begin{figure}
-\includegraphics[height=95mm,width=120mm]{hann-windows.eps}
-\caption{\textit{Windowing}}
+\begin{center}
+\includegraphics[height=110mm,width=150mm]{figure10.eps}
+\caption{Schematic windowing for one LIGO science segment, illustrating windowing after an initial half-window offset. Filters are calculated for windows up to 1024-s, then 50\%-overlapping Hann windows merged, giving a corrected measurement of $h(t)$. Code online: \texttt{http://ligo-vcs.phys.uwm.edu/wsvn/MatApps/packages/detchar/AMPS/}\newline \texttt{trunk/eleutheria.m}}
+\label{windowingScience}
+\end{center}
 \end{figure}
-One job per science segment, filters are calculated for 1024 s windows;
-50\%-overlapping Hann windows merged, AMPS h(t) frames written. Code in LIGO SVN:\\
-\texttt{matapps/packages/detchar/}\\
-\texttt{AMPS/trunk/eleutheria.m}
-        Feedforward program structure: out-of-loop.
 
-        \subsection{Data frame generation}
-        \label{data_frames}
-        
-            Matlab: write frame files on cluster.
+    \section{Results of feedforward}
+    \label{all-results}
 
         \subsection{Post-processing diagnostics}
         \label{diagnostics}
  
-LIGO Hanford h(t) spectrum after filtering MICH \& PRC:\\
-noise floor in bucket falls quiet, freeing inspiral range.
+
+Lower spectral noise floors reveal improvement in Figures~\ref{typicalInspiralGraph} and~\ref{bestInspiralGraph}. Feedforward most improves the spectra with elevated noise levels. It enhances sensitivity less when the interferometer is already optimized. This tendency is consistent with underlying thermal and shot noise. Glitches contaminate $h(t)$ less when the servo-to-strain coupling is minimized. Insofar as coupling non-stationarity evolves slower than the 512-s windowing timescale, adaptive filtering appears to reduce the impact of glitches.
 
 \begin{figure}
-\includegraphics[height=80mm, width=60mm]{clip-exemplar-ASD.eps}
-\caption{Exemplar, +1.1 Mpc (5.9\% inspiral range)
-\textit{(GPS 953164819 to 953165839, 2010-03-21)}}
+\begin{center}
+\includegraphics[height=120mm, width=150mm]{figure11.eps}
+\caption{Exemplar of a typical case, +1.1 Mpc (5.9\% inspiral range)
+\textit{(GPS time 953164819 to 953165839, 2010 March 21)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. The most benefit is seen in the 80 to 400 Hz band, especially around 150 Hz, where LIGO is most sensitive. The main fundamental limit in this band is thermal suspension noise, but historically auxiliary channel noise has been a major contaminant. Note that the 60 Hz and harmonic lines are not subtracted, although a separate magnetometer servo does reduce their impact. The 330 Hz violin mode is not likely amenable to feedforward.}
+\label{typicalInspiralGraph}
+\end{center}
 \end{figure}
 \begin{figure}
-\includegraphics[height=80mm, width=60mm]{title_spectrum.eps}
-\caption{Best seen, +4.4 Mpc (29\% inspiral range)
-\textit{(GPS 955187679 to 955188191, 2010-04-13)}}
+\begin{center}
+\includegraphics[height=120mm, width=150mm]{figure12.eps}
+%\caption{Best improvement seen in S6 for H1 $h(t)$, +4.4 Mpc (29\% inspiral range)
+%\textit{(GPS 955187679 to 955188191, 2010 April 13)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. Such a loud cross-coupling would be noticed in real-time by the on-site staff. The elevated noise floor is unusual in science mode, but the fact that feedforward corrects it suggests the importance of controlling auxiliary channels to prevent such glitches. The post-feedforward spectrum is comparatively normal for science mode, as in Figure~\ref{typicalInspiralGraph}.}
+\caption{Best improvement seen in S6 for H1 $h(t)$, +4.4 Mpc (29\% inspiral range)
+\textit{(GPS 955187679 to 955188191, 2010 April 13)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. Such a loud cross-coupling would be noticed in real-time by the on-site staff. The elevated noise floor is unusual in science mode, but the fact that feedforward corrects it suggests the importance of controlling auxiliary channels to prevent such glitches. The post-feedforward spectrum is comparatively normal for science mode}
+\label{bestInspiralGraph}
+\end{center}
 \end{figure}
+
+Post-processing tests also compute average SFT spectra. For GPS second $931.0\times 10^6$ (2009 July 07; GPS seconds count from 1980 January 01) to $932.8\times 10^6$ (2009 July 28, about 10\% of S6), the harmonic mean spectra are shown in Figure~\ref{SFTgraph}.
+
 \begin{figure}
-\includegraphics[height=80mm, width=60mm]{clip-diff.eps}
-\includegraphics[height=80mm, width=60mm]{clip-diff-ratio.eps}
-\caption{Arithmetic (black) \& harmonic (red) mean,
-200 jobs: \textit{(before-after)} (L), \textit{(before-after)/before} (R)}
+\begin{center}
+\includegraphics[height=100mm, width=75mm]{figure13a.eps}
+\includegraphics[height=100mm, width=75mm]{figure13b.eps}
+%\caption{Harmonic mean, GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit{(before-after)} (L), \textit{(before-after)/before} (R); greater than zero is improvement. The mean shows the absolute and relative difference of before and after, between the average of many spectra such as Figures~\ref{typicalInspiralGraph} and~\ref{bestInspiralGraph}, although the algorithm differs. Improvement from 80 to 400 Hz is noticeable; at higher frequencies there is degradation, negligible in relative terms, due to high-frequency filter rolloff. Frequencies below 50 Hz should be disregarded; they are usually not searched by LIGO, so spectra for this plot were generated with a high-pass filter at 38 Hz.}
+\caption{Harmonic mean, GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit{(before-after)} (L), \textit{(before-after)/before} (R); greater than zero is improvement. The mean shows the absolute and relative difference of before and after, between the average of many spectra. Improvement from 80 to 400 Hz is noticeable; at higher frequencies there is degradation, negligible in relative terms, due to high-frequency filter rolloff. Frequencies below 50 Hz should be disregarded; they are usually not searched by LIGO, so spectra for this plot were generated with a high-pass filter at 38 Hz.}
+\label{SFTgraph}
+\end{center}
 \end{figure}
 
-            Matlab/Python/C: diagnostics -- combs, SFTs, range and data consistency.
-
-            Many post-processing diagnostics, injections included. We tested the syncronization, before and after, with ringdown and sine-gaussian burst injections, and additionally we looked for any evidence of a frequency comb at the windowing frequency. No problems were found.
-
-	    This is probably the optimal place to talk about the work that Ian Harry and maybe James Clark, David Keital and Karl Wette are doing, as well.
+SFTs are high-pass filtered at 38 Hz. The harmonic mean spectrum shows several percent improvement from about 80 Hz up to the 330 Hz violin mode frequencies. Above 400 Hz, there is proportionally-minor degradation,  due to filter rolloff. 
 
         \subsection{Feedforward benefits and potential}
         \label{benefits}
 
-            Fine tuning, how data improves, potential for future.
-
-Inspiral range, the distance at which coalescing neutron stars are likely to be detected, increases for both LIGO observatories when data from science run 6 is filtered. \textit{Post facto} feedforward noise subtraction improves performance.
+Inspiral range $\mathcal{R}$ increases for both S6 LIGO observatories, which should generalize to any observatory with broadband noise due to contamination from auxiliary servos.
 
 \begin{figure}
-\includegraphics[height=60mm, width=120mm]{clip-range-LHO-new.eps}
-\includegraphics[height=60mm, width=120mm]{clip-range-LLO-new.eps}
-\caption{Inspiral range vs time:
-LHO (L) gains 0.69 Mpc, LLO (R) gains 0.43 Mpc}
+\begin{center}
+\includegraphics[height=75mm, width=150mm]{figure14a.eps}
+\includegraphics[height=75mm, width=150mm]{figure14b.eps}
+\caption{Inspiral range vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30):
+LIGO Hanford Observatory, H1 (top) gains 0.23 Mpc; LIGO Livingston Observatory, L1 (bottom) gains 0.84 Mpc. In this first month of S6, L1 saw greater benefit from post-facto feedforward correction; later data from H1 and L1 would improve by fluctuating amounts thanks to better real-time feedforward servos. Although H1 is less improved than L1 here, real-time tunings were made soon after.}
+\label{S6inspiralRange}
+\end{center}
 \end{figure}
 \begin{figure}
-\includegraphics[height=60mm, width=120mm]{clip-gain-LHO-new.eps}
-\includegraphics[height=60mm, width=120mm]{clip-gain-LLO-new.eps}
-\caption{Inspiral range \textit{fractional gain} vs time:
-LHO (L) 4.13\% better, LLO (R) 3.60\% better}
-\end{figure}
-\begin{figure}
-\includegraphics[height=60mm, width=120mm]{croppedWebpage.eps}
-\caption{Webpages, window-by-window: \newline \texttt{https://ldas-jobs.ligo.caltech.edu/} \texttt{\~{}pulsar/feedforward/diagnostics}}
+\begin{center}
+\includegraphics[height=75mm, width=150mm]{figure15a.eps}
+\includegraphics[height=75mm, width=150mm]{figure15b.eps}
+%\caption{Inspiral range \textit{fractional gain} vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30):
+LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for which Figure~\ref{S6inspiralRange} shows absolute gain.}
+\caption{Inspiral range \textit{fractional gain} vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30):
+LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for we also show absolute gain.}
+\label{S6inspiralRangeGain}
+\end{center}
 \end{figure}
 
-\begin{itemize}
-\item[1]. Feedforward subtracts noise using Vectfit to fit a transfer function between noise \& signal
-\item[2]. h(t) is filtered with MICH \& PRC, range improves 4 \% (volume 12 \%), minimum strain about ten percent better.
-\item[3]. AMPS frames for S6 LHO \& LLO exist at CIT:
-\texttt{/archive/frames/S6/pulsar/feedforward}
-\item[4]. The \textit{best} h(t) \& inspiral range of any site/time till Advanced LIGO is on these frames 
-\item[5]. Advanced LIGO could use such methods to characterize MICH \& PRC changes, fix quickly, even \textit{post facto}
-\end{itemize}
- 
-\textit{References}:
-LIGO optical pathlength definitions via Adhikari~\cite{AdhikariThesis} and~\cite{BallmerThesis}; Vectfit developed by Gustavsen et al~\cite{Deschrijver2008},~\cite{Gustavsen2006},~\cite{Gustavsen1999}. Remember to note that Tobin Fricke wrote the function that applies the ZPKs as a SOS section-order-sections filter to the actual data, filterZPKs.m.
+Figures~\ref{S6inspiralRange} and~\ref{S6inspiralRangeGain} show the variation in achieved subtraction over about 10\% of S6.
 
-%        -----------------------------
-%
-%	The following is an example of using the commands \textit{ref}
-%	and \textit{label}. With these commands theorems, chapters,
-%	sections and figurres can be labeld with names in the tex file
-%	and then refered to by these names in later tex files. In
-%	chapter~\ref{intro} we saw section~\ref{sample_section} or
-%	theorem~\ref{sample_theorem}.
-%
-%	Lastly, here is how to include a figure. First generate an
-%	encapsulated postscript file in xfig, adobe illustrator or
-%	some other program. The specific commands are found in
-%	\textit{chap2.tex}.
-%
-%        \begin{figure}[htb]
-%        \centerline{ \epsfig{figure=sample.eps, 
-%        height =  1.5 in}}
-%        \caption{Sample Figure}
-%        \label{sample_figure}
-%        \end{figure}
+% Figure~\ref{diagnosticWebpages} shows a screenshot of a webpage where LIGO data analysts can access summary graphs of the feedforward performance.
+
+%\begin{figure}
+%\begin{center}
+%\includegraphics[height=75mm, width=150mm]{figure16.eps}
+%\caption{Screenshot of diagnostic web pages, indexed by window.}
+%\label{diagnosticWebpages}
+%\end{center}
+%\end{figure}
+
+
+\section{Conclusion}
+
+Auxiliary MICH-PRC Subtraction has cleaned LIGO S6 data, yielding better strain sensitivity and inspiral range. Frequency-domain-derived, time-domain-applied feedforward correction removes noise by fitting a rational transfer function between witness \& target. Second order sections filter the witness channels, which then are subtracted from the measured target to produce an improved strain estimate. Diagnostics confirm that the corrected $h(t)$ benefits from dynamic, adaptive, algorithmic \textit{post facto} feedforward subtraction, gaining several percent in detectable inspiral range. Such an improvement potentially enhances the performance of any LIGO search. 
+
+The subtraction leads to the lowest noise floor, around 150 Hz, of any time or interferometer so far (the highest performance to date at shot-noise limited frequencies has been obtained differently, with quantum optical squeezing~\cite{BarsottiNatureSqueezing,DwyerPhaseNoise}). This record may remain until Advanced LIGO. Thereafter, adaptive feedforward filters, real-time or \textit{post facto}, can be applied to mitigate noisy-but-inescapable couplings of the servo system. Signal recycling and filter cavities will further challenge commissioning. Angular and length sensing will need finer control servos. Advanced LIGO will also contain more physical and environmental monitors, from seismic and accelerometric to magnetic, that could provide witnesses for non-control-related noise. Altogether, more auxiliary channels and loops will exist, and while they may require sophisticated, non-linear methods, the subtraction technique presented here is a basis. Sensitive interferometry will benefit from simple, effective methods of suppressing instrumental influences.
+
+LIGO was constructed by the California Institute of Technology and Massachusetts Institute of Technology with funding from the National Science Foundation and operates under cooperative agreement PHY-0757058. This paper carries LIGO Document Number LIGO-P1300193. This research was also made possible by the generous support of the National Science Foundation, awards 0855422 and 1205173, LIGO Hanford Observatory, the LIGO Scientific Collaboration, and the University of Michigan. The authors wish to thank Gregory Mendell as well as Stuart Anderson, Juan Barayoga and Dan Kozak for grid computing expertise, Ian Harry for investigating signal recovery before and after injections and providing conclusions about signal-to-noise ratio for matched filtering, and Jeff Kissel for refining MICH and PRC subtraction by hand. Tobin Fricke wrote the converter function from second-order-system to ZPK filtering and also reviewed this manuscript, as did Rana Adhikari and Jenne Driggers, who developed many of these methods at the Caltech 40 m interferometer. Michael Coughlin, Jan Harms, and Nicol\'{a}s Smith-Lefebvre all generously provided comments. Finally, we thank the referees for Classical and Quantum Gravity for helpful suggestions.
+
+%\appendix
+
+
+%\section*{References}
+%\bibliographystyle{jphysicsB}
+%\bibliography{Meadors_LIGO_AMPS_feedforward}
+%\begin{thebibliography}
+%\bibitem{book1} Goosens M, Rahtz S and Mittelbach F 1997 {\it The \LaTeX\ Graphics Companion\/} 
+%(Reading, MA: Addison-Wesley)
+%\bibitem{eps} Reckdahl K 1997 {\it Using Imported Graphics in \LaTeX\ } (search 
+%CTAN for the file `epslatex.pdf')
+%\References
+%\endrefs
+%\end{thebibliography}
+
+%\end{document}
 

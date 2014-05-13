@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  12 MAY 2014 23:26
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  12 MAY 2014 23:56
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -300,7 +300,7 @@ Overfull \hbox (840.81363pt too wide) in paragraph at lines 3--3
  []
 
 
-Overfull \hbox (2938.75732pt too wide) in paragraph at lines 8--8
+Overfull \hbox (2949.31291pt too wide) in paragraph at lines 8--8
  [][] [] []  
  []
 
@@ -355,12 +355,12 @@ Overfull \hbox (2282.69228pt too wide) in paragraph at lines 18--18
  []
 
 
-Overfull \hbox (1895.22269pt too wide) in paragraph at lines 19--19
+Overfull \hbox (1813.05586pt too wide) in paragraph at lines 19--19
  [][] [] []  
  []
 
 
-Overfull \hbox (2492.86871pt too wide) in paragraph at lines 20--20
+Overfull \hbox (2223.81262pt too wide) in paragraph at lines 20--20
  [][] [] []  
  []
 
@@ -370,12 +370,12 @@ Overfull \hbox (1799.40706pt too wide) in paragraph at lines 21--21
  []
 
 
-Overfull \hbox (990.33884pt too wide) in paragraph at lines 22--22
+Overfull \hbox (939.89427pt too wide) in paragraph at lines 22--22
  [][] [] []  
  []
 
 
-Overfull \hbox (51.02864pt too wide) in paragraph at lines 25--25
+Overfull \hbox (51.02864pt too wide) in paragraph at lines 26--26
  [][] [] []  
  []
 
@@ -668,7 +668,7 @@ Overfull \hbox (54.889pt too wide) detected at line 451
 
 File: figure12.eps Graphic file (type eps)
 <figure12.eps>
-Overfull \hbox (54.889pt too wide) detected at line 459
+Overfull \hbox (54.889pt too wide) detected at line 461
 \OT1/cmr/m/n/10 Figure 2.12: []
  []
 
@@ -676,7 +676,7 @@ File: figure13a.eps Graphic file (type eps)
 <figure13a.eps>
 File: figure13b.eps Graphic file (type eps)
  <figure13b.eps>
-Overfull \hbox (54.889pt too wide) detected at line 470
+Overfull \hbox (54.889pt too wide) detected at line 473
 \OT1/cmr/m/n/10 Figure 2.13: []
  []
 
@@ -684,7 +684,7 @@ File: figure14a.eps Graphic file (type eps)
 <figure14a.eps>
 File: figure14b.eps Graphic file (type eps)
  <figure14b.eps>
-Overfull \hbox (54.889pt too wide) detected at line 487
+Overfull \hbox (54.889pt too wide) detected at line 490
 \OT1/cmr/m/n/10 Figure 2.14: []
  []
 
@@ -692,23 +692,24 @@ File: figure15a.eps Graphic file (type eps)
 <figure15a.eps>
 File: figure15b.eps Graphic file (type eps)
  <figure15b.eps>
-Overfull \hbox (54.889pt too wide) detected at line 496
+Overfull \hbox (54.889pt too wide) detected at line 501
 \OT1/cmr/m/n/10 Figure 2.15: []
  []
 
-
-Overfull \hbox (2.05617pt too wide) in paragraph at lines 516--517
+File: figure16.eps Graphic file (type eps)
+<figure16.eps>
+Overfull \hbox (2.05617pt too wide) in paragraph at lines 521--522
 \OT1/cmr/m/n/12 strain sen-si-tiv-ity and in-spi-ral range. Frequency-domain-de
 rived, time-domain-applied
  []
 
-[43] [44] [45] [46] [47] [48]
-Overfull \hbox (1.82634pt too wide) in paragraph at lines 520--521
+[43] [44] [45] [46] [47] [48] [49]
+Overfull \hbox (1.82634pt too wide) in paragraph at lines 525--526
 []\OT1/cmr/m/n/12 LIGO was con-structed by the Cal-i-for-nia In-sti-tute of Tec
 h-nol-ogy and Mas-sachusetts
  []
 
-[49]) [50]
+) [50]
 CHAPTER III.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -883,11 +884,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 156.
 
-(./chap5.tex
-
-LaTeX Warning: Citation `RomeroThesis' on page 56 undefined on input line 26.
-
-) [56
+(./chap5.tex) [56
 
 ]
 CHAPTER VI.
@@ -1051,7 +1048,7 @@ r&
  []
 
 [67] [68]
-Underfull \hbox (badness 2376) in paragraph at lines 454--457
+Underfull \hbox (badness 2376) in paragraph at lines 459--462
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
@@ -1061,18 +1058,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-[0] (./thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 3804 strings out of 95847
- 49592 string characters out of 1195216
- 127403 words of memory out of 1000001
- 6625 multiletter control sequences out of 10000+50000
+ 3807 strings out of 95847
+ 49636 string characters out of 1195216
+ 128501 words of memory out of 1000001
+ 6627 multiletter control sequences out of 10000+50000
  12979 words of font info for 50 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
- 33i,10n,36p,1676b,477s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 33i,10n,36p,1676b,450s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (78 pages, 289120 bytes).
+Output written on thesis.dvi (78 pages, 289016 bytes).

@@ -95,7 +95,7 @@ Post-facto, adaptive feedforward simplifies cross-talk subtraction. AMPS uses Ma
     \label{motive_math}
 
 
-Gravitational-wave antennae around the world share features and form a collaborative network. Amongst kilometer-scale Michelson interferometers, GEO600 in Hannover, Germany uses folded arms with both power- and signal-recycling, LIGO, and Virgo use Fabry-Perot cavities coupled with power- (and potentially signal-) recycling cavities. The Japanese interferometer KAGRA, under construction, will have a similar optical layout to LIGO and Virgo but with cryogenically-cooled mirrors in an underground laboratory. Although nomenclature here pertains to LIGO, the core problem of this paper applies directly to all power-recycled Michelson interferometers with Fabry-Perot arms. It could extend to other instruments with multiple degrees of freedom that obtain a signal from a target contaminated by control noise from auxiliary degrees of freedom, especially when those auxiliaries are controlled using a lower signal-to-noise ratio (SNR) error signal than for the target and when the witnesses are highly independent.
+Gravitational-wave antennae around the world share features and form a collaborative network. Amongst kilometer-scale Michelson interferometers, GEO600 in Hannover, Germany uses folded arms with both power- and signal-recycling, LIGO and Virgo use Fabry-Perot cavities coupled with power- (and potentially signal-) recycling cavities. The Japanese interferometer KAGRA, under construction, will have a similar optical layout to LIGO and Virgo but with cryogenically-cooled mirrors in an underground laboratory. Although nomenclature here pertains to LIGO, the core problem of this paper applies directly to all power-recycled Michelson interferometers with Fabry-Perot arms. It could extend to other instruments with multiple degrees of freedom that obtain a signal from a target contaminated by control noise from auxiliary degrees of freedom, especially when those auxiliaries are controlled using a lower signal-to-noise ratio (SNR) error signal than for the target and when the witnesses are highly independent.
 
 LIGO core optics include the beam-splitter (BS) and power-recycling mirror (PRM), which is situated between the laser and the beam-splitter. The four LIGO mirror test masses (TM) are named by arm (X or Y) and input (I) vs end (E) of the Fabry-Perot cavities. LIGO controls four optical pathlength degrees of freedom~\cite{ReadoutGWA}. DARM is a signal of \textit{differential arm} length, which is calibrated into the primary part of the gravitational strain measurement, \textit{h(t)}. CARM yields \textit{common arm} length, and is controlled with a common mode servo using laser frequency. MICH \textit{Michelson} and PRC \textit{power-recycling cavity} length refer only to input test masses.
 
@@ -119,7 +119,7 @@ LIGO core optics include the beam-splitter (BS) and power-recycling mirror (PRM)
 \begin{figure}
 \begin{center}
 \includegraphics[height=135mm,width=150mm]{figure1.eps}
-\caption{Gravitational wave strain $h(t)$ is derived from differential arm motion (DARM), read-out from a photodiode downstream of the antisymmetric port. An internal reflection off an anti-reflective coating, on either the beam-splitter (BS) or an input test mass (ITM), provides the Michelson (MICH) channel. The DARM readout channel predominantly measures the small change in different arm length, $\delta(L_-) \equiv \delta(L_y - L_x)$, while MICH measures that in the Michelson length $\delta(l_-) \equiv \delta(l_y - l_x)$. There is also a small coupling from $\delta(l_-)$ to the DARM channel. To a lesser extent, changes in the length of PRC, which is defined as $\delta(l_+) \equiv \delta(l_y + l_x)/2$ and is measured in quadrature demodulation with respect to the MICH pick-off, also add noise to DARM.}
+\caption{Gravitational wave strain $h(t)$ is derived from differential arm motion (DARM), read-out from a photodiode downstream of the antisymmetric port. An internal reflection off an anti-reflective coating, on either the beam-splitter (BS) or an input test mass (ITM), provides the Michelson (MICH) channel. The DARM readout channel predominantly measures the small change in differential arm length, $\delta(L_-) \equiv \delta(L_y - L_x)$, while MICH measures that in the Michelson length $\delta(l_-) \equiv \delta(l_y - l_x)$. There is also a small coupling from $\delta(l_-)$ to the DARM channel. To a lesser extent, changes in the length of PRC, which is defined as $\delta(l_+) \equiv \delta(l_y + l_x)/2$ and is measured in quadrature demodulation with respect to the MICH pick-off, also add noise to DARM.}
 \label{arms}
 \end{center}
 \end{figure}
@@ -135,12 +135,12 @@ LIGO core optics include the beam-splitter (BS) and power-recycling mirror (PRM)
 
         \textit{A priori} MICH noise will leak into measurements of DARM with a transfer function equal to the inverse of Equation~\ref{rcfactor}~\cite{SiggFreq1997}. Coherence measurements confirm this coupling dominates the transfer function, but residuals suggest other effects exist. PRC is also indirectly correlated with DARM. These correlations are physical consequences of the interferometer design. 
 
-In Enhanced LIGO, DARM is measured with a photodiode at the interferometer `dark' antisymmetric port of the beams-splitter. Independent photodiodes for MICH and PRC, used for feedback on their respective auxiliary length control servos, provide the witness channels for canceling cross-talk into DARM. The MICH and PRC photodiodes receive a beam from an internal reflection in the beam-splitter. This beam carries a radio-frequency modulation; one demodulation quadrature provides MICH, the other PRC.
+In Enhanced LIGO, DARM is measured with a photodiode at the interferometer `dark' antisymmetric port of the beamsplitter. Independent photodiodes for MICH and PRC, used for feedback on their respective auxiliary length control servos, provide the witness channels for canceling cross-talk into DARM. The MICH and PRC photodiodes receive a beam from an internal reflection in the beam-splitter. This beam carries a radio-frequency modulation; one demodulation quadrature provides MICH, the other PRC.
 
         \subsection{Auxiliary noise coherence at sensitive frequencies}
         \label{aux_noise}
 
-	 Coherence, the Fourier frequency-dependent analog of statistical covariance, quantifies cross-talk. On a scale of 0 (none) to 1 (full), magnitude-squared-coherence (MS-coherence) represents the normalized fraction of power of a frequency bin in the spectrum of one channel that can be found in the same frequency bin in the spectrum of another channel. First, we must define the cross-power of a two time-series. Where $P_{xy}$ is cross-power spectral density, 
+	 Coherence, the Fourier frequency-dependent analog of statistical covariance, quantifies cross-talk. On a scale of 0 (none) to 1 (full), magnitude-squared-coherence (MS-coherence) represents the normalized fraction of power of a frequency bin in the spectrum of one channel that can be found in the same frequency bin in the spectrum of another channel. First, we must define the cross-power of two time-series. Where $P_{xy}$ is cross-power spectral density, 
 %as in Equation~\ref{Pyx}.
 %
 %	Continuous and discrete definitions of cross-power $P$ follow; the operator $E$ denotes an expectation value, and $p$ and $q$ are discrete indices:
@@ -317,11 +317,11 @@ Feedforward subtraction looks at the MICH control signal,
 \begin{equation}
 \textup{MICH}_{ctrl} \propto \frac{\pi}{2\mathcal{F}}\delta(L_-) +n,\label{offsetMICHCTRL}
 \end{equation}
-and subtracts $n$ from DARM, and in the process also subtracts $\frac{\pi}{2\mathcal{F}}\delta(L_-)$. Looking at Eqs.~\ref{offsetDARMsignal} and~\ref{offsetMICHCTRL}, as far as the noise reduction is observed in DARM, the small $\delta(L_-)$ term is also reduced, and the impact on the calibration is on the order of $(\pi/2 \mathcal{F})^2=O(10^{-5})$ at most.
+and subtracts $n$ from DARM, and in the process also subtracts $\frac{\pi}{2\mathcal{F}}\delta(L_-)$. Looking at Eqs.~\ref{offsetDARMsignal} and~\ref{offsetMICHCTRL}, as far as the noise reduction is observed in DARM, the small $\delta(L_-)$ term is also reduced, and the impact on the calibration is on the order of $(\pi/2 \mathcal{F})^2=\mathcal{O}(10^{-5})$ at most.
 
 A similar argument can be made for PRC, but this time the cross coupling is not only dependent on $(\pi/2\mathcal{F})$ but also on the asymmetry of the arms, further reducing the coupling.
 
-Note that the above mentioned discussion is equally applicable to real time as well as post-facto feedforward. LIGO uses real time feedforward, and the online feedforward described in this paper subtracts only a small amount of noise left uncaught by the real time system. Virgo implements similar real time feedforward to remove 50Hz line successfully~\cite{Buskulic2000}. In both of these cases, no measurable effect caused by feedforward has been reported.
+Note that the above mentioned discussion is equally applicable to real-time as well as post-facto feedforward. LIGO uses real time feedforward, and the offline feedforward described in this paper subtracts only a small amount of noise left uncaught by the real-time system. Virgo implements similar real-time feedforward to remove the 50Hz line successfully~\cite{Buskulic2000}. In both of these cases, no measurable effect caused by feedforward has been reported.
 
 Nevertheless, two checks were performed to see if there is any unknown mechanism to compromise the calibration of DARM, which are explained in Section~\ref{postprocessingSafeguards}.
 
@@ -455,8 +455,10 @@ Lower spectral noise floors reveal improvement in Figures~\ref{typicalInspiralGr
 \begin{figure}
 \begin{center}
 \includegraphics[height=120mm, width=150mm]{figure12.eps}
+%\caption{Best improvement seen in S6 for H1 $h(t)$, +4.4 Mpc (29\% inspiral range)
+%\textit{(GPS 955187679 to 955188191, 2010 April 13)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. Such a loud cross-coupling would be noticed in real-time by the on-site staff. The elevated noise floor is unusual in science mode, but the fact that feedforward corrects it suggests the importance of controlling auxiliary channels to prevent such glitches. The post-feedforward spectrum is comparatively normal for science mode, as in Figure~\ref{typicalInspiralGraph}.}
 \caption{Best improvement seen in S6 for H1 $h(t)$, +4.4 Mpc (29\% inspiral range)
-\textit{(GPS 955187679 to 955188191, 2010 April 13)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. Such a loud cross-coupling would be noticed in real-time by the on-site staff. The elevated noise floor is unusual in science mode, but the fact that feedforward corrects it suggests the importance of controlling auxiliary channels to prevent such glitches. The post-feedforward spectrum is comparatively normal for science mode, as in Figure~\ref{typicalInspiralGraph}.}
+\textit{(GPS 955187679 to 955188191, 2010 April 13)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. Such a loud cross-coupling would be noticed in real-time by the on-site staff. The elevated noise floor is unusual in science mode, but the fact that feedforward corrects it suggests the importance of controlling auxiliary channels to prevent such glitches. The post-feedforward spectrum is comparatively normal for science mode}
 \label{bestInspiralGraph}
 \end{center}
 \end{figure}
@@ -467,7 +469,8 @@ Post-processing tests also compute average SFT spectra. For GPS second $931.0\ti
 \begin{center}
 \includegraphics[height=100mm, width=75mm]{figure13a.eps}
 \includegraphics[height=100mm, width=75mm]{figure13b.eps}
-\caption{Harmonic mean, GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit{(before-after)} (L), \textit{(before-after)/before} (R); greater than zero is improvement. The mean shows the absolute and relative difference of before and after, between the average of many spectra such as Figures~\ref{typicalInspiralGraph} and~\ref{bestInspiralGraph}, although the algorithm differs. Improvement from 80 to 400 Hz is noticeable; at higher frequencies there is degradation, negligible in relative terms, due to high-frequency filter rolloff. Frequencies below 50 Hz should be disregarded; they are usually not searched by LIGO, so spectra for this plot were generated with a high-pass filter at 38 Hz.}
+%\caption{Harmonic mean, GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit{(before-after)} (L), \textit{(before-after)/before} (R); greater than zero is improvement. The mean shows the absolute and relative difference of before and after, between the average of many spectra such as Figures~\ref{typicalInspiralGraph} and~\ref{bestInspiralGraph}, although the algorithm differs. Improvement from 80 to 400 Hz is noticeable; at higher frequencies there is degradation, negligible in relative terms, due to high-frequency filter rolloff. Frequencies below 50 Hz should be disregarded; they are usually not searched by LIGO, so spectra for this plot were generated with a high-pass filter at 38 Hz.}
+\caption{Harmonic mean, GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit{(before-after)} (L), \textit{(before-after)/before} (R); greater than zero is improvement. The mean shows the absolute and relative difference of before and after, between the average of many spectra. Improvement from 80 to 400 Hz is noticeable; at higher frequencies there is degradation, negligible in relative terms, due to high-frequency filter rolloff. Frequencies below 50 Hz should be disregarded; they are usually not searched by LIGO, so spectra for this plot were generated with a high-pass filter at 38 Hz.}
 \label{SFTgraph}
 \end{center}
 \end{figure}
@@ -492,23 +495,25 @@ LIGO Hanford Observatory, H1 (top) gains 0.23 Mpc; LIGO Livingston Observatory, 
 \begin{center}
 \includegraphics[height=75mm, width=150mm]{figure15a.eps}
 \includegraphics[height=75mm, width=150mm]{figure15b.eps}
+%\caption{Inspiral range \textit{fractional gain} vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30):
+%LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for which Figure~\ref{S6inspiralRange} shows absolute gain.}
 \caption{Inspiral range \textit{fractional gain} vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30):
-LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for which Figure~\ref{S6inspiralRange} shows absolute gain.}
+LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for we also show absolute gain.}
 \label{S6inspiralRangeGain}
 \end{center}
 \end{figure}
 
 Figures~\ref{S6inspiralRange} and~\ref{S6inspiralRangeGain} show the variation in achieved subtraction over about 10\% of S6.
 
-% Figure~\ref{diagnosticWebpages} shows a screenshot of a webpage where LIGO data analysts can access summary graphs of the feedforward performance.
+ Figure~\ref{diagnosticWebpages} shows a screenshot of a webpage where LIGO data analysts can access summary graphs of the feedforward performance.
 
-%\begin{figure}
-%\begin{center}
-%\includegraphics[height=75mm, width=150mm]{figure16.eps}
-%\caption{Screenshot of diagnostic web pages, indexed by window.}
-%\label{diagnosticWebpages}
-%\end{center}
-%\end{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[height=75mm, width=150mm]{figure16.eps}
+\caption{Screenshot of diagnostic web pages, indexed by window.}
+\label{diagnosticWebpages}
+\end{center}
+\end{figure}
 
 
 \section{Conclusion}
