@@ -224,6 +224,40 @@ in $a\sin\iota$)$ $
 \end{figure}
 
 
+
+Running TwoSpect as a directed search algorithm involves calculating
+the $\mathcal{R}$-detection statistic across the probable parameter space.
+A search is conducted with templates for each grid point in the Scorpius
+X-1 parameter space; period is known sufficient well to restrict the search
+to the two dimensions of signal frequency and frequency modulation. The
+grid spacing, inversely proportional to spectrum coherence time, was
+chosen to allow a mismatch no more than $0.2$ in the detection statistic.
+Due to known period and sky location, the incoherent harmonic sum stage
+of TwoSpect, used for the all-sky search, was bypassed entirely.
+
+Each interferometer in the data challenge was analyzed individually for
+the detection statistic and corresponding single-template $p$-value. A set
+of highest $p$-value outliers in 5 Hz bands were produced for each
+interferometer, subject to a $p$-value threshold inferred from Gaussian noise.
+These sets were compared in pairwise coincidence (H1-L1, H1-V1, or L1-V1),
+where coincidence required proximity within a few grid points in the
+parameter space. Any surviving outliers were classified as a detection.
+
+The highest $p$-value outlier in a single interferometer in that band
+yielded the estimated parameters. Uncertainties in these parameters were also
+determined from unblinded injections, using method of moments for signal
+frequency and modulation depth and confidence intervals for signal
+amplitude. Upper limits were declared from the best estimate of the 95
+percent confidence level of non-detected unblinded injected signals. The
+largest uncertainty in upper limits and signal amplitude estimation derives
+from the ambiguity in between true $h_0$ signal and $\cos \iota$ inclination.
+This ambiguity cannot be resolved with the present algorithm and depends
+partially on the assumed prior distribution of signal ampltitudes; the
+uncertainty was estimated by simulation.
+
+TwoSpect claimed to detect 34 of 50 blinded signals and stated a flat
+$4.23 \times 10^{-25}$ upper limit for the 16 non-detected signals.
+
 %\end{frame}
 
 \section{Plans for improvement}
