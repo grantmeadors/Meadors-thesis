@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  29 MAY 2014 02:38
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  31 MAY 2014 01:16
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -940,29 +940,29 @@ Overfull \hbox (49.88899pt too wide) detected at line 223
 \OT1/cmr/m/n/10 Figure 4.4: []
  []
 
-[59] [60] [61] [62] [63] [64] [65] [66]
+[59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71]
 File: maptrueH1.eps Graphic file (type eps)
- <maptrueH1.eps>
+
+<maptrueH1.eps>
 File: maptrueL1.eps Graphic file (type eps)
  <maptrueL1.eps>
 File: maptrueV1.eps Graphic file (type eps)
-
-<maptrueV1.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 380--385
+ <maptrueV1.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 498--503
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--385
+Underfull \hbox (badness 10000) in paragraph at lines 498--503
 []
  []
 
 
-Overfull \hbox (49.88899pt too wide) detected at line 385
+Overfull \hbox (49.88899pt too wide) detected at line 503
 \OT1/cmr/m/n/10 Figure 4.5: []
  []
 
-[67] [68]) [69]
+[72] [73]) [74]
 CHAPTER V.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1019,7 +1019,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 156.
 
-(./chap5.tex) [70
+(./chap5.tex) [75
 
 ]
 CHAPTER VI.
@@ -1108,9 +1108,9 @@ Overfull \hbox (25.24333pt too wide) in paragraph at lines 71--72
  [] 
  []
 
-[71
+[76
 
-] [72] [73] [74]) [75]
+] [77] [78] [79]) [80]
 CHAPTER VII.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1167,11 +1167,11 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 164.
 
-(./conclusion.tex [76
+(./conclusion.tex [81
 
-] [77]) (./thesis.bbl [78] [79
+] [82]) (./thesis.bbl [83] [84
 
-] [80] [81]
+] [85] [86]
 Underfull \hbox (badness 10000) in paragraph at lines 311--317
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1182,13 +1182,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--317
 r&
  []
 
-[82] [83]
+[87] [88]
 Underfull \hbox (badness 2376) in paragraph at lines 476--479
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-) [84]
+) [89]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
@@ -1203,4 +1203,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 1000
  33i,14n,36p,1664b,450s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (93 pages, 338184 bytes).
+Output written on thesis.dvi (98 pages, 351992 bytes).
