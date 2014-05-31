@@ -524,6 +524,59 @@ The subtraction leads to the lowest noise floor, around 150 Hz, of any time or i
 
 LIGO was constructed by the California Institute of Technology and Massachusetts Institute of Technology with funding from the National Science Foundation and operates under cooperative agreement PHY-0757058. This paper carries LIGO Document Number LIGO-P1300193. This research was also made possible by the generous support of the National Science Foundation, awards 0855422 and 1205173, LIGO Hanford Observatory, the LIGO Scientific Collaboration, and the University of Michigan. The authors wish to thank Gregory Mendell as well as Stuart Anderson, Juan Barayoga and Dan Kozak for grid computing expertise, Ian Harry for investigating signal recovery before and after injections and providing conclusions about signal-to-noise ratio for matched filtering, and Jeff Kissel for refining MICH and PRC subtraction by hand. Tobin Fricke wrote the converter function from second-order-system to ZPK filtering and also reviewed this manuscript, as did Rana Adhikari and Jenne Driggers, who developed many of these methods at the Caltech 40 m interferometer. Michael Coughlin, Jan Harms, and Nicol\'{a}s Smith-Lefebvre all generously provided comments. Finally, we thank the referees for Classical and Quantum Gravity for helpful suggestions.
 
+\section{Postscript}
+
+This analysis is intended to make Advanced LIGO simpler. To that end, some of the tools involved were directed toward the first lock stretch of the advanced detector era, at LIGO Livingston's L1 interferometer on 2014 May 26.
+
+Denis/Anamaria/Rob/Ryan's lock comment that MICH noise was dominating their spectrum caught my eye. Based on Keita Kawabe, Keith Riles and my subtraciton of MICH \& PRC noise from the S6 data set (and H1 in real-time), I wrote a Matlab script (this link \& those after require albert.einstein login) to investigate.  
+
+I tried running the Matlab function f\_domainsubtract' (from the 40 m, used in my AMPS code to grab a frequency domain transfer function) on data at CIT in
+
+/archive/frames/A6/L0/L1/L-L1\_R\_1085/
+
+using Gregory Mendell's readFrames function to pull 2100 s of frame data starting 1085202300.
+
+I didn't see DARM\_ERR or \_CTRL anywhere, so I tried looking at \_IN1\_DQ, because that's what Rana had made a spectrogram of in the LLO aLog. Keita subsequently confirmed that IN1\_DQ has replaced ERR and OUT\_DQ has replaced CTRL.
+
+Uncalibrated PSDs from pwelch 
+
+DARM PSD
+MICH PSD
+PRCL PSD
+SRCL PSD
+
+f\_domainsubtract can estimate
+  * coherence between different channels
+  * theoretically obtainable spectrum if noise is subtracted
+
+The first set of graphs shows (in blue x's) sqrt(1-mscoherence) and (in red) the ratio, (predicted ASD after subtraction)/(measured ASD before subtraction):
+
+MICH coherence
+PRCL coherence
+SRCL coherence
+
+The second shows (in red) the ASD of the noise \_IN1\_DQ channel, (in green) the DARM\_IN1\_DQ channel, and (in black) the ASD of the DARM\_IN1\_DQ channel if the noise can be subtracted from it:
+
+MICH subtraction projection
+PRCL subtraction projection
+SRCL subtraction projection
+
+\textbf{Summary}
+
+MICH and PRCL indeed cohere with DARM, in similar ways, each with a coherence (not MS-coherence) as great as 0.5 at 10 Hz, dropping off in either direction (about 0.05 at 3 Hz and 60 Hz).
+
+In contrast, SRCL has a coherence as much as 0.3 at 10 Hz. It is even broader band, dropping off in either direction (about 0.05 at 3 Hz and 400 Hz, with a drop in coherence at 50 Hz).
+
+These results corroborate Denis/Anamaria/Rob/Ryan's assessment that MICH noise is currently dominant and suggest that PRCL and SRCL noise are also significant. To be thorough I should verify using the OUT\_DQ channels; these results were calculated using IN1\_DQ.
+
+\textbf{Future}
+
+This is not the full feedforward code, which could be updated (not entirely trivial) to subtract out the noise and calculate a spectrum post-facto. This would require no work on the part of the commissioners. If a "calibration exists", perhaps we could calculate a morale-boosting inspiral range.
+
+If commissioners want a real-time filter, that would presuppose the existence of a MICH/PRCL/SRCL subtraction path in the model and closed loop response transfer functions. Once those exist, one could update (somewhat more trivial) the real-time calculation code to get a high-quality Foton filter.
+
+A great deal of progress has likely already been made, and a great deal more can probably be made with manual filter design, but if sophistication is needed, the tools exist
+
 %\appendix
 
 
