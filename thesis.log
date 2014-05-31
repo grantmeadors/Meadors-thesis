@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  31 MAY 2014 02:13
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  31 MAY 2014 02:26
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -375,46 +375,46 @@ Overfull \hbox (939.89427pt too wide) in paragraph at lines 22--22
  []
 
 
-Overfull \hbox (38.97307pt too wide) in paragraph at lines 24--24
+Overfull \hbox (38.97307pt too wide) in paragraph at lines 34--34
  [][] [] []  
  []
 
 
-Overfull \hbox (153.61208pt too wide) in paragraph at lines 27--27
+Overfull \hbox (153.61208pt too wide) in paragraph at lines 37--37
  [][] [] []  
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 28.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 38.
 
-Overfull \hbox (229.5439pt too wide) in paragraph at lines 28--28
+Overfull \hbox (229.5439pt too wide) in paragraph at lines 38--38
  [][] [] []  
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
 
-Overfull \hbox (51.37064pt too wide) in paragraph at lines 29--29
+Overfull \hbox (51.37064pt too wide) in paragraph at lines 39--39
  [][] [] []  
  []
 
 
-Overfull \hbox (351.83583pt too wide) in paragraph at lines 30--30
+Overfull \hbox (351.83583pt too wide) in paragraph at lines 40--40
  [][] [] []  
  []
 
 
-Overfull \hbox (773.69405pt too wide) in paragraph at lines 31--31
- [][] [] []  
- []
-
-
-Overfull \hbox (214.47348pt too wide) in paragraph at lines 43--43
+Overfull \hbox (773.69405pt too wide) in paragraph at lines 41--41
  [][] [] []  
  []
 
 [7]
-Overfull \hbox (51.02864pt too wide) in paragraph at lines 46--46
+Overfull \hbox (214.47348pt too wide) in paragraph at lines 53--53
+ [][] [] []  
+ []
+
+
+Overfull \hbox (51.02864pt too wide) in paragraph at lines 56--56
  [][] [] []  
  []
 
@@ -748,7 +748,32 @@ Overfull \hbox (1.82634pt too wide) in paragraph at lines 525--526
 h-nol-ogy and Mas-sachusetts
  []
 
-[50] [51] [52]) [53]
+[50]
+File: aLIGOfirstLockSensitivity.eps Graphic file (type eps)
+ <aLIGOfirstLockSensitivity.eps>
+File: aLIGOfirstLockMICH.eps Graphic file (type eps)
+ <aLIGOfirstLockMICH.eps>
+File: aLIGOfirstLockPRCL.eps Graphic file (type eps)
+
+<aLIGOfirstLockPRCL.eps>
+File: aLIGOfirstLockSRCL.eps Graphic file (type eps)
+ <aLIGOfirstLockSRCL.eps>
+File: SubtractionEstimate-MICH.eps Graphic file (type eps)
+
+<SubtractionEstimate-MICH.eps>
+File: SubtractionEstimate-PRCL.eps Graphic file (type eps)
+ <SubtractionEstimate-PRCL.eps>
+File: SubtractionEstimate-SRCL.eps Graphic file (type eps)
+
+<SubtractionEstimate-SRCL.eps>
+File: SubtractionSpectrum-MICH.eps Graphic file (type eps)
+ <SubtractionSpectrum-MICH.eps> [51] [52]
+[53] [54]
+File: SubtractionSpectrum-PRCL.eps Graphic file (type eps)
+ <SubtractionSpectrum-PRCL.eps>
+File: SubtractionSpectrum-SRCL.eps Graphic file (type eps)
+ <SubtractionSpectrum-SRCL.eps>
+[55] [56]) [57]
 CHAPTER III.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -805,9 +830,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 148.
 
-(./chap3.tex [54
+(./chap3.tex [58
 
-] [55]
+] [59]
 File: lisabar-1289966130.eps Graphic file (type eps)
  <lisabar-1289966130.eps>
 Overfull \hbox (49.88899pt too wide) detected at line 118
@@ -825,7 +850,7 @@ Overfull \hbox (49.88899pt too wide) detected at line 142
 \OT1/cmr/m/n/10 Figure 3.4: []
  []
 
-[56] [57] [58]) [59]
+[60] [61] [62]) [63]
 CHAPTER IV.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -882,9 +907,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 152.
 
-(./chap4.tex [60
+(./chap4.tex [64
 
-] [61]
+] [65]
 File: bandH1-bold.eps Graphic file (type eps)
  <bandH1-bold.eps>
 Overfull \hbox (61.43951pt too wide) in paragraph at lines 162--163
@@ -940,9 +965,9 @@ Overfull \hbox (49.88899pt too wide) detected at line 223
 \OT1/cmr/m/n/10 Figure 4.4: []
  []
 
-[62] [63] [64] [65] [66] [67] [68]
+[66] [67] [68] [69] [70] [71] [72]
 File: detectedHerrVsHeffective.eps Graphic file (type eps)
- <detectedHerrVsHeffective.eps> [69]
+ <detectedHerrVsHeffective.eps> [73]
 File: Errorh0.eps Graphic file (type eps)
 
 <Errorh0.eps>
@@ -956,25 +981,25 @@ File: ErrorAsini.eps Graphic file (type eps)
  <ErrorAsini.eps>
 File: ErrorAsinivsF.eps Graphic file (type eps)
 
-<ErrorAsinivsF.eps> [70] [71]
+<ErrorAsinivsF.eps> [74] [75]
 File: detectionVsHeffective.eps Graphic file (type eps)
  <detectionVsHeffective.eps>
 File: HrecoveredVsHeffectiveFullUL.eps Graphic file (type eps)
 
-<HrecoveredVsHeffectiveFullUL.eps> [72]
+<HrecoveredVsHeffectiveFullUL.eps> [76]
 File: PlotHeffDistH0DetectionEfficiency200breaks.eps Graphic file (type eps)
 
 <PlotHeffDistH0DetectionEfficiency200breaks.eps>
 File: PlotHEffDistH0Detected.eps Graphic file (type eps)
  <PlotHEffDistH0Detected.eps>
-[73] [74]
+[77] [78]
 File: PlotHeffVsH0TrueRegressions.eps Graphic file (type eps)
  <PlotHeffVsH0TrueRegressions.eps>
 File: PlotHEffVsH0TrueWithLines.eps Graphic file (type eps)
  <PlotHEffVsH0TrueWithLines.eps>
-[75]
+[79]
 File: PlotSigmaDiffVsH0Eff.eps Graphic file (type eps)
- <PlotSigmaDiffVsH0Eff.eps> [76] [77]
+ <PlotSigmaDiffVsH0Eff.eps> [80] [81]
 File: maptrueH1.eps Graphic file (type eps)
  <maptrueH1.eps>
 File: maptrueL1.eps Graphic file (type eps)
@@ -996,7 +1021,7 @@ Overfull \hbox (54.889pt too wide) detected at line 543
 \OT1/cmr/m/n/10 Figure 4.16: []
  []
 
-[78] [79] [80]) [81]
+[82] [83] [84]) [85]
 CHAPTER V.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1053,7 +1078,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 156.
 
-(./chap5.tex) [82
+(./chap5.tex) [86
 
 ]
 CHAPTER VI.
@@ -1142,9 +1167,9 @@ Overfull \hbox (25.24333pt too wide) in paragraph at lines 71--72
  [] 
  []
 
-[83
+[87
 
-] [84] [85] [86]) [87]
+] [88] [89] [90]) [91]
 CHAPTER VII.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1201,11 +1226,11 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 164.
 
-(./conclusion.tex [88
+(./conclusion.tex [92
 
-] [89]) (./thesis.bbl [90] [91
+] [93]) (./thesis.bbl [94] [95
 
-] [92] [93]
+] [96] [97]
 Underfull \hbox (badness 10000) in paragraph at lines 311--317
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1216,25 +1241,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--317
 r&
  []
 
-[94] [95]
+[98] [99]
 Underfull \hbox (badness 2376) in paragraph at lines 476--479
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-) [96]
+) [100]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 3894 strings out of 95847
- 51243 string characters out of 1195216
+ 3914 strings out of 95847
+ 51769 string characters out of 1195216
  134022 words of memory out of 1000001
- 6685 multiletter control sequences out of 10000+50000
+ 6695 multiletter control sequences out of 10000+50000
  13234 words of font info for 51 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
  33i,14n,36p,1664b,450s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (106 pages, 369544 bytes).
+Output written on thesis.dvi (110 pages, 379980 bytes).

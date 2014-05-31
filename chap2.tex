@@ -540,10 +540,30 @@ I didn't see DARM\_ERR or \_CTRL anywhere, so I tried looking at \_IN1\_DQ, beca
 
 Uncalibrated PSDs from pwelch 
 
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockSensitivity.eps}
+\caption{
 DARM PSD
+}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockMICH.eps}
+\caption{
 MICH PSD
+}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockPRCL.eps}
+\caption{
 PRCL PSD
+}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockSRCL.eps}
+\caption{
 SRCL PSD
+}
+\end{figure}
 
 f\_domainsubtract can estimate
   * coherence between different channels
@@ -551,15 +571,45 @@ f\_domainsubtract can estimate
 
 The first set of graphs shows (in blue x's) sqrt(1-mscoherence) and (in red) the ratio, (predicted ASD after subtraction)/(measured ASD before subtraction):
 
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionEstimate-MICH.eps}
+\caption{
 MICH coherence
+}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionEstimate-PRCL.eps}
+\caption{
 PRCL coherence
+}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionEstimate-SRCL.eps}
+\caption{
 SRCL coherence
+}
+\end{figure}
 
 The second shows (in red) the ASD of the noise \_IN1\_DQ channel, (in green) the DARM\_IN1\_DQ channel, and (in black) the ASD of the DARM\_IN1\_DQ channel if the noise can be subtracted from it:
 
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionSpectrum-MICH.eps}
+\caption{
 MICH subtraction projection
+}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionSpectrum-PRCL.eps}
+\caption{
 PRCL subtraction projection
+}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionSpectrum-SRCL.eps}
+\caption{
 SRCL subtraction projection
+}
+\end{figure}
 
 \textbf{Summary}
 
