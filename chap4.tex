@@ -288,30 +288,41 @@ Note that the h0 reported in this section had not yet been recalibrated for eith
 
 We plotted the error in the h0 reported by TwoSpect versus h0-effective for the 31 open pulsars detected.
 
-FIGURE
-detectedHerrVsHeffective.png
+
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{detectedHerrVsHeffective.eps}
+\caption{ Error in strain estimation versus circular-effective strain
+} 
+\end{figure}
+
 
 This same error was also plotted vs p-value and frequency. As will be seen on the plots for error in frequency and asini, high-frequency outliers were found in the open data set. These outliers could be categorized heuristically as having f $>$ 1050 Hz and abs(log10p) $<$ 300. These 4 outliers were assigned into the "loose" category, with a corresponding sigma. The remaining 27 were in the "tight" category, to which we could assign a more stringent sigma. These values are reported in the header of the graphs.
 
 Blue lines indicate the less stringent uncertainty. Red lines (on plots vs p-value) indicate a least squares power law regression.
 
-FIGURE
-Errorh0.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0.eps}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0vsF.eps}
+\caption{Parameter estimation: strain
+}
+\end{figure}
 
-FIGURE
-Errorh0vsF.png
 
-FIGURE
-ErrorF.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorF.eps}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorFvsF.eps}
+\caption{Parameter estimation: frequency
+}
+\end{figure}
 
-FIGURE
-ErrorFvsF.png
 
-FIGURE
-ErrorAsini.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsini.eps}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsinivsF.eps}
+\caption{Parameter estimation: a sin i 
+}
+\end{figure}
 
-FIGURE
-ErrorAsinivsF.png
 
 \textit{Upper Limits and Detection Efficiency}
 
@@ -319,13 +330,21 @@ Upper limits and detection efficiency were also calculated using data in the ope
 
 For detection efficiency, we calculated the h-effective for the 31 detected and 19 non-detected pulsars and found the average detection rate in bins according to h-effective. These bins were non-uniform in size due to the interest in finding the 95\% detection efficiency point despite the paucity of statistics (only 50 pulsars total). Binomial uncertainty was also calculated and subtracted, by bin. The 95\% level is very approximately about 3e-25 (again, without the corrective factors of 1.75 and 1.11) but is imprecise to judge using this method.
 
-FIGURE
-detectionVsHeffective.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{detectionVsHeffective.eps}
+\caption{ Open pulsar detection efficiency curve
+}
+\end{figure}
+
 
 Consequently we plotted the distribution of recovered h0 versus injected h0-effective (the error of which is shown above, for detected pulsars). Color-coding red pulsars as non-detected, blue as single pairwise detection, and green as triple pairwise detection, we identified a shelf of non-detected pulsars that was 95\% contained by an upper limit about 2.19e-25. This number, when corrected, yielded the upper limit of 1.74*1.11*2.19e-25 = 4.23e-25 for TwoSpect.
 
-FIGURE
-HrecoveredVsHeffectiveFullUL.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{HrecoveredVsHeffectiveFullUL.eps}
+\caption{Detections and upper limit determination 
+}
+\end{figure}
+
 
 Further injection studies should show how this upper limit varies with frequency as injected h0, but at the time of the MDC, we did not feel confident in extrapolating this relationship.
 \newline
@@ -339,30 +358,51 @@ In this simulation, 2 million pulsars were generated with h0 between 3e-26 and 3
 
 We made a toy model of our detection efficiency, assuming no pulsars were detected below 1e-25 effective, all were above 3e-25, and the fraction detected was linear in h0 between those values.
 
-FIGURE
-PlotHeffDistH0DetectionEfficiency200breaks.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHeffDistH0DetectionEfficiency200breaks.eps}
+\caption{ Simulated detection efficiency curve
+}
+\end{figure}
+
 
 Together with a uniform cos iota distribution on [-1, 1], this led to a trapezoidal distribution of recovered, detected h0 values with a curved lower (left) edge:
 
-FIGURE
-PlotHEffDistH0Detected.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHEffDistH0Detected.eps}
+\caption{Distribution with cos iota and detection efficiency
+}
+\end{figure}
+
 
 The upper end of the distribution (right side of the trapezoid) was excluded because we are trying to find the average bijective mapping (slope) f: (detected h0) $\rightarrow$ (true h0), and including detected h0 $>$ 1e-24 meant that we were failing to see the complete injected h0 space. There was f$^{-1}$: (true h0) $\rightarrow$ (detected h0), but not f. More plainly, suppose we looked at a detected h0 reported as 1.5e-24, and that our average corrected factor had been calculated to be 2.5 (it was not) -- this would imply that the true h0 was 3.75e-24 -- but this would be outside the domain of the simulation, so there would be no way to check it. The analogous problem should not happen at the lower end of the distribution (left side of the trapezoid).
 
 In turn, we looked for the relationship between the recovered h0 of this "detected" distribution and the corresponding original, true h0. The slope would give us the conversion factor. The first attempt was to grid the {detected h0}x{true h0} space into 2D pixels. This was suggestive, and yielded the following regressed slope:
 
-FIGURE
-PlotHeffVsH0TrueRegressions.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHeffVsH0TrueRegressions.eps}
+\caption{Regression using grid points
+}
+\end{figure}
+
 
 There is a systematic bias in the grid method, both by one pixel (hence why the mean was adjusted downward to 1.74) and in the associated uncertainties. Plotting these uncertainties on the distribution of {detected h0} vs {true h0} shows how wide those error bars are.
 
-FIGURE
-PlotHEffVsH0TrueWithLines.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHEffVsH0TrueWithLines.eps}
+\caption{Simulation with fit lines
+}
+\end{figure}
+
 
 This bias is likely due to sampling: numerical fluctuations in the grid method made it unstable at the 2 million pulsar level, especially toward the high h0 end of the distribution. Instead, we manually adjusted a $\pm \sigma$ until the CDF encompassed the appropriate 68\% confidence interval, finding a sigma in the slope of 0.37 with a mean slope of 1.74. The reason for the aforementioned restriction of the plot to h-effective $<$ 1e-24 can be seen in the distortion at levels above that in the following plot:
 
-FIGURE
-PlotSigmaDiffVsH0Eff.png
+\begin{figure}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotSigmaDiffVsH0Eff.eps}
+\caption{Confidence intervals with final fit
+}
+\end{figure}
+
+
 
 The chosen $1.74 \pm 0.37 \sigma$, however, yielded the necessary correction factor.
 

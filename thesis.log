@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  31 MAY 2014 01:16
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  31 MAY 2014 02:02
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -409,12 +409,12 @@ Overfull \hbox (773.69405pt too wide) in paragraph at lines 31--31
  []
 
 
-Overfull \hbox (214.47348pt too wide) in paragraph at lines 32--32
+Overfull \hbox (214.47348pt too wide) in paragraph at lines 43--43
  [][] [] []  
  []
 
-
-Overfull \hbox (51.02864pt too wide) in paragraph at lines 35--35
+[7]
+Overfull \hbox (51.02864pt too wide) in paragraph at lines 46--46
  [][] [] []  
  []
 
@@ -422,7 +422,7 @@ Overfull \hbox (51.02864pt too wide) in paragraph at lines 35--35
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [7]
+ [8]
 CHAPTER I.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -940,29 +940,63 @@ Overfull \hbox (49.88899pt too wide) detected at line 223
 \OT1/cmr/m/n/10 Figure 4.4: []
  []
 
-[59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71]
-File: maptrueH1.eps Graphic file (type eps)
+[59] [60] [61] [62] [63] [64] [65]
+File: detectedHerrVsHeffective.eps Graphic file (type eps)
+ <detectedHerrVsHeffective.eps> [66]
+File: Errorh0.eps Graphic file (type eps)
 
-<maptrueH1.eps>
+<Errorh0.eps>
+File: Errorh0vsF.eps Graphic file (type eps)
+ <Errorh0vsF.eps>
+File: ErrorF.eps Graphic file (type eps)
+ <ErrorF.eps>
+File: ErrorFvsF.eps Graphic file (type eps)
+ <ErrorFvsF.eps>
+File: ErrorAsini.eps Graphic file (type eps)
+ <ErrorAsini.eps>
+File: ErrorAsinivsF.eps Graphic file (type eps)
+
+<ErrorAsinivsF.eps> [67] [68]
+File: detectionVsHeffective.eps Graphic file (type eps)
+ <detectionVsHeffective.eps>
+File: HrecoveredVsHeffectiveFullUL.eps Graphic file (type eps)
+
+<HrecoveredVsHeffectiveFullUL.eps> [69]
+File: PlotHeffDistH0DetectionEfficiency200breaks.eps Graphic file (type eps)
+
+<PlotHeffDistH0DetectionEfficiency200breaks.eps>
+File: PlotHEffDistH0Detected.eps Graphic file (type eps)
+ <PlotHEffDistH0Detected.eps>
+[70] [71]
+File: PlotHeffVsH0TrueRegressions.eps Graphic file (type eps)
+ <PlotHeffVsH0TrueRegressions.eps>
+File: PlotHEffVsH0TrueWithLines.eps Graphic file (type eps)
+ <PlotHEffVsH0TrueWithLines.eps>
+[72]
+File: PlotSigmaDiffVsH0Eff.eps Graphic file (type eps)
+ <PlotSigmaDiffVsH0Eff.eps> [73] [74]
+File: maptrueH1.eps Graphic file (type eps)
+ <maptrueH1.eps>
 File: maptrueL1.eps Graphic file (type eps)
  <maptrueL1.eps>
 File: maptrueV1.eps Graphic file (type eps)
- <maptrueV1.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 498--503
+
+<maptrueV1.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 538--543
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--503
+Underfull \hbox (badness 10000) in paragraph at lines 538--543
 []
  []
 
 
-Overfull \hbox (49.88899pt too wide) detected at line 503
-\OT1/cmr/m/n/10 Figure 4.5: []
+Overfull \hbox (54.889pt too wide) detected at line 543
+\OT1/cmr/m/n/10 Figure 4.16: []
  []
 
-[72] [73]) [74]
+[75] [76] [77]) [78]
 CHAPTER V.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1019,7 +1053,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 156.
 
-(./chap5.tex) [75
+(./chap5.tex) [79
 
 ]
 CHAPTER VI.
@@ -1108,9 +1142,9 @@ Overfull \hbox (25.24333pt too wide) in paragraph at lines 71--72
  [] 
  []
 
-[76
+[80
 
-] [77] [78] [79]) [80]
+] [81] [82] [83]) [84]
 CHAPTER VII.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1167,11 +1201,11 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 164.
 
-(./conclusion.tex [81
+(./conclusion.tex [85
 
-] [82]) (./thesis.bbl [83] [84
+] [86]) (./thesis.bbl [87] [88
 
-] [85] [86]
+] [89] [90]
 Underfull \hbox (badness 10000) in paragraph at lines 311--317
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1182,25 +1216,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--317
 r&
  []
 
-[87] [88]
+[91] [92]
 Underfull \hbox (badness 2376) in paragraph at lines 476--479
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-) [89]
+) [93]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 3865 strings out of 95847
- 50590 string characters out of 1195216
- 131934 words of memory out of 1000001
- 6670 multiletter control sequences out of 10000+50000
+ 3893 strings out of 95847
+ 51230 string characters out of 1195216
+ 133934 words of memory out of 1000001
+ 6684 multiletter control sequences out of 10000+50000
  13234 words of font info for 51 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
  33i,14n,36p,1664b,450s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (98 pages, 351992 bytes).
+Output written on thesis.dvi (103 pages, 362992 bytes).
