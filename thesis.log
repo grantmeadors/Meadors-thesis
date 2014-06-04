@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  3 JUN 2014 16:31
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  4 JUN 2014 01:41
 **thesis
 (./thesis.tex
 LaTeX2e <2001/06/01>
@@ -485,77 +485,77 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 ] [2]
 File: 500px-PSR_B1913+16_period_shift_graph.eps Graphic file (type eps)
  <500px-PSR_B1913+16_period_shift_graph.eps>
-Overfull \hbox (25.23775pt too wide) in paragraph at lines 41--42
+Overfull \hbox (25.23775pt too wide) in paragraph at lines 42--43
  [] 
  []
 
 
-Overfull \hbox (49.88899pt too wide) detected at line 42
+Overfull \hbox (49.88899pt too wide) detected at line 43
 \OT1/cmr/m/n/10 Figure 1.1: []
  []
 
 [3] [4] [5] [6] [7] [8] [9] [10]
 File: neutron_star_structure.eps Graphic file (type eps)
  <neutron_star_structure.eps>
-Overfull \hbox (25.27916pt too wide) in paragraph at lines 126--127
+Overfull \hbox (25.27916pt too wide) in paragraph at lines 139--140
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 [][][][][]\OT1/cmr/m/n/10 Hypothetical in-ter-nal struc-ture of a neu-tron star
  (IN-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 \OT1/cmr/m/n/10 CLUDE CI-TA-TION FROM PRE-LIM DE-FENSE: found at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 \OT1/cmr/m/n/10 http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron[]sta
 r[]structure.html)
  []
 
 
-Overfull \hbox (49.88899pt too wide) detected at line 127
+Overfull \hbox (49.88899pt too wide) detected at line 140
 \OT1/cmr/m/n/10 Figure 1.2: []
  []
 
-[11] [12]
+[11] [12] [13]
 File: Screen_shot_2010-07-21_at_042516.eps Graphic file (type eps)
  <Screen_shot_2010-07-21_at_042516.eps>
-Overfull \hbox (25.23602pt too wide) in paragraph at lines 164--165
+Overfull \hbox (25.23602pt too wide) in paragraph at lines 177--178
  [] 
  []
 
 
-Overfull \hbox (2.58923pt too wide) in paragraph at lines 174--175
+Overfull \hbox (2.58923pt too wide) in paragraph at lines 187--188
  \OT1/cmr/bx/n/10 De-tec-tor char-ac-ter-i-za-tion  [] \OT1/cmr/m/n/12 DetChar 
 meth-ods: omega scans, line hunt-ing and glitches 
  []
 
-[13]
+[14]
 File: servo_loop.eps Graphic file (type eps)
  <servo_loop.eps>
-Overfull \hbox (25.24387pt too wide) in paragraph at lines 183--184
+Overfull \hbox (25.24387pt too wide) in paragraph at lines 196--197
  [] 
  []
 
 File: newNOISEfilter.eps Graphic file (type eps)
 <newNOISEfilter.eps>
-Overfull \hbox (25.24275pt too wide) in paragraph at lines 191--192
+Overfull \hbox (25.24275pt too wide) in paragraph at lines 204--205
  [] 
  []
 
 File: 2011-03-08_filter-01.eps Graphic file (type eps)
 <2011-03-08_filter-01.eps>
-Overfull \hbox (25.2352pt too wide) in paragraph at lines 199--200
+Overfull \hbox (25.2352pt too wide) in paragraph at lines 212--213
  [] 
  []
 
-[14] [15] [16]) [17]
+[15] [16] [17]) [18]
 CHAPTER II.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -612,22 +612,22 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 144.
 
-(./chap2.tex [18
+(./chap2.tex [19
 
-] [19] [20]
+] [20] [21]
 Overfull \hbox (8.1875pt too wide) in paragraph at lines 100--101
 []\OT1/cmr/m/n/12 LIGO core op-tics in-clude the beam-splitter (BS) and power-r
 ecycling mir-ror (PRM),
  []
 
-[21]
+[22]
 File: figure1.eps Graphic file (type eps)
  <figure1.eps>
 Overfull \hbox (49.88899pt too wide) detected at line 122
 \OT1/cmr/m/n/10 Figure 2.1: []
  []
 
-[22] [23] [24] [25]
+[23] [24] [25] [26]
 File: figure2a.eps Graphic file (type eps)
  <figure2a.eps>
 File: figure2b.eps Graphic file (type eps)
@@ -660,13 +660,13 @@ Overfull \hbox (49.88899pt too wide) detected at line 226
 \OT1/cmr/m/n/10 Figure 2.5: []
  []
 
-[26]
+[27]
 Overfull \hbox (3.20059pt too wide) in paragraph at lines 233--234
 \OT1/cmr/m/n/12 cho-sen method. Sec-tion [][][][] dis-cusses safe-guards and ve
 -toes, and Sec-tions [][][][] and [][][][]
  []
 
-[27] [28] [29] [30] [31] [32] [33] [34] [35] [36]
+[28] [29] [30] [31] [32] [33] [34] [35] [36] [37]
 File: figure6.eps Graphic file (type eps)
  <figure6.eps>
 Overfull \hbox (49.88899pt too wide) detected at line 364
@@ -691,14 +691,14 @@ Overfull \hbox (49.88899pt too wide) detected at line 394
 \OT1/cmr/m/n/10 Figure 2.9: []
  []
 
-[37] [38] [39] [40] [41]
+[38] [39] [40] [41] [42]
 File: figure10.eps Graphic file (type eps)
  <figure10.eps>
 Overfull \hbox (54.889pt too wide) detected at line 433
 \OT1/cmr/m/n/10 Figure 2.10: []
  []
 
-[42]
+[43]
 File: figure11.eps Graphic file (type eps)
  <figure11.eps>
 Overfull \hbox (54.889pt too wide) detected at line 451
@@ -742,13 +742,13 @@ Overfull \hbox (2.05617pt too wide) in paragraph at lines 521--522
 rived, time-domain-applied
  []
 
-[43] [44] [45] [46] [47] [48] [49]
+[44] [45] [46] [47] [48] [49] [50]
 Overfull \hbox (1.82634pt too wide) in paragraph at lines 525--526
 []\OT1/cmr/m/n/12 LIGO was con-structed by the Cal-i-for-nia In-sti-tute of Tec
 h-nol-ogy and Mas-sachusetts
  []
 
-[50]
+[51]
 File: aLIGOfirstLockSensitivity.eps Graphic file (type eps)
  <aLIGOfirstLockSensitivity.eps>
 File: aLIGOfirstLockMICH.eps Graphic file (type eps)
@@ -767,13 +767,13 @@ File: SubtractionEstimate-SRCL.eps Graphic file (type eps)
 
 <SubtractionEstimate-SRCL.eps>
 File: SubtractionSpectrum-MICH.eps Graphic file (type eps)
- <SubtractionSpectrum-MICH.eps> [51] [52]
-[53] [54]
+ <SubtractionSpectrum-MICH.eps> [52] [53]
+[54] [55]
 File: SubtractionSpectrum-PRCL.eps Graphic file (type eps)
  <SubtractionSpectrum-PRCL.eps>
 File: SubtractionSpectrum-SRCL.eps Graphic file (type eps)
  <SubtractionSpectrum-SRCL.eps>
-[55] [56]) [57]
+[56] [57]) [58]
 CHAPTER III.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -830,9 +830,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 148.
 
-(./chap3.tex [58
+(./chap3.tex [59
 
-] [59]
+] [60]
 File: lisabar-1289966130.eps Graphic file (type eps)
  <lisabar-1289966130.eps>
 Overfull \hbox (49.88899pt too wide) detected at line 118
@@ -850,7 +850,7 @@ Overfull \hbox (49.88899pt too wide) detected at line 142
 \OT1/cmr/m/n/10 Figure 3.4: []
  []
 
-[60] [61] [62]) [63]
+[61] [62] [63]) [64]
 CHAPTER IV.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -907,9 +907,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 152.
 
-(./chap4.tex [64
+(./chap4.tex [65
 
-] [65]
+] [66]
 File: bandH1-bold.eps Graphic file (type eps)
  <bandH1-bold.eps>
 Overfull \hbox (61.43951pt too wide) in paragraph at lines 162--163
@@ -965,9 +965,9 @@ Overfull \hbox (49.88899pt too wide) detected at line 223
 \OT1/cmr/m/n/10 Figure 4.4: []
  []
 
-[66] [67] [68] [69] [70] [71] [72]
+[67] [68] [69] [70] [71] [72] [73]
 File: detectedHerrVsHeffective.eps Graphic file (type eps)
- <detectedHerrVsHeffective.eps> [73]
+ <detectedHerrVsHeffective.eps> [74]
 File: Errorh0.eps Graphic file (type eps)
 
 <Errorh0.eps>
@@ -981,25 +981,25 @@ File: ErrorAsini.eps Graphic file (type eps)
  <ErrorAsini.eps>
 File: ErrorAsinivsF.eps Graphic file (type eps)
 
-<ErrorAsinivsF.eps> [74] [75]
+<ErrorAsinivsF.eps> [75] [76]
 File: detectionVsHeffective.eps Graphic file (type eps)
  <detectionVsHeffective.eps>
 File: HrecoveredVsHeffectiveFullUL.eps Graphic file (type eps)
 
-<HrecoveredVsHeffectiveFullUL.eps> [76]
+<HrecoveredVsHeffectiveFullUL.eps> [77]
 File: PlotHeffDistH0DetectionEfficiency200breaks.eps Graphic file (type eps)
 
 <PlotHeffDistH0DetectionEfficiency200breaks.eps>
 File: PlotHEffDistH0Detected.eps Graphic file (type eps)
  <PlotHEffDistH0Detected.eps>
-[77] [78]
+[78] [79]
 File: PlotHeffVsH0TrueRegressions.eps Graphic file (type eps)
  <PlotHeffVsH0TrueRegressions.eps>
 File: PlotHEffVsH0TrueWithLines.eps Graphic file (type eps)
  <PlotHEffVsH0TrueWithLines.eps>
-[79]
+[80]
 File: PlotSigmaDiffVsH0Eff.eps Graphic file (type eps)
- <PlotSigmaDiffVsH0Eff.eps> [80] [81]
+ <PlotSigmaDiffVsH0Eff.eps> [81] [82]
 File: maptrueH1.eps Graphic file (type eps)
  <maptrueH1.eps>
 File: maptrueL1.eps Graphic file (type eps)
@@ -1021,7 +1021,7 @@ Overfull \hbox (54.889pt too wide) detected at line 543
 \OT1/cmr/m/n/10 Figure 4.16: []
  []
 
-[82] [83] [84]) [85]
+[83] [84] [85]) [86]
 CHAPTER V.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1078,7 +1078,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 156.
 
-(./chap5.tex) [86
+(./chap5.tex) [87
 
 ]
 CHAPTER VI.
@@ -1167,9 +1167,9 @@ Overfull \hbox (25.24333pt too wide) in paragraph at lines 71--72
  [] 
  []
 
-[87
+[88
 
-] [88] [89] [90]) [91]
+] [89] [90] [91]) [92]
 CHAPTER VII.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1226,11 +1226,11 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 164.
 
-(./conclusion.tex [92
+(./conclusion.tex [93
 
-] [93]) (./thesis.bbl [94] [95
+] [94]) (./thesis.bbl [95] [96
 
-] [96] [97]
+] [97] [98]
 Underfull \hbox (badness 10000) in paragraph at lines 311--317
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1241,25 +1241,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--317
 r&
  []
 
-[98] [99]
+[99] [100]
 Underfull \hbox (badness 2376) in paragraph at lines 476--479
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-) [100]
+) [101]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 3914 strings out of 95847
- 51769 string characters out of 1195216
- 134022 words of memory out of 1000001
- 6695 multiletter control sequences out of 10000+50000
+ 3915 strings out of 95847
+ 51777 string characters out of 1195216
+ 134025 words of memory out of 1000001
+ 6696 multiletter control sequences out of 10000+50000
  13234 words of font info for 51 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
  33i,14n,36p,1664b,450s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on thesis.dvi (110 pages, 379980 bytes).
+Output written on thesis.dvi (111 pages, 382412 bytes).
