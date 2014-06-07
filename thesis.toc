@@ -116,17 +116,17 @@
 \contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{92}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}Future LIGO outreach}{92}{section.6.4}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{93}{chapter.7}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{94}{chapter.7}
 \hbox { }
-\contentsline {section}{\numberline {7.1}Cycles of science}{93}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{93}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{93}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Refining data}{93}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{93}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{93}{subsection.7.1.5}
-\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{93}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{94}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{94}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{94}{section.7.3}
-\contentsline {section}{\numberline {7.4}Vision of a dark sky}{94}{section.7.4}
-\contentsline {chapter}{BIBLIOGRAPHY}{96}{section.7.4}
+\contentsline {section}{\numberline {7.1}Cycles of science}{94}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{94}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{94}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Refining data}{94}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{94}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{94}{subsection.7.1.5}
+\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{94}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{95}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{95}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{95}{section.7.3}
+\contentsline {section}{\numberline {7.4}Vision of a dark sky}{95}{section.7.4}
+\contentsline {chapter}{BIBLIOGRAPHY}{97}{section.7.4}

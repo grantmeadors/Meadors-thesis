@@ -1,16 +1,23 @@
-This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.8.12)  4 JUN 2014 01:41
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  6 JUN 2014 22:18
+entering extended mode
+ %&-line parsing enabled.
 **thesis
 (./thesis.tex
-LaTeX2e <2001/06/01>
-Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, n
-ohyphenation, loaded.
-(/opt/local/teTeX/share/texmf/tex/latex/base/report.cls
-Document Class: report 2001/04/21 v1.4e Standard LaTeX document class
-(/opt/local/teTeX/share/texmf/tex/latex/base/leqno.clo
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
+erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
+ french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
+us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
+tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
+turkish, ukenglish, ukrainian, loaded.
+(/usr/share/texmf/tex/latex/base/report.cls
+Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/leqno.clo
 File: leqno.clo 1998/08/17 v1.1c Standard LaTeX option (left equation numbers)
 )
-(/opt/local/teTeX/share/texmf/tex/latex/base/size10.clo
-File: size10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -25,8 +32,8 @@ File: size10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/opt/local/teTeX/share/texmf/tex/latex/amscls/amsthm.sty
-Package: amsthm 2000/10/26 v2.08
+(/usr/share/texmf/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks14
 \thm@bodyfont=\toks15
 \thm@headfont=\toks16
@@ -37,10 +44,10 @@ Package: amsthm 2000/10/26 v2.08
 \thm@headsep=\skip45
 \dth@everypar=\toks19
 )
-(/opt/local/teTeX/share/texmf/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2002/01/22 v2.2d
 
-(/opt/local/teTeX/share/texmf/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2001/10/25 v2.2f
 \@emptytoks=\toks20
 \symAMSa=\mathgroup4
@@ -48,27 +55,27 @@ Package: amsfonts 2001/10/25 v2.2f
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
 ))
-(/opt/local/teTeX/share/texmf/tex/latex/amsmath/amsxtra.sty
+(/usr/share/texmf/tex/latex/amsmath/amsxtra.sty
 Package: amsxtra 1999/11/15 v1.2c
 
-(/opt/local/teTeX/share/texmf/tex/latex/amsmath/amsmath.sty
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-(/opt/local/teTeX/share/texmf/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/opt/local/teTeX/share/texmf/tex/latex/amsmath/amsgen.sty
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks21
 \ex@=\dimen103
 ))
-(/opt/local/teTeX/share/texmf/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/opt/local/teTeX/share/texmf/tex/latex/amsmath/amsopn.sty
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
@@ -118,28 +125,28 @@ The sample files are in '/usr/um/lib/tex/doc/local/rac'.
 \c@anything=\count100
 \c@map=\count101
 \c@appendix=\count102
-) (./dbl12.sty) (/opt/local/teTeX/share/texmf/tex/latex/graphics/epsfig.sty
+) (./dbl12.sty) (/usr/share/texmf/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
-(/opt/local/teTeX/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/opt/local/teTeX/share/texmf/tex/latex/graphics/keyval.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks26
 )
-(/opt/local/teTeX/share/texmf/tex/latex/graphics/graphics.sty
-Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/opt/local/teTeX/share/texmf/tex/latex/graphics/trig.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/opt/local/teTeX/share/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: dvips.def on input line 80.
+Package graphics Info: Driver file: dvips.def on input line 90.
 
-(/opt/local/teTeX/share/texmf/tex/latex/graphics/dvips.def
+(/usr/share/texmf/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen112
@@ -148,69 +155,75 @@ File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 \epsfxsize=\dimen114
 \epsfysize=\dimen115
 )
-(/opt/local/teTeX/share/texmf/tex/latex/tools/verbatim.sty
-Package: verbatim 2001/03/12 v1.5p LaTeX2e package for verbatim enhancements
+(/usr/share/texmf/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks27
 \verbatim@line=\toks28
 \verbatim@in@stream=\read1
 )
-(/opt/local/teTeX/share/texmf-local/tex/latex/latex2html/url.sty
-Package: url 1996/02/06  ver 1.1  Verb mode for urls, email addresses, and file
- names
+(/usr/share/texmf/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
 ) (./doi.sty
 Package: doi 2007/07/24 handle doi numbers
 
-(/opt/local/teTeX/share/texmf/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2003/01/22 v6.73n Hypertext links for LaTeX
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
 \@linkdim=\dimen116
 \Hy@linkcounter=\count103
 \Hy@pagecounter=\count104
 
-(/opt/local/teTeX/share/texmf/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2003/01/22 v6.73n Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
 )
-(/opt/local/teTeX/share/texmf/tex/latex/config/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive and teTeX
+(/usr/share/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 1792.
-Package hyperref Info: Link nesting OFF on input line 1797.
-Package hyperref Info: Hyper index ON on input line 1800.
-Package hyperref Info: Plain pages ON on input line 1805.
-Package hyperref Info: Backreferencing OFF on input line 1812.
+(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
+HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 2288.
+Package hyperref Info: Link nesting OFF on input line 2293.
+Package hyperref Info: Hyper index ON on input line 2296.
+Package hyperref Info: Plain pages OFF on input line 2303.
+Package hyperref Info: Backreferencing OFF on input line 2308.
 
 Implicit mode ON; LaTeX internals redefined
-Package hyperref Info: Bookmarks ON on input line 1916.
-LaTeX Info: Redefining \url on input line 2055.
+Package hyperref Info: Bookmarks ON on input line 2444.
+LaTeX Info: Redefining \url on input line 2599.
 \Fld@menulength=\count105
 \Field@Width=\dimen117
 \Fld@charsize=\dimen118
 \Choice@toks=\toks29
 \Field@toks=\toks30
-Package hyperref Info: Hyper figures OFF on input line 2513.
-Package hyperref Info: Link nesting OFF on input line 2518.
-Package hyperref Info: Hyper index ON on input line 2521.
-Package hyperref Info: backreferencing OFF on input line 2528.
-Package hyperref Info: Link coloring OFF on input line 2533.
-\c@Item=\count106
-\c@Hfootnote=\count107
+Package hyperref Info: Hyper figures OFF on input line 3102.
+Package hyperref Info: Link nesting OFF on input line 3107.
+Package hyperref Info: Hyper index ON on input line 3110.
+Package hyperref Info: backreferencing OFF on input line 3117.
+Package hyperref Info: Link coloring OFF on input line 3122.
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
 )
 *hyperref using default driver hdvips*
-(/opt/local/teTeX/share/texmf/tex/latex/hyperref/hdvips.def
-File: hdvips.def 2003/01/22 v6.73n Hyperref driver for dvips
+(/usr/share/texmf/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2007/02/07 v6.75r Hyperref driver for dvips
 
-(/opt/local/teTeX/share/texmf/tex/latex/hyperref/pdfmark.def
-File: pdfmark.def 2003/01/22 v6.73n Hyperref definitions for pdfmark specials
+(/usr/share/texmf/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2007/02/07 v6.75r Hyperref definitions for pdfmark specials
 \pdf@docset=\toks31
 \pdf@box=\box28
 \pdf@toks=\toks32
 \pdf@defaulttoks=\toks33
-\Fld@listcount=\count108
-\@outlinefile=\write3
+\Fld@listcount=\count109
 )))
-(/opt/local/teTeX/share/texmf/tex/latex/cite/cite.sty
-Package: cite 2001/10/14  v 3.9
+(/usr/share/texmf/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 149.
+LaTeX Info: Redefining \nocite on input line 214.
+Package: cite 2003/11/04  v 4.01
 )
-\c@theorem=\count109
+\c@theorem=\count110
 
 \@input{header.aux}
 \openout2 = `header.aux'.
@@ -234,24 +247,28 @@ LaTeX Font Info:    ... okay on input line 78.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
 Package hyperref Info: Link coloring OFF on input line 78.
- (/opt/local/teTeX/share/texmf/tex/latex/hyperref/nameref.sty
-Package: nameref 2001/01/27 v2.19 Cross-referencing by name of section
-\c@section@level=\count110
+ (/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
+
+(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count111
 )
 LaTeX Info: Redefining \ref on input line 78.
 LaTeX Info: Redefining \pageref on input line 78.
-
-(./thesis.out) (./thesis.out)
+ (./thesis.out)
+(./thesis.out)
+\@outlinefile=\write3
 \openout3 = `thesis.out'.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 96.
-
-(/opt/local/teTeX/share/texmf/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 96.
 
-(/opt/local/teTeX/share/texmf/tex/latex/amsfonts/umsb.fd
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
 Underfull \hbox (badness 10000) in paragraph at lines 96--97
@@ -270,7 +287,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 104.
 
- (/opt/local/teTeX/share/texmf/tex/latex/base/omscmr.fd
+ (/usr/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -558,9 +575,6 @@ Overfull \hbox (25.2352pt too wide) in paragraph at lines 212--213
 [15] [16] [17]) [18]
 CHAPTER II.
 
-Package hyperref Warning: bookmark level for unknown chap defaults to 0.
-
-
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\<def>-command' on input line 144.
 
@@ -776,9 +790,6 @@ File: SubtractionSpectrum-SRCL.eps Graphic file (type eps)
 [56] [57]) [58]
 CHAPTER III.
 
-Package hyperref Warning: bookmark level for unknown chap defaults to 0.
-
-
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\<def>-command' on input line 148.
 
@@ -852,9 +863,6 @@ Overfull \hbox (49.88899pt too wide) detected at line 142
 
 [61] [62] [63]) [64]
 CHAPTER IV.
-
-Package hyperref Warning: bookmark level for unknown chap defaults to 0.
-
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\<def>-command' on input line 152.
@@ -1024,9 +1032,6 @@ Overfull \hbox (54.889pt too wide) detected at line 543
 [83] [84] [85]) [86]
 CHAPTER V.
 
-Package hyperref Warning: bookmark level for unknown chap defaults to 0.
-
-
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\<def>-command' on input line 156.
 
@@ -1082,9 +1087,6 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 ]
 CHAPTER VI.
-
-Package hyperref Warning: bookmark level for unknown chap defaults to 0.
-
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\<def>-command' on input line 160.
@@ -1169,11 +1171,8 @@ Overfull \hbox (25.24333pt too wide) in paragraph at lines 71--72
 
 [88
 
-] [89] [90] [91]) [92]
+] [89] [90] [91]) [92] [93]
 CHAPTER VII.
-
-Package hyperref Warning: bookmark level for unknown chap defaults to 0.
-
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\<def>-command' on input line 164.
@@ -1226,11 +1225,11 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 164.
 
-(./conclusion.tex [93
+(./conclusion.tex [94
 
-] [94]) (./thesis.bbl [95] [96
+] [95]) (./thesis.bbl [96] [97
 
-] [97] [98]
+] [98] [99]
 Underfull \hbox (badness 10000) in paragraph at lines 311--317
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1241,25 +1240,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--317
 r&
  []
 
-[99] [100]
+[100] [101]
 Underfull \hbox (badness 2376) in paragraph at lines 476--479
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-) [101]
+) [102]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 3915 strings out of 95847
- 51777 string characters out of 1195216
- 134025 words of memory out of 1000001
- 6696 multiletter control sequences out of 10000+50000
- 13234 words of font info for 51 fonts, out of 500000 for 1000
- 14 hyphenation exceptions out of 1000
- 33i,14n,36p,1664b,450s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 4283 strings out of 256217
+ 56899 string characters out of 1917094
+ 151623 words of memory out of 1500000
+ 7411 multiletter control sequences out of 10000+200000
+ 13234 words of font info for 51 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 33i,14n,36p,1664b,424s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (111 pages, 382412 bytes).
+Output written on thesis.dvi (112 pages, 387536 bytes).
