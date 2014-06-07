@@ -108,10 +108,10 @@
 \contentsline {section}{\numberline {6.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{88}{section.6.1}
 \contentsline {section}{\numberline {6.2}World Science Festival interferometer manufacture}{88}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Laser, optics and display}{88}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Aluminum baseboard}{88}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{88}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{88}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{88}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.2.2}Aluminum baseboard}{90}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{90}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{90}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{90}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}World Science Festival 2010}{92}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{92}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}Future LIGO outreach}{92}{section.6.4}
