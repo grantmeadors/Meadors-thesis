@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{BarsottiNatureSqueezing}
 J.~Aasi et~al.
@@ -162,8 +162,9 @@ S.~Chandrasekhar.
 
 \bibitem{ChuaThesis}
 Sheon S.~Y. Chua.
-\newblock {\em In preparation}.
-\newblock PhD thesis, Australian National University, In preparation.
+\newblock {\em Quantum enhancement of a 4km laser interferometer
+  gravitational-wave detector}.
+\newblock PhD thesis, Australian National University, April 2013.
 
 \bibitem{ChuaBackscatteredLight}
 S.S.Y. Chua, S.~Dwyer, L.~Barsotti, D.~Sigg, R.M.S. Schofield, V.V. Frolov,
@@ -173,7 +174,18 @@ S.S.Y. Chua, S.~Dwyer, L.~Barsotti, D.~Sigg, R.M.S. Schofield, V.V. Frolov,
   N.~Mavalvala, and D.E. McClelland.
 \newblock Impact of backscattered-light in a squeezing-enhanced interferometric
   gravitational-wave detector.
-\newblock In preparation.
+\newblock {\em Classical and {Q}uantum {G}ravity}.
+
+\bibitem{CollinsGravityShadow}
+H.~Collins.
+\newblock {\em Gravity's Shadow: the Search for Gravitational Waves}.
+\newblock Chicago, Chicago, Illinois, 2004.
+
+\bibitem{CollinsGravityGhost}
+H.~Collins.
+\newblock {\em Gravity's Ghost and {B}ig {D}og: Scientific Discovery in the
+  Twenty-first Century}.
+\newblock Chicago, Chicago, Illinois, 2013.
 
 \bibitem{DergachevThesis}
 V.~Dergachev.
@@ -306,6 +318,11 @@ S.~Hild, H.~Grote, J.~Degallaix, S.~Chelkowski, K.~Danzmann, A.~Freise,
 \bibitem{HulseTaylor1975}
 R.A. Hulse and J.H. Taylor.
 \newblock {\em Astroph. J.}, 195(L51), 1975.
+
+\bibitem{JacksonEM}
+J.D. Jackson.
+\newblock {\em Classical electrodynamics, 3rd edition}.
+\newblock John {W}iley \& {S}ons, New York, New York, 1999.
 
 \bibitem{KissellPRCMICH}
 J.~Kissel.

@@ -17,12 +17,18 @@ I was expecting a `{' or a `('---line 6 of file bibliography.bib
  : @ARTICLE{feyn54,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 918 of file bibliography.bib
+ : 
+ : year = "2014",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--empty title in LIGOCal2010
 Warning--empty title in LSCPowerFlux2009
 Warning--empty title in LSCPulsar2006
 Warning--empty title in Antares2013
 Warning--empty title in Black2001
 Warning--empty title in Caldwell1981
+Warning--empty year in ChuaBackscatteredLight
 Warning--empty title in Deschrijver2008
 Warning--empty title in Swift2012
 Warning--empty title in Grishchuk1974
@@ -36,45 +42,45 @@ Warning--empty title in Ott2009
 Warning--empty title in Sathyaprakash2009
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 99 entries,
+You've used 102 entries,
             2118 wiz_defined-function locations,
-            1086 strings with 18519 characters,
-and the built_in function-call counts, 27559 in all, are:
-= -- 2576
-> -- 1616
+            1099 strings with 18915 characters,
+and the built_in function-call counts, 28255 in all, are:
+= -- 2637
+> -- 1637
 < -- 12
-+ -- 653
-- -- 546
-* -- 1969
-:= -- 5111
-add.period$ -- 279
-call.type$ -- 99
-change.case$ -- 517
++ -- 662
+- -- 552
+* -- 2003
+:= -- 5232
+add.period$ -- 288
+call.type$ -- 102
+change.case$ -- 526
 chr.to.int$ -- 0
-cite$ -- 118
-duplicate$ -- 982
-empty$ -- 1862
-format.name$ -- 546
-if$ -- 5411
+cite$ -- 122
+duplicate$ -- 1022
+empty$ -- 1934
+format.name$ -- 552
+if$ -- 5560
 int.to.chr$ -- 0
-int.to.str$ -- 99
-missing$ -- 72
-newline$ -- 479
-num.names$ -- 200
-pop$ -- 472
+int.to.str$ -- 102
+missing$ -- 79
+newline$ -- 494
+num.names$ -- 206
+pop$ -- 496
 preamble$ -- 1
-purify$ -- 457
+purify$ -- 466
 quote$ -- 0
-skip$ -- 690
+skip$ -- 709
 stack$ -- 0
-substring$ -- 915
-swap$ -- 96
+substring$ -- 930
+swap$ -- 100
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 380
-warning$ -- 19
-while$ -- 225
-width$ -- 101
-write$ -- 1044
-(There were 3 error messages)
+type$ -- 386
+warning$ -- 20
+while$ -- 231
+width$ -- 105
+write$ -- 1077
+(There were 4 error messages)
