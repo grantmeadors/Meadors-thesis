@@ -6,11 +6,11 @@
 
         Space should reverberate with gravitational waves. 
 Light shows part of cosmic history; now, primeval epochs and secret stellar reaches might be seen in patterns of light transformed by gravity. 
-General Relativity and related theories of gravitation posit [Einstein CITE?] that changing quadropolar masses radiate gravitationally, just as accelerating dipolar charges do electromagnetically. 
+General Relativity and related theories of gravitation posit~\cite{EinsteinRosen1937} that changing quadropolar masses radiate gravitationally, just as accelerating dipolar charges do electromagnetically. 
 In those waves we might see black holes and neutron stars colliding, supernova, the dawn of the Big Bang and rotating neutron stars -- and the potential for unanticipated insights, into other objects or laws of physics, is too tantalazing to ignore. 
 As yet, no direct detections are known. 
 Hulse and Taylor \cite{HulseTaylor1975} observed a neutron star in a binary system, PSR 1913+16, with an orbit shrinking just as gravitational radiation would entail. 
-Following on the pioneering work of Joseph Weber with bar detectors [Weber 1970 Nature CITE?], kilometer-scale interferometers were built at the end of the last millenium to look for gravitational radiation. 
+Following on the pioneering work of Joseph Weber with bar detectors~\cite{Weber1960} and Robert Forward with tabletop interferometers~\cite{Forward1978}, kilometer-scale interferometers were built at the end of the last millenium to look for gravitational radiation. 
 Laser light in these instruments travels orthogonal paths and is reflected back; shifts in the combined pattern are scrutinized for indications that gravitational waves stretched space itself. 
 This thesis describes efforts to make that search more sensitive with quantum optics at the observatories, by filtering noise from the data, and by conducting a promising search for continuous waves from neutrons stars in binary systems.
 
@@ -35,7 +35,7 @@ Gravity pervades the universe like no other force: we must hear its tale.
         %   --- Cosmic origins believed to generate GW. (note: should sprinkle citations as needed, not just where it says "cite") ---
 
 		Gravity's power to induce ripples in space is a matter of fact. Pulsar 1913+16, discovered by Hulse and Taylor, not only followed a pattern of orbital decay consistent with radiative loss of orbital decay to gravitational radiation -- it continued to do so~\cite{WeisbergTaylor2004,Weisberg2010}, even after Hulse and Taylor won the 1993 Nobel Prize in physics. 
-Moreover, there has been much interest in the question of whether the BICEP2 [CITE] and Planck [CITE] probes of the cosmic microwave background have seen evidence of $B$-mode polarizations that would indicate primordial gravitational fluctuations. We still may ask whether the waves are directly detectable on Earth. We may ask whether they appear in detectors in a way consistent with general relativity. The basic fact of their emission, however, appears settled.
+Moreover, there has been much interest in the question of whether the BICEP2~\cite{BICEP2014} and Planck~\cite{Planck2014} probes of the cosmic microwave background have seen evidence of $B$-mode polarizations that would indicate primordial gravitational fluctuations. We still may ask whether the waves are directly detectable on Earth. We may ask whether they appear in detectors in a way consistent with general relativity. The basic fact of their emission, however, appears settled.
 
 	\begin{figure}
 	\begin{center}
@@ -48,11 +48,12 @@ Moreover, there has been much interest in the question of whether the BICEP2 [CI
 		Before delving into the specifics of general relativity, we might consider all the astrophysical sources we expect to emit gravitational waves. Physics prompts our search, but astronomy makes it exciting.
 
 	Discussions of gravitational waves frequently begin with derivations of the wave equations from Einstein's field equations. 
-General relativity, however, is not the only theory to predict gravitational waves: it is a natural consequence of a class of similar theories, waves and should be expected even if some minor variation from Einstein's theory is discovered [CITE]. 
+General relativity, however, is not the only theory to predict gravitational waves: waves are a natural consequence of a class of similar theories, which make a range of testable predictions (such as number of polarization modes, from two to six, and possibly speeds different from $c$)~\cite{Will1993} 
+Waves should thus be expected even if some minor variation from Einstein's theory is discovered, pointing a way perhaps toward a quantum theory of gravity~\cite{Sathyaprakash2009}. 
 As the field progresses toward first detection and beyond to astronomy, the astrophysical targets of our searches should take precedence.
 
 		Gravitational waves (henceforth also abbreviated GW) searches presently focus on four distinct types of cosmic sources.
-This categorization of sources was presented in the 1983 LIGO Blue Book proposal and has since guided research focus [CITE]. 
+This categorization of sources was presented in the 1983 LIGO Blue Book proposal and has since guided research focus~\cite{CollinsGravityShadow}. 
 
 This thesis concentrates on continuous waves, which are sine waves -- perhaps modulated by orbital motion, spin-up or spin-down. Continuous waves are most likely to be detectable from neutron stars. Given a sufficiently large ellipticity, which might be on the order of $\epsilon \approx 10^{-6}$ [CITE] or smaller for a neutron star rotating on the order of 1 kHz, a deformation of the crust would radiate sufficient gravitational radiation to be a plausibly-detectable source. Indeed, the radiation would rapidly deplete the rotational energy of the neutron star [CITE], which is why binary systems, where the neutron star could be recycled and spun-up by a partner, prove a promising target [CITE]. Scorpius X-1 offers a canonical case, although our discussion of the TwoSpect analysis will elaborate the abundance of other low-mass X-ray binary (LMXB) systems of interest. Given the paucity of information on the interiors of collapsed stellar remnants, direct detection of gravitational waves from neutron stars could prove informative. We might infer details favoring one equation of state [CITE], might extract parameters suggesting the existence of quark stars or gravitars [CITE], and will have an unparalleled peek into the interior of the densest stable three-dimensional objects in the universe. Their simple waveforms might even facilitate the calibration of other types of gravitational wave data [CITE]. From any source, continuous waves are a conceptually-elegant and astronomically-enticing target.
 
@@ -74,7 +75,7 @@ In 1916, Einstein predicted gravitational waves.
 At last, gravity had a theoretical speed: the same as that of electromagnetism, that of light in the vacuum, $c$.
 In the linear approximation to the nonlinear theory of general relativity (henceforth GR), the waves were mathematically similar to the waves of electromagnetism, as will be shown in Section~\ref{general_relativity}.
 Yet the detectability of the waves, even in principle, would remain an open question for another half century. 
-Consult Misner, Thorne, and Wheeler's \textit{Gravitation}~\cite{MisnerThorneWheeler} and Sean Carroll's collected lectures~\cite{Carroll1997}, as well as other history books of the field [CITE ALSO GRAVITY's SHADOW, OTHERS  CHECK KEITH RILES REVIEW PAPER] for an account of the controversy.
+Consult Misner, Thorne, and Wheeler's \textit{Gravitation}~\cite{MisnerThorneWheeler} and Sean Carroll's collected lectures~\cite{Carroll1997}, as well as other history books of the field for an account of the controversy.
 Riles review~\cite{Riles2013}.
 Gravity's Shadow~\cite{CollinsGravityShadow} for historical controversy,
 Gravity's Ghost~\cite{CollinsGravityGhost} for why we do blind injections
@@ -108,6 +109,8 @@ Intro to GR -- right motivation is least action Ricci tensor, implying field equ
         \subsection{Derivation of field equations}
         \label{field_equations}
 
+            A common approach to gravitational wave derivations is linearized gravity~\cite{FlanaganHughes2005}
+
             Derive field equations as extremized curvature.
 
 		It's all about the Ricci tensor and the Einstein-Hilbert action. This might be the right place for~\cite{FarrThesis} and other sources.
@@ -127,7 +130,7 @@ Intro to GR -- right motivation is least action Ricci tensor, implying field equ
 
             Describe the four types of sources: burst, continuous, inspiral and stochastic.
 
-            UNLIKE the earlier introduction, which should be able why the sources are interesting, this should summarize, more briefly, the current state of the art in each search. Refers to KEITH's REVIEW PAPER as needed [CITE].
+            UNLIKE the earlier introduction, which should be able why the sources are interesting, this should summarize, more briefly, the current state of the art in each search. Refers to KEITH's REVIEW PAPER as needed~\cite{Riles2013}.
 
 		Mostly above, but clarify exact how much we should see. Cite the 2009 Nature stochastic paper et al~\cite{LIGOStochasticNature2009}. The importance to early universe cosmology was initially handled by Maggiore~\cite{Maggiore2000}. Before that, of course, once can reference the Allen and Romano methods paper~\cite{Allen1999}, anything interesting from Nick Fotopoulos's thesis~\cite{FotopoulosThesis}, and the various mid-2000s stochastic work that I was familiar with~\cite{Abbott2006},~\cite{Abbott2007}. Note the interesting meaning of anisotropies~\cite{Allen1997} and point out how not only Stefan's radiometer search can find them but how it can be adapted to many other purposes, such as spherical harmonics, which is useful for the cosmic microwave background~\cite{Muciaccia1997} and was briefly my work~\cite{MeadorsCaltech2007} and the Scorpius X-1 search; Stefan's canonical radiometer reference is in Classical Quantum Gravity~\cite{Radiometer2006}.
 

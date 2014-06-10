@@ -62,6 +62,17 @@ F.~Acernese et~al.
 \newblock Status of {V}irgo.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 22(18):S869, 2005.
 
+\bibitem{BICEP2014}
+P.A.R. Ade et~al.
+\newblock {BICEP2} {I}: detection of {B}-mode polarization at degree angular
+  scales.
+\newblock Technical Report astro-ph/1403.3985, arXiv.
+
+\bibitem{Planck2014}
+P.A.R. Ade et~al.
+\newblock Planck 2013 results. {XVI}. cosmological parameters.
+\newblock Technical Report astro-ph/1303.5076, arXiv.
+
 \bibitem{AdhikariThesis}
 R.~Adhikari.
 \newblock {\em Sensitivity and Noise Analysis of 4 km Laser Interferometric
@@ -237,6 +248,11 @@ Sheila~E Dwyer.
 \newblock {\em Quantum noise reduction using squeezed states in LIGO}.
 \newblock PhD thesis, Massachusetts Institute of Technology, February 2013.
 
+\bibitem{EinsteinRosen1937}
+A.~Einstein and N.~Rosen.
+\newblock On gravitational waves.
+\newblock {\em {J}. {F}ranklin {I}nst.}, 223:43, 1937.
+
 \bibitem{Swift2012}
 P.A. Evans et~al.
 \newblock {\em {ApJS}}, 203(28), 2012.
@@ -251,6 +267,16 @@ L.S. Finn and D.~F. Chernoff.
 \newblock Observing binary inspiral in gravitational radiation: one
   interferometer.
 \newblock {\em Phys. {R}ev. {D}}, 47:2198--2219, 1993.
+
+\bibitem{FlanaganHughes2005}
+\'{E}.\'{E} Flanagan and S.A. Hughes.
+\newblock The basics of gravitational wave theory.
+\newblock {\em New {J} {P}hys.}, 7(204), 2005.
+
+\bibitem{Forward1978}
+R.L. Forward.
+\newblock Wideband laser-interferometer gravitational-radiation experiment.
+\newblock {\em {P}hys. {R}ev. {D}}, 17(2):379, 1978.
 
 \bibitem{FotopoulosThesis}
 Nickolas Fotopoulos.
@@ -527,6 +553,11 @@ S.~Waldman and S.~Chua.
 \newblock eligo hanford output mode cleaner repair.
 \newblock Technical Report T1100562, LIGO, 2011.
 
+\bibitem{Weber1960}
+J.~Weber.
+\newblock Detection and generation of gravitational waves.
+\newblock {\em {P}hys. {R}ev.}, 117(1):306.
+
 \bibitem{Weisberg2010}
 J.M. Weisberg, D.J. Nice, and J.H. Taylor.
 \newblock Timing measurements of the relativistic binary pulsar {PSR B1913+16}.
@@ -561,6 +592,11 @@ N.~Wiener.
 \newblock {\em Extrapolation, interpolation, and smoothing of stationary time
   series: with engineering applications}.
 \newblock MIT, Cambridge, Massachusetts, 1949.
+
+\bibitem{Will1993}
+C.M. Will.
+\newblock {\em Theory and experiment in gravitational physics}.
+\newblock Cambridge, Cambridge, 1993.
 
 \bibitem{Willke2002}
 B.~Willke et~al.
