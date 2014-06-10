@@ -17,29 +17,30 @@ I was expecting a `{' or a `('---line 6 of file bibliography.bib
  : @ARTICLE{feyn54,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 918 of file bibliography.bib
+I was expecting a `,' or a `}'---line 926 of file bibliography.bib
  : 
  : year = "2014",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2404 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2428 of file bibliography.bib
  : 
  : year = "1960"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2431 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2455 of file bibliography.bib
  : 
  : year = "2014-03-18"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2439 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2463 of file bibliography.bib
  : 
  : year = "2014-03-21"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty title in LIGOCal2010
-Warning--empty title in LSCPowerFlux2009
+Warning--empty title in LSCPulsarS4
 Warning--empty title in LSCPulsar2006
+Warning--empty title in LSCPowerFlux2009
 Warning--empty year in BICEP2014
 Warning--empty year in Planck2014
 Warning--empty title in Antares2013
@@ -60,45 +61,45 @@ Warning--empty title in Sathyaprakash2009
 Warning--empty year in Weber1960
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 109 entries,
+You've used 115 entries,
             2118 wiz_defined-function locations,
-            1137 strings with 19633 characters,
-and the built_in function-call counts, 29964 in all, are:
-= -- 2800
-> -- 1710
+            1167 strings with 20218 characters,
+and the built_in function-call counts, 31454 in all, are:
+= -- 2939
+> -- 1775
 < -- 14
-+ -- 692
-- -- 574
-* -- 2109
-:= -- 5543
-add.period$ -- 309
-call.type$ -- 109
-change.case$ -- 555
++ -- 719
+- -- 594
+* -- 2203
+:= -- 5811
+add.period$ -- 326
+call.type$ -- 115
+change.case$ -- 578
 chr.to.int$ -- 0
-cite$ -- 132
-duplicate$ -- 1095
-empty$ -- 2071
-format.name$ -- 574
-if$ -- 5905
+cite$ -- 139
+duplicate$ -- 1161
+empty$ -- 2197
+format.name$ -- 594
+if$ -- 6211
 int.to.chr$ -- 0
-int.to.str$ -- 109
-missing$ -- 85
-newline$ -- 529
-num.names$ -- 220
-pop$ -- 525
+int.to.str$ -- 115
+missing$ -- 93
+newline$ -- 558
+num.names$ -- 232
+pop$ -- 551
 preamble$ -- 1
-purify$ -- 489
+purify$ -- 509
 quote$ -- 0
-skip$ -- 757
+skip$ -- 802
 stack$ -- 0
-substring$ -- 990
-swap$ -- 107
+substring$ -- 1039
+swap$ -- 113
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 412
-warning$ -- 23
-while$ -- 248
-width$ -- 112
-write$ -- 1151
+type$ -- 432
+warning$ -- 24
+while$ -- 262
+width$ -- 118
+write$ -- 1215
 (There were 7 error messages)

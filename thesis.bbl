@@ -16,6 +16,10 @@ J.~Abadie et~al.
   ligo-virgo run.
 \newblock {\em Phys. {R}ev. {D}}, 85(122007), 2012.
 
+\bibitem{LSCPulsarS4}
+B.~Abbott.
+\newblock {\em Phys. {R}ev. {D}}, 77(022001), 2008.
+
 \bibitem{Abbott2004}
 B.~Abbott, R.~Abbott, R.~Adhikari, A.~Ageev, B.~Allen, R.~Amin, S.B. Anderson,
   W.G. Anderson, M.~Araya, H.~Armandula, and et~al.
@@ -42,6 +46,10 @@ B.~Abbott et~al.
   observations between ligo and geo.
 \newblock {\em Nucl. {I}nstrum. {M}eth.}, A517:154--179, 2004.
 
+\bibitem{LSCPulsar2006}
+B.~Abbott et~al.
+\newblock {\em Phys. {R}ev. {D}}, 76(042001), 2007.
+
 \bibitem{AbbottPulsar2006}
 B.~Abbott et~al.
 \newblock Coherent searches for periodic gravitational waves from unknown
@@ -50,12 +58,8 @@ B.~Abbott et~al.
 \newblock {\em Phys. Rev. D}, 76(8):082001, 2007.
 
 \bibitem{LSCPowerFlux2009}
-B.~Abbott~et al.
+B.~Abbott et~al.
 \newblock {\em Phys. {R}ev. {L}ett}, 102(111102), 2009.
-
-\bibitem{LSCPulsar2006}
-B.l Abbott~et al.
-\newblock {\em Phys. {R}ev. {D}}, 76(082001), 2007.
 
 \bibitem{Acernese2005}
 F.~Acernese et~al.
@@ -159,6 +163,17 @@ J.A.R Caldwell and J.P Ostriker.
 S.M. Carroll.
 \newblock Lecture notes on general relativity.
 \newblock Technical Report gr-qc/9712019v1, arXiv, 1997-12-03.
+
+\bibitem{Caves1980}
+C.M. Caves.
+\newblock Quantum-mechanical radiation-pressure fluctuations in an
+  interferometer.
+\newblock {\em {P}hys. {R}ev. {L}ett.}, 45(2):75, 1980.
+
+\bibitem{Caves1981}
+C.M. Caves.
+\newblock Quantum-mechanical noise in an interferometer.
+\newblock {\em {P}hys. {R}ev. {D}}, 23(8):1693, 1981.
 
 \bibitem{Chakrabarty2003}
 D.~Chakrabarty et~al.
@@ -334,6 +349,11 @@ B.~Gustavsen.
 B.~Gustavsen and A.~Semlyen.
 \newblock {\em IEEE {T}rans. {P}ower {D}elivery}, 14(3), 1999.
 
+\bibitem{Hawking2002}
+S.~Hawking.
+\newblock {\em On the Shoulders of Giants}.
+\newblock Running Press, Philadelphia, Pennsylvania, 2002.
+
 \bibitem{Hild2009}
 S.~Hild, H.~Grote, J.~Degallaix, S.~Chelkowski, K.~Danzmann, A.~Freise,
   M.~Hewitson, J.~Hough, H~Luck, M.~Prijatelj, K.A. Strain, J.R. Smith, and
@@ -349,6 +369,12 @@ R.A. Hulse and J.H. Taylor.
 J.D. Jackson.
 \newblock {\em Classical electrodynamics, 3rd edition}.
 \newblock John {W}iley \& {S}ons, New York, New York, 1999.
+
+\bibitem{Jaranowski1998}
+P.~Jaranowski, A.~Kr\'{o}lak, and B.~Schutz.
+\newblock Data analysis of gravitational-wave signals from spinning neutron
+  stars: the signal and its detection.
+\newblock {\em Phys. {R}ev. {D}}, 58(063001), 1998.
 
 \bibitem{KissellPRCMICH}
 J.~Kissel.
@@ -514,6 +540,11 @@ Nicol\'{a}s~{de Mateo} Smith-Lefebvre.
 \newblock {\em Techniques for improving the readout sensitivity of
   gravitational wave antennae}.
 \newblock PhD thesis, Massachusetts Institute of Technology, June 2012.
+
+\bibitem{SnowTwoCultures}
+C.P. Snow.
+\newblock {\em The two cultures; with an introduction by {S}tefan {C}ollini}.
+\newblock Cambridge, Cambridge, 1993.
 
 \bibitem{LALAPPSrepo}
 {The LIGO Scientific Collaboration}.
