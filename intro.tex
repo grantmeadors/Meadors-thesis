@@ -91,14 +91,81 @@ Before deriving the answer to the detectability question, a contrast with the si
             Contrast with electromagnetism, compare with radio/X-ray/et cetera astro. Can make analogy to radio waves and make note of the ease with which one can operate a small radio telescope, as I did in my thesis~\cite{MeadorsThesis2008}, compared the the difficulty of gravitational wave detection. Muons from space were detected long ago, as in C.D. Anderson's 1949 paper on what was then called the mesotron,~\cite{CDAnderson}. Compare with neutrinos as in the John Bahcall review paper~\cite{NeutrinoReview}, which were a well-established field by the turn of the millenium, including the detection of supernova 1987A. Might be worth comparing to the focus in new neutrino detectors that I had in my research and development work on them~\cite{EBubble2005},~\cite{MeadorsNevis2006}. Even with those detectors, however, astrophysically-oriented detectors could be cross-referenced against terrestrial generators. Bahcall's search for solar neutrinos, which were theoretical in 1964,~\cite{NeutrinosSolarTheoretical}, at least had the certainty that neutrinos had been detected from the Savannah River nuclear reactor. Yet when those solar neutrinos were detected, it a significant confirmation of nuclear theory. General relativity has been established by the 1913+16 pulsar~\cite{WeisbergTaylor2004} and would likely be much boosted by direct detection, and it might reach surprising new insights, analogous to neutrino oscillation found by looking at the solar neutrino spectrum.
 
     End section by very rapidly deriving wave equation of electricity and magnetism, to lead by example for how we go about GR.
-    Cite here just Jackson~\cite{JacksonEM}
+
+    Let us set geometric, natural units where $1/4\pi\epsilon \rightarrow 1$. 
+Let subscript commas indicate ordinary partial derivatives, semicolons covariant derivatives, and assume the Einstein summation convention.
+Greek indices indicate four dimensions, Latin indices three.
+A space is supplied with a metric tensor, $g_{\mu\nu}$.
+
+    Electromagnetism is theoretically defined by a four-form $\textbf{A} = A_\mu \textbf{d} x^\mu$ where $A_\mu$ is a vector potential~\cite{MisnerThorneWheeler} given by $A_\mu = (\phi, -A_x, -A_y, -A_z)$~\cite{GriffithsE}. 
+In a given gauge $\phi$, the theory is `gauge symmetric' such that the addition of the differential form $\textbf{d} \phi$ to $\textbf{A}$ does not change the theory. 
+This changeless `symmetry', a symmetry in the group $U(1)$, arises because the physics of the theory can be described through the derived Maxwell field tensor $F_{\mu \nu}$, or curvature form $\textbf{F}$:
+
+\begin{eqnarray}
+\textbf{F} = d \textbf{A} = (\partial_\mu A_\nu) dx^\mu \wedge dx^\nu = \frac{1}{2} F_{\mu\nu} \textbf{d}x^\mu \wedge \textbf{d}x^\nu, \\
+F_{\mu \nu} = A_{\nu,\mu} - A_{\mu,\nu},
+\end{eqnarray}
+
+By the usual flat-space definitions of potential for an electric field $E$ and magnetic field $B$, $E_i = -\phi_{,i} - A_{i,0}$, $B_i = \epsilon_{ijk} \partial^j A^k = \epsilon_{ijk} A^{k, j}$ ($\epsilon_{ijk}$ is the Levi-Civita symbol). 
+Electrodynamics in curved space are well-studied; many equations can be translated by replacing partial with covariant derivatives.
+Therefore, the Maxwell tensor in explicit coordinate form is
+
+\begin{equation}
+F_{\mu\nu} =
+\left[
+\begin{array}{cccc}
+0 & E_x & E_y & E_z\\
+-E_x & 0 & -B_z & B_y \\
+-E_y &  B_z & 0 & -B_x\\
+-E_z & -B_y & B_x & 0
+\end{array} \right].
+\end{equation}
+
+Maxwell's theory then corresponds to the minimization of the action,
+
+\begin{equation}
+\mathcal{S} = \int \mathcal{L} d^4 x,
+\end{equation}
+
+\noindent for a Lagrangian $\mathcal{L}$ with a stress-energy term for the field itself constrained by an interaction with the current one-form $\textbf{J} = J_\mu \textbf{d} x^\mu$:
+
+\begin{equation}
+\mathcal{L} = - \frac{1}{4} F^{\mu \nu} F_{\mu \nu} + J_\mu A^\mu, 
+\end{equation}
+
+On a space that admits a Hodge dual, or star operator, $\star$, we can then define the dual to the Maxwell form, $\star \textbf{F}$. 
+Maxwellian electromagnetism then is concisely described by extremizing the action to derive the following equations:
+
+\begin{eqnarray}
+d \textbf{F} = 0,\\
+d \star \textbf{F} = \star \textbf{J}.
+\end{eqnarray}  
+
+Applied in flat space and substituting in the explicit coordinate form of the Maxwell tensor, the theory is easily expressed as four familiar first-order differential equations of the $E$ and $B$ fields:
+ 
+(CHECK SIGNS AND UNITS)
+
+\begin{eqnarray}
+E^i_{,i} = \rho,\\
+\epsilon^{ijk} E^{k,j} + B^i_{,0} = 0,\\
+B^i_{,i} = 0,\\
+\epsilon^{ijk} B^{k,j} - E^i_{,0} = J^i.
+\end{eqnarray}
+
+Substituting the definitions of $E$ and $B$ in terms of $\textbf{A}$ and specifying the \textit{Lorenz gauge}, where we choose any a vector potential for which $A^\nu_{,\nu} = 0$, 
+
+\begin{equation}
+g^{\mu\nu}A^\sigma_{,\mu\nu} = -J^\sigma,
+\end{equation}
         
+\noindent often written as $\Box A^\sigma = -J^\sigma$ -- a wave equation. Our task now is to compare with general relativity to see whether a similar wave equation will emerge.
 
     \section{General relativity}
     \label{general_relativity}
 
         General relativity (the mathematics). The ideal reference here is Sean Carroll's lecture notes on general relativity,~\cite{Carroll1997}, although I should also cite Will Farr's thesis~\cite{FarrThesis} if it is elegant. Farr is good for citing things like the Palatini action. Of course, I should also "dig down" and cite the original sources that they reference too, where applicable. Can also cite Misner, Thorne and Wheeler~\cite{MisnerThorneWheeler}.
 
+            Introduce the metric $g$ here, but reinforce that it is not essential.
 Intro to GR -- right motivation is least action Ricci tensor, implying field equation and phase/time-of-flight implying interferometry.
 
         \subsection{Symmetry and action principles}
@@ -106,12 +173,31 @@ Intro to GR -- right motivation is least action Ricci tensor, implying field equ
 
             Like electricity and magnetism, GR is the product of symmetry, action. This is the right place for~\cite{Carroll1997}.
 
+
         \subsection{Derivation of field equations}
         \label{field_equations}
 
-            A common approach to gravitational wave derivations is linearized gravity~\cite{FlanaganHughes2005}
+            A common approach to gravitational wave derivations is linearized gravity~\cite{FlanaganHughes2005}.
+            This approach is correct in weak fields, and proceeds~\cite{AdhikariThesis} from the metric $g$ approximation as the sum of a Minkowski (flat spacetime) component, $\eta$, plus a perturbation $h$, where $|h| \ll |\eta|$:
 
-            Derive field equations as extremized curvature.
+\begin{equation}
+g_{\mu \nu} \approx \eta_{\mu \nu} + h_{\mu \nu},
+\end{equation}
+
+\noindent leading to a wave equation,
+
+\begin{equation}
+-\frac{1}{2} \Box \left(h_{\mu \nu} - \frac{1}{2} \eta_{\mu \nu} h_{\lambda}^{\lambda} \right) = \frac{8 \pi G}{c^4} T_{\mu \nu}.
+\end{equation}
+
+The wave carries energy~\cite{BallmerThesis} as well:
+
+\begin{eqnarray}
+\rho_{\textup{gw}} = \frac{c^2}{16 \pi G} \left\langle |\partial_t h_+|^2 + |\partial_t h_\times|^2 \right\rangle,\\
+P = \frac{G}{5c^5}\left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle \approx 5.5\times 10^{-54} W^{-1} \left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle.
+\end{eqnarray}
+
+Let us demonstrate this result and also derive field equations from extremized curvature.
 
 		It's all about the Ricci tensor and the Einstein-Hilbert action. This might be the right place for~\cite{FarrThesis} and other sources.
 
@@ -137,14 +223,27 @@ Intro to GR -- right motivation is least action Ricci tensor, implying field equ
         \subsection{Continuous waves from neutron stars}
         \label{continuous_waves}
 
-            Continuous -- specifically, binary neutron stars and rate predictions. Describe archetypical search methods as in the 1998 analysis paper~\cite{Jaranowski1998}, the Abbott et al paper~\cite{LSCPulsar2006}, including Stack Slide~\cite{LSCPulsarS4} and the most interesting to date, Vladimir's PowerFlux~\cite{LSCPowerFlux2009}. Discuss earlier results from the earliest period~\cite{Abbott2004} and an early search for Scorpius X-1~\cite{AbbottPulsar2006}. Reinhard Prix is probably another good source~\cite{Prix2006}.
+            Continuous -- specifically, binary neutron stars and rate predictions. Describe archetypical search methods as in the 1998 analysis paper~\cite{Jaranowski1998}, the Abbott et al paper~\cite{LSCPulsar2006}, including StackSlide~\cite{LSCPulsarS4}, Einstein at Home~\cite{LSCEinsteinHome2009}, and the most interesting to date from Michigan, Vladimir's PowerFlux~\cite{LSCPowerFlux2009}. Discuss earlier results from the earliest period~\cite{Abbott2004} and an early search for Scorpius X-1~\cite{AbbottPulsar2006}. Reinhard Prix is probably another good source~\cite{Prix2006}.
 
 		Rates go in here.
+        The emission mechanism of gravitational radiation with amplitude $h_0$ from a neutron star is is from an elliptical deformation, ellipticity $\epsilon$, on its surface, leading to a quadrupole moment $I$~\cite{LSCPulsar2006} and thus emission at frequency $f = 2\nu$, twice the neutron star spin frequency $\nu$:
+
+        \begin{eqnarray}
+        \epsilon = \frac{I_{xx} - I_{yy}}{I_zz}, \\
+        h_0 = \frac{4 \pi^2 G}{c^4} \frac{I_{zz} f^2}{r} \epsilon.
+        \end{eqnarray}
+
+Excepting the case of torque balance in low-mass X-ray binary systems, neutron star rotation frequency will decay due to gravitational radiation, yielding a relationship between the `spindown age'~\cite{Brady1998} $\tau$ and the gravitational radiation amplitude:
+
+        \begin{eqnarray}
+        \tau = -f / \dot{f}, \\
+        h_0 = \frac{1}{r} \sqrt{\frac{5 G I_{zz}}{2 c^2 \tau}}.
+        \end{eqnarray}
 
 	\begin{figure}
 	\begin{center}
 	\includegraphics[height=120mm, width=160mm]{neutron_star_structure.eps}
-	\caption{Hypothetical internal structure of a neutron star (INCLUDE CITATION FROM PRELIM DEFENSE: found at http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron\_star\_structure.html) Possibly original Frank Shu? Fred would probably know, being a student of Frank}
+	\caption{Hypothetical internal structure of a neutron star (Citation: http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron\_star\_structure.html) CITE? Possibly original Frank Shu? Fred would probably know, being a student of Frank}
 	\label{neutron_star_structure}
 	\end{center}
 	\end{figure}
@@ -164,6 +263,36 @@ Intro to GR -- right motivation is least action Ricci tensor, implying field equ
         \label{methods}
 
 		Michelson was one of the first to use interferometers~\cite{michelson}. He is famous for having done so to try to measure the velocity of the Earth with respect to the luminerferous ether and finding it to be unmeasurable.
+
+A gravitational wave interferometer, at its core, is also a Michelson interferometer. 
+The power $P$ at the output `dark' port, is by design equal to zero except when the measureable (e.g., ether, a gravitational wave, or other disturbance) causes a fringe shift $\Delta \phi$ related to the agnular frequency $\omega$ of the light and the time-of-flight down the $x$ and $y$ arms, $T_x$ and $T_y$. 
+Physically, it is proportional to the electric field: 
+
+\begin{eqnarray}
+P \propto E_0^2 \left| 1 + e^{i \Delta \phi}\right|^2 = 2 E_0^2 (1 + \cos \Delta \phi), \\
+\Delta \phi = \omega (T_y - T_x).
+\end{eqnarray}
+
+In Enhanced and Advanced LIGO, $\Delta \phi = 2\pi L_s /\lambda + \phi_0 + \phi_{\textup{DARM}} $, where in decreasing order of size, $L_s$ is known as the Schnupp asymmetry (a constant difference in arm length), $\phi_0$ is a constant offset from a fringe to enable non-radio-frequency-modulated DC readout, and $\phi_{\textup{DARM}}$ is the putative time-varying signal of `DARM', the differential arm motion that might encode a gravitational wave signal. 
+
+Power $P$ can be directly improved by increasing effective laser power (e.g., a brighter laser or use of `power recycling'), and $\delta \phi$ can be increased by making $T_{x,y}$ storage times longer (e.g., with Fabry-Perot cavities).
+
+Gravitational wave signals enter the interferometer, in a technical sense, by changing the spacetime curvature in the arms. It is not necessary to discuss mirror motion or Doppler shifting, although these are also valid points of view. 
+
+In the simplest, linearized picture, the spacetime curvature leads to a gravitational wave with amplitude $h$; when the wave is aligned with x-axis and y-axis arms of length $L$ (see~\cite{Jaranowski1998} for the antenna pattern correction when it is misaligned), it changes the time-of-flight in the arms:
+
+\begin{eqnarray}
+T_x = \int_0^{\frac{2L_x}{c}} \sqrt{|g_{xx}|} dt \propto \int_0^{\frac{2L_x}{c}} \left(1 - \frac{h_+}{2} \right) dt, \\
+T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \propto \int_0^{\frac{2L_y}{c}} \left(1 + \frac{h_+}{2} \right) dt.
+\end{eqnarray}
+
+\noindent The mismatch in the integrals leads to a detectable time-varying signal,
+
+\begin{equation}
+\phi_{\textup{DARM}} = \omega \int_0^{\frac{2L}{c}} \frac{h_+ (t, x(t)) + h_+ (t, y(t))}{2} dt.
+\end{equation}  
+
+
 
             Why GW interferometers work. Null measurements, a zeroed operating point. The specifics are best handled by Saulson~\cite{Saulson}. The idea of a Pound-Drever-Hall lock is most elegantly explained by Black~\cite{PDHNotes}. Rai Weiss may have some neat details, possibly historical, albeit that it is in a presentation~\cite{LIGOWorks}. The details of Fabry-Perot cavities in LIGO are handled by Rakhmanov, Savage et al~\cite{ResonanceFP},~\cite{ResponsesFP}. The motivation for the evolution to Enhanced LIGO and its DC readout methods is covered well in the corresponding CQG article~\cite{Fricke2009} and specific details of its construction and operation are in Tobin Fricke's thesis~\cite{FrickeThesis}.
 

@@ -57,6 +57,10 @@ B.~Abbott et~al.
   run.
 \newblock {\em Phys. Rev. D}, 76(8):082001, 2007.
 
+\bibitem{LSCEinsteinHome2009}
+B.~Abbott et~al.
+\newblock {\em Phys. {R}ev. {D}}, 79(022001), 2009.
+
 \bibitem{LSCPowerFlux2009}
 B.~Abbott et~al.
 \newblock {\em Phys. {R}ev. {L}ett}, 102(111102), 2009.
@@ -146,6 +150,11 @@ E.~Black.
 \bibitem{Black2001}
 E.~Black.
 \newblock {\em Amer. J. Phys.}, 69(79), 2001.
+
+\bibitem{Brady1998}
+P.R. Brady, T.~Creighton, C.~Cutler, and B.F. Schutz.
+\newblock Searching for periodic sources with {LIGO}.
+\newblock {\em Phys. {R}ev. {D}}, 57(4):2101, 1998.
 
 \bibitem{Buskulic2000}
 D.~Buskulic, L.~Derome, R.~Flaminio, R.~Hermel, J.C. Lacotte, F.~Marion,
@@ -364,11 +373,6 @@ S.~Hild, H.~Grote, J.~Degallaix, S.~Chelkowski, K.~Danzmann, A.~Freise,
 \bibitem{HulseTaylor1975}
 R.A. Hulse and J.H. Taylor.
 \newblock {\em Astroph. J.}, 195(L51), 1975.
-
-\bibitem{JacksonEM}
-J.D. Jackson.
-\newblock {\em Classical electrodynamics, 3rd edition}.
-\newblock John {W}iley \& {S}ons, New York, New York, 1999.
 
 \bibitem{Jaranowski1998}
 P.~Jaranowski, A.~Kr\'{o}lak, and B.~Schutz.
