@@ -91,11 +91,23 @@ Before deriving the answer to the detectability question, a contrast with the si
             Contrast with electromagnetism, compare with radio/X-ray/et cetera astro. Can make analogy to radio waves and make note of the ease with which one can operate a small radio telescope, as I did in my thesis~\cite{MeadorsThesis2008}, compared the the difficulty of gravitational wave detection. Muons from space were detected long ago, as in C.D. Anderson's 1949 paper on what was then called the mesotron,~\cite{CDAnderson}. Compare with neutrinos as in the John Bahcall review paper~\cite{NeutrinoReview}, which were a well-established field by the turn of the millenium, including the detection of supernova 1987A. Might be worth comparing to the focus in new neutrino detectors that I had in my research and development work on them~\cite{EBubble2005},~\cite{MeadorsNevis2006}. Even with those detectors, however, astrophysically-oriented detectors could be cross-referenced against terrestrial generators. Bahcall's search for solar neutrinos, which were theoretical in 1964,~\cite{NeutrinosSolarTheoretical}, at least had the certainty that neutrinos had been detected from the Savannah River nuclear reactor. Yet when those solar neutrinos were detected, it a significant confirmation of nuclear theory. General relativity has been established by the 1913+16 pulsar~\cite{WeisbergTaylor2004} and would likely be much boosted by direct detection, and it might reach surprising new insights, analogous to neutrino oscillation found by looking at the solar neutrino spectrum.
 
     End section by very rapidly deriving wave equation of electricity and magnetism, to lead by example for how we go about GR.
+    Note that all physics in min(action),
+    introduce metric as inner product
+    generally, coordinate transform good
 
     Let us set geometric, natural units where $1/4\pi\epsilon \rightarrow 1$. 
 Let subscript commas indicate ordinary partial derivatives, semicolons covariant derivatives, and assume the Einstein summation convention.
 Greek indices indicate four dimensions, Latin indices three.
 A space is supplied with a metric tensor, $g_{\mu\nu}$.
+
+    Gravitation as described by general relativity is complex, so let us start with a simpler theory: electromagnetism. The same mathematics that predicts electromagnetic waves (light), which are our means of detecting gravitational waves in LIGO, can then be extended by analogy to gravitational waves.
+Modern physical theories are usually described as extremizing an action, $\mathcal{S}$. The action is defined as the integral, over space-time, of a Lagrangian density $\mathcal{L}$. To integrate, the integral generally requires a metric, $g$, which generalizes the notion of an inner product to curved space. In tensor form, $g = g_{\mu\nu}dx^\mu dx^\nu$. Writing the determinant of the metric as $|g| = \det(g)$, the action to be extremized (setting $\delta \mathcal{S}$ to 0) is
+
+\begin{equation}
+\mathcal{S} = \int \mathcal{L} \sqrt{-|g|} d^4 x.
+\end{equation} 
+
+The question then becomes how we can define the Lagrangian density for different physical theories. In both electromagnetism and gravitation, the quantity is a kind of curvature, contracted from respectively the Maxwell and Ricci tensors. As educated coordinate transformations make a great number of problems simpler -- a theme of the both the feedforward regression and the data analysis presented in later chapters of this thesis -- let us proceed with the derivation in a way that is manifestly covariant under transformations. If desired, one can then extend this treatment to electromagnetism in curved spacetime, such as under the influence of a gravitational wave. 
 
     Electromagnetism is theoretically defined by a four-form $\textbf{A} = A_\mu \textbf{d} x^\mu$ where $A_\mu$ is a vector potential~\cite{MisnerThorneWheeler} given by $A_\mu = (\phi, -A_x, -A_y, -A_z)$~\cite{GriffithsE}. 
 In a given gauge $\phi$, the theory is `gauge symmetric' such that the addition of the differential form $\textbf{d} \phi$ to $\textbf{A}$ does not change the theory. 
@@ -143,7 +155,7 @@ d \star \textbf{F} = \star \textbf{J}.
 
 Applied in flat space and substituting in the explicit coordinate form of the Maxwell tensor, the theory is easily expressed as four familiar first-order differential equations of the $E$ and $B$ fields (cf. the textbook by Jackson~\cite{JacksonEM}):
  
-(CHECK SIGNS AND UNITS)
+(CHECK SIGNS AND UNITS AND FONTS)
 
 \begin{eqnarray}
 E^i_{,i} = \rho,\\
