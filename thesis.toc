@@ -107,27 +107,27 @@
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Outreach: Exhibit at the World Science Festival}}{98}{chapter.6}
 \hbox { }
 \contentsline {section}{\numberline {6.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{98}{section.6.1}
-\contentsline {section}{\numberline {6.2}World Science Festival interferometer manufacture}{98}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Laser, optics and display}{98}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.2}World Science Festival interferometer manufacture}{100}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Laser, optics and display}{100}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Aluminum baseboard}{100}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{100}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{100}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{100}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{102}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{102}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{102}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}World Science Festival 2010}{102}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{102}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Future LIGO outreach}{102}{section.6.4}
+\contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{105}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Future LIGO outreach}{105}{section.6.4}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{104}{chapter.7}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{106}{chapter.7}
 \hbox { }
-\contentsline {section}{\numberline {7.1}Cycles of science}{104}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{104}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{104}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Refining data}{104}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{104}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{104}{subsection.7.1.5}
-\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{104}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{105}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{105}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{105}{section.7.3}
-\contentsline {section}{\numberline {7.4}Vision of a dark sky}{105}{section.7.4}
-\contentsline {chapter}{BIBLIOGRAPHY}{107}{section.7.4}
+\contentsline {section}{\numberline {7.1}Cycles of science}{106}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{106}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{106}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Refining data}{106}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{106}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{106}{subsection.7.1.5}
+\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{106}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{107}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{107}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{107}{section.7.3}
+\contentsline {section}{\numberline {7.4}Vision of a dark sky}{107}{section.7.4}
+\contentsline {chapter}{BIBLIOGRAPHY}{109}{section.7.4}
