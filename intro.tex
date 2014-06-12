@@ -77,8 +77,8 @@ In the linear approximation to the nonlinear theory of general relativity (hence
 Yet the detectability of the waves, even in principle, would remain an open question for another half century. 
 Consult Misner, Thorne, and Wheeler's \textit{Gravitation}~\cite{MisnerThorneWheeler} and Sean Carroll's collected lectures~\cite{Carroll1997}, as well as other history books of the field for an account of the controversy.
 Riles review~\cite{Riles2013}.
-Gravity's Shadow~\cite{CollinsGravityShadow} for historical controversy,
-Gravity's Ghost~\cite{CollinsGravityGhost} for why we do blind injections
+\textit{Gravity's Shadow}~\cite{CollinsGravityShadow} for historical controversy,
+\textit{Gravity's Ghost}~\cite{CollinsGravityGhost} for why we do blind injections
 
 Before deriving the answer to the detectability question, a contrast with the situation in other fields of astronomy is in order.
 
@@ -90,35 +90,87 @@ Before deriving the answer to the detectability question, a contrast with the si
 
             Contrast with electromagnetism, compare with radio/X-ray/et cetera astro. Can make analogy to radio waves and make note of the ease with which one can operate a small radio telescope, as I did in my thesis~\cite{MeadorsThesis2008}, compared the the difficulty of gravitational wave detection. Muons from space were detected long ago, as in C.D. Anderson's 1949 paper on what was then called the mesotron,~\cite{CDAnderson}. Compare with neutrinos as in the John Bahcall review paper~\cite{NeutrinoReview}, which were a well-established field by the turn of the millenium, including the detection of supernova 1987A. Might be worth comparing to the focus in new neutrino detectors that I had in my research and development work on them~\cite{EBubble2005},~\cite{MeadorsNevis2006}. Even with those detectors, however, astrophysically-oriented detectors could be cross-referenced against terrestrial generators. Bahcall's search for solar neutrinos, which were theoretical in 1964,~\cite{NeutrinosSolarTheoretical}, at least had the certainty that neutrinos had been detected from the Savannah River nuclear reactor. Yet when those solar neutrinos were detected, it a significant confirmation of nuclear theory. General relativity has been established by the 1913+16 pulsar~\cite{WeisbergTaylor2004} and would likely be much boosted by direct detection, and it might reach surprising new insights, analogous to neutrino oscillation found by looking at the solar neutrino spectrum.
 
-    End section by very rapidly deriving wave equation of electricity and magnetism, to lead by example for how we go about GR.
-    Note that all physics in min(action),
-    introduce metric as inner product
-    generally, coordinate transform good
+    %End section by very rapidly deriving wave equation of electricity and magnetism, to lead by example for how we go about GR.
+    %Note that all physics in min(action),
+    %introduce metric as inner product
+    %generally, coordinate transform good
 
-    Let us set geometric, natural units where $1/4\pi\epsilon \rightarrow 1$. 
-Let subscript commas indicate ordinary partial derivatives, semicolons covariant derivatives, and assume the Einstein summation convention.
-Greek indices indicate four dimensions, Latin indices three.
-A space is supplied with a metric tensor, $g_{\mu\nu}$.
+\subsection{Fields and curvature}
+\label{field_curvature_math}
 
-    Gravitation as described by general relativity is complex, so let us start with a simpler theory: electromagnetism. The same mathematics that predicts electromagnetic waves (light), which are our means of detecting gravitational waves in LIGO, can then be extended by analogy to gravitational waves.
-Modern physical theories are usually described as extremizing an action, $\mathcal{S}$. The action is defined as the integral, over space-time, of a Lagrangian density $\mathcal{L}$. To integrate, the integral generally requires a metric, $g$, which generalizes the notion of an inner product to curved space. In tensor form, $g = g_{\mu\nu}dx^\mu dx^\nu$. Writing the determinant of the metric as $|g| = \det(g)$, the action to be extremized (setting $\delta \mathcal{S}$ to 0) is
+    
+    Gravitation as described by general relativity is complex, so let us start with a simpler theory: electromagnetism. 
+The same mathematics that predicts electromagnetic waves (light), which are our means of detecting gravitational waves in LIGO, can then be extended by analogy to gravitational waves.
+This derivation is detailed so that the gravitational analogue can be expressed more simply.
+
+    Let us set geometric, natural units where $1/4\pi\epsilon \rightarrow 1$, $c \rightarrow 1$, $G \rightarrow 1$. 
+Greek indices indicate four dimensions, Latin indices three, unless specified otherwise.
+Assume the Einstein summation convention, e.g., $x_i y^i \equiv \Sigma_{i=0}^3 x_i y^i$
+Vectors are typical expressed by reference to index, e.g., a vector $v^\mu$, although implicitly a geometrical vector includes its basis vectors, $e^\mu$ such that $\textbf{v} = v^\mu e_\mu$.
+Note that when the vector indices are contravariant, the basis vectors are covariant.
+Let subscript commas indicate ordinary partial derivatives, i.e., $x_{,i}^j \equiv \partial_i x^j$.
+Semicolons indicate covariant derivatives (explained in Section~\ref{general_relativity}).
+Suppose we work in a space supplied with a metric tensor, $g_{\mu\nu}$, which acts as a bilinear operator (generalizing the inner product) to produce infinitesimal arclength $ds$ according to $ds^2 = g_{\mu \nu} dx^\mu dx^\nu$ for infinitesimal lengths $dx^\mu$ in the direction of, and dual to, basis vectors $e_\mu$. 
+The metric allows index raising and lowering, e.g., $g_{\mu \nu} x^\mu = x_\nu$, $g^{\mu \nu} x_\mu = x^\nu$.
+
+Vectors and matrices will be indicates by boldface, e.g., $\textbf{v} = v^\mu e_\mu$ is a vector, $\textbf{M} = M^{\mu\nu} e_\mu e_\mu $ is a matrix, whereas differential forms (dual to vectors) will be indicated by sans serif, e.g., $\textsf{v} = v_\mu dx^\mu$ is a 1-form, $\textsf{M} = M_{\mu\nu} dx^\mu \wedge dx^\nu$ is a differential 2-form.
+The wedge $\wedge$ is the exterior or Grassman product, the antisymmetric operator on differential forms that generalizes the cross product, e.g., $\textsf{v} \wedge \textbf{w} = -\textsf{w} \wedge \textsf{v}$.
+The Hodge star maps differential $k$-forms in an $n$-dimensional space to $n-k$-forms, e.g., in 3-space, $\star dx = dy \wedge dz$, $\star dy = dz \wedge dx$, $\star dz = dx \wedge dy$, or from a scalar $f$, $\star f = (f) dx \wedge dy \wedge dz$. 
+
+Index raising and lowering creates a homology between vectors and differential one-forms (for coordinate-free math, this is implicit).
+By itself, $d$ indicates the exterior derivative; $df$ of a scalar (0-form) $f$ is (modulo homology) its gradient, and $d\textsf{a}$ maps a $k$-form to a $(k+1)$-form, but $d^2$ is always 0.
+The divergence of a vector field $\textbf{X}$ is homologously given by $\star d \star \textbf{F}$, the curl by $\star d \textbf{F}$, and the Laplacian $\nabla^2$ (in 3-space) or d'Alembertian $\Box$ (in 4-space) of a scalar function are given by $\star d \star f$.
+Anti-symmetrization of indices can be indicated by subscripted square brackets (n.b., all differential forms are antisymmetric), symmetrization by parentheses.
+
+Modern physical theories are usually described as extremizing an action, $\mathcal{S}$. 
+The action is defined as the integral, over space-time, of a Lagrangian density $\mathcal{L}$. 
+To integrate, the integral generally requires a metric, $g_{\mu\nu}$.
+Writing the determinant of the metric as $|g| = \det(g_{\mu\nu})$, the action to be extremized (setting $\delta \mathcal{S}$ to 0) is
 
 \begin{equation}
 \mathcal{S} = \int \mathcal{L} \sqrt{-|g|} d^4 x.
 \end{equation} 
 
-The question then becomes how we can define the Lagrangian density for different physical theories. In both electromagnetism and gravitation, the quantity is a kind of curvature, contracted from respectively the Maxwell and Ricci tensors. As educated coordinate transformations make a great number of problems simpler -- a theme of the both the feedforward regression and the data analysis presented in later chapters of this thesis -- let us proceed with the derivation in a way that is manifestly covariant under transformations. If desired, one can then extend this treatment to electromagnetism in curved spacetime, such as under the influence of a gravitational wave. 
-
-    Electromagnetism is theoretically defined by a four-form $\textbf{A} = A_\mu \textbf{d} x^\mu$ where $A_\mu$ is a vector potential~\cite{MisnerThorneWheeler} given by $A_\mu = (\phi, -A_x, -A_y, -A_z)$~\cite{GriffithsE}. 
-In a given gauge $\phi$, the theory is `gauge symmetric' such that the addition of the differential form $\textbf{d} \phi$ to $\textbf{A}$ does not change the theory. 
-This changeless `symmetry', a symmetry in the group $U(1)$, arises because the physics of the theory can be described through the derived Maxwell field tensor $F_{\mu \nu}$, or curvature form $\textbf{F}$:
+The minus sign accounts for the $-1$ in the Minkowski metric, which physically corresponds to the hyperbolic transformation between space and time in special relativity.
+Whereas the usual $\mathbb{R}^3$ Euclidean metric below is $g_{ij}$, the Minkowski $\mathbb{R}^{1,3}$ metric is $\eta_{\mu\nu}$:
 
 \begin{eqnarray}
-\textbf{F} = d \textbf{A} = (\partial_\mu A_\nu) dx^\mu \wedge dx^\nu = \frac{1}{2} F_{\mu\nu} \textbf{d}x^\mu \wedge \textbf{d}x^\nu, \\
+g_{ij} = \mathbb{I}^3 = 
+\left[
+\begin{array}{ccc}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{array} \right],
+\textup{ }
+\eta_{\mu\nu} =
+\left[
+\begin{array}{cccc}
+-1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{array} \right].
+\end{eqnarray}
+
+
+The question then becomes how we can define the Lagrangian density for different physical theories. 
+In both electromagnetism and gravitation, the quantity is a kind of curvature, contracted from respectively the Maxwell and Ricci tensors. 
+This curvature, analogous to an energy term, is then extremized subject to a conserved source term: 4-current in electromagnetism, stress-energy and the cosmological constant in general relativity.
+
+As educated coordinate transformations make a great number of problems simpler -- a theme of the both the feedforward regression and the data analysis presented in later chapters of this thesis -- let us proceed with the derivation in a way that is manifestly covariant under transformations. If desired, one can then extend this treatment to electromagnetism in curved spacetime, such as under the influence of a gravitational wave. 
+
+    Electromagnetism is theoretically defined by a 4-form $\textsf{A} = A_\mu d x^\mu$ where $A^\mu$ is a vector potential~\cite{MisnerThorneWheeler} given by $A_\mu = (\phi, -A_x, -A_y, -A_z)$~\cite{GriffithsE}. 
+The scalar electric potential is $\phi$ and the magnetic vector potential is $A_i$.
+In a given gauge $\phi$, the theory is \textit{gauge symmetric} ($\phi$ invariant) such that the addition of the differential $d \phi$ to $\textsf{A}$ does not change the theory. 
+This changeless symmetry, in the group $U(1)$, arises because the physics of the theory can be described through the derived Maxwell field tensor $F_{\mu \nu}$, or curvature form $\textsf{F}$:
+
+\begin{eqnarray}
+\textsf{F} = d \textsf{A} = (\partial_\mu A_\nu) dx^\mu \wedge dx^\nu = \frac{1}{2} F_{\mu\nu} dx^\mu \wedge dx^\nu, \\
 F_{\mu \nu} = A_{\nu,\mu} - A_{\mu,\nu},
 \end{eqnarray}
 
-By the usual flat-space definitions of potential for an electric field $E$ and magnetic field $B$, $E_i = -\phi_{,i} - A_{i,0}$, $B_i = \epsilon_{ijk} \partial^j A^k = \epsilon_{ijk} A^{k, j}$ ($\epsilon_{ijk}$ is the Levi-Civita symbol). 
+By the usual flat-space definitions of potential for an electric field $E$ and magnetic field $B$, $E_i = -\phi_{,i} - A_{i,0}$, $B_i = \epsilon_{ijk} \partial^j A^k = \epsilon_{ijk} A^{k, j}$ ($\epsilon_{ijk}$ is the Levi-Civita symbol, $+1$ for even permutation, $-1$ for odd). 
 Electrodynamics in curved space are well-studied; many equations can be translated by replacing partial with covariant derivatives.
 Therefore, the Maxwell tensor in explicit coordinate form is
 
@@ -128,49 +180,50 @@ F_{\mu\nu} =
 \begin{array}{cccc}
 0 & E_x & E_y & E_z\\
 -E_x & 0 & -B_z & B_y \\
--E_y &  B_z & 0 & -B_x\\
+-E_y & B_z & 0 & -B_x\\
 -E_z & -B_y & B_x & 0
 \end{array} \right].
 \end{equation}
 
-Maxwell's theory then corresponds to the minimization of the action,
+\noindent Maxwell's theory then corresponds to the minimization of the action, finding $\delta S = 0$,
 
-\begin{equation}
-\mathcal{S} = \int \mathcal{L} d^4 x,
-\end{equation}
 
-\noindent for a Lagrangian $\mathcal{L}$ with a stress-energy term for the field itself constrained by an interaction with the current one-form $\textbf{J} = J_\mu \textbf{d} x^\mu$:
+\noindent for a Lagrangian $\mathcal{L}$ with a stress-energy term for the field itself constrained by an interaction with the current 1-form $\textsf{J} = J_\mu d x^\mu$:
 
-\begin{equation}
-\mathcal{L} = - \frac{1}{4} F^{\mu \nu} F_{\mu \nu} + J_\mu A^\mu, 
-\end{equation}
+\begin{eqnarray}
+\mathcal{L} = - \frac{1}{4} F^{\mu \nu} F_{\mu \nu} + J_\mu A^\mu,\\ 
+\delta \mathcal{S} = \delta \int \left( -\frac{1}{4} F^{\mu \nu} F_{\mu \nu} + J_\mu A^\mu \right) \sqrt{-|g|}d^4 x,
+\end{eqnarray}
 
-On a space that admits a Hodge dual, or star operator, $\star$, we can then define the dual to the Maxwell form, $\star \textbf{F}$. 
+A Hodge dual $\star$ then defines the dual to the Maxwell form, $\textsf{G} \equiv \star \textsf{F}$. 
 Maxwellian electromagnetism then is concisely described by extremizing the action to derive the following equations:
 
 \begin{eqnarray}
-d \textbf{F} = 0,\\
-d \star \textbf{F} = \star \textbf{J}.
+d \textsf{F} = 0,\\
+d \star \textsf{F} = 4 \pi \star \textsf{J}.
 \end{eqnarray}  
 
-Applied in flat space and substituting in the explicit coordinate form of the Maxwell tensor, the theory is easily expressed as four familiar first-order differential equations of the $E$ and $B$ fields (cf. the textbook by Jackson~\cite{JacksonEM}):
+Applied in flat space, where $g_{\mu \nu} = \eta_{\mu \nu}$, and substituting in the explicit coordinate form of the Maxwell tensor, the theory is easily expressed as four familiar first-order differential equations of the $\textbf{E}$ and $\textbf{B}$ fields in terms of electrical charge density $\rho$ and 3-current $J^i$ (cf. the textbook by Jackson~\cite{JacksonEM}), in (1 time)+(3 space)-dimensions:
  
-(CHECK SIGNS AND UNITS AND FONTS)
+%(CHECK SIGNS AND UNITS AND FONTS)
 
 \begin{eqnarray}
-E^i_{,i} = \rho,\\
-\epsilon^{ijk} E^{k,j} + B^i_{,0} = 0,\\
-B^i_{,i} = 0,\\
-\epsilon^{ijk} B^{k,j} - E^i_{,0} = J^i.
+\star d \star \textbf{E} = E^i_{,i} = \rho,\\
+\star d \textbf{E} + \partial_t \textbf{B} = \epsilon^{ijk} E^{k,j} + B^i_{,0} = 0,\\
+\star d \star \textbf{B} = B^i_{,i} = 0,\\
+\star d \textbf{B} - \partial_t \textbf{E} = \epsilon^{ijk} B^{k,j} - E^i_{,0} = 4 \pi J^i.
 \end{eqnarray}
 
-Substituting the definitions of $E$ and $B$ in terms of $\textbf{A}$ and specifying the \textit{Lorenz gauge}, where we choose any a vector potential for which $A^\nu_{,\nu} = 0$, 
+Returning to four full dimensions and specifying the \textit{Lorenz gauge}, where we choose any vector potential for which $\star d \star \textsf{A} = A^\nu_{,\nu} \equiv 0$, 
 
-\begin{equation}
-g^{\mu\nu}A^\sigma_{,\mu\nu} = -J^\sigma,
-\end{equation}
+\begin{eqnarray}
+\star d \star d \textsf{A} = -4\pi \textsf{J},\\
+g^{\mu\nu}A^\sigma_{,\mu\nu} = -4\pi J^\sigma,
+\end{eqnarray}
         
-\noindent often written as $\Box A^\sigma = -J^\sigma$ -- a wave equation. Our task now is to compare with general relativity to see whether a similar wave equation will emerge.
+\noindent with $\Box \equiv \partial_\mu \partial^\mu$, this is often written as $\Box A^\sigma = -4 \pi J^\sigma$ -- a wave equation. 
+This derivation has been laborious in order to establish how differential forms allow a cleaner expression of electromagnetism; the differential form equation also is covariant, accurate in curved spacetime.
+Our task now is to compare with general relativity to see whether a similar wave equation will emerge.
 
     \section{General relativity}
     \label{general_relativity}
