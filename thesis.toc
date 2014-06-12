@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {1.3}Astrophysical estimates}{16}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Sources: burst, continuous, inspiral and stochastic}{16}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Continuous waves from neutron stars}{17}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Laser Interferometer Gravitational-wave Observatories}{17}{section.1.4}
+\contentsline {section}{\numberline {1.4}Laser Interferometer Gravitational-wave Observatories}{18}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}From Weber bars to interferometry}{19}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Observatories, investigations, and enhancements}{19}{subsection.1.4.2}
 \contentsline {subsubsection}{Interferometer theory}{21}{section*.2}

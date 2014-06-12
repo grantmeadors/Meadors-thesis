@@ -160,7 +160,7 @@ This curvature, analogous to an energy term, is then extremized subject to a con
 
 As educated coordinate transformations make a great number of problems simpler -- a theme of the both the feedforward regression and the data analysis presented in later chapters of this thesis -- let us proceed with the derivation in a way that is manifestly covariant under transformations. If desired, one can then extend this treatment to electromagnetism in curved spacetime, such as under the influence of a gravitational wave. 
 
-    Electromagnetism is theoretically defined by a 4-form $\textsf{A} = A_\mu d x^\mu$ where $A^\mu$ is a vector potential~\cite{MisnerThorneWheeler} given by $A_\mu = (\phi, -A_x, -A_y, -A_z)$~\cite{GriffithsE}. 
+    Electromagnetism is theoretically defined by a 1-form $\textsf{A} = A_\mu d x^\mu$ where $A^\mu$ is a vector potential~\cite{MisnerThorneWheeler} given by $A_\mu = (\phi, -A_x, -A_y, -A_z)$~\cite{GriffithsE}. 
 The scalar electric potential is $\phi$ and the magnetic vector potential is $A_i$.
 In a given gauge $\phi$, the theory is \textit{gauge symmetric} ($\phi$ invariant) such that the addition of the differential $d \phi$ to $\textsf{A}$ does not change the theory. 
 This changeless symmetry, in the group $U(1)$, arises because the physics of the theory can be described through the derived Maxwell field tensor $F_{\mu \nu}$, or curvature form $\textsf{F}$:
@@ -228,10 +228,18 @@ Our task now is to compare with general relativity to see whether a similar wave
     \section{General relativity}
     \label{general_relativity}
 
-        General relativity (the mathematics). The ideal reference here is Sean Carroll's lecture notes on general relativity,~\cite{Carroll1997}, although I should also cite Will Farr's thesis~\cite{FarrThesis} if it is elegant. Farr is good for citing things like the Palatini action. Of course, I should also "dig down" and cite the original sources that they reference too, where applicable. Can also cite Misner, Thorne and Wheeler~\cite{MisnerThorneWheeler}.
+        Einstein's theory of General Relativity (hence GR) describes gravitation as a pseudoforce. 
+Unlike Newton, Einstein posits that objects always follow an extremized path -- a geodesic worldline -- if the curvature of spacetime is considered. 
+This supposition follows from the Fermat principle of least time (in turn, the inspiration for the least action principle, $\delta S = 0$).
+Likewise, the following discussion of gravitational wave interferomter is best understood in terms of phase or \textit{time-of-flight}.
+The curvature of spacetime is described by the Riemann tensor, $R^\mu_{\nu\rho\sigma}$, which is a solution to the Einstein field equations. 
+In Section~\ref{field_equations} the connection between these field equations and the Ricci scalar curvature will be clarified. 
+This Riemann tensor can be constructed from the Christoffel connection, $\Gamma^\mu_{\rho\sigma}$, which in turn can be expressed in terms of the metric, $g_{\mu \nu}$.
 
-            Introduce the metric $g$ here, but reinforce that it is not essential.
-Intro to GR -- right motivation is least action Ricci tensor, implying field equation and phase/time-of-flight implying interferometry.
+ Sean Carroll's lecture notes on general relativity and \textit{Gravitation} are essential references~\cite{Carroll1997,MisnerThorneWheeler}, consulting other sources for the Einstein-Hilbert/Palatini action~\cite{FarrThesis}.
+
+%            Introduce the metric $g$ here, but reinforce that it is not essential.
+%Intro to GR -- right motivation is least action Ricci tensor, implying field equation and phase/time-of-flight implying interferometry.
 
         \subsection{Symmetry and action principles}
         \label{principles}
