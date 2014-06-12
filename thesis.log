@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  12 JUN 2014 01:12
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  12 JUN 2014 01:16
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1257,4 +1257,4 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  33i,14n,36p,1664b,426s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (123 pages, 430364 bytes).
+Output written on thesis.dvi (123 pages, 430376 bytes).
