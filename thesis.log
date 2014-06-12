@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  12 JUN 2014 04:01
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  12 JUN 2014 15:02
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -431,7 +431,12 @@ Overfull \hbox (214.47348pt too wide) in paragraph at lines 53--53
  []
 
 
-Overfull \hbox (51.02864pt too wide) in paragraph at lines 56--56
+Overfull \hbox (270.33467pt too wide) in paragraph at lines 58--58
+ [][] [] []  
+ []
+
+
+Overfull \hbox (51.02864pt too wide) in paragraph at lines 60--60
  [][] [] []  
  []
 
@@ -1170,37 +1175,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
 
+File: ifo_schematic.eps Graphic file (type eps)
+<ifo_schematic.eps>
+Overfull \hbox (25.20895pt too wide) in paragraph at lines 71--72
+ [] 
+ []
+
 File: WSF_AA_fringes.eps Graphic file (type eps)
 <WSF_AA_fringes.eps>
-Overfull \hbox (25.24333pt too wide) in paragraph at lines 84--85
+Overfull \hbox (25.24333pt too wide) in paragraph at lines 95--96
  [] 
+ []
+
+[100] [101] [102]
+Overfull \hbox (45.8334pt too wide) detected at line 127
+\OT1/cmr/m/n/10 Table 6.1: []
+ []
+
+File: view-corner.eps Graphic file (type eps)
+<view-corner.eps>
+File: view-front.eps Graphic file (type eps)
+ <view-front.eps>
+File: view-top-plate-3.eps Graphic file (type eps)
+ <view-top-plate-3.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 157
+\OT1/cmr/m/n/10 Figure 6.5: []
  []
 
 File: WSF_under_construction.eps Graphic file (type eps)
 <WSF_under_construction.eps>
-Overfull \hbox (25.24333pt too wide) in paragraph at lines 103--104
+Overfull \hbox (25.24333pt too wide) in paragraph at lines 165--166
  [] 
  []
 
-[100] [101]
+[103] [104] [105]
 File: WSF_in_NY.eps Graphic file (type eps)
  <WSF_in_NY.eps>
-Overfull \hbox (25.24333pt too wide) in paragraph at lines 117--118
+Overfull \hbox (25.24333pt too wide) in paragraph at lines 181--182
  [] 
  []
 
 
-Overfull \hbox (49.88899pt too wide) detected at line 118
-\OT1/cmr/m/n/10 Figure 6.3: []
+Overfull \hbox (49.88899pt too wide) detected at line 182
+\OT1/cmr/m/n/10 Figure 6.7: []
  []
 
 File: WSF_me_NY.eps Graphic file (type eps)
 <WSF_me_NY.eps>
-Overfull \hbox (25.24333pt too wide) in paragraph at lines 136--137
+Overfull \hbox (25.24333pt too wide) in paragraph at lines 200--201
  [] 
  []
 
-[102] [103] [104]) [105]
+[106] [107]) [108]
 CHAPTER VII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1254,11 +1280,11 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 164.
 
-(./conclusion.tex [106
+(./conclusion.tex [109
 
-] [107]) (./thesis.bbl [108] [109
+] [110]) (./thesis.bbl [111] [112
 
-] [110] [111] [112]
+] [113] [114] [115]
 Underfull \hbox (badness 10000) in paragraph at lines 389--395
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1269,25 +1295,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--395
 r&
  []
 
-[113] [114]
+[116] [117]
 Underfull \hbox (badness 1803) in paragraph at lines 559--562
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-) [115]
+) [118]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4316 strings out of 256217
- 57331 string characters out of 1917094
- 152420 words of memory out of 1500000
- 7439 multiletter control sequences out of 10000+200000
+ 4331 strings out of 256217
+ 57583 string characters out of 1917094
+ 153030 words of memory out of 1500000
+ 7450 multiletter control sequences out of 10000+200000
  14931 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  33i,14n,36p,1664b,433s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (125 pages, 435632 bytes).
+Output written on thesis.dvi (128 pages, 442312 bytes).
