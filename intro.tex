@@ -75,7 +75,7 @@ In 1916, Einstein predicted gravitational waves.
 At last, gravity had a theoretical speed: the same as that of electromagnetism, that of light in the vacuum, $c$.
 In the linear approximation to the nonlinear theory of general relativity (henceforth GR), the waves were mathematically similar to the waves of electromagnetism, as will be shown in Section~\ref{general_relativity}.
 Yet the detectability of the waves, even in principle, would remain an open question for another half century. 
-Consult Misner, Thorne, and Wheeler's \textit{Gravitation}~\cite{MisnerThorneWheeler} and Sean Carroll's collected lectures~\cite{Carroll1997}, as well as other history books of the field for an account of the controversy.
+Consult Misner, Thorne, and Wheeler's \textit{Gravitation}~\cite{MisnerThorneWheeler} and Sean Carroll's lectures notes~\cite{Carroll1997}, as well as other history books of the field for an account of the controversy.
 Riles review~\cite{Riles2013}.
 \textit{Gravity's Shadow}~\cite{CollinsGravityShadow} for historical controversy,
 \textit{Gravity's Ghost}~\cite{CollinsGravityGhost} for why we do blind injections
@@ -102,25 +102,35 @@ Before deriving the answer to the detectability question, a contrast with the si
     Gravitation as described by general relativity is complex, so let us start with a simpler theory: electromagnetism. 
 The same mathematics that predicts electromagnetic waves (light), which are our means of detecting gravitational waves in LIGO, can then be extended by analogy to gravitational waves.
 This derivation is detailed so that the gravitational analogue can be expressed more simply.
+Definitions follow Carroll~\cite{Carroll1997}
 
     Let us set geometric, natural units where $1/4\pi\epsilon \rightarrow 1$, $c \rightarrow 1$, $G \rightarrow 1$. 
 Greek indices indicate four dimensions, Latin indices three, unless specified otherwise.
 Assume the Einstein summation convention, e.g., $x_i y^i \equiv \Sigma_{i=0}^3 x_i y^i$
+Anti-symmetrization of indices can be indicated by subscripted square brackets (n.b., all differential forms are antisymmetric), symmetrization by parentheses.
+
 Vectors are typical expressed by reference to index, e.g., a vector $v^\mu$, although implicitly a geometrical vector includes its basis vectors, $e^\mu$ such that $\textbf{v} = v^\mu e_\mu$.
 Note that when the vector indices are contravariant, the basis vectors are covariant.
 Let subscript commas indicate ordinary partial derivatives, i.e., $x_{,i}^j \equiv \partial_i x^j$.
-Semicolons indicate covariant derivatives (explained in Section~\ref{general_relativity}).
+Semicolons will indicate covariant derivatives (explained in Section~\ref{general_relativity}), which reduce to commas (partial derivatives) in flat space. 
 Suppose we work in a space supplied with a metric tensor, $g_{\mu\nu}$, which acts as a bilinear operator (generalizing the inner product) to produce infinitesimal arclength $ds$ according to $ds^2 = g_{\mu \nu} dx^\mu dx^\nu$ for infinitesimal lengths $dx^\mu$ in the direction of, and dual to, basis vectors $e_\mu$. 
 The metric allows index raising and lowering, e.g., $g_{\mu \nu} x^\mu = x_\nu$, $g^{\mu \nu} x_\mu = x^\nu$.
 
 Vectors and matrices will be indicates by boldface, e.g., $\textbf{v} = v^\mu e_\mu$ is a vector, $\textbf{M} = M^{\mu\nu} e_\mu e_\mu $ is a matrix, whereas differential forms (dual to vectors) will be indicated by sans serif, e.g., $\textsf{v} = v_\mu dx^\mu$ is a 1-form, $\textsf{M} = M_{\mu\nu} dx^\mu \wedge dx^\nu$ is a differential 2-form.
-The wedge $\wedge$ is the exterior or Grassman product, the antisymmetric operator on differential forms that generalizes the cross product, e.g., $\textsf{v} \wedge \textbf{w} = -\textsf{w} \wedge \textsf{v}$.
-The Hodge star maps differential $k$-forms in an $n$-dimensional space to $n-k$-forms, e.g., in 3-space, $\star dx = dy \wedge dz$, $\star dy = dz \wedge dx$, $\star dz = dx \wedge dy$, or from a scalar $f$, $\star f = (f) dx \wedge dy \wedge dz$. 
+The wedge $\wedge$ is the exterior or Grassman product, the antisymmetric operator on differential forms that generalizes the cross product, e.g., for the wedge of two 1-forms, $\textsf{v} \wedge \textbf{w} = -\textsf{w} \wedge \textsf{v}$.
+Generally, for $p$-form $\textsf{A}$, $q$-form $\textsf{B}$, $(A \wedge B)_{\mu_1 \cdots \mu_{p+q}} = (p+q)!/(p!q!) A_{[\mu_1\cdots\mu_p} B_{\mu_{p+1} \cdots \mu_{p+q} ]}$. 
+The Levi-Civita symbol is $\epsilon_{\mu_1 \cdots \mu_n}$, in $\mathbb{R}^n$, $+n$ for even permutation, $-1$ for odd, $0$ otherwise.
+The Hodge star maps differential $k$-forms in an $n$-dimensional space to $n-k$-forms, e.g., in 3-space, $\star dx = dy \wedge dz$, $\star dy = dz \wedge dx$, $\star dz = dx \wedge dy$, or from a scalar $f$, $\star f = (f) dx \wedge dy \wedge dz$, generally in $n$-space, $(\star \textsf{A})_{\mu_1 \cdots \mu_{n-p}} = 1/(p!) e^{\nu_1 \cdots \nu_p}_{\mu \cdots \mu_{n-p}} \textsf{A}_{\nu_1 \cdots \nu_p}$.
 
-Index raising and lowering creates a homology between vectors and differential one-forms (for coordinate-free math, this is implicit).
+Index raising and lowering creates a homology between vectors and differential one-forms, $e_\mu \leftrightarrow dx^\mu$ (for coordinate-free math, this is implicit).
 By itself, $d$ indicates the exterior derivative; $df$ of a scalar (0-form) $f$ is (modulo homology) its gradient $\nabla$, and $d\textsf{a}$ maps a $k$-form to a $(k+1)$-form, but $d^2$ is always 0.
+Precisely, $(d\textsf{A})_{\mu_1 \cdots \mu_{p+1}} = (p+1) \partial_{[\mu_1} \textsf{A}_{\mu_2 \cdots \mu_{p+1}]}$. 
+
+
 The divergence $\nabla \cdot$ of a vector field $\textbf{X}$ is homologously given by $\star d \star \textbf{X}$, the curl $\nabla \times$ by $\star d \textbf{X}$, and the Laplacian $\nabla^2$ (in 3-space) or d'Alembertian $\Box$ (in 4-space) of a scalar function are given by $\star d \star f$.
-Anti-symmetrization of indices can be indicated by subscripted square brackets (n.b., all differential forms are antisymmetric), symmetrization by parentheses.
+Covariant exterior derivatives will be noted by $D \textsf{v} = d \textsf{v} + \omega \wedge \alpha$ for a differential form $\textsf{v}$ and a \textit{connection} $\omega$ (Section~\ref{general_relativity}); this derivative reduces to $d\textsf{v}$ in flat space.
+
+The usual, coordinate basis vectors set $e_\mu = \partial_\mu$.
 
 Modern physical theories are usually described as extremizing an action, $\mathcal{S}$. 
 The action is defined as the integral, over space-time, of a Lagrangian density $\mathcal{L}$. 
@@ -153,6 +163,8 @@ g_{ij} = \mathbb{I}^3 =
 \end{array} \right].
 \end{eqnarray}
 
+Given a Minkowski metric $\eta_{\mu' \nu'}$, a curved 4-space $\mathbb{R}^{1,3}$ metric can be written in terms of \textit{vielbeins} $e^{\mu'}_{\mu}$, $e^{\nu'}_{\nu}$ such that $g_{\mu\nu} = e^{\mu'}_{\mu} e^{\nu'}_{\nu} \eta_{\mu' \nu'}$.
+
 
 The question then becomes how we can define the Lagrangian density for different physical theories. 
 In both electromagnetism and gravitation, the quantity is a kind of curvature, contracted from respectively the Maxwell and Ricci tensors. 
@@ -170,7 +182,7 @@ This changeless symmetry, in the group $U(1)$, arises because the physics of the
 F_{\mu \nu} = A_{\nu,\mu} - A_{\mu,\nu},
 \end{eqnarray}
 
-By the usual flat-space definitions of potential for an electric field $E$ and magnetic field $B$, $E_i = -\phi_{,i} - A_{i,0}$, $B_i = \epsilon_{ijk} \partial^j A^k = \epsilon_{ijk} A^{k, j}$ ($\epsilon_{ijk}$ is the Levi-Civita symbol, $+1$ for even permutation, $-1$ for odd). 
+By the usual flat-space definitions of potential for an electric field $E$ and magnetic field $B$, $E_i = -\phi_{,i} - A_{i,0}$, $B_i = \epsilon_{ijk} \partial^j A^k = \epsilon_{ijk} A^{k, j}$. 
 Electrodynamics in curved space are well-studied; many equations can be translated by replacing partial with covariant derivatives.
 Therefore, the Maxwell tensor in explicit coordinate form is
 
@@ -217,8 +229,8 @@ Applied in flat space, where $g_{\mu \nu} = \eta_{\mu \nu}$, and substituting in
 Returning to four full dimensions and specifying the \textit{Lorenz gauge}, where we choose any vector potential for which $\star d \star \textsf{A} = A^\nu_{,\nu} \equiv 0$, 
 
 \begin{eqnarray}
-\star d \star d \textsf{A} = -4\pi \textsf{J},\\
-g^{\mu\nu}A^\sigma_{,\mu\nu} = -4\pi J^\sigma,
+\star d \star d \textsf{A} = -4\pi \textsf{J},
+%g^{\mu\nu}A^\sigma_{,\mu\nu} = -4\pi J^\sigma,
 \end{eqnarray}
         
 \noindent with $\Box \equiv \partial_\mu \partial^\mu$, this is often written as $\Box A^\sigma = -4 \pi J^\sigma$ -- a wave equation. 
@@ -235,8 +247,9 @@ Likewise, the following discussion of gravitational wave interferomter is best u
 The curvature of spacetime is described by the Riemann tensor, $R^\mu_{\nu\rho\sigma}$, which is a solution to the Einstein field equations. 
 In Section~\ref{field_equations} the connection between these field equations and the Ricci scalar curvature will be clarified. 
 This Riemann tensor can be constructed from the Christoffel connection, $\Gamma^\mu_{\rho\sigma}$, which in turn can be expressed in terms of the metric, $g_{\mu \nu}$.
+Whereas electromagnetism arises from $U(1)$ unitary Lie group gauge symmetries, general relativity arises from $GL(4, \mathbb{R}$ general linear Lie group symmetries.
 
- Sean Carroll's lecture notes on general relativity and \textit{Gravitation} are essential references~\cite{Carroll1997,MisnerThorneWheeler}, consulting other sources for the Einstein-Hilbert/Palatini action~\cite{FarrThesis}.
+ Carroll and \textit{Gravitation} are essential references~\cite{Carroll1997,MisnerThorneWheeler}, consulting other sources for the Einstein-Hilbert/Palatini action~\cite{FarrThesis}.
 
 %            Introduce the metric $g$ here, but reinforce that it is not essential.
 %Intro to GR -- right motivation is least action Ricci tensor, implying field equation and phase/time-of-flight implying interferometry.
@@ -244,7 +257,7 @@ This Riemann tensor can be constructed from the Christoffel connection, $\Gamma^
         \subsection{Symmetry and action principles}
         \label{principles}
 
-            Like electricity and magnetism, GR is the product of symmetry, action. This is the right place for~\cite{Carroll1997}.
+            Like electricity and magnetism, GR is the product of symmetry, action. 
 
 
         \subsection{Derivation of field equations}
@@ -271,8 +284,30 @@ P = \frac{G}{5c^5}\left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangl
 \end{eqnarray}
 
 Let us demonstrate this result and also derive field equations from extremized curvature.
-
 		It's all about the Ricci tensor and the Einstein-Hilbert action. This might be the right place for~\cite{FarrThesis} and other sources.
+
+
+
+Obtain the action from Ricci scalar curvature $R$,
+
+\begin{equation}
+\delta \mathcal{S} = \delta \int \left( R \right) \sqrt{-|g|}d^4 x,
+\end{equation}
+
+Given $R = R\mu_\nu$ from the Maurer-Cartan structure equation with a connection $\omega$,
+
+\begin{eqnarray}
+\textsf{R}^\mu_\nu = d\omega^\mu_\nu + \omega^\mu_\rho \wedge \omega^\mu_\nu, \\
+\omega = \mu^{\rho'}_{\sigma'} = e^{\alpha'}_{\nu} e^{\lambda}_{\beta'} \Gamma^{\nu}_{\mu\lambda} - e^{\lambda}_{\beta'} \partial_{\mu} e^{\alpha'}_{\lambda}. 
+\end{eqnarray}
+
+The wave, parametrized by path $x^\mu (\lambda)$ follows the usual geodesic equation,
+
+\begin{equation}
+D_\lambda \partial_\lambda x^\mu = 0
+\end{equation}
+
+
 
         \subsection{Radiation from quadrupoles}
         \label{radiation}
