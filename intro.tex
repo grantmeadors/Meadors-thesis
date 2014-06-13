@@ -39,7 +39,7 @@ Moreover, there has been much interest in the question of whether the BICEP2~\ci
 
 	\begin{figure}
 	\begin{center}
-	\includegraphics[height=120mm, width=160mm]{500px-PSR_B1913+16_period_shift_graph.eps}
+	\includegraphics[height=111mm, width=148mm]{500px-PSR_B1913+16_period_shift_graph.eps}
 	\caption{The Hulse-Taylor binary, orbital period change over time consistent with emission of gravitational radiation from its system}
 	\label{Hulse-Taylor_binary}
 	\end{center}
@@ -55,7 +55,15 @@ As the field progresses toward first detection and beyond to astronomy, the astr
 		Gravitational waves (henceforth also abbreviated GW) searches presently focus on four distinct types of cosmic sources.
 This categorization of sources was presented in the 1983 LIGO Blue Book proposal and has since guided research focus~\cite{CollinsGravityShadow}. 
 
-This thesis concentrates on continuous waves, which are sine waves -- perhaps modulated by orbital motion, spin-up or spin-down. Continuous waves are most likely to be detectable from neutron stars. Given a sufficiently large ellipticity, which might be on the order of $\epsilon \approx 10^{-6}$ [CITE] or smaller for a neutron star rotating on the order of 1 kHz, a deformation of the crust would radiate sufficient gravitational radiation to be a plausibly-detectable source. Indeed, the radiation would rapidly deplete the rotational energy of the neutron star [CITE], which is why binary systems, where the neutron star could be recycled and spun-up by a partner, prove a promising target [CITE]. Scorpius X-1 offers a canonical case, although our discussion of the TwoSpect analysis will elaborate the abundance of other low-mass X-ray binary (LMXB) systems of interest. Given the paucity of information on the interiors of collapsed stellar remnants, direct detection of gravitational waves from neutron stars could prove informative. We might infer details favoring one equation of state [CITE], might extract parameters suggesting the existence of quark stars or gravitars [CITE], and will have an unparalleled peek into the interior of the densest stable three-dimensional objects in the universe. Their simple waveforms might even facilitate the calibration of other types of gravitational wave data [CITE]. From any source, continuous waves are a conceptually-elegant and astronomically-enticing target.
+This thesis concentrates on continuous waves, which are sine waves -- perhaps modulated by orbital motion, spin-up or spin-down. 
+Continuous waves are most likely to be detectable from neutron stars. 
+Given a sufficiently large ellipticity, which might be on the order of $\epsilon \approx 10^{-7}$~\cite{Owen2005} or smaller for a neutron star rotating on the order of 1 kHz, a deformation of the crust would radiate sufficient gravitational radiation to be a plausibly-detectable source. 
+Indeed, the radiation would rapidly deplete the rotational energy of the neutron star [CITE], which is why binary systems, where the neutron star could be recycled and spun-up by a partner, prove a promising target~\cite{PapaloizouPringle1978,Wagoner1984}. 
+Scorpius X-1 offers a canonical case, although our discussion of the TwoSpect analysis will elaborate the abundance of other low-mass X-ray binary (LMXB) systems of interest. 
+Given the paucity of information on the interiors of collapsed stellar remnants, direct detection of gravitational waves from neutron stars could prove informative. 
+Just as we might infer details from neutron star binary coalescences favoring one equation of state~\cite{Lattimer2007,Read2009}, we might also extract parameters from continuous waves suggesting the existence of quark stars or gravitars~\cite{Owen2005}, and will have an unparalleled peek into the interior of the densest stable three-dimensional objects in the universe. 
+Their simple waveforms might even facilitate the calibration of other types of gravitational wave data [CITE]. 
+From any source, continuous waves are a conceptually-elegant and astronomically-enticing target.
 
 		Yet other sources of gravitational waves, as will be discussed in more detail later, have a comparable pull on our attention. Oft discussed, inspirals or compact binary coalescences occur when two stellar remnants draw nearer in their orbits, radiating gravitational radiation and finally merging in a titanic release of energy. While sometimes invisible -- the merging of black holes in short-hard gamma ray burts (GRBs) proving an exception -- these events compete eagerly with supernovae as the most explosive in the modern universe. Were we to detect them directly with gravitational waves, we would see their waveforms, which in turn can be predicted through post-Newtonian approximation and numerical relativity. As the amplitude would diminish linearly with distance, we would then have standard candles or 'sirens' by which to calibrate and measure the universe. Advanced LIGO may prove sensitive to neutron star-neutron star and stellar mass black hole-neutron star mergers, and, if low-frequency sensitivity is sufficient and the sources exist, to intermediate-mass black holes. Space-based observatories such as the longsuffering Laser Interferometer Space Antenna (LISA), the DeciHertz Gravitational-wave Observatory (DECIGO), Big Bang Observer (BBO) and proposed others could detect supermassive black hole mergers. If fortunate, they would see a low-frequency noise floor due not to seismic vibration, as in LIGO, but to white dwarf binaries throughout the galaxy. Since the waveforms are well-predicted, we could even investigate deviations from general relativity, perhaps seeing new physics in the ringdown of black holes.
 
@@ -307,7 +315,7 @@ R_{\mu} - \frac{1}{2} R g_{\mu\nu} + \Lambda g_{\mu\nu} = 8 \pi T_{\mu\nu}.
 \end{equation}
 
 \noindent These are nonlinear, but when linearized, there is indeed a wave solution: $\Box h_{\mu\nu} = 0$~\cite{Carroll1997}
-The wave, parametrized by path $x^\mu (\lambda)$ follows the usual geodesic equation, where the covariant derivative by $\mu$ of $V^\nu$ is defined by $\nabla_mu = (\partial_\mu V^\nu + \Gamma^\nu_{\mu\lambda} V^\nu)$ and along a path by $D_\lambda = dx^\mu_\lambda \nabla_\mu$,
+The wave, parametrized by path $x^\mu (\lambda)$ follows the usual geodesic equation, where the covariant derivative by $\mu$ of $V^\nu$ is defined by $\nabla_\mu V^\nu = (\partial_\mu V^\nu + \Gamma^\nu_{\mu\lambda} V^\nu)$ and along a path by $D_\lambda = dx^\mu_\lambda \nabla_\mu$,
 
 \begin{equation}
 D_\lambda \partial_\lambda x^\mu = 0
@@ -328,9 +336,9 @@ D_\lambda \partial_\lambda x^\mu = 0
         \subsection{Sources: burst, continuous, inspiral and stochastic}
         \label{source_types}
 
-            Describe the four types of sources: burst, continuous, inspiral and stochastic.
+            %Describe the four types of sources: burst, continuous, inspiral and stochastic.
 
-            UNLIKE the earlier introduction, which should be able why the sources are interesting, this should summarize, more briefly, the current state of the art in each search. Refers to KEITH's REVIEW PAPER as needed~\cite{Riles2013}.
+            Let us summarize, more briefly, the current state of the art in each search, describing the four types of searches: burst, continuous, inspiral, and stochastic, with reference to a review by Riles~\cite{Riles2013}.
 
 		Mostly above, but clarify exact how much we should see. Cite the 2009 Nature stochastic paper et al~\cite{LIGOStochasticNature2009}. The importance to early universe cosmology was initially handled by Maggiore~\cite{Maggiore2000}. Before that, of course, once can reference the Allen and Romano methods paper~\cite{Allen1999}, anything interesting from Nick Fotopoulos's thesis~\cite{FotopoulosThesis}, and the various mid-2000s stochastic work that I was familiar with~\cite{Abbott2006},~\cite{Abbott2007}. Note the interesting meaning of anisotropies~\cite{Allen1997} and point out how not only Stefan's radiometer search can find them but how it can be adapted to many other purposes, such as spherical harmonics, which is useful for the cosmic microwave background~\cite{Muciaccia1997} and was briefly my work~\cite{MeadorsCaltech2007} and the Scorpius X-1 search; Stefan's canonical radiometer reference is in Classical Quantum Gravity~\cite{Radiometer2006}.
 
@@ -340,7 +348,7 @@ D_\lambda \partial_\lambda x^\mu = 0
             Continuous -- specifically, binary neutron stars and rate predictions. Describe archetypical search methods as in the 1998 analysis paper~\cite{Jaranowski1998}, the Abbott et al paper~\cite{LSCPulsar2006}, including StackSlide~\cite{LSCPulsarS4}, Einstein at Home~\cite{LSCEinsteinHome2009}, and the most interesting to date from Michigan, Vladimir's PowerFlux~\cite{LSCPowerFlux2009}. Discuss earlier results from the earliest period~\cite{Abbott2004} and an early search for Scorpius X-1~\cite{AbbottPulsar2006}. Reinhard Prix is probably another good source~\cite{Prix2006}.
 
 		Rates go in here.
-        The emission mechanism of gravitational radiation with amplitude $h_0$ from a neutron star is is from an elliptical deformation, ellipticity $\epsilon$, on its surface, leading to a quadrupole moment $I$~\cite{LSCPulsar2006} and thus emission at frequency $f = 2\nu$, twice the neutron star spin frequency $\nu$:
+        The emission mechanism of gravitational radiation with amplitude $h_0$ from a neutron star is is from an elliptical deformation, ellipticity $\epsilon$, on its surface, leading to a quadrupole moment $I$~\cite{Zimmermann1979,LSCPulsar2006} and thus emission at frequency $f = 2\nu$, twice the neutron star spin frequency $\nu$:
 
         \begin{eqnarray}
         \epsilon = \frac{I_{xx} - I_{yy}}{I_zz}, \\
@@ -356,8 +364,9 @@ Excepting the case of torque balance in low-mass X-ray binary systems, neutron s
 
 	\begin{figure}
 	\begin{center}
-	\includegraphics[height=120mm, width=160mm]{neutron_star_structure.eps}
-	\caption{Hypothetical internal structure of a neutron star (Citation: \url{http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron_star_structure.html}) CITE? Possibly original Frank Shu? Fred would probably know, being a student of Frank}
+	\includegraphics[height=111mm, width=148mm]{neutron_star_structure.eps}
+	\caption{Hypothetical internal structure of a neutron star (Citation: \url{http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron_star_structure.html})} 
+        %CITE Possibly original Frank Shu? Fred would probably know, being a student of Frank
 	\label{neutron_star_structure}
 	\end{center}
 	\end{figure}
@@ -424,7 +433,7 @@ T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \propto \int_0^{\frac{2L_y}{c}}
 
 	\begin{figure}
 	\begin{center}
-	\includegraphics[height=120mm, width=160mm]{Screen_shot_2010-07-21_at_042516.eps}
+	\includegraphics[height=111mm, width=148mm]{Screen_shot_2010-07-21_at_042516.eps}
 	\caption{Screenshot of MEDM control panel}
 	\label{ScreenshotMEDM}
 	\end{center}
@@ -443,7 +452,7 @@ T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \propto \int_0^{\frac{2L_y}{c}}
 
 	\begin{figure}
 	\begin{center}
-	\includegraphics[height=120mm, width=160mm]{servo_loop.eps}
+	\includegraphics[height=111mm, width=148mm]{servo_loop.eps}
 	\caption{Real-time servo loop diagram}
 	\label{servo_loop_realtime}
 	\end{center}
@@ -451,7 +460,7 @@ T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \propto \int_0^{\frac{2L_y}{c}}
 
 	\begin{figure}
 	\begin{center}
-	\includegraphics[height=120mm, width=160mm]{newNOISEfilter.eps}
+	\includegraphics[height=111mm, width=148mm]{newNOISEfilter.eps}
 	\caption{Real-time work on a LIGO noise filter}
 	\label{newNOISEfilter}
 	\end{center}
@@ -459,7 +468,7 @@ T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \propto \int_0^{\frac{2L_y}{c}}
 
 	\begin{figure}
 	\begin{center}
-	\includegraphics[height=120mm, width=160mm]{2011-03-08_filter-01.eps}
+	\includegraphics[height=111mm, width=148mm]{2011-03-08_filter-01.eps}
 	\caption{Early work on post-facto noise filtering}
 	\label{filter_early}
 	\end{center}

@@ -408,6 +408,12 @@ S.~Klimenko.
 K.~Kuroda et~al.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 27(084004), 2010.
 
+\bibitem{Lattimer2007}
+J.M. Lattimer and M.~Prakash.
+\newblock Neutron star observations: prognosis for equation of state
+  constraints.
+\newblock {\em Physics reports}, 442:109.
+
 \bibitem{CDAnderson}
 R.B. Leighton, C.D. Anderson, and A.J. Seriff.
 \newblock The energy spectrum of the decay particles and the mass and spin of
@@ -492,6 +498,12 @@ P.F. Muciaccia, P.~Natoli, and N.~Vittorio.
 C.D. Ott.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 26(063001), 2009.
 
+\bibitem{Owen2005}
+B.J. Owen.
+\newblock Maximum elastic deformations of compact stars with exotic equations
+  of state.
+\newblock {\em Phys. {R}ev. {L}ett.}, 95:211101, 2005.
+
 \bibitem{PapaloizouPringle1978}
 J.~Papaloizou and J.E. Pringle.
 \newblock Gravitational radiation and the stability of rotating stars.
@@ -519,6 +531,12 @@ M.~Rakhmanov, R.L.~Jr. Savage, D.H. Reitze, and D.B. Tanner.
 \newblock Dynamic resonance of light in fabry-perot cavities.
 \newblock Technical Report P010013-00-D, Laser Interferometer Gravitational
   Wave Observatory, January 2001.
+
+\bibitem{Read2009}
+J.S. Read et~al.
+\newblock Measuring the neutron star equation of state with gravitational wave
+  observations.
+\newblock {\em Phys. {R}ev. {D}}, 79:124033.
 
 \bibitem{Riles2013}
 K.~Riles.
@@ -641,5 +659,11 @@ C.M. Will.
 \bibitem{Willke2002}
 B.~Willke et~al.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 19:1377--1387, 2002.
+
+\bibitem{Zimmermann1979}
+M.~Zimmermann and E.~Szedenits, Jr.
+\newblock Gravitational waves from rotating and precessing rigid bodies: simple
+  models and applications to pulsars.
+\newblock {\em Phys. {R}ev. {D}}, 20:351, 1979.
 
 \end{thebibliography}
