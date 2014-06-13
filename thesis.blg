@@ -37,8 +37,14 @@ I was expecting a `,' or a `}'---line 2471 of file bibliography.bib
  : year = "2014-03-21"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2587 of file bibliography.bib
+ : 
+ : year = "2010"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--empty title in LIGOCal2010
 Warning--empty title in LSCPulsarS4
+Warning--empty year in AbbottScoX12007
 Warning--empty title in LSCPulsar2006
 Warning--empty title in LSCEinsteinHome2009
 Warning--empty title in LSCPowerFlux2009
@@ -59,50 +65,52 @@ Warning--empty year in Lattimer2007
 Warning--empty title in Lindblom1995
 Warning--empty title in McKee1977
 Warning--empty title in Ott2009
+Warning--empty year in Owen1998
+Warning--empty year in Punturo2010
 Warning--empty year in Read2009
 Warning--empty title in Sathyaprakash2009
 Warning--empty year in Weber1960
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 121 entries,
+You've used 125 entries,
             2118 wiz_defined-function locations,
-            1200 strings with 20956 characters,
-and the built_in function-call counts, 33183 in all, are:
-= -- 3102
-> -- 1857
+            1220 strings with 21463 characters,
+and the built_in function-call counts, 34349 in all, are:
+= -- 3214
+> -- 1903
 < -- 14
-+ -- 751
-- -- 620
-* -- 2329
-:= -- 6116
-add.period$ -- 343
-call.type$ -- 121
-change.case$ -- 606
++ -- 770
+- -- 634
+* -- 2410
+:= -- 6317
+add.period$ -- 355
+call.type$ -- 125
+change.case$ -- 622
 chr.to.int$ -- 0
-cite$ -- 148
-duplicate$ -- 1226
-empty$ -- 2333
-format.name$ -- 620
-if$ -- 6560
+cite$ -- 155
+duplicate$ -- 1270
+empty$ -- 2431
+format.name$ -- 634
+if$ -- 6798
 int.to.chr$ -- 0
-int.to.str$ -- 121
-missing$ -- 99
-newline$ -- 587
-num.names$ -- 244
-pop$ -- 574
+int.to.str$ -- 125
+missing$ -- 103
+newline$ -- 607
+num.names$ -- 252
+pop$ -- 588
 preamble$ -- 1
-purify$ -- 532
+purify$ -- 544
 quote$ -- 0
-skip$ -- 848
+skip$ -- 879
 stack$ -- 0
-substring$ -- 1135
-swap$ -- 119
+substring$ -- 1222
+swap$ -- 123
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 456
-warning$ -- 27
-while$ -- 279
-width$ -- 124
-write$ -- 1277
-(There were 7 error messages)
+type$ -- 472
+warning$ -- 30
+while$ -- 291
+width$ -- 128
+write$ -- 1318
+(There were 8 error messages)

@@ -40,6 +40,12 @@ B.~Abbott, R.~Abbott, R.~Adhikari, J.~Agresti, P.~Ajith, B.~Allen, R.~Amin,
   {LIGO}.
 \newblock Technical Report astro-ph/0608606v1, arXiv, 2006-08-28.
 
+\bibitem{AbbottScoX12007}
+B.~Abbott et~al.
+\newblock Searches for periodic gravitational waves from unknown isolated
+  sources and scorpius x-1: results from the second ligo science run.
+\newblock {\em Phys. {R}ev. {D}}, 76:082001.
+
 \bibitem{LIGOFirst2004}
 B.~Abbott et~al.
 \newblock Detector description and performance for the first coincidence
@@ -504,6 +510,11 @@ B.J. Owen.
   of state.
 \newblock {\em Phys. {R}ev. {L}ett.}, 95:211101, 2005.
 
+\bibitem{Owen1998}
+B.J. Owen et~al.
+\newblock Gravitational waves from hot young rapidly rotating neutron stars.
+\newblock {\em Phys. {R}ev. {D}}, 58:084020.
+
 \bibitem{PapaloizouPringle1978}
 J.~Papaloizou and J.E. Pringle.
 \newblock Gravitational radiation and the stability of rotating stars.
@@ -518,6 +529,12 @@ P.C. Peters and J.~Matthews.
 R.~Prix.
 \newblock {\em Neutron stars and pulsars}, page 651.
 \newblock Springer, Berlin, 2009.
+
+\bibitem{Punturo2010}
+M.~Punturo et~al.
+\newblock The {E}instein {T}elescope: a third-generation gravitational wave
+  observatory.
+\newblock {\em Class. {Q}uant. {G}rav.}, 27:194002.
 
 \bibitem{ResponsesFP}
 M.~Rakhmanov and R.~Savage.
@@ -556,6 +573,11 @@ B.S. Sathyaprakash and B.S. Schutz.
 P.~Saulson.
 \newblock {\em Fundamentals of interferometric gravitational wave detectors}.
 \newblock World Scientific, Singapore, 1994.
+
+\bibitem{Schutz1989}
+B.F. Schutz.
+\newblock Gravitational wave sources and their detectability.
+\newblock {\em Class. {Q}uant. {G}rav.}, 6:1761, 1989.
 
 \bibitem{SiggFreq1997}
 D.~Sigg.
