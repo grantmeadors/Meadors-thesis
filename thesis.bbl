@@ -157,6 +157,11 @@ E.~Black.
 E.~Black.
 \newblock {\em Amer. J. Phys.}, 69(79), 2001.
 
+\bibitem{Boas}
+M.~Boas.
+\newblock {\em Mathematical methods in the physical sciences}.
+\newblock Wiley, second edition, 1983.
+
 \bibitem{Brady1998}
 P.R. Brady, T.~Creighton, C.~Cutler, and B.F. Schutz.
 \newblock Searching for periodic sources with {LIGO}.
@@ -178,6 +183,11 @@ J.A.R Caldwell and J.P Ostriker.
 S.M. Carroll.
 \newblock Lecture notes on general relativity.
 \newblock Technical Report gr-qc/9712019v1, arXiv, 1997-12-03.
+
+\bibitem{CasellaBerger2001}
+G.~Casella and R.L. Berger.
+\newblock {\em Statistical inference}.
+\newblock Cengage, Stamford, 2nd edition, 2001.
 
 \bibitem{Caves1980}
 C.M. Caves.
@@ -375,6 +385,11 @@ S.~Hild, H.~Grote, J.~Degallaix, S.~Chelkowski, K.~Danzmann, A.~Freise,
   B.~Willke.
 \newblock {DC}-readout of a signal-recycled gravitational wave detector.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 26(5):055012, 2009.
+
+\bibitem{HorowitzHill1989}
+P.~Horowitz and W.~Hill.
+\newblock {\em The art of electronics}.
+\newblock Cambridge, Cambridge, 2nd edition, 1989.
 
 \bibitem{HulseTaylor1975}
 R.A. Hulse and J.H. Taylor.
@@ -584,6 +599,11 @@ D.~Sigg.
 \newblock Frequency {R}esponse of the {LIGO} {I}nterferometer.
 \newblock Technical Report T970084, LIGO, 1997.
 
+\bibitem{Simpson}
+R.~Simpson.
+\newblock {\em Introductory electronics: for scientists and engineers}.
+\newblock Allyn and Bacon, Upper Saddle River, N.J., 1987.
+
 \bibitem{SmithThesis}
 Nicol\'{a}s~{de Mateo} Smith-Lefebvre.
 \newblock {\em Techniques for improving the readout sensitivity of
@@ -594,6 +614,12 @@ Nicol\'{a}s~{de Mateo} Smith-Lefebvre.
 C.P. Snow.
 \newblock {\em The two cultures; with an introduction by {S}tefan {C}ollini}.
 \newblock Cambridge, Cambridge, 1993.
+
+\bibitem{taylor}
+J.R. Taylor.
+\newblock {\em Introduction to error analysis: the study of uncertainties in
+  physical measurements}.
+\newblock University Science Books, second edition, 1997.
 
 \bibitem{LALAPPSrepo}
 {The LIGO Scientific Collaboration}.
