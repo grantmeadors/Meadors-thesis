@@ -251,9 +251,10 @@ Our task now is to compare with general relativity to see whether a similar wave
     \label{general_relativity}
 
         Einstein's theory of General Relativity (hence GR) describes gravitation as a pseudoforce. 
-Unlike Newton, Einstein posits that objects always follow an extremized path -- a geodesic worldline -- if the curvature of spacetime is considered. 
-This supposition follows from the Fermat principle of least time (in turn, the inspiration for the least action principle, $\delta S = 0$).
-Likewise, the following discussion of gravitational wave interferomter is best understood in terms of phase or \textit{time-of-flight}.
+Unlike Newton, Einstein posits that objects always follow an extremized path, $\delta s = 0$ for arclength $s$  -- a geodesic worldline -- when the curvature of spacetime is considered. 
+This supposition follows from the Fermat principle of least time.
+In turn, Fermat inspired the least action principle, $\delta S = 0$.
+Likewise, the following discussion of gravitational wave interferometer is best understood in terms of phase or \textit{time-of-flight}.
 The curvature of spacetime is described by the Riemann tensor, $R^\mu_{\nu\rho\sigma}$, which is a solution to the Einstein field equations. 
 In Section~\ref{field_equations} the connection between these field equations and the Ricci scalar curvature will be clarified. 
 This Riemann tensor can be constructed from the Christoffel connection, $\Gamma^\mu_{\rho\sigma}$, which in turn can be expressed in terms of the metric, $g_{\mu \nu}$.
@@ -297,7 +298,7 @@ Let us demonstrate this result and also derive field equations from the action, 
 Obtain the action from Ricci scalar curvature $R$, a hypothetical constant, $\Lambda$ (termed the cosmological constant), and the matter Lagrangian density $\mathcal{L}_M$:
 
 \begin{equation}
-\delta \mathcal{S} = \delta \int \left( R - 2\Lambda + \mathcal{L}_M \right) \sqrt{-|g|}d^4 x,
+\mathcal{S} = \int \left( R - 2\Lambda + \mathcal{L}_M \right) \sqrt{-|g|}d^4 x,
 \end{equation}
 
 Given $R = R^\mu_\mu$ Ricci scalar a for a $R_{\mu\nu} = R^\lambda_{\mu\lambda\nu}$ Ricci tensor contracted from the Riemann tensor, $R^\mu_{\nu\rho\sigma}$ (the curvature tensor, equivalently the 2-form $\textsf{R}^\mu_\nu$), we can construct the Maurer-Cartan structure equation with a connection $\omega$,

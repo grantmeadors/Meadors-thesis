@@ -31,10 +31,11 @@
 \contentsline {figure}{\numberline {2.24}{\ignorespaces MICH subtraction projection }}{68}{figure.2.24}
 \contentsline {figure}{\numberline {2.25}{\ignorespaces PRCL subtraction projection }}{68}{figure.2.25}
 \contentsline {figure}{\numberline {2.26}{\ignorespaces SRCL subtraction projection }}{69}{figure.2.26}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Image by Lisa Barsotti in Hanford eLog \newline CC from LL, Dwyer, Barsotti, Mow-Lowry, Meadors }}{73}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Table legs (\& helped w/ Faraday isolator, data channels) }}{73}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Integrand of inspiral range as a function of frequency}}{74}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Net effect of squeezing on inspiral range integrand \newline Scientific benefit at few hundred Hz $\rightarrow $ all ways to improve are good }}{74}{figure.3.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Table legs SolidWorks schematic) }}{72}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Image by Lisa Barsotti in Hanford eLog \newline CC from LL, Dwyer, Barsotti, Mow-Lowry, Meadors }}{73}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Table legs (\& helped w/ Faraday isolator, data channels) }}{74}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Integrand of inspiral range as a function of frequency}}{74}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Net effect of squeezing on inspiral range integrand \newline Scientific benefit at few hundred Hz $\rightarrow $ all ways to improve are good }}{75}{figure.3.5}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 40'' \{H1\} 5 Hz band} \newline p-value (based on R statistic) in red \newline all (frequency, modulation depth) templates }}{80}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Heatmaps \{H1, L1, V1\} of 11x11 templates centered around \newline \textbf {Scorpius X-1 MDC ``pulsar 8''} }}{81}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 8'' \{H1\} 5 Hz band} \newline $3.6\times 10^{5}$ templates, 10-22 mHz mod. depth, 120-125 Hz frequency \newline Signal at about (df = 0.019, f = 121.9) Hz }}{82}{figure.4.3}
@@ -48,10 +49,10 @@
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Simulated detection efficiency curve }}{91}{figure.4.11}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Distribution with cos iota and detection efficiency }}{91}{figure.4.12}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Regression using grid points }}{92}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Simulation with fit lines }}{92}{figure.4.14}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Simulation with fit lines }}{93}{figure.4.14}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Confidence intervals with final fit }}{93}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces All-sky maps \{H1, L1, V1\} for fixed right ascension and declination \newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates) }}{96}{figure.4.16}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Kiosk interferometer schematic}}{103}{figure.6.1}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces All-sky maps \{H1, L1, V1\} for fixed right ascension and declination \newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates) }}{97}{figure.4.16}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Kiosk interferometer AutoCAD schematic}}{103}{figure.6.1}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Interferometer fringes during construction in Ann Arbor}}{104}{figure.6.2}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Corner view of plexiglass and aluminum interferometer enclosure.}}{106}{figure.6.3}
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Front view of interferometer aluminum and plexiglass enclosure, with dimensions.}}{106}{figure.6.4}

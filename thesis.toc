@@ -65,12 +65,12 @@
 \contentsline {subsubsection}{Optical table support assembly}{71}{section*.7}
 \contentsline {subsubsection}{Faraday isolator measurement}{71}{section*.8}
 \contentsline {subsubsection}{In-vacuum installation}{72}{section*.9}
-\contentsline {subsubsection}{Data digitization}{72}{section*.10}
-\contentsline {subsection}{\numberline {3.2.2}Squeezing's scientific benefit}{72}{subsection.3.2.2}
-\contentsline {subsubsection}{Figures of merit: inspiral range}{72}{section*.11}
+\contentsline {subsubsection}{Data digitization}{73}{section*.10}
+\contentsline {subsection}{\numberline {3.2.2}Squeezing's scientific benefit}{73}{subsection.3.2.2}
+\contentsline {subsubsection}{Figures of merit: inspiral range}{73}{section*.11}
 \contentsline {section}{\numberline {3.3}Squeezing large interferometers}{75}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Success and Advanced LIGO prospects}{75}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Squeezing summary}{75}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Squeezing summary}{76}{subsection.3.3.2}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf IV.\hspace {5pt}}{\bf TwoSpect: Search for a Simulated Scorpius X-1}}{77}{chapter.4}
 \hbox { }
@@ -88,14 +88,14 @@
 \contentsline {subsection}{\numberline {4.4.2}Narrow-band heat maps in parameter space}{84}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Wide-band heat maps in parameter space}{84}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Revisiting \& refining detection criteria}{84}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}Plans for improvement}{93}{section.4.5}
+\contentsline {section}{\numberline {4.5}Plans for improvement}{94}{section.4.5}
 \contentsline {section}{\numberline {4.6}Summary}{94}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Scorpius X-1 parameters}{94}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.1}Scorpius X-1 parameters}{95}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Polarization addendum}{95}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Sky maps using exact templates}{95}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Coherent interferometer synthesis}{95}{subsection.4.6.4}
-\contentsline {subsection}{\numberline {4.6.5}Circular \& elliptical polarization}{97}{subsection.4.6.5}
-\contentsline {subsection}{\numberline {4.6.6}Orbital phase \& beyond}{97}{subsection.4.6.6}
+\contentsline {subsection}{\numberline {4.6.3}Sky maps using exact templates}{96}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Coherent interferometer synthesis}{96}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Circular \& elliptical polarization}{96}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.6}Orbital phase \& beyond}{98}{subsection.4.6.6}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf Directed TwoSpect: Scorpius X-1 and XTE J1751-305}}{99}{chapter.5}
 \hbox { }
