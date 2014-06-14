@@ -27,8 +27,8 @@
 \contentsline {paragraph}{Feedforward filtering}{20}{section*.5}
 \contentsline {paragraph}{Phase camera}{20}{section*.6}
 \contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{25}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{25}{subsection.1.4.4}
-\contentsline {section}{\numberline {1.5}Summary}{25}{section.1.5}
+\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{26}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Summary}{26}{section.1.5}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf II.\hspace {5pt}}{\bf Feedforward: Auxiliary MICH-PRC Subtraction}}{27}{chapter.2}
 \hbox { }
