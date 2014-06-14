@@ -164,7 +164,7 @@ Given $R = R^\mu_\mu$ Ricci scalar a for a $R_{\mu\nu} = R^\lambda_{\mu\lambda\n
 \begin{eqnarray}
 \textsf{R}^\mu_\nu = d\omega^\mu_\nu + \omega^\mu_\rho \wedge \omega^\rho_\nu, \\
 \omega^{\rho'}_{\mu\sigma'} = e^{\alpha'}_{\nu} e^{\lambda}_{\beta'} \Gamma^{\nu}_{\mu\lambda} - e^{\lambda}_{\beta'} \partial_{\mu} e^{\alpha'}_{\lambda},\\
-\Gamma^\sigma_{\mu\nu} = \frac{1}{2} g^{\sigma\rho} \left( \partial_\mu g_{\nu \rho} + \partial_\nu g_{\rho \mu} - \partial_\rho g_{\mu\nu} \right). 
+\Gamma^\sigma_{\mu\nu} = \frac{1}{2} g^{\sigma\rho} \left( g_{\nu \rho, \mu} + g_{\rho \mu, \nu} - g_{\mu\nu,\rho} \right). 
 \end{eqnarray}
 
 \noindent where the last equation defines the \textit{Christoffel} connection. Then we obtain the \textit{Einstein field equations}, sourced by the stress-energy tensor, $T_{\mu\nu}$:
@@ -178,6 +178,19 @@ The wave, parametrized by path $x^\mu (\lambda)$ follows the usual geodesic equa
 
 \begin{equation}
 D_\lambda \partial_\lambda x^\mu = 0
+\end{equation}
+
+The wave has plus $h_+$ and cross $h_\times$ polarizations, making the metric waveform along the $z$-axis ($k_\mu = \textup{diag}(\omega,0,0,1)$) in transverse-traceless gauge:
+
+\begin{equation}
+h_{\mu\nu} =
+\left[
+\begin{array}{cccc}
+0 & 0 & 0 & 0\\
+0 & -h_+ & h_\times & 0 \\
+0 & h_\times & h_+ & 0\\
+0 & 0 & 0 & 0
+\end{array} \right] \cos \left(k_\mu x^\mu \right).
 \end{equation}
 
 
@@ -205,6 +218,7 @@ D_\lambda \partial_\lambda x^\mu = 0
         \label{continuous_waves}
 
             Continuous -- specifically, binary neutron stars and rate predictions. Describe archetypical search methods as in the 1998 analysis paper~\cite{Jaranowski1998}, the Abbott et al paper~\cite{LSCPulsar2006}, including StackSlide~\cite{LSCPulsarS4}, Einstein at Home~\cite{LSCEinsteinHome2009}, and the most interesting to date from Michigan, Vladimir's PowerFlux~\cite{LSCPowerFlux2009}. Discuss earlier results from the earliest period~\cite{Abbott2004} and an early search for Scorpius X-1~\cite{AbbottPulsar2006}. Reinhard Prix is probably another good source~\cite{Prix2006}.
+Promising searches have been carried out by the LIGO Scientific Collaboration for the Crab and Vela pulsar remnants.
 
 		Rates go in here.
         The emission mechanism of gravitational radiation with amplitude $h_0$ from a neutron star is is from an elliptical deformation, ellipticity $\epsilon$, on its surface, leading to a quadrupole moment $I$~\cite{Zimmermann1979,LSCPulsar2006} and thus emission at frequency $f = 2\nu$, twice the neutron star spin frequency $\nu$:
@@ -298,11 +312,41 @@ T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \propto \int_0^{\frac{2L_y}{c}}
 	\end{center}
 	\end{figure}
 
+Features of initial and enhanced LIGO:
+\begin{itemize}
+\item Power recycled Michelson interferometer with Fabry-Perot arms
+\item Hanford, Washington and Livington, Lousiana observatories
+\item 4 km perpendicular beam tubes
+\item $10^{−9}$ torr vacuum
+\item 20 W Nd:YAG 1064 nm laser
+\item 10 kg fused silica primary optics
+\item 4-stage seismic isolation
+\item Laser frequency stabilization
+\item Angular sensing and control (wavefront sensors, optical levers)
+\item Length sensing and control (magnet coils, common mode)
+\item Pre, input, and output mode cleaning
+\item Power recycling
+\item Digitally filtered servos and readout
+\end{itemize}
+
 
                 \paragraph{Detector characterization}
                 \label{detchar}
             
                     DetChar methods: omega scans, line hunting and glitches
+
+My work on site included getting the Omega scan engine tested and running manual Omega scans in the first months of S6, July and August 2009. 
+See Figure~\ref{omega_scan_audible_glitch} for an example of the spectrograms this method was able to generate. These spectrograms helped categorize glitch sources and reduce them, to the benefit of the burst group in particular.
+Fortunately, this work was later automated thanks to Tomoki Isogai. 
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=111mm, width=148mm]{aglitch928228390_new.eps} 
+\caption{Omega scan of an audible broadband glitch}
+\label{omega_scan_audible_glitch}
+\end{center}
+\end{figure}
 
                 \paragraph{Feedforward filtering}
                 \label{feedforward_filters}
