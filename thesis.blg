@@ -72,45 +72,45 @@ Warning--empty title in Sathyaprakash2009
 Warning--empty year in Weber1960
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 125 entries,
+You've used 124 entries,
             2118 wiz_defined-function locations,
-            1220 strings with 21463 characters,
-and the built_in function-call counts, 34349 in all, are:
-= -- 3214
-> -- 1903
+            1214 strings with 21354 characters,
+and the built_in function-call counts, 34130 in all, are:
+= -- 3194
+> -- 1896
 < -- 14
-+ -- 770
-- -- 634
-* -- 2410
-:= -- 6317
-add.period$ -- 355
-call.type$ -- 125
-change.case$ -- 622
++ -- 767
+- -- 632
+* -- 2401
+:= -- 6278
+add.period$ -- 352
+call.type$ -- 124
+change.case$ -- 619
 chr.to.int$ -- 0
-cite$ -- 155
-duplicate$ -- 1270
-empty$ -- 2431
-format.name$ -- 634
-if$ -- 6798
+cite$ -- 154
+duplicate$ -- 1258
+empty$ -- 2409
+format.name$ -- 632
+if$ -- 6751
 int.to.chr$ -- 0
-int.to.str$ -- 125
-missing$ -- 103
-newline$ -- 607
-num.names$ -- 252
-pop$ -- 588
+int.to.str$ -- 124
+missing$ -- 101
+newline$ -- 602
+num.names$ -- 250
+pop$ -- 581
 preamble$ -- 1
-purify$ -- 544
+purify$ -- 541
 quote$ -- 0
-skip$ -- 879
+skip$ -- 873
 stack$ -- 0
-substring$ -- 1222
-swap$ -- 123
+substring$ -- 1217
+swap$ -- 122
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 472
+type$ -- 470
 warning$ -- 30
-while$ -- 291
-width$ -- 128
-write$ -- 1318
+while$ -- 289
+width$ -- 127
+write$ -- 1307
 (There were 8 error messages)
