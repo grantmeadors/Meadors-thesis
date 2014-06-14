@@ -299,6 +299,17 @@ T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \propto \int_0^{\frac{2L_y}{c}}
 
                 Here we discuss the key noises sources: seismic noise, thermal noise, and quantum (radiation pressure, shot noise).
 
+                Arms are locked using the Pound-Drever-Hall technique, as elucidated in Section~\ref{phase_camera}, which discusses how the electro-optic modulations (EOMs) provide an error signal for locking the Fabry-Perot arms.
+See Figure~\ref{primary_eLIGO_optics}
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=111mm,width=148mm]{LIGODiagramnew.eps}
+\caption{Enhanced LIGO primary systems and optics. From left, the phase-stablized laser (PSL) produces coherent light, kept at constant frequency by the frequency-stabilization servo (FSS). The pre-mode cleaner excludes non-Gaussian beamshapes, allowing only the $TEM_{00}$ mode to pass. The beam is the phase-modulated using three electro-optical modulators (EOMs) before being further shaped in the input mode cleaner (IMC). The beam passes through the power recycling mirror (RM) and is split at the beam-splitter (BS). Along the $X$ and $Y$ arms, light resonates in the Fabry-Perot cavity formed between the input test mass (ITM) mirror and the end test (mass) ETM mirror, before recombining at the beamsplitting. Any light with the same phase as before the arms is returned to the interferometer by the RM, but if phase-shifted, perhaps by a gravitational wave, it exits through the output mode cleaner (OMC): a photodiode just downstream of the OMC records the signal.}
+\label{primary_eLIGO_optics}
+\end{center}
+\end{figure}
+
             \subsubsection{Observatory operation}
             \label{observatory_operation}
 
@@ -384,8 +395,29 @@ Fortunately, this work was later automated thanks to Tomoki Isogai.
 
 The electronics development were guided by Horowitz and Hill~\cite{HorowitzHill1989} as well as by Simpson~\cite{Simpson}.
 
-Locking used the Pound-Drever-Hall Method.
+Locking used the Pound-Drever-Hall (PDH) method~\cite{PDHNotes,MavalvalaThesis}.
+Mathematically, the method assumes two mirrors: an input, with amplitude reflectivity $r_1$, and an end, with amplitude reflectivity $r_2$.
+Upon the input mirror is incident a coherent electric field, due to light, $E_\textup{inc}$ at frequency $\omega_0$. A field $E_{\textup{refl}}$ is reflected.
+The key to the technique is that the incident electric field is phase modulated by a factor $\Gamma$ with modulation frequency $\Omega$, by a device such as an electro-optic modulator (EOM, e.g., a Pockels cell).
+Typically this modulation is done at radio-frequency.
+This EOM modulates an electric field of amplitude $E_0$ into higher and lower frequency sidebands, amplitude $E_+$ and $E_-$, as determined by expansion in Bessel functions $J_n(\Gamma)$ -- higher order sidebands exist at usually-negligible amplitude.
+From the reflected signal, then, the intensity $I$ encodes an error signal of the arm length $l$, for given light wavenumber $k = \omega / c$, at the modulation frequency (aside from additional signals at DC and at 2$f$):
 
+\begin{eqnarray}
+E_{\textup{refl}} = \frac{r_1 - r_2 e^{-2 i k l}}{1 - r_1 r_2 e^{-2 i k l}} E_\textup{inc},\\
+E_\textup{inc} = E_0 e^{i \Gamma \cos \left( \Omega t \right)} \approx E_0 e^{i \omega_0 t} \left[ J_0 (\Gamma) + J_1 (\Gamma) e^{i\Omega t} + J_{-1} (\Gamma) e^{-i \Omega t} \right],\\
+E_\textup{refl} \approx e^{i \omega_0 t} \left[ E_0^\textup{refl} + E_+^\textup{refl} e^{i\Omega t} + E_-^\textup{refl} e^{-i \Omega t}\right],
+\end{eqnarray}
+\begin{equation}
+\begin{split}
+I =& \left[ |E_0|^2 + |E_+|^2 + |E_-|^2\right] + \\ 
+  & \left[(E_0^* E_+ + E_0 E^+_-)e^{i\Omega t} +\textup{C.C.} \right] + \\
+  &\left[E_+ E_-^* e^{2i\Omega t} +\textup{C.C.} \right].
+\end{split}
+\end{equation}
+
+Radio-frequency photodiode can record this intensity.
+Typically, the photodiode current is demodulated with a mixer that uses as local oscillator the same sine wave that drives the Pockels cell EOM phase modulation.
 See Figure~\ref{phase_camera_optical_table} for a picture of the cavity as built.
 
 \begin{figure}
