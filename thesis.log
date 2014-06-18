@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  14 JUN 2014 03:44
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  17 JUN 2014 22:29
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1254,18 +1254,18 @@ Underfull \vbox (badness 2435) has occurred while \output is active []
 [117] [118] [119]) (./thesis.bbl [120] [121
 
 ] [122] [123] [124]
-Underfull \hbox (badness 10000) in paragraph at lines 410--416
+Underfull \hbox (badness 10000) in paragraph at lines 416--422
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--416
+Underfull \hbox (badness 10000) in paragraph at lines 416--422
 \OT1/cmr/m/n/10 http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detecto
 r&
  []
 
 [125] [126]
-Underfull \hbox (badness 1803) in paragraph at lines 625--628
+Underfull \hbox (badness 1803) in paragraph at lines 631--634
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
@@ -1277,12 +1277,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4801 strings out of 256217
- 64694 string characters out of 1917094
- 159560 words of memory out of 1500000
- 7893 multiletter control sequences out of 10000+200000
+ 4802 strings out of 256217
+ 64714 string characters out of 1917094
+ 159601 words of memory out of 1500000
+ 7894 multiletter control sequences out of 10000+200000
  14931 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,18n,50p,1664b,473s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (141 pages, 556240 bytes).
+Output written on thesis.dvi (141 pages, 556908 bytes).
