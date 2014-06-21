@@ -82,11 +82,11 @@
 \contentsline {subsection}{\numberline {4.2.2}Infering neutron stars with companions}{78}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}TwoSpect algorithm for all-sky binary searches}{78}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}Directed TwoSpect's greater sensitivity}{79}{section.4.3}
-\contentsline {section}{\numberline {4.4}Scorpius X-1 mock data challenge}{82}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Fully-templated search for Scorpius X-1}{82}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Narrow-band heat maps in parameter space}{82}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Wide-band heat maps in parameter space}{82}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Revisiting \& refining detection criteria}{82}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.4}Scorpius X-1 mock data challenge}{80}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Fully-templated search for Scorpius X-1}{80}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Narrow-band heat maps in parameter space}{80}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Wide-band heat maps in parameter space}{80}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Revisiting \& refining detection criteria}{80}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}Plans for improvement}{94}{section.4.5}
 \contentsline {section}{\numberline {4.6}Summary}{94}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Scorpius X-1 parameters}{95}{subsection.4.6.1}

@@ -45,6 +45,8 @@ Potential candidates for gravitational waves:
         \section{TwoSpect all-sky searches}
         \label{all-sky}
 
+        General philosophy: LIGO continuous wave searches are matched filters, like inspiral searches. However, though the filter is easier (compared to the inspiral waveform) to calculate, the computational challenge is much harder (since we usually integrate over a longer timespan, compensating for weaker signals). Matched filtering a binary pulsar search in the time-domain, with complete phase information, would be computationally intractable in the early 2010s. However, by switching the problem to the frequency domain, and using power instead of amplitude, the search becomes feasible, albeit at a cost in sensitivity -- the detectable strain $h$ scales only as $T^{1/4}$ instead of $T^{1/2}$ for a coherent search.
+
             TwoSpect methods as-is. These are described in detail in Evan Goetz's thesis~\cite{GoetzThesis}. Note that the code is located on the web freely accessible in the LALApps repository~\cite{LALAPPSrepo}.
 
 For primers on error analysis and statistics, see Taylor~\cite{taylor} as well as Casella and Berger~\cite{CasellaBerger2001}.

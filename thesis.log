@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  21 JUN 2014 00:38
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  21 JUN 2014 02:07
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -902,15 +902,15 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 (./chap4.tex [77
 
-] [78]
+] [78] [79]
 File: bandH1-bold.eps Graphic file (type eps)
  <bandH1-bold.eps>
-Overfull \hbox (61.43951pt too wide) in paragraph at lines 165--166
+Overfull \hbox (61.43951pt too wide) in paragraph at lines 167--168
  [] 
  []
 
 
-Overfull \hbox (49.88899pt too wide) detected at line 172
+Overfull \hbox (49.88899pt too wide) detected at line 174
 \OT1/cmr/m/n/10 Figure 4.1: []
  []
 
@@ -920,38 +920,37 @@ File: heatmapL1.eps Graphic file (type eps)
  <heatmapL1.eps>
 File: heatmapV1.eps Graphic file (type eps)
  <heatmapV1.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 193
+Overfull \hbox (49.88899pt too wide) detected at line 195
 \OT1/cmr/m/n/10 Figure 4.2: []
  []
 
 File: bandH1.eps Graphic file (type eps)
 <bandH1.eps>
-Overfull \hbox (61.43866pt too wide) in paragraph at lines 207--211
+Overfull \hbox (61.43866pt too wide) in paragraph at lines 209--213
  [] 
  []
 
 
-Overfull \hbox (49.88899pt too wide) detected at line 211
+Overfull \hbox (49.88899pt too wide) detected at line 213
 \OT1/cmr/m/n/10 Figure 4.3: []
  []
 
-[79] [80] [81]
 File: StatHistRH1.eps Graphic file (type eps)
- <StatHistRH1.eps>
+<StatHistRH1.eps>
 File: StatHistProbH1.eps Graphic file (type eps)
  <StatHistProbH1.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 232
+Overfull \hbox (49.88899pt too wide) detected at line 234
 \OT1/cmr/m/n/10 Figure 4.4: []
  []
 
-[82] [83] [84] [85]
+[80] [81] [82] [83] [84] [85] [86]
 File: detectedHerrVsHeffective.eps Graphic file (type eps)
- <detectedHerrVsHeffective.eps> [86]
+ <detectedHerrVsHeffective.eps>
 File: Errorh0.eps Graphic file (type eps)
- <Errorh0.eps>
-File: Errorh0vsF.eps Graphic file (type eps)
 
-<Errorh0vsF.eps>
+<Errorh0.eps>
+File: Errorh0vsF.eps Graphic file (type eps)
+ <Errorh0vsF.eps>
 File: ErrorF.eps Graphic file (type eps)
  <ErrorF.eps>
 File: ErrorFvsF.eps Graphic file (type eps)
@@ -990,7 +989,7 @@ File: maptrueL1.eps Graphic file (type eps)
 File: maptrueV1.eps Graphic file (type eps)
 
 <maptrueV1.eps>
-Overfull \hbox (54.889pt too wide) detected at line 576
+Overfull \hbox (54.889pt too wide) detected at line 578
 \OT1/cmr/m/n/10 Figure 4.16: []
  []
 
@@ -1285,4 +1284,4 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  35i,18n,50p,1664b,473s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (142 pages, 560316 bytes).
+Output written on thesis.dvi (142 pages, 561288 bytes).

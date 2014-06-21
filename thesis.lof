@@ -39,12 +39,12 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Table legs (\& helped w/ Faraday isolator, data channels) }}{74}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Integrand of inspiral range as a function of frequency}}{74}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Net effect of squeezing on inspiral range integrand \newline Scientific benefit at few hundred Hz $\rightarrow $ all ways to improve are good }}{75}{figure.3.5}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 40'' \{H1\} 5 Hz band} \newline p-value (based on R statistic) in red \newline all (frequency, modulation depth) templates }}{80}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Heatmaps \{H1, L1, V1\} of 11x11 templates centered around \newline \textbf {Scorpius X-1 MDC ``pulsar 8''} }}{81}{figure.4.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 40'' \{H1\} 5 Hz band} \newline p-value (based on R statistic) in red \newline all (frequency, modulation depth) templates }}{81}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Heatmaps \{H1, L1, V1\} of 11x11 templates centered around \newline \textbf {Scorpius X-1 MDC ``pulsar 8''} }}{82}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 8'' \{H1\} 5 Hz band} \newline $3.6\times 10^{5}$ templates, 10-22 mHz mod. depth, 120-125 Hz frequency \newline Signal at about (df = 0.019, f = 121.9) Hz }}{83}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces \textbf {Scorpius X-1 MDC statistics} \newline \emph {Currently refining: }plots lack full set of cuts, \newline \emph {understanding noise, temporal gap \& spectral leakage} \newline establishing signal threshold p-value $\sim $ false alarm probability of 1\% \newline Re-calibrate p-values for trials factor, differences from all-sky }}{84}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Error in strain estimation versus circular-effective strain }}{87}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Parameter estimation: strain }}{87}{figure.4.6}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Parameter estimation: strain }}{88}{figure.4.6}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Parameter estimation: frequency }}{88}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Parameter estimation: a sin i }}{88}{figure.4.8}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Open pulsar detection efficiency curve }}{89}{figure.4.9}
