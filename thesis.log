@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  17 JUN 2014 22:29
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  21 JUN 2014 00:38
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1048,9 +1048,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 166.
 
-(./chap5.tex) [99
+(./chap5.tex [99
 
-]
+]) [100]
 CHAPTER VI.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1104,7 +1104,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 170.
 
-(./chap6.tex [100
+(./chap6.tex [101
 
 ]
 Overfull \hbox (29.60022pt too wide) in paragraph at lines 27--28
@@ -1140,7 +1140,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--60
 
  []
 
-[101]
+[102]
 Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
@@ -1148,7 +1148,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--68
 File: ifo_schematic.eps Graphic file (type eps)
 <ifo_schematic.eps>
 File: WSF_AA_fringes.eps Graphic file (type eps)
- <WSF_AA_fringes.eps> [102] [103] [104]
+ <WSF_AA_fringes.eps> [103] [104] [105]
 Overfull \hbox (45.8334pt too wide) detected at line 129
 \OT1/cmr/m/n/10 Table 6.1: []
  []
@@ -1172,7 +1172,7 @@ Overfull \hbox (49.88899pt too wide) detected at line 184
  []
 
 File: WSF_me_NY.eps Graphic file (type eps)
-<WSF_me_NY.eps> [105] [106] [107] [108]) [109]
+<WSF_me_NY.eps> [106] [107] [108] [109]) [110]
 CHAPTER VII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1226,7 +1226,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 174.
 
-(./conclusion.tex [110
+(./conclusion.tex [111
 
 ]
 File: LIGOpanoramasmall.eps Graphic file (type eps)
@@ -1235,25 +1235,25 @@ Overfull \hbox (49.88899pt too wide) detected at line 67
 \OT1/cmr/m/n/10 Figure 7.1: []
  []
 
-[111])
+[112])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112]
-[113] (./appendix.tex [114
+ [113]
+[114] (./appendix.tex [115
 
 ]
 APPENDIX A.
 Package hyperref Info: bookmark level for unknown appendix defaults to 0 on inp
 ut line 1.
-[115
+[116
 
 ]
 Underfull \vbox (badness 2435) has occurred while \output is active []
 
- [116]
-[117] [118] [119]) (./thesis.bbl [120] [121
+ [117]
+[118] [119] [120]) (./thesis.bbl [121] [122
 
-] [122] [123] [124]
+] [123] [124] [125]
 Underfull \hbox (badness 10000) in paragraph at lines 416--422
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1264,13 +1264,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--422
 r&
  []
 
-[125] [126]
+[126] [127]
 Underfull \hbox (badness 1803) in paragraph at lines 631--634
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-[127]) [128]
+[128]) [129]
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
@@ -1279,10 +1279,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--191
 Here is how much of TeX's memory you used:
  4802 strings out of 256217
  64714 string characters out of 1917094
- 159601 words of memory out of 1500000
+ 159602 words of memory out of 1500000
  7894 multiletter control sequences out of 10000+200000
  14931 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,18n,50p,1664b,473s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (141 pages, 556908 bytes).
+Output written on thesis.dvi (142 pages, 560316 bytes).

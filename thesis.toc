@@ -102,33 +102,33 @@
 \contentsline {subsection}{\numberline {5.1.1}Target, directed and all-sky search sensitivity}{99}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Enhancements enabled by directed searching}{99}{subsection.5.1.2}
 \contentsline {section}{\numberline {5.2}Quantifying Directedness}{99}{section.5.2}
-\contentsline {section}{\numberline {5.3}Scorpius X-1 and XTE J1751-305: Directed TwoSpect results}{99}{section.5.3}
+\contentsline {section}{\numberline {5.3}Scorpius X-1 and XTE J1751-305: Directed TwoSpect results}{100}{section.5.3}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Outreach: Exhibit at the World Science Festival}}{100}{chapter.6}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Outreach: Exhibit at the World Science Festival}}{101}{chapter.6}
 \hbox { }
-\contentsline {section}{\numberline {6.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{100}{section.6.1}
-\contentsline {section}{\numberline {6.2}World Science Festival interferometer manufacture}{102}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Laser, optics and display}{102}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Aluminum baseboard}{105}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{105}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{105}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{105}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}World Science Festival 2010}{109}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{109}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Future LIGO outreach}{109}{section.6.4}
+\contentsline {section}{\numberline {6.1}Prototypes: travelling kiosks and the Ann Arbor Hands-On Museum}{101}{section.6.1}
+\contentsline {section}{\numberline {6.2}World Science Festival interferometer manufacture}{103}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Laser, optics and display}{103}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Aluminum baseboard}{106}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Plexiglass enclosure}{106}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{106}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Exhibit overview}{106}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}World Science Festival 2010}{110}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Portsmouth and Fort Wayne}{110}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Future LIGO outreach}{110}{section.6.4}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{110}{chapter.7}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Conclusion}}{111}{chapter.7}
 \hbox { }
-\contentsline {section}{\numberline {7.1}Cycles of science}{110}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{110}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{110}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Refining data}{110}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{110}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{110}{subsection.7.1.5}
-\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{110}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{111}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{111}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{111}{section.7.3}
-\contentsline {section}{\numberline {7.4}Vision of a dark sky}{111}{section.7.4}
-\contentsline {chapter}{APPENDICES}{114}{figure.7.1}
-\contentsline {chapter}{BIBLIOGRAPHY}{121}{equation.protectrmA.13}
+\contentsline {section}{\numberline {7.1}Cycles of science}{111}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Improvements to observatories}{111}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Understanding instruments}{111}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Refining data}{111}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Searching deep-space}{111}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Reaching out, looking up}{111}{subsection.7.1.5}
+\contentsline {section}{\numberline {7.2}Scientific merit: filtering and analysis}{111}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Feedforward improvement to LIGO data}{112}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}TwoSpect directed search for neutron stars in binary systems}{112}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Entering the advanced detector era}{112}{section.7.3}
+\contentsline {section}{\numberline {7.4}Vision of a dark sky}{112}{section.7.4}
+\contentsline {chapter}{APPENDICES}{115}{figure.7.1}
+\contentsline {chapter}{BIBLIOGRAPHY}{122}{equation.protectrmA.13}
