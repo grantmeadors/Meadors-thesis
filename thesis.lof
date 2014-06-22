@@ -39,28 +39,32 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Table legs (\& helped w/ Faraday isolator, data channels) }}{74}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Integrand of inspiral range as a function of frequency}}{74}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Net effect of squeezing on inspiral range integrand \newline Scientific benefit at few hundred Hz $\rightarrow $ all ways to improve are good }}{75}{figure.3.5}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 40'' \{H1\} 5 Hz band} \newline p-value (based on R statistic) in red \newline all (frequency, modulation depth) templates }}{81}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Heatmaps \{H1, L1, V1\} of 11x11 templates centered around \newline \textbf {Scorpius X-1 MDC ``pulsar 8''} }}{82}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 8'' \{H1\} 5 Hz band} \newline $3.6\times 10^{5}$ templates, 10-22 mHz mod. depth, 120-125 Hz frequency \newline Signal at about (df = 0.019, f = 121.9) Hz }}{83}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \textbf {Scorpius X-1 MDC statistics} \newline \emph {Currently refining: }plots lack full set of cuts, \newline \emph {understanding noise, temporal gap \& spectral leakage} \newline establishing signal threshold p-value $\sim $ false alarm probability of 1\% \newline Re-calibrate p-values for trials factor, differences from all-sky }}{84}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Error in strain estimation versus circular-effective strain }}{87}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Parameter estimation: strain }}{88}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Parameter estimation: frequency }}{88}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Parameter estimation: a sin i }}{88}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Open pulsar detection efficiency curve }}{89}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Detections and upper limit determination }}{90}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Simulated detection efficiency curve }}{91}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Distribution with cos iota and detection efficiency }}{91}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Regression using grid points }}{92}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Simulation with fit lines }}{93}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Confidence intervals with final fit }}{93}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces All-sky maps \{H1, L1, V1\} for fixed right ascension and declination \newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates) }}{97}{figure.4.16}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Kiosk interferometer AutoCAD schematic}}{104}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Interferometer fringes during construction in Ann Arbor}}{105}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Corner view of plexiglass and aluminum interferometer enclosure.}}{107}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Front view of interferometer aluminum and plexiglass enclosure, with dimensions.}}{107}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Dimensions and hole locations of the aluminum plate (dark gray) relative to plexiglass (light gray), with precise hole locations given by Table\nobreakspace \ref {aluminum_baseboard_hole_locations}.}}{108}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Inteferometer assembly in Ann Arbor, Michigan.}}{108}{figure.6.6}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces World Science Festival interferometer installed in the New York City exhibition hall, June 2010.}}{109}{figure.6.7}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Helping to host the exhibit at the World Science Festival.}}{110}{figure.6.8}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces LIGO Hanford Observatory sunset, inital detector era. Photo by author. Like the Hanford desert wiped clean by the Missoula floods, the gravitational wave sky may relate cosmic tales of cataclysm and rebirth in the distant past.}}{112}{figure.7.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces After Doppler-shifting the frequencies into the solar system barycenter, TwoSpect analyses begin on this first, time-frequency plane. A simulated signal at 100.015 Hz and $\textup {asini} = 1.44$ is injected with $h_0 = 4\times 10^{-21}$ into $10^6$ seconds of Gaussian noise at $Sh = 4 \times 10^{-24}$ (the projected minimum Advanced LIGO noise level); the signal period is 68023.8259 seconds, as with Scorpius X-1.}}{80}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Fourier-transforming along the `rows' (constant frequency bin, variable time bin) generate a second plane, the frequency-frequency plane. The power of each bin in this transform is plotted as a pixel. By aggregating power, this second Fourier transform enhances signal so that matched templates can be applied for a search.}}{81}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Exact templates for putative singals weight the pixels in the frequency-frequency plane to generate $R$ statistic for a simulated pulsar (note: not the same as pulsar $40$ in the Scorpius X-1 mock data challenge) at 100.015 Hz and $\textup {asini} = 1.44$. The resulting $R$ values are heatmap-plotted on the modulation depth vs frequency plane.}}{82}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The Davies algorithm translates $R$ statistic values for exact templates into (single-template) $p$-values, plotted on the modulation depth vs frequency plane.}}{83}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 40'' \{H1\} 5 Hz band} \newline p-value (based on R statistic) in red \newline all (frequency, modulation depth) templates }}{85}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Heatmaps \{H1, L1, V1\} of 11x11 templates centered around \newline \textbf {Scorpius X-1 MDC ``pulsar 8''} }}{86}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \textbf {Scorpius X-1 MDC ``pulsar 8'' \{H1\} 5 Hz band} \newline $3.6\times 10^{5}$ templates, 10-22 mHz mod. depth, 120-125 Hz frequency \newline Signal at about (df = 0.019, f = 121.9) Hz }}{87}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \textbf {Scorpius X-1 MDC statistics} \newline \emph {Currently refining: }plots lack full set of cuts, \newline \emph {understanding noise, temporal gap \& spectral leakage} \newline establishing signal threshold p-value $\sim $ false alarm probability of 1\% \newline Re-calibrate p-values for trials factor, differences from all-sky }}{88}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Error in strain estimation versus circular-effective strain }}{91}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Parameter estimation: strain }}{92}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Parameter estimation: frequency }}{92}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Parameter estimation: a sin i }}{92}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Open pulsar detection efficiency curve }}{93}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Detections and upper limit determination }}{94}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Simulated detection efficiency curve }}{95}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Distribution with cos iota and detection efficiency }}{95}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Regression using grid points }}{96}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Simulation with fit lines }}{97}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Confidence intervals with final fit }}{97}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces All-sky maps \{H1, L1, V1\} for fixed right ascension and declination \newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates) }}{101}{figure.4.20}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Kiosk interferometer AutoCAD schematic}}{109}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Interferometer fringes during construction in Ann Arbor}}{110}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Corner view of plexiglass and aluminum interferometer enclosure.}}{112}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Front view of interferometer aluminum and plexiglass enclosure, with dimensions.}}{112}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Dimensions and hole locations of the aluminum plate (dark gray) relative to plexiglass (light gray), with precise hole locations given by Table\nobreakspace \ref {aluminum_baseboard_hole_locations}.}}{113}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Inteferometer assembly in Ann Arbor, Michigan.}}{113}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces World Science Festival interferometer installed in the New York City exhibition hall, June 2010.}}{114}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Helping to host the exhibit at the World Science Festival.}}{115}{figure.6.8}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces LIGO Hanford Observatory sunset, inital detector era. Photo by author. Like the Hanford desert wiped clean by the Missoula floods, the gravitational wave sky may relate cosmic tales of cataclysm and rebirth in the distant past.}}{117}{figure.7.1}

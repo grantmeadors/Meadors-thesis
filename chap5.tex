@@ -34,9 +34,20 @@ For pulsar 40, $df = 0.046$ Hz, the amplitude of this modulation depth was only 
 We could estimate the fractional power in the arms to then be $2 \pi / \cos^{-1} ((B-1) / B)$, or roughly $1/18$ for pulsar 40.
 Taking the arccosine of $(B-2)/B$ instead yields roughly $1/12$.
 This is closer to the 1/2 to 1/3 ratios observed in the analyses that than 1/189 predicted naively, although a proper study would require a closer look at the generation of TwoSpect \textit{exact templates}.
-Understanding the $X$ structure more fully could inform future methods for maximum likelihood estimation on the $R$ statistic plane or, more likely, on the pushed-forward $p-value$ plane.
 
-            ADDITIONAL CONTENT
+The deeper problem is that the wrong putative template and the true signal are both stationary are the same point in the time-frequency plane, stationary in the sense that their derivatives match:
+
+\begin{equation}
+\frac{df_\textup{true} (t)}{dt} = \frac{df_\textup{template}(t)}{dt} = 0.
+\end{equation}
+
+Understanding the $X$ structure more fully could inform future methods for maximum likelihood estimation on the $R$ statistic plane or, more likely, on the pushed-forward $p-value$ plane.
+Theoretically, combining information from across the parameter space plane should create a strong signal.
+This approach could parallel the deconvolution of point spread functions in optical imaging.
+Although the deconvolution or Green's function would be different, this might also enhance the angular resolution when applied to spread on the right ascension, declination plane.
+Constructing the deconvolved plane should in principle yield the same information as constructing a likelihood surface.
+However, this approach needs to be tested.
+
         
             Quantify how good the improvements are in directed TwoSpect. 
 
