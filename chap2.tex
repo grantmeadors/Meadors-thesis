@@ -528,23 +528,22 @@ LIGO was constructed by the California Institute of Technology and Massachusetts
 
 This analysis is intended to make Advanced LIGO simpler. To that end, some of the tools involved were directed toward the first lock stretch of the advanced detector era, at LIGO Livingston's L1 interferometer on 2014 May 26.
 
-Denis/Anamaria/Rob/Ryan's lock comment that MICH noise was dominating their spectrum caught my eye. Based on Keita Kawabe, Keith Riles and my subtraciton of MICH \& PRC noise from the S6 data set (and H1 in real-time), I wrote a Matlab script (this link \& those after require albert.einstein login) to investigate.  
-
-I tried running the Matlab function f\_domainsubtract' (from the 40 m, used in my AMPS code to grab a frequency domain transfer function) on data at CIT in
+Denis Martynov, Anamaria Effler, Robert Ward, and Ryan deRosa commented on the lock. MICH noise was dominating the spectrum. Based on Keita Kawabe, Keith Riles and my subtraction of MICH \& PRC noise from the S6 data set (and H1 in real-time), I wrote a Matlab script to investigate.  
+The Matlab function \texttt{f\_domainsubtract} (from the 40 m, used in AMPS code to make a frequency domain transfer function) was run on data at CIT in
 
 /archive/frames/A6/L0/L1/L-L1\_R\_1085/
 
-using Gregory Mendell's readFrames function to pull 2100 s of frame data starting 1085202300.
+using Gregory Mendell's \texttt{readFrames} function to pull 2100 s of frame data starting 1085202300.
 
-I didn't see DARM\_ERR or \_CTRL anywhere, so I tried looking at \_IN1\_DQ, because that's what Rana had made a spectrogram of in the LLO aLog. Keita subsequently confirmed that IN1\_DQ has replaced ERR and OUT\_DQ has replaced CTRL.
+Absent a DARM\_ERR or \_CTRL channel, the \_IN1\_DQ channels were used, following the example of Rana Adhikari in the LLO aLog. Kawabe subsequently confirmed that IN1\_DQ has replaced ERR and OUT\_DQ has replaced CTRL.
 
-Uncalibrated PSDs from pwelch 
+Uncalibrated PSDs from Matlab \texttt{pwelch} follow.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockSensitivity.eps}
 \caption{
-DARM PSD
+DARM power spectral density for first radio-frequency lock of L1 in Advanced LIGO. Note that the spectrum is uncalibrated.
 }
 \end{center}
 \end{figure}
@@ -552,7 +551,7 @@ DARM PSD
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockMICH.eps}
 \caption{
-MICH PSD
+MICH power spectral density, first lock.
 }
 \end{center}
 \end{figure}
@@ -560,7 +559,7 @@ MICH PSD
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockPRCL.eps}
 \caption{
-PRCL PSD
+PRCL power spectral density, first lock. This corresponds to the PRC channel in Initial and Enhanced LIGO.
 }
 \end{center}
 \end{figure}
@@ -568,22 +567,24 @@ PRCL PSD
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockSRCL.eps}
 \caption{
-SRCL PSD
+SRCL power spectral density, indicating the signal for the signal recycling cavity length.
 }
 \end{center}
 \end{figure}
 
-f\_domainsubtract can estimate
-  * coherence between different channels
-  * theoretically obtainable spectrum if noise is subtracted
+The function \texttt{f\_domainsubtract} can estimate two quantities:
+\begin{itemize}
+\item coherence between different channels
+\item theoretically obtainable spectrum if noise is subtracted
+\end{itemize}
 
-The first set of graphs shows (in blue x's) sqrt(1-mscoherence) and (in red) the ratio, (predicted ASD after subtraction)/(measured ASD before subtraction):
+The first set of graphs shows (in blue x's) sqrt(1-magnitude-squared coherence) and (in red) the ratio, (predicted amplitude spectral density (ASD) after subtraction)/(measured ASD before subtraction):
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionEstimate-MICH.eps}
 \caption{
-MICH coherence
+MICH coherence with DARM.
 }
 \end{center}
 \end{figure}
@@ -591,7 +592,7 @@ MICH coherence
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionEstimate-PRCL.eps}
 \caption{
-PRCL coherence
+PRCL coherence with DARM.
 }
 \end{center}
 \end{figure}
@@ -599,7 +600,7 @@ PRCL coherence
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionEstimate-SRCL.eps}
 \caption{
-SRCL coherence
+SRCL coherence with DARM.
 }
 \end{center}
 \end{figure}
@@ -610,7 +611,7 @@ The second shows (in red) the ASD of the noise \_IN1\_DQ channel, (in green) the
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionSpectrum-MICH.eps}
 \caption{
-MICH subtraction projection
+MICH subtraction from DARM, projection, based on frequency domain transfer function. The full AMPS machinery has not yet been applied.
 }
 \end{center}
 \end{figure}
@@ -618,7 +619,7 @@ MICH subtraction projection
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionSpectrum-PRCL.eps}
 \caption{
-PRCL subtraction projection
+PRCL subtraction from DARM, projection.
 }
 \end{center}
 \end{figure}
@@ -626,7 +627,7 @@ PRCL subtraction projection
 \begin{center}
 \includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionSpectrum-SRCL.eps}
 \caption{
-SRCL subtraction projection
+SRCL subtraction from DARM, projection.
 }
 \end{center}
 \end{figure}
@@ -637,7 +638,7 @@ MICH and PRCL indeed cohere with DARM, in similar ways, each with a coherence (n
 
 In contrast, SRCL has a coherence as much as 0.3 at 10 Hz. It is even broader band, dropping off in either direction (about 0.05 at 3 Hz and 400 Hz, with a drop in coherence at 50 Hz).
 
-These results corroborate Denis/Anamaria/Rob/Ryan's assessment that MICH noise is currently dominant and suggest that PRCL and SRCL noise are also significant. To be thorough I should verify using the OUT\_DQ channels; these results were calculated using IN1\_DQ.
+These results corroborate Martynov, Effler, Ward and deRosa's assessment that MICH noise is currently dominant and suggest that PRCL and SRCL noise are also significant. To be thorough this result should be verified using the OUT\_DQ channels; these results were calculated using IN1\_DQ.
 
 \textbf{Future}
 
@@ -645,7 +646,7 @@ This is not the full feedforward code, which could be updated (not entirely triv
 
 If commissioners want a real-time filter, that would presuppose the existence of a MICH/PRCL/SRCL subtraction path in the model and closed loop response transfer functions. Once those exist, one could update (somewhat more trivial) the real-time calculation code to get a high-quality Foton filter.
 
-A great deal of progress has likely already been made, and a great deal more can probably be made with manual filter design, but if sophistication is needed, the tools exist
+A great deal of progress has likely already been made, and a great deal more can probably be made with manual filter design, but if sophistication is needed, the tools exist.
 
 
 %\appendix

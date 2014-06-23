@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  23 JUN 2014 00:07
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  23 JUN 2014 00:22
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -361,12 +361,12 @@ tApps/packages/detchar/AMPS/
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
+[10]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
-
-[10])
+)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -761,29 +761,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: aLIGOfirstLockSensitivity.eps Graphic file (type eps)
 
 <aLIGOfirstLockSensitivity.eps>
+Overfull \hbox (54.889pt too wide) detected at line 547
+\OT1/cmr/m/n/10 Figure 2.17: []
+ []
+
 File: aLIGOfirstLockMICH.eps Graphic file (type eps)
- <aLIGOfirstLockMICH.eps>
+<aLIGOfirstLockMICH.eps>
 File: aLIGOfirstLockPRCL.eps Graphic file (type eps)
+ <aLIGOfirstLockPRCL.eps>
+Overfull \hbox (54.889pt too wide) detected at line 563
+\OT1/cmr/m/n/10 Figure 2.19: []
+ []
 
-<aLIGOfirstLockPRCL.eps>
 File: aLIGOfirstLockSRCL.eps Graphic file (type eps)
- <aLIGOfirstLockSRCL.eps>
-File: SubtractionEstimate-MICH.eps Graphic file (type eps)
+<aLIGOfirstLockSRCL.eps>
+Overfull \hbox (54.889pt too wide) detected at line 571
+\OT1/cmr/m/n/10 Figure 2.20: []
+ []
 
-<SubtractionEstimate-MICH.eps>
+File: SubtractionEstimate-MICH.eps Graphic file (type eps)
+<SubtractionEstimate-MICH.eps> [63] [64] [65]
 File: SubtractionEstimate-PRCL.eps Graphic file (type eps)
  <SubtractionEstimate-PRCL.eps>
 File: SubtractionEstimate-SRCL.eps Graphic file (type eps)
 
-<SubtractionEstimate-SRCL.eps> [63] [64] [65] [66]
+<SubtractionEstimate-SRCL.eps>
 File: SubtractionSpectrum-MICH.eps Graphic file (type eps)
+ <SubtractionSpectrum-MICH.eps>
+Overfull \hbox (54.889pt too wide) detected at line 615
+\OT1/cmr/m/n/10 Figure 2.24: []
+ []
 
-<SubtractionSpectrum-MICH.eps>
 File: SubtractionSpectrum-PRCL.eps Graphic file (type eps)
- <SubtractionSpectrum-PRCL.eps>
+<SubtractionSpectrum-PRCL.eps>
 File: SubtractionSpectrum-SRCL.eps Graphic file (type eps)
-
-<SubtractionSpectrum-SRCL.eps> [67] [68]) [69]
+ <SubtractionSpectrum-SRCL.eps> [66] [67]
+[68]) [69]
 CHAPTER III.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1345,10 +1358,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--191
 Here is how much of TeX's memory you used:
  4810 strings out of 256217
  64888 string characters out of 1917094
- 161951 words of memory out of 1500000
+ 161952 words of memory out of 1500000
  7898 multiletter control sequences out of 10000+200000
  14931 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,18n,50p,1664b,473s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (148 pages, 581860 bytes).
+Output written on thesis.dvi (148 pages, 582396 bytes).
