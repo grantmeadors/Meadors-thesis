@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  23 JUN 2014 01:39
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  23 JUN 2014 01:58
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -368,7 +368,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [12] (./thesis.lot
+ [12] [13] (./thesis.lot
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -377,7 +377,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [13]
+ [14]
 CHAPTER I.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1277,30 +1277,44 @@ File: ifo_schematic.eps Graphic file (type eps)
 <ifo_schematic.eps>
 File: WSF_AA_fringes.eps Graphic file (type eps)
  <WSF_AA_fringes.eps> [110] [111] [112]
-Overfull \hbox (45.8334pt too wide) detected at line 129
+Overfull \hbox (45.8334pt too wide) detected at line 131
 \OT1/cmr/m/n/10 Table 6.1: []
  []
 
 File: view-corner.eps Graphic file (type eps)
 <view-corner.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 144
+\OT1/cmr/m/n/10 Figure 6.3: []
+ []
+
 File: view-front.eps Graphic file (type eps)
- <view-front.eps>
+<view-front.eps>
 File: view-top-plate-3.eps Graphic file (type eps)
  <view-top-plate-3.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 159
+Overfull \hbox (49.88899pt too wide) detected at line 162
 \OT1/cmr/m/n/10 Figure 6.5: []
  []
 
 File: WSF_under_construction.eps Graphic file (type eps)
 <WSF_under_construction.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 171
+\OT1/cmr/m/n/10 Figure 6.6: []
+ []
+
 File: WSF_in_NY.eps Graphic file (type eps)
- <WSF_in_NY.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 184
+<WSF_in_NY.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 187
 \OT1/cmr/m/n/10 Figure 6.7: []
  []
 
+[113] [114]
 File: WSF_me_NY.eps Graphic file (type eps)
-<WSF_me_NY.eps> [113] [114] [115] [116]) [117]
+ <WSF_me_NY.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 206
+\OT1/cmr/m/n/10 Figure 6.8: []
+ []
+
+) [115] [116] [117] [118]
 CHAPTER VII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1354,7 +1368,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 174.
 
-(./conclusion.tex [118
+(./conclusion.tex [119
 
 ]
 File: LIGOpanoramasmall.eps Graphic file (type eps)
@@ -1363,25 +1377,25 @@ Overfull \hbox (49.88899pt too wide) detected at line 67
 \OT1/cmr/m/n/10 Figure 7.1: []
  []
 
-[119])
+[120])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [120]
-[121] (./appendix.tex [122
+ [121]
+[122] (./appendix.tex [123
 
 ]
 APPENDIX A.
 Package hyperref Info: bookmark level for unknown appendix defaults to 0 on inp
 ut line 1.
-[123
+[124
 
 ]
 Underfull \vbox (badness 2435) has occurred while \output is active []
 
- [124]
-[125] [126] [127]) (./thesis.bbl [128] [129
+ [125]
+[126] [127] [128]) (./thesis.bbl [129] [130
 
-] [130] [131] [132]
+] [131] [132] [133]
 Underfull \hbox (badness 10000) in paragraph at lines 416--422
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1392,13 +1406,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--422
 r&
  []
 
-[133] [134]
+[134] [135]
 Underfull \hbox (badness 1803) in paragraph at lines 631--634
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-[135]) [136]
+[136]) [137]
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
@@ -1407,10 +1421,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--191
 Here is how much of TeX's memory you used:
  4807 strings out of 256217
  64851 string characters out of 1917094
- 161955 words of memory out of 1500000
+ 163200 words of memory out of 1500000
  7896 multiletter control sequences out of 10000+200000
  14676 words of font info for 56 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,18n,50p,1664b,473s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (151 pages, 596884 bytes).
+Output written on thesis.dvi (153 pages, 601996 bytes).
