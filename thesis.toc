@@ -88,20 +88,20 @@
 \contentsline {subsection}{\numberline {4.4.3}Wide-band heat maps in parameter space}{84}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Revisiting \& refining detection criteria}{84}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}Plans for improvement}{98}{section.4.5}
-\contentsline {section}{\numberline {4.6}Summary}{98}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Scorpius X-1 parameters}{99}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Polarization addendum}{99}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Sky maps using exact templates}{100}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Coherent interferometer synthesis}{100}{subsection.4.6.4}
-\contentsline {subsection}{\numberline {4.6.5}Circular \& elliptical polarization}{100}{subsection.4.6.5}
-\contentsline {subsection}{\numberline {4.6.6}Orbital phase \& beyond}{102}{subsection.4.6.6}
+\contentsline {section}{\numberline {4.6}Summary}{100}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Scorpius X-1 parameters}{101}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Polarization addendum}{102}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Sky maps using exact templates}{102}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Coherent interferometer synthesis}{102}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Circular \& elliptical polarization}{102}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.6}Orbital phase \& beyond}{104}{subsection.4.6.6}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf Directed TwoSpect: Scorpius X-1 and XTE J1751-305}}{103}{chapter.5}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf Directed TwoSpect: Scorpius X-1 and XTE J1751-305}}{105}{chapter.5}
 \hbox { }
-\contentsline {section}{\numberline {5.1}Directed TwoSpect}{103}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Target, directed and all-sky search sensitivity}{103}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Enhancements enabled by directed searching}{103}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Quantifying Directedness}{103}{section.5.2}
+\contentsline {section}{\numberline {5.1}Directed TwoSpect}{105}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Target, directed and all-sky search sensitivity}{105}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Enhancements enabled by directed searching}{105}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Quantifying Directedness}{105}{section.5.2}
 \contentsline {section}{\numberline {5.3}Scorpius X-1 and XTE J1751-305: Directed TwoSpect results}{105}{section.5.3}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Outreach: Exhibit at the World Science Festival}}{106}{chapter.6}

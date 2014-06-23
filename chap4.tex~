@@ -45,7 +45,11 @@ Potential candidates for gravitational waves:
         \section{TwoSpect all-sky searches}
         \label{all-sky}
 
+        General philosophy: LIGO continuous wave searches are matched filters, like inspiral searches. However, though the filter is easier (compared to the inspiral waveform) to calculate, the computational challenge is much harder (since we usually integrate over a longer timespan, compensating for weaker signals). Matched filtering a binary pulsar search in the time-domain, with complete phase information, would be computationally intractable in the early 2010s. However, by switching the problem to the frequency domain, and using power instead of amplitude, the search becomes feasible, albeit at a cost in sensitivity -- the detectable strain $h$ scales only as $T^{1/4}$ instead of $T^{1/2}$ for a coherent search.
+
             TwoSpect methods as-is. These are described in detail in Evan Goetz's thesis~\cite{GoetzThesis}. Note that the code is located on the web freely accessible in the LALApps repository~\cite{LALAPPSrepo}.
+
+For primers on error analysis and statistics, see Taylor~\cite{taylor} as well as Casella and Berger~\cite{CasellaBerger2001}.
 
             \subsection{Two spectra: a double Fourier transform}
             \label{two_spectra}
@@ -110,6 +114,36 @@ $\rightarrow$ E. Goetz wrote, conducting all-sky search
 \item TwoSpect binary searches -- directed, Sco X-1
 \end{itemize}
 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\paperwidth,height=0.4\paperheight]{tfplane-4e21-on-4e24.eps}
+\caption{After Doppler-shifting the frequencies into the solar system barycenter, TwoSpect analyses begin on this first, time-frequency plane. A simulated signal at 100.015 Hz and $\textup{asini} = 1.44$ is injected with $h_0 = 4\times 10^{-21}$ into $10^6$ seconds of Gaussian noise at $Sh = 4 \times 10^{-24}$ (the projected minimum Advanced LIGO noise level); the signal period is 68023.8259 seconds, as with Scorpius X-1.}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\paperwidth,height=0.4\paperheight]{ffplane-4e21-on-4e24.eps}
+\caption{Fourier-transforming along the `rows' (constant frequency bin, variable time bin) generate a second plane, the frequency-frequency plane. The power of each bin in this transform is plotted as a pixel. By aggregating power, this second Fourier transform enhances signal so that matched templates can be applied for a search.}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{R-4e21-on-4e24.eps}
+\caption{Exact templates for putative singals weight the pixels in the frequency-frequency plane to generate $R$ statistic for a simulated pulsar (note: not the same as pulsar $40$ in the Scorpius X-1 mock data challenge) at 100.015 Hz and $\textup{asini} = 1.44$. The resulting $R$ values are heatmap-plotted on the modulation depth vs frequency plane.}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{Prob-4e21-on-4e24.eps}
+\caption{The Davies algorithm translates $R$ statistic values for exact templates into (single-template) $p$-values, plotted on the modulation depth vs frequency plane.}
+\end{center}
+\end{figure}
+
+
 %\end{frame}
 
 %\section{Directed searches for neutron stars in binary systems}
@@ -158,6 +192,7 @@ in $a\sin\iota$)$ $
 
 
 \begin{figure}
+\begin{center}
 %\protect\caption{\protect\includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1-bold}}
 \includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1-bold.eps}
 
@@ -167,6 +202,7 @@ in $a\sin\iota$)$ $
 \newline p-value (based on R statistic) in red
 \newline all (frequency, modulation depth) templates
 }
+\end{center}
 \end{figure}
 
 
@@ -177,6 +213,7 @@ in $a\sin\iota$)$ $
 
 
 \begin{figure}
+\begin{center}
 %\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{heatmapH1}}
 %\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{heatmapL1}}
 %\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{heatmapV1}}
@@ -186,6 +223,7 @@ in $a\sin\iota$)$ $
 \caption{Heatmaps \{H1, L1, V1\} of 11x11 templates centered around
 \newline \textbf{Scorpius X-1 MDC ``pulsar 8''}
 }
+\end{center}
 \end{figure}
 
 
@@ -196,12 +234,14 @@ in $a\sin\iota$)$ $
 
 
 \begin{figure}
+\begin{center}
 %\protect\caption{\protect\includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1}}
 \includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1.eps}
 \caption{\textbf{Scorpius X-1 MDC ``pulsar 8'' \{H1\} 5 Hz band}
 \newline $3.6\times10^{5}$ templates, 10-22 mHz mod. depth, 120-125 Hz frequency
 \newline Signal at about (df = 0.019, f = 121.9) Hz
 }
+\end{center}
 \end{figure}
 
 
@@ -212,6 +252,7 @@ in $a\sin\iota$)$ $
 
 
 \begin{figure}
+\begin{center}
 %\protect\caption{\protect\includegraphics[width=0.45\paperwidth,height=0.45\paperheight]{StatHistRH1}\protect\includegraphics[width=0.45\paperwidth,height=0.45\paperheight]{StatHistProbH1}}
 \includegraphics[width=0.6\paperwidth,height=0.35\paperheight]{StatHistRH1.eps}
 \includegraphics[width=0.6\paperwidth,height=0.35\paperheight]{StatHistProbH1.eps}
@@ -221,6 +262,7 @@ in $a\sin\iota$)$ $
 \newline establishing signal threshold p-value $\sim$ false alarm probability of 1\%
 \newline Re-calibrate p-values for trials factor, differences from all-sky
 }
+\end{center}
 \end{figure}
 
 
@@ -260,6 +302,7 @@ $4.23 \times 10^{-25}$ upper limit for the 16 non-detected signals.
 
 
 \textbf{MDC procedure}
+\newline
 \textit{Detection Claims}
 
 After studying the Gaussian noise in the Scorpius X-1 MDC open data set, we were able to set thresholds for detection claims.
@@ -274,7 +317,7 @@ Detection criteria:
 
 \begin{itemize}
 \item each candidate must survive at least one double-IFO coincidence test, involving a pairwise comparison of single-IFO candidates to see whether they are within 1/Tsft in both frequency (f) and modulation depth (df).
-\item single-IFO candidates are the up-to-200 most extreme p-value outliers in a 5 Hz band that had a log10p <= threshold, where threshold = -7.75 if f < 360.0 Hz (those that used 840 s SFTs) or -12.0 if f >= 360.0 Hz (those that used 360 s SFTs).
+\item single-IFO candidates are the up-to-200 most extreme p-value outliers in a 5 Hz band that had a log10p $\leq$ threshold, where threshold = -7.75 if f $<$ 360.0 Hz (those that used 840 s SFTs) or -12.0 if f $\geq$ 360.0 Hz (those that used 360 s SFTs).
 \end{itemize}
 
 $\rightarrow$ if there is any candidate surviving these criteria in a 5 Hz band, we mark detected, else not detected
@@ -283,36 +326,53 @@ $\rightarrow$ if there is any candidate surviving these criteria in a 5 Hz band,
 
 Open MDC data gave TwoSpect the the ability to check its parameter estimation on the 31 pulsars detected in the open data set.
 
-
-Note that the h0 reported in this section had not yet been recalibrated for either the $\cos \iota$ ambiguity due to assumed circular polarization (see subsequent section, factor of 1.74) or a systematic rescaling endemic to TwoSpect (factor of 1.11). Instead, the first step was to rescale the known h0-injected from the MDC open data table into an h-effective. This h-effective equaled $\sqrt( ((1+\cos^2 \iota) / 2)^2 + (\cos \iota)^2 )/\sqrt(2)$ * h0-injected, the rescaling necessary to convert the strain into effective units of circular polarization strain. Any pipeline that assumes circular polarization should require a similar procedure.
-
+Note that the h0 reported in this section had not yet been recalibrated for either the $\cos \iota$ ambiguity due to assumed circular polarization (see subsequent section, factor of 1.74) or a systematic rescaling endemic to TwoSpect (factor of 1.11). Instead, the first step was to rescale the known h0-injected from the MDC open data table into an h-effective. This h-effective equaled $\sqrt{ ((1+\cos^2 \iota) / 2)^2 + (\cos \iota)^2 }/\sqrt{2}$ * h0-injected, the rescaling necessary to convert the strain into effective units of circular polarization strain. Any pipeline that assumes circular polarization should require a similar procedure.
 
 We plotted the error in the h0 reported by TwoSpect versus h0-effective for the 31 open pulsars detected.
 
-FIGURE
-detectedHerrVsHeffective.png
 
-This same error was also plotted vs p-value and frequency. As will be seen on the plots for error in frequency and asini, high-frequency outliers were found in the open data set. These outliers could be categorized heuristically as having f > 1050 Hz and abs(log10p) < 300. These 4 outliers were assigned into the "loose" category, with a corresponding sigma. The remaining 27 were in the "tight" category, to which we could assign a more stringent sigma. These values are reported in the header of the graphs.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{detectedHerrVsHeffective.eps}
+\caption{ Error in strain estimation versus circular-effective strain
+} 
+\end{center}
+\end{figure}
+
+
+This same error was also plotted vs p-value and frequency. As will be seen on the plots for error in frequency and asini, high-frequency outliers were found in the open data set. These outliers could be categorized heuristically as having f $>$ 1050 Hz and abs(log10p) $<$ 300. These 4 outliers were assigned into the "loose" category, with a corresponding sigma. The remaining 27 were in the "tight" category, to which we could assign a more stringent sigma. These values are reported in the header of the graphs.
 
 Blue lines indicate the less stringent uncertainty. Red lines (on plots vs p-value) indicate a least squares power law regression.
 
-FIGURE
-Errorh0.png
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0.eps}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0vsF.eps}
+\caption{Parameter estimation: strain
+}
+\end{center}
+\end{figure}
 
-FIGURE
-Errorh0vsF.png
 
-FIGURE
-ErrorF.png
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorF.eps}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorFvsF.eps}
+\caption{Parameter estimation: frequency
+}
+\end{center}
+\end{figure}
 
-FIGURE
-ErrorFvsF.png
 
-FIGURE
-ErrorAsini.png
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsini.eps}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsinivsF.eps}
+\caption{Parameter estimation: a sin i 
+}
+\end{center}
+\end{figure}
 
-FIGURE
-ErrorAsinivsF.png
 
 \textit{Upper Limits and Detection Efficiency}
 
@@ -320,18 +380,31 @@ Upper limits and detection efficiency were also calculated using data in the ope
 
 For detection efficiency, we calculated the h-effective for the 31 detected and 19 non-detected pulsars and found the average detection rate in bins according to h-effective. These bins were non-uniform in size due to the interest in finding the 95\% detection efficiency point despite the paucity of statistics (only 50 pulsars total). Binomial uncertainty was also calculated and subtracted, by bin. The 95\% level is very approximately about 3e-25 (again, without the corrective factors of 1.75 and 1.11) but is imprecise to judge using this method.
 
-FIGURE
-detectionVsHeffective.png
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{detectionVsHeffective.eps}
+\caption{ Open pulsar detection efficiency curve
+}
+\end{center}
+\end{figure}
+
 
 Consequently we plotted the distribution of recovered h0 versus injected h0-effective (the error of which is shown above, for detected pulsars). Color-coding red pulsars as non-detected, blue as single pairwise detection, and green as triple pairwise detection, we identified a shelf of non-detected pulsars that was 95\% contained by an upper limit about 2.19e-25. This number, when corrected, yielded the upper limit of 1.74*1.11*2.19e-25 = 4.23e-25 for TwoSpect.
 
-FIGURE
-HrecoveredVsHeffectiveFullUL.png
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{HrecoveredVsHeffectiveFullUL.eps}
+\caption{Detections and upper limit determination 
+}
+\end{center}
+\end{figure}
+
 
 Further injection studies should show how this upper limit varies with frequency as injected h0, but at the time of the MDC, we did not feel confident in extrapolating this relationship.
-Cos iota Ambiguity
+\newline
+\textit{$\cos \iota$ Ambiguity}
 
-Cos iota, the cosine of the inclination angle of the pulsar, casts an ambiguity over the determination of h0. For TwoSpect, which assumes circular polarization, the true value of h0 will indeed be as reported if cos iota = 1, but will be greater if cos iota is less (i.e., the gravitational wave is elliptically polarized). In the case of linear polarization, h0 will be $2^(3/2)$ times larger than reported.
+$\cos \iota$, the cosine of the inclination angle of the pulsar, casts an ambiguity over the determination of h0. For TwoSpect, which assumes circular polarization, the true value of h0 will indeed be as reported if cos iota = 1, but will be greater if cos iota is less (i.e., the gravitational wave is elliptically polarized). In the case of linear polarization, h0 will be $2^{3/2}$ times larger than reported.
 
 While an analytical calculation of the expectation value of the correction factor is easy, it will not easily take into account the circular bias of detected signals. That is, a pipeline will tend to see a slightly greater proportion of signals that are more circularly polarized, because the effective h0 of those signals is greater. This "circularizes" the correction factor in a way dependent on the detection efficiency of the pipeline and the assumed prior distribution of pulsars. Although the effect is relatively minor, we decided to simulate it because the size of the effect was unknown at the time.
 
@@ -339,32 +412,63 @@ In this simulation, 2 million pulsars were generated with h0 between 3e-26 and 3
 
 We made a toy model of our detection efficiency, assuming no pulsars were detected below 1e-25 effective, all were above 3e-25, and the fraction detected was linear in h0 between those values.
 
-FIGURE
-PlotHeffDistH0DetectionEfficiency200breaks.png
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHeffDistH0DetectionEfficiency200breaks.eps}
+\caption{ Simulated detection efficiency curve
+}
+\end{center}
+\end{figure}
+
 
 Together with a uniform cos iota distribution on [-1, 1], this led to a trapezoidal distribution of recovered, detected h0 values with a curved lower (left) edge:
 
-FIGURE
-PlotHEffDistH0Detected.png
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHEffDistH0Detected.eps}
+\caption{Distribution with cos iota and detection efficiency
+}
+\end{center}
+\end{figure}
 
-The upper end of the distribution (right side of the trapezoid) was excluded because we are trying to find the average bijective mapping (slope) f: (detected h0) -> (true h0), and including detected h0 > 1e-24 meant that we were failing to see the complete injected h0 space. There was f$^(-1)$: (true h0) -> (detected h0), but not f. More plainly, suppose we looked at a detected h0 reported as 1.5e-24, and that our average corrected factor had been calculated to be 2.5 (it was not) -- this would imply that the true h0 was 3.75e-24 -- but this would be outside the domain of the simulation, so there would be no way to check it. The analogous problem should not happen at the lower end of the distribution (left side of the trapezoid).
+
+The upper end of the distribution (right side of the trapezoid) was excluded because we are trying to find the average bijective mapping (slope) f: (detected h0) $\rightarrow$ (true h0), and including detected h0 $>$ 1e-24 meant that we were failing to see the complete injected h0 space. There was f$^{-1}$: (true h0) $\rightarrow$ (detected h0), but not f. More plainly, suppose we looked at a detected h0 reported as 1.5e-24, and that our average corrected factor had been calculated to be 2.5 (it was not) -- this would imply that the true h0 was 3.75e-24 -- but this would be outside the domain of the simulation, so there would be no way to check it. The analogous problem should not happen at the lower end of the distribution (left side of the trapezoid).
 
 In turn, we looked for the relationship between the recovered h0 of this "detected" distribution and the corresponding original, true h0. The slope would give us the conversion factor. The first attempt was to grid the {detected h0}x{true h0} space into 2D pixels. This was suggestive, and yielded the following regressed slope:
 
-FIGURE
-PlotHeffVsH0TrueRegressions.png
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHeffVsH0TrueRegressions.eps}
+\caption{Regression using grid points
+}
+\end{center}
+\end{figure}
+
 
 There is a systematic bias in the grid method, both by one pixel (hence why the mean was adjusted downward to 1.74) and in the associated uncertainties. Plotting these uncertainties on the distribution of {detected h0} vs {true h0} shows how wide those error bars are.
 
-FIGURE
-PlotHEffVsH0TrueWithLines.png
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHEffVsH0TrueWithLines.eps}
+\caption{Simulation with fit lines
+}
+\end{center}
+\end{figure}
 
-This bias is likely due to sampling: numerical fluctuations in the grid method made it unstable at the 2 million pulsar level, especially toward the high h0 end of the distribution. Instead, we manually adjusted a +- sigma until the CDF encompassed the appropriate 68\% confidence interval, finding a sigma in the slope of 0.37 with a mean slope of 1.74. The reason for the aforementioned restriction of the plot to h-effective < 1e-24 can be seen in the distortion at levels above that in the following plot:
 
-FIGURE
-PlotSigmaDiffVsH0Eff.png
+This bias is likely due to sampling: numerical fluctuations in the grid method made it unstable at the 2 million pulsar level, especially toward the high h0 end of the distribution. Instead, we manually adjusted a $\pm \sigma$ until the CDF encompassed the appropriate 68\% confidence interval, finding a sigma in the slope of 0.37 with a mean slope of 1.74. The reason for the aforementioned restriction of the plot to h-effective $<$ 1e-24 can be seen in the distortion at levels above that in the following plot:
 
-The chosen 1.74+-0.37 sigma, however, yielded the necessary correction factor.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotSigmaDiffVsH0Eff.eps}
+\caption{Confidence intervals with final fit
+}
+\end{center}
+\end{figure}
+
+
+
+The chosen $1.74 \pm 0.37 \sigma$, however, yielded the necessary correction factor.
 
 Finally, we tested all of our calibration factors for h0 with the associated confidence intervals and found the fraction of open data estimated h0, f and asini within their 1 sigma error bars. The results were conservative:
 
@@ -393,6 +497,8 @@ Search over initial orbital phase by coherently combining\\
 template and doubly Fourier-transformed data
 \end{itemize}
 %\end{frame}
+
+Other ideas abound. The idea of simulated annealing has arisen in personal communication (e.g., with Maria Alessandra Papa, Sam Finn and others), but it is generally though to address the wrong issues in our high-noise, weak-signal analyses. Also proposed there (and in personal communication with Ethan Obie Romero-Severson) were `hill-climbers' that could explore the parameter space until encountering one of the X-pattern arms
 
 \section{Summary}
 %\begin{frame}{Summary}
@@ -492,6 +598,7 @@ Also: fastest known pulsar $f=$716 Hz(?)
 
 
 \begin{figure}
+\begin{center}
 %\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{maptrueH1}}
 %\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{maptrueL1}}
 %\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{maptrueV1}}
@@ -501,6 +608,7 @@ Also: fastest known pulsar $f=$716 Hz(?)
 \caption{ All-sky maps \{H1, L1, V1\} for fixed right ascension and declination
 \newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates)
 }
+\end{center}
 \end{figure}
 
 
