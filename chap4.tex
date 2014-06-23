@@ -186,6 +186,28 @@ in $a\sin\iota$)$ $
 \end{itemize}
 %\end{frame}
 
+%\begin{frame}{Sky maps using exact templates}
+\subsection{Sky maps using exact templates}
+
+
+\begin{figure}
+\begin{center}
+%\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{maptrueH1}}
+%\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{maptrueL1}}
+%\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{maptrueV1}}
+\includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{maptrueH1.eps}
+\includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{maptrueL1.eps}
+\includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{maptrueV1.eps}
+\caption{ All-sky maps \{H1, L1, V1\} for fixed right ascension and declination
+\newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates)
+}
+\end{center}
+\end{figure}
+
+
+%\end{frame}
+
+
 \section{Scorpius X-1 mock data challenge}
 %\begin{frame}{Fully-templated search for Scorpius X-1}
 \subsection{Fully-templated search for Scorpius X-1}
@@ -198,9 +220,10 @@ in $a\sin\iota$)$ $
 
 
 \caption{
-\textbf{Scorpius X-1 MDC ``pulsar 40'' \{H1\} 5 Hz band}
-\newline p-value (based on R statistic) in red
-\newline all (frequency, modulation depth) templates
+Scorpius X-1 Mock Data Challenge (MDC) pulsar 40 \{H1\}: 5 Hz band. 
+The p-value (single-template, applying Davies' Method to the R statistic) in is show in this heatmap, peak in red. 
+All templates are plotted on the (frequency, modulation depth) plane.
+This is a relatively broadband view.
 }
 \end{center}
 \end{figure}
@@ -221,7 +244,8 @@ in $a\sin\iota$)$ $
 \includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{heatmapL1.eps}
 \includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{heatmapV1.eps}
 \caption{Heatmaps \{H1, L1, V1\} of 11x11 templates centered around
-\newline \textbf{Scorpius X-1 MDC ``pulsar 8''}
+Scorpius X-1 MDC pulsar 8. 
+This is a relatively narrowband view.
 }
 \end{center}
 \end{figure}
@@ -237,9 +261,7 @@ in $a\sin\iota$)$ $
 \begin{center}
 %\protect\caption{\protect\includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1}}
 \includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1.eps}
-\caption{\textbf{Scorpius X-1 MDC ``pulsar 8'' \{H1\} 5 Hz band}
-\newline $3.6\times10^{5}$ templates, 10-22 mHz mod. depth, 120-125 Hz frequency
-\newline Signal at about (df = 0.019, f = 121.9) Hz
+\caption{Scorpius X-1 MDC pulsar 8 \{H1\}: 5 Hz band. This heatmap shows $3.6\times10^{5}$ templates, 10-22 mHz modulation depth, 120-125 Hz frequency. The peak siignal at about (df = 0.019, f = 121.9) Hz.
 }
 \end{center}
 \end{figure}
@@ -256,11 +278,11 @@ in $a\sin\iota$)$ $
 %\protect\caption{\protect\includegraphics[width=0.45\paperwidth,height=0.45\paperheight]{StatHistRH1}\protect\includegraphics[width=0.45\paperwidth,height=0.45\paperheight]{StatHistProbH1}}
 \includegraphics[width=0.6\paperwidth,height=0.35\paperheight]{StatHistRH1.eps}
 \includegraphics[width=0.6\paperwidth,height=0.35\paperheight]{StatHistProbH1.eps}
-\caption{\textbf{Scorpius X-1 MDC statistics}
-\newline \emph{Currently refining: }plots lack full set of cuts,
-\newline \emph{understanding noise, temporal gap \& spectral leakage}
-\newline establishing signal threshold p-value $\sim$ false alarm probability of 1\%
-\newline Re-calibrate p-values for trials factor, differences from all-sky
+\caption{Scorpius X-1 MDC statistics. These histograms of the $R$ statistic and $p$-value distribution were part of understanding noise, temporal gap \& spectral leakage, as well as establishing a threshold p-value $\sim$ false alarm probability of 1\%.
+These $p$-values are for single templates, appropriate to the all-sky search but not to a dense templated search with a large trials factor.
+Here, histograms show statistics in the absence of a signal. 
+The left-skew of the $p$-values is associated with gaps in the data (as is right-skew, with different gaps).
+Diurnal bias in barycentering is assumed, but the correlation is not fully understood.
 }
 \end{center}
 \end{figure}
@@ -334,21 +356,21 @@ We plotted the error in the h0 reported by TwoSpect versus h0-effective for the 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{detectedHerrVsHeffective.eps}
-\caption{ Error in strain estimation versus circular-effective strain
+\caption{ Error in strain estimation versus circular-effective injected strain. Higher injected strain results in higher absolute errors.
 } 
 \end{center}
 \end{figure}
 
 
-This same error was also plotted vs p-value and frequency. As will be seen on the plots for error in frequency and asini, high-frequency outliers were found in the open data set. These outliers could be categorized heuristically as having f $>$ 1050 Hz and abs(log10p) $<$ 300. These 4 outliers were assigned into the "loose" category, with a corresponding sigma. The remaining 27 were in the "tight" category, to which we could assign a more stringent sigma. These values are reported in the header of the graphs.
+This same error was also plotted vs p-value and frequency. As will be seen on the plots for error in frequency and asini, high-frequency outliers were found in the open data set. These outliers could be categorized heuristically as having f $>$ 1050 Hz and abs(log10p) $<$ 300. These 4 outliers were assigned into the \textit{loose} category, with a corresponding sigma. The remaining 27 were in the \textit{tight} category, to which we could assign a more stringent sigma. These values are reported in the header of the graphs.
 
-Blue lines indicate the less stringent uncertainty. Red lines (on plots vs p-value) indicate a least squares power law regression.
+Blue lines indicate the less stringent uncertainty. Red lines (on plots vs $p$-value) indicate a least squares power law regression.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0.eps}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0vsF.eps}
-\caption{Parameter estimation: strain
+\caption{Parameter estimation: error in strain as a function of recovered $p$-value (left) and frequency (right). The strain appears broadly distriuted, without any systematic patterns.
 }
 \end{center}
 \end{figure}
@@ -358,7 +380,7 @@ Blue lines indicate the less stringent uncertainty. Red lines (on plots vs p-val
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorF.eps}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorFvsF.eps}
-\caption{Parameter estimation: frequency
+\caption{Parameter estimation: error in frequency as a function of recovered $p$-value (left) and frequency (right). A systematic, high error group can be seen, composed of four outliers in these graphs of the open data set. These defined the \textit{loose} fit category and prompted further investigation.
 }
 \end{center}
 \end{figure}
@@ -368,7 +390,8 @@ Blue lines indicate the less stringent uncertainty. Red lines (on plots vs p-val
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsini.eps}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsinivsF.eps}
-\caption{Parameter estimation: a sin i 
+\caption{Parameter estimation: a sin$\iota$ (projected semi-major axis; directly proportional to modulation depth for a given frequency and period) as a function of recovered $p$-value (left) and frequency (right).
+Here the same \textit{loose} outliers suffer large errors.
 }
 \end{center}
 \end{figure}
@@ -378,23 +401,28 @@ Blue lines indicate the less stringent uncertainty. Red lines (on plots vs p-val
 
 Upper limits and detection efficiency were also calculated using data in the open pulsar set.
 
-For detection efficiency, we calculated the h-effective for the 31 detected and 19 non-detected pulsars and found the average detection rate in bins according to h-effective. These bins were non-uniform in size due to the interest in finding the 95\% detection efficiency point despite the paucity of statistics (only 50 pulsars total). Binomial uncertainty was also calculated and subtracted, by bin. The 95\% level is very approximately about 3e-25 (again, without the corrective factors of 1.75 and 1.11) but is imprecise to judge using this method.
+For detection efficiency, we calculated the h-effective for the 31 detected and 19 non-detected pulsars and found the average detection rate in bins according to h-effective. These bins were non-uniform in size due to the interest in finding the 95\% detection efficiency point despite the paucity of statistics (only 50 pulsars total). Binomial uncertainty was also calculated and subtracted, by bin. The 95\% level is very approximately about 3$\times 10^{-25}$ (again, without the corrective factors of 1.75 and 1.11) but is imprecise to judge using this method.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{detectionVsHeffective.eps}
-\caption{ Open pulsar detection efficiency curve
+\caption{ Open pulsar detection efficiency curve.
+Because only 50 pulsars were in the open set, this curve is relatively-poorly defined -- the binning has been chosen to give the most accurate representation based on the chosen thresholds.
+The curve is the worst case, equal to the efficiency minus the binomial uncertainty.
 }
 \end{center}
 \end{figure}
 
 
-Consequently we plotted the distribution of recovered h0 versus injected h0-effective (the error of which is shown above, for detected pulsars). Color-coding red pulsars as non-detected, blue as single pairwise detection, and green as triple pairwise detection, we identified a shelf of non-detected pulsars that was 95\% contained by an upper limit about 2.19e-25. This number, when corrected, yielded the upper limit of 1.74*1.11*2.19e-25 = 4.23e-25 for TwoSpect.
+Consequently we plotted the distribution of recovered h0 versus injected h0-effective (the error of which is shown above, for detected pulsars). Color-coding red pulsars as non-detected, blue as single pairwise detection, and green as triple pairwise detection, we identified a shelf of non-detected pulsars that was 95\% contained by an upper limit about 2.19$\times 10^{-25}$. This number, when corrected, yielded the upper limit of 1.74*1.11*2.19$10^{-25} = 4.23\times 10^{-25}$ for TwoSpect.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{HrecoveredVsHeffectiveFullUL.eps}
-\caption{Detections and upper limit determination 
+\caption{Detections and upper limit determination.
+Depending on whether a injection was seen in three, one, or no detectors, it was assigned a color-coded circle and plotted in recovered strain versus effective circular strain injected.
+The unity-slope line is shown to ascertain whether a further rescaling factor was needed (it was: constant 1.11).
+The zero-slope line is shown to indicate the ninety-five percent confidence upper limit.
 }
 \end{center}
 \end{figure}
@@ -408,14 +436,14 @@ $\cos \iota$, the cosine of the inclination angle of the pulsar, casts an ambigu
 
 While an analytical calculation of the expectation value of the correction factor is easy, it will not easily take into account the circular bias of detected signals. That is, a pipeline will tend to see a slightly greater proportion of signals that are more circularly polarized, because the effective h0 of those signals is greater. This "circularizes" the correction factor in a way dependent on the detection efficiency of the pipeline and the assumed prior distribution of pulsars. Although the effect is relatively minor, we decided to simulate it because the size of the effect was unknown at the time.
 
-In this simulation, 2 million pulsars were generated with h0 between 3e-26 and 3-24 (a rough guess at the scope of the MDC) with a distribution of 1/h0.
+In this simulation, 2 million pulsars were generated with h0 between 3$\times 10^{-26}$ and 3$\times 10^{-24}$ (a rough guess at the scope of the MDC) with a distribution of 1/h0.
 
-We made a toy model of our detection efficiency, assuming no pulsars were detected below 1e-25 effective, all were above 3e-25, and the fraction detected was linear in h0 between those values.
+We made a toy model of our detection efficiency, assuming no pulsars were detected below 1$\times 10^{-25}$ effective, all were above 3$\times 10^{-25}$, and the fraction detected was linear in h0 between those values.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHeffDistH0DetectionEfficiency200breaks.eps}
-\caption{ Simulated detection efficiency curve
+\caption{ Simulated detection efficiency curve. Because the cos $\iota$ ambiguity simulation require a priori model of detection efficiency, we described it simply. Here, no detections were claimed below $1\times 10^{-25}$, all were detected above $3\times 10^{-25}$, and the probability of detection rose uniformly on the intervening interval.
 }
 \end{center}
 \end{figure}
@@ -426,20 +454,20 @@ Together with a uniform cos iota distribution on [-1, 1], this led to a trapezoi
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHEffDistH0Detected.eps}
-\caption{Distribution with cos iota and detection efficiency
+\caption{Distribution of 2 million simulated stars, strain between $3\times 10^{-26}$ and $3\times 10^{-24}$ under a log-uniform distribution, following application of cos $\iota$ and detection efficiency cuts.
 }
 \end{center}
 \end{figure}
 
 
-The upper end of the distribution (right side of the trapezoid) was excluded because we are trying to find the average bijective mapping (slope) f: (detected h0) $\rightarrow$ (true h0), and including detected h0 $>$ 1e-24 meant that we were failing to see the complete injected h0 space. There was f$^{-1}$: (true h0) $\rightarrow$ (detected h0), but not f. More plainly, suppose we looked at a detected h0 reported as 1.5e-24, and that our average corrected factor had been calculated to be 2.5 (it was not) -- this would imply that the true h0 was 3.75e-24 -- but this would be outside the domain of the simulation, so there would be no way to check it. The analogous problem should not happen at the lower end of the distribution (left side of the trapezoid).
+The upper end of the distribution (right side of the trapezoid) was excluded because we are trying to find the average bijective mapping (slope) f: (detected h0) $\rightarrow$ (true h0), and including detected h0 $>$ 1$\times 10^{-24}$ meant that we were failing to see the complete injected h0 space. There was f$^{-1}$: (true h0) $\rightarrow$ (detected h0), but not f. More plainly, suppose we looked at a detected h0 reported as 1.5$\times 10^{-24}$, and that our average corrected factor had been calculated to be 2.5 (it was not) -- this would imply that the true h0 was 3.75 $\times 10^{-24}$ -- but this would be outside the domain of the simulation, so there would be no way to check it. The analogous problem should not happen at the lower end of the distribution (left side of the trapezoid).
 
 In turn, we looked for the relationship between the recovered h0 of this "detected" distribution and the corresponding original, true h0. The slope would give us the conversion factor. The first attempt was to grid the {detected h0}x{true h0} space into 2D pixels. This was suggestive, and yielded the following regressed slope:
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHeffVsH0TrueRegressions.eps}
-\caption{Regression using grid points
+\caption{Regression using grid. By binning the simulated stars on the true strain vs detected (recovered) strain plane, an accurate mean slope for the $\cos \iota$ correction was ascertained. It had to be modified downwards by the equivalent of one bin, to 1.74. However, the one sigma thresholds proved inaccurate, probably due to noise fluctuations.
 }
 \end{center}
 \end{figure}
@@ -450,18 +478,18 @@ There is a systematic bias in the grid method, both by one pixel (hence why the 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotHEffVsH0TrueWithLines.eps}
-\caption{Simulation with fit lines
+\caption{Simulation with fit lines as given by the bin-method regression.
 }
 \end{center}
 \end{figure}
 
 
-This bias is likely due to sampling: numerical fluctuations in the grid method made it unstable at the 2 million pulsar level, especially toward the high h0 end of the distribution. Instead, we manually adjusted a $\pm \sigma$ until the CDF encompassed the appropriate 68\% confidence interval, finding a sigma in the slope of 0.37 with a mean slope of 1.74. The reason for the aforementioned restriction of the plot to h-effective $<$ 1e-24 can be seen in the distortion at levels above that in the following plot:
+This bias is likely due to sampling: numerical fluctuations in the grid method made it unstable at the 2 million pulsar level, especially toward the high h0 end of the distribution. Instead, we manually adjusted a $\pm \sigma$ until the CDF encompassed the appropriate 68\% confidence interval, finding a sigma in the slope of 0.37 with a mean slope of 1.74. The reason for the aforementioned restriction of the plot to h-effective $<$ 1$\times 10^{-24}$ can be seen in the distortion at levels above that in the following plot:
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{PlotSigmaDiffVsH0Eff.eps}
-\caption{Confidence intervals with final fit
+\caption{Confidence intervals with final fit. After optimization and constraint to the region with a full bijective mapping between injected and recovered strains (below $1 \times 10^{-24}$), a one-sigma value of 0.37 in the slope was found to give accurate confidence intervals.
 }
 \end{center}
 \end{figure}
@@ -623,26 +651,6 @@ Also: fastest known pulsar $f=$716 Hz(?)
 
 %\end{frame}
 
-%\begin{frame}{Sky maps using exact templates}
-\subsection{Sky maps using exact templates}
-
-
-\begin{figure}
-\begin{center}
-%\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{maptrueH1}}
-%\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{maptrueL1}}
-%\protect\caption{\protect\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{maptrueV1}}
-\includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{maptrueH1.eps}
-\includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{maptrueL1.eps}
-\includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{maptrueV1.eps}
-\caption{ All-sky maps \{H1, L1, V1\} for fixed right ascension and declination
-\newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates)
-}
-\end{center}
-\end{figure}
-
-
-%\end{frame}
 
 %\begin{frame}{Coherent interferometer synthesis}
 \subsection{Coherent interferometer synthesis}
