@@ -1,7 +1,7 @@
 \contentsline {chapter}{DEDICATION}{ii}{section*.1}
 \contentsline {chapter}{ACKNOWLEDGEMENTS}{iii}{section*.1}
 \contentsline {chapter}{LIST OF FIGURES}{vii}{section*.1}
-\contentsline {chapter}{LIST OF TABLES}{xi}{section*.1}
+\contentsline {chapter}{LIST OF TABLES}{xii}{section*.1}
 \mbox { }\newline \noindent {\bf CHAPTER}\newline 
 \hbox { }
 \hbox { }
@@ -25,9 +25,9 @@
 \contentsline {subsubsection}{Observatory operation}{18}{section*.3}
 \contentsline {paragraph}{Detector characterization}{21}{section*.4}
 \contentsline {paragraph}{Feedforward filtering}{21}{section*.5}
-\contentsline {paragraph}{Phase camera}{26}{section*.6}
-\contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{28}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{28}{subsection.1.4.4}
+\contentsline {paragraph}{Phase camera}{25}{section*.6}
+\contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{27}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{27}{subsection.1.4.4}
 \contentsline {section}{\numberline {1.5}Summary}{28}{section.1.5}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf II.\hspace {5pt}}{\bf Feedforward: Auxiliary MICH-PRC Subtraction}}{29}{chapter.2}
