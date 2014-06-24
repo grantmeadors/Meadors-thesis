@@ -13,21 +13,21 @@
 \contentsline {subsection}{\numberline {1.1.3}Contrast with electromagnetic and particle astronomy}{9}{subsection.1.1.3}
 \contentsline {section}{\numberline {1.2}General relativity}{10}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Symmetry and action principles}{10}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Derivation of field equations}{11}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Radiation from quadrupoles}{13}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.2}Derivation of field equations}{10}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Radiation from quadrupoles}{12}{subsection.1.2.3}
 \contentsline {section}{\numberline {1.3}Astrophysical estimates}{13}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Sources: burst, continuous, inspiral and stochastic}{13}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Continuous waves from neutron stars}{14}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Laser Interferometer Gravitational-wave Observatories}{16}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}From Weber bars to interferometry}{16}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.3.2}Continuous waves from neutron stars}{13}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Laser Interferometer Gravitational-wave Observatories}{14}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}From Weber bars to interferometry}{14}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Observatories, investigations, and enhancements}{16}{subsection.1.4.2}
-\contentsline {subsubsection}{Interferometer theory}{18}{section*.2}
+\contentsline {subsubsection}{Interferometer theory}{17}{section*.2}
 \contentsline {subsubsection}{Observatory operation}{18}{section*.3}
 \contentsline {paragraph}{Detector characterization}{21}{section*.4}
 \contentsline {paragraph}{Feedforward filtering}{21}{section*.5}
-\contentsline {paragraph}{Phase camera}{25}{section*.6}
-\contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{27}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{27}{subsection.1.4.4}
+\contentsline {paragraph}{Phase camera}{26}{section*.6}
+\contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{28}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{28}{subsection.1.4.4}
 \contentsline {section}{\numberline {1.5}Summary}{28}{section.1.5}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf II.\hspace {5pt}}{\bf Feedforward: Auxiliary MICH-PRC Subtraction}}{29}{chapter.2}

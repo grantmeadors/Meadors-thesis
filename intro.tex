@@ -12,19 +12,21 @@ As yet, no direct detections are known.
 Hulse and Taylor \cite{HulseTaylor1975} observed a neutron star in a binary system, PSR 1913+16, with an orbit shrinking just as gravitational radiation would entail. 
 Following on the pioneering work of Joseph Weber with bar detectors~\cite{Weber1960} and Robert Forward with tabletop interferometers~\cite{Forward1978}, kilometer-scale interferometers were built at the end of the last millenium to look for gravitational radiation. 
 Laser light in these instruments travels orthogonal paths and is reflected back; shifts in the combined pattern are scrutinized for indications that gravitational waves stretched space itself. 
-This thesis describes efforts to make that search more sensitive with quantum optics at the observatories, by filtering noise from the data, and by conducting a promising search for continuous waves from neutrons stars in binary systems.
+LIGO, Virgo, and GEO600, soon to be joined by KAGRA, are kilometer-scale intereferometers, gravitational wave antennae standing on the threshold of disovery.
 
-Gravitational wave detectors seek to sense vibrations in the metric of spacetime.
-Each chapter in this thesis relates to this endeavor.
-LIGO, Virgo, and GEO600, soon to be joined by KAGRA, are kilometer-scale intereferometers, gravitational wave antennae standing on the threshold of detection.
-Noise intrinsic to the optical configuration of these instruments is subtracted, as exemplified post-facto by LIGO feedforward filtering using recorded servo data in Chapter \ref{chap2}. 
-Sensitivity can also be honed by quantum optical squeezing, selecting the relevant uncertainties from Heisenberg's principle, in Chapter \ref{chap3}.
-Astrophysicists expect us to find signals from one of four categories of cosmic sources: inspiralling binary systems of stellar remnants, supernovae and similar bursts, stochastic background, and continuous waves from neutron stars.
+%This thesis describes efforts to make that search more sensitive with quantum optics at the observatories, by filtering noise from the data, and by conducting a promising search for continuous waves from neutrons stars in binary systems.
+Vibrations in spacetime's metric require many steps to detect.
+The author's work has pursued a series of clearer perspectives on detection: filtering \& regressing out correlated noise, helping cancel flunctuations in the electromagnetic field with quantum optics, and looking in parameter space for continuous waves from promising neutron stars in binary systems. 
+Each chapter in this thesis elaborates this endeavor.
+Noise intrinsic to the optical configuration of these instruments is subtracted post-facto by LIGO feedforward filtering using recorded servo data in Chapter \ref{chap2}. 
+Quantum optical squeezing reduces relevant uncertainties per Heisenberg's principle in Chapter \ref{chap3}.
+Then the search begins.
+Astrophysicists expect to find signals from one of four categories of cosmic sources: inspiralling binary systems of stellar remnants, supernovae and similar bursts, stochastic background, and continuous waves from neutron stars.
 Einstein's theory predicts the intensity, speed, and polarization of gravitational waves that could be emitted from these sources.
 Low-mass X-ray binaries should lead astronomically long lifetimes, radiating continuous waves from their constituent neutron stars, driving our frequentist search of the Fourier-domain.
 Chapters \ref{chap4} and \ref{chap5} use these expectations to enhance and run analyses of simulated and real data, particularly for Scorpius X-1 and XTE J1751-305.
 Astronomy has grown from humanity's first glimpses into the night sky with the unaided eye. 
-With every new instrument, from Galileo's telescope through radio antennae and neutrino detectors, our understanding of the cosmos has grown. 
+With every new instrument, from Galileo's telescope through radio antennae and neutrino catchers, our understanding of the cosmos has grown. 
 Communicating that understanding is the subject of Chapter \ref{chap6}.
 Gravity pervades the universe like no other force: we must hear its tale. 
 
@@ -34,26 +36,33 @@ Gravity pervades the universe like no other force: we must hear its tale.
       
         %   --- Cosmic origins believed to generate GW. (note: should sprinkle citations as needed, not just where it says "cite") ---
 
-		Gravity's power to induce ripples in space is a matter of fact. Pulsar 1913+16, discovered by Hulse and Taylor, not only followed a pattern of orbital decay consistent with radiative loss of orbital decay to gravitational radiation -- it continued to do so~\cite{WeisbergTaylor2004,Weisberg2010}, even after Hulse and Taylor won the 1993 Nobel Prize in physics. 
-Moreover, there has been much interest in the question of whether the BICEP2~\cite{BICEP2014} and Planck~\cite{Planck2014} probes of the cosmic microwave background have seen evidence of $B$-mode polarizations that would indicate primordial gravitational fluctuations. We still may ask whether the waves are directly detectable on Earth. We may ask whether they appear in detectors in a way consistent with general relativity. The basic fact of their emission, however, appears settled.
+		Gravity's power to induce ripples in space is a matter of fact. Pulsar 1913+16, discovered by Hulse and Taylor, not only followed a pattern of orbital decay consistent with radiative loss of orbital decay to gravitational radiation -- it continued to do so~\cite{WeisbergTaylor2004,Weisberg2010}, seen in Figure~\ref{Hulse-Taylor_binary}, after the 1993 physics Nobel Prize. 
+This year, there has been much debate whether the BICEP2~\cite{BICEP2014} and Planck~\cite{Planck2014} probes of the cosmic microwave background have seen evidence of $B$-mode polarizations that would indicate primordial gravitational fluctuations.
+Eventual identification of the polarization is expected regardless. 
+We still may ask whether any gravitational waves will be directly detectable on Earth. 
+We may ask whether they appear in detectors in a way consistent with general relativity. 
+The basic fact of their emission, however, appears settled.
 
 	\begin{figure}
 	\begin{center}
-	\includegraphics[height=111mm, width=148mm]{500px-PSR_B1913+16_period_shift_graph.eps}
-	\caption{The Hulse-Taylor binary, orbital period change over time consistent with emission of gravitational radiation from its system}
+	\includegraphics[height=75mm, width=100mm]{500px-PSR_B1913+16_period_shift_graph.eps}
+	\caption{The Hulse-Taylor binary, orbital period change over time consistent with emission of gravitational radiation from its system~\cite{Weisberg2010}.}
 	\label{Hulse-Taylor_binary}
 	\end{center}
 	\end{figure}
 
-		Before delving into the specifics of general relativity, we might consider all the astrophysical sources we expect to emit gravitational waves. Physics prompts our search, but astronomy makes it exciting.
-
-	Discussions of gravitational waves frequently begin with derivations of the wave equations from Einstein's field equations. 
-General relativity, however, is not the only theory to predict gravitational waves: waves are a natural consequence of a class of similar theories, which make a range of testable predictions (such as number of polarization modes, from two to six, and possibly speeds different from $c$)~\cite{Will1993} 
-Waves should thus be expected even if some minor variation from Einstein's theory is discovered, pointing a way perhaps toward a quantum theory of gravity~\cite{Sathyaprakash2009}. 
-As the field progresses toward first detection and beyond to astronomy, the astrophysical targets of our searches should take precedence.
-
-		Gravitational waves (henceforth also abbreviated GW) searches presently focus on four distinct types of cosmic sources.
-This categorization of sources was presented in the 1983 LIGO Blue Book proposal and has since guided research focus~\cite{CollinsGravityShadow,Schutz1989}. 
+Before delving into general relativitic emission, let us consider the astrophysical sources expected to emit gravitational waves. 
+Physics prompts our search, but astronomy makes it exciting.
+When gravitational waves are heard by the interferometers, the public should remember them as the songs of dead stars, rippling through the fabric of spacetime.  
+Gravitational waves (henceforth also abbreviated GW) searches presently focus on four distinct types of cosmic sources.
+This categorization of sources was presented no later than the 1983 LIGO Blue Book proposal and has since guided research focus~\cite{CollinsGravityShadow,Schutz1989}. 
+The quadripartite division:
+\begin{itemize}
+\item Burst (rarely, `supernova')
+\item Compact binary coalescence (or `inspiral')
+\item Continuous wave (or `pulsar')
+\item Stochastic
+\end{itemize}
 
 This thesis concentrates on continuous waves, which are sine waves -- perhaps modulated by orbital motion, spin-up or spin-down. 
 Continuous waves are most likely to be detectable from neutron stars. 
@@ -86,7 +95,12 @@ Yet the detectability of the waves, even in principle, would remain an open ques
 Consult Misner, Thorne, and Wheeler's \textit{Gravitation}~\cite{MisnerThorneWheeler} and Sean Carroll's lectures notes~\cite{Carroll1997}, as well as other history books of the field for an account of the controversy, \textit{Gravity's Shadow}~\cite{CollinsGravityShadow} for sociological perspective, and 
 \textit{Gravity's Ghost}~\cite{CollinsGravityGhost} for insight into the detection criteria that have since evolved\footnote{See also a recent review by Riles~\cite{Riles2013}.}.
 
-Before deriving the answer to the detectability question, a contrast with the situation in other fields of astronomy is in order.
+Discussions of gravitational waves frequently begin with derivations of the wave equations from Einstein's field equations. 
+General relativity, however, is not the only theory to predict gravitational waves: waves are a natural consequence of a class of similar theories, which make a range of testable predictions (such as number of polarization modes, from two to six, and possibly speeds different from $c$)~\cite{Will1993} 
+Waves should thus be expected even if some minor variation from Einstein's theory is discovered, pointing a way perhaps toward a quantum theory of gravity~\cite{Sathyaprakash2009}. 
+%As the field progresses toward first detection and beyond to astronomy, the astrophysical targets of our searches should take precedence.
+
+Before deriving the answer to the detectability question from the field equations, a contrast with the situation in other fields of astronomy is in order.
 
  
         \subsection{Contrast with electromagnetic and particle astronomy}
