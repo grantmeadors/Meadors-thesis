@@ -230,6 +230,7 @@ g_{\mu \nu} \approx \eta_{\mu \nu} + h_{\mu \nu},
 
 \begin{equation}
 -\frac{1}{2} \Box \left(h_{\mu \nu} - \frac{1}{2} \eta_{\mu \nu} h_{\lambda}^{\lambda} \right) = \frac{8 \pi G}{c^4} T_{\mu \nu}.
+\label{Ballmer_wave_eq}
 \end{equation}
 
 The right-hand side indicates that GW are sourced by the stress-energy tensor, $T_{\mu\nu}$, which subsumes the electromagnetic stress-energy, pressure, and density terms. 
@@ -245,7 +246,7 @@ P &=& \frac{G}{5c^5}\left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\ran
 
 Equations~\ref{perturbation_eq}-\ref{energy-and-power_eq} represent the testable predictions of GR about GW. 
 GR itself is found by finding the field equations from the action~\cite{FarrThesis}, optimizing (extremizing) the integral of curvature: the Ricci scalar $R$.
-To $R$ add a hypothetical constant, $\Lambda$ (termed the cosmological constant), and the matter Lagrangian density $\mathcal{L}_M$ to obtain the Einstein-Hilbert action $\mathcal{S}$:
+Where $|g|$ indicates the determinant of $g$, to $R$ add a hypothetical constant, $\Lambda$ (termed the cosmological constant), and the matter Lagrangian density $\mathcal{L}_M$ to obtain the Einstein-Hilbert action $\mathcal{S}$:
 
 \begin{equation}
 \mathcal{S} = \int \left( \frac{1}{8\pi}\left(R - 2\Lambda\right) + \mathcal{L}_M \right) \sqrt{-|g|}d^4 x,
@@ -282,18 +283,49 @@ G_{\mu\nu} + \Lambda g_{\mu\nu} = 8 \pi T_{\mu\nu}.
 \label{great_einstein_field_equations}
 \end{equation}
 
-Einstein's concern was the somewhat different nature of the source term.
+Einstein's concern was the different nature of the source term.
 Much of the effort toward unifying general relativity with the other forces can be understood as trying to fuse the matter Lagrangian with the Ricci scalar in an intuitive way.
 
-\noindent The linearized wave derivation in transverse-traceless gauge is standard in GW. Radiation from numerical relativistic studies~\cite{FarrThesis} of non-linear behavior near sources is then reduced to the far-field regime. Equation~\ref{great_einstein_field_equations}, however, also allows derivations~\cite{KoopFinn2014} using the curvature make it easier to compare interferometer observations (of length scale $L$ much smaller than GW wavelength $\lambda$) with less-linear spacetimes or where $L$ is comparable to $\lambda$.
+The linearized wave derivation in transverse-traceless gauge is standard in GW. 
+Radiation in the non-linear near-field is explored by numerical relativistic studies~\cite{FarrThesis}.
+Equation~\ref{great_einstein_field_equations}, however, also allows derivations using the curvature make it easier to compare interferometer observations (of length scale $L$ much smaller than GW wavelength $\lambda$) with less-linear spacetimes or where $L$ is comparable to $\lambda$.
+In vacuum, the Riemann tensor satisfies a non-linear covariant wave equation in any gauge~\cite{KoopFinn2014}, $0 = R_{\mu \nu \rho \sigma; \lambda}^\lambda + S_{\mu \nu \rho \sigma}$, where the $S_{\mu \nu \rho \sigma}$ is quadratic in the Riemann tensor and therefore negligible.
+The first-order perturbative response of the Riemann tensor in Minkowski space of an observer at rest, in conventional transverse-traceless gauge (see below), to a metric perturbation $\tilde{h}_{\mu\nu}$ is then,
 
-The wave, parametrized by path $x^\mu (\lambda)$ follows the usual geodesic equation, where the covariant derivative by $\mu$ of $V^\nu$ is defined by $\nabla_\mu V^\nu = (\partial_\mu V^\nu + \Gamma^\nu_{\mu\lambda} V^\nu)$ and along a path by $D_\lambda = dx^\mu_\lambda \nabla_\mu$,
+\begin{equation}
+R_{0\mu0\nu} = -\frac{1}{2} \tilde{h}_{\mu\nu,00}.
+\label{Finn_wave_eq}
+\end{equation}
+
+%\noindent Seen another way~\cite{KoopFinn2014}, a perturbation $h_{\mu\nu}$ leads to a first order perturbation in the Riemann tensor:
+%\begin{eqnarray}
+%R^{(1)}_{\mu\nu\rho\sigma}= h_{\lambda\sigma} R_{\mu\nu\rho}^{(0)\lambda} - \frac{1}{2}\left( \right)
+%\end{eqnarray}
+
+\noindent Obtaining this first-order response recovers the usual formalism~\cite{BallmerThesis}, where a metric perturbation is substitution into Equation~\ref{great_einstein_field_equations} to yield,
+
+\begin{equation}
+G_{\mu\nu} = -\frac{1}{2}\left(h_{\mu\nu,\lambda}^{\textup{       }\lambda} - h^\lambda_{\mu,\lambda\nu} -
+h^\lambda_{\nu,\lambda\mu} + \eta_{\mu\nu}(h^{\lambda\sigma})_{,\lambda\sigma} - \eta_{\mu\nu}(h_\sigma^\sigma)_{,\lambda\lambda} - (h_\sigma^\sigma)_{,\mu\nu}  \right),
+\end{equation}
+
+\noindent simplified by switching coordinates to a traceless gauge, defined by $\tilde{h}_{\mu\nu}\equiv h_{\mu\nu} - (1/2)\eta_{\mu\nu}h_\lambda^\lambda$, that obeys the harmonic (transverse) condition, $\tilde{h}_{\mu\nu} = 0$, into
+
+\begin{equation}
+G_{\mu\nu} = -\frac{1}{2} \tilde{h}_{\mu\nu,00} = 8 \pi T_{\mu\nu}.
+\label{General_Ballmer_wave_eq}
+\end{equation}
+
+\noindent Equation~\ref{General_Ballmer_wave_eq} is the origin of Equation~\ref{Ballmer_wave_eq} and also corresponds to Equation~\ref{Finn_wave_eq}. Moreover, outside a source, we can impose the transverse-traceless gauge, which verifies that in vacuum $\tilde{h}_{\mu\nu} = h_{\mu\nu}$.
+
+However described, the wave, parametrized by path $x^\mu (\lambda)$ follows the same geodesic equation as light, where the covariant derivative by $\mu$ of $V^\nu$ is defined by $\nabla_\mu V^\nu = (\partial_\mu V^\nu + \Gamma^\nu_{\mu\lambda} V^\nu)$ and along a path~\cite{Carroll1997} by $D_\lambda = dx^\mu_\lambda \nabla_\mu$,
 
 \begin{equation}
 D_\lambda \partial_\lambda x^\mu = 0
 \end{equation}
 
-The wave has plus $h_+$ and cross $h_\times$ polarizations, making the metric waveform along the $z$-axis ($k_\mu = \textup{diag}(\omega,0,0,1)$) in transverse-traceless gauge:
+In general relativity, the six possible independent components of the waveform reduce to just two $h_+$ \& $h_\times$ terms, although other theories of gravity predict additional polarizations.
+These plus $h_+$ and cross $h_\times$ polarizations make the metric waveform along the $z$-axis ($k_\mu = \textup{diag}(\omega,0,0,1)$) in transverse-traceless gauge:
 
 \begin{equation}
 h_{\mu\nu} =
@@ -303,9 +335,11 @@ h_{\mu\nu} =
 0 & -h_+ & h_\times & 0 \\
 0 & h_\times & h_+ & 0\\
 0 & 0 & 0 & 0
-\end{array} \right] \cos \left(k_\mu x^\mu \right).
+\end{array} \right] \Re \left(e^{i k_\mu x^\mu} \right).
 \end{equation}
 
+\noindent Tensor polarization corresponds to the prediction of hypothetical gravitions being spin-two particles, analogous to the spin-one photon with a vector-polarized the electromagnetic field.
+While this equation describes the (near-)vacuum, far-field GW we seek to detect, the source term in Equation~\ref{General_Ballmer_wave_eq} must be understood to justify our expectation of astrophysical sources.
 
 
         \subsection{Radiation from quadrupoles}
