@@ -184,7 +184,7 @@ A short derivation follows.
     \label{general_relativity}
 
         Einstein's theory of General Relativity (hence GR) describes gravitation as curvature. 
-Gravity is a pseudoforce, unlike Newton's force $\textbf{F} = -G M_1 M_2 r^{-2} \hat{\textbf{r}}$ for two bodies of masses $M_1$ and $M_2$ seperated by a vector distance $\textbf{r}$ in a universe with a gravitational constant $G$.
+Gravity is a pseudoforce, unlike Newton's force $\textbf{F} = -G_C M_1 M_2 r^{-2} \hat{\textbf{r}}$ for two bodies of masses $M_1$ and $M_2$ seperated by a vector distance $\textbf{r}$ in a universe with a gravitational constant $G_C$ (henceforth, units are set where $G_C \equiv 1$).
  Einstein posits that objects always follow an extremized path, $\delta s = 0$ for arclength $s$  -- a geodesic worldline -- when the curvature of spacetime is considered. 
 
 The curvature of spacetime is described by the Riemann tensor, $R^\mu_{\nu\rho\sigma}$, which physically is required to be a solution to the Einstein field equations. 
@@ -289,11 +289,11 @@ Much of the effort toward unifying general relativity with the other forces can 
 The linearized wave derivation in transverse-traceless gauge is standard in GW. 
 Radiation in the non-linear near-field is explored by numerical relativistic studies~\cite{FarrThesis}.
 Equation~\ref{great_einstein_field_equations}, however, also allows derivations using the curvature make it easier to compare interferometer observations (of length scale $L$ much smaller than GW wavelength $\lambda$) with less-linear spacetimes or where $L$ is comparable to $\lambda$.
-In vacuum, the Riemann tensor satisfies a non-linear covariant wave equation in any gauge~\cite{KoopFinn2014}, $0 = R_{\mu \nu \rho \sigma; \lambda}^\lambda + S_{\mu \nu \rho \sigma}$, where the $S_{\mu \nu \rho \sigma}$ is quadratic in the Riemann tensor and therefore negligible.
-The first-order perturbative response of the Riemann tensor in Minkowski space of an observer at rest, in conventional transverse-traceless gauge (see below), to a metric perturbation $\tilde{h}_{\mu\nu}$ is then,
+In vacuum, the Riemann tensor satisfies a non-linear covariant wave equation in any gauge~\cite{KoopFinn2014}, $0 = R_{\mu \nu \rho \sigma; \lambda}^{\textup{        } \lambda} + S_{\mu \nu \rho \sigma}$, where the $S_{\mu \nu \rho \sigma}$ is quadratic in the Riemann tensor and therefore negligible.
+The first-order perturbative response of the Riemann tensor in Minkowski space of an observer at rest, in conventional transverse-traceless gauge (see below), to a metric perturbation $\bar{h}_{\mu\nu}$ is then,
 
 \begin{equation}
-R_{0\mu0\nu} = -\frac{1}{2} \tilde{h}_{\mu\nu,00}.
+R_{0\mu0\nu} = -\frac{1}{2} \bar{h}_{\mu\nu,00}.
 \label{Finn_wave_eq}
 \end{equation}
 
@@ -309,14 +309,16 @@ G_{\mu\nu} = -\frac{1}{2}\left(h_{\mu\nu,\lambda}^{\textup{       }\lambda} - h^
 h^\lambda_{\nu,\lambda\mu} + \eta_{\mu\nu}(h^{\lambda\sigma})_{,\lambda\sigma} - \eta_{\mu\nu}(h_\sigma^\sigma)_{,\lambda\lambda} - (h_\sigma^\sigma)_{,\mu\nu}  \right),
 \end{equation}
 
-\noindent simplified by switching coordinates to a traceless gauge, defined by $\tilde{h}_{\mu\nu}\equiv h_{\mu\nu} - (1/2)\eta_{\mu\nu}h_\lambda^\lambda$, that obeys the harmonic (transverse) condition, $\tilde{h}_{\mu\nu} = 0$, into
+\noindent simplified by switching coordinates to a traceless gauge, defined by $\bar{h}_{\mu\nu}\equiv h_{\mu\nu} - (1/2)\eta_{\mu\nu}h_\lambda^\lambda$, that obeys the harmonic (transverse) condition, $\bar{h}_{\mu\nu} = 0$, into
 
 \begin{equation}
-G_{\mu\nu} = -\frac{1}{2} \tilde{h}_{\mu\nu,00} = 8 \pi T_{\mu\nu}.
+G_{\mu\nu} = -\frac{1}{2} \bar{h}_{\mu\nu,00} = 8 \pi T_{\mu\nu}.
 \label{General_Ballmer_wave_eq}
 \end{equation}
 
-\noindent Equation~\ref{General_Ballmer_wave_eq} is the origin of Equation~\ref{Ballmer_wave_eq} and also corresponds to Equation~\ref{Finn_wave_eq}. Moreover, outside a source, we can impose the transverse-traceless gauge, which verifies that in vacuum $\tilde{h}_{\mu\nu} = h_{\mu\nu}$.
+\noindent Equation~\ref{General_Ballmer_wave_eq} is the origin of Equation~\ref{Ballmer_wave_eq} and also corresponds to Equation~\ref{Finn_wave_eq}. 
+Moreover, outside a source, we can impose the transverse-traceless gauge, which verifies that in vacuum $\bar{h}_{\mu\nu} = h_{\mu\nu}$.
+The curvature wave equation is what is fundamental.
 
 However described, the wave, parametrized by path $x^\mu (\lambda)$ follows the same geodesic equation as light, where the covariant derivative by $\mu$ of $V^\nu$ is defined by $\nabla_\mu V^\nu = (\partial_\mu V^\nu + \Gamma^\nu_{\mu\lambda} V^\nu)$ and along a path~\cite{Carroll1997} by $D_\lambda = dx^\mu_\lambda \nabla_\mu$,
 
@@ -325,7 +327,7 @@ D_\lambda \partial_\lambda x^\mu = 0
 \end{equation}
 
 In general relativity, the six possible independent components of the waveform reduce to just two $h_+$ \& $h_\times$ terms, although other theories of gravity predict additional polarizations.
-These plus $h_+$ and cross $h_\times$ polarizations make the metric waveform along the $z$-axis ($k_\mu = \textup{diag}(\omega,0,0,1)$) in transverse-traceless gauge:
+These plus $h_+$ and cross $h_\times$ polarizations make the metric waveform along the $z$-axis ($k_\mu = \textup{diag}(\omega,0,0,1)$, initial phase $\phi_0$) in transverse-traceless gauge:
 
 \begin{equation}
 h_{\mu\nu} =
@@ -335,17 +337,59 @@ h_{\mu\nu} =
 0 & -h_+ & h_\times & 0 \\
 0 & h_\times & h_+ & 0\\
 0 & 0 & 0 & 0
-\end{array} \right] \Re \left(e^{i k_\mu x^\mu} \right).
+\end{array} \right] \Re \left(e^{\sqrt{-1} (k_\mu x^\mu + \phi_0)} \right).
 \end{equation}
 
 \noindent Tensor polarization corresponds to the prediction of hypothetical gravitions being spin-two particles, analogous to the spin-one photon with a vector-polarized the electromagnetic field.
-While this equation describes the (near-)vacuum, far-field GW we seek to detect, the source term in Equation~\ref{General_Ballmer_wave_eq} must be understood to justify our expectation of astrophysical sources.
+GW in GR travel at the speed of light as electromagnetic waves, for which experimental data~\cite{CODATA} has matched theory~\cite{GriffithsE} so well that $c$ is now embedded into our system of units.
+Unlike light, which has complex interactions with interstellar media~\cite{Caldwell1981,McKee1977}, GW should pass almost unimpeded through the stars (literally). 
+While the transverse-traceless equation describes the (near-)vacuum, far-field GW we seek to detect, the source term in Equation~\ref{General_Ballmer_wave_eq} must be understood to justify our expectation of astrophysical sources.
 
 
         \subsection{Radiation from quadrupoles}
         \label{radiation}
-  
-            Predict power from rotating quadrupole. Might also be a good place to invoke Vladimir's thesis~\cite{DergachevThesis} as well as original primary sources. Note that just as light travels at the speed of light, which is measureable~\cite{CODATA} and which can be derived from electromagnetic theory~\cite{GriffithsE}, so we think that gravity should travel at the speed of light. Note that this radiation should not be affected by the interstellar medium. I think that Ostriker is the source to reference on the ISM~\cite{Caldwell1981},~\cite{McKee1977}.
+
+Section~\ref{field_equations} noted that monopole and dipole sources were forbidden by conservation of mass-energy and momentum. This leaves us to derive radiation from quadrupolar sources in the stress-energy tensor.
+Starting from the field equations, a Green's function $G$ (impulse response) lets us invert the linear differential operator $\Box$ by solving for a point, Dirac delta source $\delta$~\cite{Carroll1997}.
+As with electromagnetism, the retarded Green's function from a source at $y^\sigma$ to an observer at $x^\sigma$ is given (where the Heaviside step-function is $\theta$) by, 
+
+\begin{equation}
+G(x^\sigma - y^\sigma) = - \frac{1}{4\pi |x^i - y^i|}\delta \left(|x^i - y^i| - (x^0 - y^0)\right)\theta(x^0 - y^0).
+\end{equation}
+
+\noindent Hence the source integral is (n.b., $\sqrt{-|g|} = 1$ in flat space),
+
+\begin{eqnarray}
+\bar{h}_{\mu\nu} &=& -16\pi \int d^4 x \sqrt{-|g|} G(x^\sigma - y^\sigma) T_{\mu\nu}(y^\sigma),
+\\
+ &=& 4 \int \frac{d^3 x}{|x^i - y^i|} T_{\mu\nu} \left(t - |x^i - y^i|, y^i \right).
+\end{eqnarray}
+
+\noindent Note that the latter equation is integrated over time. 
+Converting to far-field at distance $r = |x^i - y^-i|$ and retarded time $t_r = t - r$, then Fourier transforming $\bar{h}$ and $T$ over time into $\tilde{\bar{h}}$ and $\tilde{T}$ respectively, we can impose Lorentz gauge ($\tilde{\bar{h}}^{0\nu} = (\sqrt{-1}/\omega) \tilde{\bar{h}}^{i\nu}$),
+
+\begin{equation} 
+\tilde{\bar{h}}_{ij} (t,x^i) = -\frac{2}{r}\omega^2 I_{ij}(t_r),
+\end{equation}
+
+\noindent where $I_{ij}$ is defined as the quadrupole moment with the Kronecker $\delta$, 
+
+\begin{equation}
+I_{ij} = \frac{1}{3}\int d^3 x T_{00} \left(3 x_i x_k - r^2 \delta_{ij}\right).
+\end{equation}
+
+\noindent Inverting the Fourier transform yields the time-domain equation for gravitational radiation in terms of a quadropole moment,
+
+\begin{equation}
+\bar{h}_{ij}(t, x^i) = \frac{2}{r} I_{ij,00} (t_r).
+\end{equation}
+
+For GW from a rotating neutron star with a spin axis inclined at angle $\cos \iota$ to an observer's line-of-sight, the relative polarization amplitudes~\cite{DergachevThesis} would be,
+
+\begin{eqnarray} 
+h_+ &=& \tfrac{1}{2} h_0 (1 + \cos^2 \iota),\\
+h_\times &=& h_0 \cos \iota.
+\end{eqnarray}
 
     \section{Astrophysical estimates}
     \label{estimates}
