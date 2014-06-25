@@ -383,6 +383,12 @@ D.J. Griffiths.
 L.P. Grishchuk.
 \newblock {\em Sov. {J}. {E}xp. \& {T}heor. {P}hys.}, 40(409), 1974.
 
+\bibitem{Gurzadyan1956}
+G.~Gurzadyan.
+\newblock {\em Radioastrofizika}.
+\newblock Akademia nauk armenyanskoi SSR, Erevan, Armenian SSR, 1956.
+\newblock Russian language.
+
 \bibitem{Gustavsen2006}
 B.~Gustavsen.
 \newblock {\em IEEE {T}rans. {P}ower {D}elivery}, 21(3), 2006.
@@ -423,6 +429,11 @@ P.~Jaranowski, A.~Kr\'{o}lak, and B.~Schutz.
   stars: the signal and its detection.
 \newblock {\em Phys. {R}ev. {D}}, 58(063001), 1998.
 
+\bibitem{KerrLyndenBell1986}
+F.J. Kerr and D.~Lynden-Bell.
+\newblock Review of galactic constants.
+\newblock {\em Mon. {N}ot. {R}. {A}str. {S}oc.}, 221:1023--1038, 1986.
+
 \bibitem{KissellPRCMICH}
 J.~Kissel.
 \newblock Mich and prc coupling into darm.
@@ -441,6 +452,12 @@ Jeffrey~S. Kissel.
 S.~Klimenko.
 \newblock Line noise investigation.
 \newblock Web: http://www.phys.ufl.edu/LIGO/LINE/, 2000.
+
+\bibitem{KoopFinn2014}
+M.J. Koop and L.S. Finn.
+\newblock Gravitational wave detector response in terms of spacetime riemann
+  curvature.
+\newblock Technical Report gr-qc/1310.2871, arXiv, 2013-10-10.
 
 \bibitem{Kuroda2010}
 K.~Kuroda et~al.
@@ -610,6 +627,12 @@ P.~Saulson.
 B.F. Schutz.
 \newblock Gravitational wave sources and their detectability.
 \newblock {\em Class. {Q}uant. {G}rav.}, 6:1761, 1989.
+
+\bibitem{Shklovsky1960}
+I.~Shklovsky.
+\newblock {\em Cosmic radio waves}.
+\newblock Harvard, Cambridge, MA, 1960.
+\newblock Translated by Richard B. Rodman and Carlos M. Varsavsky.
 
 \bibitem{SiggFreq1997}
 D.~Sigg.

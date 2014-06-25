@@ -148,7 +148,7 @@ Infrared radiation, as first seen by William Herschel, was just beyond the visib
 As the wave nature of light came to be understood, culminating in Maxwell's equations, the existence of invisible electromagnetic radiation was put on sound theoretical footing.
 The only remaining questions pertained to whether this radiation would prove astornomically interesting, especially in the extreme low- (radio) and high- (X- and $\gamma$-ray) frequencies found at the end of the 19th Century.
 Fortuitiously, unlike with GW today, these novel bands of electromagnetic spectrum could be easily generated and detected by scientists in small laboratories, as with Marconi and Marie \& Pierre Curie.
-Within half a century, radio telescopy began with Karl Jansky.
+Within half a century, radio telescopy began with Karl Jansky~\cite{Shklovsky1960}, with Grote Reber soon observing the Milky Way~\cite{Gurzadyan1956}.
 By the early 21st Century, radio astronomy ranged from common rooftop designs~\cite{SRT} (nonetheless sensitive enough to infer the galactic rotation curve in the hydrogen line~\cite{MeadorsThesis2008}) to planetary-scale very long baseline interferometry and plans for a Square Kilometer Array.
 Electromagnetic, or photon, astronomy has the advantage of calibration with familiar sources.
 
@@ -264,12 +264,12 @@ Substituting into the action, we obtain~\cite{Carroll1997} the \textit{Einstein 
 The equations are often simplified using the Einstein tensor, $G_{\mu\nu} \equiv R_{\mu\nu} - (1/2)R g_{\mu\nu}$:
 
 \begin{eqnarray}
-\delta \mathcal{S} &=& \int d^4 x \left( \frac{\delta R \sqrt{-|g|} + (R-2\Lambda)\delta \sqrt{-|g|}}{8\pi}+ \delta (\mathcal{L}_M \sqrt{-|g|})\right), \\
+\delta \mathcal{S} &=& \int d^4 x \left( \frac{\delta R \sqrt{-|g|} + (R-2\Lambda)\delta \sqrt{-|g|}}{8\pi}+ \delta (\sqrt{-|g|}\mathcal{L}_M)\right), \\
  &=& \int d^4 x \sqrt{-|g|}\left( \frac{\delta g^{\mu\nu}}{8\pi} \left[ G_{\mu\nu} + \Lambda g_{\mu\nu} \right]
- + \frac{\delta g^{\mu \nu}}{\sqrt{-|g|}} \frac{\delta (\sqrt{-|g|}\mathcal{L}_M)}{\delta g_{\mu\nu}} \right).\\
+ + \frac{\delta g^{\mu \nu}}{\sqrt{-|g|}} \frac{\delta (\sqrt{-|g|}\mathcal{L}_M)}{\delta g_{\mu\nu}} \right).
 \end{eqnarray}
 
-\noindent Since the interval must vanish everywhere,
+\noindent Since the integral must vanish everywhere,
 \begin{eqnarray}
 \frac{1}{8\pi} \left[G_{\mu\nu} + \Lambda g_{\mu\nu} \right] = -\frac{1}{\sqrt{-|g|}}\frac{\delta (\sqrt{-|g|}\mathcal{L}_M)}{\delta g_{\mu\nu}}.
 \end{eqnarray}
@@ -278,9 +278,11 @@ The equations are often simplified using the Einstein tensor, $G_{\mu\nu} \equiv
 
 \begin{equation}
 G_{\mu\nu} + \Lambda g_{\mu\nu} = 8 \pi T_{\mu\nu}.
+\label{great_einstein_field_equations}
 \end{equation}
 
-\noindent The linearized wave solution follows.
+\noindent The linearized wave solution in transverse-traceless gauge is standard, although Equation~\ref{great_einstein_field_equations} also allows derivations~\cite{KoopFinn2014} using the curvature make it easier to compare interferometer observations (of length scale $L$ much smaller than GW wavelength $\lambda$) with less-linear spacetimes or where $L$ is comparable to $\lambda$.
+
 The wave, parametrized by path $x^\mu (\lambda)$ follows the usual geodesic equation, where the covariant derivative by $\mu$ of $V^\nu$ is defined by $\nabla_\mu V^\nu = (\partial_\mu V^\nu + \Gamma^\nu_{\mu\lambda} V^\nu)$ and along a path by $D_\lambda = dx^\mu_\lambda \nabla_\mu$,
 
 \begin{equation}
