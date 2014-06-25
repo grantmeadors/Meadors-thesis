@@ -129,7 +129,7 @@ See \textit{Gravity's Shadow}~\cite{CollinsGravityShadow} for sociological persp
 \textit{Gravity's Ghost}~\cite{CollinsGravityGhost} for insight into the detection criteria that have since evolved\footnote{See also a recent review by Riles~\cite{Riles2013}.}.
 
 Discussions of GW frequently begin with derivations of the wave equations from Einstein's field equations. 
-General relativity, however, is not the only theory to predict GW: waves are a natural consequence of a class of similar theories, which make a range of testable predictions (such as number of polarization modes, from two to six, and possibly speeds different from $c$)~\cite{Will1993} 
+General relativity, however, is not the only theory to predict GW: waves are a natural consequence of a class of similar theories, which make a range of testable predictions (such as number of polarization modes, from two to six, and possibly speeds different from $c$)~\cite{Will1993}. 
 Waves should thus be expected even if some minor variation from Einstein's theory is discovered, pointing a way perhaps toward a quantum theory of gravity~\cite{Sathyaprakash2009}. 
 %As the field progresses toward first detection and beyond to astronomy, the astrophysical targets of our searches should take precedence.
 
@@ -204,11 +204,11 @@ For more mathematical detail, please see the Appendix.
 
 Einstein's geodesic equation is a replacement for not only Newton's law of gravitation but also for the Laws of Motion.
 An object's acceleration is described in terms of its proper time and the Christoffel connection.
-The supposition that objects follow a geodesic path follows from Fermat's principle of least time, which also inspired the least action principle, $\delta S = 0$.
+The supposition that objects follow a geodesic path follows from Fermat's principle of least time, which also inspired the least action principle, $\delta \mathcal{S} = 0$.
 In turn, interferometry is best understood in terms of least-time phase or \textit{time-of-flight}.
 
 Although gauge symmetries and the associated conservation laws of Noether's theorem have been critical to the development of quantum field theory, GR has more general symmetries. 
-Whereas electromagnetism arises from $U(1)$ unitary Lie group gauge symmetries, general relativity arises from $GL(4, \mathbb{R})$ general linear Lie group symmetries. 
+Whereas electromagnetism arises from $U(1)$ unitary Lie group gauge symmetries, the electroweak force from $SU(2) \times U(1)$, and quantum chromodynamics from $SU(3)$, general relativity arises from $GL(4, \mathbb{R})$ general linear Lie group symmetries. 
 Ergo the conservation laws that emerge from GR are the familiar ones from mechanics -- stress-energy, momentum, and so on, with subtleties (particular for non-static universes).
 
 %           Like electricity and magnetism, GR is the product of symmetry, action. 
@@ -218,47 +218,69 @@ Ergo the conservation laws that emerge from GR are the familiar ones from mechan
         \label{field_equations}
 
             A common approach to GW derivations is linearized GR~\cite{FlanaganHughes2005}.
-            This approach is correct in weak fields, and proceeds~\cite{AdhikariThesis} from the metric $g$ approximation as the sum of a Minkowski (flat spacetime) component, $\eta$, plus a perturbation $h$, where $|h| \ll |\eta|$:
+            Linearization proceeds~\cite{AdhikariThesis} from the metric $g_{\mu\nu}$ approximation as the sum of a Minkowski (flat spacetime) component, $\eta_{\mu\nu}$, plus a perturbation $h$, where $|h_{\mu\nu}| \ll |\eta_{\mu\nu}|$, so $|h_{\mu\nu}| \ll 1$:
 
 \begin{equation}
 g_{\mu \nu} \approx \eta_{\mu \nu} + h_{\mu \nu},
+\label{perturbation_eq}
 \end{equation}
 
-\noindent leading to a wave equation,
+\noindent the weak-field approximation, leading to a wave equation, notated by a d'Alembertian $\Box = \partial_\mu \partial^\mu$,
 
 \begin{equation}
 -\frac{1}{2} \Box \left(h_{\mu \nu} - \frac{1}{2} \eta_{\mu \nu} h_{\lambda}^{\lambda} \right) = \frac{8 \pi G}{c^4} T_{\mu \nu}.
 \end{equation}
 
-The wave carries energy~\cite{BallmerThesis} as well:
+The right-hand side indicates that GW are sourced by the stress-energy tensor, $T_{\mu\nu}$, which subsumes the electromagnetic stress-energy, pressure, and density terms. 
+For gravitational sources of astrophysical interest, the majority of sourcing comes from matter density -- since mass-energy is conserved, monopolar radiation is forbidden, and conservation of momentum forbids the dipole term. 
+GW are thus sourced by quadrupoles $I_{ij}$ and higher only, although the higher-order terms are generally smaller and neglected. 
+The wave does carries energy density $\rho_{gw}$ and power $P$~\cite{BallmerThesis}:
 
 \begin{eqnarray}
-\rho_{\textup{gw}} = \frac{c^2}{16 \pi G} \left\langle |\partial_t h_+|^2 + |\partial_t h_\times|^2 \right\rangle,\\
-P = \frac{G}{5c^5}\left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle \approx 5.5\times 10^{-54} W^{-1} \left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle.
+\rho_{\textup{gw}} &=& \frac{c^2}{16 \pi G} \left\langle |h_{+,0}|^2 + |h_{\times,0}|^2 \right\rangle,\\
+P &=& \frac{G}{5c^5}\left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle \approx 5.5\times 10^{-54} W^{-1} \left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle.
+\label{energy-and-power_eq}
 \end{eqnarray}
 
-Let us demonstrate this result and also derive field equations from the action, integrating over extremized curvature~\cite{FarrThesis}.
-Obtain the action from Ricci scalar curvature $R$, a hypothetical constant, $\Lambda$ (termed the cosmological constant), and the matter Lagrangian density $\mathcal{L}_M$:
+Equations~\ref{perturbation_eq}-\ref{energy-and-power_eq} represent the testable predictions of GR about GW. 
+GR itself is found by finding the field equations from the action~\cite{FarrThesis}, optimizing (extremizing) the integral of curvature: the Ricci scalar $R$.
+To $R$ add a hypothetical constant, $\Lambda$ (termed the cosmological constant), and the matter Lagrangian density $\mathcal{L}_M$ to obtain the Einstein-Hilbert action $\mathcal{S}$:
 
 \begin{equation}
-\mathcal{S} = \int \left( R - 2\Lambda + \mathcal{L}_M \right) \sqrt{-|g|}d^4 x,
+\mathcal{S} = \int \left( \frac{1}{8\pi}\left(R - 2\Lambda\right) + \mathcal{L}_M \right) \sqrt{-|g|}d^4 x,
 \end{equation}
 
-Given $R = R^\mu_\mu$ Ricci scalar a for a $R_{\mu\nu} = R^\lambda_{\mu\lambda\nu}$ Ricci tensor contracted from the Riemann tensor, $R^\mu_{\nu\rho\sigma}$ (the curvature tensor, equivalently the 2-form $\textsf{R}^\mu_\nu$), we can construct the Maurer-Cartan structure equation with a connection $\omega$,
+Extremizing $\delta \mathcal{S} = 0$ involves expanding $R = R^\mu_\mu$, where $R_{\mu\nu} = R^\lambda_{\mu\lambda\nu}$, the Ricci tensor. In turn, the Ricci tensor is contracted from the Riemann tensor, $R^\mu_{\nu\rho\sigma}$ (the curvature tensor, equivalently the 2-form $\textsf{R}^\mu_\nu$). Maurer-Cartan structure equations show how the Riemann tensor is an operator, the sum of a `differential' plus connection $\omega$, applied to the connection $\omega$ itself,
 
 \begin{eqnarray}
-\textsf{R}^\mu_\nu = d\omega^\mu_\nu + \omega^\mu_\rho \wedge \omega^\rho_\nu, \\
-\omega^{\rho'}_{\mu\sigma'} = e^{\alpha'}_{\nu} e^{\lambda}_{\beta'} \Gamma^{\nu}_{\mu\lambda} - e^{\lambda}_{\beta'} \partial_{\mu} e^{\alpha'}_{\lambda},\\
-\Gamma^\sigma_{\mu\nu} = \frac{1}{2} g^{\sigma\rho} \left( g_{\nu \rho, \mu} + g_{\rho \mu, \nu} - g_{\mu\nu,\rho} \right). 
+\textsf{R}^\mu_\nu &=& d\omega^\mu_\nu + \omega^\mu_\rho \wedge \omega^\rho_\nu, \\
+\omega^{\rho'}_{\mu\sigma'} &=& e^{\alpha'}_{\nu} e^{\lambda}_{\beta'} \Gamma^{\nu}_{\mu\lambda} - e^{\lambda}_{\beta'} \partial_{\mu} e^{\alpha'}_{\lambda},\\
+\Gamma^\sigma_{\mu\nu} &=& \frac{1}{2} g^{\sigma\rho} \left( g_{\nu \rho, \mu} + g_{\rho \mu, \nu} - g_{\mu\nu,\rho} \right). 
 \end{eqnarray}
 
-\noindent where the last equation defines the \textit{Christoffel} connection. Then we obtain the \textit{Einstein field equations}, sourced by the stress-energy tensor, $T_{\mu\nu}$:
+\noindent where the last equation defines the \textit{Christoffel} connection. Just as metric induces distance on the spacetime Riemannian manifold, and the connection corrects geodesic paths, so the curvature tensor accounts for geodesic deviation between paths.
+
+Substituting into the action, we obtain~\cite{Carroll1997} the \textit{Einstein field equations} by varying over the metric $g_{\mu\nu}$, we make use of the fact that $\delta R = (g^{\mu\nu} \delta R_{\mu\nu} + R_{\mu\nu} \delta g^{\mu\nu})$ (the first term of which vanishes due to Stokes' theorem).
+The equations are often simplified using the Einstein tensor, $G_{\mu\nu} \equiv R_{\mu\nu} - (1/2)R g_{\mu\nu}$:
+
+\begin{eqnarray}
+\delta \mathcal{S} &=& \int d^4 x \left( \frac{\delta R \sqrt{-|g|} + (R-2\Lambda)\delta \sqrt{-|g|}}{8\pi}+ \delta (\mathcal{L}_M \sqrt{-|g|})\right), \\
+ &=& \int d^4 x \sqrt{-|g|}\left( \frac{\delta g^{\mu\nu}}{8\pi} \left[ G_{\mu\nu} + \Lambda g_{\mu\nu} \right]
+ + \frac{\delta g^{\mu \nu}}{\sqrt{-|g|}} \frac{\delta (\sqrt{-|g|}\mathcal{L}_M)}{\delta g_{\mu\nu}} \right).\\
+\end{eqnarray}
+
+\noindent Since the interval must vanish everywhere,
+\begin{eqnarray}
+\frac{1}{8\pi} \left[G_{\mu\nu} + \Lambda g_{\mu\nu} \right] = -\frac{1}{\sqrt{-|g|}}\frac{\delta (\sqrt{-|g|}\mathcal{L}_M)}{\delta g_{\mu\nu}}.
+\end{eqnarray}
+
+\noindent The field equations are sourced by right-hand side, identified (e.g., by comparison with Newtonian gravity) with the stress-energy tensor, $T_{\mu\nu}$:
 
 \begin{equation}
-R_{\mu} - \frac{1}{2} R g_{\mu\nu} + \Lambda g_{\mu\nu} = 8 \pi T_{\mu\nu}.
+G_{\mu\nu} + \Lambda g_{\mu\nu} = 8 \pi T_{\mu\nu}.
 \end{equation}
 
-\noindent These are nonlinear, but when linearized, there is indeed a wave solution: $\Box h_{\mu\nu} = 0$~\cite{Carroll1997}
+\noindent The linearized wave solution follows.
 The wave, parametrized by path $x^\mu (\lambda)$ follows the usual geodesic equation, where the covariant derivative by $\mu$ of $V^\nu$ is defined by $\nabla_\mu V^\nu = (\partial_\mu V^\nu + \Gamma^\nu_{\mu\lambda} V^\nu)$ and along a path by $D_\lambda = dx^\mu_\lambda \nabla_\mu$,
 
 \begin{equation}
