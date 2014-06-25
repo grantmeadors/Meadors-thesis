@@ -36,7 +36,7 @@ Gravity pervades the universe like no other force: we must hear its tale.
       
         %   --- Cosmic origins believed to generate GW. (note: should sprinkle citations as needed, not just where it says "cite") ---
 
-		Gravity's power to induce ripples in space is a matter of fact. Pulsar 1913+16, discovered by Hulse and Taylor, not only followed a pattern of orbital decay consistent with radiative loss of orbital decay to gravitational radiation -- it continued to do so~\cite{WeisbergTaylor2004,Weisberg2010}, seen in Figure~\ref{Hulse-Taylor_binary}, after the 1993 physics Nobel Prize. 
+		Gravity's power to induce ripples in space is a matter of fact. Pulsar 1913+16, discovered by Hulse and Taylor in radio waves, not only followed a pattern of orbital decay consistent with radiative loss of orbital decay to gravitational radiation -- it continued to do so~\cite{WeisbergTaylor2004,Weisberg2010}, seen in Figure~\ref{Hulse-Taylor_binary}, after the 1993 physics Nobel Prize. 
 This year, there has been much debate whether the BICEP2~\cite{BICEP2014} and Planck~\cite{Planck2014} probes of the cosmic microwave background have seen evidence of $B$-mode polarizations that would indicate primordial gravitational fluctuations.
 Eventual identification of the polarization is expected regardless. 
 We still may ask whether any gravitational waves will be directly detectable on Earth. 
@@ -183,16 +183,17 @@ A short derivation follows.
     \section{General relativity}
     \label{general_relativity}
 
-        Einstein's theory of General Relativity (hence GR) describes gravitation as a pseudoforce. 
-Unlike Newton, Einstein posits that objects always follow an extremized path, $\delta s = 0$ for arclength $s$  -- a geodesic worldline -- when the curvature of spacetime is considered. 
-This supposition follows from the Fermat principle of least time.
-In turn, Fermat inspired the least action principle, $\delta S = 0$.
-Likewise, the following discussion of GW interferometry is best understood in terms of phase or \textit{time-of-flight}.
-The curvature of spacetime is described by the Riemann tensor, $R^\mu_{\nu\rho\sigma}$, which is a solution to the Einstein field equations. 
-In Section~\ref{field_equations} the connection between these field equations and the Ricci scalar curvature will be clarified. 
-This Riemann tensor can be constructed from the Christoffel connection, $\Gamma^\mu_{\rho\sigma}$, which in turn can be expressed in terms of the metric, $g_{\mu \nu}$.
-Whereas electromagnetism arises from $U(1)$ unitary Lie group gauge symmetries, general relativity arises from $GL(4, \mathbb{R})$ general linear Lie group symmetries.
+        Einstein's theory of General Relativity (hence GR) describes gravitation as curvature. 
+Gravity is a pseudoforce, unlike Newton's force $\textbf{F} = -G M_1 M_2 r^{-2} \hat{\textbf{r}}$ for two bodies of masses $M_1$ and $M_2$ seperated by a vector distance $\textbf{r}$ in a universe with a gravitational constant $G$.
+ Einstein posits that objects always follow an extremized path, $\delta s = 0$ for arclength $s$  -- a geodesic worldline -- when the curvature of spacetime is considered. 
 
+The curvature of spacetime is described by the Riemann tensor, $R^\mu_{\nu\rho\sigma}$, which physically is required to be a solution to the Einstein field equations. 
+Section~\ref{field_equations} clarifies the connection between these field equations and the Ricci scalar curvature $R$, a trace of the Riemann tensor, whence they can be derived. 
+This Riemann tensor is constructed from the Christoffel connection, $\Gamma^\mu_{\rho\sigma}$, which in turn can be expressed in terms of the metric, $g_{\mu \nu}$.
+It is the metric that measures distance across spacetime: $ds^2 = g_{\mu\nu} dx^\mu dx^\nu$.
+Hence the psuedoforce of gravity is, in GR, curvature distortions (arising from matter) that change the distance along worldlines and thus affect trajectories.
+
+For more mathematical detail, please see the Appendix.
  Carroll and \textit{Gravitation} are essential references~\cite{Carroll1997,MisnerThorneWheeler}, consulting other sources for the Einstein-Hilbert/Palatini action~\cite{FarrThesis}.
 
 %            Introduce the metric $g$ here, but reinforce that it is not essential.
@@ -201,7 +202,16 @@ Whereas electromagnetism arises from $U(1)$ unitary Lie group gauge symmetries, 
         \subsection{Symmetry and action principles}
         \label{principles}
 
-            Like electricity and magnetism, GR is the product of symmetry, action. 
+Einstein's geodesic equation is a replacement for not only Newton's law of gravitation but also for the Laws of Motion.
+An object's acceleration is described in terms of its proper time and the Christoffel connection.
+The supposition that objects follow a geodesic path follows from Fermat's principle of least time, which also inspired the least action principle, $\delta S = 0$.
+In turn, interferometry is best understood in terms of least-time phase or \textit{time-of-flight}.
+
+Although gauge symmetries and the associated conservation laws of Noether's theorem have been critical to the development of quantum field theory, GR has more general symmetries. 
+Whereas electromagnetism arises from $U(1)$ unitary Lie group gauge symmetries, general relativity arises from $GL(4, \mathbb{R})$ general linear Lie group symmetries. 
+Ergo the conservation laws that emerge from GR are the familiar ones from mechanics -- stress-energy, momentum, and so on, with subtleties (particular for non-static universes).
+
+%           Like electricity and magnetism, GR is the product of symmetry, action. 
 
 
         \subsection{Derivation of field equations}
