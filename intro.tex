@@ -229,7 +229,7 @@ g_{\mu \nu} \approx \eta_{\mu \nu} + h_{\mu \nu},
 \noindent the weak-field approximation, leading to a wave equation, notated by a d'Alembertian $\Box = \partial_\mu \partial^\mu$,
 
 \begin{equation}
--\frac{1}{2} \Box \left(h_{\mu \nu} - \frac{1}{2} \eta_{\mu \nu} h_{\lambda}^{\lambda} \right) = \frac{8 \pi G}{c^4} T_{\mu \nu}.
+-\frac{1}{2} \Box \left(h_{\mu \nu} - \frac{1}{2} \eta_{\mu \nu} h_{\lambda}^{\lambda} \right) = \frac{8 \pi G_C}{c^4} T_{\mu \nu}.
 \label{Ballmer_wave_eq}
 \end{equation}
 
@@ -239,8 +239,8 @@ GW are thus sourced by quadrupoles $I_{ij}$ and higher only, although the higher
 The wave does carries energy density $\rho_{gw}$ and power $P$~\cite{BallmerThesis}:
 
 \begin{eqnarray}
-\rho_{\textup{gw}} &=& \frac{c^2}{16 \pi G} \left\langle |h_{+,0}|^2 + |h_{\times,0}|^2 \right\rangle,\\
-P &=& \frac{G}{5c^5}\left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle \approx 5.5\times 10^{-54} W^{-1} \left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle.
+\rho_{\textup{gw}} &=& \frac{c^2}{16 \pi G_C} \left\langle |h_{+,0}|^2 + |h_{\times,0}|^2 \right\rangle,\\
+P &=& \frac{G_C}{5c^5}\left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle \approx 5.5\times 10^{-54} W^{-1} \left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle.
 \label{energy-and-power_eq}
 \end{eqnarray}
 
@@ -384,12 +384,9 @@ I_{ij} = \frac{1}{3}\int d^3 x T_{00} \left(3 x_i x_k - r^2 \delta_{ij}\right).
 \bar{h}_{ij}(t, x^i) = \frac{2}{r} I_{ij,00} (t_r).
 \end{equation}
 
-For GW from a rotating neutron star with a spin axis inclined at angle $\cos \iota$ to an observer's line-of-sight, the relative polarization amplitudes~\cite{DergachevThesis} would be,
-
-\begin{eqnarray} 
-h_+ &=& \tfrac{1}{2} h_0 (1 + \cos^2 \iota),\\
-h_\times &=& h_0 \cos \iota.
-\end{eqnarray}
+Deducing radiated power requires a second-order perturbative expansion~\cite{Carroll1997,BallmerThesis}, yielding Equation~\ref{energy-and-power_eq}.
+While the mathematical credibility of the second-order expansion may seem strained, the implied power in the gravitational wave strain is physically observable, as in PSR 1913+16.
+The goal of gravitational wave astronomers now is not just to infer radiated power but to measure $h_{\mu\nu}$ directly.
 
     \section{Astrophysical estimates}
     \label{estimates}
@@ -415,16 +412,26 @@ Promising searches have been carried out by the LIGO Scientific Collaboration fo
         The emission mechanism of gravitational radiation with amplitude $h_0$ from a neutron star is is from an elliptical deformation, ellipticity $\epsilon$, on its surface, leading to a quadrupole moment $I$~\cite{Zimmermann1979,LSCPulsar2006} and thus emission at frequency $f = 2\nu$, twice the neutron star spin frequency $\nu$:
 
         \begin{eqnarray}
-        \epsilon = \frac{I_{xx} - I_{yy}}{I_zz}, \\
-        h_0 = \frac{4 \pi^2 G}{c^4} \frac{I_{zz} f^2}{r} \epsilon.
+        \epsilon = \frac{I_{xx} - I_{yy}}{I_{zz}}, \\
+        h_0 = \frac{4 \pi^2 G_C}{c^4} \frac{I_{zz} f^2}{r} \epsilon.
         \end{eqnarray}
+
+For GW from a rotating neutron star with a spin axis inclined at angle $\cos \iota$ to an observer's line-of-sight, the relative polarization amplitudes~\cite{DergachevThesis} would be,
+
+\begin{eqnarray} 
+h_+ &=& \tfrac{1}{2} h_0 (1 + \cos^2 \iota),\\
+h_\times &=& h_0 \cos \iota.
+\end{eqnarray}
+
+
 
 Excepting the case of torque balance in low-mass X-ray binary systems, neutron star rotation frequency will decay due to gravitational radiation, yielding a relationship between the `spindown age'~\cite{Brady1998} $\tau$ and the gravitational radiation amplitude:
 
         \begin{eqnarray}
         \tau = -f / \dot{f}, \\
-        h_0 = \frac{1}{r} \sqrt{\frac{5 G I_{zz}}{2 c^2 \tau}}.
+        h_0 = \frac{1}{r} \sqrt{\frac{5 G_C I_{zz}}{2 c^2 \tau}}.
         \end{eqnarray}
+
 
 	\begin{figure}
 	\begin{center}
