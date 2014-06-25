@@ -42,6 +42,7 @@ I was expecting a `,' or a `}'---line 2605 of file bibliography.bib
  : year = "2010"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in SRT
 Warning--empty title in LIGOCal2010
 Warning--empty title in LSCPulsarS4
 Warning--empty year in AbbottScoX12007
@@ -73,45 +74,45 @@ Warning--empty title in Sathyaprakash2009
 Warning--empty year in Weber1960
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 131 entries,
+You've used 133 entries,
             2118 wiz_defined-function locations,
-            1252 strings with 22093 characters,
-and the built_in function-call counts, 35831 in all, are:
-= -- 3353
-> -- 1963
+            1262 strings with 22348 characters,
+and the built_in function-call counts, 36304 in all, are:
+= -- 3400
+> -- 1977
 < -- 14
-+ -- 795
-- -- 652
-* -- 2490
-:= -- 6576
-add.period$ -- 373
-call.type$ -- 131
-change.case$ -- 648
++ -- 801
+- -- 656
+* -- 2516
+:= -- 6646
+add.period$ -- 378
+call.type$ -- 133
+change.case$ -- 654
 chr.to.int$ -- 0
-cite$ -- 162
-duplicate$ -- 1341
-empty$ -- 2564
-format.name$ -- 652
-if$ -- 7111
+cite$ -- 165
+duplicate$ -- 1359
+empty$ -- 2613
+format.name$ -- 656
+if$ -- 7218
 int.to.chr$ -- 0
-int.to.str$ -- 131
-missing$ -- 114
-newline$ -- 637
-num.names$ -- 264
-pop$ -- 628
+int.to.str$ -- 133
+missing$ -- 115
+newline$ -- 646
+num.names$ -- 266
+pop$ -- 641
 preamble$ -- 1
-purify$ -- 565
+purify$ -- 570
 quote$ -- 0
-skip$ -- 918
+skip$ -- 933
 stack$ -- 0
-substring$ -- 1265
-swap$ -- 129
+substring$ -- 1296
+swap$ -- 131
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 486
-warning$ -- 31
-while$ -- 304
-width$ -- 134
-write$ -- 1385
+type$ -- 494
+warning$ -- 32
+while$ -- 307
+width$ -- 136
+write$ -- 1403
 (There were 8 error messages)

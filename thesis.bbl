@@ -1,5 +1,10 @@
 \begin{thebibliography}{100}
 
+\bibitem{SRT}
+Web: http://web.haystack.mit.edu/SRT/.
+\newblock Thanks to Haystack Observatory and the Massachusetts Institute of
+  Technology.
+
 \bibitem{BarsottiNatureSqueezing}
 J.~Aasi et~al.
 \newblock Enhancing the sensitivity of the {LIGO} gravitational wave detector
@@ -9,6 +14,12 @@ J.~Aasi et~al.
 \bibitem{LIGOCal2010}
 J.~Abadie et~al.
 \newblock {\em Nucl. {I}nstrum. {M}eth.}, A624(223), 2010.
+
+\bibitem{AbadieCalibration2010}
+J.~Abadie et~al.
+\newblock Calibration of the {LIGO} gravitational wave detectors in the fifth
+  science run.
+\newblock {\em NIM-A}, 623:223--240, 2010.
 
 \bibitem{LIGOBurst2012}
 J.~Abadie et~al.
