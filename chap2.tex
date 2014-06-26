@@ -528,14 +528,15 @@ LIGO was constructed by the California Institute of Technology and Massachusetts
 
 This analysis is intended to make Advanced LIGO simpler. To that end, some of the tools involved were directed toward the first lock stretch of the advanced detector era, at LIGO Livingston's L1 interferometer on 2014 May 26.
 
-Denis Martynov, Anamaria Effler, Robert Ward, and Ryan deRosa commented on the lock. MICH noise was dominating the spectrum. Based on Keita Kawabe, Keith Riles and my subtraction of MICH \& PRC noise from the S6 data set (and H1 in real-time), I wrote a Matlab script to investigate.  
+MEWD\footnote{Denis Martynov, Anamaria Effler, Robert Ward, and Ryan deRosa.} attained the lock. MICH noise was dominating the spectrum. Based on the subtraction\footnote{Meadors, Kawabe, Riles.} of MICH \& PRC noise from the S6 data set (and H1 in real-time), an investigation ensued.
 The Matlab function \texttt{f\_domainsubtract} (from the 40 m, used in AMPS code to make a frequency domain transfer function) was run on data at CIT in
 
 /archive/frames/A6/L0/L1/L-L1\_R\_1085/
 
-using Gregory Mendell's \texttt{readFrames} function to pull 2100 s of frame data starting 1085202300.
+using the \texttt{readFrames}\footnote{by Gregory Mendell.} function to pull 2100 s of frame data starting 1085202300.
 
-Absent a DARM\_ERR or \_CTRL channel, the \_IN1\_DQ channels were used, following the example of Rana Adhikari in the LLO aLog. Kawabe subsequently confirmed that IN1\_DQ has replaced ERR and OUT\_DQ has replaced CTRL.
+Absent a DARM\_ERR or \_CTRL channel, the \_IN1\_DQ channels were used, following an example\footnote{due to Rana Adhikari; Kawabe subsequently confirmed that IN1\_DQ has replaced ERR and OUT\_DQ has replaced CTRL.}
+in the LLO aLog.
 
 Uncalibrated PSDs from Matlab \texttt{pwelch} follow.
 
@@ -638,11 +639,12 @@ MICH and PRCL indeed cohere with DARM, in similar ways, each with a coherence (n
 
 In contrast, SRCL has a coherence as much as 0.3 at 10 Hz. It is even broader band, dropping off in either direction (about 0.05 at 3 Hz and 400 Hz, with a drop in coherence at 50 Hz).
 
-These results corroborate Martynov, Effler, Ward and deRosa's assessment that MICH noise is currently dominant and suggest that PRCL and SRCL noise are also significant. To be thorough this result should be verified using the OUT\_DQ channels; these results were calculated using IN1\_DQ.
+These results corroborate the assessment that MICH noise is currently dominant and suggest that PRCL and SRCL noise are also significant. 
+To be thorough this result should be verified using the OUT\_DQ channels; these results were calculated using IN1\_DQ.
 
 \textbf{Future}
 
-This is not the full feedforward code, which could be updated (not entirely trivial) to subtract out the noise and calculate a spectrum post-facto. This would require no work on the part of the commissioners. If a "calibration exists", perhaps we could calculate a morale-boosting inspiral range.
+This is not the full feedforward code, which could be updated (not entirely trivial) to subtract out the noise and calculate a spectrum post-facto. This would require no work on the part of the commissioners. If a calibration exists, we could calculate a morale-boosting inspiral range.
 
 If commissioners want a real-time filter, that would presuppose the existence of a MICH/PRCL/SRCL subtraction path in the model and closed loop response transfer functions. Once those exist, one could update (somewhat more trivial) the real-time calculation code to get a high-quality Foton filter.
 

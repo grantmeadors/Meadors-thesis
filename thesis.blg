@@ -22,22 +22,22 @@ I was expecting a `,' or a `}'---line 934 of file bibliography.bib
  : year = "2014",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2472 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2481 of file bibliography.bib
  : 
  : year = "1960"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2499 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2508 of file bibliography.bib
  : 
  : year = "2014-03-18"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2507 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2516 of file bibliography.bib
  : 
  : year = "2014-03-21"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2631 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2640 of file bibliography.bib
  : 
  : year = "2010"
 (Error may have been on previous line)
@@ -74,45 +74,45 @@ Warning--empty title in Sathyaprakash2009
 Warning--empty year in Weber1960
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 137 entries,
+You've used 138 entries,
             2118 wiz_defined-function locations,
-            1292 strings with 22900 characters,
-and the built_in function-call counts, 37334 in all, are:
-= -- 3502
-> -- 2017
+            1296 strings with 23048 characters,
+and the built_in function-call counts, 37580 in all, are:
+= -- 3526
+> -- 2030
 < -- 15
-+ -- 817
-- -- 668
-* -- 2571
-:= -- 6830
-add.period$ -- 392
-call.type$ -- 137
-change.case$ -- 670
++ -- 822
+- -- 672
+* -- 2586
+:= -- 6876
+add.period$ -- 395
+call.type$ -- 138
+change.case$ -- 674
 chr.to.int$ -- 0
-cite$ -- 169
-duplicate$ -- 1403
-empty$ -- 2700
-format.name$ -- 668
-if$ -- 7434
+cite$ -- 170
+duplicate$ -- 1413
+empty$ -- 2718
+format.name$ -- 672
+if$ -- 7484
 int.to.chr$ -- 0
-int.to.str$ -- 137
-missing$ -- 120
-newline$ -- 668
-num.names$ -- 274
-pop$ -- 660
+int.to.str$ -- 138
+missing$ -- 121
+newline$ -- 673
+num.names$ -- 276
+pop$ -- 662
 preamble$ -- 1
-purify$ -- 584
+purify$ -- 587
 quote$ -- 0
-skip$ -- 959
+skip$ -- 969
 stack$ -- 0
-substring$ -- 1343
-swap$ -- 135
+substring$ -- 1348
+swap$ -- 136
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 506
+type$ -- 510
 warning$ -- 32
-while$ -- 316
-width$ -- 140
-write$ -- 1451
+while$ -- 318
+width$ -- 141
+write$ -- 1462
 (There were 8 error messages)
