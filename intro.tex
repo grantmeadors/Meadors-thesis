@@ -665,12 +665,7 @@ The switch to DC readout occured prior to S6, and in the leadup to that science 
                 \paragraph{Detector characterization}
                 \label{detchar}
             
-                    DetChar methods: omega scans, line hunting and glitches
-
-My work on site included getting the Omega scan engine tested and running manual Omega scans in the first months of S6, July and August 2009. 
-See Figure~\ref{omega_scan_audible_glitch} for an example of the spectrograms this method was able to generate. These spectrograms helped categorize glitch sources and reduce them, to the benefit of the burst group in particular.
-Fortunately, this work was later automated thanks to Tomoki Isogai. 
-
+%                    DetChar methods: omega scans, line hunting and glitches
 
 \begin{figure}
 \begin{center}
@@ -680,10 +675,37 @@ Fortunately, this work was later automated thanks to Tomoki Isogai.
 \end{center}
 \end{figure}
 
+Commissioning Enhanced LIGO in the three months encompassing the start of S6 around July 2009 required eliminating the residual noise sources lingering from installation. 
+In particular, the Output Mode Cleaner~\cite{SmithThesis} was an unknown, and its servo-locking scheme (involving both piezoelectric and thermal actuation) required some artistry.
+DC readout generally increased the low-frequency noise floor.
+New glitches sprang forth as a results, and the author's work at LIGO Hanford Observatory centered on identifying them.
+
+Common tools for investigators on-site are both time-domain (DataViewer) and frequency-domain (Diagnostic Test Tools) data-plotters.
+While those perspectives allowed diagnosis of at least one flaw in the interferometer's filters, a combined, spectrogrammatic view using the burst group's Omega analysis pipeline proved a needed third, unified view, seen in Figure~\ref{omega_scan_audible_glitch}.
+This pipeline was run on many pre- and early-S6 glitches using a manual infrastructure\footnote{Omega scan diagnostics were later automated by Tomoki Isogai.}.
+
+Effective engines for tracking and, preferably, eliminating glitches and persistent lines in the detector spectrum -- the process of detector characterization -- are critical to distinguishing rare events.
+
+%My work on site included getting the Omega scan engine tested and running manual Omega scans in the first months of S6, July and August 2009. 
+%See Figure~\ref{omega_scan_audible_glitch} for an example of the spectrograms this method was able to generate. These spectrograms helped categorize glitch sources and reduce them, to the benefit of the burst group in particular.
+%Fortunately, this work was later automated thanks to Tomoki Isogai. 
+
                 \paragraph{Feedforward filtering}
                 \label{feedforward_filters}
 
-                    Example of feedforward: 60 Hz magnetometer. The only source that mentions this is, I think, Nic's thesis~\cite{SmithThesis}. Yet the most pertinent example is one that has long been applied to LIGO: MICH and PRC feedforward. The specific needed are mention in the thesis of Adhikari~\cite{AdhikariThesis} and Ballmer~\cite{BallmerThesis}, but immediately before Keita Kawabe and I began our project, these parameters had been tuned by Jeff Kissel~\cite{KissellPRCMICH}
+Feedback servos keep LIGO operational, holding the mirrors and auxiliary systems in stationary `lock' points.
+Closing the loop in feedback requires a way to actuate a physical control signal to cancel out whatever influence is causing an error signal that pushes the system away from its lock point.
+When this direct cancellation is not possible -- for instance, when ambient magnetic fields due to 60 Hz mains lines can not be escaped -- feedforward remains.
+Feedforward, an open-loop, can be done purely in software, but it requires an accurate estimator for the influence of a noise source into the system.
+
+In the case of Enhanced LIGO commission, an example was implemented with the aforementioned 60 Hz line using a magnetomer to supply the feedforward correction~\cite{SmithThesis}, which greatly enhanced sensitivity near the Crab pulsar frequency.
+Subsequently, into the following years, I began to work on the long-known~\cite{AdhikariThesis,BallmerThesis} issue of cancelling the influence of auxiliary length control noises.
+Loops for nulling this effect exist, diagrammed in Figure~\ref{servo_loop_realtime}, but they require periodic retuning~\cite{KissellPRCMICH}.  
+The direction of this work was to fine an automated, and more precise, way to tune these servos.
+A finely-tuned servo filter was implemented in late September 2010\footnote{After, and unrelated to, the famed Big Dog event~\cite{Riles2013}}.
+This filter reduced the noisiest residual coupling, from the differential inner Fabry-Perot mirror motion to the differential arm motion that encodes strain, by almost an order of magnitude. 
+
+                    %Example of feedforward: 60 Hz magnetometer. The only source that mentions this is, I think, Nic's thesis~\cite{SmithThesis}. Yet the most pertinent example is one that has long been applied to LIGO: MICH and PRC feedforward. The specific needed are mention in the thesis of Adhikari~\cite{AdhikariThesis} and Ballmer~\cite{BallmerThesis}, but immediately before Keita Kawabe and I began our project, these parameters had been tuned by Jeff Kissel~\cite{KissellPRCMICH}
 
 	\begin{figure}
 	\begin{center}
@@ -703,7 +725,8 @@ Fortunately, this work was later automated thanks to Tomoki Isogai.
 
 The closed loop gain mentioned in Figure~\ref{newNOISEfilter} is a function of frequency because it is a geometric sum of time $\tau$-delayed open loop gain responses by DARM\_CTRL to error signals from DARM\_ERR: $G_\textup{closed} = \lim_{p\rightarrow\infty} \Sigma_n^p G e^{i n \omega \tau} = \left(1 + G e^{i \omega \tau} \right)^{-1}$. 
 Because MICH damping is summed with DARM\_CTRL, it picks up an additional factor of the actuation function AC for a net transfer function of $H_{md} G_\textup{closed}$AC in the closed loop. 
-Thus, compared to an open-loop (e.g., post facto) subtraction, a real-time servo will differ by a factor of $G_\textup{closed}$AC. 
+Thus, compared to an open-loop (e.g., post-facto) subtraction (effect estimated in Figure~\ref{filter_early}), a real-time servo will differ by a factor of $G_\textup{closed}$AC. 
+See Chapter~\ref{chap2} for full details of open-loop subtraction and the extension to a post-facto, veto-safeguarded improvement in the sensitivity of all S6.
 
 	\begin{figure}
 	\begin{center}
