@@ -338,6 +338,7 @@ h_{\mu\nu} =
 0 & h_\times & h_+ & 0\\
 0 & 0 & 0 & 0
 \end{array} \right] \Re \left(e^{\sqrt{-1} (k_\mu x^\mu + \phi_0)} \right).
+\label{GW-matrix-eq}
 \end{equation}
 
 \noindent Tensor polarization corresponds to the prediction of hypothetical gravitions being spin-two particles, analogous to the spin-one photon with a vector-polarized the electromagnetic field.
@@ -494,59 +495,125 @@ First, we discuss how gravitational wave interferometers sensitivity can be impr
     \section{Laser Interferometer Gravitational-wave Observatories}
     \label{LIGO}
         
-        LIGO observatories. The most fun part to write. Cite Nergis Mavalvala~\cite{MavalvalaThesis}, Stefan Ballmer~\cite{BallmerThesis}, Rana Adhikari~\cite{AdhikariThesis}, Nicolas de Mateo Smith-Lefevbre~\cite{SmithThesis} and, of course, Peter Saulson~\cite{Saulson}.
+Design and construction of the Laser Interferometer Gravitational-wave Observatories required extensive prototyping and commissioning both during Initial LIGO~\cite{MavalvalaThesis,AdhikariThesis,BallmerThesis} and Enhanced LIGO~\cite{FrickeThesis,SmithThesis,DooleyThesis}.
+The core features of interferometer design were established even before construction, summarized by Saulson~\cite{Saulson}, but many technical noise sources were encountered.
+Motivations, fundamental noises, and the developments of commissioning all merit attention.
+
+%        LIGO observatories. The most fun part to write. Cite Nergis Mavalvala~\cite{MavalvalaThesis}, Stefan Ballmer~\cite{BallmerThesis}, Rana Adhikari~\cite{AdhikariThesis}, Nicolas de Mateo Smith-Lefevbre~\cite{SmithThesis} and, of course, Peter Saulson~\cite{Saulson}.
 
         \subsection{From Weber bars to interferometry}
         \label{bars_to_interferometry}
 
-            History lesson: Weber bars progress to interferometers. Use Saulson, but Nic's thesis has links to some of the original sources~\cite{Saulson},~\cite{SmithThesis}.           
+Between the earliest interferometry of Michelson~\cite{michelson} and LIGO came the resonant bar detectors of Joseph Weber~\cite{Weber1960}.
+Bar detection of GW developed rapidly through the 1960s, but contradictory results dampened enthusiasm~\cite{Saulson,CollinsGravityShadow}.
+Nevertheless, great effort was devoted to technically-excellent bars such as ALLEGRO, AURIGA, EXPLORER, NAUTILUS and NIOBE over the subsequent decades.
+Meanwhile, prototypes by Reiner Weiss, Robert Forward~\cite{Forward1978}, Ronald Drever and many others demonstrated that interferometry could also achieve the senstivities desired for gravitational wave detection.
+Interferometry promised better fundamental noise sources and broadband operation, meaning that a single instrument could listen to a wider frequency band.
+Xylophones of bars were proposed, but never built, that might scale the few Hz bandwidths of bars to the hundreds to thousands of Hz of interferometers.
+Gravitational wave interferometry has carried the prospects for GW astronomy toward unprecedented levels of sensitivity, thanks to performance factors detailed in Section~\ref{methods}.
+
+            %History lesson: Weber bars progress to interferometers. Use Saulson, but Nic's thesis has links to some of the original sources~\cite{Saulson},~\cite{SmithThesis}.           
 
         \subsection{Observatories, investigations, and enhancements}
         \label{methods}
 
-		Michelson was one of the first to use interferometers~\cite{michelson}. He is famous for having done so to try to measure the velocity of the Earth with respect to the luminerferous ether and finding it to be unmeasurable.
+	Michelson invented modern interferometry~\cite{michelson} in his 1887 experiments with Morley to try to measure the velocity of the Earth with respect to the lumineferous ether.
+Although commonly claimed to have spurred the work of Minkowski, the implications of this work for special relativity may not have been fully understood for several decades~\cite{CollinsGravityGhost}.
+Yet the value of the experimental technique was undeniable.
+Michelson \& Morley had invented an accurate relative phase-meter for light.
 
-A GW interferometer, at its core, is also a Michelson interferometer. 
-The power $P$ at the output `dark' port, is by design equal to zero except when the measureable (e.g., ether, a GW, or other disturbance) causes a fringe shift $\Delta \phi$ related to the agnular frequency $\omega$ of the light and the time-of-flight down the $x$ and $y$ arms, $T_x$ and $T_y$. 
-Physically, it is proportional to the electric field: 
-
-\begin{eqnarray}
-P \propto E_0^2 \left| 1 + e^{i \Delta \phi}\right|^2 = 2 E_0^2 (1 + \cos \Delta \phi), \\
-\Delta \phi = \omega (T_y - T_x).
-\end{eqnarray}
-
-In Enhanced and Advanced LIGO, $\Delta \phi = 2\pi L_s /\lambda + \phi_0 + \phi_{\textup{DARM}} $, where in decreasing order of size, $L_s$ is known as the Schnupp asymmetry (a constant difference in arm length), $\phi_0$ is a constant offset from a fringe to enable non-radio-frequency-modulated DC readout, and $\phi_{\textup{DARM}}$ is the putative time-varying signal of `DARM', the differential arm motion that might encode a GW signal. 
-
-Power $P$ can be directly improved by increasing effective laser power (e.g., a brighter laser or use of `power recycling'), and $\delta \phi$ can be increased by making $T_{x,y}$ storage times longer (e.g., with Fabry-Perot cavities).
-
-Gravitational wave signals enter the interferometer, in a technical sense, by changing the spacetime curvature in the arms. It is not necessary to discuss mirror motion or Doppler shifting, although these are also valid points of view. 
-
-In the simplest, linearized picture, the spacetime curvature leads to a GW with amplitude $h$; when the wave is aligned with x-axis and y-axis arms of length $L$ (see~\cite{Jaranowski1998} for the antenna pattern correction when it is misaligned), it changes the time-of-flight in the arms:
+Existing GW observatories, at their cores, are also Michelson interferometers. 
+In contemporary GW interferometers, monochromatic laser light (typically 1064 nm) is used.
+This light is split into two equal beams by the beam-splitter, reflects off mirrors at the ends of two arms, X and Y, and returns to interfere at the beam-splitter after times $T_x$ and $T_y$.
+The power $P$ at the beam-splitter output `dark' port, is by design equal to zero except when the measureable (e.g., ether, a GW, or other disturbance) causes a fringe shift $\Delta \phi$ related to the angular frequency $\omega$ of the light and the time-of-flight down the $x$ and $y$ arms, $T_x$ and $T_y$. 
+Energy is conserved; the change of sign on the beam-splitter reflective surface means that destructive interface on the `dark' port implies constructive interface on the opposite 'bright' port.
+Power is classically proportional~\cite{JacksonEM} to the electric field~\cite{Saulson}:
 
 \begin{eqnarray}
-T_x = \int_0^{\frac{2L_x}{c}} \sqrt{|g_{xx}|} dt \propto \int_0^{\frac{2L_x}{c}} \left(1 - \frac{h_+}{2} \right) dt, \\
-T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \propto \int_0^{\frac{2L_y}{c}} \left(1 + \frac{h_+}{2} \right) dt.
+P &=& \frac{\epsilon_0 c E_0^2}{2} \left| 1 - e^{i \Delta \phi}\right|^2 = 2 \epsilon_0 c E_0^2 (1 - \cos \Delta {\phi}),
+\label{michelson-interferometry-eq}\\
+\Delta \phi &=& 2\pi (L_s + L_0) /\lambda + \omega (T_y - T_x).
 \end{eqnarray}
 
-\noindent The mismatch in the integrals leads to a detectable time-varying signal,
+In Enhanced and Advanced LIGO, $L_s$ is known as the Schnupp asymmetry (a constant difference in arm length related to RF-modulated sidebands)~\cite{AdhikariThesis}, and $L_0$ is a smaller constant offset from a fringe to enable non-radio-frequency-modulated DC readout~\cite{FrickeThesis}.
+A putative, even smaller `DARM' phase shift can read out $\omega (T_y -T_x)$, due to differential arm motion, encoding any time-varying GW signal in the relative time-of-flight between the arms. 
+Operating near the maximum of $dP/d(\Delta\phi)$ would increase susceptibility to unwanted power fluctuations, so the interferometer was initially operated with radio-frequency modulation at minimum $dP/d(\Delta\phi)$ and  $P$ (a dark fringe), later changed to a slight offset and DC readout once the noise sources were better understood.
+
+Power $P$ can be directly improved by increasing effective laser power (e.g., a brighter laser or use of `power recycling'), and $\Delta \phi$ can be increased by making $T_{x,y}$ storage times longer (e.g., with Fabry-Perot cavities).
+Doing so allows more accurate measurements of $P$ in the presence of shot noise (fluctuations in photon counting, entering via the $E_0$ term), radiation pressure (photon momentum-induced fluctuations in the mirrors causing changing in $T_y - T_x$), and other motions that change $\Delta \phi$ (such as thermal and seismic).
+Yet these noise sources implicate quantum effects, and the photodiodes used to measure power do so with a certain quantum efficiency.
+More realistic descriptions by Caves~\cite{Caves1980,Caves1981} clarify the quantum mechanical origin of shot and radiation pressure noise.
+Quantum squeezing, the subject of Chapter~\ref{chap3}, can mimic the effect of higher power in Equation~\ref{michelson-interferometry-eq}.
+GW, an eminently classical phenomenon, are small enough in amplitude that quantum behavior is a key limit on its detection.
+
+Gravitational wave signals enter the interferometer by changing the spacetime curvature in the arms. 
+In the simplest, linearized picture, the spacetime curvature arises from a GW with amplitude $h$ at frequency $f$.
+When the GW is linearly polarizared in $h_+$ and aligned with x-axis and y-axis arms of equal length $L$ (see~\cite{Jaranowski1998} for the antenna pattern correction when it is misaligned), it changes the time-of-flight in the arms according to Equation~\ref{GW-matrix-eq}:
+
+\begin{eqnarray}
+T_x = \int_0^{\frac{2L_x}{c}} \sqrt{|g_{xx}|} dt \approx \int_0^{\frac{2L_x}{c}} \left(1 - \frac{h_+ (t,x(t))}{2} \right) dt, \\
+T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \approx \int_0^{\frac{2L_y}{c}} \left(1 + \frac{h_+ (t, y(t))}{2} \right) dt,
+\end{eqnarray}
+
+\noindent We have been able to neglect issues of the proper-time of the mirrors (as opposed to the photodiode) because the laser frequency $\omega$ is unchanged ($g_{tt} = 0$ in transverse-traceless gauge).
+The mismatch in the integrals leads to a detectable time-varying signal,
 
 \begin{equation}
-\phi_{\textup{DARM}} = \omega \int_0^{\frac{2L}{c}} \frac{h_+ (t, x(t)) + h_+ (t, y(t))}{2} dt.
+\phi_{\textup{DARM}} \equiv \omega (T_y - T_x) = \omega \int_0^{\frac{2L}{c}} \frac{h_+ (t, x(t)) + h_+ (t, y(t))}{2} dt.
 \end{equation}  
 
+\noindent Measured by Equation~\ref{michelson-interferometry-eq}, $\phi_{\textup{DARM}}$ encodes the GW signal.
+Comparing $\phi_{\textup{DARM}}$ from different observatories, or waiting while a single observatory is Doppler-modulated by terrestrial motion, can pinpoint the origin of such a signal.
 
+We often assume that the time-of-flight is much less than the GW period, $T_{x,y} \ll 1/f$.
+This assumption is easily relaxed by accounting for the destructive self-interference of the signal light from a high $f$ signal~\cite{Saulson}.
+A straightforward interpretation emerges for a quasi-static plane-wave (when phase offset $2\pi L_0/\lambda \gg \phi_\textup{DARM}$) -- the interferometer linearly transduces GW strain (via $h_+ = \phi_\textup{DARM}c/(2L\omega)$) into power:
 
-            Why GW interferometers work. Null measurements, a zeroed operating point. The specifics are best handled by Saulson~\cite{Saulson}. The idea of a Pound-Drever-Hall lock is most elegantly explained by Black~\cite{PDHNotes}. Rai Weiss may have some neat details, possibly historical, albeit that it is in a presentation~\cite{LIGOWorks}. The details of Fabry-Perot cavities in LIGO are handled by Rakhmanov, Savage et al~\cite{ResonanceFP},~\cite{ResponsesFP}. The motivation for the evolution to Enhanced LIGO and its DC readout methods is covered well in the corresponding CQG article~\cite{Fricke2009} and specific details of its construction and operation are in Tobin Fricke's thesis~\cite{FrickeThesis}.
+\begin{eqnarray}
+%h_+ &=& \frac{c}{2 L \omega}\phi_\textup{DARM},\\
+\frac{d P}{d h_+} &=& \frac{2L\omega}{c}\frac{dP}{d(\Delta\phi)} = 4 L\omega \epsilon_0 E_0^2 \sin \left(\frac{2\pi}{c} (L_s+L_0) \right),\\
+P &=& \left[ 4 L \omega \epsilon_0 E_0^2 \sin \left(\frac{2\pi}{c} (L_s+L_0) \right) \right] h_+.
+\label{strain-to-power-eq}
+\end{eqnarray}
 
-            \subsubsection{Interferometer theory}
+% DONE:           Why GW interferometers work. Null measurements, a zeroed operating point. 
+%The specifics are best handled by Saulson~\cite{Saulson}. 
+
+%The idea of a Pound-Drever-Hall lock is most elegantly explained by Black~\cite{PDHNotes}. Rai Weiss may have some neat details, possibly historical, albeit that it is in a presentation~\cite{LIGOWorks}. The details of Fabry-Perot cavities in LIGO are handled by Rakhmanov, Savage et al~\cite{ResonanceFP},~\cite{ResponsesFP}. i
+
+%DONE: The motivation for the evolution to Enhanced LIGO and its DC readout methods is covered well in the corresponding CQG article~\cite{Fricke2009} and specific details of its construction and operation are in Tobin Fricke's thesis~\cite{FrickeThesis}.
+
+            \subsubsection{Interferometer theory in practice}
             \label{interferometer_theory}
-        
-                GW interferometry theory: differential arm motion, key noise sources. Again, the main source is Saulson~\cite{Saulson}, although we also need another source in the Advanced Detector Era.
 
-                Here we discuss the key noises sources: seismic noise, thermal noise, and quantum (radiation pressure, shot noise).
+Interferometers transduce GW strain into power in a manner like Equation~\ref{strain-to-power-eq} only because they operate in a linearly-controlled regime~\cite{FrickeThesis} with noise sources surpressed as well as possible~\cite{Saulson,LIGOWorks}.
+A complete discussion of noise is beyond our scope, but the key limits on a ground-based GW interferometer arise, for a facility in vacuum, from microseisms, gravitational gradients, thermal coating and thermal suspension noise, and quantum effects (radiation pressure and shot noise).
 
-                Arms are locked using the Pound-Drever-Hall technique, as elucidated in Section~\ref{phase_camera}, which discusses how the electro-optic modulations (EOMs) provide an error signal for locking the Fabry-Perot arms.
-See Figure~\ref{primary_eLIGO_optics}
+Seismic noise is dominates the lowest frequences, and it is supressed by use of servo controls as well as passive damping from pendula.
+Each stage of a multi-stage pendulum reduces, for frequencies above its natural resonant frequency $f_0$, the coupling of seismic noise into the interferometer by a factor $(f/f_0)^2$.
+
+Gravitational gradients due to clouds, human activity, and density fluctuations in the ground are an area of concern, but may be addressed through active feedforward servos~\cite{Driggers2012ActiveNoise}, as may magnetic couplings.
+
+Thermal coating noise is reduced by using larger laser spot sizes on the surfaces of mirrors and optimizing thematerial properties of the coatings; the mirror itself must be made of a material with a high $Q$, such as fused silica, where $Q$ is the quality factor for internal oscillations.
+Suspension thermal noise is also reduced by using high $Q$ materials, per the fluctuation-dissapation theorem~\cite{Saulson}.
+These effects predominate in the middle of LIGO's frequency range, often termed the `bucket'.
+
+Shot noise is naively reduced by increasing laser power, which indeed yields improvements to a point.
+At high laser power, however, thermal distortions due to absorption in the mirrors are inevitable, leading to the need for thermal compensation systems~\cite{BallmerThesis}.
+High laser power also buffets the mirrors with radiation pressure noise, requiring heavier mirrors.
+Quantum squeezing can circumvent the issue of thermal distortions, but it too induces radiation pressure noise (typically worse, because the Heisenberg uncertainty area increases); a solution may be squeezing at high (shot noise-limited) frequencies and anti-squeezing at low (radiation pressure-limited) frequencies.
+
+%Noise sources dominate the 
+%                GW interferometry theory: differential arm motion, key noise sources. 
+%The main sources Saulson~\cite{Saulson} and Weiss~\cite{LIGOWorks}.
+%                Here we discuss the key noises sources: seismic noise, thermal noise, and quantum (radiation pressure, shot noise).
+
+GW interferometers on Earth are limited in size (thus storage time and strain sensitivity) by the planet's curvature (which couples vertical displacement noise into horizontal) as well as finances. 
+GEO600 uses delay lines and the other interferometers use Fabry-Perot arms to extend the storage time of light.
+Fabry-Perot arms with high-finesse~\cite{ResonanceFP,ResponsesFP} (roughly $137$ in Initial LIGO) are locked~\cite{PDHNotes} using the Pound-Drever-Hall (PDH) technique.
+Elucidated below, electro-optic modulations (EOMs) provide a radio-frequency error signal for PDH locking the Fabry-Perot arms.
+
+Figure~\ref{primary_eLIGO_optics} presents a schematic overview of the key systems in Enhanced LIGO.
 
 \begin{figure}
 \begin{center}
