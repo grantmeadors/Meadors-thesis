@@ -64,10 +64,10 @@ The quadripartite division:
 \item Stochastic
 \end{itemize}
 
-This thesis concentrates on continuous waves -- sine waves. 
-Continuous waves (CW) are most likely to emanate from neutron stars. 
+This thesis concentrates on continuous waves (CW) -- sine waves. 
+CW are most likely to emanate from neutron stars. 
 Perhaps neutron star CW modulated by orbital motion, spun-up from accretion or spun-down from radiated energy. 
-Given a sufficiently large ellipticity, on the order of $\epsilon \approx 10^{-7}$~\cite{Owen2005} or smaller for a neutron star rotating on the order of 1 kHz, a deformation of the crust would radiate sufficient gravitational radiation to be a plausibly-detectable source. 
+Given a sufficiently large ellipticity, on the order of $\epsilon \approx 10^{-7}$~\cite{Owen2005} or smaller for a neutron star rotating on the order of 1 kHz, a crust deformation (perhaps due to an $r$-mode) would radiate sufficient gravitational radiation to be a plausibly-detectable source. 
 Indeed, the radiation would rapidly deplete the rotational energy of the neutron star~\cite{Owen1998}, which is why binary systems, where the neutron star could be recycled and spun-up by a partner, prove a promising target~\cite{PapaloizouPringle1978,Wagoner1984}. 
 Scorpius X-1 offers a canonical case~\cite{AbbottScoX12007}, although the TwoSpect search anticipates an abundance of other low-mass X-ray binary (LMXB) systems of interest. 
 Given the paucity of insight on the interiors of collapsed stellar remnants, direct detection of GW from neutron stars would prove informative. 
@@ -75,7 +75,7 @@ Just as we might infer details from neutron star binary coalescences favoring on
 Their simple waveforms might even facilitate the calibration of other types of GW data, whereas binary mergers should sound like standard sirens to compare against electromagnetic and neutrino observations~\cite{Punturo2010}
 (see next paragraph).
 CW are conceptually-elegant and astronomically-enticing.
-Yet other sources of GW, have a comparable pull on our attention. 
+Yet other sources of GW have a comparable pull on our attention. 
 
 Inspirals or compact binary coalescences occur when two stellar remnants draw nearer in their orbits, radiating gravitational radiation and finally merging in a titanic release of energy. 
 While sometimes invisible -- the merging of black holes in short-hard gamma ray burts (GRBs) being an exception -- these events compete eagerly with supernovae as the most explosive in the modern universe. 
@@ -370,6 +370,7 @@ Converting to far-field at distance $r = |x^i - y^-i|$ and retarded time $t_r = 
 
 \begin{equation} 
 \tilde{\bar{h}}_{ij} (t,x^i) = -\frac{2}{r}e^{\sqrt{-1}\omega r}\omega^2 \tilde{I}_{ij}(t_r),
+\label{Fourier-domain-quadpole-eq}
 \end{equation}
 
 \noindent where $I_{ij}$ is defined as the quadrupole moment with the Kronecker $\delta$, 
@@ -443,45 +444,51 @@ While prospects for the next generation are tentative, GW promise a way unavaila
         \subsection{Continuous waves from neutron stars}
         \label{continuous_waves}
 
-            Continuous -- specifically, binary neutron stars and rate predictions. Describe archetypical search methods as in the 1998 analysis paper~\cite{Jaranowski1998}, the Abbott et al paper~\cite{LSCPulsar2006}, including StackSlide~\cite{LSCPulsarS4}, Einstein at Home~\cite{LSCEinsteinHome2009}, and the most interesting to date from Michigan, Vladimir's PowerFlux~\cite{LSCPowerFlux2009}. Discuss earlier results from the earliest period~\cite{Abbott2004} and an early search for Scorpius X-1~\cite{AbbottPulsar2006}. Reinhard Prix is probably another good source~\cite{Prix2006}.
-Promising searches have been carried out by the LIGO Scientific Collaboration for the Crab and Vela pulsar remnants.
-Initial detector era searches~\cite{AasiPulsarInitialResults2014}.
-Also the Galactic Center search~\cite{AasiGalacticCenter2013}.
-
-		Rates go in here.
-        The emission mechanism of gravitational radiation with amplitude $h_0$ from a neutron star is is from an elliptical deformation, ellipticity $\epsilon$, on its surface, leading to a quadrupole moment $I$~\cite{Zimmermann1979,LSCPulsar2006} and thus emission at frequency $f = 2\nu$, twice the neutron star spin frequency $\nu$:
-
-        \begin{eqnarray}
-        \epsilon = \frac{I_{xx} - I_{yy}}{I_{zz}}, \\
-        h_0 = \frac{4 \pi^2 G_C}{c^4} \frac{I_{zz} f^2}{r} \epsilon.
-        \end{eqnarray}
-
-For GW from a rotating neutron star with a spin axis inclined at angle $\cos \iota$ to an observer's line-of-sight, the relative polarization amplitudes~\cite{DergachevThesis} would be,
-
-\begin{eqnarray} 
-h_+ &=& \tfrac{1}{2} h_0 (1 + \cos^2 \iota),\\
-h_\times &=& h_0 \cos \iota.
-\end{eqnarray}
-
-
-
-Excepting the case of torque balance in low-mass X-ray binary systems, neutron star rotation frequency will decay due to gravitational radiation, yielding a relationship between the `spindown age'~\cite{Brady1998} $\tau$ and the gravitational radiation amplitude:
-
-        \begin{eqnarray}
-        \tau = -f / \dot{f}, \\
-        h_0 = \frac{1}{r} \sqrt{\frac{5 G_C I_{zz}}{2 c^2 \tau}}.
-        \end{eqnarray}
-
-
 	\begin{figure}
 	\begin{center}
-	\includegraphics[height=111mm, width=148mm]{neutron_star_structure.eps}
+	\includegraphics[height=90mm, width=120mm]{neutron_star_structure.eps}
 	\caption{Hypothetical internal structure of a neutron star (Citation: \url{http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron_star_structure.html})} 
         %CITE Possibly original Frank Shu? Fred would probably know, being a student of Frank
 	\label{neutron_star_structure}
 	\end{center}
 	\end{figure}
 
+
+
+Spinning neutron stars (NS)~\cite{Prix2006} motivate clear yet computationally-challenging GW searches.
+In the solar-system reference frame, isolated NS would emit a pure sine wave, as predicted by (with leading constant $G_C/c^4$) Equation~\ref{Fourier-domain-quadpole-eq}.
+        The emission mechanism of gravitational radiation with amplitude $h_0$ from a NS is from an elliptical deformation, ellipticity $\epsilon$, on its surface (outer crust, Figure~\ref{neutron_star_structure}), leading to a quadrupole moment $I$~\cite{Zimmermann1979,LSCPulsar2006} and thus emission at frequency $f = 2\nu$, twice the NS spin frequency $\nu$:
+
+        \begin{eqnarray}
+        \epsilon &=& \frac{I_{xx} - I_{yy}}{I_{zz}}, \\
+        h_0 &=& \frac{4 \pi^2 G_C}{c^4} \frac{I_{zz} f^2}{r} \epsilon.
+        \end{eqnarray}
+
+Expected sensitivities for terrestrial interferometers, best around 100 Hz, highlight NS with comparable periods (millisecond pulsars) as suggestive targets.
+For GW from a rotating NS with a spin axis inclined at angle $\cos \iota$ to an observer's line-of-sight, the relative polarization amplitudes~\cite{DergachevThesis} would be,
+
+\begin{eqnarray} 
+h_+ &=& \tfrac{1}{2} h_0 (1 + \cos^2 \iota),\\
+h_\times &=& h_0 \cos \iota.
+\end{eqnarray}
+
+For $\cos \iota = 1$, where the spin axis is along the line of sight, gravitational waves will thus be circular polarized; $\cos \iota = 0$, an orthogonally-aligned spin axis, implies linear polarization.
+Excepting the case of torque balance~\cite{PapaloizouPringle1978,Wagoner1984} in low-mass X-ray binary systems (LMXB), NS rotation frequency will decay due to gravitational radiation, yielding a relationship between the `spindown age'~\cite{Brady1998} $\tau$ and the gravitational radiation amplitude:
+
+        \begin{eqnarray}
+        \tau &=& -f / \dot{f}, \\
+        h_0 &=& \frac{1}{r} \sqrt{\frac{5 G_C I_{zz}}{2 c^2 \tau}}.
+        \end{eqnarray}
+
+%            Continuous -- specifically, binary neutron stars and rate predictions. Describe archetypical search methods as in the 1998 analysis paper~\cite{Jaranowski1998}, the Abbott et al paper~\cite{LSCPulsar2006}, including StackSlide~\cite{LSCPulsarS4}, Einstein at Home~\cite{LSCEinsteinHome2009}, and the most interesting to date from Michigan, Vladimir's PowerFlux~\cite{LSCPowerFlux2009}. Discuss earlier results from the earliest period~\cite{Abbott2004} and an early search for Scorpius X-1~\cite{AbbottPulsar2006}. Reinhard Prix is probably another good source~\cite{Prix2006}.
+Although pure sine waves are considerably simpler than the numerical relativistic templates needed for inspirals, the low expected $h_0$ and consequent long-duration integration needed to detect NS mean that the search over parameter space is extremely sensitive to mismatched templates.
+This sensitivity implies that the algorithms must use fine-grained templates, necessitating long computational time.
+Algorithms developed from maximum likelihood estimates of isolated NS~\cite{Jaranowski1998}, incorporating progressively barycentric solar-system correction~\cite{LSCPulsarS4}, distributed computing~\cite{LSCEinsteinHome2009}, and semi-coherent methods~\cite{LSCPowerFlux2009}.
+Many isolated pulsars~\cite{Abbott2004,LSCPulsar2006}, including the Crab and Vela pulsar remnants~\cite{AasiPulsarInitialResults2014}, as well as the LMXB Scorpius X-1~\cite{AbbottPulsar2006} and the direction of the the Galactic Center~\cite{AasiGalacticCenter2013} have been the target of these methods.
+
+Many NS in known catalogs, such as ATNF (Australia Telescope National Facility~\cite{ManchesterATNF2005}), that pulsate in the LIGO frequency band are in binary systems.
+This thesis develops, in Chapters~\ref{chap4} \& \ref{chap5} where this discussion continues, a computationally-efficient means, TwoSpect~\cite{GoetzTwoSpectMethods2011} of searching for NS in binary systems, particularly LMXBs. 
+First, we discuss how gravitational wave interferometers sensitivity can be improved to make astronomy possible.
 
     \section{Laser Interferometer Gravitational-wave Observatories}
     \label{LIGO}

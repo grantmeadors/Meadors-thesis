@@ -109,6 +109,7 @@
 \newlabel{radiation}{{1.2.3}{17}{Radiation from quadrupoles\relax }{subsection.1.2.3}{}}
 \citation{Carroll1997,BallmerThesis}
 \citation{Saulson}
+\newlabel{Fourier-domain-quadpole-eq}{{1.21}{18}{Radiation from quadrupoles\relax }{equation.1.21}{}}
 \citation{Riles2013}
 \citation{FinnInspiral1993}
 \citation{HarryALIGO2010}
@@ -133,28 +134,30 @@
 \citation{Radiometer2006}
 \citation{MeadorsCaltech2007}
 \citation{Muciaccia1997}
+\citation{Prix2006}
+\citation{Zimmermann1979,LSCPulsar2006}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Continuous waves from neutron stars}{21}{subsection.1.3.2}}
+\newlabel{continuous_waves}{{1.3.2}{21}{Continuous waves from neutron stars\relax }{subsection.1.3.2}{}}
+\citation{DergachevThesis}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Hypothetical internal structure of a neutron star (Citation: \burl  {http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron_star_structure.html})}}{22}{figure.1.2}}
+\newlabel{neutron_star_structure}{{1.2}{22}{Hypothetical internal structure of a neutron star (Citation: \url {http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron_star_structure.html})\relax }{figure.1.2}{}}
+\citation{PapaloizouPringle1978,Wagoner1984}
+\citation{Brady1998}
 \citation{Jaranowski1998}
-\citation{LSCPulsar2006}
 \citation{LSCPulsarS4}
 \citation{LSCEinsteinHome2009}
 \citation{LSCPowerFlux2009}
-\citation{Abbott2004}
-\citation{AbbottPulsar2006}
-\citation{Prix2006}
+\citation{Abbott2004,LSCPulsar2006}
 \citation{AasiPulsarInitialResults2014}
+\citation{AbbottPulsar2006}
 \citation{AasiGalacticCenter2013}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Continuous waves from neutron stars}{21}{subsection.1.3.2}}
-\newlabel{continuous_waves}{{1.3.2}{21}{Continuous waves from neutron stars\relax }{subsection.1.3.2}{}}
-\citation{Zimmermann1979,LSCPulsar2006}
-\citation{DergachevThesis}
-\citation{Brady1998}
+\citation{ManchesterATNF2005}
+\citation{GoetzTwoSpectMethods2011}
 \citation{MavalvalaThesis}
 \citation{BallmerThesis}
 \citation{AdhikariThesis}
 \citation{SmithThesis}
 \citation{Saulson}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Hypothetical internal structure of a neutron star (Citation: \burl  {http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron_star_structure.html})}}{23}{figure.1.2}}
-\newlabel{neutron_star_structure}{{1.2}{23}{Hypothetical internal structure of a neutron star (Citation: \url {http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron_star_structure.html})\relax }{figure.1.2}{}}
 \citation{Saulson}
 \citation{SmithThesis}
 \citation{michelson}
@@ -193,26 +196,26 @@
 \@writefile{toc}{\contentsline {paragraph}{Feedforward filtering}{29}{section*.5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.5}{\ignorespaces Omega scan of an audible broadband glitch. Shortly before the start of Science Run 6, detector characterization took place to identify categories of glitches, such as the `gremlin', and to eliminate them. The burst group analysis pipeline, Omega, generated time-frequency spectrograms that made this identification easier. Glitches are a limiting factor in the identification of rare events and therefore of potential gravitational wave burst signals.}}{30}{figure.1.5}}
 \newlabel{omega_scan_audible_glitch}{{1.5}{30}{Omega scan of an audible broadband glitch. Shortly before the start of Science Run 6, detector characterization took place to identify categories of glitches, such as the `gremlin', and to eliminate them. The burst group analysis pipeline, Omega, generated time-frequency spectrograms that made this identification easier. Glitches are a limiting factor in the identification of rare events and therefore of potential gravitational wave burst signals}{figure.1.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.6}{\ignorespaces Real-time servo loop diagram. The MICH\_CTRL signal can be though to leak into the true DARM signal via a transfer function, H\_0. (The letter `h' is typical for transfer functions as well as gravitational wave strain; coincidentally, this is a noise transfer into the channel for displacement, DARM, which is proportional to strain $h(t)$). H\_0 leaks into error signal, which is otherwise kept null thanks to the servo cancellation provided by DARM\_CTRL times a physical actuation function AC. The measured error signal is DARM\_IN1. If desired, an excitation can be supplied via DARM\_EXC for a sum of DARM\_IN2. This error signal passes though digital filters D to yield the aforementioned control signal DARM\_CTRL. The auxiliary length cancellation loop is simply adding H\_md to DARM\_CTRL in order to subtract out the corruption of H\_0.}}{31}{figure.1.6}}
-\newlabel{servo_loop_realtime}{{1.6}{31}{Real-time servo loop diagram. The MICH\_CTRL signal can be though to leak into the true DARM signal via a transfer function, H\_0. (The letter `h' is typical for transfer functions as well as gravitational wave strain; coincidentally, this is a noise transfer into the channel for displacement, DARM, which is proportional to strain $h(t)$). H\_0 leaks into error signal, which is otherwise kept null thanks to the servo cancellation provided by DARM\_CTRL times a physical actuation function AC. The measured error signal is DARM\_IN1. If desired, an excitation can be supplied via DARM\_EXC for a sum of DARM\_IN2. This error signal passes though digital filters D to yield the aforementioned control signal DARM\_CTRL. The auxiliary length cancellation loop is simply adding H\_md to DARM\_CTRL in order to subtract out the corruption of H\_0}{figure.1.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.7}{\ignorespaces Real-time work on a LIGO noise filter. This Bode plot, made in Matlab, shows the correction to the existing MICH damping (cancellation) loop needed mid-2010, toward the end of Science Run 6. The correction is small, because the majority of the coupling fits the flat model expected from theory. This transfer function estimate suffices for post-factor correction. However, in order to be incorporated into the control scheme shown in Figure\nobreakspace  \ref  {servo_loop_realtime}, measurements of the open loop gain $G$ and actuation function AC are necessary to yield incorporate the filter correctly into the closed loop response.}}{32}{figure.1.7}}
-\newlabel{newNOISEfilter}{{1.7}{32}{Real-time work on a LIGO noise filter. This Bode plot, made in Matlab, shows the correction to the existing MICH damping (cancellation) loop needed mid-2010, toward the end of Science Run 6. The correction is small, because the majority of the coupling fits the flat model expected from theory. This transfer function estimate suffices for post-factor correction. However, in order to be incorporated into the control scheme shown in Figure~\ref {servo_loop_realtime}, measurements of the open loop gain $G$ and actuation function AC are necessary to yield incorporate the filter correctly into the closed loop response}{figure.1.7}{}}
 \citation{DergachevThesis}
 \citation{MavalvalaThesis}
 \citation{DooleyThesis}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.6}{\ignorespaces Real-time servo loop diagram. The MICH\_CTRL signal can be though to leak into the true DARM signal via a transfer function, H\_0. (The letter `h' is typical for transfer functions as well as gravitational wave strain; coincidentally, this is a noise transfer into the channel for displacement, DARM, which is proportional to strain $h(t)$). H\_0 leaks into error signal, which is otherwise kept null thanks to the servo cancellation provided by DARM\_CTRL times a physical actuation function AC. The measured error signal is DARM\_IN1. If desired, an excitation can be supplied via DARM\_EXC for a sum of DARM\_IN2. This error signal passes though digital filters D to yield the aforementioned control signal DARM\_CTRL. The auxiliary length cancellation loop is simply adding H\_md to DARM\_CTRL in order to subtract out the corruption of H\_0.}}{31}{figure.1.6}}
+\newlabel{servo_loop_realtime}{{1.6}{31}{Real-time servo loop diagram. The MICH\_CTRL signal can be though to leak into the true DARM signal via a transfer function, H\_0. (The letter `h' is typical for transfer functions as well as gravitational wave strain; coincidentally, this is a noise transfer into the channel for displacement, DARM, which is proportional to strain $h(t)$). H\_0 leaks into error signal, which is otherwise kept null thanks to the servo cancellation provided by DARM\_CTRL times a physical actuation function AC. The measured error signal is DARM\_IN1. If desired, an excitation can be supplied via DARM\_EXC for a sum of DARM\_IN2. This error signal passes though digital filters D to yield the aforementioned control signal DARM\_CTRL. The auxiliary length cancellation loop is simply adding H\_md to DARM\_CTRL in order to subtract out the corruption of H\_0}{figure.1.6}{}}
+\newlabel{phase_camera}{{1.4.2}{31}{Phase camera\relax }{section*.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.7}{\ignorespaces Real-time work on a LIGO noise filter. This Bode plot, made in Matlab, shows the correction to the existing MICH damping (cancellation) loop needed mid-2010, toward the end of Science Run 6. The correction is small, because the majority of the coupling fits the flat model expected from theory. This transfer function estimate suffices for post-factor correction. However, in order to be incorporated into the control scheme shown in Figure\nobreakspace  \ref  {servo_loop_realtime}, measurements of the open loop gain $G$ and actuation function AC are necessary to yield incorporate the filter correctly into the closed loop response.}}{32}{figure.1.7}}
+\newlabel{newNOISEfilter}{{1.7}{32}{Real-time work on a LIGO noise filter. This Bode plot, made in Matlab, shows the correction to the existing MICH damping (cancellation) loop needed mid-2010, toward the end of Science Run 6. The correction is small, because the majority of the coupling fits the flat model expected from theory. This transfer function estimate suffices for post-factor correction. However, in order to be incorporated into the control scheme shown in Figure~\ref {servo_loop_realtime}, measurements of the open loop gain $G$ and actuation function AC are necessary to yield incorporate the filter correctly into the closed loop response}{figure.1.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.8}{\ignorespaces Early work on post-facto noise filtering. After testing out MICH damping filters offline, post-facto, the correction factors for AC and $G_\textup  {closed}$ were incorporated and the entire filter imported using Foton into the EPICS control system, where it was used real-time from the September equinox of 2010 until the end of Science Run 6.}}{33}{figure.1.8}}
 \newlabel{filter_early}{{1.8}{33}{Early work on post-facto noise filtering. After testing out MICH damping filters offline, post-facto, the correction factors for AC and $G_\textup {closed}$ were incorporated and the entire filter imported using Foton into the EPICS control system, where it was used real-time from the September equinox of 2010 until the end of Science Run 6}{figure.1.8}{}}
-\newlabel{phase_camera}{{1.4.2}{33}{Phase camera\relax }{section*.6}{}}
-\@writefile{toc}{\contentsline {paragraph}{Phase camera}{33}{section*.6}}
 \citation{HorowitzHill1989}
 \citation{Simpson}
 \citation{PDHNotes,MavalvalaThesis}
+\@writefile{toc}{\contentsline {paragraph}{Phase camera}{34}{section*.6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.9}{\ignorespaces Optical table layout with Fabry-Perot cavity and Pound-Drever-Hall locking for phase camera. Faraday isolator and polarizing beam-splitter at upper right; piezoelectrically-actuated mirror at center left. Difficulties with stability, despite a plexiglass enclosure and floated table, meant that locks were fractions of a second at most, hampering efforts.}}{35}{figure.1.9}}
 \newlabel{phase_camera_optical_table}{{1.9}{35}{Optical table layout with Fabry-Perot cavity and Pound-Drever-Hall locking for phase camera. Faraday isolator and polarizing beam-splitter at upper right; piezoelectrically-actuated mirror at center left. Difficulties with stability, despite a plexiglass enclosure and floated table, meant that locks were fractions of a second at most, hampering efforts}{figure.1.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{35}{subsection.1.4.3}}
-\newlabel{advanced}{{1.4.3}{35}{Advanced observatories and beyond\relax }{subsection.1.4.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{35}{subsection.1.4.4}}
-\newlabel{worldwide}{{1.4.4}{35}{Worldwide network\relax }{subsection.1.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{36}{subsection.1.4.3}}
+\newlabel{advanced}{{1.4.3}{36}{Advanced observatories and beyond\relax }{subsection.1.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.4}Worldwide network}{36}{subsection.1.4.4}}
+\newlabel{worldwide}{{1.4.4}{36}{Worldwide network\relax }{subsection.1.4.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.5}Summary}{36}{section.1.5}}
 \newlabel{intro_summary}{{1.5}{36}{Summary\relax }{section.1.5}{}}
 \citation{Thorne300}
@@ -667,53 +670,54 @@
 \bibcite{MatappsRepository}{96}
 \bibcite{Lindblom1995}{97}
 \bibcite{Maggiore2000}{98}
-\bibcite{MavalvalaThesis}{99}
-\bibcite{McKee1977}{100}
-\bibcite{MeadorsHanford2005}{101}
-\bibcite{MeadorsNevis2006}{102}
-\bibcite{MeadorsCaltech2007}{103}
-\bibcite{MeadorsThesis2008}{104}
-\bibcite{MeadorsFeedforward2014}{105}
-\bibcite{michelson}{106}
-\bibcite{MisnerThorneWheeler}{107}
-\bibcite{CODATA}{108}
-\bibcite{Muciaccia1997}{109}
-\bibcite{Ott2009}{110}
-\bibcite{Owen2005}{111}
-\bibcite{Owen1998}{112}
-\bibcite{PapaloizouPringle1978}{113}
-\bibcite{PetersMatthews1963}{114}
-\bibcite{Prix2006}{115}
-\bibcite{Punturo2010}{116}
-\bibcite{ResponsesFP}{117}
-\bibcite{ResonanceFP}{118}
-\bibcite{Read2009}{119}
-\bibcite{Riles2013}{120}
-\bibcite{RomeroThesis}{121}
-\bibcite{Sathyaprakash2009}{122}
-\bibcite{Saulson}{123}
-\bibcite{Schutz1989}{124}
-\bibcite{Shklovsky1960}{125}
-\bibcite{SiggFreq1997}{126}
-\bibcite{Simpson}{127}
-\bibcite{SmithThesis}{128}
-\bibcite{SnowTwoCultures}{129}
-\bibcite{taylor}{130}
-\bibcite{LALAPPSrepo}{131}
-\bibcite{GEO600NatureSqueezing}{132}
-\bibcite{LIGOStochasticNature2009}{133}
-\bibcite{Matlab2012a}{134}
-\bibcite{Thorne300}{135}
-\bibcite{Wagoner1984}{136}
-\bibcite{Waldman2011}{137}
-\bibcite{Weber1960}{138}
-\bibcite{Weisberg2010}{139}
-\bibcite{WeisbergTaylor2004}{140}
-\bibcite{LIGOWorks}{141}
-\bibcite{Welch1967}{142}
-\bibcite{Boashash1990}{143}
-\bibcite{Wiener1949}{144}
-\bibcite{Will1993}{145}
-\bibcite{Willke2002}{146}
-\bibcite{Zimmermann1979}{147}
+\bibcite{ManchesterATNF2005}{99}
+\bibcite{MavalvalaThesis}{100}
+\bibcite{McKee1977}{101}
+\bibcite{MeadorsHanford2005}{102}
+\bibcite{MeadorsNevis2006}{103}
+\bibcite{MeadorsCaltech2007}{104}
+\bibcite{MeadorsThesis2008}{105}
+\bibcite{MeadorsFeedforward2014}{106}
+\bibcite{michelson}{107}
+\bibcite{MisnerThorneWheeler}{108}
+\bibcite{CODATA}{109}
+\bibcite{Muciaccia1997}{110}
+\bibcite{Ott2009}{111}
+\bibcite{Owen2005}{112}
+\bibcite{Owen1998}{113}
+\bibcite{PapaloizouPringle1978}{114}
+\bibcite{PetersMatthews1963}{115}
+\bibcite{Prix2006}{116}
+\bibcite{Punturo2010}{117}
+\bibcite{ResponsesFP}{118}
+\bibcite{ResonanceFP}{119}
+\bibcite{Read2009}{120}
+\bibcite{Riles2013}{121}
+\bibcite{RomeroThesis}{122}
+\bibcite{Sathyaprakash2009}{123}
+\bibcite{Saulson}{124}
+\bibcite{Schutz1989}{125}
+\bibcite{Shklovsky1960}{126}
+\bibcite{SiggFreq1997}{127}
+\bibcite{Simpson}{128}
+\bibcite{SmithThesis}{129}
+\bibcite{SnowTwoCultures}{130}
+\bibcite{taylor}{131}
+\bibcite{LALAPPSrepo}{132}
+\bibcite{GEO600NatureSqueezing}{133}
+\bibcite{LIGOStochasticNature2009}{134}
+\bibcite{Matlab2012a}{135}
+\bibcite{Thorne300}{136}
+\bibcite{Wagoner1984}{137}
+\bibcite{Waldman2011}{138}
+\bibcite{Weber1960}{139}
+\bibcite{Weisberg2010}{140}
+\bibcite{WeisbergTaylor2004}{141}
+\bibcite{LIGOWorks}{142}
+\bibcite{Welch1967}{143}
+\bibcite{Boashash1990}{144}
+\bibcite{Wiener1949}{145}
+\bibcite{Will1993}{146}
+\bibcite{Willke2002}{147}
+\bibcite{Zimmermann1979}{148}
 \HyPL@Entry{161 << /P (0) >> }
