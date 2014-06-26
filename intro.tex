@@ -637,8 +637,8 @@ Figure~\ref{primary_eLIGO_optics} presents a schematic overview of the key syste
 Satisfying the noise requirements above, the first-generation LIGO interferometer was designed with the following features:
 
 \begin{itemize}
-\item Power recycled Michelson interferometer with Fabry-Perot arms
-\item Hanford, Washington and Livington, Lousiana observatories
+\item Power recycled Michelson interferometer with 4 km Fabry-Perot arms\footnote{A second 2 km interferometer was sited at Hanford as well during Initial LIGO.}
+\item Hanford, Washington and Livington, Louisiana observatories
 \item 4 km perpendicular beam tubes
 \item $10^{−9}$ torr vacuum
 \item 10 W Nd:YAG 1064 nm laser (Enhanced LIGO upgraded to 20 W)
@@ -753,9 +753,6 @@ Therefore more sophisticated systems have been researched in hopes of reducing a
 \end{center}
 \end{figure}
 
-
-
-
 Locking used the Pound-Drever-Hall (PDH) method~\cite{PDHNotes,MavalvalaThesis}.
 Mathematically, the method assumes two mirrors: an input, with amplitude reflectivity $r_1$, and an end, with amplitude reflectivity $r_2$.
 Upon the input mirror is incident a coherent electric field, due to light, $E_\textup{inc}$ at frequency $\omega_0$. A field $E_{\textup{refl}}$ is reflected.
@@ -791,21 +788,55 @@ Much progress nonetheless was made by Dergachev in realizing effective methods o
         \subsection{Advanced observatories and beyond}
         \label{advanced}
   
-            Advanced LIGO and beyond -- squeezing and prospects?
-DUSEL, 
+            %Advanced LIGO and beyond -- squeezing and prospects?
+%DUSEL, 
+	Advanced LIGO~\cite{aLIGOrefDesign,aLIGOsysDesign} is intended to improve upon the first-generation LIGO inspiral range tenfold, to 200 Mpc.
+To accomplish this, it simultaneously must lower the noise floor at the most sensitive frequencies, to a strainnoise  $4\times10^{-24}/\sqrt{\textup{Hz}}$, and push the low-frequency wall of seismic noise down, so that frequencies as low as 10 Hz (rather than about 50 Hz) could be probed.
+While maintained in the same vacuum envelope, the optical systems are far superior.
+The 10 kg fused silica test mass mirrors have been upgraded to 40 kg for better radiation pressure performance.
+Fused silica fibers with high $Q$ suspend the mirrors, instead of steel piano wire; fibers are welded directly to the test mass.
+Rather than a single pendulum, each test mass sits at the bottom of a four-stage `quad' actively-servoed pendulum chain, reducing seismic noise by a factor of $(f/f_0)^8$.
+The quad pendulum itself is attached to a new in-vacuum seismic isolation table (similar tables hold the auxiliary optics).
+These test masses indeed need to be heavier.
+Laser power has increased from 20 W in Enhanced LIGO to 200 W in Advanced LIGO.
+Fabry-Perot arm cavity finesse has also increased, raising the stored arm power.
+The arm cavities can be locked independently of each other and brought into the Michelson interferometer gradually, which should improve ease of use, quickly recover from lock-losses, and thereby improve reliable duty cycle, coupled with other system-wide improvements in control architecture.
+Resonant sideband extraction is one of the most inventive changes, adding an additional signal recycling mirror to the optical configuration, which allows tuning the cavity pole of the Fabry-Perot arms and trading between different levels of high- and- medium-frequency shot noise-limited performance.
+
+Although not part of the reference design, the success of the LIGO Hanford squeezing experiment~\cite{BarsottiNatureSqueezing,ChuaBackscatteredLight,DwyerPhaseNoise} noted in Chapter~\ref{chap3} make quantum optics a likely feature of any enhanced follow-up.
+
+Once commissioned, Advanced LIGO's second-generation design should make possible detections at the rate of 40 per year~\cite{AbadieRates2010}. 
+Hanford and Livingston have both upgraded their 4 km interferometers and are entering commissioning.
+The 2 km Hanford interferometer had been intended to be upgraded, but its optics have found a new and likely more useful propect -- part of the growing network of observatories described in Section~\ref{worldwide}.
 
         \subsection{Worldwide network}
         \label{worldwide}
  
-            Allies: 
-LIGO India~\cite{IyerIndia2011}, 
-KAGRA~\cite{Kuroda2010}, 
-Advanced VIRGO~\cite{Acernese2009}, 
-Einstein Telescope~\cite{Punturo2010}, 
-BBO~\cite{Harry2006}, 
-DECIGO~\cite{Ando2010}, 
-LISA Pathfinder to launch in 2015 and eLISA to follolw~\cite{Vitale2014}
-            Pulsar timing~\cite{Hobbs2010}
+Gravitational wave signals are an unknown in astronomy.
+It has long been recognized that multiple observatories with independent confirmation of a signal would be more persuasive evidence of detection than an isolated site.
+Yet even once the field is established, additional observatories will permit better science.
+Sky localization of inspiral and burst sources relies on relative arrival times of a GW signal~\cite{Saulson}.
+Multiple, widely-seperate observatories give the best baseline.
+Moreover, the data for continuous wave searches from seperate sites can often be coherently combined to yield a quieter noise spectrum.
+LIGO is fortunate thus not to be alone in the pursuit of gravitational wave astronomy.
+
+The second, 2 km Hanford interferometer will likely not be upgraded to Advanced LIGO.
+            %Allies: 
+Instead, its optics will form the core of the nascent LIGO India project~\cite{IyerIndia2011}, which will dramatically improve the accuracy of sky position measurements for gravitational wave transients.
+In Japan, KAGRA~\cite{Kuroda2010} is being built; when completed with sapphire mirrors and cryogenic systems, it should reach comparable sensitivity to the LIGO interferometers.
+Advanced VIRGO~\cite{Acernese2009} benefits from the first-generation superattentuator's superb seismic isolation performance; from it will be suspended new optics that reflect a more powerful beam.
+Together, these second-generation ground-based interferometers should suffice to make direct detection of gravitational waves a reality.
+
+Around the same time as these observatories make first detection, an entirely different technique of GW astronomy, pulsar timing~\cite{Hobbs2010}, may open up vastly lower frequencies ($\mathcal{O}(10^{-9})$ Hz).
+The two techniques should prove complementary information about the gravitational sky, as distinctive as gamma ray telescopes are from radio.
+
+Yet GW astronomy would become a true precision science if a third generation of instruments followed.
+Third-generation interferometry could take place underground, either in proposed American DUSEL or the European Einstein Telescope~\cite{Punturo2010}, potentially with xylophone interferometers tuned to optimize sensitivity in different frequency bands.
+Prospects in space appear even grander in the long-term, despite short-term setbacks. 
+Following NASA withdrawal from the Laser Interferometer Space Antenna, LISA, in 2011, the European Space Agency has made a concerted push to launch LISA Pathfinder in 2015, with plans for a somewhat-reduced yet very capable eLISA in coming decades~\cite{Vitale2014}.
+If eLISA launches, it may open the way for detect measurements of the most elusive gravitational signature: the background of the universe itself.
+Both the DeciHertz Gravitational Observatory (DECIGO)~\cite{Ando2010} and Big Bang Observer (BBO)~\cite{Harry2006} proposals could, by midcentury, open up a vision of the cosmos in its earliest days.
+%LISA Pathfinder to launch in 2015 and eLISA to follolw~\cite{Vitale2014}
 
     \section{Summary}
     \label{intro_summary}
@@ -817,7 +848,7 @@ In the first week of Advanced LIGO lock at Livingston, following Memorial Day 20
 When completed, the Hanford and Livingston second-generation interferometers should see back ten times beyond what S6 could, six hundred and fiften million years, to before the Cambrian explosion of life.
 Perhaps in the third or fourth generation of interferometers, our view of the gravitational sky may stretch back the age of the observable universe.
 Even then, we will not have seen all that can be seen.
-With the two long-range forces of the universe, electromagnetism and gravitational, giving two complimentary views of spacetime, we still must build great machines to explore the sights they show, we must understand what we are seeing, and we must propogate that understanding. 
+With the two long-range forces of the universe, electromagnetism and gravitation, giving two complimentary views of spacetime, we still must build great machines to explore the sights they show, we must understand what we are seeing, and we must propogate that understanding. 
 
 This thesis is a prelude to those efforts, from the building of the quantum optical squeezer, and the feedforward regression and continuous waves binary search, to our public interferometer exhibitions.   
 Feedforward regression provides a microcosm of the complexities of gravitational wave interferometry, so there we will begin.
