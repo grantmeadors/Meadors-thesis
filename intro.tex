@@ -617,7 +617,7 @@ Figure~\ref{primary_eLIGO_optics} presents a schematic overview of the key syste
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=111mm,width=148mm]{LIGODiagramnew.eps}
+\includegraphics[height=90mm,width=148mm]{LIGODiagramnew.eps}
 \caption{Enhanced LIGO primary systems and optics. From left, the phase-stablized laser (PSL) produces coherent light, kept at constant frequency by the frequency-stabilization servo (FSS). The pre-mode cleaner excludes non-Gaussian beamshapes, allowing only the $TEM_{00}$ mode to pass. The beam is the phase-modulated using three electro-optical modulators (EOMs) before being further shaped in the input mode cleaner (IMC). The beam passes through the power recycling mirror (RM) and is split at the beam-splitter (BS). Along the $X$ and $Y$ arms, light resonates in the Fabry-Perot cavity formed between the input test mass (ITM) mirror and the end test (mass) ETM mirror, before recombining at the beamsplitting. Any light with the same phase as before the arms is returned to the interferometer by the RM, but if phase-shifted, perhaps by a gravitational wave, it exits through the output mode cleaner (OMC): a photodiode just downstream of the OMC records the signal.}
 \label{primary_eLIGO_optics}
 \end{center}
@@ -625,8 +625,6 @@ Figure~\ref{primary_eLIGO_optics} presents a schematic overview of the key syste
 
             \subsubsection{Observatory operation}
             \label{observatory_operation}
-
-                Operating LIGO: controls, Detector Characterization. One of the first sources from initial LIGO to read up on is a paper by Fritscel, Bork, Mavalvala et al~\cite{ReadoutGWA}. Initially this system made a detection based on heterodyne readout using GW sidebands, which, among other troubles, could be unequal in the recycling cavity~\cite{MeadorsHanford2005}.
 
 	\begin{figure}
 	\begin{center}
@@ -636,22 +634,32 @@ Figure~\ref{primary_eLIGO_optics} presents a schematic overview of the key syste
 	\end{center}
 	\end{figure}
 
-Features of initial and enhanced LIGO:
+Satisfying the noise requirements above, the first-generation LIGO interferometer was designed with the following features:
+
 \begin{itemize}
 \item Power recycled Michelson interferometer with Fabry-Perot arms
 \item Hanford, Washington and Livington, Lousiana observatories
 \item 4 km perpendicular beam tubes
 \item $10^{−9}$ torr vacuum
-\item 20 W Nd:YAG 1064 nm laser
+\item 10 W Nd:YAG 1064 nm laser (Enhanced LIGO upgraded to 20 W)
 \item 10 kg fused silica primary optics
-\item 4-stage seismic isolation
+\item 4-stage seismic isolation (including active hydraulics at Livingston)
 \item Laser frequency stabilization
 \item Angular sensing and control (wavefront sensors, optical levers)
 \item Length sensing and control (magnet coils, common mode)
-\item Pre, input, and output mode cleaning
+\item Pre- \& input-mode cleaning (Enhanced LIGO added output mode cleaning)
 \item Power recycling
 \item Digitally filtered servos and readout
+\item RF heterodyne (Initial LIGO) or DC homodyne (Enhanced LIGO) readout
 \end{itemize}
+
+LIGO's digital systems were managed with MEDM and EPICS, seen in Figure~\ref{ScreenshotMEDM}.
+Extensive effort on installation was required to attain the necessary angular, length, and auxiliary servo control needed for Initial LIGO operation~\cite{ReadoutGWA}.
+Once at design sensitivity, S5 succeeded in obtaining the desired sensitivity and duty cycle.
+Although the RF heterodyne technique\footnote{Curiously, the RF sidebands were not always equal in the recycling cavity~\cite{MeadorsHanford2005}.} had good low-frequency sensitivity, it limited the shot noise performance compared to a DC homodyne instrument by a factor of $\sqrt{3/2}$, and squeezing was also easier in DC.
+The switch to DC readout occured prior to S6, and in the leadup to that science run, substantial detector characterization was needed to understand the upgraded interferometer.
+
+%                Operating LIGO: controls, Detector Characterization. One of the first sources from initial LIGO to read up on is a paper by Fritscel, Bork, Mavalvala et al~\cite{ReadoutGWA}. Initially this system made a detection based on heterodyne readout using GW sidebands, which, among other troubles, could be unequal in the recycling cavity~\cite{MeadorsHanford2005}.
 
 
                 \paragraph{Detector characterization}

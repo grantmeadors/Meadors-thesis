@@ -24,7 +24,7 @@
 \contentsline {subsubsection}{Interferometer theory in practice}{28}{section*.2}
 \contentsline {subsubsection}{Observatory operation}{29}{section*.3}
 \contentsline {paragraph}{Detector characterization}{32}{section*.4}
-\contentsline {paragraph}{Feedforward filtering}{32}{section*.5}
+\contentsline {paragraph}{Feedforward filtering}{33}{section*.5}
 \contentsline {paragraph}{Phase camera}{36}{section*.6}
 \contentsline {subsection}{\numberline {1.4.3}Advanced observatories and beyond}{38}{subsection.1.4.3}
 \contentsline {subsection}{\numberline {1.4.4}Worldwide network}{39}{subsection.1.4.4}
