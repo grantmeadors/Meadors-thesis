@@ -5,15 +5,41 @@ Web: http://web.haystack.mit.edu/SRT/.
 \newblock Thanks to Haystack Observatory and the Massachusetts Institute of
   Technology.
 
+\bibitem{AasiGalacticCenter2013}
+J.~Aasi et~al.
+\newblock Directed search for continuous gravitational waves from the
+  {G}alactic center.
+\newblock {\em Phys. {R}ev. {D}.}, 88(102002), 2013.
+
 \bibitem{BarsottiNatureSqueezing}
 J.~Aasi et~al.
 \newblock Enhancing the sensitivity of the {LIGO} gravitational wave detector
   by using squeezed states of light.
 \newblock {\em Nature {P}hoton.}, 7(613), 2013.
 
-\bibitem{LIGOCal2010}
-J.~Abadie et~al.
-\newblock {\em Nucl. {I}nstrum. {M}eth.}, A624(223), 2010.
+\bibitem{AasiBBH2013}
+J.~Aasi et~al.
+\newblock Search for gravitational waves from binary black hole inspiral,
+  merger and ringdown in {LIGO-V}irgo data from 2009-2010.
+\newblock {\em Phys. {R}ev. {D}.}, 87(022002), 2013.
+
+\bibitem{AasiGRB2013}
+J.~Aasi et~al.
+\newblock Search for long-lived gravitational-wave transients coincident with
+  long gamma-ray bursts.
+\newblock {\em Phys. {R}ev. {D}.}, 88(122004), 2013.
+
+\bibitem{AasiOpticalCounterpart2014}
+J.~Aasi et~al.
+\newblock First searches for optical counterparts to gravitational-wave
+  candidate events.
+\newblock {\em Astrophys. {J}.}, 211(7), 2014.
+
+\bibitem{AasiPulsarInitialResults2014}
+J.~Aasi et~al.
+\newblock Gravitational-waves from known pulsars: results from the initial
+  detector era.
+\newblock {\em Astrophys. {J}}, 785(119), 2014.
 
 \bibitem{AbadieCalibration2010}
 J.~Abadie et~al.
@@ -30,8 +56,26 @@ J.~Abadie et~al.
 \bibitem{LIGOBurst2012}
 J.~Abadie et~al.
 \newblock All-sky search for gravitational-wave burst in the second joint
-  ligo-virgo run.
+  {LIGO-V}irgo run.
 \newblock {\em Phys. {R}ev. {D}}, 85(122007), 2012.
+
+\bibitem{AbadieGRB2012}
+J.~Abadie et~al.
+\newblock Search for gravitational waves associated with gamma-ray bursts
+  during {LIGO} {S}cience {R}un 6 and {V}irgo {S}cience {R}uns 2 and 3.
+\newblock {\em Astrophys. {J}}, 760(12), 2012.
+
+\bibitem{AbadieCBC2012}
+J.~Abadie et~al.
+\newblock Search for gravitational waves from low mass compact binary
+  coalescence in {LIGO's} sixth science run and {Virgo's} science runs 2 and 3.
+\newblock {\em Phys. {R}ev. {D}}, 87(082002), 2012.
+
+\bibitem{AbadiePRDStochastic2012}
+J.~Abadie et~al.
+\newblock Upper limits on a stochastic gravitational-wave background using
+  {LIGO} and {V}irgo interferometers at 600-1000 {Hz}.
+\newblock {\em Phys. {R}ev. {D}}, 85(122001), 2012.
 
 \bibitem{LSCPulsarS4}
 B.~Abbott.
@@ -60,13 +104,13 @@ B.~Abbott, R.~Abbott, R.~Adhikari, J.~Agresti, P.~Ajith, B.~Allen, R.~Amin,
 \bibitem{AbbottScoX12007}
 B.~Abbott et~al.
 \newblock Searches for periodic gravitational waves from unknown isolated
-  sources and scorpius x-1: results from the second ligo science run.
+  sources and {Scorpius X-1}: results from the second ligo science run.
 \newblock {\em Phys. {R}ev. {D}}, 76:082001.
 
 \bibitem{LIGOFirst2004}
 B.~Abbott et~al.
 \newblock Detector description and performance for the first coincidence
-  observations between ligo and geo.
+  observations between {LIGO} and {GEO}.
 \newblock {\em Nucl. {I}nstrum. {M}eth.}, A517:154--179, 2004.
 
 \bibitem{LSCPulsar2006}
@@ -323,7 +367,7 @@ Will~M. Farr.
 G.J. Feldman and R.D. Cousins.
 \newblock Unified approach to the classical statistical analysis of small
   signals.
-\newblock {\em Phys. {R}ev. {D}.}, 57:3873.
+\newblock {\em Phys. {R}ev. {D}}, 57:3873.
 
 \bibitem{FinnInspiral1993}
 L.S. Finn and D.~F. Chernoff.
@@ -402,6 +446,11 @@ B.~Gustavsen.
 \bibitem{Gustavsen1999}
 B.~Gustavsen and A.~Semlyen.
 \newblock {\em IEEE {T}rans. {P}ower {D}elivery}, 14(3), 1999.
+
+\bibitem{HarryALIGO2010}
+G.M. Harry et~al.
+\newblock Advanced {LIGO}: the next generation of gravitational wave detectors.
+\newblock {\em Class. {Q}uant. {G}rav.}, 27(084006), 2010.
 
 \bibitem{Hawking2002}
 S.~Hawking.
@@ -531,6 +580,12 @@ G.D. Meadors.
 \newblock Re-searching galactic structure with {Reed's} radio telescope.
 \newblock {R}eed {C}ollege bachelor's thesis (advisor: {R}obert {R}eynolds),
   May 2008.
+
+\bibitem{MeadorsFeedforward2014}
+Grant~David Meadors, Keita Kawabe, and Keith Riles.
+\newblock Increasing {LIGO} sensitivity by feedforward subtraction of auxiliary
+  length control noise.
+\newblock {\em Classical and {Q}uantum {G}ravity}, 31(105014), 2014.
 
 \bibitem{michelson}
 A.A. Michelson.
