@@ -22,25 +22,34 @@ I was expecting a `,' or a `}'---line 934 of file bibliography.bib
  : year = "2014",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2554 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2222 of file bibliography.bib
+ : 
+ : title = "Advanced {LIGO} reference design",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2605 of file bibliography.bib
  : 
  : year = "1960"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2581 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2632 of file bibliography.bib
  : 
  : year = "2014-03-18"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2589 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2640 of file bibliography.bib
  : 
  : year = "2014-03-21"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2713 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2764 of file bibliography.bib
  : 
  : year = "2010"
 (Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2794 of file bibliography.bib
+ : @article{Shawhan2010
+ :                     ,
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in SRT
 Warning--empty title in LSCPulsarS4
@@ -51,6 +60,9 @@ Warning--empty title in LSCPowerFlux2009
 Warning--empty year in BICEP2014
 Warning--empty year in Planck2014
 Warning--empty title in Antares2013
+Warning--empty title in aLIGOrefDesign
+Warning--empty institution in aLIGOrefDesign
+Warning--empty year in aLIGOrefDesign
 Warning--empty title in Black2001
 Warning--empty title in Caldwell1981
 Warning--empty year in ChuaBackscatteredLight
@@ -73,45 +85,45 @@ Warning--empty title in Sathyaprakash2009
 Warning--empty year in Weber1960
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 148 entries,
+You've used 158 entries,
             2118 wiz_defined-function locations,
-            1345 strings with 24704 characters,
-and the built_in function-call counts, 40146 in all, are:
-= -- 3774
-> -- 2175
-< -- 15
-+ -- 879
-- -- 718
-* -- 2749
-:= -- 7356
-add.period$ -- 426
-call.type$ -- 148
-change.case$ -- 720
+            1396 strings with 25720 characters,
+and the built_in function-call counts, 42612 in all, are:
+= -- 4016
+> -- 2284
+< -- 18
++ -- 924
+- -- 752
+* -- 2903
+:= -- 7812
+add.period$ -- 455
+call.type$ -- 158
+change.case$ -- 765
 chr.to.int$ -- 0
-cite$ -- 179
-duplicate$ -- 1513
-empty$ -- 2898
-format.name$ -- 718
-if$ -- 8001
+cite$ -- 192
+duplicate$ -- 1610
+empty$ -- 3084
+format.name$ -- 752
+if$ -- 8495
 int.to.chr$ -- 0
-int.to.str$ -- 148
-missing$ -- 131
-newline$ -- 724
-num.names$ -- 296
-pop$ -- 685
+int.to.str$ -- 158
+missing$ -- 137
+newline$ -- 773
+num.names$ -- 316
+pop$ -- 719
 preamble$ -- 1
-purify$ -- 622
+purify$ -- 657
 quote$ -- 0
-skip$ -- 1066
+skip$ -- 1135
 stack$ -- 0
-substring$ -- 1399
-swap$ -- 146
-text.length$ -- 15
+substring$ -- 1498
+swap$ -- 155
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 550
-warning$ -- 31
-while$ -- 338
-width$ -- 151
-write$ -- 1574
-(There were 8 error messages)
+type$ -- 590
+warning$ -- 34
+while$ -- 360
+width$ -- 161
+write$ -- 1680
+(There were 10 error messages)

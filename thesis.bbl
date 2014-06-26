@@ -137,6 +137,11 @@ F.~Acernese et~al.
 \newblock Status of {V}irgo.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 22(18):S869, 2005.
 
+\bibitem{Acernese2009}
+F.~Acernese et~al.
+\newblock Advanced {V}irgo baseline design.
+\newblock Technical Report VIR-0027A-09, Virgo, 2009.
+
 \bibitem{BICEP2014}
 P.A.R. Ade et~al.
 \newblock {BICEP2} {I}: detection of {B}-mode polarization at degree angular
@@ -157,6 +162,10 @@ R.~Adhikari.
 \bibitem{Antares2013}
 S.~Adri\'{a}n-Mart\'{i}nez et~al.
 \newblock {\em {J}. {C}osmol. {A}stropart. {P}hys.}, 1306(008), 2013.
+
+\bibitem{aLIGOrefDesign}
+{Advanced LIGO Team}.
+\newblock Technical report.
 
 \bibitem{Findchirp2012}
 B.~Allen, W.G. Anderson, P.R. Brady, D.A. Brown, and J.D.E. Creighton.
@@ -180,6 +189,11 @@ B.~Allen and {J.D.} Romano.
 Bruce Allen, Wensheng Hua, and Adrian~C. Ottewill.
 \newblock Automatic cross-talk removal from multi-channel data.
 \newblock Technical Report gr-qc/9909083v1, arXiv, 1999.
+
+\bibitem{Ando2010}
+M.~Ando.
+\newblock {DECIGO} and {DECIGO} pathfinder.
+\newblock {\em Class. {Q}uant. {G}rav.}, 27(084010), 2010.
 
 \bibitem{NeutrinosSolarTheoretical}
 J.N. Bahcall.
@@ -405,6 +419,11 @@ Tobin~Thomas Fricke.
   detectors}.
 \newblock PhD thesis, Louisiana State University, December 2011.
 
+\bibitem{aLIGOsysDesign}
+P.~Fritschel.
+\newblock Advanced {LIGO} systems design.
+\newblock Technical Report T010075-v2, LIGO, 2009.
+
 \bibitem{ReadoutGWA}
 Peter Fritschel, Rolf Bork, Gabriela Gonz\'{a}lez, Nergis Mavalvala, Dale
   Ouimette, Haisheng Rong, Daniel Sigg, and Michael Zucker.
@@ -452,6 +471,11 @@ G.M. Harry et~al.
 \newblock Advanced {LIGO}: the next generation of gravitational wave detectors.
 \newblock {\em Class. {Q}uant. {G}rav.}, 27(084006), 2010.
 
+\bibitem{Harry2006}
+G.M. Harry, P.~Fritschel, D.A. Shaddock, W.~Folkner, and E.S. Phinney.
+\newblock Laser interferometry for the {B}ig {B}ang {O}bserver.
+\newblock {\em Class. {Q}uant. {G}rav.}, 23:4887--4894, 2006.
+
 \bibitem{Hawking2002}
 S.~Hawking.
 \newblock {\em On the Shoulders of Giants}.
@@ -464,6 +488,12 @@ S.~Hild, H.~Grote, J.~Degallaix, S.~Chelkowski, K.~Danzmann, A.~Freise,
 \newblock {DC}-readout of a signal-recycled gravitational wave detector.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 26(5):055012, 2009.
 
+\bibitem{Hobbs2010}
+G.~Hobbs et~al.
+\newblock The {I}nternational {P}ulsar {T}iming {A}rray project: using pulsars
+  as a gravitational wave detector.
+\newblock {\em Class. {Q}uant. {G}rav.}, 27(084013), 2010.
+
 \bibitem{HorowitzHill1989}
 P.~Horowitz and W.~Hill.
 \newblock {\em The art of electronics}.
@@ -472,6 +502,12 @@ P.~Horowitz and W.~Hill.
 \bibitem{HulseTaylor1975}
 R.A. Hulse and J.H. Taylor.
 \newblock {\em Astroph. J.}, 195(L51), 1975.
+
+\bibitem{IyerIndia2011}
+B.~Iyer.
+\newblock {LIGO-I}ndia: proposal for an interferometric gravitational-wave
+  observatory.
+\newblock Technical Report M1100296, LIGO, 2011.
 
 \bibitem{JacksonEM}
 J.D. Jackson.
@@ -615,6 +651,11 @@ P.F. Muciaccia, P.~Natoli, and N.~Vittorio.
   anisotropy maps.
 \newblock {\em Astrophys. J.}, 488:L63, 1997.
 
+\bibitem{NarayanOstriker1990}
+R.~Narayan and J.P. Ostriker.
+\newblock Pulsar populations and their evolution.
+\newblock {\em Astrophys. {J}.}, 352:222--246, 1990.
+
 \bibitem{Ott2009}
 C.D. Ott.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 26(063001), 2009.
@@ -694,6 +735,11 @@ B.F. Schutz.
 \newblock Gravitational wave sources and their detectability.
 \newblock {\em Class. {Q}uant. {G}rav.}, 6:1761, 1989.
 
+\bibitem{Shawhan2010}
+P.~Shawhan.
+\newblock Gravitational-wave astronomy: observational results and their impact.
+\newblock {\em Class. {Q}uant. {G}rav.}, 27(084017), 2010.
+
 \bibitem{Shklovsky1960}
 I.~Shklovsky.
 \newblock {\em Cosmic radio waves}.
@@ -754,6 +800,11 @@ K.S. Thorne.
 \newblock 300 {Y}ears of {G}ravitation.
 \newblock In S.W. Hawking and W.~Israel, editors, {\em 300 {Y}ears of
   {G}ravitation}. Cambridge, Cambridge, 1987.
+
+\bibitem{Vitale2014}
+S.~Vitale.
+\newblock Space-borne gravitational wave observatories.
+\newblock {\em Gen. {R}elativ. {G}ravit.}, 46(1730), 2014.
 
 \bibitem{Wagoner1984}
 R.V. Wagoner.

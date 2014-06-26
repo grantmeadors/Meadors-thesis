@@ -12,7 +12,7 @@ As yet, no direct detections are known.
 Hulse and Taylor \cite{HulseTaylor1975} observed a neutron star in a binary system, PSR 1913+16, with an orbit shrinking just as gravitational radiation would entail. 
 Following on the pioneering work of Joseph Weber with bar detectors~\cite{Weber1960} and Robert Forward with tabletop interferometers~\cite{Forward1978}, kilometer-scale interferometers were built at the end of the last millenium to look for gravitational radiation. 
 Laser light in these instruments travels orthogonal paths and is reflected back; shifts in the combined pattern are scrutinized for indications that gravitational waves stretched space itself. 
-LIGO, Virgo, and GEO600, soon to be joined by KAGRA, are kilometer-scale intereferometers, gravitational wave antennae standing on the threshold of disovery.
+LIGO~\cite{LIGOFirst2004,Fricke2009}, Virgo~\cite{Acernese2005}, and GEO600~\cite{Willke2002,Hild2009}, soon to be joined by KAGRA~\cite{Kuroda2010}, are kilometer-scale intereferometers, gravitational wave antennae standing on the threshold of discovery.
 
 %This thesis describes efforts to make that search more sensitive with quantum optics at the observatories, by filtering noise from the data, and by conducting a promising search for continuous waves from neutrons stars in binary systems.
 Vibrations in spacetime's metric require many steps to detect.
@@ -81,7 +81,7 @@ Inspirals or compact binary coalescences occur when two stellar remnants draw ne
 While sometimes invisible -- the merging of black holes in short-hard gamma ray burts (GRBs) being an exception -- these events compete eagerly with supernovae as the most explosive in the modern universe. 
 Were GW observatories to see their waveforms, they could be compared with those predicted through post-Newtonian approximation and numerical relativity. 
 As GW amplitude should diminish linearly with distance, we would then have standard candles or \textit{standard sirens} by which to calibrate and measure the universe. 
-Advanced LIGO may prove sensitive to neutron star-neutron star and stellar mass black hole-neutron star mergers, and, if low-frequency sensitivity is sufficient and the sources exist, to intermediate-mass black holes. 
+Advanced LIGO~\cite{aLIGOrefDesign,aLIGOsysDesign} may prove sensitive to neutron star-neutron star and stellar mass black hole-neutron star mergers, and, if low-frequency sensitivity is sufficient and the sources exist, to intermediate-mass black holes. 
 Space-based observatories such as the longsuffering Laser Interferometer Space Antenna (LISA) and ensuing DeciHertz Gravitational-wave Observatory (DECIGO) \& Big Bang Observer (BBO) could detect supermassive black hole mergers. If launched, they would see a low-frequency noise floor due not to seismic vibration, as in LIGO, but to white dwarf binaries throughout the galaxy. 
 Since the waveforms are well-predicted, we could even investigate deviations from general relativity, perhaps seeing new physics in the ringdown of black holes.
 
@@ -454,8 +454,8 @@ While prospects for the next generation are tentative, GW promise a way unavaila
 	\end{figure}
 
 
-
 Spinning neutron stars (NS)~\cite{Prix2006} motivate clear yet computationally-challenging GW searches.
+Perhaps one NS is born per century in the Milky Way~\cite{NarayanOstriker1990}.
 In the solar-system reference frame, isolated NS would emit a pure sine wave, as predicted by (with leading constant $G_C/c^4$) Equation~\ref{Fourier-domain-quadpole-eq}.
         The emission mechanism of gravitational radiation with amplitude $h_0$ from a NS is from an elliptical deformation, ellipticity $\epsilon$, on its surface (outer crust, Figure~\ref{neutron_star_structure}), leading to a quadrupole moment $I$~\cite{Zimmermann1979,LSCPulsar2006} and thus emission at frequency $f = 2\nu$, twice the NS spin frequency $\nu$:
 
@@ -464,6 +464,7 @@ In the solar-system reference frame, isolated NS would emit a pure sine wave, as
         h_0 &=& \frac{4 \pi^2 G_C}{c^4} \frac{I_{zz} f^2}{r} \epsilon.
         \end{eqnarray}
 
+Ellipticity might arise due to $r$-mode oscillations, a deformation, or free precession~\cite{Shawhan2010}.
 Expected sensitivities for terrestrial interferometers, best around 100 Hz, highlight NS with comparable periods (millisecond pulsars) as suggestive targets.
 For GW from a rotating NS with a spin axis inclined at angle $\cos \iota$ to an observer's line-of-sight, the relative polarization amplitudes~\cite{DergachevThesis} would be,
 
@@ -653,9 +654,9 @@ This EOM modulates an electric field of amplitude $E_0$ into higher and lower fr
 From the reflected signal, then, the intensity $I$ encodes an error signal of the arm length $l$, for given light wavenumber $k = \omega / c$, at the modulation frequency (aside from additional signals at DC and at 2$f$):
 
 \begin{eqnarray}
-E_{\textup{refl}} = \frac{r_1 - r_2 e^{-2 i k l}}{1 - r_1 r_2 e^{-2 i k l}} E_\textup{inc},\\
-E_\textup{inc} = E_0 e^{i \Gamma \cos \left( \Omega t \right)} \approx E_0 e^{i \omega_0 t} \left[ J_0 (\Gamma) + J_1 (\Gamma) e^{i\Omega t} + J_{-1} (\Gamma) e^{-i \Omega t} \right],\\
-E_\textup{refl} \approx e^{i \omega_0 t} \left[ E_0^\textup{refl} + E_+^\textup{refl} e^{i\Omega t} + E_-^\textup{refl} e^{-i \Omega t}\right],
+E_{\textup{refl}} &=& \frac{r_1 - r_2 e^{-2 i k l}}{1 - r_1 r_2 e^{-2 i k l}} E_\textup{inc},\\
+E_\textup{inc} &=& E_0 e^{i \Gamma \cos \left( \Omega t \right)} \approx E_0 e^{i \omega_0 t} \left[ J_0 (\Gamma) + J_1 (\Gamma) e^{i\Omega t} + J_{-1} (\Gamma) e^{-i \Omega t} \right],\\
+E_\textup{refl} &\approx& e^{i \omega_0 t} \left[ E_0^\textup{refl} + E_+^\textup{refl} e^{i\Omega t} + E_-^\textup{refl} e^{-i \Omega t}\right],
 \end{eqnarray}
 \begin{equation}
 \begin{split}
@@ -681,11 +682,20 @@ See Figure~\ref{phase_camera_optical_table} for a picture of the cavity as built
         \label{advanced}
   
             Advanced LIGO and beyond -- squeezing and prospects?
+DUSEL, 
 
         \subsection{Worldwide network}
         \label{worldwide}
  
-            Allies: LIGO India, KAGRA, Advanced VIRGO, Einstein Telescope, LISA
+            Allies: 
+LIGO India~\cite{IyerIndia2011}, 
+KAGRA~\cite{Kuroda2010}, 
+Advanced VIRGO~\cite{Acernese2009}, 
+Einstein Telescope~\cite{Punturo2010}, 
+BBO~\cite{Harry2006}, 
+DECIGO~\cite{Ando2010}, 
+LISA Pathfinder to launch in 2015 and eLISA to follolw~\cite{Vitale2014}
+            Pulsar timing~\cite{Hobbs2010}
 
     \section{Summary}
     \label{intro_summary}
