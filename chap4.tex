@@ -235,7 +235,7 @@ in $a\sin\iota$)$ $
 
 \caption{
 Scorpius X-1 Mock Data Challenge (MDC) pulsar 40 \{H1\}: 5 Hz band. 
-The p-value (single-template, applying Davies' Method to the R statistic) in is show in this heatmap, peak in red. 
+The $p$-value (single-template, applying Davies' Method to the $R$ statistic) in is show in this heatmap, peak in red. 
 All templates are plotted on the (frequency, modulation depth) plane.
 This is a relatively broadband view.
 }
@@ -275,7 +275,7 @@ This is a relatively narrowband view.
 \begin{center}
 %\protect\caption{\protect\includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1}}
 \includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1.eps}
-\caption{Scorpius X-1 MDC pulsar 8 \{H1\}: 5 Hz band. This heatmap shows $3.6\times10^{5}$ templates, 10-22 mHz modulation depth, 120-125 Hz frequency. The peak siignal at about (df = 0.019, f = 121.9) Hz.
+\caption{Scorpius X-1 MDC pulsar 8 \{H1\}: 5 Hz band. This heatmap shows $3.6\times10^{5}$ templates, 10-22 mHz modulation depth, 120-125 Hz frequency. The peak signal at about (df = 0.019, f = 121.9) Hz.
 }
 \end{center}
 \end{figure}
@@ -292,7 +292,7 @@ This is a relatively narrowband view.
 %\protect\caption{\protect\includegraphics[width=0.45\paperwidth,height=0.45\paperheight]{StatHistRH1}\protect\includegraphics[width=0.45\paperwidth,height=0.45\paperheight]{StatHistProbH1}}
 \includegraphics[width=0.6\paperwidth,height=0.35\paperheight]{StatHistRH1.eps}
 \includegraphics[width=0.6\paperwidth,height=0.35\paperheight]{StatHistProbH1.eps}
-\caption{Scorpius X-1 MDC statistics. These histograms of the $R$ statistic and $p$-value distribution were part of understanding noise, temporal gap \& spectral leakage, as well as establishing a threshold p-value $\sim$ false alarm probability of 1\%.
+\caption{Scorpius X-1 MDC statistics. These histograms of the $R$ statistic and $p$-value distribution were part of understanding noise, temporal gap \& spectral leakage, as well as establishing a threshold $p$-value $\sim$ false alarm probability of 1\%.
 These $p$-values are for single templates, appropriate to the all-sky search but not to a dense templated search with a large trials factor.
 Here, histograms show statistics in the absence of a signal. 
 The left-skew of the $p$-values is associated with gaps in the data (as is right-skew, with different gaps).
@@ -396,7 +396,8 @@ Blue lines indicate the less stringent uncertainty. Red lines (on plots vs $p$-v
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0.eps}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0vsF.eps}
-\caption{Parameter estimation: error in strain as a function of recovered $p$-value (left) and frequency (right). The strain appears broadly distriuted, without any systematic patterns.
+\includegraphics[width=0.6\paperwidth,height=0.4\paperheight]{plots/Errorh0vsF-overall.eps}
+\caption{Parameter estimation: error in strain as a function of recovered $p$-value (top left) and frequency (top right). The strain appears broadly distriuted, without any systematic patterns. The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read-in at high frequencies.
 \label{fig:errorh0}}
 \end{center}
 \end{figure}
@@ -406,7 +407,8 @@ Blue lines indicate the less stringent uncertainty. Red lines (on plots vs $p$-v
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorF.eps}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorFvsF.eps}
-\caption{Parameter estimation: error in frequency as a function of recovered $p$-value (left) and frequency (right). A systematic, high error group can be seen, composed of four outliers in these graphs of the open data set. These defined the \textit{loose} fit category and prompted further investigation.
+\includegraphics[width=0.6\paperwidth,height=0.4\paperheight]{plots/ErrorFvsF-overall.eps}
+\caption{Parameter estimation: error in frequency as a function of recovered $p$-value (top left) and frequency (top right). A systematic, high error group can be seen, composed of four outliers in these graphs of the open data set. These defined the \textit{loose} fit category and prompted further investigation. The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read-in at high frequencies.
 \label{fig:errorf}}
 \end{center}
 \end{figure}
@@ -416,7 +418,8 @@ Blue lines indicate the less stringent uncertainty. Red lines (on plots vs $p$-v
 \begin{center}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsini.eps}
 \includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsinivsF.eps}
-\caption{Parameter estimation: $a \sin\iota$ (projected semi-major axis; directly proportional to modulation depth for a given frequency and period) as a function of recovered $p$-value (left) and frequency (right).
+\includegraphics[width=0.6\paperwidth,height=0.4\paperheight]{plots/ErrorAsinivsF-overall.eps}
+\caption{Parameter estimation: $a \sin\iota$ (projected semi-major axis; directly proportional to modulation depth for a given frequency and period) as a function of recovered $p$-value (top left) and frequency (top right). The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read-in at high frequencies.
 Here the same \textit{loose} outliers suffer large errors.
 \label{fig:errorasini}}
 \end{center}
