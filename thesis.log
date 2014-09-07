@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  7 SEP 2014 00:57
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  7 SEP 2014 01:25
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -368,11 +368,31 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 Underfull \vbox (badness 1831) has occurred while \output is active []
 
  [11]
-[12])
+File: plots/detectionEfficiencyh0-142-0Hz.eps Graphic file (type eps)
+
+<plots/detectionEfficiencyh0-142-0Hz.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+File: plots/h0UL-vs-h0injected-142-0Hz.eps Graphic file (type eps)
+
+<plots/h0UL-vs-h0injected-142-0Hz.eps>
+File: plots/DFvsFresultsh0-H1_pulsar-0045.eps Graphic file (type eps)
+
+<plots/DFvsFresultsh0-H1_pulsar-0045.eps>
+File: plots/h0FullUL95logGuess-H1.eps Graphic file (type eps)
+ <plots/h0FullUL95logGuess-H1.eps>
+File: plots/h0FullUL95logGuess-L1.eps Graphic file (type eps)
+
+<plots/h0FullUL95logGuess-L1.eps>
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+ [13])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [13] (./thesis.lot
+
+[14] (./thesis.lot
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -381,7 +401,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [14]
+ [15]
 CHAPTER I.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -1196,7 +1216,7 @@ Underfull \vbox (badness 3078) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [120]
-[121] [122] [123]) [124]
+[121] [122] [123] [124]) [125]
 CHAPTER V.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1250,9 +1270,33 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 166.
 
-(./chap5.tex) [125
+(./chap5.tex [126
 
 ]
+File: plots/detectionEfficiencyh0-142-0Hz.eps Graphic file (type eps)
+ <plots/detectionEfficiencyh0-142-0Hz.eps>
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 61.
+
+File: plots/h0UL-vs-h0injected-142-0Hz.eps Graphic file (type eps)
+<plots/h0UL-vs-h0injected-142-0Hz.eps>
+File: plots/DFvsFresultsh0-H1_pulsar-0045.eps Graphic file (type eps)
+
+<plots/DFvsFresultsh0-H1_pulsar-0045.eps>
+File: plots/h0FullUL95logGuess-H1.eps Graphic file (type eps)
+ <plots/h0FullUL95logGuess-H1.eps>
+File: plots/h0FullUL95logGuess-L1.eps Graphic file (type eps)
+
+<plots/h0FullUL95logGuess-L1.eps> [127] [128]) [129]
 CHAPTER VI.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1306,7 +1350,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 170.
 
-(./chap6.tex [126
+(./chap6.tex [130
 
 ]
 Overfull \hbox (29.60022pt too wide) in paragraph at lines 27--28
@@ -1342,7 +1386,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--60
 
  []
 
-[127]
+[131]
 Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
@@ -1350,7 +1394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--68
 File: ifo_schematic.eps Graphic file (type eps)
 <ifo_schematic.eps>
 File: WSF_AA_fringes.eps Graphic file (type eps)
- <WSF_AA_fringes.eps> [128] [129] [130]
+ <WSF_AA_fringes.eps> [132] [133] [134]
 Overfull \hbox (45.8334pt too wide) detected at line 131
 \OT1/cmr/m/n/10 Table 6.1: []
  []
@@ -1381,14 +1425,14 @@ Overfull \hbox (49.88899pt too wide) detected at line 187
 \OT1/cmr/m/n/10 Figure 6.7: []
  []
 
-[131] [132]
+[135] [136]
 File: WSF_me_NY.eps Graphic file (type eps)
  <WSF_me_NY.eps>
 Overfull \hbox (49.88899pt too wide) detected at line 206
 \OT1/cmr/m/n/10 Figure 6.8: []
  []
 
-) [133] [134] [135] [136]
+) [137] [138] [139] [140]
 CHAPTER VII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1442,7 +1486,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 174.
 
-(./conclusion.tex [137
+(./conclusion.tex [141
 
 ]
 File: LIGOpanoramasmall.eps Graphic file (type eps)
@@ -1451,25 +1495,25 @@ Overfull \hbox (49.88899pt too wide) detected at line 67
 \OT1/cmr/m/n/10 Figure 7.1: []
  []
 
-[138])
+[142])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [139]
-[140] (./appendix.tex [141
+ [143]
+[144] (./appendix.tex [145
 
 ]
 APPENDIX A.
 Package hyperref Info: bookmark level for unknown appendix defaults to 0 on inp
 ut line 1.
-[142
+[146
 
 ]
 Underfull \vbox (badness 2435) has occurred while \output is active []
 
- [143]
-[144] [145] [146]) (./thesis.bbl [147] [148
+ [147]
+[148] [149] [150]) (./thesis.bbl [151] [152
 
-] [149] [150] [151] [152]
+] [153] [154] [155] [156]
 Underfull \hbox (badness 10000) in paragraph at lines 529--535
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1480,25 +1524,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 529--535
 r&
  []
 
-[153] [154]
+[157] [158]
 Underfull \hbox (badness 1803) in paragraph at lines 777--780
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-[155]) [156]
+[159]) [160]
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4870 strings out of 256217
- 66123 string characters out of 1917094
- 170703 words of memory out of 1500000
- 7955 multiletter control sequences out of 10000+200000
- 14676 words of font info for 56 fonts, out of 1200000 for 2000
+ 4893 strings out of 256217
+ 66642 string characters out of 1917094
+ 171916 words of memory out of 1500000
+ 7972 multiletter control sequences out of 10000+200000
+ 15035 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,18n,58p,1512b,475s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (172 pages, 716540 bytes).
+Output written on thesis.dvi (177 pages, 737128 bytes).
