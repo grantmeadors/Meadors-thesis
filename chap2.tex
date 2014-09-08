@@ -1,670 +1,854 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    INSTITUTE OF PHYSICS PUBLISHING                                   %
-%                                                                      %
-%   `Preparing an article for publication in an Institute of Physics   %
-%    Publishing journal using LaTeX'                                   %
-%                                                                      %
-%    LaTeX source code `ioplau2e.tex' used to generate `author         %
-%    guidelines', the documentation explaining and demonstrating use   %
-%    of the Institute of Physics Publishing LaTeX preprint files       %
-%    `iopart.cls, iopart12.clo and iopart10.clo'.                      %
-%                                                                      %
-%    `ioplau2e.tex' itself uses LaTeX with `iopart.cls'                %
-%                                                                      %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
-% First we have a character check
-%
-% ! exclamation mark    " double quote  
-% # hash                ` opening quote (grave)
-% & ampersand           ' closing quote (acute)
-% $ dollar              % percent       
-% ( open parenthesis    ) close paren.  
-% - hyphen              = equals sign
-% | vertical bar        ~ tilde         
-% @ at sign             _ underscore
-% { open curly brace    } close curly   
-% [ open square         ] close square bracket
-% + plus sign           ; semi-colon    
-% * asterisk            : colon
-% < open angle bracket  > close angle   
-% , comma               . full stop
-% ? question mark       / forward slash 
-% \ backslash           ^ circumflex
-%
-% ABCDEFGHIJKLMNOPQRSTUVWXYZ 
-% abcdefghijklmnopqrstuvwxyz 
-% 1234567890
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\documentclass[12pt]{iopart}
-%\newcommand{\gguide}{{\it Preparing graphics for IOP journals}}
-%%Uncomment next line if AMS fonts required
-%\usepackage{amsthm}
-%\usepackage{amssymb}
-%\usepackage{iopams}  
-%%\usepackage{amsxtra}
-%\usepackage{epsfig}
-%\usepackage{verbatim}
-%\usepackage{hyperref}
-%\usepackage{harvard}
-%\usepackage{url}
-%\usepackage{cite}
-%\begin{document}
-
-%\title[Increasing LIGO sensitivity by feedforward subtraction]{Increasing LIGO sensitivity by feedforward subtraction of auxiliary length control noise}
-
-%\author{Grant David Meadors$^1$, Keita Kawabe$^2$, Keith Riles$^1$}
-
-%\address{$^1$ Department of Physics, University of Michigan, 450 Church Street, Ann Arbor, MI~48109, US}
-%\address{$^2$ LIGO Hanford Observatory, PO Box 159, Richland, WA 99352-0159, US}
-%\eads{\mailto{gmeadors@umich.edu}, \mailto{kawabe\_k@ligo-wa.caltech.edu}, \mailto{kriles@umich.edu}}
-%\begin{abstract}
-LIGO, the Laser Interferometer Gravitational-wave Observatory, has been designed and constructed to measure gravitational wave strain via differential arm length. The LIGO 4-km Michelson arms with Fabry-Perot cavities have auxiliary length control servos for suppressing Michelson motion of the beam-splitter and arm cavity input mirrors, which degrades interferometer sensitivity. We demonstrate how a post-facto pipeline (AMPS) improves a data sample from LIGO Science Run~6 with feedforward subtraction. Dividing data into 1024-second windows, we numerically fit filter functions representing the frequency-domain transfer functions from Michelson length channels into the gravitational-wave strain data channel for each window, then subtract the filtered Michelson channel noise (witness) from the strain channel (target). In this chapter we describe the algorithm, assess achievable improvements in sensitivity to astrophysical sources, and consider relevance to future interferometry.
-
-%\end{abstract}
-
-%Uncomment for PACS numbers title message
-%\pacs{00.00, 20.00, 42.10}
-%\pacs{04.80.Nn, 95.55.Ym, 07.60.Ly, 07.05.Dz}
-% Keywords required only for MST, PB, PMB, PM, JOA, JOB? 
-%\vspace{2pc}
-%\noindent{\it Keywords}: Article preparation, IOP journals
-% Uncomment for Submitted to journal title message
-%\submitto{\JPA}
-% Comment out if separate title page not required
-%\maketitle
-
-    \section{Introduction}
-    \label{introduction}
-
-Antennae for gravitational wave observations~\cite{Thorne300} require precise understanding of noise sources to attain peak sensitivity. Some of these noises arise from auxiliary degrees of freedom in interferometric antennae. Feedforward control can correct these auxiliary control noises. Cluster computing on archived data makes previous methods of feedforward correction scalable to year-long science runs. Computing can also adjust for the non-stationarity inherent in these noise couplings. This chapter describes such a computational method and the improvements it might provide for searches with LIGO (Laser Interferometer Gravitational-wave Observatory).
-
-	As a network with GEO600~\cite{Willke2002,Hild2009} and Virgo~\cite{Acernese2005}, Enhanced LIGO~\cite{LIGOFirst2004,Fricke2009} produced data during LIGO Science Run 6 (S6) that was the most sensitive yet taken in the search for gravitational waves of astrophysical origin reaching the Earth: in this chapter, we further enhance LIGO sensitivity via post-run software corrections. Radio astronomy of pulsar systems such as PSR 1913+16~\cite{HulseTaylor1975,Weisberg2010} provides indirect evidence for gravitational radiation, and direct detections could elucidate the structure of neutron stars~\cite{Lindblom1995,AbbottPulsar2006} and illuminate black holes~\cite{Sathyaprakash2009}, supernovae~\cite{Chandrasekhar1969,Ott2009}, cosmology~\cite{Grishchuk1974}, and related tests of the strong-field validity of general relativity~\cite{Riles2013}. This potential motivates new observatories, such as KAGRA~\cite{Kuroda2010}, and improvements to existing observatories. 
-
-LIGO infers gravitational-wave strain $h(t)$ at each of its two observatories [Hanford, Washington and Livingston, Louisiana] from the length difference between 4-km Michelson interferometer arms~\cite{Saulson} using a calibration response function~\cite{AbadieCalibration2010}. Each arm contains a Fabry-Perot resonant cavity locked using the Pound-Drever-Hall technique~\cite{Drever1983,Black2001}, comprised of an input test mass, near the Michelson beam-splitter, and an end test mass. A power-recycling mirror sits between the laser and the beam-splitter. These six core optics form coupled optical cavities with four length degrees of freedom, each of which is servoed to maintain optical resonance by minimizing motion (see Section~\ref{motive_math}). The effective change in the differential arm length $L_-$ (colloquially DARM) caused by gravitational waves is encoded in the intensity of the light reaching the anti-symmetric port of the Michelson interferometer and is read out by DC homodyne~\cite{Fricke2009}. Auxiliary length control for the beam-splitter and input mirrors is becoming more complex, as in Advanced LIGO, which will add a signal recycling cavity. This chapter describes post-facto software improvements of detector noise using adaptive feedforward subtraction in a pipeline called Auxiliary MICH-PRC Subtraction (AMPS)~\cite{MatappsRepository}: these improvements refine LIGO's gravitational-wave sensitivity to astrophysical sources.
-
-AMPS improves LIGO S6 data (2009 July 07 to 2010 October 20), as this chapter will show. S6 gravitational wave strain (target) is corrected based on auxiliary length noise measurements (witness). Enhanced LIGO generated the S6 data with high laser power and DC readout to prepare for Advanced LIGO. The motion of the beam-splitter and input mirrors of the Fabry-Perot cavities is known~\cite{AdhikariThesis,BallmerThesis} to cause cross-talk in the gravitational wave strain channel, which compounds a noise floor fundamentally limited by seismic, thermal suspension, and laser shot noise. Observed S6 cross-talk included differential Michelson (MICH) as well as power-recycling cavity length (PRC). The DARM readout, as explained in Section~\ref{motive_math}, is intrinsically sensitive to MICH divided by a factor of arm cavity gain, Equation~\ref{rcfactor}. (Theoretically, physical $h(t)$ is imprinted in MICH, but the cavity gain and relative smallness of the Michelson cavity make the effect about five orders of magnitude smaller than in DARM, so it is ignored). Methods~\cite{KisselThesis} to tune real-time feedforward filters for LIGO servo cross-talk are our starting point, but we seek to automate and improve retuning.
-
-Post-facto, adaptive feedforward simplifies cross-talk subtraction. AMPS uses Matlab 2012a~\cite{Matlab2012a}. The witness-to-target transfer function is estimated in discrete time windows of 1024 seconds and fit to a zero-pole-gain filter with Vectfit~\cite{Deschrijver2008,Gustavsen1999,Gustavsen2006}. Safeguards ensure a statistically significant fit that does not further degrade the target signal. Noise from the witnesses passes through respective filters, then is subtracted from the strain target channel. The correction lowers the noise floor, benefitting any gravitational-wave searches using this data.
-
-
-    \section{Description of the feedforward method}
-    \label{motive_math}
-
-
-Gravitational-wave antennae around the world share features and form a collaborative network. Amongst kilometer-scale Michelson interferometers, GEO600 in Hannover, Germany uses folded arms with both power- and signal-recycling, LIGO and Virgo use Fabry-Perot cavities coupled with power- (and potentially signal-) recycling cavities. The Japanese interferometer KAGRA, under construction, will have a similar optical layout to LIGO and Virgo but with cryogenically-cooled mirrors in an underground laboratory. Although nomenclature here pertains to LIGO, the core problem of this chapter applies directly to all power-recycled Michelson interferometers with Fabry-Perot arms. It could extend to other instruments with multiple degrees of freedom that obtain a signal from a target contaminated by control noise from auxiliary degrees of freedom, especially when those auxiliaries are controlled using a lower signal-to-noise ratio (SNR) error signal than for the target and when the witnesses are highly independent.
-
-LIGO core optics include the beam-splitter (BS) and power-recycling mirror (PRM), which is situated between the laser and the beam-splitter. The four LIGO mirror test masses (TM) are named by arm (X or Y) and input (I) vs end (E) of the Fabry-Perot cavities. LIGO controls four optical pathlength degrees of freedom~\cite{ReadoutGWA}. DARM is a signal of \textit{differential arm} length, which is calibrated into the primary part of the gravitational strain measurement, \textit{h(t)}. CARM yields \textit{common arm} length, and is controlled with a common mode servo using laser frequency. MICH \textit{Michelson} and PRC \textit{power-recycling cavity} length refer only to input test masses.
-
-        \begin{eqnarray}
-        \textup{Strain: } h(t) = \frac{\delta \left(L_{-}(t) \right)}{\langle L_{+}\rangle}, \label{hoftDef}
-        \end{eqnarray}
-        \begin{eqnarray}
-        \textup{Common arm length: } \textup{CARM} \propto \delta(L_{+}) = \frac{\delta(L_y + L_x)}{2}, \label{CARMdef} \\
-        \textup{Differential arm length: } \textup{DARM} \propto \delta(L_{-}) = \delta(L_y - L_x), \label{DARMdef} \\
-        \textup{Power-recycling cavity length: }\textup{PRC} \propto \delta(l_{+}) = \frac{\delta(l_y + l_x)}{2}, \label{PRCdef} \\
-        \textup{(Inner) Michelson length: } \textup{MICH} \propto \delta(l_{-}) = \delta(l_y - l_x), \label{MICHdef}
-        \end{eqnarray}
-
-        \begin{eqnarray}
-        L_y \equiv z(\textup{ETMY}) - z(\textup{ITMY}), \label{Lydef} \\
-        L_x \equiv z(\textup{ETMX}) - z(\textup{ITMX}), \label{Lxdef} \\
-        l_y \equiv z(\textup{ITMY}) - z(\textup{RM}), \label{lydef} \\
-        l_x \equiv z(\textup{ITMX}) - z(\textup{RM}). \label{lxdef}
-        \end{eqnarray}
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=135mm,width=150mm]{figure1.eps}
-\caption{Gravitational wave strain $h(t)$ is derived from differential arm motion (DARM), read-out from a photodiode downstream of the antisymmetric port. An internal reflection off an anti-reflective coating, on either the beam-splitter (BS) or an input test mass (ITM), provides the Michelson (MICH) channel. The DARM readout channel predominantly measures the small change in differential arm length, $\delta(L_-) \equiv \delta(L_y - L_x)$, while MICH measures that in the Michelson length $\delta(l_-) \equiv \delta(l_y - l_x)$. There is also a small coupling from $\delta(l_-)$ to the DARM channel. To a lesser extent, changes in the length of PRC, which is defined as $\delta(l_+) \equiv \delta(l_y + l_x)/2$ and is measured in quadrature demodulation with respect to the MICH pick-off, also add noise to DARM.}
-\label{arms}
-\end{center}
-\end{figure}
-
-
-        Average arm length is $\langle L_+\rangle$, about 4 km in LIGO. The distance function $z(\mathcal{X})$ indicates the distance (note that $z(\textup{ITMY})$ is a function of both the ITMY and BS position), along the optical path, from the laser to an optic $\mathcal{X}$. The variation $\delta$ denotes a change with respect to nominal value. DARM length is thus defined as $\delta(L_y - L_x)$ and MICH length as $\delta(l_y - l_x)$. In practice, DARM and MICH are the names given to the channels that predominantly measure those quantities. Unless stated otherwise, the terms DARM, MICH, PRC and CARM will refer to the measured channels, which are related to the lengths through calibration and are cross-contaminated (e.g., DARM = $\delta(L_{-}) + \pi/(2 \mathcal{F}) \delta(l_{-})$, where $\mathcal{F}$ is cavity finesse). The terms will not refer to the ideal physical lengths in Equations~\ref{CARMdef} through~\ref{MICHdef}. 
-
-        As Equation~\ref{DARMdef} and~\ref{MICHdef} imply and Figure~\ref{arms} illustrates, MICH noise ambiguates the physical interpretation of DARM. An arm cavity gain $r_{c}'/r_c \simeq 139/0.990$, where $r_c$ is the arm cavity reflectivity for the LIGO laser carrier frequency and $r_{c}'$ is the derivative of $r_c$ with respect to round trip phase~\cite{ReadoutGWA,BallmerThesis}, amplifies DARM motion for Initial and Enhanced LIGO. Where $\mathcal{F} \simeq 219$, the gain is given by Equation~\ref{rcfactor}:
-
-        \begin{eqnarray}
-        \frac{r_{c}'}{r_c} = \frac{2 \mathcal{F}}{\pi} \simeq (139/0.990). \label{rcfactor}
-        \end{eqnarray}
-
-        \textit{A priori} MICH noise will leak into measurements of DARM with a transfer function equal to the inverse of Equation~\ref{rcfactor}~\cite{SiggFreq1997}. Coherence measurements confirm this coupling dominates the transfer function, but residuals suggest other effects exist. PRC is also indirectly correlated with DARM. These correlations are physical consequences of the interferometer design. 
-
-In Enhanced LIGO, DARM is measured with a photodiode at the interferometer `dark' antisymmetric port of the beamsplitter. Independent photodiodes for MICH and PRC, used for feedback on their respective auxiliary length control servos, provide the witness channels for canceling cross-talk into DARM. The MICH and PRC photodiodes receive a beam from an internal reflection in the beam-splitter. This beam carries a radio-frequency modulation; one demodulation quadrature provides MICH, the other PRC.
-
-        \subsection{Auxiliary noise coherence at sensitive frequencies}
-        \label{aux_noise}
-
-	 Coherence, the Fourier frequency-dependent analog of statistical covariance, quantifies cross-talk. On a scale of 0 (none) to 1 (full), magnitude-squared-coherence (MS-coherence) represents the normalized fraction of power of a frequency bin in the spectrum of one channel that can be found in the same frequency bin in the spectrum of another channel. First, we must define the cross-power of two time-series. Where $P_{xy}$ is cross-power spectral density, 
-%as in Equation~\ref{Pyx}.
-%
-%	Continuous and discrete definitions of cross-power $P$ follow; the operator $E$ denotes an expectation value, and $p$ and $q$ are discrete indices:
-% 
-%            \begin{eqnarray}
-%            P_{yx} (f) = \int_{-\infty}^{+\infty} \left(\int_{-\infty}^{+\infty} y^{*} (\tau) x(t+\tau) d \tau \right) e^{i 2 \pi f t} dt; \label{Pyx} \\
-%            P_{yx} (f, t) = \Sigma_{q=-t}^{t} R_{yx} (q) e^{-2 \pi i f q}, \label{Pyxext} \\
-%            R_{yx} (q) = E\left[ y_{p+q} x_p^* \right] \label{crossCovar}.
-%            \end{eqnarray}
-%
-we can describe how the coherence at a given frequency $f$ and time $t$~\cite{Boashash1990} is given by Equation~\ref{coherenceDef}. 
-%For $L$ segments, the false positive rate $\alpha$ is described using a one-sided confidence limit $c$ in~\cite{Bortel2007} by Equation~\ref{CohereProb}
-\begin{eqnarray}
-C_{xy}(f, t) = \sqrt{\frac{\left| P_{xy}(f, t) \right|^2}{P_{xx}(f, t) P_{yy} (f, t)}}\label{coherenceDef}.
-%c = 1 - \alpha^{1/(L-1)} \label{CohereProb};
-\end{eqnarray}
-
-%Equation~\ref{CohereProb} is for non-overlapping measurements of coherence. Overlapping measurements can use less data by a factor of $w_{\textup{ind}}$ and samples-per-segment $M$:
-
-%\begin{eqnarray}
-%L_{\textup{ovrlp}} = L_{\textup{no-ovrlp}} \frac{\Sigma_k w^2_{\textup{ind}}[k]}{M}.
-%\end{eqnarray}
-
-The calibrated strain channel for $h(t)$ (internally, the discrete-time calibrated strain channel for the physical strain $h(t)$ is called `Hoft'), is, with high confidence, coherent with MICH and PRC, as seen in Figure~\ref{coherenceGraph}. MICH-$h(t)$ coherence is sometimes as large as 0.1 in the 100 to 300 Hz band; PRC-$h(t)$ is an order of magnitude lower. Unfortunately, this is the most sensitive band for Initial and Enhanced LIGO. 
-
-
-        \subsection{Estimating filters}
-        \label{filter_est}
-
-	Allen, Hua, and Ottewill (AHO)~\cite{AllenHuaOttewill1999} proposed the filtering scheme that this chapter employs. Where there is a strong correlation between a signal (target) channel and a noise (witness) channel, the noise can be partially cancelled if a witness-to-target transfer function, convolved with the witness, is applied to the measured target.
-	Equations~\ref{gcf} through~\ref{hatsf} capture this method. It is analogous to frequency-domain principal component analysis (PCA) using Gram-Schmidt orthogonalization. In the original theory, superscript $^{(b)}$ indicates a frequency band that we denote as domain $(f)$. 
-Equation 8 in AHO corresponds to Equation~\ref{hatsf} here.
-%$Their Equations~7, 8, and 11 correspond, respectively, to Equations~\ref{Pyx},~\ref{hatsf} and~\ref{Txy} here.
-
-The transfer function $T_{xy}$, from the cross-power ratio of arbitrary channels $x$ and $y$, 
-%            \begin{eqnarray}
-%            T_{xy} (f) = \frac{P_{yx}(f)}{P_{xx}(f)}. \label{Txy}
-%            \end{eqnarray}
-guides the estimated feedforward filter $g$. Figure~\ref{tfGraph} shows the fit to the transfer function. Viewed as an inverse Fourier transform $F^{-1}$, decoupling signal (target, subscript $s$) from noise (witness, subscript $n$):
-            \begin{eqnarray}
-            g(t) = F^{-1} \left( \textup{fit} \left[ T_{sn} (f) \right] \right) \label{gcf}.
-            \end{eqnarray}
-\noindent Finally, the post-filtering signal (target) $\hat{s}$ is given by the convolution ($\times$) with $\gamma$, the transfer function coupling noise (witness) into signal (target), $s$ pre-filter signal, $n$ noise, and with channels indexed by $j$ and curly brackets indicating an observable quantity: 
-            \begin{eqnarray}
-            \hat{s} (t) = \left\{ s + \Sigma_j \left(\gamma_j \times n_j\right)\right\} (t) - \Sigma_j \left(g_{j} (t) \times \left\{ n_{j} \right\} (t)\right) \label{hatsf}.
-            \end{eqnarray}
-
-
-Blind application of this method could produce incorrect noise reduction. 
-Application of this chapter's method to uncorrelated channels would lead to arbitrary noise reduction by an average analytic factor of $(1 - 1/F)$, where $F$ is the number of bins in a fitted frequency span (equal to the the number of time-domain averages). 
-Given 1-s windowing with 50\%-overlap on 1024 s, $F = 2047$, for a false noise reduction of about 0.05\%. 
-The ideal of 1024-s windows is not always achievable with LIGO duty cycles. In these cases, AMPS incorporates some filters estimated on as little as 32 s of data, for which the reduction would be 3\%, but only when these filters are averaged together with longer-duration (512 s or greater) filters. No isolated filter uses less than 60 s of data, which could yield a false reduction of 1.5\%. AHO clarify that subtraction is tenable so long as covariance is present at a statistically significant level. They set a benchmark of an order-of-magnitude above the magnitude-square covariance expectation value of $1/F$. Since the AMPS pipeline emphasize fits in regions where the magnitude-squared coherence is greater than 3\%, and often 10\% or more, it usually satisfies their criterion.
-
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=80mm, width=75mm]{figure2a.eps}
-\includegraphics[height=80mm, width=75mm]{figure2b.eps}
-\caption{Sample coherence measurements between $h(t)$ and auxiliary control channels for LIGO Hanford Observatory, H1: 2010 March 21. MICH-$h(t)$ coherence on left, PRC-$h(t)$ coherence on right. Statistically significant coherence justifies fitting; in frequency bands, about 80 to 400 Hz, where coherence rose above background levels, the transfer function fit was weighted more heavily. Units of coherence spectral density (Hz$^{-1/2}$) vs frequency (Hz).}
-\label{coherenceGraph}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[height=100mm, width=75mm]{figure3a.eps}
-\includegraphics[height=100mm, width=75mm]{figure3b.eps}
-\caption{Sample transfer function measurements (amplitude and phase) from LIGO Hanford Observatory, H1: 2010 March 21; MICH-$h(t)$ on left, PRC-$h(t)$ on right. Transfer function fit in coherent band -- note the difference between raw data residual and the `pre-processed residual', which has been smoothed and weighted to emphasize known-coherent bands. Units of amplitude spectral density (Hz$^{-1/2}$) and phase (degrees) vs frequency (Hz).}
-\label{tfGraph}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[height=100mm, width=75mm]{figure4a.eps}
-\includegraphics[height=100mm, width=75mm]{figure4b.eps}
-\caption{Sample Bode plots of fitted ZPK filter functions (amplitude and phase) for multiple 1024 s windows in a science segment, at LIGO Hanford Observatory, H1: 2010 March 21; MICH-$h(t)$ on left, PRC-$h(t)$ on right. Colors only represent different time windows. The similarity in the high-coherence, 80 to 400 Hz band leads us to conclude that the filter design is fairly stable throughout a science segment. Units of amplitude spectral density (Hz$^{-1/2}$) and phase (degrees) vs frequency (Hz).}
-\label{BodePlots}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[height=80mm, width=75mm]{figure5a.eps}
-\includegraphics[height=80mm, width=75mm]{figure5b.eps}
-\caption{Sample subtracted spectra for one window, representing the applied feedforward corrections for each channel during that window, at LIGO Hanford Observatory, H1: 2010 March 21; MICH-$h(t)$ correction on left, PRC-$h(t)$ correction (after MICH-$h(t)$ correction is applied) on right. Units of amplitude spectral density (Hz$^{-1/2}$) vs frequency (Hz).}
-\label{subtractedSpectrum}
-\end{center}
-\end{figure}
-
-As detailed in Section~\ref{filter_fitting-out-of-loop}, filters for each 1024-s window are blended to estimate the target. Figure~\ref{BodePlots} illustrates the short-term consistency of transfer functions during a few-hour science segment, presenting Bode plots of MICH-$h(t)$ and PRC-$h(t)$ transfer function fits for consecutive windows from 2010 March 21 at LIGO Hanford Observatory (magnitude, top and phase, bottom vs frequency [Hz]).  Figure~\ref{subtractedSpectrum} presents sample subtractions. These figures show that AMPS efficiently builds on AHO for operational data for a kilometer-scale gravitational wave interferometer.
-
-Section~\ref{prior_programs} compares transfer function estimators, with Section~\ref{vectfit} being the chosen method. Section~\ref{safeguards} discusses safeguards and vetoes, and Sections~\ref{out-of-loop} and~\ref{filter_fitting-out-of-loop} discuss the details of implementation and verification.
-
-    \section{Feedforward in- and out-of-loop methods}
-    \label{prior_programs}
-   
-        Feedforward subtraction must meet operational constraints. Existing manually-designed filters have long worked, but are more labor-intensive than automated design; new methods, such as Wiener filtering now being considered for seismic and gravity-gradient cancellation~\cite{Driggers2012ActiveNoise} could lead to future improved performance.
         
-        \subsection{Manually designed rational filtering in-loop}
-        \label{manual_design}
-
-            Manual designs of feedforward functions prove time-consuming. Transfer functions must be manually measured, fit, copied and incorporated into the control system. Additional transfer functions are needed for servo in-loop gain and actuation functions. Manual design is an inefficient choice: it is labor-intensive, and S6 suggests that filter redesign should be performed often.
-
-	While involved, manual-designed rational filtering of MICH and PRC in-loop provides a key part of servo controls to date. Auxiliary controls introduce noise into the DARM channel, so  without real-time correction, the performance would be much worse than design. Most MICH \& PRC subtraction so far comes from real-time corrections; our pipeline makes one to two orders of magnitude smaller corrections.
-
-        \subsection{Frequency-domain automated filter design}
-        \label{vectfit}
-
-            AMPS uses Vectfit for periodic re-design. Since the dynamic range in magnitude for transfer functions varies over tens of orders of magnitude, data is pre-processed and weighted to emphasize the most sensitive band.
-The method fits an infinite impulse response (IIR) filter onto the witness-to-target transfer function. Since coherence and AHO are linear and transitive, it targets $h(t)$ rather than DARM (noise coupling enters the signal there, but it is wasteful to duplicate the response function).
-
-Each transfer function for a typical 1024 s of data is the average of 1024 independent ratios-of-Fourier-transforms (2047 Hann-windowed, 50\%-overlapping FFTs of 1 s samples). Since FFT error scales with the inverse square root of the number of averages, the relative accuracy is $\mathcal{O}\left(1024^{-1/2}\right)$. The minimum data length, 32 s, yields $\mathcal{O}\left(32^{-1/2}\right)$ relative accuracy. Outside the sensitive band, the fit is deweighted and the transfer function pre-processed, suppressing it by factors of $(f/f_\textup{knee})^\alpha$, where $\alpha = 8$ at low frequencies and $-8$ at high. The $f_\textup{knee}$ values are, respectively, 50 and 400 Hz. AMPS smooths and deweights (Figure~\ref{tfGraph}) known spectral peaks, including 60 Hz harmonics, the LIGO suspension violin modes, and calibration lines. Violin modes are internal resonances of mirror suspensions caused by thermal noise; calibration lines are injections used to track the response function. De-weighting and pre-processsing prevent biasing the filter design with transfer function bands where coherence is low, which would introduce noise. This process leads to convergence with fewer parameters.
-
- Vectfit converges iteratively, starting with a posited set of poles (32nd order here). About five iterations can converge to a good least-squares-fit for the state-space model, but we require fifteen and complex left-half-plane stability for safety. Root-mean-square (RMS) error, is the threshold for rejecting the filter regression. 
-From empirical studies, RMS error above $10^{-18}$ indicates poor fit. 
-This test isolates a bad MICH-$h(t)$ correction from a good PRC-$h(t)$ one, or vice versa. 
-	We fit one channel at a time, as Section~\ref{out-of-loop} discusses. After this test, the transfer function model is extracted. 
-
-Zero-pole-gain (ZPK) format is used to trim out-of-band zeroes and poles and multiply by a 2nd order Butterworth low-pass filter just below the Nyquist frequency of 8192 Hz, placing poles at 7 kHz to keep causality. A scale factor keeps the filter gain at 150 Hz the same value as without the low-pass filter. Then the ZPK model is refactored into second-order-sections (SOS) for numerical stability. Instead of the inverse Fourier transform of Equation~\ref{gcf}, the model is converted from continuous time (or $s$-domain) to discrete time (or $z$-domain). 
-
-Each filter is applied to its respective witness: the estimated true $h(t)$ target equals the original $h(t)$ measurement minus the filtered witnesses. 
-This procedure assumes that coupling from each witness into $h(t)$ is linear. Further, it assumes that 2nd-order coupling, from one witness into the other, is negligible (we estimate the relative contributions to be $\mathcal{O}(10^{-5})$). Spot-checks confirm that these simplifications are justified.  
-
-% where the fit residual of frequency bin $i$ is $\Delta_i$ ($i \in [1,...,N]$), and RMS error $\sigma$ is defined by Equation~\ref{RMSerrorDefinition}:
-% where the fit residual of frequency bin $i$ is $\Delta_i$ ($i \in [1,...,N]$), and RMS error $\sigma$ is defined by Equation~\ref{RMSerrorDefinition}:
-%\begin{eqnarray}
-%\sigma = \frac{\sqrt{\Sigma_{i=1}^N \left| \Delta_i \right|^2}}{\sqrt{N}}\label{RMSerrorDefinition}.
-%\end{eqnarray}
-
-        \subsection{Wiener filters}
-        \label{wiener_filters}
-
-            Wiener filtering~\cite{Wiener1949} would give an optimal filter that minimizes the squared error of the residual, for all the spectrum. Low-frequency MS-coherence of MICH \& PRC with $h(t)$ is small, but Wiener fits them due to high RMS error in that band. Filtering at high RMS power, such as the seismic and Newtonian gravity gradient bands, can allow Wiener filtering directly, but MICH \& PRC would need other methods. Noise whitening~\cite{Driggers2012NN,DeRosa2012FF} uses cost functions to limit out-of-band noise. Wiener filtering sub-spectra could also circumvent contamination, as with wavelet transforms~\cite{KlimenkoSite}.  
-
-% At the Caltech 40m prototype, Wiener filtering has been studied for Newton~\cite{Driggers2012ActiveNoise}. Wiener filtering is theoretically the optimal kind of filtering for balancing the gain from feedforward correction against the harm done when witness channels are themselves noisy. In the case of MICH and PRC, the channels are relatively good witnesses, but in other situations, Wiener filtering might provide superior performance. There is no reason to think that Wiener filtering would not provide MICH and PRC feedforward subtraction equal to what is obtained using a numerically determined transfer function (fit to IIR form using Vectfit). The latter was computationally-compelling for the AMPS pipeline. 
-
-
-        \subsection{Prospects for near-real-time filtering}
-        \label{real-time}
+        \section{Cosmic sources of gravitational waves}
+        \label{cosmic_sources}
       
-            AMPS runs a few times faster than real-time on a single 2013 CPU core whilst conducting tests and safeguards, documented in Section~\ref{safeguards}. 
-The minimal time lag for a modal sample is one window (1024 s), undesirable for electromagnetic follow-up and multi-messenger astronomy~\cite{Swift2012,Antares2013} sought for Advanced LIGO. 
-Such speed is acceptable for secondary $h(t)$-reconstruction when another $h(t)$ exists but inadequate for in-loop, real-time production. 
-
-Near-real-time filtering might be useful for countering upconversion and non-linear cross-coupling, using recent data for training sets, but this is not yet implemented. Until then, the existing method can generate a filter as-needed for real-time use, as prototyped on H1 in the last month of S6.
-
-\section{Safeguard and veto methods}
-\label{safeguards}
-
-%    Gravitational wave strain, $h(t)$, is LIGO's observable; we must ensure its integrity and calibration. Searches typically do not apply any correction based on auxiliary channel data. Real-time servos work, and if a problem is detected, it can often be fixed quickly. Yet sometimes, the problem is an ephemeral `glitch' with no cure. Absent a fix, it is advantageous to have methods for attempting a correction after the fact.
-
-  \subsection{Calibration integrity}
-  \label{CalibrationSection}
-
-It is of vital importance for our noise subtraction scheme to keep the integrity of the calibration of LIGO instruments intact.
-If the witness channel contains a cross coupled term proportional to the differential arm length motion $\delta(L_-)$, this term is subtracted from the target and thus could change the calibration of the target in theory.
-A simple calculation shows that, for a known coupling mechanism, this effect is on the order of $10^{-5}$ for LIGO and other similarly configured instruments.
-
-Even without considering any feedback control mechanism, theoretically MICH and DARM signal both have cross contamination terms proportional to $\pi/2\mathcal{F}$~\cite{SiggFreq1997}:
-\begin{eqnarray}
-\textup{DARM} \propto \delta(L_-) + \frac{\pi}{2 \mathcal{F}} \delta(l_-) \label{CalDARMdef}, \\
-\textup{MICH} \propto \delta(l_{-,0}) + \frac{\pi}{2 \mathcal{F}} \delta(L_-) + n \label{CalMICHdef},
-\end{eqnarray}
-where $\mathcal{F}$ is the finesse of the arm cavities, $n$ the sensing noise of the MICH, and $\delta(l_{-,0})$ the natural fluctuation of the Michelson path difference caused by seismic motion etc.
-Since  $\delta(l_{-,0})$  is not coherent with $ \delta(L_-)$, and since MICH is dominated by $n$ in our frequency band of interest, we can ignore $\delta(l_{-,0})$ in this discussion.
-
-The servo system with an open loop transfer function of $G_M$ to keep MICH from going out of linear range would inject $\frac{\pi}{2 \mathcal{F}} \delta(L_-) + n$ term to the physical Michelson length difference $\delta(l_-)$, which in turn affects the DARM signal:
-\begin{eqnarray}
-\delta(l_{-}) = - \frac{G_M}{1+G_M} \left( \frac{\pi}{2 \mathcal{F}}\delta(L_-) + n \right) \label{offsetMICHsignal}\\
-%
-\textup{DARM} \propto \delta(L_-) -\frac{\pi}{2 \mathcal{F}} \frac{G_M}{1+G_M} \left( \frac{\pi}{2 \mathcal{F}}\delta(L_-) + n \right). \label{offsetDARMsignal}
-\end{eqnarray}
-The DARM signal, uncorrected by feedforward, is now contaminated by MICH noise term $n$ as well as a small correction term for $ \delta(L_-)$, both due to the MICH feedback. Note that $G_M/(1+G_M)$ is on the order of 1 or smaller, and  $(\pi/2 \mathcal{F})^2$ is on the order of $10^{-5}$, so the correction term is on the order of $10^{-5}$ or smaller.
-
-Feedforward subtraction looks at the MICH control signal,
-\begin{equation}
-\textup{MICH}_{ctrl} \propto \frac{\pi}{2\mathcal{F}}\delta(L_-) +n,\label{offsetMICHCTRL}
-\end{equation}
-and subtracts $n$ from DARM, and in the process also subtracts $\frac{\pi}{2\mathcal{F}}\delta(L_-)$. Looking at Eqs.~\ref{offsetDARMsignal} and~\ref{offsetMICHCTRL}, as far as the noise reduction is observed in DARM, the small $\delta(L_-)$ term is also reduced, and the impact on the calibration is on the order of $(\pi/2 \mathcal{F})^2=\mathcal{O}(10^{-5})$ at most.
-
-A similar argument can be made for PRC, but this time the cross coupling is not only dependent on $(\pi/2\mathcal{F})$ but also on the asymmetry of the arms, further reducing the coupling.
-
-Note that the above mentioned discussion is equally applicable to real-time as well as post-facto feedforward. LIGO uses real time feedforward, and the offline feedforward described in this chapter subtracts only a small amount of noise left uncaught by the real-time system. Virgo implements similar real-time feedforward to remove the 50Hz line successfully~\cite{Buskulic2000}. In both of these cases, no measurable effect caused by feedforward has been reported.
-
-Nevertheless, two checks were performed to see if there is any unknown mechanism to compromise the calibration of DARM, which are explained in Section~\ref{postprocessingSafeguards}.
-
-\subsection{Runtime safeguards}
-    \label{runtimeSafeguards}
-
-
-Safeguards and vetoes then verify data integrity against possible issues. These issues include degrading data, offsetting and incorrectly time-stamping the data, incorrectly subtracting $h(t)$ from itself, and introducing windowing artifacts.
-
-Amplitude spectral density (using Welch's method~\cite{Welch1967}) leads to an estimate of inspiral range $\mathcal{R}$. Inspiral range~\cite{FinnInspiral1993} in LIGO detector characterization refers to the orientation-and-direction-averaged distance at which a 1.4-1.4 solar mass neutron star binary coalescence could be detected with an SNR of 8. A window's filtered data is used only if it passes two cuts. The post-filter $\mathcal{R}$ must be at least 99.9\% of unfiltered $\mathcal{R}$. None of the 40 points in a `comb' (each point being 5/16 Hz wide) of quiet bands can be noisier than 1.2 times uncorrected $h(t)$. The factors are chosen empirically to permit expected noise fluctuations; most surviving data is superior.  
-
-If cuts are triggered, the filter is rejected. To avoid discontinuities and add robustness against non-stationarity, the windowing procedure (Section~\ref{filter_fitting-out-of-loop}) is re-run to merge successfully-filtered data smoothly with unfiltered $h_0$. Cut tests are also re-run; if passed, the data is used, else the unfiltered data is progressively weighted further for eight more attempts. If all fail, the final attempt is written and the program proceeds. Empirically, almost all written data is an improvement.
-
-    \subsection{Post-processing safeguards}
-    \label{postprocessingSafeguards}
-
-Diagnostics check whether 
-calibration lines (Figure~\ref{calLineTest}) are preserved
-and 
-injections (Figures~\ref{timeDomainInjection} and \ref{crossCorrelationGraph}) are recovered.
-
-Calibration line studies seek to answer two questions: whether feedforward distorts the signal or adds noise. 
-
-In post-processing, `Short Fourier Transforms' (SFTs) were made with a frequency resolution (1/1800 Hz) from corrected $h(t)$. These SFTs are much shorter than the science run; 1800 s is standard for continuous wave searches. 
-Signal distortion is evaluated using the mean of three bins in [393.1 - 1/1800, 393.1 + 1/1800] Hz.
-Evaluating multiple bins accounts for some spectral leakage; the bin-centered central line is much larger. 
-For the $10^6$ s of H1 science time analyzed, the before-feedforward mean was $8.7261 \times 10^{-22} (\textup{Hz})^{-1/2}$, whereas after it was $8.7569 \times 10^{-22} (\textup{Hz})^{-1/2}$. Feedforward made the calibration line region noisier by $3.1 \times 10^{-24} (\textup{Hz})^{-1/2}$ or 0.35\%, perhaps due to a deweighted fit around the 393.1 Hz line, to avoid biasing more sensitive parts of the spectrum. It does not affect the calibration, since it is consistent with MICH and PRC leakage merely raising noise floor near the line. We also check the calibration line at 1144.3 Hz (before: $3.1190 \times 10^{-20} (\textup{Hz})^{-1/2}$, after: $3.1188 \times 10^{-20} (\textup{Hz})^{-1/2}$), which is actually less noisy. The 46.7 Hz line is too low-frequency to measure with these SFTs. 
-
-To test for noise addition, we searched for windowing artifacts, e.g., spectral combs with spacing of 1/1024 or 1/512 Hz, around a prominent line.
-No new combs or other artifacts were obvious in our 1800-s, 50\%-overlapping Hann-windowed SFTs before/after comparison of approximately $10^6$ s of H1 science time between GPS times $931.0 \times 10^6$ (2009 July 07) and $932.8 \times 10^6$ (2009 July 28), 
-focused on the 393.1 Hz calibration line. Strictly speaking, the line visible in $h(t)$ is a residual from imperfect cancellation of control and error signals used in $h(t)$ construction from DARM error and control signals. The nature of the line does not affect our analysis, because neither MICH nor PRC contain or affect it.
-
-Injection studies first examined compact binary coalescence and sine-Gaussian injections~\cite{LIGOBurst2012} for GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8 \times 10^6$ (2009 July 28). We then calculated the matched-filter SNR of each injection in S6. Each SNR is directly proportional to the distance at which such a signal \textit{can} be observed, and therefore also to the instrumental sensitivity to signals of that type~\cite{Findchirp2012,PetersMatthews1963}. Higher SNR (mean 3.99\% H1, 2.77\% L1) was found. Effective distance as \textit{recovered} is inversely proportional to signal, appeared nearly unchanged in these injections (mean -0.00347\% H1, +0.307\% L1), establishing that the SNR increase came from N decreasing rather than S increasing. The constant injection effective distance reinforces that the calibration is unchanged. These tests affirmed that feedforward data contains recoverable (slightly higher SNR ratio) injections at the correct time and phase. 
-
-We conclude that we are not subtracting $h(t)$ from itself.
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=75mm, width=150mm]{figure6.eps}
-\caption{Calibration line test: before-feedforward mean of the 393.1 Hz line and two neighboring FFT bins was $8.7261 \times 10^{-22}$, after was $8.7569 \times 10^{-22}$. Feedforward made the calibration line region noisier by $3.1 \times 10^{-24}$ or 0.35\%, suggesting that we correctly apply Hann-windowed feedforward without subtracting true $h(t)$. Moreover, no spectral line combs are observed to either side of the calibration line peak at 393.1 Hz, indicating that the method does not introduce windowing artifacts.}
-\label{calLineTest}
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=75mm, width=150mm]{figure7.eps}
-\caption{Time-domain plot of diagnostic channels from a burst injection. Colors are illustrative only to the fact that the envelopes of the traces increase after 1.8 s, indicating that the burst injection time is correct in the new data. `Before feedforward' and `after feedforward' traces occult each other in the graph, because they are almost identical. `Before feedforward' is $h(t)$ data; `after feedforward` is $h(t)$ with feedforward subtraction. `Injection estimated strain' is the digital injection as intended to be introduced into strain, but the actual injection is made on the end test mass X (ETMX), so the calibrated `Injection estimated ETMX' is also displayed. Raw `DARM\_ERR' and `ETMX\_EXC\_DAQ' are redundant but reinforce the trend.}
-\label{timeDomainInjection}
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=75mm, width=150mm]{figure8.eps}
-\caption{Cross-correlation pairwise between $h(t)$ pre-, post-feedforward, and ETMX injection data: the extrema and zero-crossings match.  Note both before-feedforward (blue) and after-feedforward (green) strain traces are almost identical and therefore overlap. The strains appear inverted, but in the same way, due to a sign error in the hardware injections at this time. The absence of a time lag shift between before and after indicates that feedforward has not altered the phase of the data, at least for this injection. The equivalence in cross-correlation magnitude indicates that amplitude also is unaffected.}
-\label{crossCorrelationGraph}
-\end{center}
-\end{figure}
-
-
-
-
-    \section{Feedforward with MICH and PRC channels}
-    \label{out-of-loop}
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=80mm,width=150mm]{figure9.eps}
-\caption{Feedforward subtraction pipeline to read in $h(t)$, MICH, PRC, and write out AMPS-corrected $h(t)$. Data flows schematically from left to right; the MICH-$h(t)$ stage output is used as input for the PRC-$h(t)$ stage, then data is written. Code online: \texttt{http://ligo-vcs.phys.uwm.edu/wsvn/MatApps/packages/detchar/AMPS/}\newline \texttt{trunk/aletheia.m}}
-\label{pipelineGraph}
-\end{center}
-\end{figure}    
-
-A post-facto, linear filter is fitted and applied to either MICH or PRC (serially). Fits occur in the frequency-domain, and application occurs in time-domain. Reading in $h(t)$, correcting it with MICH and PRC, and writing the result (including data quality and state vectors), the pipeline is shown in Figure~\ref{pipelineGraph}. 
-
-
-        \subsection{Filter fitting across science segments}
-        \label{filter_fitting-out-of-loop}
-
-We run one job process per science segment. Segments range in duration from seconds to days, with a median of hours. The interferometer is locked during each segment, meaning it is held fixed on a fringe, by servo control. Lock loss or noise degradations can define a segment end. Segments are divided into 50\%-overlapping Hann windows, filtered, and smoothly re-merged. Windowing is idempotent for $h(t)$ itself; the difference from window to window is the correction added. The first 512 s derive only from the first window; every 512 s afterward, a new window commences, as in Figure~\ref{windowingScience}.
-
-Using Equation~\ref{hatsf} with filters $g$, target $S = \left\{ s + \Sigma_j \left(\gamma_j \times n_j\right)\right\}$ and witness $N_j = \left\{ n_{j} \right\}$, we can evaluate  $\hat{s} (t)$. Since the filters for different channels are calculated in series, with transfer functions $T$, Equation~\ref{hatexpand} has $g_1 \sim T_{S,N_1}$ but $g_2 \sim T_{\left( S-g_1 \times N_1 \right),N_2}$. Here, $S$, $N_1$ and $N_2$ are respectively $h(t)$, MICH and PRC.
-
-            \begin{eqnarray}
-            \hat{s} (t) &=& S (t) - \Sigma_j \left(g_{j} (t) \times N (t)\right) \label{hatexpand}, \\
-		&=& S (t) - g_1 (t) \times N_1 (t) - g_2 (t) \times N_2 (t) \label{hatexpanded},\\
-&\sim& S (t) - F^{-1} \textup{fit}\left[ T_{S,N_1} \right] \times N_1 (t) - F^{-1} \textup{fit}\left[T_{\left( S-g_1 \times N_1 \right),N_2} \right] \times N_2 (t).
-            \end{eqnarray} 
-		
-
-	Since $N_1(t)$ and $N_2(t)$ are added linearly to $S(t)$, we can analyze them independently. 
-Analyze the first two terms of Equation~\ref{hatexpanded} and take $N(t) = N_1(t)$. Let $g_{A}$ and $g_{B}$ be the earlier and later filters for $N(t)$ being time-domain merged in a Hann-window; they are respectively calculated from overlapping data sets $[S_A, N_A]$ and $[S_B, N_B]$. The sets are identical at time $t$, so $S(t)=S_A(t) = S_B(t)$, $N(t)=N_A(t) = N_B(t)$. Windowing merges data streams $\hat{s}_A$ and $\hat{s}_B$ over $\tau = 1024$ s, per Equation~\ref{windowexpand}: 
-
-	\begin{eqnarray}
-        \hat{s} (t) &=& \frac{\hat{s}_A (t)}{2} \left[1 - \cos \frac{2 \pi (t+\frac{\tau}{2})}{\tau} \right] + \frac{\hat{s}_B (t)}{2}\left[1 - \cos \frac{2 \pi (t+\tau)}{\tau} \right] \label{windowexpand}, \\
-	  &=& \frac{1}{2} \left( \hat{s}_A (t) + \hat{s}_B (t) + \cos \frac{2 \pi t}{\tau} \left[\hat{s}_A (t) - \hat{s}_B (t) \right]\right),\\
-	&=& \frac{2 S(t) - (g_{A} + g_{B})\times N(t)}{2} - \frac{g_{A} - g_{B}}{2} \times N(t) \cos \frac{2 \pi t}{\tau},\\
-          &=& S(t) - \frac{1}{2} \left( g_{A} \left [1 + \cos \frac{2 \pi t}{\tau} \right] + g_{B} \left [1 - \cos \frac{2 \pi t}{\tau} \right] \right) \times N (t) \label{windowexpanded}.
-	\end{eqnarray}
-
-	Equation~\ref{windowexpanded} shows that the windowing process equates to evolving filter coefficients with a 512 s cadence. Substitute $\hat{s}(t)$ into $S(t)$ with $N(t) = N_2(t)$ for the next noise channel to extend the result.
-
-            Science segments are subdivided into at most 16384 s. These subdivisions overlap for 512 s, so each side calculates identical filters for the overlap, but only the latter half writes the overlap, to avoid race conditions. Label $g_W, g_X, g_Y, g_Z$ the final filters calculated in job 1; $g_A, g_B, g_C, g_D$ are the first in job 2. Where each parenthesis contains 512 s and the addition sign denotes Hann-windowing of the filters, the end of job 1 is $\ldots(g_W+g_X)(g_X+g_Y)(g_Y+g_Z)$ and the start of job 2 is $(g_A+g_B)(g_B+g_C)(g_C+g_D)$. Overlap denotes that filter $g_A$ is derived from the same data as filter $g_Y$, and likewise $g_B \simeq g_Z$. Thus $(g_A+g_B)=(g_Y+g_Z)$. Segments shorter than 60 s are not filtered, and dangling windows shorter than 32 s are rolled into their predecessors. These provisions prevent filters based on insufficient data. 
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=110mm,width=150mm]{figure10.eps}
-\caption{Schematic windowing for one LIGO science segment, illustrating windowing after an initial half-window offset. Filters are calculated for windows up to 1024-s, then 50\%-overlapping Hann windows merged, giving a corrected measurement of $h(t)$. Code online: \texttt{http://ligo-vcs.phys.uwm.edu/wsvn/MatApps/packages/detchar/AMPS/}\newline \texttt{trunk/eleutheria.m}}
-\label{windowingScience}
-\end{center}
-\end{figure}
-
-    \section{Results of feedforward}
-    \label{all-results}
-
-        \subsection{Post-processing diagnostics}
-        \label{diagnostics}
- 
-
-Lower spectral noise floors reveal improvement in Figures~\ref{typicalInspiralGraph} and~\ref{bestInspiralGraph}. Feedforward most improves the spectra with elevated noise levels. It enhances sensitivity less when the interferometer is already optimized. This tendency is consistent with underlying thermal and shot noise. Glitches contaminate $h(t)$ less when the servo-to-strain coupling is minimized. Insofar as coupling non-stationarity evolves slower than the 512-s windowing timescale, adaptive filtering appears to reduce the impact of glitches.
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=120mm, width=150mm]{figure11.eps}
-\caption{Exemplar of a typical case, +1.1 Mpc (5.9\% inspiral range)
-\textit{(GPS time 953164819 to 953165839, 2010 March 21)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. The most benefit is seen in the 80 to 400 Hz band, especially around 150 Hz, where LIGO is most sensitive. The main fundamental limit in this band is thermal suspension noise, but historically auxiliary channel noise has been a major contaminant. Note that the 60 Hz and harmonic lines are not subtracted, although a separate magnetometer servo does reduce their impact. The 330 Hz violin mode is not likely amenable to feedforward.}
-\label{typicalInspiralGraph}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[height=120mm, width=150mm]{figure12.eps}
-%\caption{Best improvement seen in S6 for H1 $h(t)$, +4.4 Mpc (29\% inspiral range)
-%\textit{(GPS 955187679 to 955188191, 2010 April 13)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. Such a loud cross-coupling would be noticed in real-time by the on-site staff. The elevated noise floor is unusual in science mode, but the fact that feedforward corrects it suggests the importance of controlling auxiliary channels to prevent such glitches. The post-feedforward spectrum is comparatively normal for science mode, as in Figure~\ref{typicalInspiralGraph}.}
-\caption{Best improvement seen in S6 for H1 $h(t)$, +4.4 Mpc (29\% inspiral range)
-\textit{(GPS 955187679 to 955188191, 2010 April 13)}. Read `DARM' as $h(t)$, `MICH' as `MICH-PRC'. Such a loud cross-coupling would be noticed in real-time by the on-site staff. The elevated noise floor is unusual in science mode, but the fact that feedforward corrects it suggests the importance of controlling auxiliary channels to prevent such glitches. The post-feedforward spectrum is comparatively normal for science mode}
-\label{bestInspiralGraph}
-\end{center}
-\end{figure}
-
-Post-processing tests also compute average SFT spectra. For GPS second $931.0\times 10^6$ (2009 July 07; GPS seconds count from 1980 January 01) to $932.8\times 10^6$ (2009 July 28, about 10\% of S6), the harmonic mean spectra are shown in Figure~\ref{SFTgraph}.
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=100mm, width=75mm]{figure13a.eps}
-\includegraphics[height=100mm, width=75mm]{figure13b.eps}
-%\caption{Harmonic mean, GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit{(before-after)} (L), \textit{(before-after)/before} (R); greater than zero is improvement. The mean shows the absolute and relative difference of before and after, between the average of many spectra such as Figures~\ref{typicalInspiralGraph} and~\ref{bestInspiralGraph}, although the algorithm differs. Improvement from 80 to 400 Hz is noticeable; at higher frequencies there is degradation, negligible in relative terms, due to high-frequency filter rolloff. Frequencies below 50 Hz should be disregarded; they are usually not searched by LIGO, so spectra for this plot were generated with a high-pass filter at 38 Hz.}
-\caption{Harmonic mean, GPS seconds $931.0 \times 10^6$ (2009 July 07) to $932.8\times 10^6$ (2009 July 28): \textit{(before-after)} (L), \textit{(before-after)/before} (R); greater than zero is improvement. The mean shows the absolute and relative difference of before and after, between the average of many spectra. Improvement from 80 to 400 Hz is noticeable; at higher frequencies there is degradation, negligible in relative terms, due to high-frequency filter rolloff. Frequencies below 50 Hz should be disregarded; they are usually not searched by LIGO, so spectra for this plot were generated with a high-pass filter at 38 Hz.}
-\label{SFTgraph}
-\end{center}
-\end{figure}
-
-SFTs are high-pass filtered at 38 Hz. The harmonic mean spectrum shows several percent improvement from about 80 Hz up to the 330 Hz violin mode frequencies. Above 400 Hz, there is proportionally-minor degradation,  due to filter rolloff. 
-
-        \subsection{Feedforward benefits and potential}
-        \label{benefits}
-
-Inspiral range $\mathcal{R}$ increases for both S6 LIGO observatories, which should generalize to any observatory with broadband noise due to contamination from auxiliary servos.
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=75mm, width=150mm]{figure14a.eps}
-\includegraphics[height=75mm, width=150mm]{figure14b.eps}
-\caption{Inspiral range vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30):
-LIGO Hanford Observatory, H1 (top) gains 0.23 Mpc; LIGO Livingston Observatory, L1 (bottom) gains 0.84 Mpc. In this first month of S6, L1 saw greater benefit from post-facto feedforward correction; later data from H1 and L1 would improve by fluctuating amounts thanks to better real-time feedforward servos. Although H1 is less improved than L1 here, real-time tunings were made soon after.}
-\label{S6inspiralRange}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[height=75mm, width=150mm]{figure15a.eps}
-\includegraphics[height=75mm, width=150mm]{figure15b.eps}
-%\caption{Inspiral range \textit{fractional gain} vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30):
-%LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for which Figure~\ref{S6inspiralRange} shows absolute gain.}
-\caption{Inspiral range \textit{fractional gain} vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30):
-LIGO Hanford Observatory, H1 (top) 1.68\% better; LIGO Livingston Observatory, L1 (bottom) 7.00\% better. This plot shows relative gain for the same data for we also show absolute gain.}
-\label{S6inspiralRangeGain}
-\end{center}
-\end{figure}
-
-Figures~\ref{S6inspiralRange} and~\ref{S6inspiralRangeGain} show the variation in achieved subtraction over about 10\% of S6.
-
- Figure~\ref{diagnosticWebpages} shows a screenshot of a webpage where LIGO data analysts can access summary graphs of the feedforward performance.
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=75mm, width=150mm]{figure16.eps}
-\caption{Screenshot of diagnostic web pages, indexed by window.}
-\label{diagnosticWebpages}
-\end{center}
-\end{figure}
-
-
-\section{Conclusion}
-
-Auxiliary MICH-PRC Subtraction has cleaned LIGO S6 data, yielding better strain sensitivity and inspiral range. Frequency-domain-derived, time-domain-applied feedforward correction removes noise by fitting a rational transfer function between witness \& target. Second order sections filter the witness channels, which then are subtracted from the measured target to produce an improved strain estimate. Diagnostics confirm that the corrected $h(t)$ benefits from dynamic, adaptive, algorithmic \textit{post facto} feedforward subtraction, gaining several percent in detectable inspiral range. Such an improvement potentially enhances the performance of any LIGO search. 
-
-The subtraction leads to the lowest noise floor, around 150 Hz, of any time or interferometer so far (the highest performance to date at shot-noise limited frequencies has been obtained differently, with quantum optical squeezing~\cite{BarsottiNatureSqueezing,DwyerPhaseNoise}). This record may remain until Advanced LIGO. Thereafter, adaptive feedforward filters, real-time or \textit{post facto}, can be applied to mitigate noisy-but-inescapable couplings of the servo system. Signal recycling and filter cavities will further challenge commissioning. Angular and length sensing will need finer control servos. Advanced LIGO will also contain more physical and environmental monitors, from seismic and accelerometric to magnetic, that could provide witnesses for non-control-related noise. Altogether, more auxiliary channels and loops will exist, and while they may require sophisticated, non-linear methods, the subtraction technique presented here is a basis. Sensitive interferometry will benefit from simple, effective methods of suppressing instrumental influences.
-
-LIGO was constructed by the California Institute of Technology and Massachusetts Institute of Technology with funding from the National Science Foundation and operates under cooperative agreement PHY-0757058. This chapter is based on Meadors, Kawabe, and Riles, `Improving LIGO sensitivity with feedforward subtraction of auxiliary channel noise' \textit{Classical and Quantum Gravity} 31 (2014) 105014~\cite{MeadorsFeedforward2014}, a paper that carries LIGO Document Number LIGO-P1300193. This research was also made possible by the generous support of the National Science Foundation, awards 0855422 and 1205173, LIGO Hanford Observatory, the LIGO Scientific Collaboration, and the University of Michigan. The authors wish to thank Gregory Mendell as well as Stuart Anderson, Juan Barayoga and Dan Kozak for grid computing expertise, Ian Harry for investigating signal recovery before and after injections and providing conclusions about signal-to-noise ratio for matched filtering, and Jeff Kissel for refining MICH and PRC subtraction by hand. Tobin Fricke wrote the converter function from second-order-system to ZPK filtering and also reviewed this manuscript, as did Rana Adhikari and Jenne Driggers, who developed many of these methods at the Caltech 40 m interferometer. Michael Coughlin, Jan Harms, and Nicol\'{a}s Smith-Lefebvre all generously provided comments. Finally, we thank the referees for Classical and Quantum Gravity for helpful suggestions.
-
-\section{Postscript}
-
-This analysis is intended to make Advanced LIGO simpler. To that end, some of the tools involved were directed toward the first lock stretch of the advanced detector era, at LIGO Livingston's L1 interferometer on 2014 May 26.
-
-MEWD\footnote{Denis Martynov, Anamaria Effler, Robert Ward, and Ryan deRosa.} attained the lock. MICH noise was dominating the spectrum. Based on the subtraction\footnote{Meadors, Kawabe, Riles.} of MICH \& PRC noise from the S6 data set (and H1 in real-time), an investigation ensued.
-The Matlab function \texttt{f\_domainsubtract} (from the 40 m, used in AMPS code to make a frequency domain transfer function) was run on data at CIT in
-
-/archive/frames/A6/L0/L1/L-L1\_R\_1085/
-
-using the \texttt{readFrames}\footnote{by Gregory Mendell.} function to pull 2100 s of frame data starting 1085202300.
-
-Absent a DARM\_ERR or \_CTRL channel, the \_IN1\_DQ channels were used, following an example\footnote{due to Rana Adhikari; Kawabe subsequently confirmed that IN1\_DQ has replaced ERR and OUT\_DQ has replaced CTRL.}
-in the LLO aLog.
-
-Uncalibrated PSDs from Matlab \texttt{pwelch} follow.
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockSensitivity.eps}
-\caption{
-DARM power spectral density for first radio-frequency lock of L1 in Advanced LIGO. Note that the spectrum is uncalibrated.
-}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockMICH.eps}
-\caption{
-MICH power spectral density, first lock.
-}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockPRCL.eps}
-\caption{
-PRCL power spectral density, first lock. This corresponds to the PRC channel in Initial and Enhanced LIGO.
-}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{aLIGOfirstLockSRCL.eps}
-\caption{
-SRCL power spectral density, indicating the signal for the signal recycling cavity length.
-}
-\end{center}
-\end{figure}
-
-The function \texttt{f\_domainsubtract} can estimate two quantities:
+        %   --- Cosmic origins believed to generate GW. (note: should sprinkle citations as needed, not just where it says "cite") ---
+
+		Gravity's power to induce ripples in space is a matter of fact. Pulsar 1913+16, discovered by Hulse and Taylor in radio waves, not only followed a pattern of orbital decay consistent with radiative loss of orbital decay to gravitational radiation -- it continued to do so~\cite{WeisbergTaylor2004,Weisberg2010}, seen in Figure~\ref{Hulse-Taylor_binary}, after the 1993 physics Nobel Prize. 
+This year, there has been much debate whether the BICEP2~\cite{BICEP2014} and Planck~\cite{Planck2014} probes of the cosmic microwave background have seen evidence of $B$-mode polarizations that would indicate primordial gravitational fluctuations.
+Eventual identification of the polarization is expected regardless. 
+We still may ask whether any gravitational waves will be directly detectable on Earth. 
+We may ask whether they appear in detectors in a way consistent with general relativity. 
+The basic fact of their emission, however, appears settled.
+
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=111mm, width=148mm]{500px-PSR_B1913+16_period_shift_graph.eps}
+	\caption{The Hulse-Taylor binary PSR 1913+16, orbital period change over time consistent with emission of gravitational radiation from its system~\cite{Weisberg2010}. Gravitational waves emission depletes orbital energy, causing the binary stars to slowly inspiral into closer orbits. Shrinking pulsar radius $R$ leads to the shorter period $T$ -- Kepler's third law, $T \propto R^{3/2}$ (first stated in \textit{Harmonices Mundi}~\cite{Hawking2002}). Timing error can be ruled out, because the orbital decay is not linear.}
+	\label{Hulse-Taylor_binary}
+	\end{center}
+	\end{figure}
+
+Before delving into general relativitic emission, let us consider the astrophysical sources expected to emit gravitational waves. 
+Physics prompts our search, but astronomy makes it exciting.
+When gravitational waves are heard by the interferometers, the public should remember them as the songs of dead stars, rippling through the fabric of spacetime.  
+Gravitational waves (henceforth also abbreviated GW) searches presently focus on four distinct types of cosmic sources.
+This categorization of sources was presented no later than the 1983 LIGO Blue Book proposal and has since guided research focus~\cite{CollinsGravityShadow,Schutz1989}. 
+The quadripartite division:
 \begin{itemize}
-\item coherence between different channels
-\item theoretically obtainable spectrum if noise is subtracted
+\item Burst (rarely, `supernova')
+\item Compact binary coalescence (or `inspiral')
+\item Continuous wave (or `pulsar')
+\item Stochastic
 \end{itemize}
 
-The first set of graphs shows (in blue x's) sqrt(1-magnitude-squared coherence) and (in red) the ratio, (predicted amplitude spectral density (ASD) after subtraction)/(measured ASD before subtraction):
+This thesis concentrates on continuous waves (CW) -- sine waves. 
+CW are most likely to emanate from neutron stars. 
+Perhaps neutron star CW modulated by orbital motion, spun-up from accretion or spun-down from radiated energy. 
+Given a sufficiently large ellipticity, on the order of $\epsilon \approx 10^{-7}$~\cite{Owen2005} or smaller for a neutron star rotating on the order of 1 kHz, a crust deformation (perhaps due to an $r$-mode) would radiate sufficient gravitational radiation to be a plausibly-detectable source. 
+Indeed, the radiation would rapidly deplete the rotational energy of the neutron star~\cite{Owen1998}, which is why binary systems, where the neutron star could be recycled and spun-up by a partner, prove a promising target~\cite{PapaloizouPringle1978,Wagoner1984}. 
+Scorpius X-1 offers a canonical case~\cite{AbbottScoX12007}, although the TwoSpect search anticipates an abundance of other low-mass X-ray binary (LMXB) systems of interest. 
+Given the paucity of insight on the interiors of collapsed stellar remnants, direct detection of GW from neutron stars would prove informative. 
+Just as we might infer details from neutron star binary coalescences favoring one equation of state~\cite{Lattimer2007,Read2009}, we might also extract parameters from continuous waves suggesting the existence of quark stars or gravitars~\cite{Owen2005}, and will have an unparalleled peek into the interior of the densest stable three-dimensional objects in the universe. 
+Their simple waveforms might even facilitate the calibration of other types of GW data, whereas binary mergers should sound like standard sirens to compare against electromagnetic and neutrino observations~\cite{Punturo2010}
+(see next paragraph).
+CW are conceptually-elegant and astronomically-enticing.
+Yet other sources of GW have a comparable pull on our attention. 
+
+Inspirals or compact binary coalescences occur when two stellar remnants draw nearer in their orbits, radiating gravitational radiation and finally merging in a titanic release of energy. 
+While sometimes invisible -- the merging of black holes in short-hard gamma ray burts (GRBs) being an exception -- these events compete eagerly with supernovae as the most explosive in the modern universe. 
+Were GW observatories to see their waveforms, they could be compared with those predicted through post-Newtonian approximation and numerical relativity. 
+As GW amplitude should diminish linearly with distance, we would then have standard candles or \textit{standard sirens} by which to calibrate and measure the universe. 
+Advanced LIGO~\cite{aLIGOrefDesign,aLIGOsysDesign} may prove sensitive to neutron star-neutron star and stellar mass black hole-neutron star mergers, and, if low-frequency sensitivity is sufficient and the sources exist, to intermediate-mass black holes. 
+Space-based observatories such as the longsuffering Laser Interferometer Space Antenna (LISA) and ensuing DeciHertz Gravitational-wave Observatory (DECIGO) \& Big Bang Observer (BBO) could detect supermassive black hole mergers. If launched, they would see a low-frequency noise floor due not to seismic vibration, as in LIGO, but to white dwarf binaries throughout the galaxy. 
+Since the waveforms are well-predicted, we could even investigate deviations from general relativity, perhaps seeing new physics in the ringdown of black holes.
+
+Physical insight could also come from burst searches. 
+Bursts share with inspiral searches the property of looking for a single event, as opposed to a source spread over long duration. 
+Analytical programs for bursts can sometimes be applied to inspiral or detector characterization tasks as well; rare noise events are a limit on their astronomical sensitivity.
+Yet the immediate focus lies with supernovae and perhaps gamma-ray bursts. 
+Because the waveform is unknown, burst searches rely significantly more on the coincidence between multiple detectors to distinguish signal from noise. 
+Just as with neutrino observations of supernova 1987A, the burst program would hope for a fortuitously nearby cataclysm to be seen simultaneously -- or nearly so, the time of flight indicating a direction -- in a global gravitational-wave detector network. 
+Due to the versatility of this method, some researchers have proposed looking for longitudinal polarization in addition to plus and cross orthogonal polarization (possible in non-general relativistic terms; see Section~\ref{history_GR}). 
+Any detection would be quite exciting for probing systems still mysterious with electromagnetic and neutrino measurements, and it would help, in conjunction with multi-messenger coordinated searches with those observatories, to ascertain at precisely what speed gravity travels through space-time and to what extent it is attenuated or altered.
+
+The background of space-time itself may hide GW signatures. 
+Searches for the stochastic GW background look not for single events but for persistent phenomena buried in many months of correlated signals between networks of detectors. 
+In doing so, they hope in particular to see the earliest turbulence of the universe -- long before the cosmic electromagnetic background, now microwaves, was emitted 380000 years after the Big Bang, GW were travelling unimpeded. 
+While the opacity of the infant cosmos conflates electromagnetic signals from different times and places, the transparency of the universe to gravity means that we might see the inflationary epoch or earlier, the Planck time. 
+Unfortunately, this signal is thought to be far below the sensitivity of existing detectors. 
+While LIGO did set a new upper limit on the energy density of GW, measured as a fraction, $\Omega_{gw}$ of the critical closure density of the universe~\cite{LIGOStochasticNature2009}, the inflationary background at LIGO frequencies is predicted to be about ten orders of magnitude lower. 
+Alternative theories, such as ekpyrotic/cyclic universes, make other predictions, so an anomalously high stochastic background could prove cosmologically significant.
+
+All GW searches would open up new directions in astronomy. 
+While the most exciting possibility is that we will see the unexpected, we think that our present algorithms will permit serendipity while efficiently categorizing computational challenges. 
+Continuous wave and inspiral methods both search against waveform templates; burst and stochastic have no template and rely on correlation and coincidence. 
+Continuous wave and stochastic analyze weeks, months, even years of data in search of persistant features; inspiral and burst look for transient events. 
+In the abstract dimensions of search groups, we are complete. 
+Our blind spots are in what data we provide to those groups -- in the focus on audio frequencies of tens to a few thousand Hertz at present -- blindness that will in time be rectified by CMB polarization, pulsar-timing and space-based interferometry for low frequencies and possibly by atom interferometry for high frequencies. 
+To appreciate our choice of focus in these nascent days of the field, we must turn back a century to understand its origins in Einstein's mathematics.
+
+        \subsection{History from general relativity}
+        \label{history_GR}
+
+            %Historical brief of Einstein.
+        Einstein's theory unified a sequence of historical insights. 
+Since 1676, when Roemer used the moons of Jupiter to measure the finite speed of light, just before Newton's 1687 \textit{Principia Mathematica}~\cite{Hawking2002}, the question of gravity's propogation beckoned. 
+Bringing together the work of Minkowski and Poincar\'{e}, the 1905 special theory of relativity highlighted the naturalness of the speed of light, but only in 1915, with the presentation of the Einstein field equations of general relativity, based in Riemannian geometry, did a means to an answer emerge. 
+In 1916, Einstein predicted GW. 
+At last, gravity had a theoretical speed: the same as that of electromagnetism, that of light in the vacuum, $c$.
+In the linear approximation to the nonlinear theory of general relativity (henceforth GR), the waves were mathematically similar to the waves of electromagnetism, as will be shown in Section~\ref{general_relativity}.
+GR offers a consistent explanation for how changes in the distribution of matter change gravitational fields.
+Yet the detectability of the waves, even in principle, would remain an open question for another half century. 
+Uncertainty in whether fluctuations within spacetime could be detectable with instruments themselves changed by the fluctuations dominated the debate.
+Consult Misner, Thorne, and Wheeler's \textit{Gravitation}~\cite{MisnerThorneWheeler} and Sean Carroll's lectures notes~\cite{Carroll1997}, as well as other history books of the field for an account of the controversy.
+Thought notions, \textit{Gedankenexperiment}, such as beads-on-rods led to consensus that GW carried and could deposit physical energy and thus be detected. 
+See \textit{Gravity's Shadow}~\cite{CollinsGravityShadow} for sociological perspective, and 
+\textit{Gravity's Ghost}~\cite{CollinsGravityGhost} for insight into the detection criteria that have since evolved\footnote{See also a recent review by Riles~\cite{Riles2013}.}.
+
+Discussions of GW frequently begin with derivations of the wave equations from Einstein's field equations. 
+General relativity, however, is not the only theory to predict GW: waves are a natural consequence of a class of similar theories, which make a range of testable predictions (such as number of polarization modes, from two to six, and possibly speeds different from $c$)~\cite{Will1993}. 
+Waves should thus be expected even if some minor variation from Einstein's theory is discovered, pointing a way perhaps toward a quantum theory of gravity~\cite{Sathyaprakash2009}. 
+%As the field progresses toward first detection and beyond to astronomy, the astrophysical targets of our searches should take precedence.
+
+Before deriving the answer to the detectability question from the field equations, a contrast with the situation in other fields of astronomy is in order.
+
+ 
+        \subsection{Contrast with electromagnetic and particle astronomy}
+        \label{contrast_astro}
+
+        With astronomy, detection came first, then theory.
+Visible light astronomy began with the earliest humans.
+Records of the star Sirius are known from Egyptian astronomers, the planet Venus from Babylonians, sunspots from the Chinese, and eclipses from the Greeks. 
+Thus the telescope, though revolutionary, was not unimaginable.
+
+Infrared radiation, as first seen by William Herschel, was just beyond the visible red light of a prism.
+As the wave nature of light came to be understood, culminating in Maxwell's equations, the existence of invisible electromagnetic radiation was put on sound theoretical footing.
+The only remaining questions pertained to whether this radiation would prove astornomically interesting, especially in the extreme low- (radio) and high- (X- and $\gamma$-ray) frequencies found at the end of the 19th Century.
+Fortuitiously, unlike with GW today, these novel bands of electromagnetic spectrum could be easily generated and detected by scientists in small laboratories, as with Marconi and Marie \& Pierre Curie.
+Within half a century, radio telescopy began with Karl Jansky~\cite{Shklovsky1960}, with Grote Reber soon observing the Milky Way~\cite{Gurzadyan1956}.
+By the early 21st Century, radio astronomy ranged from common rooftop designs~\cite{SRT} (nonetheless sensitive enough to infer the galactic rotation curve in the hydrogen line~\cite{MeadorsThesis2008}) to planetary-scale very long baseline interferometry and plans for a Square Kilometer Array.
+Electromagnetic, or photon, astronomy has the advantage of calibration with familiar sources.
+
+%            Contrast with electromagnetism, compare with radio/X-ray/et cetera astro. 
+
+%Can make analogy to radio waves and make note of the ease with which one can operate a small radio telescope, as I did in my thesis~\cite{MeadorsThesis2008}, compared the the difficulty of GW detection. 
+
+Other particles besides the photon began to play a role in 20th Century astronomy.
+Muons from space were detected long ago, as in C.D. Anderson's 1949 paper on what was then called the mesotron~\cite{CDAnderson}. 
+Solar neutrinos were, after much difficulty, seen by John Bahcall~\cite{NeutrinoReview}, and neutrino astronomy is a well-established field by the turn of the millenium, following the detection of Supernova 1987A in the Large Magellenic Cloud. 
+New types of neutrino detectors (for example, time-projection chambers~\cite{EBubble2005,MeadorsNevis2006}) could yield additional information and better sensitivity, but as with electromagnetism, the calibration question is resolved. 
+Since the Savannah River nuclear reactor experiments, the experimental detectability of neutrinos has been settled, and though the 1964 theory of solar neutrinos~\cite{NeutrinosSolarTheoretical} required tuning to account for neutrino oscillation, astrophysics with neutrino observatories is becoming mature.
+Nuclear fusion in the Sun has been well-established, and arrays such as Antares and IceCube will move the field outwards toward cosmic sources.
+
+
+ GW from the PSR 1913+16 pulsar itself~\cite{WeisbergTaylor2004} are too low in frequency to be seen with existing interferometers, but they confirm that the phenomena is real.
+Although no terrestrial sources of GW can be feasibly generated, calibration~\cite{AbadieCalibration2010} of interferometers is nonetheless accurate to a few percent.
+Direct detection of GW would let us infer the true strength of astrophysical gravitational radiation and compare that power with theory. 
+Surprising new insights are probable in any new field, not unlike the discovery of neutrino oscillation in the solar spectrum or the anomalous galactic rotation curve due to dark matter, are probable in any new field.
+
+Yet how can gravity been seen?
+GW are conceptually simple, with mathematics illustrated by electrodynamic analogy in the Appendix.
+A short derivation follows.
+
+    %End section by very rapidly deriving wave equation of electricity and magnetism, to lead by example for how we go about GR.
+    %Note that all physics in min(action),
+    %introduce metric as inner product
+    %generally, coordinate transform good
+
+
+
+    \section{General relativity}
+    \label{general_relativity}
+
+        Einstein's theory of General Relativity (hence GR) describes gravitation as curvature. 
+Gravity is a pseudoforce, unlike Newton's force $\textbf{F} = -G_C M_1 M_2 r^{-2} \hat{\textbf{r}}$ for two bodies of masses $M_1$ and $M_2$ seperated by a vector distance $\textbf{r}$ in a universe with a gravitational constant $G_C$ (henceforth, units are set where $G_C \equiv 1$).
+ Einstein posits that objects always follow an extremized path, $\delta s = 0$ for arclength $s$  -- a geodesic worldline -- when the curvature of spacetime is considered. 
+
+The curvature of spacetime is described by the Riemann tensor, $R^\mu_{\nu\rho\sigma}$, which physically is required to be a solution to the Einstein field equations. 
+Section~\ref{field_equations} clarifies the connection between these field equations and the Ricci scalar curvature $R$, a trace of the Riemann tensor, whence they can be derived. 
+This Riemann tensor is constructed from the Christoffel connection, $\Gamma^\mu_{\rho\sigma}$, which in turn can be expressed in terms of the metric, $g_{\mu \nu}$.
+It is the metric that measures distance across spacetime: $ds^2 = g_{\mu\nu} dx^\mu dx^\nu$.
+Hence the psuedoforce of gravity is, in GR, curvature distortions (arising from matter) that change the distance along worldlines and thus affect trajectories.
+
+For more mathematical detail, please see the Appendix.
+ Carroll and \textit{Gravitation} are essential references~\cite{Carroll1997,MisnerThorneWheeler}, consulting other sources for the Einstein-Hilbert/Palatini action~\cite{FarrThesis}.
+
+%            Introduce the metric $g$ here, but reinforce that it is not essential.
+%Intro to GR -- right motivation is least action Ricci tensor, implying field equation and phase/time-of-flight implying interferometry.
+
+        \subsection{Symmetry and action principles}
+        \label{principles}
+
+Einstein's geodesic equation is a replacement for not only Newton's law of gravitation but also for the Laws of Motion.
+An object's acceleration is described in terms of its proper time and the Christoffel connection.
+The supposition that objects follow a geodesic path follows from Fermat's principle of least time, which also inspired the least action principle, $\delta \mathcal{S} = 0$.
+In turn, interferometry is best understood in terms of least-time phase or \textit{time-of-flight}.
+
+Gauge symmetries and the associated conservation laws of Noether's theorem have been critical to the development of quantum field theory. 
+Whereas electromagnetism arises from $U(1)$ unitary Lie group gauge symmetries, the electroweak force from $SU(2) \times U(1)$, and quantum chromodynamics from $SU(3)$, general relativity arises from $GL(4, \mathbb{R})$ general linear Lie group symmetries. 
+These symmetries are \textit{diffeomorphism invariances} with respect to Lorentz boosts and translations, meaning we can \textit{pullback} vector fields, such as the other forces, through a coordinate change without changing their physics.
+Ergo the conservation laws that emerge from GR are the familiar ones from mechanics -- stress-energy, momentum, and so on, with subtleties (particular for non-static universes).
+
+%           Like electricity and magnetism, GR is the product of symmetry, action. 
+
+
+        \subsection{Derivation of field equations}
+        \label{field_equations}
+
+            A common approach to GW derivations is linearized GR~\cite{FlanaganHughes2005}.
+            Linearization proceeds~\cite{AdhikariThesis} from the metric $g_{\mu\nu}$ approximation as the sum of a Minkowski (flat spacetime) component, $\eta_{\mu\nu}$, plus a perturbation $h$, where $|h_{\mu\nu}| \ll |\eta_{\mu\nu}|$, so $|h_{\mu\nu}| \ll 1$:
+
+\begin{equation}
+g_{\mu \nu} \approx \eta_{\mu \nu} + h_{\mu \nu},
+\label{perturbation_eq}
+\end{equation}
+
+\noindent the weak-field approximation, leading to a wave equation, notated by a d'Alembertian $\Box = \partial_\mu \partial^\mu$,
+
+\begin{equation}
+-\frac{1}{2} \Box \left(h_{\mu \nu} - \frac{1}{2} \eta_{\mu \nu} h_{\lambda}^{\lambda} \right) = \frac{8 \pi G_C}{c^4} T_{\mu \nu}.
+\label{Ballmer_wave_eq}
+\end{equation}
+
+The right-hand side indicates that GW are sourced by the stress-energy tensor, $T_{\mu\nu}$, which subsumes the electromagnetic stress-energy, pressure, and density terms. 
+For gravitational sources of astrophysical interest, the majority of sourcing comes from matter density -- since mass-energy is conserved, monopolar radiation is forbidden, and conservation of momentum forbids the dipole term. 
+GW are thus sourced by quadrupoles $I_{ij}$ and higher only, although the higher-order terms are generally smaller and neglected. 
+The wave does carries energy density $\rho_{gw}$ and power $P$~\cite{BallmerThesis}:
+
+\begin{eqnarray}
+\rho_{\textup{gw}} &=& \frac{c^2}{16 \pi G_C} \left\langle |h_{+,0}|^2 + |h_{\times,0}|^2 \right\rangle,\\
+P &=& \frac{G_C}{5c^5}\left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle \approx 5.5\times 10^{-54} W^{-1} \left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\rangle.
+\label{energy-and-power_eq}
+\end{eqnarray}
+
+Equations~\ref{perturbation_eq}-\ref{energy-and-power_eq} represent the testable predictions of GR about GW. 
+GR itself is found by finding the field equations from the action~\cite{FarrThesis}, optimizing (extremizing) the integral of curvature: the Ricci scalar $R$.
+Where $|g|$ indicates the determinant of $g$, to $R$ add a hypothetical constant, $\Lambda$ (termed the cosmological constant), and the matter Lagrangian density $\mathcal{L}_M$ to obtain the Einstein-Hilbert action $\mathcal{S}$:
+
+\begin{equation}
+\mathcal{S} = \int \left( \frac{1}{8\pi}\left(R - 2\Lambda\right) + \mathcal{L}_M \right) \sqrt{-|g|}d^4 x,
+\end{equation}
+
+Extremizing $\delta \mathcal{S} = 0$ involves expanding $R = R^\mu_\mu$, where $R_{\mu\nu} = R^\lambda_{\mu\lambda\nu}$, the Ricci tensor. In turn, the Ricci tensor is contracted from the Riemann tensor, $R^\mu_{\nu\rho\sigma}$ (the curvature tensor, equivalently the 2-form $\textsf{R}^\mu_\nu$). Maurer-Cartan structure equations show how the Riemann tensor is an operator, the sum of a `differential' plus connection $\omega$, applied to the connection $\omega$ itself,
+
+\begin{eqnarray}
+\textsf{R}^\mu_\nu &=& d\omega^\mu_\nu + \omega^\mu_\rho \wedge \omega^\rho_\nu, \\
+\omega^{\rho'}_{\mu\sigma'} &=& e^{\alpha'}_{\nu} e^{\lambda}_{\beta'} \Gamma^{\nu}_{\mu\lambda} - e^{\lambda}_{\beta'} \partial_{\mu} e^{\alpha'}_{\lambda},\\
+\Gamma^\sigma_{\mu\nu} &=& \frac{1}{2} g^{\sigma\rho} \left( g_{\nu \rho, \mu} + g_{\rho \mu, \nu} - g_{\mu\nu,\rho} \right). 
+\end{eqnarray}
+
+\noindent where the last equation defines the \textit{Christoffel} connection. Just as metric induces distance on the spacetime Riemannian manifold, and the connection corrects geodesic paths, so the curvature tensor accounts for geodesic deviation between paths.
+
+Substituting into the action, we obtain~\cite{Carroll1997} the \textit{Einstein field equations} by varying over the metric $g_{\mu\nu}$, we make use of the fact that $\delta R = (g^{\mu\nu} \delta R_{\mu\nu} + R_{\mu\nu} \delta g^{\mu\nu})$ (the first term of which vanishes due to Stokes' theorem).
+The equations are often simplified using the Einstein tensor, $G_{\mu\nu} \equiv R_{\mu\nu} - (1/2)R g_{\mu\nu}$:
+
+\begin{eqnarray}
+\delta \mathcal{S} &=& \int d^4 x \left( \frac{\delta R \sqrt{-|g|} + (R-2\Lambda)\delta \sqrt{-|g|}}{8\pi}+ \delta (\sqrt{-|g|}\mathcal{L}_M)\right), \\
+ &=& \int d^4 x \sqrt{-|g|}\left( \frac{\delta g^{\mu\nu}}{8\pi} \left[ G_{\mu\nu} + \Lambda g_{\mu\nu} \right]
+ + \frac{\delta g^{\mu \nu}}{\sqrt{-|g|}} \frac{\delta (\sqrt{-|g|}\mathcal{L}_M)}{\delta g_{\mu\nu}} \right).
+\end{eqnarray}
+
+\noindent Since the integral must vanish everywhere,
+\begin{eqnarray}
+\frac{1}{8\pi} \left[G_{\mu\nu} + \Lambda g_{\mu\nu} \right] = -\frac{1}{\sqrt{-|g|}}\frac{\delta (\sqrt{-|g|}\mathcal{L}_M)}{\delta g_{\mu\nu}}.
+\end{eqnarray}
+
+\noindent The field equations are sourced by right-hand side, identified (e.g., by comparison with Newtonian gravity) with the stress-energy tensor, $T_{\mu\nu}$:
+
+\begin{equation}
+G_{\mu\nu} + \Lambda g_{\mu\nu} = 8 \pi T_{\mu\nu}.
+\label{great_einstein_field_equations}
+\end{equation}
+
+Einstein's concern was the different nature of the source term.
+Much of the effort toward unifying general relativity with the other forces can be understood as trying to fuse the matter Lagrangian with the Ricci scalar in an intuitive way.
+
+The linearized wave derivation in transverse-traceless gauge is standard in GW. 
+Radiation in the non-linear near-field is explored by numerical relativistic studies~\cite{FarrThesis}.
+Equation~\ref{great_einstein_field_equations}, however, also allows derivations using the curvature make it easier to compare interferometer observations (of length scale $L$ much smaller than GW wavelength $\lambda$) with less-linear spacetimes or where $L$ is comparable to $\lambda$.
+In vacuum, the Riemann tensor satisfies a non-linear covariant wave equation in any gauge~\cite{KoopFinn2014}, $0 = R_{\mu \nu \rho \sigma; \lambda}^{\textup{        } \lambda} + S_{\mu \nu \rho \sigma}$, where the $S_{\mu \nu \rho \sigma}$ is quadratic in the Riemann tensor and therefore negligible.
+The first-order perturbative response of the Riemann tensor in Minkowski space of an observer at rest, in conventional transverse-traceless gauge (see below), to a metric perturbation $\bar{h}_{\mu\nu}$ is then,
+
+\begin{equation}
+R_{0\mu0\nu} = -\frac{1}{2} \bar{h}_{\mu\nu,00}.
+\label{Finn_wave_eq}
+\end{equation}
+
+%\noindent Seen another way~\cite{KoopFinn2014}, a perturbation $h_{\mu\nu}$ leads to a first order perturbation in the Riemann tensor:
+%\begin{eqnarray}
+%R^{(1)}_{\mu\nu\rho\sigma}= h_{\lambda\sigma} R_{\mu\nu\rho}^{(0)\lambda} - \frac{1}{2}\left( \right)
+%\end{eqnarray}
+
+\noindent Obtaining this first-order response recovers the usual formalism~\cite{BallmerThesis}, where a metric perturbation is substitution into Equation~\ref{great_einstein_field_equations} to yield,
+
+\begin{equation}
+G_{\mu\nu} = -\frac{1}{2}\left(h_{\mu\nu,\lambda}^{\textup{       }\lambda} - h^\lambda_{\mu,\lambda\nu} -
+h^\lambda_{\nu,\lambda\mu} + \eta_{\mu\nu}(h^{\lambda\sigma})_{,\lambda\sigma} - \eta_{\mu\nu}(h_\sigma^\sigma)_{,\lambda\lambda} - (h_\sigma^\sigma)_{,\mu\nu}  \right),
+\end{equation}
+
+\noindent simplified by switching coordinates to a traceless gauge, defined by $\bar{h}_{\mu\nu}\equiv h_{\mu\nu} - (1/2)\eta_{\mu\nu}h_\lambda^\lambda$, that obeys the harmonic (transverse) condition, $\bar{h}_{\mu\nu} = 0$, into
+
+\begin{equation}
+G_{\mu\nu} = -\frac{1}{2} \bar{h}_{\mu\nu,00} = 8 \pi T_{\mu\nu}.
+\label{General_Ballmer_wave_eq}
+\end{equation}
+
+\noindent Equation~\ref{General_Ballmer_wave_eq} is the origin of Equation~\ref{Ballmer_wave_eq} and also corresponds to Equation~\ref{Finn_wave_eq}. 
+Moreover, outside a source, we can impose the transverse-traceless gauge, which verifies that in vacuum $\bar{h}_{\mu\nu} = h_{\mu\nu}$.
+The curvature wave equation is what is fundamental.
+
+However described, the wave, parametrized by path $x^\mu (\lambda)$ follows the same geodesic equation as light, where the covariant derivative by $\mu$ of $V^\nu$ is defined by $\nabla_\mu V^\nu = (\partial_\mu V^\nu + \Gamma^\nu_{\mu\lambda} V^\nu)$ and along a path~\cite{Carroll1997} by $D_\lambda = dx^\mu_\lambda \nabla_\mu$,
+
+\begin{equation}
+D_\lambda \partial_\lambda x^\mu = 0
+\end{equation}
+
+In general relativity, the six possible independent components of the waveform reduce to just two $h_+$ \& $h_\times$ terms, although other theories of gravity predict additional polarizations.
+These plus $h_+$ and cross $h_\times$ polarizations make the metric waveform along the $z$-axis ($k_\mu = \textup{diag}(\omega,0,0,1)$, initial phase $\phi_0$) in transverse-traceless gauge:
+
+\begin{equation}
+h_{\mu\nu} =
+\left[
+\begin{array}{cccc}
+0 & 0 & 0 & 0\\
+0 & -h_+ & h_\times & 0 \\
+0 & h_\times & h_+ & 0\\
+0 & 0 & 0 & 0
+\end{array} \right] \Re \left(e^{\sqrt{-1} (k_\mu x^\mu + \phi_0)} \right).
+\label{GW-matrix-eq}
+\end{equation}
+
+\noindent Tensor polarization corresponds to the prediction of hypothetical gravitions being spin-two particles, analogous to the spin-one photon with a vector-polarized the electromagnetic field.
+GW in GR travel at the speed of light as electromagnetic waves, for which experimental data~\cite{CODATA} has matched theory~\cite{GriffithsE} so well that $c$ is now embedded into our system of units.
+Unlike light, which has complex interactions with interstellar media~\cite{Caldwell1981,McKee1977}, GW should pass almost unimpeded through the stars (literally). 
+While the transverse-traceless equation describes the (near-)vacuum, far-field GW we seek to detect, the source term in Equation~\ref{General_Ballmer_wave_eq} must be understood to justify our expectation of astrophysical sources.
+
+
+        \subsection{Radiation from quadrupoles}
+        \label{radiation}
+
+Section~\ref{field_equations} noted that monopole and dipole sources were forbidden by conservation of mass-energy and momentum. This leaves us to derive radiation from quadrupolar sources in the stress-energy tensor.
+Starting from the field equations, a Green's function $G$ (impulse response) lets us invert the linear differential operator $\Box$ by solving for a point, Dirac delta source $\delta$~\cite{Carroll1997}.
+As with electromagnetism, the retarded Green's function from a source at $y^\sigma$ to an observer at $x^\sigma$ is given (where the Heaviside step-function is $\theta$) by, 
+
+\begin{equation}
+G(x^\sigma - y^\sigma) = - \frac{1}{4\pi |x^i - y^i|}\delta \left(|x^i - y^i| - (x^0 - y^0)\right)\theta(x^0 - y^0).
+\end{equation}
+
+\noindent Hence the source integral is (n.b., $\sqrt{-|g|} = 1$ in flat space),
+
+\begin{eqnarray}
+\bar{h}_{\mu\nu} &=& -16\pi \int d^4 x \sqrt{-|g|} G(x^\sigma - y^\sigma) T_{\mu\nu}(y^\sigma),
+\\
+ &=& 4 \int \frac{d^3 x}{|x^i - y^i|} T_{\mu\nu} \left(t - |x^i - y^i|, y^i \right).
+\end{eqnarray}
+
+\noindent Note that the latter equation is integrated over time. 
+Converting to far-field at distance $r = |x^i - y^-i|$ and retarded time $t_r = t - r$, then Fourier transforming $\bar{h}$ and $T$ over time into $\tilde{\bar{h}}$ and $\tilde{T}$ respectively, we can impose Lorentz gauge ($\tilde{\bar{h}}^{0\nu} = (\sqrt{-1}/\omega) \tilde{\bar{h}}^{i\nu}$),
+
+\begin{equation} 
+\tilde{\bar{h}}_{ij} (t,x^i) = -\frac{2}{r}e^{\sqrt{-1}\omega r}\omega^2 \tilde{I}_{ij}(t_r),
+\label{Fourier-domain-quadpole-eq}
+\end{equation}
+
+\noindent where $I_{ij}$ is defined as the quadrupole moment with the Kronecker $\delta$, 
+
+\begin{equation}
+I_{ij} = \frac{1}{3}\int d^3 x T_{00} \left(3 x_i x_k - r^2 \delta_{ij}\right).
+\end{equation}
+
+\noindent Inverting the Fourier transform yields the time-domain equation for gravitational radiation in terms of a quadropole moment,
+
+\begin{equation}
+\bar{h}_{ij}(t, x^i) = \frac{2}{r} I_{ij,00} (t_r).
+\end{equation}
+
+Deducing radiated power requires a second-order perturbative expansion~\cite{Carroll1997,BallmerThesis}, yielding Equation~\ref{energy-and-power_eq}.
+While the mathematical credibility of the second-order expansion may seem strained, the implied power in the gravitational wave strain is physically observable, as in PSR 1913+16.
+The goal of gravitational wave astronomers now is not just to infer radiated power but to measure $h_{\mu\nu}$ directly.
+
+    \section{Astrophysical estimates}
+    \label{estimates}
+
+Spacetime is stiff.
+Even large radiated power corresponds to low GW amplitude.
+Since anthropogenic gravitational waves are too quiet to plausibly detect~\cite{Saulson}, attention has turned to the cosmos.
+One Hubble time is roughly $8\times 10^{60}$ in geometric units, and one-and-a-half-generation interferometers were built with optimal `horizon' distances on the order of $10^{59} P_L$ Planck lengths, $\mathcal{O}$(50 Megaparsec), in hopes of seeing perhaps one inspiral per year.
+Such astronomical scales make GW a distinctly classical phenomenon, yet their effects on Earth are on the quantum scale.
+These interferometers had displacement sensitivity at best $8\times 10^{-20}$ m/$\sqrt{\textup{Hz}} = 5\times10^{15} P_L/\sqrt{\textup{Hz}}$, or strain sensitivity $2\times10^{-23}/\sqrt{\textup{Hz}}$.
+Advanced detectors should push strain sensitivity down to about $4\times10^{-24}/\sqrt{\textup{Hz}}$.
+Astrophysical estimates, elucidated next, will let us understand what these sensitivites might unveil for the sources of Section~\ref{cosmic_sources}.
+
+%Even an object at nuclear densities of $\rho = 10^{18}$ kg m$^{-3}$ $= 2\times10^{-79}$ Planck densities would produce a second time derivative of quadrupole moment of order $\rho / P_L^3 \approx 2\times10^{-79} / (4\times10^{-105}) = 5\times10^{25}$, which at the above distances yields a strain of $$
+
+        \subsection{Sources: burst, continuous, inspiral and stochastic}
+        \label{source_types}
+
+            %Describe the four types of sources: burst, continuous, inspiral and stochastic.
+
+Ground-based interferometric detectors concentrate on the aforementioned four searches: burst, continuous, inspiral, and stochastic~\cite{Riles2013}.
+As the focus of this thesis, continuous sources are expounded on in Section~\ref{continuous_waves}.
+
+Compact binary mergers, or inspirals, are sufficiently well-defined by numerical relativistic simulations to permit templated searches.
+Templating allows for high-sensitivity matched filtering, characterized by an \textit{inspiral range}~\cite{FinnInspiral1993} for an average-orientation, average-sky location coalescence of two neutron stars to be detected at a signal-to-noise ratio (nominally 8).
+Equivalently, to a constant factor, one can calculated optimal orientation \& location \textit{horizon distance}.
+These ranges yield a detectable volume, which, integrated over the time of a science observation run, yield an expected number of events.
+Six science runs have been conducted to date, with the most recent, S5 (2005 November to 2007 October) and S6 (2009 July to 2010 October) attaining $\mathcal{O}$(1 year) coincident data between multiple observatories at inspiral ranges up to 15 Megaparsec in S5 and 20 Megaparsec in S6; their successor instruments each have a planned inspiral range of 200 Mpc~\cite{HarryALIGO2010}.
+To date, no events have been discovered.
+Neutron star binary merger rates between $2\times 10^{-4}$ to 0.2 (most likely 0.02) per year would be expected for an instrument at S5 sensitivity; advanced detectors anticipate rates of 0.4 to 400 (most likely 40) per year~\cite{AbadieRates2010}.
+Conversely, the absence of gravitational wave detections, coupled with confidence in calibration, allows setting upper limits.
+LIGO and Virgo have estimated the rate of non-spinning binary black hole mergers ($3.3\times10^{-7}$ per cubic Megaparsec per year)~\cite{AasiBBH2013} and binary neutron star ($1.3\times10^{-4} \textup{Mpc}^{-3} \textup{yr}^{-1}$) or neutron star-black hole ($3.1\times10^{-5} \textup{Mpc}^{-3} \textup{yr}^{-1}$) mergers~\cite{AbadieCBC2012}, with 90\% confidence.
+If Advanced LIGO and Virgo find no gravitational waves, these upper limit rates may begin to conflict with the prior astrophysical estimates, which could be interesting in its own right.
+Nonetheless, detection is the goal.
+
+Burst searches focus on coincidence between detectors -- and possible electromagnetic or neutrino counterparts -- even on more than inspiral searches.
+Short-hard gamma ray bursts, thought to arise from the merger of a neutron star progenitor with another neutron star or black hole (a coalescence), can be seen with satellite observatories such as Swift and Fermi and correlated with LIGO data~\cite{AbadieGRB2012}.
+Long gamma-ray bursts~\cite{AasiGRB2013} might also have long-lived gravitational wave counterparts.
+GW observatories can inversely provide triggers so that optical observatories can search for candidate events~\cite{AasiOpticalCounterpart2014}.
+Bursts also have the capability for purely coincident analyses, without any prior assumptions about waveform~\cite{LIGOBurst2012}.
+As yet, no burst detections have been made, but direct coordination with the Swift gamma-ray~\cite{Swift2012} and Antares neutrino~\cite{Antares2013} observatories has already begun and is foreseen to continue in the advanced detector era.
+
+Stochastic background measurements could offer insight into early universe cosmology~\cite{Maggiore2000}.
+Although reliant on correlated noise between detectors, as burst searches employ, stochastic algorithms integrate over long durations rather than seeking distinct events.
+While the expected background from the Big Bang and foreground objects (possibly ranging from white dwarves to superstrings) is well below the expected sensitivity of initial and advanced detectors, upper limits have already contributed to physics by excluding some models of universe evolution and string theory~\cite{LIGOStochasticNature2009}, bettering indirect limits extant from Big Bang nucleosynthesis by limiting the cosmic critical density due to gravitational waves to be $\Omega_{gw} < 6.9\times 10^{-6}$ at 95\% confidence.
+Upper limits at high frequencies were also improved by a factor of seven~\cite{AbadiePRDStochastic2012}.
+Over time, methods~\cite{Allen1999,FotopoulosThesis,Abbott2006,Abbott2007} have refined so that not only all-sky but also directional limits can be obtained.
+Anisotropies could be imparted by the Earth's motion or the distribution of sources in the galaxy~\cite{Allen1997}.
+Radiometer combination of data streams~\cite{Radiometer2006} could scry for these point sources, and can further be adapted to multipolar decomposition~\cite{MeadorsCaltech2007} of the sort that has proved crucial for understanding the cosmic microwave background~\cite{Muciaccia1997}.
+While prospects for the next generation are tentative, GW promise a way unavailable by any other instruments to see a background from the dawn of time.
+
+%		Mostly above, but clarify exact how much we should see. Cite the 2009 Nature stochastic paper et al~\cite{LIGOStochasticNature2009}. The importance to early universe cosmology was initially handled by Maggiore~\cite{Maggiore2000}. Before that, of course, once can reference the Allen and Romano methods paper~\cite{Allen1999}, anything interesting from Nick Fotopoulos's thesis~\cite{FotopoulosThesis}, and the various mid-2000s stochastic work that I was familiar with~\cite{Abbott2006},~\cite{Abbott2007}. Note the interesting meaning of anisotropies~\cite{Allen1997} and point out how not only Stefan's radiometer search can find them but how it can be adapted to many other purposes, such as spherical harmonics, which is useful for the cosmic microwave background~\cite{Muciaccia1997} and was briefly my work~\cite{MeadorsCaltech2007} and the Scorpius X-1 search; Stefan's canonical radiometer reference is in Classical Quantum Gravity~\cite{Radiometer2006}.
+
+        \subsection{Continuous waves from neutron stars}
+        \label{continuous_waves}
+
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=90mm, width=120mm]{neutron_star_structure.eps}
+	\caption{Hypothetical internal structure of a neutron star (Citation: \url{http://heasarc.gsfc.nasa.gov/docs/objects/binaries/neutron_star_structure.html})} 
+        %CITE Possibly original Frank Shu? Fred would probably know, being a student of Frank
+	\label{neutron_star_structure}
+	\end{center}
+	\end{figure}
+
+
+Spinning neutron stars (NS)~\cite{Prix2006} motivate clear yet computationally-challenging GW searches.
+Perhaps one NS is born per century in the Milky Way~\cite{NarayanOstriker1990}.
+In the solar-system reference frame, isolated NS would emit a pure sine wave, as predicted by (with leading constant $G_C/c^4$) Equation~\ref{Fourier-domain-quadpole-eq}.
+        The emission mechanism of gravitational radiation with amplitude $h_0$ from a NS is from an elliptical deformation, ellipticity $\epsilon$, on its surface (outer crust, Figure~\ref{neutron_star_structure}), leading to a quadrupole moment $I$~\cite{Zimmermann1979,LSCPulsar2006} and thus emission at frequency $f = 2\nu$, twice the NS spin frequency $\nu$:
+
+        \begin{eqnarray}
+        \epsilon &=& \frac{I_{xx} - I_{yy}}{I_{zz}}, \\
+        h_0 &=& \frac{4 \pi^2 G_C}{c^4} \frac{I_{zz} f^2}{r} \epsilon.
+        \end{eqnarray}
+
+Ellipticity might arise due to $r$-mode oscillations, a deformation, or free precession~\cite{Shawhan2010}.
+Expected sensitivities for terrestrial interferometers, best around 100 Hz, highlight NS with comparable periods (millisecond pulsars) as suggestive targets.
+For GW from a rotating NS with a spin axis inclined at angle $\cos \iota$ to an observer's line-of-sight, the relative polarization amplitudes~\cite{DergachevThesis} would be,
+
+\begin{eqnarray} 
+h_+ &=& \tfrac{1}{2} h_0 (1 + \cos^2 \iota),\\
+h_\times &=& h_0 \cos \iota.
+\end{eqnarray}
+
+For $\cos \iota = 1$, where the spin axis is along the line of sight, gravitational waves will thus be circular polarized; $\cos \iota = 0$, an orthogonally-aligned spin axis, implies linear polarization.
+Excepting the case of torque balance~\cite{PapaloizouPringle1978,Wagoner1984} in low-mass X-ray binary systems (LMXB), NS rotation frequency will decay due to gravitational radiation, yielding a relationship between the `spindown age'~\cite{Brady1998} $\tau$ and the gravitational radiation amplitude:
+
+        \begin{eqnarray}
+        \tau &=& -f / \dot{f}, \\
+        h_0 &=& \frac{1}{r} \sqrt{\frac{5 G_C I_{zz}}{2 c^2 \tau}}.
+        \end{eqnarray}
+
+%            Continuous -- specifically, binary neutron stars and rate predictions. Describe archetypical search methods as in the 1998 analysis paper~\cite{Jaranowski1998}, the Abbott et al paper~\cite{LSCPulsar2006}, including StackSlide~\cite{LSCPulsarS4}, Einstein at Home~\cite{LSCEinsteinHome2009}, and the most interesting to date from Michigan, Vladimir's PowerFlux~\cite{LSCPowerFlux2009}. Discuss earlier results from the earliest period~\cite{Abbott2004} and an early search for Scorpius X-1~\cite{AbbottPulsar2006}. Reinhard Prix is probably another good source~\cite{Prix2006}.
+Although pure sine waves are considerably simpler than the numerical relativistic templates needed for inspirals, the low expected $h_0$ and consequent long-duration integration needed to detect NS mean that the search over parameter space is extremely sensitive to mismatched templates.
+This sensitivity implies that the algorithms must use fine-grained templates, necessitating long computational time.
+Algorithms developed from maximum likelihood estimates of isolated NS~\cite{Jaranowski1998}, incorporating progressively barycentric solar-system correction~\cite{LSCPulsarS4}, distributed computing~\cite{LSCEinsteinHome2009}, and semi-coherent methods~\cite{LSCPowerFlux2009}.
+Many isolated pulsars~\cite{Abbott2004,LSCPulsar2006}, including the Crab and Vela pulsar remnants~\cite{AasiPulsarInitialResults2014}, as well as the LMXB Scorpius X-1~\cite{AbbottPulsar2006} and the direction of the the Galactic Center~\cite{AasiGalacticCenter2013} have been the target of these methods.
+
+Many NS in known catalogs, such as ATNF (Australia Telescope National Facility~\cite{ManchesterATNF2005}), that pulsate in the LIGO frequency band are in binary systems.
+This thesis develops, in Chapters~\ref{chap5} \& \ref{chap6} where this discussion continues, a computationally-efficient means, TwoSpect~\cite{GoetzTwoSpectMethods2011} of searching for NS in binary systems, particularly LMXBs. 
+First, we discuss how gravitational wave interferometers sensitivity can be improved to make astronomy possible.
+
+    \section{Laser Interferometer Gravitational-wave Observatories}
+    \label{LIGO}
+        
+Design and construction of the Laser Interferometer Gravitational-wave Observatories required extensive prototyping and commissioning both during Initial LIGO~\cite{MavalvalaThesis,AdhikariThesis,BallmerThesis} and Enhanced LIGO~\cite{FrickeThesis,SmithThesis,DooleyThesis}.
+The core features of interferometer design were established even before construction, summarized by Saulson~\cite{Saulson}, but many technical noise sources were encountered.
+Motivations, fundamental noises, and the developments of commissioning all merit attention.
+
+%        LIGO observatories. The most fun part to write. Cite Nergis Mavalvala~\cite{MavalvalaThesis}, Stefan Ballmer~\cite{BallmerThesis}, Rana Adhikari~\cite{AdhikariThesis}, Nicolas de Mateo Smith-Lefevbre~\cite{SmithThesis} and, of course, Peter Saulson~\cite{Saulson}.
+
+        \subsection{From Weber bars to interferometry}
+        \label{bars_to_interferometry}
+
+Between the earliest interferometry of Michelson~\cite{michelson} and LIGO came the resonant bar detectors of Joseph Weber~\cite{Weber1960}.
+Bar detection of GW developed rapidly through the 1960s, but contradictory results dampened enthusiasm~\cite{Saulson,CollinsGravityShadow}.
+Nevertheless, great effort was devoted to technically-excellent bars such as ALLEGRO, AURIGA, EXPLORER, NAUTILUS and NIOBE over the subsequent decades.
+Meanwhile, prototypes by Reiner Weiss, Robert Forward~\cite{Forward1978}, Ronald Drever and many others demonstrated that interferometry could also achieve the senstivities desired for gravitational wave detection.
+Interferometry promised better fundamental noise sources and broadband operation, meaning that a single instrument could listen to a wider frequency band.
+Xylophones of bars were proposed, but never built, that might scale the few Hz bandwidths of bars to the hundreds to thousands of Hz of interferometers.
+Gravitational wave interferometry has carried the prospects for GW astronomy toward unprecedented levels of sensitivity, thanks to performance factors detailed in Section~\ref{methods}.
+
+            %History lesson: Weber bars progress to interferometers. Use Saulson, but Nic's thesis has links to some of the original sources~\cite{Saulson},~\cite{SmithThesis}.           
+
+        \subsection{Observatories, investigations, and enhancements}
+        \label{methods}
+
+	Michelson invented modern interferometry~\cite{michelson} in his 1887 experiments with Morley to try to measure the velocity of the Earth with respect to the lumineferous ether.
+Although commonly claimed to have spurred the work of Minkowski, the implications of this work for special relativity may not have been fully understood for several decades~\cite{CollinsGravityGhost}.
+Yet the value of the experimental technique was undeniable.
+Michelson \& Morley had invented an accurate relative phase-meter for light.
+
+Existing GW observatories, at their cores, are also Michelson interferometers. 
+In contemporary GW interferometers, monochromatic laser light (typically 1064 nm) is used.
+This light is split into two equal beams by the beam-splitter, reflects off mirrors at the ends of two arms, X and Y, and returns to interfere at the beam-splitter after times $T_x$ and $T_y$.
+The power $P$ at the beam-splitter output `dark' port, is by design equal to zero except when the measureable (e.g., ether, a GW, or other disturbance) causes a fringe shift $\Delta \phi$ related to the angular frequency $\omega$ of the light and the time-of-flight down the $x$ and $y$ arms, $T_x$ and $T_y$. 
+Energy is conserved; the change of sign on the beam-splitter reflective surface means that destructive interface on the `dark' port implies constructive interface on the opposite 'bright' port.
+Power is classically proportional~\cite{JacksonEM} to the electric field~\cite{Saulson}:
+
+\begin{eqnarray}
+P &=& \frac{\epsilon_0 c E_0^2}{2} \left| 1 - e^{i \Delta \phi}\right|^2 = 2 \epsilon_0 c E_0^2 (1 - \cos \Delta {\phi}),
+\label{michelson-interferometry-eq}\\
+\Delta \phi &=& 2\pi (L_s + L_0) /\lambda + \omega (T_y - T_x).
+\end{eqnarray}
+
+In Enhanced and Advanced LIGO, $L_s$ is known as the Schnupp asymmetry (a constant difference in arm length related to RF-modulated sidebands)~\cite{AdhikariThesis}, and $L_0$ is a smaller constant offset from a fringe to enable non-radio-frequency-modulated DC readout~\cite{FrickeThesis}.
+A putative, even smaller `DARM' phase shift can read out $\omega (T_y -T_x)$, due to differential arm motion, encoding any time-varying GW signal in the relative time-of-flight between the arms. 
+Operating near the maximum of $dP/d(\Delta\phi)$ would increase susceptibility to unwanted power fluctuations, so the interferometer was initially operated with radio-frequency modulation at minimum $dP/d(\Delta\phi)$ and  $P$ (a dark fringe), later changed to a slight offset and DC readout once the noise sources were better understood.
+
+Power $P$ can be directly improved by increasing effective laser power (e.g., a brighter laser or use of `power recycling'), and $\Delta \phi$ can be increased by making $T_{x,y}$ storage times longer (e.g., with Fabry-Perot cavities).
+Doing so allows more accurate measurements of $P$ in the presence of shot noise (fluctuations in photon counting, entering via the $E_0$ term), radiation pressure (photon momentum-induced fluctuations in the mirrors causing changing in $T_y - T_x$), and other motions that change $\Delta \phi$ (such as thermal and seismic).
+Yet these noise sources implicate quantum effects, and the photodiodes used to measure power do so with a certain quantum efficiency.
+More realistic descriptions by Caves~\cite{Caves1980,Caves1981} clarify the quantum mechanical origin of shot and radiation pressure noise.
+Quantum squeezing, the subject of Chapter~\ref{chap4}, can mimic the effect of higher power in Equation~\ref{michelson-interferometry-eq}.
+GW, an eminently classical phenomenon, are small enough in amplitude that quantum behavior is a key limit on its detection.
+
+Gravitational wave signals enter the interferometer by changing the spacetime curvature in the arms. 
+In the simplest, linearized picture, the spacetime curvature arises from a GW with amplitude $h$ at frequency $f$.
+When the GW is linearly polarizared in $h_+$ and aligned with x-axis and y-axis arms of equal length $L$ (see~\cite{Jaranowski1998} for the antenna pattern correction when it is misaligned), it changes the time-of-flight in the arms according to Equation~\ref{GW-matrix-eq}:
+
+\begin{eqnarray}
+T_x = \int_0^{\frac{2L_x}{c}} \sqrt{|g_{xx}|} dt \approx \int_0^{\frac{2L_x}{c}} \left(1 - \frac{h_+ (t,x(t))}{2} \right) dt, \\
+T_y = \int_0^{\frac{2L_y}{c}} \sqrt{|g_{yy}|} dt \approx \int_0^{\frac{2L_y}{c}} \left(1 + \frac{h_+ (t, y(t))}{2} \right) dt,
+\end{eqnarray}
+
+\noindent We have been able to neglect issues of the proper-time of the mirrors (as opposed to the photodiode) because the laser frequency $\omega$ is unchanged ($g_{tt} = 0$ in transverse-traceless gauge).
+The mismatch in the integrals leads to a detectable time-varying signal,
+
+\begin{equation}
+\phi_{\textup{DARM}} \equiv \omega (T_y - T_x) = \omega \int_0^{\frac{2L}{c}} \frac{h_+ (t, x(t)) + h_+ (t, y(t))}{2} dt.
+\end{equation}  
+
+\noindent Measured by Equation~\ref{michelson-interferometry-eq}, $\phi_{\textup{DARM}}$ encodes the GW signal.
+Comparing $\phi_{\textup{DARM}}$ from different observatories, or waiting while a single observatory is Doppler-modulated by terrestrial motion, can pinpoint the origin of such a signal.
+
+We often assume that the time-of-flight is much less than the GW period, $T_{x,y} \ll 1/f$.
+This assumption is easily relaxed by accounting for the destructive self-interference of the signal light from a high $f$ signal~\cite{Saulson}.
+A straightforward interpretation emerges for a quasi-static plane-wave (when phase offset $2\pi L_0/\lambda \gg \phi_\textup{DARM}$) -- the interferometer linearly transduces GW strain (via $h_+ = \phi_\textup{DARM}c/(2L\omega)$) into power:
+
+\begin{eqnarray}
+%h_+ &=& \frac{c}{2 L \omega}\phi_\textup{DARM},\\
+\frac{d P}{d h_+} &=& \frac{2L\omega}{c}\frac{dP}{d(\Delta\phi)} = 4 L\omega \epsilon_0 E_0^2 \sin \left(\frac{2\pi}{c} (L_s+L_0) \right),\\
+P &=& \left[ 4 L \omega \epsilon_0 E_0^2 \sin \left(\frac{2\pi}{c} (L_s+L_0) \right) \right] h_+.
+\label{strain-to-power-eq}
+\end{eqnarray}
+
+% DONE:           Why GW interferometers work. Null measurements, a zeroed operating point. 
+%The specifics are best handled by Saulson~\cite{Saulson}. 
+
+%The idea of a Pound-Drever-Hall lock is most elegantly explained by Black~\cite{PDHNotes}. Rai Weiss may have some neat details, possibly historical, albeit that it is in a presentation~\cite{LIGOWorks}. The details of Fabry-Perot cavities in LIGO are handled by Rakhmanov, Savage et al~\cite{ResonanceFP},~\cite{ResponsesFP}. i
+
+%DONE: The motivation for the evolution to Enhanced LIGO and its DC readout methods is covered well in the corresponding CQG article~\cite{Fricke2009} and specific details of its construction and operation are in Tobin Fricke's thesis~\cite{FrickeThesis}.
+
+            \subsubsection{Interferometer theory in practice}
+            \label{interferometer_theory}
+
+Interferometers transduce GW strain into power in a manner like Equation~\ref{strain-to-power-eq} only because they operate in a linearly-controlled regime~\cite{FrickeThesis} with noise sources surpressed as well as possible~\cite{Saulson,LIGOWorks}.
+A complete discussion of noise is beyond our scope, but the key limits on a ground-based GW interferometer arise, for a facility in vacuum, from microseisms, gravitational gradients, thermal coating and thermal suspension noise, and quantum effects (radiation pressure and shot noise).
+
+Seismic noise is dominates the lowest frequences, and it is supressed by use of servo controls as well as passive damping from pendula.
+Each stage of a multi-stage pendulum reduces, for frequencies above its natural resonant frequency $f_0$, the coupling of seismic noise into the interferometer by a factor $(f/f_0)^2$.
+
+Gravitational gradients due to clouds, human activity, and density fluctuations in the ground are an area of concern, but may be addressed through active feedforward servos~\cite{Driggers2012ActiveNoise}, as may magnetic couplings.
+
+Thermal coating noise is reduced by using larger laser spot sizes on the surfaces of mirrors and optimizing thematerial properties of the coatings; the mirror itself must be made of a material with a high $Q$, such as fused silica, where $Q$ is the quality factor for internal oscillations.
+Suspension thermal noise is also reduced by using high $Q$ materials, per the fluctuation-dissapation theorem~\cite{Saulson}.
+These effects predominate in the middle of LIGO's frequency range, often termed the `bucket'.
+
+Shot noise is naively reduced by increasing laser power, which indeed yields improvements to a point.
+At high laser power, however, thermal distortions due to absorption in the mirrors are inevitable, leading to the need for thermal compensation systems~\cite{BallmerThesis}.
+High laser power also buffets the mirrors with radiation pressure noise, requiring heavier mirrors.
+Quantum squeezing can circumvent the issue of thermal distortions, but it too induces radiation pressure noise (typically worse, because the Heisenberg uncertainty area increases); a solution may be squeezing at high (shot noise-limited) frequencies and anti-squeezing at low (radiation pressure-limited) frequencies.
+
+%Noise sources dominate the 
+%                GW interferometry theory: differential arm motion, key noise sources. 
+%The main sources Saulson~\cite{Saulson} and Weiss~\cite{LIGOWorks}.
+%                Here we discuss the key noises sources: seismic noise, thermal noise, and quantum (radiation pressure, shot noise).
+
+GW interferometers on Earth are limited in size (thus storage time and strain sensitivity) by the planet's curvature (which couples vertical displacement noise into horizontal) as well as finances. 
+GEO600 uses delay lines and the other interferometers use Fabry-Perot arms to extend the storage time of light.
+Fabry-Perot arms with high-finesse~\cite{ResonanceFP,ResponsesFP} (roughly $137$ in Initial LIGO) are locked~\cite{PDHNotes} using the Pound-Drever-Hall (PDH) technique.
+Elucidated below, electro-optic modulations (EOMs) provide a radio-frequency error signal for PDH locking the Fabry-Perot arms.
+
+Figure~\ref{primary_eLIGO_optics} presents a schematic overview of the key systems in Enhanced LIGO.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionEstimate-MICH.eps}
-\caption{
-MICH coherence with DARM.
-}
+\includegraphics[height=90mm,width=148mm]{LIGODiagramnew.eps}
+\caption{Enhanced LIGO primary systems and optics. From left, the phase-stablized laser (PSL) produces coherent light, kept at constant frequency by the frequency-stabilization servo (FSS). The pre-mode cleaner excludes non-Gaussian beamshapes, allowing only the $TEM_{00}$ mode to pass. The beam is the phase-modulated using three electro-optical modulators (EOMs) before being further shaped in the input mode cleaner (IMC). The beam passes through the power recycling mirror (RM) and is split at the beam-splitter (BS). Along the $X$ and $Y$ arms, light resonates in the Fabry-Perot cavity formed between the input test mass (ITM) mirror and the end test (mass) ETM mirror, before recombining at the beamsplitting. Any light with the same phase as before the arms is returned to the interferometer by the RM, but if phase-shifted, perhaps by a gravitational wave, it exits through the output mode cleaner (OMC): a photodiode just downstream of the OMC records the signal.}
+\label{primary_eLIGO_optics}
 \end{center}
 \end{figure}
+
+            \subsubsection{Observatory operation}
+            \label{observatory_operation}
+
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=111mm, width=148mm]{Screen_shot_2010-07-21_at_042516.eps}
+	\caption{Screenshot of MEDM control panel. MEDM is a Motif Epic and Display Manager for EPICS, the Experimental Physics and Industrial Control System, which lets operators control LIGO. MEDM allows operators to run locking scripts as well as alignments and tests, and to activate and de-activate filters.}
+	\label{ScreenshotMEDM}
+	\end{center}
+	\end{figure}
+
+Satisfying the noise requirements above, the first-generation LIGO interferometer was designed with the following features:
+
+\begin{itemize}
+\item Power recycled Michelson interferometer with 4 km Fabry-Perot arms\footnote{A second 2 km interferometer was sited at Hanford as well during Initial LIGO.}
+\item Hanford, Washington and Livington, Louisiana observatories
+\item 4 km perpendicular beam tubes
+\item $10^{−9}$ torr vacuum
+\item 10 W Nd:YAG 1064 nm laser (Enhanced LIGO upgraded to 20 W)
+\item 10 kg fused silica primary optics
+\item 4-stage seismic isolation (including active hydraulics at Livingston)
+\item Laser frequency stabilization
+\item Angular sensing and control (wavefront sensors, optical levers)
+\item Length sensing and control (magnet coils, common mode)
+\item Pre- \& input-mode cleaning (Enhanced LIGO added output mode cleaning)
+\item Power recycling
+\item Digitally filtered servos and readout
+\item RF heterodyne (Initial LIGO) or DC homodyne (Enhanced LIGO) readout
+\end{itemize}
+
+LIGO's digital systems were managed with MEDM and EPICS, seen in Figure~\ref{ScreenshotMEDM}.
+Extensive effort on installation was required to attain the necessary angular, length, and auxiliary servo control needed for Initial LIGO operation~\cite{ReadoutGWA}.
+Once at design sensitivity, S5 succeeded in obtaining the desired sensitivity and duty cycle.
+Although the RF heterodyne technique\footnote{Curiously, the RF sidebands were not always equal in the recycling cavity~\cite{MeadorsHanford2005}.} had good low-frequency sensitivity, it limited the shot noise performance compared to a DC homodyne instrument by a factor of $\sqrt{3/2}$, and squeezing was also easier in DC.
+The switch to DC readout occured prior to S6, and in the leadup to that science run, substantial detector characterization was needed to understand the upgraded interferometer.
+
+%                Operating LIGO: controls, Detector Characterization. One of the first sources from initial LIGO to read up on is a paper by Fritscel, Bork, Mavalvala et al~\cite{ReadoutGWA}. Initially this system made a detection based on heterodyne readout using GW sidebands, which, among other troubles, could be unequal in the recycling cavity~\cite{MeadorsHanford2005}.
+
+
+                \paragraph{Detector characterization}
+                \label{detchar}
+            
+%                    DetChar methods: omega scans, line hunting and glitches
+
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionEstimate-PRCL.eps}
-\caption{
-PRCL coherence with DARM.
-}
+\includegraphics[height=111mm, width=148mm]{aglitch928228390_new.eps} 
+\caption{Omega scan of an audible broadband glitch. Shortly before the start of Science Run 6, detector characterization took place to identify categories of glitches, such as the `gremlin', and to eliminate them. The burst group analysis pipeline, Omega, generated time-frequency spectrograms that made this identification easier. Glitches are a limiting factor in the identification of rare events and therefore of potential gravitational wave burst signals.}
+\label{omega_scan_audible_glitch}
 \end{center}
 \end{figure}
+
+Commissioning Enhanced LIGO in the three months encompassing the start of S6 around July 2009 required eliminating the residual noise sources lingering from installation. 
+In particular, the Output Mode Cleaner~\cite{SmithThesis} was an unknown, and its servo-locking scheme (involving both piezoelectric and thermal actuation) required some artistry.
+DC readout generally increased the low-frequency noise floor.
+New glitches sprang forth as a results, and the author's work at LIGO Hanford Observatory centered on identifying them.
+
+Common tools for investigators on-site are both time-domain (DataViewer) and frequency-domain (Diagnostic Test Tools) data-plotters.
+While those perspectives allowed diagnosis of at least one flaw in the interferometer's filters, a combined, spectrogrammatic view using the burst group's Omega analysis pipeline proved a needed third, unified view, seen in Figure~\ref{omega_scan_audible_glitch}.
+This pipeline was run on many pre- and early-S6 glitches using a manual infrastructure\footnote{Omega scan diagnostics were later automated by Tomoki Isogai.}.
+
+Effective engines for tracking and, preferably, eliminating glitches and persistent lines in the detector spectrum -- the process of detector characterization -- are critical to distinguishing rare events.
+
+%My work on site included getting the Omega scan engine tested and running manual Omega scans in the first months of S6, July and August 2009. 
+%See Figure~\ref{omega_scan_audible_glitch} for an example of the spectrograms this method was able to generate. These spectrograms helped categorize glitch sources and reduce them, to the benefit of the burst group in particular.
+%Fortunately, this work was later automated thanks to Tomoki Isogai. 
+
+                \paragraph{Feedforward filtering}
+                \label{feedforward_filters}
+
+Feedback servos keep LIGO operational, holding the mirrors and auxiliary systems in stationary `lock' points.
+Closing the loop in feedback requires a way to actuate a physical control signal to cancel out whatever influence is causing an error signal that pushes the system away from its lock point.
+When this direct cancellation is not possible -- for instance, when ambient magnetic fields due to 60 Hz mains lines can not be escaped -- feedforward remains.
+Feedforward, an open-loop, can be done purely in software, but it requires an accurate estimator for the influence of a noise source into the system.
+
+In the case of Enhanced LIGO commission, an example was implemented with the aforementioned 60 Hz line using a magnetomer to supply the feedforward correction~\cite{SmithThesis}, which greatly enhanced sensitivity near the Crab pulsar frequency.
+Subsequently, into the following years, I began to work on the long-known~\cite{AdhikariThesis,BallmerThesis} issue of cancelling the influence of auxiliary length control noises.
+Loops for nulling this effect exist, diagrammed in Figure~\ref{servo_loop_realtime}, but they require periodic retuning~\cite{KissellPRCMICH}.  
+The direction of this work was to fine an automated, and more precise, way to tune these servos.
+A finely-tuned servo filter was implemented in late September 2010\footnote{After, and unrelated to, the famed Big Dog event~\cite{Riles2013}}.
+This filter reduced the noisiest residual coupling, from the differential inner Fabry-Perot mirror motion to the differential arm motion that encodes strain, by almost an order of magnitude. 
+
+                    %Example of feedforward: 60 Hz magnetometer. The only source that mentions this is, I think, Nic's thesis~\cite{SmithThesis}. Yet the most pertinent example is one that has long been applied to LIGO: MICH and PRC feedforward. The specific needed are mention in the thesis of Adhikari~\cite{AdhikariThesis} and Ballmer~\cite{BallmerThesis}, but immediately before Keita Kawabe and I began our project, these parameters had been tuned by Jeff Kissel~\cite{KissellPRCMICH}
+
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=80mm, width=148mm]{servo_loop.eps}
+	\caption{Real-time servo loop diagram. The MICH\_CTRL signal can be though to leak into the true DARM signal via a transfer function, H\_0. (The letter `h' is typical for transfer functions as well as gravitational wave strain; coincidentally, this is a noise transfer into the channel for displacement, DARM, which is proportional to strain $h(t)$). H\_0 leaks into error signal, which is otherwise kept null thanks to the servo cancellation provided by DARM\_CTRL times a physical actuation function AC. The measured error signal is DARM\_IN1. If desired, an excitation can be supplied via DARM\_EXC for a sum of DARM\_IN2. This error signal passes though digital filters D to yield the aforementioned control signal DARM\_CTRL. The auxiliary length cancellation loop is simply adding H\_md to DARM\_CTRL in order to subtract out the corruption of H\_0.}
+	\label{servo_loop_realtime}
+	\end{center}
+	\end{figure}
+
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=111mm, width=148mm]{newNOISEfilter.eps}
+	\caption{Real-time work on a LIGO noise filter. This Bode plot, made in Matlab, shows the correction to the existing MICH damping (cancellation) loop needed mid-2010, toward the end of Science Run 6. The correction is small, because the majority of the coupling fits the flat model expected from theory. This transfer function estimate suffices for post-factor correction. However, in order to be incorporated into the control scheme shown in Figure~\ref{servo_loop_realtime}, measurements of the open loop gain $G$ and actuation function AC are necessary to yield incorporate the filter correctly into the closed loop response.} 
+	\label{newNOISEfilter}
+	\end{center}
+	\end{figure}
+
+The closed loop gain mentioned in Figure~\ref{newNOISEfilter} is a function of frequency because it is a geometric sum of time $\tau$-delayed open loop gain responses by DARM\_CTRL to error signals from DARM\_ERR: $G_\textup{closed} = \lim_{p\rightarrow\infty} \Sigma_n^p G e^{i n \omega \tau} = \left(1 + G e^{i \omega \tau} \right)^{-1}$. 
+Because MICH damping is summed with DARM\_CTRL, it picks up an additional factor of the actuation function AC for a net transfer function of $H_{md} G_\textup{closed}$AC in the closed loop. 
+Thus, compared to an open-loop (e.g., post-facto) subtraction (effect estimated in Figure~\ref{filter_early}), a real-time servo will differ by a factor of $G_\textup{closed}$AC. 
+See Chapter~\ref{chap3} for full details of open-loop subtraction and the extension to a post-facto, veto-safeguarded improvement in the sensitivity of all S6.
+
+	\begin{figure}
+	\begin{center}
+	\includegraphics[height=90mm, width=148mm]{2011-03-08_filter-01.eps}
+	\caption{Early work on post-facto noise filtering. After testing out MICH damping filters offline, post-facto, the correction factors for AC and $G_\textup{closed}$ were incorporated and the entire filter imported using Foton into the EPICS control system, where it was used real-time from the September equinox of 2010 until the end of Science Run 6.}
+	\label{filter_early}
+	\end{center}
+	\end{figure}
+
+                \paragraph{Phase camera}
+                \label{phase_camera}
+
+Improving length control is intuitive, since length directly correlates with LIGO's inference of GW strain.
+Angular control, however, is just as necessary: LIGO uses quadrature-photodiode wave-front sensors~\cite{MavalvalaThesis} to minimize misalignment.
+Misalignment causes direct angle-to-length coupling, adding noise to the system by corrupting the phase measurement at readout; it also permits power fluctuations in the Fabry-Perot arms, reducing shot noise-limited performance and, when the relative power returning from the arms (the contrast defect) changes, directly corrupting the power measurement at readout~\cite{DooleyThesis}.
+Therefore more sophisticated systems have been researched in hopes of reducing angular fluctuations still further, culminating in the phase camera at Michigan~\cite{DergachevThesis}.
+
+%                    Future devices: overview of phase camera with Vladimir. Vladimir's thesis definitely talks about it~\cite{DergachevThesis}. We can discuss the fundamentals behind the need for angular stabilization and control from Nergis Mavalvala's thesis~\cite{MavalvalaThesis}, but we can refresh it with a modern reference from Kate Dooley's thesis~\cite{DooleyThesis}.
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionEstimate-SRCL.eps}
-\caption{
-SRCL coherence with DARM.
-}
+\includegraphics[height=111mm, width=148mm]{Optical_table_phase_camera.eps}
+\caption{Optical table layout with Fabry-Perot cavity and Pound-Drever-Hall locking for phase camera. Faraday isolator and polarizing beam-splitter at upper right; piezoelectrically-actuated mirror at center left. Difficulties with stability, despite a plexiglass enclosure and floated table, meant that locks were fractions of a second at most, hampering efforts.}
+\label{phase_camera_optical_table}
 \end{center}
 \end{figure}
 
-The second shows (in red) the ASD of the noise \_IN1\_DQ channel, (in green) the DARM\_IN1\_DQ channel, and (in black) the ASD of the DARM\_IN1\_DQ channel if the noise can be subtracted from it:
+Locking used the Pound-Drever-Hall (PDH) method~\cite{PDHNotes,MavalvalaThesis}.
+Mathematically, the method assumes two mirrors: an input, with amplitude reflectivity $r_1$, and an end, with amplitude reflectivity $r_2$.
+Upon the input mirror is incident a coherent electric field, due to light, $E_\textup{inc}$ at frequency $\omega_0$. A field $E_{\textup{refl}}$ is reflected.
+The key to the technique is that the incident electric field is phase modulated by a factor $\Gamma$ with modulation frequency $\Omega$, by a device such as an electro-optic modulator (EOM, e.g., a Pockels cell).
+Typically this modulation is done at radio-frequency.
+This EOM modulates an electric field of amplitude $E_0$ into higher and lower frequency sidebands, amplitude $E_+$ and $E_-$, as determined by expansion in Bessel functions $J_n(\Gamma)$ -- higher order sidebands exist at usually-negligible amplitude.
+From the reflected signal, then, the intensity $I$ encodes an error signal of the arm length $l$, for given light wavenumber $k = \omega / c$, at the modulation frequency (aside from additional signals at DC and at 2$f$):
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionSpectrum-MICH.eps}
-\caption{
-MICH subtraction from DARM, projection, based on frequency domain transfer function. The full AMPS machinery has not yet been applied.
-}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionSpectrum-PRCL.eps}
-\caption{
-PRCL subtraction from DARM, projection.
-}
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.3\paperheight]{SubtractionSpectrum-SRCL.eps}
-\caption{
-SRCL subtraction from DARM, projection.
-}
-\end{center}
-\end{figure}
+\begin{eqnarray}
+E_{\textup{refl}} &=& \frac{r_1 - r_2 e^{-2 i k l}}{1 - r_1 r_2 e^{-2 i k l}} E_\textup{inc},\\
+E_\textup{inc} &=& E_0 e^{i \Gamma \cos \left( \Omega t \right)} \approx E_0 e^{i \omega_0 t} \left[ J_0 (\Gamma) + J_1 (\Gamma) e^{i\Omega t} + J_{-1} (\Gamma) e^{-i \Omega t} \right],\\
+E_\textup{refl} &\approx& e^{i \omega_0 t} \left[ E_0^\textup{refl} + E_+^\textup{refl} e^{i\Omega t} + E_-^\textup{refl} e^{-i \Omega t}\right],
+\end{eqnarray}
+\begin{equation}
+\begin{split}
+I =& \left[ |E_0|^2 + |E_+|^2 + |E_-|^2\right] + \\ 
+  & \left[(E_0^* E_+ + E_0 E^+_-)e^{i\Omega t} +\textup{C.C.} \right] + \\
+  &\left[E_+ E_-^* e^{2i\Omega t} +\textup{C.C.} \right].
+\end{split}
+\end{equation}
 
-\textbf{Summary}
-
-MICH and PRCL indeed cohere with DARM, in similar ways, each with a coherence (not MS-coherence) as great as 0.5 at 10 Hz, dropping off in either direction (about 0.05 at 3 Hz and 60 Hz).
-
-In contrast, SRCL has a coherence as much as 0.3 at 10 Hz. It is even broader band, dropping off in either direction (about 0.05 at 3 Hz and 400 Hz, with a drop in coherence at 50 Hz).
-
-These results corroborate the assessment that MICH noise is currently dominant and suggest that PRCL and SRCL noise are also significant. 
-To be thorough this result should be verified using the OUT\_DQ channels; these results were calculated using IN1\_DQ.
-
-\textbf{Future}
-
-This is not the full feedforward code, which could be updated (not entirely trivial) to subtract out the noise and calculate a spectrum post-facto. This would require no work on the part of the commissioners. If a calibration exists, we could calculate a morale-boosting inspiral range.
-
-If commissioners want a real-time filter, that would presuppose the existence of a MICH/PRCL/SRCL subtraction path in the model and closed loop response transfer functions. Once those exist, one could update (somewhat more trivial) the real-time calculation code to get a high-quality Foton filter.
-
-A great deal of progress has likely already been made, and a great deal more can probably be made with manual filter design, but if sophistication is needed, the tools exist.
+Radio-frequency photodiodes are generally needed to record this intensity with its modulation.
+Typically, the photodiode current is demodulated with a mixer that uses as local oscillator the same sine wave that drives the Pockels cell EOM phase modulation.
+Alternative photoresistor readouts were explored in hopes that they might have faster response times since the standard electronics references were compiled~\cite{HorowitzHill1989,Simpson}, because of their potential desireability for a many-pixel readout.
+%The electronics development were guided by Horowitz and Hill~\cite{HorowitzHill1989} as well as by Simpson~\cite{Simpson}.
+Using the usual RF photodiode, a Fabry-Perot cavity was built prior to this author's work~\ref{phase_camera_optical_table}.
+Numerous attempts to stabilize the cavity and derive a useful PDH locking signal were made, the laser was upgraded, EOM replaced, and the analog locking system frequency response was characterized.
+Unfortunately, locks proved too fleeting to pursue a program of intentional mis-alignment and correction based the phase camera angular measurements.
+Much progress nonetheless was made by Dergachev in realizing effective methods of high-speed digitization of the RF-modulated signal in free space~\cite{DergachevThesis}.
+%See Figure~\ref{phase_camera_optical_table} for a picture of the cavity as built.
 
 
-%\appendix
+        \subsection{Advanced observatories and beyond}
+        \label{advanced}
+  
+            %Advanced LIGO and beyond -- squeezing and prospects?
+%DUSEL, 
+	Advanced LIGO~\cite{aLIGOrefDesign,aLIGOsysDesign} is intended to improve upon the first-generation LIGO inspiral range tenfold, to 200 Mpc.
+To accomplish this, it simultaneously must lower the noise floor at the most sensitive frequencies, to a strainnoise  $4\times10^{-24}/\sqrt{\textup{Hz}}$, and push the low-frequency wall of seismic noise down, so that frequencies as low as 10 Hz (rather than about 50 Hz) could be probed.
+While maintained in the same vacuum envelope, the optical systems are far superior.
+The 10 kg fused silica test mass mirrors have been upgraded to 40 kg for better radiation pressure performance.
+Fused silica fibers with high $Q$ suspend the mirrors, instead of steel piano wire; fibers are welded directly to the test mass.
+Rather than a single pendulum, each test mass sits at the bottom of a four-stage `quad' actively-servoed pendulum chain, reducing seismic noise by a factor of $(f/f_0)^8$.
+The quad pendulum itself is attached to a new in-vacuum seismic isolation table (similar tables hold the auxiliary optics).
+These test masses indeed need to be heavier.
+Laser power has increased from 20 W in Enhanced LIGO to 200 W in Advanced LIGO.
+Fabry-Perot arm cavity finesse has also increased, raising the stored arm power.
+The arm cavities can be locked independently of each other and brought into the Michelson interferometer gradually, which should improve ease of use, quickly recover from lock-losses, and thereby improve reliable duty cycle, coupled with other system-wide improvements in control architecture.
+Resonant sideband extraction is one of the most inventive changes, adding an additional signal recycling mirror to the optical configuration, which allows tuning the cavity pole of the Fabry-Perot arms and trading between different levels of high- and- medium-frequency shot noise-limited performance.
+
+Although not part of the reference design, the success of the LIGO Hanford squeezing experiment~\cite{BarsottiNatureSqueezing,ChuaBackscatteredLight,DwyerPhaseNoise} noted in Chapter~\ref{chap4} make quantum optics a likely feature of any enhanced follow-up.
+
+Once commissioned, Advanced LIGO's second-generation design should make possible detections at the rate of 40 per year~\cite{AbadieRates2010}. 
+Hanford and Livingston have both upgraded their 4 km interferometers and are entering commissioning.
+The 2 km Hanford interferometer had been intended to be upgraded, but its optics have found a new and likely more useful propect -- part of the growing network of observatories described in Section~\ref{worldwide}.
+
+        \subsection{Worldwide network}
+        \label{worldwide}
+ 
+Gravitational wave signals are an unknown in astronomy.
+It has long been recognized that multiple observatories with independent confirmation of a signal would be more persuasive evidence of detection than an isolated site.
+Yet even once the field is established, additional observatories will permit better science.
+Sky localization of inspiral and burst sources relies on relative arrival times of a GW signal~\cite{Saulson}.
+Multiple, widely-seperate observatories give the best baseline.
+Moreover, the data for continuous wave searches from seperate sites can often be coherently combined to yield a quieter noise spectrum.
+LIGO is fortunate thus not to be alone in the pursuit of gravitational wave astronomy.
+
+The second, 2 km Hanford interferometer will likely not be upgraded to Advanced LIGO.
+            %Allies: 
+Instead, its optics will form the core of the nascent LIGO India project~\cite{IyerIndia2011}, which will dramatically improve the accuracy of sky position measurements for gravitational wave transients.
+In Japan, KAGRA~\cite{Kuroda2010} is being built; when completed with sapphire mirrors and cryogenic systems, it should reach comparable sensitivity to the LIGO interferometers.
+Advanced VIRGO~\cite{Acernese2009} benefits from the first-generation superattentuator's superb seismic isolation performance; from it will be suspended new optics that reflect a more powerful beam.
+Together, these second-generation ground-based interferometers should suffice to make direct detection of gravitational waves a reality.
+
+Around the same time as these observatories make first detection, an entirely different technique of GW astronomy, pulsar timing~\cite{Hobbs2010}, may open up vastly lower frequencies ($\mathcal{O}(10^{-9})$ Hz).
+The two techniques should prove complementary information about the gravitational sky, as distinctive as gamma ray telescopes are from radio.
+
+Yet GW astronomy would become a true precision science if a third generation of instruments followed.
+Third-generation interferometry could take place underground, either in proposed American DUSEL or the European Einstein Telescope~\cite{Punturo2010}, potentially with xylophone interferometers tuned to optimize sensitivity in different frequency bands.
+Prospects in space appear even grander in the long-term, despite short-term setbacks. 
+Following NASA withdrawal from the Laser Interferometer Space Antenna, LISA, in 2011, the European Space Agency has made a concerted push to launch LISA Pathfinder in 2015, with plans for a somewhat-reduced yet very capable eLISA in coming decades~\cite{Vitale2014}.
+If eLISA launches, it may open the way for detect measurements of the most elusive gravitational signature: the background of the universe itself.
+Both the DeciHertz Gravitational Observatory (DECIGO)~\cite{Ando2010} and Big Bang Observer (BBO)~\cite{Harry2006} proposals could, by midcentury, open up a vision of the cosmos in its earliest days.
+%LISA Pathfinder to launch in 2015 and eLISA to follolw~\cite{Vitale2014}
+
+    \section{Summary}
+    \label{intro_summary}
+ 
+        %Summary: strong motivation and instruments, need to find evidence of GW.    
+
+Initial LIGO, during the science runs S6, would have been able to see the coalescence of two neutrons stars at about twenty Megaparsecs, out in the Virgo cluster of galaxies, from sixty-five million years ago, when dinosaurs still walked the Earth. 
+In the first week of Advanced LIGO lock at Livingston, following Memorial Day 2014, Advanced LIGO had a temporal range extending only as far back as when early humans began their diaspora from Africa -- a terrestrial parallel to the expansion of the cosmos.
+When completed, the Hanford and Livingston second-generation interferometers should see back ten times beyond what S6 could, six hundred and fiften million years, to before the Cambrian explosion of life.
+Perhaps in the third or fourth generation of interferometers, our view of the gravitational sky may stretch back the age of the observable universe.
+Even then, we will not have seen all that can be seen.
+With the two long-range forces of the universe, electromagnetism and gravitation, giving two complimentary views of spacetime, we still must build great machines to explore the sights they show, we must understand what we are seeing, and we must propogate that understanding. 
+
+This thesis is a prelude to those efforts, from the building of the quantum optical squeezer, and the feedforward regression and continuous waves binary search, to our public interferometer exhibitions.   
+Feedforward regression provides a microcosm of the complexities of gravitational wave interferometry, so there we will begin.
 
 
-%\section*{References}
-%\bibliographystyle{jphysicsB}
-%\bibliography{Meadors_LIGO_AMPS_feedforward}
-%\begin{thebibliography}
-%\bibitem{book1} Goosens M, Rahtz S and Mittelbach F 1997 {\it The \LaTeX\ Graphics Companion\/} 
-%(Reading, MA: Addison-Wesley)
-%\bibitem{eps} Reckdahl K 1997 {\it Using Imported Graphics in \LaTeX\ } (search 
-%CTAN for the file `epslatex.pdf')
-%\References
-%\endrefs
-%\end{thebibliography}
+            
+%        --------------------
+%
+%	Here is a sample chapter file. The chapters of the thesis
+%	should be saved to seperate files such as
+%	\textit{chapter1.tex}. In the file \textit{thesis.tex} the
+%	\textit{input} command then includes these chapters into the
+%	thesis. Note that none of the chapter files need any headers.
+%	This header for each of these files is contained in
+%	\textit{thesis.tex}. The file \textit{thesis.tex} also
+%	includes the numbers system for the sections, figures,
+%	theorems lemmas etc...
 
-%\end{document}
+%\section{Sample Section}
+%\label{sample_section}
+%
+%	This is what a sample section looks like. Let's conclude this
+%	section with a sample theorem statement and proof.
+%
+%	\begin{theorem}
+%	\label{sample_theorem}
+%	The are an infinite number of prime numbers
+%	\end{theorem}
+%
+%	\emph{Proof:} On the contrary assume there are a finite number
+%	of primes $P_1, P_2, ... P_n$. Consider $\mathcal{P} = P_1 P_2
+%	\cdots P_n+1$. $\mathcal{P}$ is not divisible by any of the
+%	primes in our finite set. (Contradiction) $\square$
+  
 
