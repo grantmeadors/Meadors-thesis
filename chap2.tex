@@ -569,15 +569,15 @@ These effects predominate in the middle of LIGO's frequency range, often termed 
 Shot noise is naively reduced by increasing laser power, which indeed yields improvements to a point.
 At high laser power, however, thermal distortions due to absorption in the mirrors are inevitable, leading to the need for thermal compensation systems~\cite{BallmerThesis}.
 High laser power also buffets the mirrors with radiation pressure noise, requiring heavier mirrors.
-Quantum squeezing can circumvent the issue of thermal distortions, but it too induces radiation pressure noise (typically worse, because the Heisenberg uncertainty area increases); a solution may be squeezing at high (shot noise-limited) frequencies and anti-squeezing at low (radiation pressure-limited) frequencies.
+Quantum squeezing can circumvent the issue of thermal distortions, but it too induces radiation pressure noise (typically worse, because the Heisenberg uncertainty area increases); a solution may be squeezing at high (shot noise-limited) frequencies and anti-squeezing at low (radiation pressure-limited) frequencies, as discussed in Chapter~\ref{chap4}.
 
 %Noise sources dominate the 
 %                GW interferometry theory: differential arm motion, key noise sources. 
 %The main sources Saulson~\cite{Saulson} and Weiss~\cite{LIGOWorks}.
 %                Here we discuss the key noises sources: seismic noise, thermal noise, and quantum (radiation pressure, shot noise).
 
-GW interferometers on Earth are limited in size (thus storage time and strain sensitivity) by the planet's curvature (which couples vertical displacement noise into horizontal) as well as finances. 
-GEO600 uses delay lines and the other interferometers use Fabry-Perot arms to extend the storage time of light.
+GW interferometers on Earth are limited in size (thus storage time and strain sensitivity) by the planet's curvature (which couples vertical displacement noise into horizontal) as well as by finances. 
+GEO600 uses delay lines, and the other interferometers use Fabry-Perot arms to extend the storage time of light.
 Fabry-Perot arms with high-finesse~\cite{ResonanceFP,ResponsesFP} (roughly $137$ in Initial LIGO) are locked~\cite{PDHNotes} using the Pound-Drever-Hall (PDH) technique.
 Elucidated below, electro-optic modulations (EOMs) provide a radio-frequency error signal for PDH locking the Fabry-Perot arms.
 
@@ -602,15 +602,15 @@ Figure~\ref{primary_eLIGO_optics} presents a schematic overview of the key syste
 	\end{center}
 	\end{figure}
 
-Satisfying the noise requirements above, the first-generation LIGO interferometer was designed with the following features:
+Satisfying the noise requirements above, the first-generation LIGO detector was designed with the following features:
 
 \begin{itemize}
-\item Power recycled Michelson interferometer with 4 km Fabry-Perot arms\footnote{A second 2 km interferometer was sited at Hanford as well during Initial LIGO.}
+\item Power recycled Michelson interferometers with 4-km Fabry-Perot arms\footnote{A second 2-km interferometer was sited at Hanford as well during Initial LIGO.}
 \item Hanford, Washington and Livington, Louisiana observatories
-\item 4 km perpendicular beam tubes
+\item 4-km perpendicular beam tubes
 \item $10^{−9}$ torr vacuum
 \item 10 W Nd:YAG 1064 nm laser (Enhanced LIGO upgraded to 20 W)
-\item 10 kg fused silica primary optics
+\item 10-kg fused silica primary optics
 \item 4-stage seismic isolation (including active hydraulics at Livingston)
 \item Laser frequency stabilization
 \item Angular sensing and control (wavefront sensors, optical levers)
@@ -623,8 +623,8 @@ Satisfying the noise requirements above, the first-generation LIGO interferomete
 
 LIGO's digital systems were managed with MEDM and EPICS, seen in Figure~\ref{ScreenshotMEDM}.
 Extensive effort on installation was required to attain the necessary angular, length, and auxiliary servo control needed for Initial LIGO operation~\cite{ReadoutGWA}.
-Once at design sensitivity, S5 succeeded in obtaining the desired sensitivity and duty cycle.
-Although the RF heterodyne technique\footnote{Curiously, the RF sidebands were not always equal in the recycling cavity~\cite{MeadorsHanford2005}.} had good low-frequency sensitivity, it limited the shot noise performance compared to a DC homodyne instrument by a factor of $\sqrt{3/2}$, and squeezing was also easier in DC.
+Science Run 5 succeeded in obtaining the desired sensitivity and duty cycle.
+Although the RF heterodyne technique\footnote{Curiously, the RF power sidebands as measured by the author were not always equal in the recycling cavity~\cite{MeadorsHanford2005}.} had good low-frequency sensitivity, it limited the shot noise performance compared to a DC homodyne instrument by a factor of $\sqrt{3/2}$, and squeezing was also easier in DC.
 The switch to DC readout occured prior to S6, and in the leadup to that science run, substantial detector characterization was needed to understand the upgraded interferometer.
 
 %                Operating LIGO: controls, Detector Characterization. One of the first sources from initial LIGO to read up on is a paper by Fritscel, Bork, Mavalvala et al~\cite{ReadoutGWA}. Initially this system made a detection based on heterodyne readout using GW sidebands, which, among other troubles, could be unequal in the recycling cavity~\cite{MeadorsHanford2005}.
@@ -646,7 +646,7 @@ The switch to DC readout occured prior to S6, and in the leadup to that science 
 Commissioning Enhanced LIGO in the three months encompassing the start of S6 around July 2009 required eliminating the residual noise sources lingering from installation. 
 In particular, the Output Mode Cleaner~\cite{SmithThesis} was an unknown, and its servo-locking scheme (involving both piezoelectric and thermal actuation) required some artistry.
 DC readout generally increased the low-frequency noise floor.
-New glitches sprang forth as a results, and the author's work at LIGO Hanford Observatory centered on identifying them.
+New glitches sprang forth as a result, and the author's work at LIGO Hanford Observatory centered on identifying them.
 
 Common tools for investigators on-site are both time-domain (DataViewer) and frequency-domain (Diagnostic Test Tools) data-plotters.
 While those perspectives allowed diagnosis of at least one flaw in the interferometer's filters, a combined, spectrogrammatic view using the burst group's Omega analysis pipeline proved a needed third, unified view, seen in Figure~\ref{omega_scan_audible_glitch}.
@@ -663,14 +663,14 @@ Effective engines for tracking and, preferably, eliminating glitches and persist
 
 Feedback servos keep LIGO operational, holding the mirrors and auxiliary systems in stationary `lock' points.
 Closing the loop in feedback requires a way to actuate a physical control signal to cancel out whatever influence is causing an error signal that pushes the system away from its lock point.
-When this direct cancellation is not possible -- for instance, when ambient magnetic fields due to 60 Hz mains lines can not be escaped -- feedforward remains.
-Feedforward, an open-loop, can be done purely in software, but it requires an accurate estimator for the influence of a noise source into the system.
+When this direct cancellation is not possible -- for instance, when ambient magnetic fields due to 60 Hz mains lines cannot be escaped -- feedforward remains.
+Feedforward, an open-loop technique, be done purely in software, but it requires an accurate estimator for the influence of a noise source into the system.
 
-In the case of Enhanced LIGO commission, an example was implemented with the aforementioned 60 Hz line using a magnetomer to supply the feedforward correction~\cite{SmithThesis}, which greatly enhanced sensitivity near the Crab pulsar frequency.
-Subsequently, into the following years, I began to work on the long-known~\cite{AdhikariThesis,BallmerThesis} issue of cancelling the influence of auxiliary length control noises.
+In the case of Enhanced LIGO commissioning, an example was implemented with the aforementioned 60 Hz line using a magnetometer to supply the feedforward correction~\cite{SmithThesis}, which greatly enhanced sensitivity near the Crab pulsar frequency by suppressing magnetic-coupled noise.
+Subsequently, into the following years, I began to work on the long-known~\cite{AdhikariThesis,BallmerThesis} potential improvement from cancelling the influence of auxiliary length control noises.
 Loops for nulling this effect exist, diagrammed in Figure~\ref{servo_loop_realtime}, but they require periodic retuning~\cite{KissellPRCMICH}.  
-The direction of this work was to fine an automated, and more precise, way to tune these servos.
-A finely-tuned servo filter was implemented in late September 2010\footnote{After, and unrelated to, the famed Big Dog event~\cite{Riles2013}}.
+The direction of this work was to find an automated, and more precise, way to tune these servos.
+A finely tuned servo filter was implemented in late September 2010\footnote{After, and unrelated to, the famed Big Dog blind injection event~\cite{Riles2013}}.
 This filter reduced the noisiest residual coupling, from the differential inner Fabry-Perot mirror motion to the differential arm motion that encodes strain, by almost an order of magnitude. 
 
                     %Example of feedforward: 60 Hz magnetometer. The only source that mentions this is, I think, Nic's thesis~\cite{SmithThesis}. Yet the most pertinent example is one that has long been applied to LIGO: MICH and PRC feedforward. The specific needed are mention in the thesis of Adhikari~\cite{AdhikariThesis} and Ballmer~\cite{BallmerThesis}, but immediately before Keita Kawabe and I began our project, these parameters had been tuned by Jeff Kissel~\cite{KissellPRCMICH}
@@ -694,7 +694,7 @@ This filter reduced the noisiest residual coupling, from the differential inner 
 The closed loop gain mentioned in Figure~\ref{newNOISEfilter} is a function of frequency because it is a geometric sum of time $\tau$-delayed open loop gain responses by DARM\_CTRL to error signals from DARM\_ERR: $G_\textup{closed} = \lim_{p\rightarrow\infty} \Sigma_n^p G e^{i n \omega \tau} = \left(1 + G e^{i \omega \tau} \right)^{-1}$. 
 Because MICH damping is summed with DARM\_CTRL, it picks up an additional factor of the actuation function AC for a net transfer function of $H_{md} G_\textup{closed}$AC in the closed loop. 
 Thus, compared to an open-loop (e.g., post-facto) subtraction (effect estimated in Figure~\ref{filter_early}), a real-time servo will differ by a factor of $G_\textup{closed}$AC. 
-See Chapter~\ref{chap3} for full details of open-loop subtraction and the extension to a post-facto, veto-safeguarded improvement in the sensitivity of all S6.
+See Chapter~\ref{chap3} for full details of open-loop subtraction and the extension to a post-facto, veto-safeguarded improvement in the sensitivity of all S6 data.
 
 	\begin{figure}
 	\begin{center}
@@ -710,7 +710,7 @@ See Chapter~\ref{chap3} for full details of open-loop subtraction and the extens
 Improving length control is intuitive, since length directly correlates with LIGO's inference of GW strain.
 Angular control, however, is just as necessary: LIGO uses quadrature-photodiode wave-front sensors~\cite{MavalvalaThesis} to minimize misalignment.
 Misalignment causes direct angle-to-length coupling, adding noise to the system by corrupting the phase measurement at readout; it also permits power fluctuations in the Fabry-Perot arms, reducing shot noise-limited performance and, when the relative power returning from the arms (the contrast defect) changes, directly corrupting the power measurement at readout~\cite{DooleyThesis}.
-Therefore more sophisticated systems have been researched in hopes of reducing angular fluctuations still further, culminating in the phase camera at Michigan~\cite{DergachevThesis}.
+Therefore more sophisticated systems have been researched in hopes of reducing angular fluctuations still further, including exploration of a phase camera at Michigan~\cite{DergachevThesis}.
 
 %                    Future devices: overview of phase camera with Vladimir. Vladimir's thesis definitely talks about it~\cite{DergachevThesis}. We can discuss the fundamentals behind the need for angular stabilization and control from Nergis Mavalvala's thesis~\cite{MavalvalaThesis}, but we can refresh it with a modern reference from Kate Dooley's thesis~\cite{DooleyThesis}.
 \begin{figure}
@@ -724,9 +724,9 @@ Therefore more sophisticated systems have been researched in hopes of reducing a
 Locking used the Pound-Drever-Hall (PDH) method~\cite{PDHNotes,MavalvalaThesis}.
 Mathematically, the method assumes two mirrors: an input, with amplitude reflectivity $r_1$, and an end, with amplitude reflectivity $r_2$.
 Upon the input mirror is incident a coherent electric field, due to light, $E_\textup{inc}$ at frequency $\omega_0$. A field $E_{\textup{refl}}$ is reflected.
-The key to the technique is that the incident electric field is phase modulated by a factor $\Gamma$ with modulation frequency $\Omega$, by a device such as an electro-optic modulator (EOM, e.g., a Pockels cell).
+The key to the technique is that the incident electric field is phase modulated by an amplitude $\Gamma$ with modulation frequency $\Omega$, by a device such as an electro-optic modulator (EOM, e.g., a Pockels cell).
 Typically this modulation is done at radio-frequency.
-This EOM modulates an electric field of amplitude $E_0$ into higher and lower frequency sidebands, amplitude $E_+$ and $E_-$, as determined by expansion in Bessel functions $J_n(\Gamma)$ -- higher order sidebands exist at usually-negligible amplitude.
+This EOM modulates an electric field of amplitude $E_0$ into higher and lower frequency sidebands, amplitude $E_+$ and $E_-$, as determined by expansion in Bessel functions $J_n(\Gamma)$ -- higher order sidebands exist at smaller amplitudes.
 From the reflected signal, then, the intensity $I$ encodes an error signal of the arm length $l$, for given light wavenumber $k = \omega / c$, at the modulation frequency (aside from additional signals at DC and at 2$f$):
 
 \begin{eqnarray}
@@ -744,11 +744,12 @@ I =& \left[ |E_0|^2 + |E_+|^2 + |E_-|^2\right] + \\
 
 Radio-frequency photodiodes are generally needed to record this intensity with its modulation.
 Typically, the photodiode current is demodulated with a mixer that uses as local oscillator the same sine wave that drives the Pockels cell EOM phase modulation.
-Alternative photoresistor readouts were explored in hopes that they might have faster response times since the standard electronics references were compiled~\cite{HorowitzHill1989,Simpson}, because of their potential desireability for a many-pixel readout.
+Alternative photoresistor readouts were explored in hopes that they might have faster response times since the standard electronics references were compiled~\cite{HorowitzHill1989,Simpson}, because of their potential desirability for a many-pixel readout.
 %The electronics development were guided by Horowitz and Hill~\cite{HorowitzHill1989} as well as by Simpson~\cite{Simpson}.
-Using the usual RF photodiode, a Fabry-Perot cavity was built prior to this author's work~\ref{phase_camera_optical_table}.
+Using the usual RF photodiode, a Fabry-Perot cavity was built prior to this author's work, seen in Figure~\ref{phase_camera_optical_table}.
 Numerous attempts to stabilize the cavity and derive a useful PDH locking signal were made, the laser was upgraded, EOM replaced, and the analog locking system frequency response was characterized.
-Unfortunately, locks proved too fleeting to pursue a program of intentional mis-alignment and correction based the phase camera angular measurements.
+Unfortunately, locks proved too fleeting to pursue a program of phase camera angular measurements.
+% This program would involve intentionally misalignment and correction
 Much progress nonetheless was made by Dergachev in realizing effective methods of high-speed digitization of the RF-modulated signal in free space~\cite{DergachevThesis}.
 %See Figure~\ref{phase_camera_optical_table} for a picture of the cavity as built.
 
@@ -758,24 +759,25 @@ Much progress nonetheless was made by Dergachev in realizing effective methods o
   
             %Advanced LIGO and beyond -- squeezing and prospects?
 %DUSEL, 
-	Advanced LIGO~\cite{aLIGOrefDesign,aLIGOsysDesign} is intended to improve upon the first-generation LIGO inspiral range tenfold, to 200 Mpc.
-To accomplish this, it simultaneously must lower the noise floor at the most sensitive frequencies, to a strainnoise  $4\times10^{-24}/\sqrt{\textup{Hz}}$, and push the low-frequency wall of seismic noise down, so that frequencies as low as 10 Hz (rather than about 50 Hz) could be probed.
-While maintained in the same vacuum envelope, the optical systems are far superior.
-The 10 kg fused silica test mass mirrors have been upgraded to 40 kg for better radiation pressure performance.
+	Advanced LIGO (aLIGO)~\cite{aLIGOrefDesign,aLIGOsysDesign} is intended to improve upon the first-generation LIGO inspiral range tenfold, to 200 Mpc.
+To accomplish this, it simultaneously must lower the noise floor at the most sensitive frequencies, to a strain noise  $4\times10^{-24}/\sqrt{\textup{Hz}}$, and push the low-frequency wall of seismic noise down, so that frequencies as low as 10 Hz (rather than about 50 Hz) can be probed.
+%While maintained in the same vacuum envelope,
+The aLIGO optical systems are far superior to those of initial LIGO.
+The 10-kg fused silica test mass mirrors have been upgraded to 40 kg for better radiation pressure performance.
 Fused silica fibers with high $Q$ suspend the mirrors, instead of steel piano wire; fibers are welded directly to the test mass.
-Rather than a single pendulum, each test mass sits at the bottom of a four-stage `quad' actively-servoed pendulum chain, reducing seismic noise by a factor of $(f/f_0)^8$.
+Rather than a single pendulum, each test mass sits at the bottom of a four-stage `quad', actively-servoed pendulum chain, reducing seismic noise by a factor of $(f/f_0)^8$.
 The quad pendulum itself is attached to a new in-vacuum seismic isolation table (similar tables hold the auxiliary optics).
 These test masses indeed need to be heavier.
-Laser power has increased from 20 W in Enhanced LIGO to 200 W in Advanced LIGO.
+Laser power has increased from 20 W in Enhanced LIGO to 200 W in aLIGO.
 Fabry-Perot arm cavity finesse has also increased, raising the stored arm power.
-The arm cavities can be locked independently of each other and brought into the Michelson interferometer gradually, which should improve ease of use, quickly recover from lock-losses, and thereby improve reliable duty cycle, coupled with other system-wide improvements in control architecture.
+The arm cavities can be locked independently of each other and brought into the Michelson interferometer gradually, which should improve ease of use, allow quick recovery from lock-losses, and thereby improve reliable duty cycle, coupled with other system-wide improvements in control architecture.
 Resonant sideband extraction is one of the most inventive changes, adding an additional signal recycling mirror to the optical configuration, which allows tuning the cavity pole of the Fabry-Perot arms and trading between different levels of high- and- medium-frequency shot noise-limited performance.
 
 Although not part of the reference design, the success of the LIGO Hanford squeezing experiment~\cite{BarsottiNatureSqueezing,ChuaBackscatteredLight,DwyerPhaseNoise} noted in Chapter~\ref{chap4} make quantum optics a likely feature of any enhanced follow-up.
 
-Once commissioned, Advanced LIGO's second-generation design should make possible detections at the rate of 40 per year~\cite{AbadieRates2010}. 
-Hanford and Livingston have both upgraded their 4 km interferometers and are entering commissioning.
-The 2 km Hanford interferometer had been intended to be upgraded, but its optics have found a new and likely more useful propect -- part of the growing network of observatories described in Section~\ref{worldwide}.
+Once commissioned, aLIGO's second-generation design should make possible detections at the rate of 40 per year~\cite{AbadieRates2010}. 
+Hanford and Livingston have both upgraded their 4 km interferometers and have begun commissioning.
+The 2-km Hanford interferometer had been intended to be upgraded, but its optics have found a new and likely more useful propect -- part of the growing network of observatories described in Section~\ref{worldwide}.
 
         \subsection{Worldwide network}
         \label{worldwide}
@@ -784,15 +786,15 @@ Gravitational wave signals are an unknown in astronomy.
 It has long been recognized that multiple observatories with independent confirmation of a signal would be more persuasive evidence of detection than an isolated site.
 Yet even once the field is established, additional observatories will permit better science.
 Sky localization of inspiral and burst sources relies on relative arrival times of a GW signal~\cite{Saulson}.
-Multiple, widely-seperate observatories give the best baseline.
-Moreover, the data for continuous wave searches from seperate sites can often be coherently combined to yield a quieter noise spectrum.
+Multiple, widely separated observatories give the best baseline.
+Moreover, the data for continuous wave searches from separate sites can often be coherently combined to yield a quieter noise spectrum.
 LIGO is fortunate thus not to be alone in the pursuit of gravitational wave astronomy.
 
-The second, 2 km Hanford interferometer will likely not be upgraded to Advanced LIGO.
+The second, 2-km Hanford interferometer will likely not be upgraded to aLIGO.
             %Allies: 
 Instead, its optics will form the core of the nascent LIGO India project~\cite{IyerIndia2011}, which will dramatically improve the accuracy of sky position measurements for gravitational wave transients.
 In Japan, KAGRA~\cite{Kuroda2010} is being built; when completed with sapphire mirrors and cryogenic systems, it should reach comparable sensitivity to the LIGO interferometers.
-Advanced VIRGO~\cite{Acernese2009} benefits from the first-generation superattentuator's superb seismic isolation performance; from it will be suspended new optics that reflect a more powerful beam.
+Advanced VIRGO~\cite{Acernese2009} benefits from the first-generation superattenuator's superb seismic isolation performance; from it will be suspended new optics that reflect a more powerful beam.
 Together, these second-generation ground-based interferometers should suffice to make direct detection of gravitational waves a reality.
 
 Around the same time as these observatories make first detection, an entirely different technique of GW astronomy, pulsar timing~\cite{Hobbs2010}, may open up vastly lower frequencies ($\mathcal{O}(10^{-9})$ Hz).
@@ -802,7 +804,7 @@ Yet GW astronomy would become a true precision science if a third generation of 
 Third-generation interferometry could take place underground, either in proposed American DUSEL or the European Einstein Telescope~\cite{Punturo2010}, potentially with xylophone interferometers tuned to optimize sensitivity in different frequency bands.
 Prospects in space appear even grander in the long-term, despite short-term setbacks. 
 Following NASA withdrawal from the Laser Interferometer Space Antenna, LISA, in 2011, the European Space Agency has made a concerted push to launch LISA Pathfinder in 2015, with plans for a somewhat-reduced yet very capable eLISA in coming decades~\cite{Vitale2014}.
-If eLISA launches, it may open the way for detect measurements of the most elusive gravitational signature: the background of the universe itself.
+If eLISA launches, it may open the way for measurements of the most elusive gravitational signature: the background of the universe itself.
 Both the DeciHertz Gravitational Observatory (DECIGO)~\cite{Ando2010} and Big Bang Observer (BBO)~\cite{Harry2006} proposals could, by midcentury, open up a vision of the cosmos in its earliest days.
 %LISA Pathfinder to launch in 2015 and eLISA to follolw~\cite{Vitale2014}
 
@@ -812,7 +814,7 @@ Both the DeciHertz Gravitational Observatory (DECIGO)~\cite{Ando2010} and Big Ba
         %Summary: strong motivation and instruments, need to find evidence of GW.    
 
 Initial LIGO, during the science run S6, would have been able to see the coalescence of two neutrons stars at about twenty Megaparsecs, out in the Virgo cluster of galaxies, from sixty-five million years ago, when dinosaurs still walked the Earth. 
-In the first week of Advanced LIGO lock at Livingston, following Memorial Day 2014, Advanced LIGO had a temporal range extending only as far back as when early humans began their diaspora from Africa -- a terrestrial parallel to the expansion of the cosmos.
+In the first week of aLIGO lock at Livingston, following Memorial Day 2014, aLIGO had a temporal range extending only as far back as when early humans began their diaspora from Africa -- a terrestrial parallel to the expansion of the cosmos.
 When completed, the Hanford and Livingston second-generation interferometers should see back ten times beyond what S6 could, six hundred and fiften million years, to before the Cambrian explosion of life.
 Perhaps in the third or fourth generation of interferometers, our view of the gravitational sky may stretch back to the age of the observable universe.
 Even then, we will not have seen all that can be seen.
