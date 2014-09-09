@@ -9,23 +9,23 @@ Definitions follow Carroll~\cite{Carroll1997}; for a primer in physical mathemat
 
     Let us set geometric, natural units where $1/4\pi\epsilon_0 \rightarrow 1$, $c \rightarrow 1$, $G_C \rightarrow 1$. 
 Greek indices indicate four dimensions, Latin indices three, unless specified otherwise.
-Assume the Einstein summation convention, e.g., $x_i y^i \equiv \Sigma_{i=0}^3 x_i y^i$
+Assume the Einstein summation convention, \textit{e.g.}, $x_i y^i \equiv \Sigma_{i=0}^3 x_i y^i$
 Anti-symmetrization of indices can be indicated by subscripted square brackets (n.b., all differential forms are antisymmetric), symmetrization by parentheses.
 
-Vectors are typical expressed by reference to index, e.g., a vector $v^\mu$, although implicitly a geometrical vector includes its basis vectors, $e^\mu$ such that $\textbf{v} = v^\mu e_\mu$.
+Vectors are typically expressed by reference to index, \textit{e.g.}, a vector $v^\mu$, although implicitly a geometrical vector includes its basis vectors, $e^\mu$ such that $\textbf{v} = v^\mu e_\mu$.
 Note that when the vector indices are contravariant, the basis vectors are covariant.
 Let subscript commas indicate ordinary partial derivatives, i.e., $x_{,i}^j \equiv \partial_i x^j$.
 Semicolons indicate covariant derivatives in general relativity, which reduce to commas (partial derivatives) in flat space. 
 Suppose we work in a space supplied with a metric tensor, $g_{\mu\nu}$, which acts as a bilinear operator (generalizing the inner product) to produce infinitesimal arclength $ds$ according to $ds^2 = g_{\mu \nu} dx^\mu dx^\nu$ for infinitesimal lengths $dx^\mu$ in the direction of, and dual to, basis vectors $e_\mu$. 
-The metric allows index raising and lowering, e.g., $g_{\mu \nu} x^\mu = x_\nu$, $g^{\mu \nu} x_\mu = x^\nu$.
+The metric allows index raising and lowering, \textit{e.g.}, $g_{\mu \nu} x^\mu = x_\nu$, $g^{\mu \nu} x_\mu = x^\nu$.
 
-Vectors and matrices cann be indicated by boldface, e.g., $\textbf{v} = v^\mu e_\mu$ is a vector, $\textbf{M} = M^{\mu\nu} e_\mu e_\mu $ is a matrix, whereas differential forms (dual to vectors) can be indicated by sans serif, e.g., $\textsf{v} = v_\mu dx^\mu$ is a 1-form, $\textsf{M} = M_{\mu\nu} dx^\mu \wedge dx^\nu$ is a differential 2-form.
+Vectors and matrices can be indicated by boldface, \textit{e.g.}, $\textbf{v} = v^\mu e_\mu$ is a vector, $\textbf{M} = M^{\mu\nu} e_\mu e_\mu $ is a matrix, whereas differential forms (dual to vectors) can be indicated by \textit{sans serif,} \textit{e.g.}, $\textsf{v} = v_\mu dx^\mu$ is a 1-form, $\textsf{M} = M_{\mu\nu} dx^\mu \wedge dx^\nu$ is a differential 2-form.
 Tensors generalize vectors and differential forms, including both co- and contra-variant components, and can be built from tensor products $\otimes$, such as $T^{\mu\nu}_{\rho\sigma} = (\textbf{M})\otimes (\textsf{N}) = (M^{\mu\nu}) \otimes (N_{\rho\sigma})= (\textbf{u}^\mu \otimes \textbf{v}^\nu) \otimes (\textsf{x}_\rho \otimes \textsf{y}_\sigma)$.
 
-The wedge $\wedge$ is the exterior or Grassman product, the antisymmetric operator on differential forms that generalizes the cross product, e.g., for the wedge of two 1-forms, $\textsf{v} \wedge \textbf{w} = -\textsf{w} \wedge \textsf{v}$.
+The wedge $\wedge$ is the exterior or Grassman product, the antisymmetric operator on differential forms that generalizes the cross product, \textit{e.g.}, for the wedge of two 1-forms, $\textsf{v} \wedge \textbf{w} = -\textsf{w} \wedge \textsf{v}$.
 Generally, for $p$-form $\textsf{A}$, $q$-form $\textsf{B}$, $(A \wedge B)_{\mu_1 \cdots \mu_{p+q}} = (p+q)!/(p!q!) A_{[\mu_1\cdots\mu_p} B_{\mu_{p+1} \cdots \mu_{p+q} ]}$. 
 The Levi-Civita symbol is $\epsilon_{\mu_1 \cdots \mu_n}$, in $\mathbb{R}^n$, $+n$ for even permutation, $-1$ for odd, $0$ otherwise.
-The Hodge star maps differential $k$-forms in an $n$-dimensional space to $n-k$-forms, e.g., in 3-space, $\star dx = dy \wedge dz$, $\star dy = dz \wedge dx$, $\star dz = dx \wedge dy$, or from a scalar $f$, $\star f = (f) dx \wedge dy \wedge dz$, generally in $n$-space, $(\star \textsf{A})_{\mu_1 \cdots \mu_{n-p}} = 1/(p!) e^{\nu_1 \cdots \nu_p}_{\mu \cdots \mu_{n-p}} \textsf{A}_{\nu_1 \cdots \nu_p}$.
+The Hodge star maps differential $k$-forms in an $n$-dimensional space to $(n-k)$-forms, \textit{e.g.}, in 3-space, $\star dx = dy \wedge dz$, $\star dy = dz \wedge dx$, $\star dz = dx \wedge dy$, or from a scalar $f$, $\star f = (f) dx \wedge dy \wedge dz$, generally in $n$-space, $(\star \textsf{A})_{\mu_1 \cdots \mu_{n-p}} = 1/(p!) e^{\nu_1 \cdots \nu_p}_{\mu \cdots \mu_{n-p}} \textsf{A}_{\nu_1 \cdots \nu_p}$.
 
 Index raising and lowering creates a homology between vectors and differential one-forms, $e_\mu \leftrightarrow dx^\mu$ (for coordinate-free math, this is implicit).
 By itself, $d$ indicates the exterior derivative; $df$ of a scalar (0-form) $f$ is (modulo homology) its gradient $\nabla$, and $d\textsf{a}$ maps a $k$-form to a $(k+1)$-form, but $d^2$ is always 0.
@@ -122,7 +122,7 @@ d \textsf{F} = 0,\\
 d \star \textsf{F} = 4 \pi \star \textsf{J}.
 \end{eqnarray}  
 
-Applied in flat space, where $g_{\mu \nu} = \eta_{\mu \nu}$, and substituting in the explicit coordinate form of the Maxwell tensor, the theory is easily expressed as four familiar first-order differential equations of the $\textbf{E}$ and $\textbf{B}$ fields in terms of electrical charge density $\rho$ and 3-current $J^i$ (cf. the textbook by Jackson~\cite{JacksonEM}), in (1 time)+(3 space)-dimensions:
+Applied in flat space, where $g_{\mu \nu} = \eta_{\mu \nu}$, and substituting in the explicit coordinate form of the Maxwell tensor, the theory is easily expressed as four familiar first-order differential equations of the $\textbf{E}$ and $\textbf{B}$ fields in terms of electrical charge density $\rho$ and 3-current $J^i$ (see the textbook by Jackson~\cite{JacksonEM}), in (1 time)+(3 space)-dimensions:
  
 %(CHECK SIGNS AND UNITS AND FONTS)
 
