@@ -62,6 +62,9 @@
 %\address{$^2$ LIGO Hanford Observatory, PO Box 159, Richland, WA 99352-0159, US}
 %\eads{\mailto{gmeadors@umich.edu}, \mailto{kawabe\_k@ligo-wa.caltech.edu}, \mailto{kriles@umich.edu}}
 %\begin{abstract}
+
+\textit{Most of this chapter is drawn from Meadors, Kawabe, and Riles, `Improving LIGO sensitivity with feedforward subtraction of auxiliary channel noise'} Classical and Quantum Gravity \textit{31 (2014) 105014~\cite{MeadorsFeedforward2014}, a paper that carries LIGO Document Number LIGO-P1300193. }
+
 LIGO, the Laser Interferometer Gravitational-wave Observatory, has been designed and constructed to measure gravitational wave strain via differential arm length. The LIGO 4-km Michelson arms with Fabry-Perot cavities have auxiliary length control servos for suppressing Michelson motion of the beam-splitter and arm cavity input mirrors, which degrades interferometer sensitivity. We demonstrate how a post-facto pipeline (AMPS) improves a data sample from LIGO Science Run~6 with feedforward subtraction. Dividing data into 1024-second windows, we numerically fit filter functions representing the frequency-domain transfer functions from Michelson length channels into the gravitational-wave strain data channel for each window, then subtract the filtered Michelson channel noise (witness) from the strain channel (target). In this chapter we describe the algorithm, assess achievable improvements in sensitivity to astrophysical sources, and consider relevance to future interferometry.
 
 %\end{abstract}
@@ -235,7 +238,7 @@ Section~\ref{prior_programs} compares transfer function estimators, with Section
     \section{Feedforward in- and out-of-loop methods}
     \label{prior_programs}
    
-        Feedforward subtraction must meet operational constraints. Existing manually-designed filters have long worked, but are more labor-intensive than automated design; new methods, such as Wiener filtering now being considered for seismic and gravity-gradient cancellation~\cite{Driggers2012ActiveNoise} could lead to future improved performance.
+        Feedforward subtraction must meet operational constraints. Existing manually designed filters have long worked, but are more labor-intensive than automated design; new methods, such as Wiener filtering now being considered for seismic and gravity-gradient cancellation~\cite{Driggers2012ActiveNoise} could lead to future improved performance.
         
         \subsection{Manually designed rational filtering in-loop}
         \label{manual_design}
@@ -252,7 +255,8 @@ The method fits an infinite impulse response (IIR) filter onto the witness-to-ta
 
 Each transfer function for a typical 1024 s of data is the average of 1024 independent ratios-of-Fourier-transforms (2047 Hann-windowed, 50\%-overlapping FFTs of 1 s samples). Since FFT error scales with the inverse square root of the number of averages, the relative accuracy is $\mathcal{O}\left(1024^{-1/2}\right)$. The minimum data length, 32 s, yields $\mathcal{O}\left(32^{-1/2}\right)$ relative accuracy. Outside the sensitive band, the fit is deweighted and the transfer function pre-processed, suppressing it by factors of $(f/f_\textup{knee})^\alpha$, where $\alpha = 8$ at low frequencies and $-8$ at high. The $f_\textup{knee}$ values are, respectively, 50 and 400 Hz. AMPS smooths and deweights (Figure~\ref{tfGraph}) known spectral peaks, including 60 Hz harmonics, the LIGO suspension violin modes, and calibration lines. Violin modes are internal resonances of mirror suspensions caused by thermal noise; calibration lines are injections used to track the response function. De-weighting and pre-processsing prevent biasing the filter design with transfer function bands where coherence is low, which would introduce noise. This process leads to convergence with fewer parameters.
 
- Vectfit converges iteratively, starting with a posited set of poles (32nd order here). About five iterations can converge to a good least-squares-fit for the state-space model, but we require fifteen and complex left-half-plane stability for safety. Root-mean-square (RMS) error, is the threshold for rejecting the filter regression. 
+ Vectfit converges iteratively, starting with a posited set of poles (32nd order here). 
+About five iterations can converge to a good least-squares-fit for the state-space model, but we require fifteen iterations and complex left-half-plane stability for safety. Root-mean-square (RMS) error, is the threshold for rejecting the filter regression. 
 From empirical studies, RMS error above $10^{-18}$ indicates poor fit. 
 This test isolates a bad MICH-$h(t)$ correction from a good PRC-$h(t)$ one, or vice versa. 
 	We fit one channel at a time, as Section~\ref{out-of-loop} discusses. After this test, the transfer function model is extracted. 
@@ -475,7 +479,7 @@ Post-processing tests also compute average SFT spectra. For GPS second $931.0\ti
 \end{center}
 \end{figure}
 
-SFTs are high-pass filtered at 38 Hz. The harmonic mean spectrum shows several percent improvement from about 80 Hz up to the 330 Hz violin mode frequencies. Above 400 Hz, there is proportionally-minor degradation,  due to filter rolloff. 
+SFTs are high-pass filtered at 38 Hz. The harmonic mean spectrum shows several percent improvement from about 80 Hz up to the 330 Hz violin mode frequencies. Above 400 Hz, there is proportionally minor degradation,  due to filter rolloff. 
 
         \subsection{Feedforward benefits and potential}
         \label{benefits}
@@ -522,7 +526,9 @@ Auxiliary MICH-PRC Subtraction has cleaned LIGO S6 data, yielding better strain 
 
 The subtraction leads to the lowest noise floor, around 150 Hz, of any time or interferometer so far (the highest performance to date at shot-noise limited frequencies has been obtained differently, with quantum optical squeezing~\cite{BarsottiNatureSqueezing,DwyerPhaseNoise}). This record may remain until Advanced LIGO. Thereafter, adaptive feedforward filters, real-time or \textit{post facto}, can be applied to mitigate noisy-but-inescapable couplings of the servo system. Signal recycling and filter cavities will further challenge commissioning. Angular and length sensing will need finer control servos. Advanced LIGO will also contain more physical and environmental monitors, from seismic and accelerometric to magnetic, that could provide witnesses for non-control-related noise. Altogether, more auxiliary channels and loops will exist, and while they may require sophisticated, non-linear methods, the subtraction technique presented here is a basis. Sensitive interferometry will benefit from simple, effective methods of suppressing instrumental influences.
 
-LIGO was constructed by the California Institute of Technology and Massachusetts Institute of Technology with funding from the National Science Foundation and operates under cooperative agreement PHY-0757058. This chapter is based on Meadors, Kawabe, and Riles, `Improving LIGO sensitivity with feedforward subtraction of auxiliary channel noise' \textit{Classical and Quantum Gravity} 31 (2014) 105014~\cite{MeadorsFeedforward2014}, a paper that carries LIGO Document Number LIGO-P1300193. This research was also made possible by the generous support of the National Science Foundation, awards 0855422 and 1205173, LIGO Hanford Observatory, the LIGO Scientific Collaboration, and the University of Michigan. The authors wish to thank Gregory Mendell as well as Stuart Anderson, Juan Barayoga and Dan Kozak for grid computing expertise, Ian Harry for investigating signal recovery before and after injections and providing conclusions about signal-to-noise ratio for matched filtering, and Jeff Kissel for refining MICH and PRC subtraction by hand. Tobin Fricke wrote the converter function from second-order-system to ZPK filtering and also reviewed this manuscript, as did Rana Adhikari and Jenne Driggers, who developed many of these methods at the Caltech 40 m interferometer. Michael Coughlin, Jan Harms, and Nicol\'{a}s Smith-Lefebvre all generously provided comments. Finally, we thank the referees for Classical and Quantum Gravity for helpful suggestions.
+LIGO was constructed by the California Institute of Technology and Massachusetts Institute of Technology with funding from the National Science Foundation and operates under cooperative agreement PHY-0757058. 
+\textit{As noted at the beginning, most of this chapter is drawn from Meadors, Kawabe, and Riles, `Improving LIGO sensitivity with feedforward subtraction of auxiliary channel noise'} Classical and Quantum Gravity \textit{31 (2014) 105014~\cite{MeadorsFeedforward2014}, a paper that carries LIGO Document Number LIGO-P1300193. }
+This research was also made possible by the generous support of the National Science Foundation, awards 0855422 and 1205173, LIGO Hanford Observatory, the LIGO Scientific Collaboration, and the University of Michigan. The authors wish to thank Gregory Mendell as well as Stuart Anderson, Juan Barayoga and Dan Kozak for grid computing expertise, Ian Harry for investigating signal recovery before and after injections and providing conclusions about signal-to-noise ratio for matched filtering, and Jeff Kissel for refining MICH and PRC subtraction by hand. Tobin Fricke wrote the converter function from second-order-system to ZPK filtering and also reviewed this manuscript, as did Rana Adhikari and Jenne Driggers, who developed many of these methods at the Caltech 40 m interferometer. Michael Coughlin, Jan Harms, and Nicol\'{a}s Smith-Lefebvre all generously provided comments. Finally, we thank the referees for Classical and Quantum Gravity for helpful suggestions.
 
 \section{Postscript}
 
@@ -644,11 +650,11 @@ To be thorough this result should be verified using the OUT\_DQ channels; these 
 
 \textbf{Future}
 
-This is not the full feedforward code, which could be updated (not entirely trivial) to subtract out the noise and calculate a spectrum post-facto. This would require no work on the part of the commissioners. If a calibration exists, we could calculate a morale-boosting inspiral range.
+This is not the full feedforward code, which could be updated (not entirely trivially) to subtract out the noise and calculate a spectrum post-facto. This would require no work on the part of the commissioners. If a calibration exists, we could calculate a morale-boosting inspiral range.
 
 If commissioners want a real-time filter, that would presuppose the existence of a MICH/PRCL/SRCL subtraction path in the model and closed loop response transfer functions. Once those exist, one could update (somewhat more trivial) the real-time calculation code to get a high-quality Foton filter.
 
-A great deal of progress has likely already been made, and a great deal more can probably be made with manual filter design, but if sophistication is needed, the tools exist.
+A great deal of progress has already been made, and a great deal more can probably be made with manual filter design, but if sophistication is needed, the tools exist.
 
 
 %\appendix
