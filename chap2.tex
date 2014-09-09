@@ -132,12 +132,12 @@ Since the Savannah River nuclear reactor experiments, the experimental detectabi
 Nuclear fusion in the Sun has been well-established, and arrays such as Antares and IceCube will move the field outwards toward cosmic sources.
 
 
- GW from the PSR 1913+16 pulsar itself~\cite{WeisbergTaylor2004} are too low in frequency to be seen with existing interferometers, but they confirm that the phenomena is real.
+ GWs from the PSR 1913+16 system itself~\cite{WeisbergTaylor2004} are too low in frequency to be seen with existing interferometers, but they confirm that the phenomena is real.
 Although no terrestrial sources of GW can be feasibly generated, calibration~\cite{AbadieCalibration2010} of interferometers is nonetheless accurate to a few percent.
 Direct detection of GW would let us infer the true strength of astrophysical gravitational radiation and compare that power with theory. 
-Surprising new insights are probable in any new field, not unlike the discovery of neutrino oscillation in the solar spectrum or the anomalous galactic rotation curve due to dark matter, are probable in any new field.
+Surprising new insights are probable in any new field, not unlike the discovery of neutrino oscillation in the solar spectrum or the anomalous galactic rotation curve due to dark matter.
 
-Yet how can gravity been seen?
+Yet how can gravity be seen?
 GW are conceptually simple, with mathematics illustrated by electrodynamic analogy in the Appendix.
 A short derivation follows.
 
@@ -152,7 +152,7 @@ A short derivation follows.
     \label{general_relativity}
 
         Einstein's theory of General Relativity (hence GR) describes gravitation as curvature. 
-Gravity is a pseudoforce, unlike Newton's force $\textbf{F} = -G_C M_1 M_2 r^{-2} \hat{\textbf{r}}$ for two bodies of masses $M_1$ and $M_2$ seperated by a vector distance $\textbf{r}$ in a universe with a gravitational constant $G_C$ (henceforth, units are set where $G_C \equiv 1$).
+Gravity is a pseudoforce, unlike Newton's force $\textbf{F} = -G_C M_1 M_2 r^{-2} \hat{\textbf{r}}$ for two bodies of masses $M_1$ and $M_2$ separated by a vector distance $\textbf{r}$ in a universe with a gravitational constant $G_C$ (henceforth, units are set where $G_C \equiv 1$).
  Einstein posits that objects always follow an extremized path, $\delta s = 0$ for arclength $s$  -- a geodesic worldline -- when the curvature of spacetime is considered. 
 
 The curvature of spacetime is described by the Riemann tensor, $R^\mu_{\nu\rho\sigma}$, which physically is required to be a solution to the Einstein field equations. 
@@ -162,7 +162,7 @@ It is the metric that measures distance across spacetime: $ds^2 = g_{\mu\nu} dx^
 Hence the psuedoforce of gravity is, in GR, curvature distortions (arising from matter) that change the distance along worldlines and thus affect trajectories.
 
 For more mathematical detail, please see the Appendix.
- Carroll and \textit{Gravitation} are essential references~\cite{Carroll1997,MisnerThorneWheeler}, consulting other sources for the Einstein-Hilbert/Palatini action~\cite{FarrThesis}.
+ Carroll and \textit{Gravitation} are useful references~\cite{Carroll1997,MisnerThorneWheeler}, consulting other sources for the Einstein-Hilbert/Palatini action~\cite{FarrThesis}.
 
 %            Introduce the metric $g$ here, but reinforce that it is not essential.
 %Intro to GR -- right motivation is least action Ricci tensor, implying field equation and phase/time-of-flight implying interferometry.
@@ -202,9 +202,9 @@ g_{\mu \nu} \approx \eta_{\mu \nu} + h_{\mu \nu},
 \end{equation}
 
 The right-hand side indicates that GW are sourced by the stress-energy tensor, $T_{\mu\nu}$, which subsumes the electromagnetic stress-energy, pressure, and density terms. 
-For gravitational sources of astrophysical interest, the majority of sourcing comes from matter density -- since mass-energy is conserved, monopolar radiation is forbidden, and conservation of momentum forbids the dipole term. 
-GW are thus sourced by quadrupoles $I_{ij}$ and higher only, although the higher-order terms are generally smaller and neglected. 
-The wave does carries energy density $\rho_{gw}$ and power $P$~\cite{BallmerThesis}:
+For gravitational sources of astrophysical interest, the majority of sourcing comes from matter density -- since mass-energy is conserved, monopolar radiation is forbidden (formally, by the Birkhoff theorem), and conservation of linear and angular momentum forbids the dipole terms. 
+GWs are thus sourced by quadrupoles $I_{ij}$ and higher only, although the higher-order terms are generally smaller and neglected. 
+The wave does carry energy density $\rho_{gw}$ and power $P$~\cite{BallmerThesis}:
 
 \begin{eqnarray}
 \rho_{\textup{gw}} &=& \frac{c^2}{16 \pi G_C} \left\langle |h_{+,0}|^2 + |h_{\times,0}|^2 \right\rangle,\\
@@ -214,13 +214,14 @@ P &=& \frac{G_C}{5c^5}\left\langle \left( \partial_t^3 I_{ij}\right)^2  \right\r
 
 Equations~\ref{perturbation_eq}-\ref{energy-and-power_eq} represent the testable predictions of GR about GW. 
 GR itself is found by finding the field equations from the action~\cite{FarrThesis}, optimizing (extremizing) the integral of curvature: the Ricci scalar $R$.
-Where $|g|$ indicates the determinant of $g$, to $R$ add a hypothetical constant, $\Lambda$ (termed the cosmological constant), and the matter Lagrangian density $\mathcal{L}_M$ to obtain the Einstein-Hilbert action $\mathcal{S}$:
+Here $|g|$ indicates the determinant of $g$. Add two terms to $R$: a hypothetical constant, $\Lambda$ (termed the cosmological constant), and the matter Lagrangian density $\mathcal{L}_M$. The sum generates the Einstein-Hilbert action $\mathcal{S}$:
 
 \begin{equation}
 \mathcal{S} = \int \left( \frac{1}{8\pi}\left(R - 2\Lambda\right) + \mathcal{L}_M \right) \sqrt{-|g|}d^4 x,
 \end{equation}
 
-Extremizing $\delta \mathcal{S} = 0$ involves expanding $R = R^\mu_\mu$, where $R_{\mu\nu} = R^\lambda_{\mu\lambda\nu}$, the Ricci tensor. In turn, the Ricci tensor is contracted from the Riemann tensor, $R^\mu_{\nu\rho\sigma}$ (the curvature tensor, equivalently the 2-form $\textsf{R}^\mu_\nu$). Maurer-Cartan structure equations show how the Riemann tensor is an operator, the sum of a `differential' plus connection $\omega$, applied to the connection $\omega$ itself,
+Extremizing $\delta \mathcal{S} = 0$ involves expanding $R = R^\mu_\mu$, where $R_{\mu\nu} = R^\lambda_{\mu\lambda\nu}$, the Ricci tensor. 
+In turn, the Ricci tensor is contracted from the Riemann tensor, $R^\mu_{\nu\rho\sigma}$ (the curvature tensor, equivalently the 2-form $\textsf{R}^\mu_\nu$). Maurer-Cartan structure equations show how the Riemann tensor is an operator, the sum of a `differential' plus connection $\omega$, applied to the connection $\omega$ itself,
 
 \begin{eqnarray}
 \textsf{R}^\mu_\nu &=& d\omega^\mu_\nu + \omega^\mu_\rho \wedge \omega^\rho_\nu, \\
@@ -244,7 +245,7 @@ The equations are often simplified using the Einstein tensor, $G_{\mu\nu} \equiv
 \frac{1}{8\pi} \left[G_{\mu\nu} + \Lambda g_{\mu\nu} \right] = -\frac{1}{\sqrt{-|g|}}\frac{\delta (\sqrt{-|g|}\mathcal{L}_M)}{\delta g_{\mu\nu}}.
 \end{eqnarray}
 
-\noindent The field equations are sourced by right-hand side, identified (e.g., by comparison with Newtonian gravity) with the stress-energy tensor, $T_{\mu\nu}$:
+\noindent The field equations are sourced by the right-hand side, identified (e.g., by comparison with Newtonian gravity) with the stress-energy tensor, $T_{\mu\nu}$:
 
 \begin{equation}
 G_{\mu\nu} + \Lambda g_{\mu\nu} = 8 \pi T_{\mu\nu}.
@@ -256,7 +257,8 @@ Much of the effort toward unifying general relativity with the other forces can 
 
 The linearized wave derivation in transverse-traceless gauge is standard in GW. 
 Radiation in the non-linear near-field is explored by numerical relativistic studies~\cite{FarrThesis}.
-Equation~\ref{great_einstein_field_equations}, however, also allows derivations using the curvature make it easier to compare interferometer observations (of length scale $L$ much smaller than GW wavelength $\lambda$) with less-linear spacetimes or where $L$ is comparable to $\lambda$.
+Equation~\ref{great_einstein_field_equations}, however, also allows derivations using the curvature.
+This derivation makes it easier to compare interferometer observations (of length scale $L$ much smaller than GW wavelength $\lambda$) with less-linear spacetimes or where $L$ is comparable to $\lambda$.
 In vacuum, the Riemann tensor satisfies a non-linear covariant wave equation in any gauge~\cite{KoopFinn2014}, $0 = R_{\mu \nu \rho \sigma; \lambda}^{\textup{        } \lambda} + S_{\mu \nu \rho \sigma}$, where the $S_{\mu \nu \rho \sigma}$ is quadratic in the Riemann tensor and therefore negligible.
 The first-order perturbative response of the Riemann tensor in Minkowski space of an observer at rest, in conventional transverse-traceless gauge (see below), to a metric perturbation $\bar{h}_{\mu\nu}$ is then,
 
@@ -270,7 +272,7 @@ R_{0\mu0\nu} = -\frac{1}{2} \bar{h}_{\mu\nu,00}.
 %R^{(1)}_{\mu\nu\rho\sigma}= h_{\lambda\sigma} R_{\mu\nu\rho}^{(0)\lambda} - \frac{1}{2}\left( \right)
 %\end{eqnarray}
 
-\noindent Obtaining this first-order response recovers the usual formalism~\cite{BallmerThesis}, where a metric perturbation is substitution into Equation~\ref{great_einstein_field_equations} to yield,
+\noindent Obtaining this first-order response recovers the common formalism~\cite{BallmerThesis}, where a metric perturbation is substituted into Equation~\ref{great_einstein_field_equations} to yield,
 
 \begin{equation}
 G_{\mu\nu} = -\frac{1}{2}\left(h_{\mu\nu,\lambda}^{\textup{       }\lambda} - h^\lambda_{\mu,\lambda\nu} -
@@ -295,7 +297,7 @@ D_\lambda \partial_\lambda x^\mu = 0
 \end{equation}
 
 In general relativity, the six possible independent components of the waveform reduce to just two $h_+$ \& $h_\times$ terms, although other theories of gravity predict additional polarizations.
-These plus $h_+$ and cross $h_\times$ polarizations make the metric waveform along the $z$-axis ($k_\mu = \textup{diag}(\omega,0,0,1)$, initial phase $\phi_0$) in transverse-traceless gauge:
+These plus $h_+$ and cross $h_\times$ polarizations make the metric waveform along the $z$-axis ($k_\mu = \textup{diag}(1,0,0,\omega)$, initial phase $\phi_0$) in transverse-traceless gauge:
 
 \begin{equation}
 h_{\mu\nu} =
@@ -309,16 +311,16 @@ h_{\mu\nu} =
 \label{GW-matrix-eq}
 \end{equation}
 
-\noindent Tensor polarization corresponds to the prediction of hypothetical gravitions being spin-two particles, analogous to the spin-one photon with a vector-polarized the electromagnetic field.
-GW in GR travel at the speed of light as electromagnetic waves, for which experimental data~\cite{CODATA} has matched theory~\cite{GriffithsE} so well that $c$ is now embedded into our system of units.
-Unlike light, which has complex interactions with interstellar media~\cite{Caldwell1981,McKee1977}, GW should pass almost unimpeded through the stars (literally). 
-While the transverse-traceless equation describes the (near-)vacuum, far-field GW we seek to detect, the source term in Equation~\ref{General_Ballmer_wave_eq} must be understood to justify our expectation of astrophysical sources.
+\noindent Tensor polarization corresponds to the prediction of hypothetical gravitons being spin-two particles, analogous to the spin-one photon with a vector-polarized electromagnetic field.
+GWs in GR travel at the same speed of light as electromagnetic waves, for which experimental data~\cite{CODATA} has matched theory~\cite{GriffithsE} so well that $c$ is now embedded into our system of units.
+Unlike light, which has complex interactions with interstellar media~\cite{Caldwell1981,McKee1977}, GWs should pass almost unimpeded through the stars (literally). 
+While the transverse-traceless equation describes the (near-)vacuum, far-field GWs we seek to detect, the source term in Equation~\ref{General_Ballmer_wave_eq} must be understood to justify our expectation of astrophysical sources.
 
 
         \subsection{Radiation from quadrupoles}
         \label{radiation}
 
-Section~\ref{field_equations} noted that monopole and dipole sources were forbidden by conservation of mass-energy and momentum. This leaves us to derive radiation from quadrupolar sources in the stress-energy tensor.
+Section~\ref{field_equations} notes that monopole and dipole sources are forbidden by conservation of mass-energy and momentum. This leaves us to derive radiation from quadrupolar sources in the stress-energy tensor.
 Starting from the field equations, a Green's function $G$ (impulse response) lets us invert the linear differential operator $\Box$ by solving for a point, Dirac delta source $\delta$~\cite{Carroll1997}.
 As with electromagnetism, the retarded Green's function from a source at $y^\sigma$ to an observer at $x^\sigma$ is given (where the Heaviside step-function is $\theta$) by, 
 
@@ -335,7 +337,7 @@ G(x^\sigma - y^\sigma) = - \frac{1}{4\pi |x^i - y^i|}\delta \left(|x^i - y^i| - 
 \end{eqnarray}
 
 \noindent Note that the latter equation is integrated over time. 
-Converting to far-field at distance $r = |x^i - y^-i|$ and retarded time $t_r = t - r$, then Fourier transforming $\bar{h}$ and $T$ over time into $\tilde{\bar{h}}$ and $\tilde{T}$ respectively, we can impose Lorentz gauge ($\tilde{\bar{h}}^{0\nu} = (\sqrt{-1}/\omega) \tilde{\bar{h}}^{i\nu}$),
+Converting to far-field at distance $r = |x^i - y^{-i}|$ and retarded time $t_r = t - r$, then Fourier transforming $\bar{h}$ and $T$ over time into $\tilde{\bar{h}}$ and $\tilde{T}$ respectively, we can impose the Lorenz gauge ($\tilde{\bar{h}}^{0\nu} = (\sqrt{-1}/\omega) \tilde{\bar{h}}^{i\nu}$),
 
 \begin{equation} 
 \tilde{\bar{h}}_{ij} (t,x^i) = -\frac{2}{r}e^{\sqrt{-1}\omega r}\omega^2 \tilde{I}_{ij}(t_r),
@@ -348,14 +350,14 @@ Converting to far-field at distance $r = |x^i - y^-i|$ and retarded time $t_r = 
 I_{ij} = \frac{1}{3}\int d^3 x T_{00} \left(3 x_i x_k - r^2 \delta_{ij}\right).
 \end{equation}
 
-\noindent Inverting the Fourier transform yields the time-domain equation for gravitational radiation in terms of a quadropole moment,
+\noindent Inverting the Fourier transform yields the time-domain equation for gravitational radiation in terms of a quadrupole moment,
 
 \begin{equation}
 \bar{h}_{ij}(t, x^i) = \frac{2}{r} I_{ij,00} (t_r).
 \end{equation}
 
 Deducing radiated power requires a second-order perturbative expansion~\cite{Carroll1997,BallmerThesis}, yielding Equation~\ref{energy-and-power_eq}.
-While the mathematical credibility of the second-order expansion may seem strained, the implied power in the gravitational wave strain is physically observable, as in PSR 1913+16.
+While this second-order expansion makes many assumptions, the implied power in the gravitational wave strain is physically (but not literally) observable, as in PSR 1913+16.
 The goal of gravitational wave astronomers now is not just to infer radiated power but to measure $h_{\mu\nu}$ directly.
 
     \section{Astrophysical estimates}
