@@ -101,12 +101,6 @@ B.~Abbott, R.~Abbott, R.~Adhikari, J.~Agresti, P.~Ajith, B.~Allen, R.~Amin,
   {LIGO}.
 \newblock Technical Report astro-ph/0608606v1, arXiv, 2006-08-28.
 
-\bibitem{AbbottScoX12007}
-B.~Abbott et~al.
-\newblock Searches for periodic gravitational waves from unknown isolated
-  sources and {Scorpius X-1}: results from the second ligo science run.
-\newblock {\em Phys. {R}ev. {D}}, 76:082001.
-
 \bibitem{LIGOFirst2004}
 B.~Abbott et~al.
 \newblock Detector description and performance for the first coincidence
@@ -123,6 +117,12 @@ B.~Abbott et~al.
   isolated sources and {S}corpius {X-1}: results from the second {LIGO} science
   run.
 \newblock {\em Phys. Rev. D}, 76(8):082001, 2007.
+
+\bibitem{AbbottScoX12007}
+B.~Abbott et~al.
+\newblock Searches for periodic gravitational waves from unknown isolated
+  sources and {Scorpius X-1}: results from the second ligo science run.
+\newblock {\em Phys. {R}ev. {D}}, 76:082001, 2007.
 
 \bibitem{LSCEinsteinHome2009}
 B.~Abbott et~al.
@@ -558,7 +558,7 @@ K.~Kuroda et~al.
 J.M. Lattimer and M.~Prakash.
 \newblock Neutron star observations: prognosis for equation of state
   constraints.
-\newblock {\em Physics reports}, 442:109.
+\newblock {\em Physics reports}, 442:109, 2007.
 
 \bibitem{CDAnderson}
 R.B. Leighton, C.D. Anderson, and A.J. Seriff.
@@ -671,10 +671,15 @@ B.J. Owen.
   of state.
 \newblock {\em Phys. {R}ev. {L}ett.}, 95:211101, 2005.
 
+\bibitem{Owen2010}
+B.J. Owen.
+\newblock How to adapt broad-band gravitational-wave searches for $r$-modes.
+\newblock {\em Phys. {R}ev. {D}}, 82:104002, 2010.
+
 \bibitem{Owen1998}
 B.J. Owen et~al.
 \newblock Gravitational waves from hot young rapidly rotating neutron stars.
-\newblock {\em Phys. {R}ev. {D}}, 58:084020.
+\newblock {\em Phys. {R}ev. {D}}, 58:084020, 1998.
 
 \bibitem{PapaloizouPringle1978}
 J.~Papaloizou and J.E. Pringle.
@@ -714,7 +719,7 @@ M.~Rakhmanov, R.L.~Jr. Savage, D.H. Reitze, and D.B. Tanner.
 J.S. Read et~al.
 \newblock Measuring the neutron star equation of state with gravitational wave
   observations.
-\newblock {\em Phys. {R}ev. {D}}, 79:124033.
+\newblock {\em Phys. {R}ev. {D}}, 79:124033, 2009.
 
 \bibitem{Riles2013}
 K.~Riles.
