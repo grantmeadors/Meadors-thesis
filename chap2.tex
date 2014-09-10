@@ -591,7 +591,7 @@ Quantum squeezing can circumvent the issue of thermal distortions, but it too in
 GW interferometers on Earth are limited in size (thus storage time and strain sensitivity) by the planet's curvature (which couples vertical displacement noise into horizontal) as well as by finances. 
 GEO600 uses delay lines, and the other interferometers use Fabry-Perot arms to extend the storage time of light.
 Fabry-Perot arms with high-finesse~\cite{ResonanceFP,ResponsesFP} (roughly $137$ in Initial LIGO) are locked~\cite{PDHNotes} using the Pound-Drever-Hall (PDH) technique.
-Elucidated below, electro-optic modulations (EOMs) provide a radio-frequency error signal for PDH locking the Fabry-Perot arms.
+Elucidated below, electro-optic modulators (EOMs) provide a radio-frequency error signal for PDH locking the Fabry-Perot arms.
 
 Figure~\ref{primary_eLIGO_optics} presents a schematic overview of the key systems in Enhanced LIGO.
 
@@ -722,6 +722,7 @@ See Chapter~\ref{chap3} for full details of open-loop subtraction and the extens
 Improving length control is intuitive, since length directly correlates with LIGO's inference of GW strain.
 Angular control, however, is just as necessary: LIGO uses quadrature-photodiode wave-front sensors~\cite{MavalvalaThesis} to minimize misalignment.
 Misalignment causes direct angle-to-length coupling, adding noise to the system by corrupting the phase measurement at readout; it also permits power fluctuations in the Fabry-Perot arms, reducing shot noise-limited performance and, when the relative power returning from the arms (the contrast defect) changes, directly corrupting the power measurement at readout~\cite{DooleyThesis}.
+Maintaining lock also becomes hard if misalignment grows too severe.
 Therefore more sophisticated systems have been researched in hopes of reducing angular fluctuations still further, including exploration of a phase camera at Michigan~\cite{DergachevThesis}.
 
 %                    Future devices: overview of phase camera with Vladimir. Vladimir's thesis definitely talks about it~\cite{DergachevThesis}. We can discuss the fundamentals behind the need for angular stabilization and control from Nergis Mavalvala's thesis~\cite{MavalvalaThesis}, but we can refresh it with a modern reference from Kate Dooley's thesis~\cite{DooleyThesis}.
@@ -733,7 +734,7 @@ Therefore more sophisticated systems have been researched in hopes of reducing a
 \end{center}
 \end{figure}
 
-Locking used the Pound-Drever-Hall (PDH) method~\cite{PDHNotes,MavalvalaThesis}.
+Locking uses the Pound-Drever-Hall (PDH) method~\cite{PDHNotes,MavalvalaThesis}.
 Mathematically, the method assumes two mirrors: an input, with amplitude reflectivity $r_1$, and an end, with amplitude reflectivity $r_2$.
 Upon the input mirror is incident a coherent electric field, due to light, $E_\textup{inc}$ at frequency $\omega_0$. A field $E_{\textup{refl}}$ is reflected.
 The key to the technique is that the incident electric field is phase modulated by an amplitude $\Gamma$ with modulation frequency $\Omega$, by a device such as an electro-optic modulator (EOM, e.g., a Pockels cell).
@@ -756,13 +757,22 @@ I =& \left[ |E_0|^2 + |E_+|^2 + |E_-|^2\right] + \\
 
 Radio-frequency photodiodes are generally needed to record this intensity with its modulation.
 Typically, the photodiode current is demodulated with a mixer that uses as local oscillator the same sine wave that drives the Pockels cell EOM phase modulation.
-Alternative photoresistor readouts were explored in hopes that they might have faster response times since the standard electronics references were compiled~\cite{HorowitzHill1989,Simpson}, because of their potential desirability for a many-pixel readout.
+Alternative photoresistor readouts were explored in hopes that they might have faster response times since the standard electronics references were compiled~\cite{HorowitzHill1989,Simpson}, because of their potential desirability for a low-cost many-pixel readout.
+Part of this author's work included a Spice simulation and physical construction of a photoresistor circuit.
+Sadly, the inexpensive photoresistors used had rise times of milliseconds, far too slow for a direct RF readout scheme. 
+This result refocused attention on photodiodes.
+
 %The electronics development were guided by Horowitz and Hill~\cite{HorowitzHill1989} as well as by Simpson~\cite{Simpson}.
 Using the usual RF photodiode, a Fabry-Perot cavity was built prior to this author's work, seen in Figure~\ref{phase_camera_optical_table}.
-Numerous attempts to stabilize the cavity and derive a useful PDH locking signal were made, the laser was upgraded, EOM replaced, and the analog locking system frequency response was characterized.
+My efforts began with characterizing the RF electronics of the analog locking system.
+A signal analyzer helped re-select a cable of appropriate length and phase delay for the system. 
+Numerous attempts to stabilize the cavity and derive a useful PDH locking signal were made.
+The laser was upgraded from Helium-Neon to solid-state.
+A faulty EOM replaced, and its frequency response was studied by this author (helped by Gustafson) to choose a better modulation frequency where the EOM could supply adequate modulation depth.
 Unfortunately, locks proved too fleeting to pursue a program of phase camera angular measurements.
 % This program would involve intentionally misalignment and correction
 Much progress nonetheless was made by Dergachev in realizing effective methods of high-speed digitization of the RF-modulated signal in free space~\cite{DergachevThesis}.
+The full program, for investigating a multi-pixel RF sensor with digital (in-software) demodulation, has yet to be realized.
 %See Figure~\ref{phase_camera_optical_table} for a picture of the cavity as built.
 
 
