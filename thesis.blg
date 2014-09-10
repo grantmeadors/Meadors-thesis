@@ -42,12 +42,12 @@ I was expecting a `,' or a `}'---line 2640 of file bibliography.bib
  : year = "2014-03-21"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2777 of file bibliography.bib
+I was expecting a `,' or a `}'---line 2785 of file bibliography.bib
  : 
  : year = "2010"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 2807 of file bibliography.bib
+Repeated entry---line 2815 of file bibliography.bib
  : @article{Shawhan2010
  :                     ,
 I'm skipping whatever remains of this entry
@@ -81,45 +81,45 @@ Warning--empty title in Sathyaprakash2009
 Warning--empty year in Weber1960
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 161 entries,
+You've used 162 entries,
             2118 wiz_defined-function locations,
-            1413 strings with 26101 characters,
-and the built_in function-call counts, 43406 in all, are:
-= -- 4100
-> -- 2311
-< -- 18
-+ -- 935
-- -- 760
-* -- 2945
-:= -- 7957
-add.period$ -- 464
-call.type$ -- 161
-change.case$ -- 777
+            1419 strings with 26186 characters,
+and the built_in function-call counts, 43608 in all, are:
+= -- 4121
+> -- 2318
+< -- 19
++ -- 938
+- -- 762
+* -- 2954
+:= -- 7997
+add.period$ -- 467
+call.type$ -- 162
+change.case$ -- 781
 chr.to.int$ -- 0
-cite$ -- 191
-duplicate$ -- 1642
-empty$ -- 3153
-format.name$ -- 760
-if$ -- 8665
+cite$ -- 192
+duplicate$ -- 1651
+empty$ -- 3168
+format.name$ -- 762
+if$ -- 8705
 int.to.chr$ -- 0
-int.to.str$ -- 161
+int.to.str$ -- 162
 missing$ -- 140
-newline$ -- 788
-num.names$ -- 322
-pop$ -- 717
+newline$ -- 793
+num.names$ -- 324
+pop$ -- 720
 preamble$ -- 1
-purify$ -- 666
+purify$ -- 669
 quote$ -- 0
-skip$ -- 1163
+skip$ -- 1168
 stack$ -- 0
-substring$ -- 1552
-swap$ -- 158
-text.length$ -- 18
+substring$ -- 1557
+swap$ -- 159
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 602
+type$ -- 606
 warning$ -- 30
-while$ -- 368
-width$ -- 164
-write$ -- 1717
+while$ -- 370
+width$ -- 165
+write$ -- 1728
 (There were 10 error messages)
