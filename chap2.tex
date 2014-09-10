@@ -492,7 +492,7 @@ Gravitational wave interferometry has carried the prospects for GW astronomy tow
 
             %History lesson: Weber bars progress to interferometers. Use Saulson, but Nic's thesis has links to some of the original sources~\cite{Saulson},~\cite{SmithThesis}.           
 
-        \subsection{Observatories, investigations, and enhancements}
+        \subsection{Gravitational wave interferometry in theory}
         \label{methods}
 
 % Maybe organize this section better
@@ -563,7 +563,7 @@ P &=& \left[ 4 L \omega \epsilon_0 E_0^2 \sin \left(\frac{2\pi}{c} (L_s+L_0) \ri
 
 %DONE: The motivation for the evolution to Enhanced LIGO and its DC readout methods is covered well in the corresponding CQG article~\cite{Fricke2009} and specific details of its construction and operation are in Tobin Fricke's thesis~\cite{FrickeThesis}.
 
-            \subsubsection{Interferometer theory in practice}
+            \subsection{Interferometer theory in practice}
             \label{interferometer_theory}
 
 Interferometers transduce GW strain into power in a manner like Equation~\ref{strain-to-power-eq} only because they operate in a linearly-controlled regime~\cite{FrickeThesis} with noise sources surpressed as well as possible~\cite{Saulson,LIGOWorks}.
@@ -603,7 +603,7 @@ Figure~\ref{primary_eLIGO_optics} presents a schematic overview of the key syste
 \end{center}
 \end{figure}
 
-            \subsubsection{Observatory operation}
+            \subsection{Observatory operation}
             \label{observatory_operation}
 
 	\begin{figure}
@@ -642,7 +642,7 @@ The switch to DC readout occured prior to S6, and in the leadup to that science 
 %                Operating LIGO: controls, Detector Characterization. One of the first sources from initial LIGO to read up on is a paper by Fritscel, Bork, Mavalvala et al~\cite{ReadoutGWA}. Initially this system made a detection based on heterodyne readout using GW sidebands, which, among other troubles, could be unequal in the recycling cavity~\cite{MeadorsHanford2005}.
 
 
-                \paragraph{Detector characterization}
+\section{Detector characterization and development}
                 \label{detchar}
             
 %                    DetChar methods: omega scans, line hunting and glitches
@@ -670,7 +670,7 @@ Effective engines for tracking and, preferably, eliminating glitches and persist
 %See Figure~\ref{omega_scan_audible_glitch} for an example of the spectrograms this method was able to generate. These spectrograms helped categorize glitch sources and reduce them, to the benefit of the burst group in particular.
 %Fortunately, this work was later automated thanks to Tomoki Isogai. 
 
-                \paragraph{Feedforward filtering}
+                \subsection{Feedforward filtering}
                 \label{feedforward_filters}
 
 Feedback servos keep LIGO operational, holding the mirrors and auxiliary systems in stationary `lock' points.
@@ -716,7 +716,7 @@ See Chapter~\ref{chap3} for full details of open-loop subtraction and the extens
 	\end{center}
 	\end{figure}
 
-                \paragraph{Phase camera}
+                \subsection{Phase camera}
                 \label{phase_camera}
 
 Improving length control is intuitive, since length directly correlates with LIGO's inference of GW strain.

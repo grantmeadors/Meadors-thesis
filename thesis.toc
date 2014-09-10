@@ -1,7 +1,7 @@
 \contentsline {chapter}{DEDICATION}{ii}{section*.1}
 \contentsline {chapter}{ACKNOWLEDGEMENTS}{iii}{section*.1}
-\contentsline {chapter}{LIST OF FIGURES}{vii}{section*.1}
-\contentsline {chapter}{LIST OF TABLES}{xiv}{section*.1}
+\contentsline {chapter}{LIST OF FIGURES}{viii}{section*.1}
+\contentsline {chapter}{LIST OF TABLES}{xv}{section*.1}
 \mbox { }\newline \noindent {\bf CHAPTER}\newline 
 \hbox { }
 \hbox { }
@@ -22,15 +22,15 @@
 \contentsline {subsection}{\numberline {2.3.2}Continuous waves from neutron stars}{22}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Laser Interferometer Gravitational-wave Observatories}{24}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}From Weber bars to interferometry}{25}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Observatories, investigations, and enhancements}{25}{subsection.2.4.2}
-\contentsline {subsubsection}{Interferometer theory in practice}{28}{section*.2}
-\contentsline {subsubsection}{Observatory operation}{30}{section*.3}
-\contentsline {paragraph}{Detector characterization}{33}{figure.2.5}
-\contentsline {paragraph}{Feedforward filtering}{34}{section*.5}
-\contentsline {paragraph}{Phase camera}{37}{section*.6}
-\contentsline {subsection}{\numberline {2.4.3}Advanced observatories and beyond}{40}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Worldwide network}{41}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}Summary}{43}{section.2.5}
+\contentsline {subsection}{\numberline {2.4.2}Gravitational wave interferometry in theory}{25}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Interferometer theory in practice}{28}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Observatory operation}{30}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}Detector characterization and development}{33}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Feedforward filtering}{34}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Phase camera}{37}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Advanced observatories and beyond}{40}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Worldwide network}{41}{subsection.2.5.4}
+\contentsline {section}{\numberline {2.6}Summary}{43}{section.2.6}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf III.\hspace {5pt}}{\bf Feedforward: Auxiliary MICH-PRC Subtraction}}{44}{chapter.3}
 \hbox { }
@@ -63,12 +63,12 @@
 \contentsline {subsection}{\numberline {4.1.3}Squeezing filter cavities against alternatives}{87}{subsection.4.1.3}
 \contentsline {section}{\numberline {4.2}LIGO Hanford Observatory quantum vacuum squeezing}{87}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Collaboration and contributions}{87}{subsection.4.2.1}
-\contentsline {subsubsection}{Optical table support assembly}{87}{section*.7}
-\contentsline {subsubsection}{Faraday isolator measurement}{87}{section*.8}
-\contentsline {subsubsection}{In-vacuum installation}{89}{section*.9}
-\contentsline {subsubsection}{Data digitization}{89}{section*.10}
+\contentsline {subsubsection}{Optical table support assembly}{87}{section*.2}
+\contentsline {subsubsection}{Faraday isolator measurement}{87}{section*.3}
+\contentsline {subsubsection}{In-vacuum installation}{89}{section*.4}
+\contentsline {subsubsection}{Data digitization}{89}{section*.5}
 \contentsline {subsection}{\numberline {4.2.2}Squeezing's scientific benefit}{89}{subsection.4.2.2}
-\contentsline {subsubsection}{Figures of merit: inspiral range}{89}{section*.11}
+\contentsline {subsubsection}{Figures of merit: inspiral range}{89}{section*.6}
 \contentsline {section}{\numberline {4.3}Squeezing large interferometers}{92}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Success and Advanced LIGO prospects}{92}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Squeezing summary}{93}{subsection.4.3.2}
