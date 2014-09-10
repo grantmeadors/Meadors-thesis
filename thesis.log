@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  9 SEP 2014 23:13
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  9 SEP 2014 23:24
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -328,7 +328,7 @@ Package hyperref Warning: No destination for bookmark of \addcontentsline,
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [6] [7] (./thesis.lof
+ [6] (./thesis.lof
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -349,7 +349,7 @@ Overfull \hbox (17.3886pt too wide) in paragraph at lines 4--4
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+ [7]
 Overfull \hbox (38.80646pt too wide) in paragraph at lines 10--10
  \OT1/cmr/m/n/10 phase cam-era. Fara-day iso-la-tor and po-lar-iz-ing beam-spli
 tter at up-per right; piezoelectrically- 
@@ -358,7 +358,7 @@ tter at up-per right; piezoelectrically-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
+ [8]
 Overfull \hbox (9.27504pt too wide) in paragraph at lines 20--20
  \OT1/cmr/m/n/10 on-line: \OT1/cmtt/m/n/10 http://ligo-vcs.phys.uwm.edu/wsvn/Ma
 tApps/packages/detchar/AMPS/  
@@ -367,15 +367,15 @@ tApps/packages/detchar/AMPS/
 
 Underfull \vbox (badness 2961) has occurred while \output is active []
 
- [10]
-[11]
+ [9]
+[10]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
- [12] [13])
+ [11] [12])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [14] (./thesis.lot
+ [13] (./thesis.lot
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -384,7 +384,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [15]
+ [14]
 CHAPTER I.
 
 Package hyperref Warning: bookmark level for unknown chap defaults to 0.
@@ -442,7 +442,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 146.
 
 (./intro.tex
-Underfull \vbox (badness 1552) has occurred while \output is active []
+Underfull \vbox (badness 4168) has occurred while \output is active []
 
  [1
 
@@ -1623,12 +1623,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4929 strings out of 256217
- 67494 string characters out of 1917094
- 172688 words of memory out of 1500000
- 7991 multiletter control sequences out of 10000+200000
+ 4927 strings out of 256217
+ 67463 string characters out of 1917094
+ 172509 words of memory out of 1500000
+ 7989 multiletter control sequences out of 10000+200000
  15035 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (185 pages, 768876 bytes).
+Output written on thesis.dvi (184 pages, 767396 bytes).

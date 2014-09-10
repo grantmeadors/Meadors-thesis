@@ -1,13 +1,12 @@
 \contentsline {chapter}{DEDICATION}{ii}{section*.1}
 \contentsline {chapter}{ACKNOWLEDGEMENTS}{iii}{section*.1}
-\contentsline {chapter}{LIST OF FIGURES}{viii}{section*.1}
-\contentsline {chapter}{LIST OF TABLES}{xv}{section*.1}
+\contentsline {chapter}{LIST OF FIGURES}{vii}{section*.1}
+\contentsline {chapter}{LIST OF TABLES}{xiv}{section*.1}
 \mbox { }\newline \noindent {\bf CHAPTER}\newline 
 \hbox { }
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf I.\hspace {5pt}}{\bf Introduction}}{1}{chapter.1}
 \hbox { }
-\contentsline {section}{\numberline {1.1}Gravitational waves in astrophysics}{1}{section.1.1}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf II.\hspace {5pt}}{\bf Gravitational Waves and LIGO}}{3}{chapter.2}
 \hbox { }
