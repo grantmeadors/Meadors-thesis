@@ -63,8 +63,8 @@
 \contentsline {subsection}{\numberline {4.1.3}Squeezing filter cavities against alternatives}{90}{subsection.4.1.3}
 \contentsline {section}{\numberline {4.2}LIGO Hanford Observatory quantum vacuum squeezing}{90}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Collaboration and contributions}{90}{subsection.4.2.1}
-\contentsline {subsubsection}{Optical table support assembly}{90}{section*.2}
-\contentsline {subsubsection}{Faraday isolator measurement}{90}{section*.3}
+\contentsline {subsubsection}{Optical table support assembly}{91}{section*.2}
+\contentsline {subsubsection}{Faraday isolator measurement}{91}{section*.3}
 \contentsline {subsubsection}{In-vacuum installation}{92}{section*.4}
 \contentsline {subsubsection}{Data digitization}{92}{section*.5}
 \contentsline {subsection}{\numberline {4.2.2}Squeezing's scientific benefit}{92}{subsection.4.2.2}
