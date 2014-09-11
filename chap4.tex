@@ -27,11 +27,11 @@ The standard quantum limit (SQL) on displacement sensitivity can be derived inde
 When one tries to attain this standard quantum limit with an interferometer, then shot and radiation pressure are found to balance at a particular optimum input power $P_0$~\cite{Caves1981}:
 
 \begin{equation}
-P_0 = \frac{1}{2} \frac{mc^2}{\tau}\frac{1}{\omega \tau} \frac{1}{b^2},
+P_0 = \frac{1}{2} \frac{mc^2}{\tau}\frac{1}{\omega \tau} \frac{1}{b^2} \equiv {\hbar \omega \alpha_0^2}{\tau},
 \label{optimum_power_caves}
 \end{equation}
 
-\noindent with $\omega$ the angular frequency of light and $b$ the number of bounces (assuming delay lines, whereas a Fabry-Perot is proportional to finesse) in Equation~\ref{optimum_power_caves}.
+\noindent with $\omega$ the angular frequency of light and $b$ the number of bounces (assuming delay lines, whereas a Fabry-Perot is proportional to finesse) in Equation~\ref{optimum_power_caves} and $\alpha_0 = \sqrt{P \tau / \hbar \omega}$ is the number of photons.
 The latter equation shows that the optimal power rises as $1/\sqrt{\tau}$, that is, as the squart root of the gravitational wave frequency.
 Higher laser power improves high frequency sensitivity, high mirror mass improves low frequency performance.
 Combined, these formulae imply that an interferometer should be built with the largest, most massive mirrors and most powerful lasers practicable.
@@ -83,11 +83,15 @@ S(\zeta)=\exp[\frac{1}{2}\zeta^{*}a^{2}-\frac{1}{2}\zeta(a^{\dagger})^{2}],\;\ze
 \label{squeeze_operator_caves}
 \end{equation}
 
-\noindent thereby reducing shot noise by a factor of $e^{-r}$.
+\noindent thereby reducing shot noise by a factor of $e^{-r}$. The optimum power changes accordingly: Caves shows that $P_\textup{opt} = P_0 e^{-2r}$, so long as $|\alpha|\gg\sinh^2r$ and $|\alpha|\gg e^{2r}\sinh^2 r$. 
+
+For a 20 W interferometer using 1.064 nm to measure at 100 Hz, the latter squeezing condition would be an issue around $r\geq10$, but to reduce optimal power by $1/2$ only requires $r \approx 0.34$. 
+Trying to reduce optimal power by orders of magnitude is unlikely to occur any time soon: rather, a modest laser as would ordinarily be used in an interferometer can be supplemented with a squeezed beam to increase its effective power. 
+Squeezing is an addition, not a replacement.
+Yet the squeeze beam still must be physically generated, and this along with optical losses in the interferometer prove a much more significant challenge than theoretical constraints.
+
 
 Squeezed state made with
-
-
 optical parameter oscillator, 2nd harmonic generator
 
 

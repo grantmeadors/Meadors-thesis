@@ -60,15 +60,15 @@
 \contentsline {section}{\numberline {4.1}Squeezing theory}{89}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Quantum shot noise and radiation pressure}{91}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Problems with lasers: thermal compensation}{92}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Squeezing filter cavities against alternatives}{92}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}LIGO Hanford Observatory quantum vacuum squeezing}{92}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Collaboration and contributions}{92}{subsection.4.2.1}
-\contentsline {subsubsection}{Optical table support assembly}{92}{section*.2}
-\contentsline {subsubsection}{Faraday isolator measurement}{94}{section*.3}
-\contentsline {subsubsection}{In-vacuum installation}{94}{section*.4}
-\contentsline {subsubsection}{Data digitization}{94}{section*.5}
-\contentsline {subsection}{\numberline {4.2.2}Squeezing's scientific benefit}{94}{subsection.4.2.2}
-\contentsline {subsubsection}{Figures of merit: inspiral range}{94}{section*.6}
+\contentsline {subsection}{\numberline {4.1.3}Squeezing filter cavities against alternatives}{93}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}LIGO Hanford Observatory quantum vacuum squeezing}{93}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Collaboration and contributions}{93}{subsection.4.2.1}
+\contentsline {subsubsection}{Optical table support assembly}{93}{section*.2}
+\contentsline {subsubsection}{Faraday isolator measurement}{93}{section*.3}
+\contentsline {subsubsection}{In-vacuum installation}{93}{section*.4}
+\contentsline {subsubsection}{Data digitization}{95}{section*.5}
+\contentsline {subsection}{\numberline {4.2.2}Squeezing's scientific benefit}{95}{subsection.4.2.2}
+\contentsline {subsubsection}{Figures of merit: inspiral range}{95}{section*.6}
 \contentsline {section}{\numberline {4.3}Squeezing large interferometers}{97}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Success and Advanced LIGO prospects}{97}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Squeezing summary}{98}{subsection.4.3.2}
