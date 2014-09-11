@@ -56,27 +56,34 @@ Hence squeezing: the standard quantum limit can be achieved through another mean
 %\begin{frame}{Squeezing introduction}
 
 %\begin{definition}
-Altering $\Delta E\Delta\phi$ uncertainty for the electromagnetic
-field
-%\end{definition}
+
+Squeezing as used in the context of gravitational made interferometer has a specific meaning.
+While no alterations are made to the input laser light, the output `dark' port of the interferometer, whence comes the light received by the photodetector, is changed.
+The output port in a squeezed interferometer receives a squeezed vacuum state from the opposite direction to the laser light.
+This squeezed vacuum state is prepared on a `squeezer' table.
+This beam is injected with the correct polarization, using a Faraday isolator and wave plates to guard against laser light entering the squeezer, and propagates through the interferometer arms (requiring proper alignment) until it and the laser light are both incident on the same output photodetector.
+The desired effect is altering $\Delta E\Delta\phi$ uncertainty for the vacuum state of the electromagnetic field.
+Reducing $\Delta \phi$ at the cost of still-acceptable $\Delta E$ permits\footnote{$\Delta E$ can also be squeezed; see Section~\ref{third-gen_squeezing}} a more precise measurement, equivalent to the beneficial effect of increasing laser power but without heating the mirrors.
+Casually, more laser power boosts the shot-noise limited `signal' of a high-frequency measurement whereas squeezing reduces the `noise'. 
+Formally, the expectation value of quantum operators is improved.
+
+%\begin{theorem}
+%Shot noise arises from quantum operators (Caves 1980, 1981)\end{theorem}
+
+Caves's prescription~\cite{Caves1981} is clear:
 \begin{itemize}
-\item Demonstrated first at GEO 600, then LIGO Hanford (H1)\end{itemize}
-\begin{theorem}
-Shot noise arises from quantum operators (Caves 1980, 1981)\end{theorem}
-\begin{itemize}
-\item Vacuum fluctuations couple through anti-symmetric port
-\item \emph{Squeeze }the $\overrightarrow{E}$ field uncertainty ellipse
-\item Angle $\theta$, factor $r$, creation operator $a$, squeeze operator
-$S$:
+\item Vacuum fluctuations couple through anti-symmetric port, so inject a
+\item \emph{Squeezed } $\overrightarrow{E}$ field (uncertainty ellipse with smaller $\Delta E$) defined by
+\item Squeeze operator $S$ in Equation~\ref{squeeze_operator_caves} (with squeeze angle $\theta$, factor $r$, creation operator $a$):
 \end{itemize}
+%From the Caves squeezing paper~\cite{Caves1981},
 
-From the Caves squeezing paper~\cite{Caves1981},
-
-\[
+\begin{equation}
 S(\zeta)=\exp[\frac{1}{2}\zeta^{*}a^{2}-\frac{1}{2}\zeta(a^{\dagger})^{2}],\;\zeta=re^{i\theta}
-\]
+\label{squeeze_operator_caves}
+\end{equation}
 
-
+\noindent thereby reducing shot noise by a factor of $e^{-r}$.
 
 Squeezed state made with
 
@@ -84,11 +91,13 @@ Squeezed state made with
 optical parameter oscillator, 2nd harmonic generator
 
 
-\textbf{Shot noise reduced by $e^{-r}$}
 
 
-\[
-\]
+
+%\end{definition}
+\begin{itemize}
+\item Demonstrated first at GEO 600, then LIGO Hanford (H1)\end{itemize}
+
 
 
 
