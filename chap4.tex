@@ -13,7 +13,40 @@ For additional details, consult Chua~\cite{ChuaThesis} and Dwyer~\cite{DwyerThes
     \section{Squeezing theory}
     \label{squeezing_theory}
 
-        Squeezing theory.
+      %  Squeezing theory.
+Quantum noise was initially treated as Poissonian photon counting (shot noise) and momentum coupling (radiation pressure), but it is better understood as the phase and amplitude uncertainty of the electromagnetic field at the interferometer output. 
+Roughly speaking, phase uncertainty is equivalent to semi-classical shot noise and amplitude uncertainty to radiation pressure.
+The standard quantum limit (SQL) on displacement sensitivity can be derived independently of either argument, as noted by Caves~\cite{Caves1981}:
+
+\begin{equation}
+(\Delta z)_{\textup{SQL}} = (2 \hbar \tau / m)^{1/2},
+\label{sql_caves}
+\end{equation}
+
+\noindent where in Equation~\ref{sql_caves} $z$ is the mirror (test mass) displacement, $\tau$ is measurement duration, $\hbar$ is the reduced Planck constant, and $m$ is mirror mass.
+When one tries to attain this standard quantum limit with an interferometer, then shot and radiation pressure are found to balance at a particular optimum input power $P_0$~\cite{Caves1981}:
+
+\begin{equation}
+P_0 = \frac{1}{2} \frac{mc^2}{\tau}\frac{1}{\omega \tau} \frac{1}{b^2},
+\label{optimum_power_caves}
+\end{equation}
+
+\noindent with $\omega$ the angular frequency of light and $b$ the number of bounces (assuming delay lines, whereas a Fabry-Perot is proportional to finesse) in Equation~\ref{optimum_power_caves}.
+The latter equation shows that the optimal power rises as $1/\sqrt{\tau}$, that is, as the squart root of the gravitational wave frequency.
+Higher laser power improves high frequency sensitivity, high mirror mass improves low frequency performance.
+Combined, these formulae imply that an interferometer should be built with the largest, most massive mirrors and most powerful lasers practicable.
+
+LIGO and its allied interferometers do try to operate with massive optics and powerful lasers, but there are limits.
+Vacuum enclosures place a constraint, only broken with significant expenditures, on the size of optical tables and mirror suspensions and therefore on mirror mass.
+This indirectly limits laser power through the SQL.
+Laser power, however, was not limited for this reason in initial and enhanced LIGO.
+In practice, thermal distortion of the test masses was a worse problem~\cite{BallmerThesis}.
+Absorption, both in the bulk of the fused silica substrate and in the HR coatings, of a few parts per million was sufficient to distort the radius of curvature of the Fabry-Perot cavities.
+While managed with a $\textup{CO}_2$ laser-driven thermal compensation system (supplemented with ring heaters in aLIGO), this thermal distortion remains a serious concern.
+
+Having an alternative to increased mirror size and laser power would grant flexibility.
+Hence squeezing: the standard quantum limit can be achieved through another means.
+
 
         \subsection{Quantum shot noise and radiation pressure}
         \label{quantum_noise}
