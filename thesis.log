@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  11 SEP 2014 22:57
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  11 SEP 2014 23:24
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -969,20 +969,24 @@ File: Squeezer_High_Leg_Spool_Spacer_2010-12-23_aluminum.eps Graphic file (type
  eps)
 
 <Squeezer_High_Leg_Spool_Spacer_2010-12-23_aluminum.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 169
+Overfull \hbox (49.88899pt too wide) detected at line 176
 \OT1/cmr/m/n/10 Figure 4.1: []
  []
 
-[95] [96]
+[95]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [96]
 File: lisabar-1289966130.eps Graphic file (type eps)
- <lisabar-1289966130.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 216
+
+<lisabar-1289966130.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 223
 \OT1/cmr/m/n/10 Figure 4.2: []
  []
 
 File: lisabar-1300943141.eps Graphic file (type eps)
 <lisabar-1300943141.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 223
+Overfull \hbox (49.88899pt too wide) detected at line 230
 \OT1/cmr/m/n/10 Figure 4.3: []
  []
 
@@ -990,19 +994,15 @@ File: range_integrand.eps Graphic file (type eps)
 <range_integrand.eps>
 File: range_integrand_difference.eps Graphic file (type eps)
  <range_integrand_difference.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 245
+Overfull \hbox (49.88899pt too wide) detected at line 252
 \OT1/cmr/m/n/10 Figure 4.5: []
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2103) has occurred while \output is active []
 
  [97]
-[98]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [99]
-[100]) [101]
+[98] [99] [100]) [101]
 CHAPTER V.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1651,4 +1651,4 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  35i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (195 pages, 815008 bytes).
+Output written on thesis.dvi (195 pages, 816236 bytes).

@@ -64,14 +64,14 @@
 \contentsline {section}{\numberline {4.2}LIGO Hanford Observatory quantum vacuum squeezing}{95}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Collaboration and contributions}{95}{subsection.4.2.1}
 \contentsline {subsubsection}{Optical table support assembly}{95}{section*.2}
-\contentsline {subsubsection}{Faraday isolator measurement}{95}{section*.3}
-\contentsline {subsubsection}{In-vacuum installation}{95}{section*.4}
+\contentsline {subsubsection}{Faraday isolator measurement}{96}{section*.3}
+\contentsline {subsubsection}{In-vacuum installation}{97}{section*.4}
 \contentsline {subsubsection}{Data digitization}{97}{section*.5}
-\contentsline {subsection}{\numberline {4.2.2}Squeezing's scientific benefit}{99}{subsection.4.2.2}
-\contentsline {subsubsection}{Figures of merit: inspiral range}{99}{section*.6}
+\contentsline {subsection}{\numberline {4.2.2}Squeezing's scientific benefit}{97}{subsection.4.2.2}
+\contentsline {subsubsection}{Figures of merit: inspiral range}{97}{section*.6}
 \contentsline {section}{\numberline {4.3}Squeezing large interferometers}{100}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Success and Advanced LIGO prospects}{100}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Squeezing summary}{100}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}Squeezing summary}{101}{subsection.4.3.2}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf TwoSpect: Search for a Simulated Scorpius X-1}}{102}{chapter.5}
 \hbox { }
