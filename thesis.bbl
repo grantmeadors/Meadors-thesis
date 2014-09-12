@@ -788,6 +788,10 @@ C.P. Snow.
 \newblock {\em The two cultures; with an introduction by {S}tefan {C}ollini}.
 \newblock Cambridge, Cambridge, 1993.
 
+\bibitem{Takahashi1965}
+H.~Takahashi.
+\newblock {\em Adv. {C}ommun. {S}yst.}, 1(227), 1965.
+
 \bibitem{taylor}
 J.R. Taylor.
 \newblock {\em Introduction to error analysis: the study of uncertainties in
@@ -836,6 +840,11 @@ R.V. Wagoner.
 S.~Waldman and S.~Chua.
 \newblock eligo hanford output mode cleaner repair.
 \newblock Technical Report T1100562, LIGO, 2011.
+
+\bibitem{Walls1983}
+D.F. Walls.
+\newblock Squeezed states of light.
+\newblock {\em Nature}, 306:141--146, 1983.
 
 \bibitem{Weber1960}
 J.~Weber.

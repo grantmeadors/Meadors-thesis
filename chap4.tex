@@ -36,6 +36,11 @@ The latter equation shows that the optimal power rises as $1/\sqrt{\tau}$, that 
 Higher laser power improves high frequency sensitivity, high mirror mass improves low frequency performance.
 Combined, these formulae imply that an interferometer should be built with the largest, most massive mirrors and most powerful lasers practicable.
 
+        \subsection{Problems with lasers: thermal compensation}
+        \label{TCS}
+
+            %Experience (some firsthand) with thermal compensation.
+
 LIGO and its allied interferometers do try to operate with massive optics and powerful lasers, but there are limits.
 Vacuum enclosures place a constraint, only broken with significant expenditures, on the size of optical tables and mirror suspensions and therefore on mirror mass.
 This indirectly limits laser power through the SQL.
@@ -90,29 +95,43 @@ Trying to reduce optimal power by orders of magnitude is unlikely to occur any t
 Squeezing is an addition, not a replacement.
 Yet the squeeze beam still must be physically generated, and this along with optical losses in the interferometer prove a much more significant challenge than theoretical constraints.
 
+%Squeezed state made with
+%optical parameter oscillator, 2nd harmonic generator
+Squeezing can be physically generated through the use of an optical parametric oscillator (OPO).
+Optical parameteric amplifiers, including an OPO, involve a nonlinear optical medium that is pumped with an electromagnetic wave at $\omega_p$.
+An OPO~\cite{Caves1981} is an optical parametric amplifier for which the output `signal' (at $\omega_s$) and `idler' (at $\omega_i$) beams\footnote{The nomenclature is historical, sometimes distinguished by $\omega_s\geq\omega_i$. After alignment is complete, the output beams contain no power by design.} are degenerate (for any amplifier they satisfy $\omega_s + \omega_i$ = $\omega_p$, the input, pump frequency).
+As Takahashi noted~\cite{Takahashi1965} (and others, see Wall for a review~\cite{Walls1983}), a degenerate amplifier will transform a coherent state into a state with unequal uncertainties in its two quadratures, to wit, phase and amplitude.
 
-Squeezed state made with
-optical parameter oscillator, 2nd harmonic generator
+By placing a degenerate amplifier in cavity resonant at $\omega_s$, the amplifier becomes an optical parameter \textit{oscillator}, with high effective interaction length and thus squeeze factor.
+Nonlinear media come in many varieties, but the material used in LIGO squeezing experiments (as in this chapter) has typically been PPKTP (periodically-poled potassium titanyl phosphate).
+For an effective second-order nonlinear susceptability $d$, pump electric field amplitude $E_p$, effective interaction length $L$, and index of refraction at the signal frequency $n_s$, the amount of squeezing is~\cite{Caves1981},
 
+\begin{equation}
+r = \left(\frac{4\pi \omega_s L}{c n_s} \right) d |E_p|.
+\label{how_much_squeezing}
+\end{equation} 
 
+\noindent One caveat: the pump must be phase matched to the main laser (at $\omega$) of the overall interferometer.
+This is usually accomplished (as at the Hanford experiment) with a small beamsplitter siphoning a portion of the laser (then, at Hanford, through a polarization-preserving fiber) and directing it to a second harmonic generator (SHG), which yielded $\omega_p = 2\omega$.
+SHGs themselves operate using non-linear crystals to frequency-double incident laser light.
 
+A heuristic understanding\footnote{Popularized by Daniel Sigg.} of the OPO (when $\omega_p = 2\omega)$ is that a vacuum fluctuation $\epsilon$ at $A e^{i\omega_\epsilon t + \phi_\epsilon}$ couples to the pump and so induces a second beam at amplitude $A e^{i\left(2\omega - (\omega_\epsilon t + \phi_\epsilon)\right)}$.
+The superposition of these two beams has amplitude $\approx 2 A$ but phase $\approx (\phi_\epsilon - \phi_\epsilon)$, \textit{i.e.}, the ampltitude fluctuations (radiation pressure) have increased but the phase fluctuations (shot noise) have been reduced.
 
+Demonstrated first at GEO600~\cite{GEO600NatureSqueezing} then on H1 at the LIGO Hanford Observatory~\cite{BarsottiNatureSqueezing}, squeezing is now a proven technique.
+At Hanford, the subject of this chapter, 2.15 dB of squeezing (28\%, equivalent to a 64\% increase in laser power~\cite{BarsottiNatureSqueezing}) was achieved with the combined efforts of Sheila Dwyer, Sheon Chua, Lisa Barsotti, Matt Evans, Keita Kawabe, Daniel Sigg, Conor Mow-Lowry, Alexander Khalaidovski, Maxim Factourovich, Nicol\'{a}s Smith-Lefebvre, Robert Schofield, Mike Landry, Cheryl Vorvick, and Richard Gustafson.
+The squeezing experiment was well-received by the entire staff\footnote{Quite busy themselves with Advanced LIGO installation.} of Hanford Observatory, to whom the squeezers were grateful.
+This success encourages development of a production-quality squeezed light source for a future upgrade to Advanced LIGO, along the lines of Section~\ref{third-gen_squeezing}.
+Squeezed light should increase aLIGO's performance and could prove critical to its successors, especially should they operate at cryogenic temperatures.
 
 %\end{definition}
-\begin{itemize}
-\item Demonstrated first at GEO 600, then LIGO Hanford (H1)\end{itemize}
-
-
-
-
-
-        \subsection{Problems with lasers: thermal compensation}
-        \label{TCS}
-
-            Experience (some firsthand) with thermal compensation.
+%\begin{itemize}
+%\item Demonstrated first at GEO 600, then LIGO Hanford (H1)\end{itemize}
 
         \subsection{Squeezing filter cavities against alternatives}
         \label{third-gen_squeezing}
+
+Equation~\ref{squeeze_operator_caves} includes an angle $\omega$. When $\zeta$ is positive, squeezing is generated and phase fluctuations diminish, as discussed above. The converse, $\zeta$ negative, yields anti-squeezing, where amplitude fluctuations are smaller. The benefits
 
     \section{LIGO Hanford Observatory quantum vacuum squeezing}
     \label{LHO_squeeze}
