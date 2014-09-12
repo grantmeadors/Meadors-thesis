@@ -288,6 +288,8 @@ Measurements began.
 %\begin{frame}{Squeezing's scientific benefit}
 \subsection{Squeezing's scientific benefit}
 
+Squeezing worked in spite of optical losses, did not make the interferometer worse, and in fact increased shot noise limited performance by over 2 dB~\cite{BarsottiNatureSqueezing}.
+The benefits translate directly into measurement scientific benefits.
 
 \begin{figure}
 \begin{center}
@@ -307,44 +309,65 @@ Measurements began.
 \end{center}
 \end{figure}
 
-
-
-
             \subsubsection{Figures of merit: inspiral range}
             \label{range_est}
+                %Range estimation after squeezing
 
+As noted in Chapter~\ref{chap3}, gravitational wave interferometers are regularly characterized by their inspiral range~\cite{FinnInspiral1993}.
+This figure of merit integrates the gravitational wave strain spectrum into a single number: the distance to which a pair of 1.4 solar mass neutron stars (canonically, with average orientation and sky location and a signal-to-noise ratio of 8, although definitions differ) could be detected if they inspiralled together:
 
-                Range estimation after squeezing
+\begin{equation}
+F_{7/3} = \int_{f_l}^{f_h} \left[f^{7/3} h^2(f) \right] df,
+\label{f-seven-thirds-squeezing}
+\end{equation}
+\begin{equation}
+R = \Theta \left( \frac{5 c^{1/3} M_\textup{ch}^{5/3} F_{7/3}}{96 \pi^{4/3} \textup{SNR}_0} \right)^{1/2} L,
+\label{inspiral_range_squeezing}
+\end{equation}
 
-		From the improved shot noise, we can see that squeezing at high frequencies bought enhanced LIGO a megaparsec of inspiral range. This number is impressive in several respects: our goal was to acheive a squeezing factor of perhaps as much as 3 dB, but to do it in the shot noise-limited region, at high frequencies, where the inspiral range equations (MATH: add the inspiral range equation if not already shown for feedforward!) count for much less. Morever, that range figure reflects the acheivement of squeezing down to 150 Hz, which is the lowest yet achieved for a gravitational wave interferometer, as can be seen in the Nature Photonics paper~\cite{BarsottiNatureSqueezing}
+\noindent where R is inspiral range in kiloparsec, $f$ is frequency, $h$ the strain sensitivity as a function of frequency, $\Theta$ is a correction factor of $1.77$ for orientation and sky location, $c$ is the speed of light, $M_\textup{ch} = G c^{-2} M_\textup{sun} (M_1 M_2)^{3/5} (M_1+M_2)^{-1/5}$ is the chirp mass of two stars with masses $M_1 = M_2 = 1.4 M_\textup{sun}$, $F_{7/3}$ is as defined in Equation~\ref{f-seven-thirds-squeezing}, $\textup{SNR}_0$ is typically 8, and $L$ is the interferometer length in meters.
+The range integrand in Equation~\ref{f-seven-thirds-squeezing} can itself be multiplied by the external coefficients in Equation~\ref{inspiral_range_squeezing} to yield a plot of the contribution of each frequency band to the scientific performance of the interferometer, as in Figure~\ref{squeezing_range_integrand}.
+Taking the difference of before- and after-squeezing shows where squeezing yielded improvement -- and demonstrates that it did not seriously degrade interferometer performance\footnote{For additional plots in the log, \url{http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detector&date_to_view=11/30/2011&anchor_to_scroll_to=2011:11:30:12:54:18-gmeadors}\\feedforward MICH correction was attempted but unneeded, as detailed also, \url{http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detector&date_to_view=12/02/2011&anchor_to_scroll_to=2011:12:02:15:06:38-gmeadors}.}.
 
+		From the improved high frequency shot noise, we can see that squeezing bought Enhanced LIGO a megaparsec of inspiral range. 
+This number is impressive in several respects: our goal was to acheive a squeezing factor of perhaps as much as 3 dB, but to do it in the shot noise-limited region, at high frequencies, where the inspiral range equations 
+ count for much less. 
+%(MATH: add the inspiral range equation if not already shown for feedforward!)
+The range integrand shows squeezing down to 150 Hz, which is the lowest yet achieved for a gravitational wave interferometer, as can be seen in the Nature Photonics paper~\cite{BarsottiNatureSqueezing}.
+Squeezing such low frequencies brings most of the inspiral range improvement.
+In all, the squeezer experiment added about another five percent to H1's range, but also something more significant: prospects for enhancing gravitational wave interferometers beyond the standard quantum limit. 
 
-\section{Squeezing large interferometers}
+\section{Squeezing large interferometers: success and prospects}
+\label{squeezing_success}
 
-        \subsection{Success and Advanced LIGO prospects}
-        \label{squeezing_success}
-            Results and hopes for aLIGO+ squeezing.
+        %\subsection{Success and Advanced LIGO prospects}
+            %Results and hopes for aLIGO+ squeezing.
 
-	    The squeezer group has a paper pending in review for Nature, written by Lisa Barsotti, in which we discuss our acheivement of perhaps 2 dB worth of squeezing (need to cite and check whether it is OK to use this number)~\cite{BarsottiNatureSqueezing}. It builds on the previous success of GEO600 in squeezing~\cite{GEO600NatureSqueezing}.
+	    Over 2 dB of squeezing were achieved by the LIGO Hanford squeezing experiment on H1~\cite{BarsottiNatureSqueezing}. Building on the previous success of GEO600~\cite{GEO600NatureSqueezing}, squeezing is now a mature technique that we hope to incorporate into LIGO permanantly as soon as it is feasible.
+Publications by Dwyer~\cite{DwyerPhaseNoise} and Chua~\cite{ChuaBackscatteredLight} detail the remaining hurdles.
+Dwyer notes that quadrature phase noise will become increasingly significant as losses are reduced, particularly for filter cavities.
+Chua proposes a path toward reduced backscattered light noise.
+% since I am an author on both of them. We have a preliminary understanding now of at least two major problems: the quadrature phase noise fluctatuations and backscattered light. Backscattered light can be resolved in several ways. Phase noise must be progressively improved, as Sheila discusses, because we can hope to acheive the mature filter cavity design proposed below.
+As we develop an understanding of these two principal problems, work at MIT is progressing (led by Tomoki Isogai) on realizing a filter cavity suitable for the LIGO frequency band.
+With it, future interferometers will be able to introduce frequency-dependent squeezing to finally reduce, not just shot noise, but radiation pressure as well, below the standard quantum limit.
+If all else works, gravitational wave interferometers may soon be able to detect a wide variety of astrophysically interesting sources.
 
-	    Discuss Sheila Dwyer's~\cite{DwyerPhaseNoise} and Sheon Chua's~\cite{ChuaBackscatteredLight} papers, since I am an author on both of them. We have a preliminary understanding now of at least two major problems: the quadrature phase noise fluctatuations and backscattered light. Backscattered light can be resolved in several ways. Phase noise must be progressively improved, as Sheila discusses, because we can hope to acheive the mature filter cavity design proposed below.
-
-Discuss Lisa Barsotti's talk about the future prospect for LIGO using filter cavities, work that Tomoki Isogai is doing. With filter cavities, we can acheive frequency-dependent squeezing, having the best of both works by reducing quantum radiation pressure noise at low frequencies and shot noise at high, by using the filter cavity to produce a squeezed vacuum with a squeeze angle that varies as a function of frequency. Though as yet this filter cavity has yet to be constructed, it is in the works at MIT.
+%Discuss Lisa Barsotti's talk about the future prospect for LIGO using filter cavities, work that Tomoki Isogai is doing. With filter cavities, we can acheive frequency-dependent squeezing, having the best of both works by reducing quantum radiation pressure noise at low frequencies and shot noise at high, by using the filter cavity to produce a squeezed vacuum with a squeeze angle that varies as a function of frequency. Though as yet this filter cavity has yet to be constructed, it is in the works at MIT.
 
 % Everything below is imported from my AEI talk
 
 %\end{frame}
 
 %\begin{frame}{Squeezing summary}
-\subsection{Squeezing summary}
+%\subsection{Squeezing summary}
 
-\begin{description}
-\item [{Instrumental}] experience with technique important beyond Advanced
-LIGO
-\item [{Physical}] way to improve broad band of LIGO, benefit many searches
-\item [{Illustrates}] need for best sensitivity at few hundred Hz
-\item [{Question}] what can we improve \emph{post-facto?}
-\end{description}
+%\begin{description}
+%\item [{Instrumental}] experience with technique important beyond Advanced
+%LIGO
+%\item [{Physical}] way to improve broad band of LIGO, benefit many searches
+%\item [{Illustrates}] need for best sensitivity at few hundred Hz
+%\item [{Question}] what can we improve \emph{post-facto?}
+%\end{description}
 %\end{frame}
 
 

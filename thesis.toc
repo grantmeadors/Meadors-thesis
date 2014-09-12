@@ -68,10 +68,8 @@
 \contentsline {subsubsection}{In-vacuum installation}{100}{section*.4}
 \contentsline {subsubsection}{Data digitization}{101}{section*.5}
 \contentsline {subsection}{\numberline {4.2.2}Squeezing's scientific benefit}{101}{subsection.4.2.2}
-\contentsline {subsubsection}{Figures of merit: inspiral range}{101}{section*.6}
-\contentsline {section}{\numberline {4.3}Squeezing large interferometers}{103}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Success and Advanced LIGO prospects}{103}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Squeezing summary}{104}{subsection.4.3.2}
+\contentsline {subsubsection}{Figures of merit: inspiral range}{103}{section*.6}
+\contentsline {section}{\numberline {4.3}Squeezing large interferometers: success and prospects}{104}{section.4.3}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf TwoSpect: Search for a Simulated Scorpius X-1}}{105}{chapter.5}
 \hbox { }
