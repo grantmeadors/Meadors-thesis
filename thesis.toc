@@ -47,13 +47,13 @@
 \contentsline {subsection}{\numberline {3.4.1}Calibration integrity}{61}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Runtime safeguards}{63}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Post-processing safeguards}{63}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Feedforward with MICH and PRC channels}{68}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Filter fitting across science segments}{68}{subsection.3.5.1}
-\contentsline {section}{\numberline {3.6}Results of feedforward}{70}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Post-processing diagnostics}{70}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Feedforward benefits and potential}{75}{subsection.3.6.2}
-\contentsline {section}{\numberline {3.7}Conclusion}{75}{section.3.7}
-\contentsline {section}{\numberline {3.8}Postscript}{81}{section.3.8}
+\contentsline {section}{\numberline {3.5}Feedforward with MICH and PRC channels}{69}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Filter fitting across science segments}{69}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}Results of feedforward}{72}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Post-processing diagnostics}{72}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Feedforward benefits and potential}{72}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}Conclusion}{80}{section.3.7}
+\contentsline {section}{\numberline {3.8}Postscript}{82}{section.3.8}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf IV.\hspace {5pt}}{\bf Squeezing: Quantum Vacuum Phase Noise}}{89}{chapter.4}
 \hbox { }
