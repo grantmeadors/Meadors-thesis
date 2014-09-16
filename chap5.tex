@@ -79,7 +79,7 @@ Insofar as the infall stream continues, the NS can be `spun-up' to rotation freq
 
 Spin-up might proceed, as Wagoner in particular derives, only up to a specific frequency.
 In this \textit{torque balance} hypothesis, the matter infall delivers a torque offset by GW emission; since GW emission rises with frequency squared, an NS that is spinning up due to accretion will eventually reach a limiting frequency beyond which GW emission prevents it from spinning faster.
-This idea connect accretion rate with GW emission.
+This idea connectis accretion rate with GW emission.
 Since accretion rate can be measured electromagnetically, in X-ray flux $F_\times$, this lets us estimate what level of GW emission could be expected for a star rotating at frequency $\nu$ (Equation~\ref{torque_bal_eq}): 
 
 \begin{equation}
@@ -87,6 +87,8 @@ h_{0}=5\times10^{-27}\left(\frac{300\textup{Hz}}{\nu}\right)^{1/2}\left(\frac{F_
 \label{torque_bal_eq}
 \end{equation}
 
+\noindent Torque-balanced neutron stars would remain at their torque-balance frequency: accretion would counteract spindown.
+This frequency stationarity is computationally useful.
 
             \subsection{Detection rate projections}
             \label{rate_projections}
@@ -99,74 +101,48 @@ It is difficult to infer how many sources might exist, but over 50 accretion-pow
 Known, especially-promising sources such as Scorpius X-1 warrant scrutiny with a deeper, \textit{directed search} over their known parameter space.
 Such searches are the purpose of TwoSpect.
 
-        \section{TwoSpect all-sky searches}
+        \section{TwoSpect searches}
         \label{all-sky}
 
-        General philosophy: LIGO continuous wave searches are matched filters, like inspiral searches. However, though the filter is easier (compared to the inspiral waveform) to calculate, the computational challenge is much harder (since we usually integrate over a longer timespan, compensating for weaker signals). Matched filtering a binary pulsar search in the time-domain, with complete phase information, would be computationally intractable in the early 2010s. However, by switching the problem to the frequency domain, and using power instead of amplitude, the search becomes feasible, albeit at a cost in sensitivity -- the detectable strain $h$ scales only as $T^{1/4}$ instead of $T^{1/2}$ for a coherent search.
+TwoSpect offers a way to calculate a statistic and infer detection probability for a putative template waveform of a neutron star emitting continuous GW in a binary system.
+LIGO CW searches generally use matched filters, like inspiral searches. 
+Although the filter is easier than the inspiral waveform to calculate, the net computational cost is much higher, since integration covers a longer timespan, compensating for weaker signals. 
+Matched filtering a binary pulsar search in the time-domain, with complete phase information, appears be computationally intractable for terascale computer clusters in the early 2010s. 
+By switching the problem to frequency domain power instead of amplitude, the search becomes feasible, albeit at a cost in sensitivity.
 
-            TwoSpect methods as-is. These are described in detail in Evan Goetz's thesis~\cite{GoetzThesis}. Note that the code is located on the web freely accessible in the LALApps repository~\cite{LALAPPSrepo}.
+TwoSpect performs two transforms: it first parcels a science run (year-scale) into overlapping short Fourier Transforms (SFTs, hour-scale or less).
+SFT frequency bins for a given data stretch are then adjusted to the frequency at the solar system barycenter, accounting for Doppler shifting that would be induced at the sky location, frequency, and time under investigation.
+Each row of constant-barycentered frequency bins is then treated as a time series.
+That time series is then Fourier transformed too -- the two in TwoSpect.
+This transformed yields a plane of pixels: the frequency-prime $f'$ vs frequency $f$ plane.
+Goetz~\cite{GoetzThesis} developed this technique in the context of GW.
+The plane of pixels provides a tractable data set on which binary CW templates can be tested.
 
-For primers on error analysis and statistics, see Taylor~\cite{taylor} as well as Casella and Berger~\cite{CasellaBerger2001}.
+Detectable strain $h$ scales poorly with time, $T^{1/4}$, due to the double transform, instead of $T^{1/2}$ for a coherent search, but matched templating techniques are powerful enough that being able to use them is promising.
+Goetz developed a noise-subtracted $R$-statistic to measure the cumulative power in each binary CW template.
+This statistic follows a distribution as the sum of many $\chi$-squared distributions (see Taylor~\cite{taylor} as well as Casella and Berger~\cite{CasellaBerger2001} for statistical reference) and yields consistent $p$-values.
+These $p$-values can be extrapolated from Davies' method, having been vetted by Monte Carlo~\cite{GoetzTwoSpectMethods2011}.
+By providing these statistics, TwoSpect yields information on a large fraction of parameter space heretofor unsearchable.
+
+%            TwoSpect methods as-is. These are described in detail in Evan Goetz's thesis~\cite{GoetzThesis}. %Note that the code is located on the web freely accessible in the LALApps repository~\cite{LALAPPSrepo}.
+
+%For primers on error analysis and statistics, see Taylor~\cite{taylor} as well as Casella and Berger~\cite{Ca%sellaBerger2001}.
 
             \subsection{Two spectra: a double Fourier transform}
             \label{two_spectra}
 
-                'Two spectra' -- FFT of periodograms reveals modulation of sine waves.
+       %         'Two spectra' -- FFT of periodograms reveals modulation of sine waves.
 
-            \subsection{Infering neutron stars with companions}
-            \label{inference}
- 
-                Infer whether modulation is due to a companion star.
-
-
-
-%\begin{frame}{TwoSpect algorithm for all-sky binary searches}
-\subsection{TwoSpect algorithm for all-sky binary searches}
-
-
-\textbf{TwoSpect} (Goetz \& Riles 2011) searches for patterns in
-
-
-doubly Fourier-transformed data from binary's orbital modulation
-
-
-\emph{doubly Fourier-transformed:} $k$ frequency bins, time series
-$n$
-
-
-Short Fourier Transform series, along $n$, is FFT'd 
-
-
-\begin{equation}
-R=\frac{\Sigma_{i=0}^{M-1}w(m_{i})[Z(m_{i})-\lambda(m_{i})]}{\Sigma_{i=0}^{M-1}[w(m_{i})]^{2}}
-\label{TwoSpect_R_statistic}
-\end{equation}
-
-
-
-$R$: template detection statistic
-$w$: template weight
-$i$: pixel index of $M$ pixels
-$Z$: spectral power (after barycentric correction)
-$\lambda$: expected noise power
-$\rightarrow$ E. Goetz wrote, conducting all-sky search
-
-%\end{frame}
-
-
-% Everything below is imported from my APS and AEI talks (harmonized)
-
-\begin{itemize}
-\item Near term: direct binary searches toward promising targets
-\item Long term: enhance all searches, start age of astronomy
-\item TwoSpect binary searches -- directed, Sco X-1
-\end{itemize}
-
+The double-Fourier transform is illustrated in Figures~\ref{tfplane-figure} and~\ref{ffplane-figure}.
+Existing LIGO routines perform the steps needed to generate the first figure: SFTs are made in pre-processing and then barycentered.
+TwoSpect then re-invokes the Fast Fourier Transform routines to transform the frequency vs time plane into a frequency vs frequency-prime plane.
+Although GW phase information is lost (and, for now, templates ignore orbital phase), the resulting search domain is robust against spin wandering.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\paperwidth,height=0.4\paperheight]{tfplane-4e21-on-4e24.eps}
 \caption{After Doppler-shifting the frequencies into the solar system barycenter, TwoSpect analyses begin on this first, time-frequency plane. A simulated signal at 100.015 Hz and $\textup{asini} = 1.44$ is injected with $h_0 = 4\times 10^{-21}$ into $10^6$ seconds of Gaussian noise at $Sh = 4 \times 10^{-24}$ (the projected minimum Advanced LIGO noise level); the signal period is 68023.8259 seconds, as with Scorpius X-1.}
+\label{tfplane-figure}
 \end{center}
 \end{figure}
 
@@ -174,13 +150,61 @@ $\rightarrow$ E. Goetz wrote, conducting all-sky search
 \begin{center}
 \includegraphics[width=0.8\paperwidth,height=0.4\paperheight]{ffplane-4e21-on-4e24.eps}
 \caption{Fourier-transforming along the `rows' (constant frequency bin, variable time bin) generate a second plane, the frequency-frequency plane. The power of each bin in this transform is plotted as a pixel. By aggregating power, this second Fourier transform enhances signal so that matched templates can be applied for a search.}
+\label{ffplane-figure}
 \end{center}
 \end{figure}
+
+            \subsection{Infering neutron stars with companions}
+            \label{inference}
+ 
+                %Infer whether modulation is due to a companion star.
+With the search domain prepared, templates can be tested.
+The modulation induced by LMXB partners on their NS companions is typically fractions of a Hertz.
+Modulation depth is, more precisely~\cite{GoetzTwoSpectMethods2011},
+
+\begin{equation}
+\Delta f = \frac{2 \pi f (a \sin i)}{P},
+\label{TwoSpect_mod_depth}
+\end{equation}
+
+\noindent where in $f$ is GW emission frequency, $a \sin i$ is projected semi-major axis, and $P$ is orbital period.
+Equation~\ref{TwoSpect_mod_depth} specifies the amplitude of the sinusoid seen in Figure~\ref{tfplane-figure}, though it must be noted again that it is the power of the transform of that sinusoid in Figure~\ref{ffplane-figure} that is actually template-tested.
+
+
+%\begin{frame}{TwoSpect algorithm for all-sky binary searches}
+\subsection{TwoSpect algorithm detection statistic}
+
+%TwoSpect (Goetz \& Riles 2011), supplied this  searches for patterns in
+%doubly Fourier-transformed data from binary's orbital modulation
+%\emph{doubly Fourier-transformed:} $k$ frequency bins, time series
+%$n$
+%Short Fourier Transform series, along $n$, is FFT'd 
+
+Template-testing proceeds from a given test frequency $f$, modulation depth $\Delta f$ (via astrophysical $a \sin i$), and period $P$ using data prepared for some sky location. Having a time series $n$ SFTs long with $k$ frequency bins, a template weight can be computated for a number of pixels $M < n*k$.
+Applying these weights yields the $R$-statistic:
+
+\begin{equation}
+R=\frac{\Sigma_{i=0}^{M-1}w(m_{i})[Z(m_{i})-\lambda(m_{i})]}{\Sigma_{i=0}^{M-1}[w(m_{i})]^{2}},
+\label{TwoSpect_R_statistic}
+\end{equation}
+
+\noindent where
+\begin{itemize}
+\item $R$: template detection statistic
+\item $w$: template weight
+\item $i$: pixel index of $M$ pixels
+\item $Z$: spectral power (after barycentric correction)
+\item $\lambda$: expected noise power
+\end{itemize}
+%$\rightarrow$ E. Goetz wrote, conducting all-sky search
+%\end{frame}
+% Everything below is imported from my APS and AEI talks (harmonized)
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{R-4e21-on-4e24.eps}
 \caption{Exact templates for putative singals weight the pixels in the frequency-frequency plane to generate $R$ statistic for a simulated pulsar (note: not the same as pulsar $40$ in the Scorpius X-1 mock data challenge) at 100.015 Hz and $\textup{asini} = 1.44$. The resulting $R$ values are heatmap-plotted on the modulation depth vs frequency plane.}
+\label{inj_R_statistic}
 \end{center}
 \end{figure}
 
@@ -188,8 +212,16 @@ $\rightarrow$ E. Goetz wrote, conducting all-sky search
 \begin{center}
 \includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{Prob-4e21-on-4e24.eps}
 \caption{The Davies algorithm translates $R$ statistic values for exact templates into (single-template) $p$-values, plotted on the modulation depth vs frequency plane.}
+\label{inj_log10p}
 \end{center}
 \end{figure}
+
+Testing various template models against simulated neutron stars in binary systems shows the value of $R$-statistic.
+Figure~\ref{inj_R_statistic} shows that the statistic responds markedly when the input template values match the simulated `injection' sufficiently well.
+The sharp response assures accurate parameter estimation.
+Furthermore, Monte Carlo simulations by Goetz quantify the probability of high $R$ statistics arising in noise.
+Using generating functions and Davies' method, this probability has already been incorporated into a single-template $p$-value, seen in figure~\ref{inj_log10p}.
+Further, multi-trial Monte Carlo studies done by the author have validated the probability of $R$- and $p$-values arising in noise.
 
 
 %\end{frame}
@@ -630,6 +662,12 @@ TwoSpect currently estimates $f$ and $a \sin i$ limited by the accuracy of its g
 \item Pursuing real Scorpius X-1 (and J1751-305) searches soon
 \item Directed binary searches can be more sensitive with straightforward
 changes
+\end{itemize}
+
+\begin{itemize}
+\item Near term: direct binary searches toward promising targets
+\item Long term: enhance all searches, start age of astronomy
+\item TwoSpect binary searches -- directed, Sco X-1
 \end{itemize}
 
 %\emph{Acknowledgments}
