@@ -94,18 +94,18 @@
 \contentsline {subsection}{\numberline {5.5.3}Parameter Estimation}{126}{subsection.5.5.3}
 \contentsline {subsection}{\numberline {5.5.4}Upper Limits and Detection Efficiency}{127}{subsection.5.5.4}
 \contentsline {subsection}{\numberline {5.5.5}$\qopname \relax o{cos}\iota $ Ambiguity}{131}{subsection.5.5.5}
-\contentsline {section}{\numberline {5.6}Plans for improvement}{136}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Potential follow-up}{137}{subsection.5.6.1}
-\contentsline {section}{\numberline {5.7}Summary}{137}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Mock data challenge results}{137}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {5.7.2}Binary search summary beyond the MDC}{138}{subsection.5.7.2}
-\contentsline {section}{\numberline {5.8}Addendum}{138}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}Scorpius X-1 parameters}{138}{subsection.5.8.1}
-\contentsline {subsection}{\numberline {5.8.2}Polarization addendum}{139}{subsection.5.8.2}
-\contentsline {subsection}{\numberline {5.8.3}Coherent interferometer synthesis}{139}{subsection.5.8.3}
-\contentsline {subsection}{\numberline {5.8.4}Circular \& elliptical polarization}{139}{subsection.5.8.4}
-\contentsline {subsection}{\numberline {5.8.5}Orbital phase \& beyond}{140}{subsection.5.8.5}
-\contentsline {subsection}{\numberline {5.8.6}Parameter space patterns}{141}{subsection.5.8.6}
+\contentsline {section}{\numberline {5.6}Summary of the MDC}{136}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Mock data challenge results}{136}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Binary search summary beyond the MDC}{137}{subsection.5.6.2}
+\contentsline {section}{\numberline {5.7}Plans for improvement}{137}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Potential follow-up}{138}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}Polarization addendum}{138}{subsection.5.7.2}
+\contentsline {subsection}{\numberline {5.7.3}Coherent interferometer synthesis}{139}{subsection.5.7.3}
+\contentsline {subsection}{\numberline {5.7.4}Circular \& elliptical polarization}{139}{subsection.5.7.4}
+\contentsline {subsection}{\numberline {5.7.5}Orbital phase \& beyond}{140}{subsection.5.7.5}
+\contentsline {subsection}{\numberline {5.7.6}Parameter space patterns}{140}{subsection.5.7.6}
+\contentsline {section}{\numberline {5.8}Addendum}{143}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Scorpius X-1 parameters}{143}{subsection.5.8.1}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Directed TwoSpect: Scorpius X-1 and XTE J1751-305}}{144}{chapter.6}
 \hbox { }
