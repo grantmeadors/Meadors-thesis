@@ -698,10 +698,14 @@ In the long term, this work will enhance all searches, the bridge of accreting b
 \section{Plans for improvement}
 %\begin{frame}{Plans for improvement}
 
+TwoSpect presents a viable obtion for seeking continuous gravitational waves from neutron stars in binary systems, yet more sensitivity would reveal a richer sky.
+Indeed, aLIGO designs and the Scorpius X-1 torque-balance limit do not guarantee detection in the coming generation of intereferometers.
+Several improvements can thus be investigated.
+
 \begin{itemize}
 \item \emph{Coherently combine multiple interferometer outputs: }\\
 Add complex Fourier coefficients (with phase corrections)\\
-to create a multi-detector statistic
+to create a multi-detector statistic (underway by Goetz)
 \item \emph{Elliptical polarization:}\\
 search antenna pattern weightings corresponding to\\
 elliptical polarization -- better sensitivity
@@ -712,69 +716,38 @@ template and doubly Fourier-transformed data
 Exploiting patterns in the $R$-statistic parameter space\\
 to improve search time, sensitivity, or both
 \end{itemize}
+
 %\end{frame}
-
-\subsection{Potential follow-up}
-
-TwoSpect currently estimates $f$ and $a \sin i$ limited by the accuracy of its grid-spacing and some noise fluctuations. More refined grid spacing is possible in the event of a detection, although this has not been studied. Determining $h_0$ with greater accuracy is impossible without knowing $\cos \iota$ by another means. In the future, knowledge of gravitational wave polarization angle might inform $\cos \iota$, and coherent combinations of detector data within TwoSpect might reduce noise in detected LMXBs, as well as making quieter sources detectable. 
-
-
-
 %\begin{frame}{Polarization addendum}
-\subsection{Polarization addendum}
-
-
-The general formula for the polarization components of gravitation radiation is well-known.
-Substituting $2\phi$ for $\Phi$ to conform with forthcoming TwoSpect publications, the equation is stated~\cite{AbbottScoX12007} in terms of two polarization components, $F_\times$ and $F_+$:
-
-\begin{equation}
-h(t)=h_{0} \left(F_{\times}(t,\alpha,\delta,\psi)\frac{1+\cos^{2}(\iota)}{2}\cos[\Phi(t)]+
-F_{+}(t,\alpha,\delta,\psi)\cos(\iota)\sin[\Phi(t)]\right)
-\label{TwoSpect_pol_effect}
-\end{equation}
+%\subsection{Polarization addendum}
 
 %Also: fastest known pulsar $f=$716 or 761 Hz(?)
 %\end{frame}
 
 %\begin{frame}{Coherent interferometer synthesis}
 \subsection{Coherent interferometer synthesis}
-
-
-\textbf{Coherent interferometer synthesis for H1-L1-V1 already well underway by Evan Goetz}
-
+Coherent interferometer synthesis for H1-L1-V1 is already well-underway by Goetz.
+Data from multiple interferometers can be added in-phase for a putative signal model, and this technique already appears to be yielding improvements in detection efficiency.
+To wit, the synthetized $h$ is given by Equation~\ref{TwoSpect_h_synth}:
 
 \begin{equation}
-h(f,t)=\Sigma_{j}\left(h_{j}(f,t)+\phi_{j}(f,\alpha,\delta)\right)
+h(f,t)=\Sigma_{j}\left(h_{j}(f,t)+\phi_{j}(f,\alpha,\delta)\right),
 \label{TwoSpect_h_synth}
 \end{equation}
-
-
-
 \begin{equation}
-\phi_{j}(f,\alpha,\delta)=2\pi fT_{j}(\alpha,\delta)+\phi_{0}
+\phi_{j}(f,\alpha,\delta)=2\pi fT_{j}(\alpha,\delta)+\phi_{0},
 \label{TwoSpect_phase_synth}
 \end{equation}
 
-
-
-\emph{$h_{j}(f,t)$}: complex $h$ value in SFT for interferometer
-$j$, time $t$, frequency $j$
-
-
-$\phi_{j}(f,\alpha,\delta)$: phase shift for right ascension $\alpha$,
-declination $\delta$
-
-
-(overall phase shift $\phi_{0}$ factors out: 
-
-
-TwoSpect computes statistic from power)
-
-
-$T_{j}(\alpha,\delta)$: time-of-flight delay between interferometers 
-
-
-(projected on vector from $\alpha,\delta$)
+\noindent where $h_{j}(f,t)$ is the complex $h$ value in SFT for interferometer $j$, time $t$, frequency $j$ and
+$\phi_{j}(f,\alpha,\delta)$ is the phase shift for right ascension $\alpha$,
+declination $\delta$ 
+(an overall phase shift $\phi_{0}$ factors out because
+TwoSpect computes its test statistic from power, not the complex SFT coefficient).
+Here,
+$T_{j}(\alpha,\delta)$ is the time-of-flight delay between interferometers 
+(projected on vector from $\alpha,\delta$).
+Further investigations are forthcoming.
 
 %\end{frame}
 
@@ -782,41 +755,41 @@ $T_{j}(\alpha,\delta)$: time-of-flight delay between interferometers
 \subsection{Circular \& elliptical polarization}
 
 
-\textbf{TwoSpect circular polarization assumption generalized}
+%\textbf{TwoSpect circular polarization assumption generalized}
 
-
-Current algorithm calculates pixel powers $P$ for SFT $n$, bin $k$:
-
+The general formula for the polarization components of gravitation radiation is well-known.
+Substituting $2\phi$ for $\Phi$ to conform with forthcoming TwoSpect publications, the equation is stated~\cite{AbbottScoX12007} in terms of two polarization components, $F_\times$ and $F_+$:
 
 \begin{equation}
-\tilde{P}_{k}^{n}=\frac{F_{n}^{2}(P_{k}^{n}-<P_{k}>^{n})}{(<P_{k}>^{n})^{2}}\left[\Sigma_{n'}^{N}\frac{F_{n'}^{4}}{(<P_{k}>^{n'})^{2}}\right]^{-1}
-\label{TwoSpect_pixel_powers}
+h(t)=h_{0} \left(F_{\times}(t,\alpha,\delta,\psi)\frac{1+\cos^{2}(\iota)}{2}\cos[\Phi(t)]+
+F_{+}(t,\alpha,\delta,\psi)\cos(\iota)\sin[\Phi(t)]\right).
+\label{TwoSpect_pol_effect}
 \end{equation}
 
+Presently, TwoSpect effectively searches only for circular polarization, making it most sensitive when $\cos \iota = 1$.
+If antenna pattern weighting is adjusted to test for $F_\times$ and $F_+$ according to a general, elliptical polarization model, sensitivity to other values of $\cos \iota$ might hypothetically be enhanced.
+It remains unclear whether this test would be sufficient by itself to remove the $\cos \iota$ ambiguity in estimated $h_0$ if a detection is obtained.
+
+The current algorithm calculates pixel powers $P$ for SFT $n$, bin $k$:
+
 \begin{equation}
-F^{2}(t,\alpha,\delta)=F_{\times}^{2}(t,\alpha,\delta)+F_{+}^{2}(t,\alpha,\delta)
+\tilde{P}_{k}^{n}=\frac{F_{n}^{2}(P_{k}^{n}-<P_{k}>^{n})}{(<P_{k}>^{n})^{2}}\left[\Sigma_{n'}^{N}\frac{F_{n'}^{4}}{(<P_{k}>^{n'})^{2}}\right]^{-1},
+\label{TwoSpect_pixel_powers}
+\end{equation}
+\begin{equation}
+F^{2}(t,\alpha,\delta)=F_{\times}^{2}(t,\alpha,\delta)+F_{+}^{2}(t,\alpha,\delta),
 \label{TwoSpect_pol_powers}
 \end{equation}
 
-
-
-$F$: antenna pattern polarization weighting 
-
-
-as-is, assumes circular polarization
-
-
-Generalize to elliptical polarization angle $\psi$ with weights $a,b$:
-
+\noindent where $F$ is antenna pattern polarization weighting.
+Generalizing to elliptical polarization angle $\psi$ with weights $a,b$:
 
 \begin{equation}
 F^{2}(t,\alpha,\delta,\psi)=aF_{\times}^{2}(t,\alpha,\delta,\psi)+bF_{+}^{2}(t,\alpha,\delta,\psi)
 \label{TwoSpect_elliptical_pol}
 \end{equation}
 
-
-
-Better upper limits; inclination angle $\iota$?
+%Better upper limits; inclination angle $\iota$?
 
 %\end{frame}
 
@@ -872,6 +845,14 @@ Constructing the deconvolved plane should in principle yield the same informatio
 However, this approach needs to be tested.
 
 An \textit{ansatz} of the point spread function made by summing a given pixel with the appropriate nearby diagonal neighbors was coded as a toy model in Python, with the resulting heatmap indeed being more square and less $X$-shaped near the injection template. However, the signal-to-noise ratio (mean subtracted number of standard deviations at peak) was reduced by a factor of about $7/4$. This suggests more research into an appropriate kernel would be needed for this method to be a success, although in principle the additional information in the $X$ arms should contribute information to a search. 
+
+\subsection{Relevance to follow-up}
+
+TwoSpect currently estimates $f$ and $a \sin i$ limited by the accuracy of its grid-spacing and some noise fluctuations. 
+More refined grid spacing is possible in the event of a detection, although this has not been studied. 
+Determining $h_0$ with greater accuracy is impossible without knowing $\cos \iota$ by another means. 
+In the future, knowledge of gravitational wave polarization angle might inform $\cos \iota$, and coherent combinations of detector data within TwoSpect might reduce noise in detected LMXBs, as well as making quieter sources detectable. 
+
 
 
 \section{Addendum}
