@@ -74,21 +74,21 @@
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf TwoSpect: Search for a Simulated Scorpius X-1}}{105}{chapter.5}
 \hbox { }
 \contentsline {section}{\numberline {5.1}Neutron stars in binary systems}{105}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Continuous gravitational waves from neutron stars}{105}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Binary spin-up and detectable lifetime}{105}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.1}Continuous gravitational waves from neutron stars}{106}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Binary spin-up and detectable lifetime}{106}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Detection rate projections}{106}{subsection.5.1.3}
 \contentsline {section}{\numberline {5.2}TwoSpect all-sky searches}{106}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Two spectra: a double Fourier transform}{106}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Infering neutron stars with companions}{106}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}TwoSpect algorithm for all-sky binary searches}{106}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Directed TwoSpect's greater sensitivity}{107}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Sky maps using exact templates}{114}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Scorpius X-1 mock data challenge}{114}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Fully-templated search for Scorpius X-1}{114}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Narrow-band heat maps in parameter space}{114}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Wide-band heat maps in parameter space}{114}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Revisiting \& refining detection criteria}{114}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Mock Data Challenge procedure}{114}{section.5.5}
+\contentsline {subsection}{\numberline {5.2.1}Two spectra: a double Fourier transform}{107}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Infering neutron stars with companions}{107}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}TwoSpect algorithm for all-sky binary searches}{107}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Directed TwoSpect's greater sensitivity}{108}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Sky maps using exact templates}{113}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Scorpius X-1 mock data challenge}{113}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Fully-templated search for Scorpius X-1}{113}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Narrow-band heat maps in parameter space}{113}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Wide-band heat maps in parameter space}{113}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Revisiting \& refining detection criteria}{113}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Mock Data Challenge procedure}{113}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Detection Claims}{119}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}Detection criteria}{120}{subsection.5.5.2}
 \contentsline {subsection}{\numberline {5.5.3}Parameter Estimation}{120}{subsection.5.5.3}
