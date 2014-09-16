@@ -299,12 +299,15 @@ The rest of this chapter expounds on the development and testing of methods in t
 \caption{ All-sky maps \{H1, L1, V1\} for fixed right ascension and declination
 \newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates)
 }
+\label{scox1-allsky-maps}
 \end{center}
 \end{figure}
 
+At the beginning of the MDC, this author's work on TwoSpect played a key role in verifying that the simulation was correctly set up.
+Although the author played no role in the data generation -- and was blinded to the parameters of the closed pulsars -- TwoSpect is sensitive both to relatively-weak signals and to sky location.
+Thus it was able to confirm that injected pulsars, as seen in Figure~\cite{scox1-allsky-maps}, were in fact in the expected location of a signal from Scorpius X-1.
 
 %\end{frame}
-
 
 \section{Scorpius X-1 mock data challenge}
 %\begin{frame}{Fully-templated search for Scorpius X-1}
@@ -315,17 +318,19 @@ The rest of this chapter expounds on the development and testing of methods in t
 \begin{center}
 %\protect\caption{\protect\includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1-bold}}
 \includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1-bold.eps}
-
-
 \caption{
 Scorpius X-1 Mock Data Challenge (MDC) pulsar 40 \{H1\}: 5 Hz band. 
 The $p$-value (single-template, applying Davies' Method to the $R$ statistic) in is show in this heatmap, peak in red. 
 All templates are plotted on the (frequency, modulation depth) plane.
 This is a relatively broadband view.
 }
+\label{scox1-wide-heatmap-040}
 \end{center}
 \end{figure}
 
+Scorpius X-1 MDC data necessitated a efficient means of searching over a few hundred million putative templates using similar data streams from three interferometers (Hanford H1, Livingston L1, and Virgo V1).
+Ideally, all one hundred 5 Hz search bands would be illuminated in the manner of Figure~\ref{scox1-wide-heatmap-040}.
+Achieving this goal required some development by the author.
 
 %\end{frame}
 
@@ -345,25 +350,37 @@ This is a relatively broadband view.
 Scorpius X-1 MDC pulsar 8. 
 This is a relatively narrowband view.
 }
+\label{scox1-narrow-heatmap-008}
 \end{center}
 \end{figure}
 
+Initially, TwoSpect was configured for all-sky searches with the capability to bypass the incoherent harmonic sum and test a single point in parameter space.
+It was possible to test multiple templates only by rerunning the entire TwoSpect pipeline.
+Initial input/output loaded and Doppler-shifting made this highly-wasteful, although it was possible to obtain results in narrow regions around which the unblinded, open MDC pulsars were specified.
+Figure~\ref{scox1-narrow-heatmap-008} illustrates one such result.
 
 %\end{frame}
 
 %\begin{frame}{Wide-band heat maps in parameter space}
 \subsection{Wide-band heat maps in parameter space}
 
-
 \begin{figure}
 \begin{center}
 %\protect\caption{\protect\includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1}}
 \includegraphics[width=0.8\paperwidth,height=0.62\paperheight]{bandH1.eps}
-\caption{Scorpius X-1 MDC pulsar 8 \{H1\}: 5 Hz band. This heatmap shows $3.6\times10^{5}$ templates, 10-22 mHz modulation depth, 120-125 Hz frequency. The peak signal at about (df = 0.019, f = 121.9) Hz.
+\caption{Scorpius X-1 MDC pulsar 8 \{H1\}: 5 Hz band. This heatmap shows $3.6\times10^{5}$ templates, 10 to 22 mHz modulation depth, 120-125 Hz frequency. The peak signal at about (df = 0.019, f = 121.9) Hz.
 }
+\label{scox1-wide-heatmap-008}
 \end{center}
 \end{figure}
 
+The author's first contribution to the pipeline was by streamlining searching over arbitrary-width frequency bands.
+Input/output is now done only once for a given search band, as is Doppler-shifting, expediting the testing of many templates for the $R$-statistic by several orders of magnitude.
+While testing so many templates is arguably unnecessary -- the results are highly correlated -- it is computationally straightforward and yields the best gain in sensitivity over previous searches.
+Figure~\ref{scox1-wide-heatmap-008} shows that these results match up with prior work, from Figure~\ref{scox1-narrow-heatmap-008}.
+
+Whereas much existing TwoSpect post-processing to data had been focused on follow-up of all-sky results, parts of the directed search post-processing have needed to be re-invented.
+The MDC validated these methods.
 
 %\end{frame}
 
