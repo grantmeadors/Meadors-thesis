@@ -244,29 +244,26 @@ The initial stage of this hierarchy, an incoherent harmonic sum, is known~\cite{
 A \textit{directed} search could be narrowly focused enough to calculate $R$-statistics for all interesting binary CW models at a particular point in parameter space.
 %There are several reasons to pursue more \textit{directed} searches in addition to the all-sky search.
 With a known electromagnetic counterpart, such as an LMXB or X-ray transient (XTE), the parameter space can often be reduced to a particular sky location (known to a few milliradians or better) and period (known to fractions of a second).
-Frequency may (as with XTE J1751-305~\cite{Markwardt2002}) or may not (as with Scorpius X-1~\cite{Galloway2014}) be known\footnote{It may be noteworthy at our 8.5 kiloparsec galactic radius~\cite{KerrLyndenBell1986} that both these sources are located in the direction of the galactic center}.
-
+Frequency may (as with XTE J1751-305~\cite{Markwardt2002}) or may not (as with Scorpius X-1~\cite{Galloway2014}) be known\footnote{It may be noteworthy at our 8.5 kiloparsec galactic radius~\cite{KerrLyndenBell1986} that both these sources are located in the direction of the galactic center.}.
 %\emph{All-sky search: }parameter space $\gg10^{18}$ templates
 %\begin{itemize}
 %\item Hierachical search; incoherent harmonic sum to consolidate\\
 %parameter space, use templates to test interesting outliers
 %\end{itemize}
-
 %\emph{Directed search: }parameter space much smaller
 %\begin{itemize}
 %\item Fully template the parameter space for max sensitivity
 %\end{itemize}
-
-\textbf{Scorpius X-1 (P $\approx$$ $ 68023.7 s, a sin $\iota$ $\approx1.44\pm0.18$
-s):}
-
+Let us consider a search for an object such  as Scorpius X-1 (P $\approx$$ $ 68023.7 s, a sin $\iota$ $\approx 1.44\pm0.18$ s). The number of templates needed to cover the parameter space at a mismatch of $0.2$ is known from studies which find that a spacing of $1/(2 T_\textup{coh})$ in frequency and $1/(4 T_\textup{coh})$ in a $\sin i$ provided sufficient coverage, given coherence time $T_\textup{coh}$. 
+Here, assume a search over $6\sigma_{a \sin i}$, that is, $\pm 3 \sigma$ around the known orbital parameter $a\sin i$. 
+Then,
 
 \begin{equation}
 N_{\textup{{template}}}=\left[1+2f_{bw}T_{coh}\right] \left[ {\displaystyle \Sigma}_{j=1}^{j = \frac{f_{max} - f_{min}}{f_{bw}}} 1 + 2\pi\left(f_{min} + j f_{bw}\right) \frac{4 T_{coh}}{P} 6 \sigma_{a \sin i} \right],
 \label{N_template_full}
 \end{equation}
 
-\noindent We are assuming a search over $6\sigma_{a \sin i}$, that is, $\pm 3 \sigma$ around the known orbital parameter $a\sin i$. Simplified,
+\noindent simplified,
 
 \begin{equation}
 N_{\textup{template}} = 2 \left(T_{coh} + \frac{1}{f_{bw}}\right)\left[ 1+\frac{4 \pi T_{coh}}{P} (6\sigma_{a \sin i})(f_{max} + f_{min} + f_{bw})\right] (f_{max} - f_{min})
@@ -275,23 +272,21 @@ N_{\textup{template}} = 2 \left(T_{coh} + \frac{1}{f_{bw}}\right)\left[ 1+\frac{
 
 \noindent for a single interferometer. 
 
-$f_{bw}$ is the width of a single analysis band. At present, we use 0.1 Hz bands.
-$N_{template}\approx10^{8}$ for 3 interferometers (500 Hz band; $3\sigma$
-in $a\sin\iota$)$ $
-\begin{itemize}
-\item Tractable to test all templates$\rightarrow$ need new methods
-\end{itemize}
+$f_{bw}$ is the width of a single analysis band. 
+At present, we use 0.1 Hz bands.
+$N_{template}$ is $\mathcal{O}(10^{8})$ for 3 interferometers over a 500 Hz band given the Sco X-1 orbital parameters.
+Such a search is tractable, since a single template test requires on the order of a second.
+This search promises to be significantly more sensitive than the all-sky search.
+We chose to test this new method first in a Mock Data Challenge (MDC).
+This MDC lets us ascertain our sensitivity relative to other GW-search algorithms.
+TwoSpect is 1 of up to 6 algorithms looking for 50 ``open'' and 50 ``closed/blind'' Sco X-1-like ``pulsars'' (LMXBs).
+Full MDC results are the subject of a forthcoming paper.
+The rest of this chapter expounds on the development and testing of methods in the course of this MDC.
 
-\textbf{Test methods in Mock Data Challenge (MDC)}
-\begin{itemize}
-\item TwoSpect is 1 of up to 6 algorithms looking for \\
-50 ``open'', 50 ``closed/blind'' Sco X-1-like ``pulsars'' (LMXBs)
-\end{itemize}
 %\end{frame}
 
 %\begin{frame}{Sky maps using exact templates}
 \subsection{Sky maps using exact templates}
-
 
 \begin{figure}
 \begin{center}
