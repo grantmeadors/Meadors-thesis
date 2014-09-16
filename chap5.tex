@@ -796,23 +796,21 @@ F^{2}(t,\alpha,\delta,\psi)=aF_{\times}^{2}(t,\alpha,\delta,\psi)+bF_{+}^{2}(t,\
 %\begin{frame}{Orbital phase \& beyond}
 \subsection{Orbital phase \& beyond}
 
+%\textbf{Templates for orbital phase in the 2nd Fourier plane}
+%\begin{itemize}
+%\item Templates weight 2nd Fourier plane powers
+%\item Possible: phase in 2nd Fourier bins
+%\item Benefits: consistency between rows, binary orbital phase?
+%\item Significant alteration to weighting $\rightarrow$ beyond R statistic
+%\end{itemize}
 
-\textbf{Templates for orbital phase in the 2nd Fourier plane}
-\begin{itemize}
-\item Templates weight 2nd Fourier plane powers
-\item Possible: phase in 2nd Fourier bins
-\item Benefits: consistency between rows, binary orbital phase?
-\item Significant alteration to weighting $\rightarrow$ beyond R statistic
-\end{itemize}
-
-\emph{Coherent synthesis, elliptical polarization, orbital phase}
-
-
-need implementation, validation \& testing
-
-
-Distributed computing (Einstein@home)?
-
+Orbital phase is currently ignored.
+Only power information in the 2nd Fourier plane is used to inform $R$-statistic templates.
+Considerable information in the orbital phase is available.
+Orbital phase should be more robust than gravitational wave phase against effects analogous to spin-wandering and timing glitches, in particular because the time resolution of orbital phase is relatively low.
+Even for extremely short SFTs, a year-long science run produces only hundreds of thousands of SFTs, not billions of time samples.
+Perhaps just an approximate orbital phase-match would be possible, by verifying that given time-frequency plane sinusoid powers (ignoring GW phase information) correspond to power in the 2nd Fourier (frequency prime-frequency) plane.
+Such a change may be sufficient to warrant revising the $R$-statistic weighting scheme, but if successful would provide astrophysically compelling information about the time of ascension of a binary system.
 
 \subsection{Parameter space patterns}
 Other ideas abound. The idea of simulated annealing has arisen in personal communication (e.g., with Maria Alessandra Papa, Sam Finn and others), but it is generally though to address the wrong issues in our high-noise, weak-signal analyses. Also proposed there (and in personal communication with Ethan Obie Romero-Severson) were `hill-climbers' that could explore the parameter space until encountering one of the $X$-pattern arms. Again, due to the low SNR of our expected signals and the availability of computational resources being sufficient, this climbing strategy will probably not be necessary yet (one could imagine it being appropriate for a laptop looking for pulsars in third-generation detector data). It does, however, raise the question of the nature of the $X$-arms.
@@ -853,7 +851,14 @@ More refined grid spacing is possible in the event of a detection, although this
 Determining $h_0$ with greater accuracy is impossible without knowing $\cos \iota$ by another means. 
 In the future, knowledge of gravitational wave polarization angle might inform $\cos \iota$, and coherent combinations of detector data within TwoSpect might reduce noise in detected LMXBs, as well as making quieter sources detectable. 
 
+Coherent synthesis, elliptical polarization, and orbital phase improvements
+need implementation, validation and testing.
+It can be hoped that they will provide additional sensitivity for TwoSpect to yield more detections, and possibly to add new parameters to the list of what TwoSpect can estimate.
+Although these enhancements will increase computational cost, we can also attempt to offload some of that cost to distributed computing, such at the CW group's Einstein@home project.
+Together with quieter noise floor of advanced detectors, we may yet detect gravitational waves from neutron stars in binary systems.
 
+Since data from the initial detectors exists now, it does not hurt to check to see whether, despite the astrophysical predictions, a signal might already be seen.
+Chapter~\ref{chap6} presents this survey.
 
 \section{Addendum}
 \label{chap5_addendum}
