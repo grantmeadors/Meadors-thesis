@@ -437,6 +437,12 @@ Peter Fritschel, Rolf Bork, Gabriela Gonz\'{a}lez, Nergis Mavalvala, Dale
   wave antenna.
 \newblock {\em Appl. Opt.}, 40(28):4988--4998, 2001.
 
+\bibitem{Galloway2014}
+D.~K. {Galloway}, S.~{Premachandra}, D.~{Steeghs}, T.~{Marsh}, J.~{Casares},
+  and R.~{Cornelisse}.
+\newblock {Precision Ephemerides for Gravitational-wave Searches. I. Sco X-1}.
+\newblock {\em Ap J}, 781:14, January 2014.
+
 \bibitem{GoetzTwoSpectMethods2011}
 E.~Goetz and K.~Riles.
 \newblock An all-sky search algorithm for continuous gravitational waves from
@@ -798,6 +804,11 @@ J.R. Taylor.
 \newblock {\em Introduction to error analysis: the study of uncertainties in
   physical measurements}.
 \newblock University Science Books, second edition, 1997.
+
+\bibitem{LALAPPSrepo}
+{The LIGO Scientific Collaboration}.
+\newblock {LALApps} repository.
+\newblock Web: http://www.lsc-group.phys.uwm.edu/daswg/.
 
 \bibitem{GEO600NatureSqueezing}
 {The LIGO Scientific Collaboration}.
