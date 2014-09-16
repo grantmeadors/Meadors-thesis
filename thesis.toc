@@ -118,13 +118,14 @@
 \contentsline {subsection}{\numberline {6.5.1}Real S6 data: detection efficiency}{139}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Real S6 data: $h_0$ recovered vs injected}{139}{subsection.6.5.2}
 \contentsline {section}{\numberline {6.6}S6: Scorpius X-1}{141}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}S6: Scorpius X-1 heatmap}{141}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.1}S6: Scorpius X-1 heatmaps}{141}{subsection.6.6.1}
 \contentsline {subsection}{\numberline {6.6.2}S6: Scorpius X-1 upper limits, random polarization}{141}{subsection.6.6.2}
 \contentsline {subsection}{\numberline {6.6.3}S6: Scorpius X-1 outliers}{141}{subsection.6.6.3}
 \contentsline {section}{\numberline {6.7}S6: Scorpius X-1 search summary}{141}{section.6.7}
 \contentsline {section}{\numberline {6.8}S6: J1751-305}{144}{section.6.8}
 \contentsline {subsection}{\numberline {6.8.1}S6: J1751-305 background}{144}{subsection.6.8.1}
-\contentsline {section}{\numberline {6.9}S6: J1751-305 heatmaps}{144}{section.6.9}
+\contentsline {section}{\numberline {6.9}S6: J1751-305}{144}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}S6: J1751-305 heatmaps}{144}{subsection.6.9.1}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Outreach: Exhibit at the World Science Festival}}{147}{chapter.7}
 \hbox { }
