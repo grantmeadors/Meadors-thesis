@@ -296,8 +296,10 @@ The rest of this chapter expounds on the development and testing of methods in t
 \includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{maptrueH1.eps}
 \includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{maptrueL1.eps}
 \includegraphics[width=0.6\paperwidth,height=0.2\paperheight]{maptrueV1.eps}
-\caption{ All-sky maps \{H1, L1, V1\} for fixed right ascension and declination
-\newline Scorpius X-1 mock data challenge pulsar 16 (101x101 templates)
+\caption{ All-sky maps, \{H1, L1, V1\} interferometer analysis from top to bottom, for template tests varying right ascension and declination. 
+Scorpius X-1 mock data challenge pulsar 16 (101x101 templates), showing $\log_{10}p$-value on a Mollweide projection.
+Contour lines at 1-radian great-circle distance intervals from the intended injection location of Sco X-1.
+The results match the intended injection and confirm that the simulation is accurately representing the known sky location of Sco X-1.
 }
 \label{scox1-allsky-maps}
 \end{center}
@@ -305,7 +307,7 @@ The rest of this chapter expounds on the development and testing of methods in t
 
 At the beginning of the MDC, this author's work on TwoSpect played a key role in verifying that the simulation was correctly set up.
 Although the author played no role in the data generation -- and was blinded to the parameters of the closed pulsars -- TwoSpect is sensitive both to relatively-weak signals and to sky location.
-Thus it was able to confirm that injected pulsars, as seen in Figure~\cite{scox1-allsky-maps}, were in fact in the expected location of a signal from Scorpius X-1.
+Thus it was able to confirm that injected pulsars, as seen in Figure~\ref{scox1-allsky-maps}, were in fact in the expected location of a signal from Scorpius X-1.
 
 %\end{frame}
 

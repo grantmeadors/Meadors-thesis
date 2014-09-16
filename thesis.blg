@@ -17,7 +17,6 @@ I was expecting a `{' or a `('---line 6 of file bibliography.bib
  : @ARTICLE{feyn54,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "scox1-allsky-maps"
 Warning--to sort, need author or key in SRT
 Warning--empty title in LSCPulsarS4
 Warning--empty title in LSCPulsar2006
@@ -42,7 +41,7 @@ Warning--empty title in Welch1967
 Warning--empty title in Willke2002
 You've used 165 entries,
             2118 wiz_defined-function locations,
-            1440 strings with 26590 characters,
+            1439 strings with 26573 characters,
 and the built_in function-call counts, 44510 in all, are:
 = -- 4214
 > -- 2365
