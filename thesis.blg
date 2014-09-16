@@ -17,57 +17,16 @@ I was expecting a `{' or a `('---line 6 of file bibliography.bib
  : @ARTICLE{feyn54,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 934 of file bibliography.bib
- : 
- : year = "2014",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2222 of file bibliography.bib
- : 
- : title = "Advanced {LIGO} reference design",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2605 of file bibliography.bib
- : 
- : year = "1960"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2632 of file bibliography.bib
- : 
- : year = "2014-03-18"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2640 of file bibliography.bib
- : 
- : year = "2014-03-21"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2785 of file bibliography.bib
- : 
- : year = "2010"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 2815 of file bibliography.bib
- : @article{Shawhan2010
- :                     ,
-I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in SRT
 Warning--empty title in LSCPulsarS4
 Warning--empty title in LSCPulsar2006
 Warning--empty title in LSCEinsteinHome2009
 Warning--empty title in LSCPowerFlux2009
-Warning--empty year in BICEP2014
-Warning--empty year in Planck2014
 Warning--empty title in Antares2013
-Warning--empty title in aLIGOrefDesign
-Warning--empty institution in aLIGOrefDesign
-Warning--empty year in aLIGOrefDesign
 Warning--empty title in Black2001
 Warning--empty title in Caldwell1981
-Warning--empty year in ChuaBackscatteredLight
 Warning--empty title in Deschrijver2008
 Warning--empty title in Swift2012
-Warning--empty year in FeldmanCousins1998
 Warning--empty title in Grishchuk1974
 Warning--empty title in Gustavsen2006
 Warning--empty title in Gustavsen1999
@@ -76,51 +35,49 @@ Warning--empty title in Kuroda2010
 Warning--empty title in Lindblom1995
 Warning--empty title in McKee1977
 Warning--empty title in Ott2009
-Warning--empty year in Punturo2010
 Warning--empty title in Sathyaprakash2009
 Warning--empty title in Takahashi1965
-Warning--empty year in Weber1960
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
 You've used 164 entries,
             2118 wiz_defined-function locations,
-            1430 strings with 26314 characters,
-and the built_in function-call counts, 44098 in all, are:
-= -- 4169
+            1433 strings with 26362 characters,
+and the built_in function-call counts, 44114 in all, are:
+= -- 4180
 > -- 2332
-< -- 19
+< -- 20
 + -- 944
 - -- 766
-* -- 2987
-:= -- 8083
-add.period$ -- 472
+* -- 2978
+:= -- 8094
+add.period$ -- 473
 call.type$ -- 164
 change.case$ -- 788
 chr.to.int$ -- 0
-cite$ -- 195
-duplicate$ -- 1672
-empty$ -- 3212
+cite$ -- 186
+duplicate$ -- 1673
+empty$ -- 3213
 format.name$ -- 766
-if$ -- 8806
+if$ -- 8819
 int.to.chr$ -- 0
 int.to.str$ -- 164
 missing$ -- 142
-newline$ -- 802
+newline$ -- 803
 num.names$ -- 328
-pop$ -- 726
+pop$ -- 707
 preamble$ -- 1
 purify$ -- 675
 quote$ -- 0
-skip$ -- 1182
+skip$ -- 1191
 stack$ -- 0
 substring$ -- 1588
-swap$ -- 161
-text.length$ -- 19
+swap$ -- 162
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 614
-warning$ -- 31
+warning$ -- 22
 while$ -- 375
 width$ -- 167
-write$ -- 1748
-(There were 10 error messages)
+write$ -- 1759
+(There were 3 error messages)

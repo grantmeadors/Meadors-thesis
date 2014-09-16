@@ -146,12 +146,12 @@ F.~Acernese et~al.
 P.A.R. Ade et~al.
 \newblock {BICEP2} {I}: detection of {B}-mode polarization at degree angular
   scales.
-\newblock Technical Report astro-ph/1403.3985, arXiv.
+\newblock Technical Report astro-ph/1403.3985, arXiv, March 2014.
 
 \bibitem{Planck2014}
 P.A.R. Ade et~al.
 \newblock Planck 2013 results. {XVI}. cosmological parameters.
-\newblock Technical Report astro-ph/1303.5076, arXiv.
+\newblock Technical Report astro-ph/1303.5076, arXiv, March 2014.
 
 \bibitem{AdhikariThesis}
 R.~Adhikari.
@@ -165,7 +165,8 @@ S.~Adri\'{a}n-Mart\'{i}nez et~al.
 
 \bibitem{aLIGOrefDesign}
 {Advanced LIGO Team}.
-\newblock Technical report.
+\newblock Advanced {LIGO} reference design.
+\newblock Technical Report M060056-v2, LIGO, 2011.
 
 \bibitem{Findchirp2012}
 B.~Allen, W.G. Anderson, P.R. Brady, D.A. Brown, and J.D.E. Creighton.
@@ -305,7 +306,7 @@ S.S.Y. Chua, S.~Dwyer, L.~Barsotti, D.~Sigg, R.M.S. Schofield, V.V. Frolov,
   N.~Mavalvala, and D.E. McClelland.
 \newblock Impact of backscattered-light in a squeezing-enhanced interferometric
   gravitational-wave detector.
-\newblock {\em Classical and {Q}uantum {G}ravity}.
+\newblock {\em Classical and {Q}uantum {G}ravity}, 31(035017), 2014.
 
 \bibitem{CollinsGravityShadow}
 H.~Collins.
@@ -386,7 +387,7 @@ Will~M. Farr.
 G.J. Feldman and R.D. Cousins.
 \newblock Unified approach to the classical statistical analysis of small
   signals.
-\newblock {\em Phys. {R}ev. {D}}, 57:3873.
+\newblock {\em Phys. {R}ev. {D}}, 57:3873, 1998.
 
 \bibitem{FinnInspiral1993}
 L.S. Finn and D.~F. Chernoff.
@@ -705,7 +706,7 @@ R.~Prix.
 M.~Punturo et~al.
 \newblock The {E}instein {T}elescope: a third-generation gravitational wave
   observatory.
-\newblock {\em Class. {Q}uant. {G}rav.}, 27:194002.
+\newblock {\em Class. {Q}uant. {G}rav.}, 27:194002, 2010.
 
 \bibitem{ResponsesFP}
 M.~Rakhmanov and R.~Savage.
@@ -849,7 +850,7 @@ D.F. Walls.
 \bibitem{Weber1960}
 J.~Weber.
 \newblock Detection and generation of gravitational waves.
-\newblock {\em {P}hys. {R}ev.}, 117(1):306.
+\newblock {\em {P}hys. {R}ev.}, 117(1):306, 1960.
 
 \bibitem{Weisberg2010}
 J.M. Weisberg, D.J. Nice, and J.H. Taylor.
