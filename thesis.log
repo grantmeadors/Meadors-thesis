@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  16 SEP 2014 21:59
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  16 SEP 2014 22:11
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1763,12 +1763,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4974 strings out of 256217
- 68541 string characters out of 1917094
+ 4975 strings out of 256217
+ 68550 string characters out of 1917094
  182348 words of memory out of 1500000
- 8034 multiletter control sequences out of 10000+200000
+ 8035 multiletter control sequences out of 10000+200000
  15555 words of font info for 59 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (210 pages, 936896 bytes).
+Output written on thesis.dvi (210 pages, 936736 bytes).
