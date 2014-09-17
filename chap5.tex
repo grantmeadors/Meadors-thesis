@@ -33,8 +33,10 @@ The next chapter elaborates the results when applied to data from the last scien
 Choosing to pursue binary sources is itself a choice of search direction.
 Neutron stars can be in isolated systems as well, for which many searches have been conducted (summarized in Section~\ref{continuous_waves}).
 Yet isolated stars have several issues that make them challenging to detect.
-Isolated stars have a finite lifetime (albeit many millions of years) over which they are hypothesized to emit detectable GWSs.
+Isolated stars have a finite lifetime (albeit many millions of years) over which they are hypothesized to emit detectable GWs.
 During this detectable lifetime, they are losing energy to GWs -- this energy loss results in a continually-slowing frequency, denoted by the spindown rate $\dot{f} = df /dt$.
+GWs are not the only contributor to spindown: non-gravitational energy loss due to friction or magnetic interactions will also sap the rotational energy of the star and thus its GW emission amplitude.
+Non-GW losses broaden the uncertainty in spindown rate.
 Spindown in turn makes GW searches more computationally challenging: templated-phase mismatch over a science run of many months is often significant enough to require additional templates to search over putative spindown values. 
 Since many searches are already computationally limited, a GW source without these challenges would arouse interest.
 
@@ -395,7 +397,7 @@ The MDC validated these methods.
 %\protect\caption{\protect\includegraphics[width=0.45\paperwidth,height=0.45\paperheight]{StatHistRH1}\protect\includegraphics[width=0.45\paperwidth,height=0.45\paperheight]{StatHistProbH1}}
 \includegraphics[width=0.6\paperwidth,height=0.35\paperheight]{StatHistRH1.eps}
 \includegraphics[width=0.6\paperwidth,height=0.35\paperheight]{StatHistProbH1.eps}
-\caption{Scorpius X-1 MDC statistics. These histograms of the $R$ statistic and $p$-value distribution were part of understanding noise, temporal gap \& spectral leakage, as well as establishing a threshold $p$-value $\sim$ false alarm probability of 1\%.
+\caption{Scorpius X-1 MDC statistics. These histograms of the $R$ statistic and $p$-value distribution helped in understanding noise, temporal gap \& spectral leakage, as well as establishing a threshold $p$-value $\sim$ false alarm probability of 1\%.
 These $p$-values are for single templates, appropriate to the all-sky search but not to a dense templated search with a large trials factor.
 Here, histograms show statistics in the absence of a signal. 
 The left-skew of the $p$-values is associated with gaps in the data (as is right-skew, with different gaps).
@@ -409,7 +411,7 @@ Diurnal bias in barycentering is assumed, but the correlation is not fully under
 Running TwoSpect as a directed search algorithm involves calculating
 the $R$-detection statistic across the probable parameter space. 
 A search is conducted with templates for each grid point in the Scorpius 
-X-1 parameter space; period is known sufficient well to restrict the search
+X-1 parameter space; period is known sufficiently well to restrict the search
 to the two dimensions of signal frequency and frequency modulation. The
 grid spacing, inversely proportional to spectrum coherence time, was
 chosen to allow a mismatch no more than $0.2$ in the detection statistic.
@@ -431,9 +433,9 @@ yielded the estimated parameters. Uncertainties in these parameters were also
 determined from unblinded injections, using method of moments for signal
 frequency and modulation depth and confidence intervals for signal
 amplitude. Upper limits were declared from the best estimate of the 95
-percent confidence level of non-detected unblinded injected signals. The
+percent confidence level of non-detected, unblinded, injected signals. The
 largest uncertainty in upper limits and signal amplitude estimation derives
-from the ambiguity in between true $h_0$ signal and $\cos \iota$ inclination.
+from the ambiguity between true $h_0$ signal and $\cos \iota$ inclination.
 This ambiguity cannot be resolved with the present algorithm and depends
 partially on the assumed prior distribution of signal ampltitudes; the
 uncertainty was estimated by simulation.
@@ -451,8 +453,8 @@ from the standard deviation of known injections; it is on the scale
 of the template grid except for marginally-detected pulsars. The $h_0$ 
 uncertainty is largely due to the distribution of $\cos \iota$. 
 
-TwoSpect claimed to detect 34 of 50 blinded signals, as well as 31 of 50 unblinded signals, and it stated a flat
-$4.23 \times 10^{-25}$ upper limit for the 16 non-detected signals. 
+%TwoSpect claimed to detect 34 of 50 blinded signals, as well as 31 of 50 unblinded signals, and it stated a flat
+%$4.23 \times 10^{-25}$ upper limit for the 16 non-detected signals. 
 
 \subsection{Detection Claims}
 
@@ -477,7 +479,14 @@ $\rightarrow$ if there is any candidate surviving these criteria in a 5 Hz band,
 
 Open MDC data gave TwoSpect the the ability to check its parameter estimation on the 31 pulsars detected in the open data set.
 
-Note that the $h_0$ reported in this section had not yet been recalibrated for either the $\cos \iota$ ambiguity due to assumed circular polarization (see subsequent section, factor of 1.74) or a systematic rescaling endemic to TwoSpect (factor of 1.11). Instead, the first step was to rescale the known $h_0$-injected from the MDC open data table into an h-effective. This h-effective equaled $\sqrt{ ((1+\cos^2 \iota) / 2)^2 + (\cos \iota)^2 }/\sqrt{2}$ * $h_0$-injected, the rescaling necessary to convert the strain into effective units of circular polarization strain. Any pipeline that assumes circular polarization should require a similar procedure.
+Note that the $h_0$ reported in this section had not yet been recalibrated for either the $\cos \iota$ ambiguity due to assumed circular polarization (see subsequent section, factor of 1.74) or a systematic rescaling endemic to TwoSpect (factor of 1.11). 
+Instead, the first step was to rescale the known $h_0$-injected from the MDC open data table into an $h_0$-effective. 
+This $h_0$-effective equaled,
+
+\begin{equation} h_{0-\textup{effective}} = \frac{1}{\sqrt{2}}\sqrt{ \left(\frac{1+\cos^2 \iota}{2}\right)^2 + \left(\cos \iota\right)^2 } \times h_{0\textup{-injected}},
+\end{equation}
+\noindent the rescaling necessary to convert the strain into effective units of circular polarization strain. 
+Any pipeline that assumes circular polarization should require a similar procedure.
 
 We plotted the error in the $h_0$ reported by TwoSpect versus $h_0$-effective for the 31 open pulsars detected.
 
@@ -491,7 +500,9 @@ We plotted the error in the $h_0$ reported by TwoSpect versus $h_0$-effective fo
 \end{figure}
 
 
-This same error was also plotted vs $p$-value and frequency, Figure~\ref{fig:errorh0}. As will be seen on the plots for error in frequency and asini, high-frequency outliers were found in the open data set. These outliers could be categorized heuristically as having $f >$ 1050 Hz and abs($\log_{10}p$) $<$ 300. These 4 outliers were assigned into the \textit{loose} category, with a corresponding $\sigma$. The remaining 27 were in the \textit{tight} category, to which we could assign a more stringent $\sigma$. Later, it was found that the high-frequency outlier behavior could mostly be explained by a misconfiguration bug where TwoSpect was not asked to retrieve needed SFT data; the rerun plots show a lower \textit{overall} uncertainty. These values are reported in the header of the graphs.
+This same error was also plotted vs $p$-value and frequency, Figure~\ref{fig:errorh0}. 
+%As will be seen on the plots for error in frequency and asini, high-frequency outliers were found in the open data set. These outliers could be categorized heuristically as having $f >$ 1050 Hz and abs($\log_{10}p$) $<$ 300. These 4 outliers were assigned into the \textit{loose} category, with a corresponding $\sigma$. The remaining 27 were in the \textit{tight} category, to which we could assign a more stringent $\sigma$. Later, it was found that the high-frequency outlier behavior could mostly be explained by a misconfiguration bug where TwoSpect was not asked to retrieve needed SFT data; the rerun plots show a lower \textit{overall} uncertainty. 
+These values are reported in the header of the graphs.
 
 Blue lines indicate the less stringent uncertainty. Red lines (on plots vs $p$-value) indicate a least squares power law regression.
 
@@ -653,9 +664,9 @@ Comparisons are the subject of a forthcoming paper, but for our own work, the au
 Analyses of the MDC correctly recovered about two-thirds of the simulated stars:
 
 \begin{itemize}
-\item 34 of 50 closed (and 31 of 50 open) pulsars detected
+\item 34 of 50 closed (and 31 of 50 open) `pulsar' signals detected
 \item $f$, $a \sin i$ and $h_0$ estimated
-\item $4.23\times 10^{-25}$ strain UL in $4 \times 10^{-24}$ strain Hz$^{1/2}$ noise
+\item $4.23\times 10^{-25}$ strain upper limit (UL) in $4 \times 10^{-24}$ strain Hz$^{1/2}$ noise declared for the 16 non-detected, closed signals
 \item with injections to refine UL, applicable to real data
 \end{itemize}
 

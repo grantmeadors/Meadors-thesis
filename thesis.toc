@@ -79,32 +79,32 @@
 \contentsline {subsection}{\numberline {5.1.3}Detection rate projections}{109}{subsection.5.1.3}
 \contentsline {section}{\numberline {5.2}TwoSpect searches}{109}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Two spectra: a double Fourier transform}{111}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Infering neutron stars with companions}{113}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}TwoSpect algorithm detection statistic}{113}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Directed TwoSpect's greater sensitivity}{114}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.2}Infering neutron stars with companions}{111}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}TwoSpect algorithm detection statistic}{111}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Directed TwoSpect's greater sensitivity}{117}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Sky maps using exact templates}{118}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Scorpius X-1 mock data challenge}{118}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Fully-templated search for Scorpius X-1}{118}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Narrow-band heat maps in parameter space}{122}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Wide-band heat maps in parameter space}{122}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Revisiting \& refining detection criteria}{122}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Mock Data Challenge procedure}{125}{section.5.5}
+\contentsline {section}{\numberline {5.4}Scorpius X-1 mock data challenge}{120}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Fully-templated search for Scorpius X-1}{120}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Narrow-band heat maps in parameter space}{120}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Wide-band heat maps in parameter space}{120}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Revisiting \& refining detection criteria}{124}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Mock Data Challenge procedure}{124}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Detection Claims}{126}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}Detection criteria}{127}{subsection.5.5.2}
 \contentsline {subsection}{\numberline {5.5.3}Parameter Estimation}{127}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Upper Limits and Detection Efficiency}{128}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}$\qopname \relax o{cos}\iota $ Ambiguity}{132}{subsection.5.5.5}
-\contentsline {section}{\numberline {5.6}Summary of the MDC}{137}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Mock data challenge results}{137}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.5.4}Upper Limits and Detection Efficiency}{132}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}$\qopname \relax o{cos}\iota $ Ambiguity}{133}{subsection.5.5.5}
+\contentsline {section}{\numberline {5.6}Summary of the MDC}{138}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Mock data challenge results}{138}{subsection.5.6.1}
 \contentsline {subsection}{\numberline {5.6.2}Binary search summary beyond the MDC}{138}{subsection.5.6.2}
-\contentsline {section}{\numberline {5.7}Plans for improvement}{138}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Coherent interferometer synthesis}{139}{subsection.5.7.1}
+\contentsline {section}{\numberline {5.7}Plans for improvement}{139}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Coherent interferometer synthesis}{140}{subsection.5.7.1}
 \contentsline {subsection}{\numberline {5.7.2}Circular \& elliptical polarization}{140}{subsection.5.7.2}
 \contentsline {subsection}{\numberline {5.7.3}Orbital phase \& beyond}{141}{subsection.5.7.3}
-\contentsline {subsection}{\numberline {5.7.4}Parameter space patterns}{141}{subsection.5.7.4}
+\contentsline {subsection}{\numberline {5.7.4}Parameter space patterns}{142}{subsection.5.7.4}
 \contentsline {subsection}{\numberline {5.7.5}Relevance to follow-up}{144}{subsection.5.7.5}
-\contentsline {section}{\numberline {5.8}Addendum}{144}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}Scorpius X-1 parameters}{144}{subsection.5.8.1}
+\contentsline {section}{\numberline {5.8}Addendum}{145}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Scorpius X-1 parameters}{145}{subsection.5.8.1}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Directed TwoSpect: Scorpius X-1 and XTE J1751-305}}{146}{chapter.6}
 \hbox { }
