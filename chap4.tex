@@ -2,12 +2,12 @@
 
     %(Fill in bits about the squeezer)
 
-Gravitational wave interferometry measures changes in light travel time far less than the light-crossing time of an atom, so the quantum nature of light has always influenced detector design.
-Advanced LIGO aims to resolve most of noise sources described in Sections~\ref{methods} and~\ref{interferometer_theory}: even so, quantum shot and radiation pressure noise from light will remain.
-Carlton Caves correctly derived the quantum behavior of interferometer shot and radiation pressure noise~\cite{Caves1980}.
+Gravitational wave interferometry measures changes in light travel time far less than the light-crossing time of an atom; so the quantum nature of light has always influenced detector design.
+Advanced LIGO aims to reduce most of the noise sources described in Sections~\ref{methods} and~\ref{interferometer_theory}: even so, quantum shot and radiation pressure noise from light will remain.
+Carlton Caves first derived the quantum behavior of interferometer shot and radiation pressure noise~\cite{Caves1980}.
 Prior work had inferred the shot noise level from classical principles, accurately, but been ambiguous about radiation pressure.
 With the quantum noise clarified, it was realized that this noise could be reduced through so-called squeezing of the vacuum state~\cite{Caves1981}.
-This chapter describes part of how squeezing was successfully realized three decades later at the LIGO Hanford Observatory.
+This chapter describes part of how squeezing was successfully realized three decades later at the LIGO Hanford Observatory and describes the author's contributions to this milestone.
 For additional details, consult Chua~\cite{ChuaThesis} and Dwyer~\cite{DwyerThesis}.
 
     \section{Squeezing theory}
@@ -27,13 +27,14 @@ The standard quantum limit (SQL) on displacement sensitivity can be derived inde
 When one tries to attain this standard quantum limit with an interferometer, then shot and radiation pressure are found to balance at a particular optimum input power $P_0$~\cite{Caves1981}:
 
 \begin{equation}
-P_0 = \frac{1}{2} \frac{mc^2}{\tau}\frac{1}{\omega \tau} \frac{1}{b^2} \equiv {\hbar \omega \alpha_0^2}{\tau},
+P_0 = \frac{1}{2} \frac{mc^2}{\tau}\frac{1}{\omega \tau} \frac{1}{b^2} \equiv \frac{\hbar \omega \alpha_0^2}{\tau},
 \label{optimum_power_caves}
 \end{equation}
 
-\noindent with $\omega$ the angular frequency of light and $b$ the number of bounces (assuming delay lines, whereas a Fabry-Perot is proportional to finesse) in Equation~\ref{optimum_power_caves} and $\alpha_0 = \sqrt{P \tau / \hbar \omega}$ is the number of photons.
-The latter equation shows that the optimal power rises as $1/\sqrt{\tau}$, that is, as the squart root of the gravitational wave frequency.
-Higher laser power improves high frequency sensitivity, high mirror mass improves low frequency performance.
+\noindent with $\omega$ the angular frequency of light and $b$ the number of bounces (assuming delay lines, whereas a Fabry-Perot value is proportional to finesse) in Equation~\ref{optimum_power_caves} and $\alpha_0^2 = P_0 \tau / \hbar \omega$ is the number of photons.
+Equation~\ref{optimum_power_caves} shows that the optimal power $P_0$ rises as $1/\sqrt{\tau}$, that is, as the square root of the gravitational wave frequency.
+High frequency sensitivity thus benefits from higher laser power.
+High mirror mass preserves low frequency performance when $P_0$ increases.
 Combined, these formulae imply that an interferometer should be built with the largest, most massive mirrors and most powerful lasers practicable.
 
         \subsection{Problems with lasers: thermal compensation}
@@ -43,6 +44,7 @@ Combined, these formulae imply that an interferometer should be built with the l
 
 LIGO and its allied interferometers do try to operate with massive optics and powerful lasers, but there are limits.
 Vacuum enclosures place a constraint, only broken with significant expenditures, on the size of optical tables and mirror suspensions and therefore on mirror mass.
+Large optics, both substrates and coatings, are also difficult and expensive to manufacture with high quality.
 This indirectly limits laser power through the SQL.
 Laser power, however, was not limited for this reason in initial and enhanced LIGO.
 In practice, thermal distortion of the test masses was a worse problem~\cite{BallmerThesis}.
@@ -75,7 +77,7 @@ Formally, the expectation value of quantum operators is improved.
 %\begin{theorem}
 %Shot noise arises from quantum operators (Caves 1980, 1981)\end{theorem}
 
-Caves's prescription~\cite{Caves1981} is clear:
+Caves's prescription~\cite{Caves1981} is as follows:
 \begin{itemize}
 \item Vacuum fluctuations couple through anti-symmetric port, so inject a
 \item \emph{Squeezed } $\overrightarrow{E}$ field (uncertainty ellipse with smaller $\Delta E$) defined by
@@ -102,7 +104,7 @@ Optical parameteric amplifiers, including an OPO, involve a nonlinear optical me
 An OPO~\cite{Caves1981} is an optical parametric amplifier for which the output `signal' (at $\omega_s$) and `idler' (at $\omega_i$) beams\footnote{The nomenclature is historical, sometimes distinguished by $\omega_s\geq\omega_i$. After alignment is complete, the output beams contain no power by design.} are degenerate (for any amplifier they satisfy $\omega_s + \omega_i$ = $\omega_p$, the input, pump frequency).
 As Takahashi noted~\cite{Takahashi1965} (and others, see Wall for a review~\cite{Walls1983}), a degenerate amplifier will transform a coherent state into a state with unequal uncertainties in its two quadratures, to wit, phase and amplitude.
 
-By placing a degenerate amplifier in cavity resonant at $\omega_s$, the amplifier becomes an optical parameter \textit{oscillator}, with high effective interaction length and thus squeeze factor.
+By placing a degenerate amplifier in the cavity resonant at $\omega_s$, the amplifier becomes an optical parameter \textit{oscillator}, with high effective interaction length and thus squeeze factor.
 Nonlinear media come in many varieties, but the material used in LIGO squeezing experiments (as in this chapter) has typically been PPKTP (periodically-poled potassium titanyl phosphate).
 For an effective second-order nonlinear susceptability $d$, pump electric field amplitude $E_p$, effective interaction length $L$, and index of refraction at the signal frequency $n_s$, the amount of squeezing is~\cite{Caves1981},
 
