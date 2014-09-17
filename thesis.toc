@@ -109,23 +109,20 @@
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Directed TwoSpect: Scorpius X-1 and XTE J1751-305}}{148}{chapter.6}
 \hbox { }
 \contentsline {section}{\numberline {6.1}Directed TwoSpect}{148}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Target, directed and all-sky search sensitivity}{148}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Targeted, directed and all-sky search sensitivity}{148}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Enhancements enabled by directed searching}{148}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Quantifying Directedness}{148}{section.6.2}
-\contentsline {section}{\numberline {6.3}Scorpius X-1 and XTE J1751-305: Directed TwoSpect results}{148}{section.6.3}
-\contentsline {section}{\numberline {6.4}S6: Scorpius X-1 search plan}{149}{section.6.4}
-\contentsline {section}{\numberline {6.5}Real S6 data: statistics}{149}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Real S6 data: detection efficiency}{149}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Real S6 data: $h_0$ recovered vs injected}{149}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}S6: Scorpius X-1}{151}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}S6: Scorpius X-1 heatmaps}{151}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}S6: Scorpius X-1 upper limits, random polarization}{151}{subsection.6.6.2}
-\contentsline {subsection}{\numberline {6.6.3}S6: Scorpius X-1 outliers}{151}{subsection.6.6.3}
-\contentsline {section}{\numberline {6.7}S6: Scorpius X-1 search summary}{151}{section.6.7}
-\contentsline {section}{\numberline {6.8}S6: J1751-305}{154}{section.6.8}
-\contentsline {subsection}{\numberline {6.8.1}S6: J1751-305 background}{154}{subsection.6.8.1}
-\contentsline {section}{\numberline {6.9}S6: J1751-305}{154}{section.6.9}
-\contentsline {subsection}{\numberline {6.9.1}S6: J1751-305 heatmaps}{154}{subsection.6.9.1}
+\contentsline {section}{\numberline {6.2}Quantifying directedness: sensitivity studies in real data}{148}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Real S6 data: detection efficiency}{148}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Real S6 data: $h_0$ recovered vs injected}{148}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Scorpius X-1 search using Directed TwoSpect in S6}{150}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}S6: Scorpius X-1 search plan}{150}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}S6: Scorpius X-1 heatmaps}{150}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}S6: Scorpius X-1 upper limits, random polarization}{150}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}S6: Scorpius X-1 outliers}{150}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}XTE J1751-305 search using Directed TwoSpect in S6}{153}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}S6: XTE J1751-305 background}{153}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}S6: XTE J1751-305 heatmaps}{154}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Summary of Directed TwoSpect S6 searches}{154}{section.6.5}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Outreach: Exhibit at the World Science Festival}}{157}{chapter.7}
 \hbox { }

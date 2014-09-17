@@ -1,56 +1,37 @@
 
-
-
-        
+\textit{Results from this chapter are preliminary and have not been reviewed yet by the LIGO Scientific Collaboration.}
+%\newline
 
         \section{Directed TwoSpect}
         \label{directed}
 
-            TwoSpect improvements myself (to do).
+TwoSpect performed aptly in Chapter~\ref{chap5}'s Mock Data Challenge, which warrants using the program to analyze the best existing GW data.
 
-            \subsection{Target, directed and all-sky search sensitivity}
+            %TwoSpect improvements myself (to do).
+
+            \subsection{Targeted, directed and all-sky search sensitivity}
             \label{tradeoffs}
 
-                Targeted (known object) vs directed (region)vs all-sky (everything).
+             %   Targeted (known object) vs directed (region)vs all-sky (everything).
 
             \subsection{Enhancements enabled by directed searching}
             \label{directed_enhancements}
 
-                Modifications for directed search.
+             %   Modifications for directed search.
 
-        \section{Quantifying Directedness}
+        \section{Quantifying directedness: sensitivity studies in real data}
         \label{quant_directed}
 
 
-
-        
-            Quantify how good the improvements are in directed TwoSpect. 
+            %Quantify how good the improvements are in directed TwoSpect. 
 
             Cite Feldman-Cousins confidence intervals paper~\cite{FeldmanCousins1998}.
 
             Cite Ethan's thesis~\cite{RomeroThesis} and our paper, maybe by using generation functions to make better TwoSpect statistics.
 
-        \section{Scorpius X-1 and XTE J1751-305: Directed TwoSpect results}
-        \label{directed_results}
- 
-            Preliminary results of a directed search (possibly simulation-only).
+      %\section{Real S6 data: statistics}
 
-            We have a great deal of material here already, just need to pull from figures and commentary from the Sco X-1 wiki. Keith recommends paralleling the Sco X-1 paper.
-
-\section{S6: Scorpius X-1 search plan}
-
-\textbf{2 kHz, $\pm 3 \sigma_{a \sin i}$ search over all S6 data from H1 \& L1}
-\begin{itemize}
-\item Analyze 40 to 360 Hz with 840 s SFTs,
-\item Analyze 360 to 2040 Hz with 360 s SFTs,\\
-(to prevent spectral leakage)
-\item Now planned: overlapping bands to verify
-\item Search over 300+1100 Hz = 1.4 kHz complete on H1
-\item Search over 300+1700 Hz = 2.0 kHz complete on L1
-\end{itemize}
-
-\section{Real S6 data: statistics}
-\subsection{Real S6 data: detection efficiency}
+        \subsection{Real S6 data: detection efficiency}
 
 \begin{figure}
 \begin{center}
@@ -60,7 +41,7 @@ S6 data at 142 Hz, given threshold log10p = -7.75}
 \end{center}
 \end{figure}
 
-\subsection{Real S6 data: $h_0$ recovered vs injected}
+        \subsection{Real S6 data: $h_0$ recovered vs injected}
 
 \begin{figure}
 \begin{center}
@@ -73,7 +54,31 @@ into S6 data at 142 Hz (injections also done at 162, 222 Hz)}
 
 See Appendix~\ref{appendix2} for further injection studies.
 
-\section{S6: Scorpius X-1}
+
+
+%\section{S6: Scorpius X-1}
+
+        \section{Scorpius X-1 search using Directed TwoSpect in S6}
+        \label{directed_results}
+ 
+            %Preliminary results of a directed search (possibly simulation-only).
+
+            %We have a great deal of material here already, just need to pull from figures and commentary from the Sco X-1 wiki. Keith recommends paralleling the Sco X-1 paper.
+
+
+
+\subsection{S6: Scorpius X-1 search plan}
+
+\textbf{2 kHz, $\pm 3 \sigma_{a \sin i}$ search over all S6 data from H1 \& L1}
+\begin{itemize}
+\item Analyze 40 to 360 Hz with 840 s SFTs,
+\item Analyze 360 to 2040 Hz with 360 s SFTs,\\
+(to prevent spectral leakage)
+\item Now planned: overlapping bands to verify
+\item Search over 300+1100 Hz = 1.4 kHz complete on H1
+\item Search over 300+1700 Hz = 2.0 kHz complete on L1
+\end{itemize}
+
 
 \subsection{S6: Scorpius X-1 heatmaps}
 
@@ -152,34 +157,9 @@ Outlier Number & Frequency (Hz) & Explanation \\
 
 Table~\ref{ScoX1S6outlierTable} presents a list of outliers present in both intereferometers.
 
-\section{S6: Scorpius X-1 search summary}
+\section{XTE J1751-305 search using Directed TwoSpect in S6}
 
-\textbf{2 kHz, $\pm 3 \sigma_{a \sin i}$ search over all S6 data from H1 \& L1}
-\begin{itemize}
-\item Analyze 40 to 360 Hz with 840 s SFTs,
-\item Analyze 360 to 2040 Hz with 360 s SFTs,\\
-(to prevent spectral leakage)
-\item Now planned: overlapping bands to verify
-\item Search over 300+1700 Hz = 2.0 kHz complete on H1
-\item Search over 300+1700 Hz = 2.0 kHz complete on L1
-\end{itemize}
-
-
-\emph{S6 search \textbf{100\% done} in 30 days, with 2 kHz per H1, L1}
-
-\begin{enumerate}
-\item Should verify overlapping bands with shorter coherence length
-\item Refining upper limit methodology
-\item R statistic: quiet 0.1 Hz bands need investigation
-\item Detection criteria: how applicable is MDC experience?
-\end{enumerate}
-
-\emph{Random polarization} $h_0$ lower limit might be $< 1.3\times10^{-24}$
-\emph{Outliers} incoming: already $\sim 22$ coincident features in [40, 360] Hz
-
-\section{S6: J1751-305}
-
-\subsection{S6: J1751-305 background}
+\subsection{S6: XTE J1751-305 background}
 
 Discovered by Markwardt et al in 2002~\cite{Markwardt2002}.
 
@@ -201,8 +181,8 @@ $\textup{}$
 $\rightarrow$ TwoSpect analysis, heatmaps done on $\nu_0$, $r$-mode\\
 $\rightarrow$ Upper limits will be made
 
-\section{S6: J1751-305}
-\subsection{S6: J1751-305 heatmaps}
+%\section{S6: XTE J1751-305}
+\subsection{S6: XTE J1751-305 heatmaps}
 
 \begin{figure}
 \begin{center}
@@ -238,6 +218,37 @@ Quick look at J1751-305, H1 log10p, 621 Hz $r$-mode}
 Quick look at J1751-305, L1 log10p, 621 Hz $r$-mode}
 \end{center}
 \end{figure}
+
+
+\section{Summary of Directed TwoSpect S6 searches}
+
+\textbf{2 kHz, $\pm 3 \sigma_{a \sin i}$ search over all S6 data from H1 \& L1}
+\begin{itemize}
+\item Analyze 40 to 360 Hz with 840 s SFTs,
+\item Analyze 360 to 2040 Hz with 360 s SFTs,\\
+(to prevent spectral leakage)
+\item Now planned: overlapping bands to verify
+\item Search over 300+1700 Hz = 2.0 kHz complete on H1
+\item Search over 300+1700 Hz = 2.0 kHz complete on L1
+\end{itemize}
+
+
+\emph{S6 search \textbf{100\% done} in 30 days, with 2 kHz per H1, L1}
+
+\begin{enumerate}
+\item Should verify overlapping bands with shorter coherence length
+\item Refining upper limit methodology
+\item R statistic: quiet 0.1 Hz bands need investigation
+\item Detection criteria: how applicable is MDC experience?
+\end{enumerate}
+
+\emph{Random polarization} $h_0$ lower limit might be $< 1.3\times10^{-24}$
+\emph{Outliers} incoming: already $\sim 22$ coincident features in [40, 360] Hz
+
+Plans for O1, first aLIGO run
+
+
+\textit{As previously noted, results from this chapter are preliminary and have not been reviewed yet by the LIGO Scientific Collaboration.}
 
         %---------------------------------
 

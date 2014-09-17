@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  16 SEP 2014 22:26
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  17 SEP 2014 18:33
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -322,11 +322,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Package hyperref Warning: No destination for bookmark of \addcontentsline,
 (hyperref)                destination is added on input line 119.
 
-[2] [3] (./thesis.toc [4] [5] [6])
+[2] [3] (./thesis.toc [4] [5])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [7] (./thesis.lof
+ [6] [7] (./thesis.lof
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -1454,52 +1454,54 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 169.
 
-(./chap6.tex [148
-
-]
+(./chap6.tex
 File: plots/detectionEfficiencyh0-142-0Hz.eps Graphic file (type eps)
  <plots/detectionEfficiencyh0-142-0Hz.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 59
+Overfull \hbox (49.88899pt too wide) detected at line 40
 \OT1/cmr/m/n/10 Figure 6.1: []
  []
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 63.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `subscript' on input line 63.
+(hyperref)                removing `subscript' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 63.
+(hyperref)                removing `math shift' on input line 44.
 
 File: plots/h0UL-vs-h0injected-142-0Hz.eps Graphic file (type eps)
 <plots/h0UL-vs-h0injected-142-0Hz.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 70
+Overfull \hbox (49.88899pt too wide) detected at line 51
 \OT1/cmr/m/n/10 Figure 6.2: []
  []
 
+[148
+
+] [149]
 File: plots/DFvsFresultsh0-H1_pulsar-0045.eps Graphic file (type eps)
-<plots/DFvsFresultsh0-H1_pulsar-0045.eps>
+ <plots/DFvsFresultsh0-H1_pulsar-0045.eps>
 File: plots/h0FullUL95logGuess-H1.eps Graphic file (type eps)
- <plots/h0FullUL95logGuess-H1.eps>
-[149] [150]
+
+<plots/h0FullUL95logGuess-H1.eps>
 File: plots/h0FullUL95logGuess-L1.eps Graphic file (type eps)
  <plots/h0FullUL95logGuess-L1.eps>
 File: plots/ScoX1ULs.eps Graphic file (type eps)
- <plots/ScoX1ULs.eps>
-Overfull \hbox (61.43713pt too wide) in paragraph at lines 108--114
+
+<plots/ScoX1ULs.eps>
+Overfull \hbox (61.43713pt too wide) in paragraph at lines 113--119
  [] 
  []
 
 
-Overfull \hbox (49.88899pt too wide) detected at line 114
+Overfull \hbox (49.88899pt too wide) detected at line 119
 \OT1/cmr/m/n/10 Figure 6.6: []
  []
 
-[151] [152] [153]
+[150] [151] [152] [153]
 File: plots/DFvsFresultsProb-H1_pulsar-434.eps Graphic file (type eps)
  <plots/DFvsFresultsProb-H1_pulsar-434.eps>
 File: plots/DFvsFresultsProb-L1_pulsar-434.eps Graphic file (type eps)
@@ -1510,7 +1512,7 @@ File: plots/DFvsFresultsProb-H1_pulsar-620.eps Graphic file (type eps)
 <plots/DFvsFresultsProb-H1_pulsar-620.eps>
 File: plots/DFvsFresultsProb-L1_pulsar-620.eps Graphic file (type eps)
 
-<plots/DFvsFresultsProb-L1_pulsar-620.eps>) [154] [155] [156]
+<plots/DFvsFresultsProb-L1_pulsar-620.eps> [154] [155]) [156]
 CHAPTER VII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1763,12 +1765,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4975 strings out of 256217
- 68550 string characters out of 1917094
- 182348 words of memory out of 1500000
- 8035 multiletter control sequences out of 10000+200000
+ 4972 strings out of 256217
+ 68516 string characters out of 1917094
+ 182373 words of memory out of 1500000
+ 8032 multiletter control sequences out of 10000+200000
  15555 words of font info for 59 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (209 pages, 935464 bytes).
+Output written on thesis.dvi (209 pages, 932748 bytes).
