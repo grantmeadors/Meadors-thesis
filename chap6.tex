@@ -69,7 +69,8 @@ The bulk of the processing,skipping the incoherent harmonic sum stage that reduc
 Since sky location and period are fixed, the search is two-dimensional on the $f$ and $a \sin i$. 
 Because the detector frame realization of $a \sin i$ is as a frequency modulation, $df$, this search space can be describes as the `$df$ vs $f$' plane.
 Each pixel in the `$df$ vs $f$' plane has an $h_0$ and $\log_{10} p$-value associated with its $R$ statistic, as noted in Chapter~\ref{chap5}.
-The $h_0$ is proportional to $R^{1/4}$; $\log_{10} p$ is more complicated but loosely scales with $R$ in Gaussian noise and has been calibrated into an accurate, single-template $p$-value using Davies' method.
+The $h_0$ is proportional to $R^{1/4}$.
+Estimating $\log_{10} p$ is more complicated but loosely scales with $R$ in Gaussian noise and has been calibrated into an accurate, single-template $p$-value using Davies' method, a computational implementation of the Gil-Pelaez formula\footnote{Gil-Pelaez applies since the $R$ statistic is a sum of weighted $\chi^2$ variables, for which the joint probability distibution can be derived using characteristic functions or generating functions; the author has previously worked helped derive generating functions for more complicated distributions~\cite{RomeroThesis}.}.
 Our search uses $\mathcal{O}(10^8)$ templates, not single-templates nor a few, distant-and-uncorrelated templates as in the all-sky search.
 Thus the directed search necessitates enhancements to post-processing.
 
@@ -84,12 +85,17 @@ Before these extra dimensions, however, the author has had to validate new appro
         \section{Quantifying directedness: sensitivity studies in real data}
         \label{quant_directed}
 
+Gaussian noise studies, of which the Mock Data Challenge was one, led to the development of most of the code for detection, parameter estimation, as well as a set of upper limits (ULs).
+UL determination in the MDC was severely constrained by the sample size of 50 unblinded `open' injections.
+While detection criteria and parameter estimation were sound, ULs demanded more simulated injections.
+With the MDC complete, resources were free to conduct these injections into several frequency bands of S6 data, at 142 Hz as well as 162 and 222 Hz (the latter two are consistant, detailed in Appendix~\ref{appendix2}).
+A Feldman-Cousins approach~\cite{FeldmanCousins1998} (to accomodate the possibility of a detection) then let us set one-sided confidence intervals: the upper limits.
 
             %Quantify how good the improvements are in directed TwoSpect. 
 
-            Cite Feldman-Cousins confidence intervals paper~\cite{FeldmanCousins1998}.
+            %Cite Feldman-Cousins confidence intervals paper~\cite{FeldmanCousins1998}.
 
-            Cite Ethan's thesis~\cite{RomeroThesis} and our paper, maybe by using generation functions to make better TwoSpect statistics.
+            %Cite Ethan's thesis~\cite{RomeroThesis} and our paper, maybe by using generation functions to make better TwoSpect statistics.
 
       %\section{Real S6 data: statistics}
 
@@ -97,20 +103,34 @@ Before these extra dimensions, however, the author has had to validate new appro
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{plots/detectionEfficiencyh0-142-0Hz.eps}
+\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/detectionEfficiencyh0-142-0Hz.eps}
 \caption{Detection efficiency of 500 injections (each at H1, L1) into
-S6 data at 142 Hz, given threshold log10p = -7.75}
+S6 data at 142 Hz, given threshold $\log_{10}p$ = -7.75}
+\label{S6_det_eff_142}
 \end{center}
 \end{figure}
+
+Figure~\ref{S6_det_eff_142} plots the \textit{detection efficiency} of TwoSpect in a 0.1 Hz test band starting at 142 Hz.
+Five hundred signals are injected, with the same astrophysical parameters, into each LIGO interferometer (H1 and L1), with correspondingly different antenna pattern and detector response.
+A separate TwoSpect analysis was run for each injection simulation to avoid cross-contamination.
+The results of corresponding analyses were compared between IFOs.
+Templates meeting the detection criteria of the Mock Data Challenge (as discussed in Chapter~\ref{chap5}, having a single-template $\log_{10} p \leq -7.75$) were, if coincident in both interferometers by being in adjacent $df$, $f$ pixels, were counted as detections.
+
+Every injected signal had some amplitude $h_0$, but we expect the weakest injections to be swamped by detector noise.
+Detection efficiency curves illustrate when the signal becomes detectable, a certain fraction of the time, as injection amplitude is varied.
+Some signal parameters vary as well, such as polarization (via astrophysical $\cos \iota$), frequency and $a \sin i$, and in-band differences in the noise realization make the same $h_0$ detectable or not depending on these nuisance parameters.
+The detection efficiency curve is marginalized, that is, ignores these extra parameters to show only detection rate vs $h_0$.
+TwoSpect begins to detect roughly 95\% of injections when $h_0$ is about 10\% of the strain amplitude spectral density of the detector.
 
         \subsection{Real S6 data: $h_0$ recovered vs injected}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{plots/h0UL-vs-h0injected-142-0Hz.eps}
+\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/h0UL-vs-h0injected-142-0Hz.eps}
 \caption{
 Raw $h_0$ \& tentative 95\% confidence UL $>2\times10^{-24}$; 500 injections
 into S6 data at 142 Hz (injections also done at 162, 222 Hz)}
+\label{S6_ULs_142}
 \end{center}
 \end{figure}
 
@@ -146,7 +166,7 @@ See Appendix~\ref{appendix2} for further injection studies.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{plots/DFvsFresultsh0-H1_pulsar-0045.eps}
+\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/DFvsFresultsh0-H1_pulsar-0045.eps}
 \caption{
 S6 $h_0$ heatmap shows real data features, such as 46.7 Hz cal line}
 \end{center}
@@ -156,7 +176,7 @@ S6 $h_0$ heatmap shows real data features, such as 46.7 Hz cal line}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{plots/h0FullUL95logGuess-H1.eps}
+\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/h0FullUL95logGuess-H1.eps}
 \caption{
 H1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands}
 \end{center}
@@ -164,7 +184,7 @@ H1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{plots/h0FullUL95logGuess-L1.eps}
+\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/h0FullUL95logGuess-L1.eps}
 \caption{
 L1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands}
 \end{center}
@@ -248,36 +268,36 @@ $\rightarrow$ Upper limits will be made
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{plots/DFvsFresultsProb-H1_pulsar-434.eps}
+\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/DFvsFresultsProb-H1_pulsar-434.eps}
 \caption{
-Quick look at J1751-305, H1 log10p, 435 Hz $\nu_0$}
+Quick look at J1751-305, H1 $\log_{10}p$, 435 Hz $\nu_0$}
 \end{center}
 \end{figure}
 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{plots/DFvsFresultsProb-L1_pulsar-434.eps}
+\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/DFvsFresultsProb-L1_pulsar-434.eps}
 \caption{
-Quick look at J1751-305, L1 log10p, 435 Hz $\nu_0$}
+Quick look at J1751-305, L1 $\log_{10}p$, 435 Hz $\nu_0$}
 \end{center}
 \end{figure}
 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{plots/DFvsFresultsProb-H1_pulsar-620.eps}
+\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/DFvsFresultsProb-H1_pulsar-620.eps}
 \caption{
-Quick look at J1751-305, H1 log10p, 621 Hz $r$-mode}
+Quick look at J1751-305, H1 $\log_{10}p$, 621 Hz $r$-mode}
 \end{center}
 \end{figure}
 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.4\paperwidth,height=0.2\paperheight]{plots/DFvsFresultsProb-L1_pulsar-620.eps}
+\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/DFvsFresultsProb-L1_pulsar-620.eps}
 \caption{
-Quick look at J1751-305, L1 log10p, 621 Hz $r$-mode}
+Quick look at J1751-305, L1 $\log_{10}p$, 621 Hz $r$-mode}
 \end{center}
 \end{figure}
 

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  17 SEP 2014 22:39
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  17 SEP 2014 23:17
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1456,52 +1456,57 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 (./chap6.tex [148
 
-] [149] [150] [151]
+] [149] [150] [151] [152]
 File: plots/detectionEfficiencyh0-142-0Hz.eps Graphic file (type eps)
- <plots/detectionEfficiencyh0-142-0Hz.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 102
+
+<plots/detectionEfficiencyh0-142-0Hz.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 108
 \OT1/cmr/m/n/10 Figure 6.1: []
  []
 
+[153]
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 106.
-
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `subscript' on input line 106.
+(hyperref)                removing `math shift' on input line 125.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 106.
+(hyperref)                removing `subscript' on input line 125.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 125.
 
 File: plots/h0UL-vs-h0injected-142-0Hz.eps Graphic file (type eps)
 <plots/h0UL-vs-h0injected-142-0Hz.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 113
+Overfull \hbox (49.88899pt too wide) detected at line 132
 \OT1/cmr/m/n/10 Figure 6.2: []
  []
 
-[152] [153]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [154]
 File: plots/DFvsFresultsh0-H1_pulsar-0045.eps Graphic file (type eps)
- <plots/DFvsFresultsh0-H1_pulsar-0045.eps>
+
+<plots/DFvsFresultsh0-H1_pulsar-0045.eps>
 File: plots/h0FullUL95logGuess-H1.eps Graphic file (type eps)
-
-<plots/h0FullUL95logGuess-H1.eps>
+ <plots/h0FullUL95logGuess-H1.eps>
 File: plots/h0FullUL95logGuess-L1.eps Graphic file (type eps)
- <plots/h0FullUL95logGuess-L1.eps>
-File: plots/ScoX1ULs.eps Graphic file (type eps)
 
-<plots/ScoX1ULs.eps>
-Overfull \hbox (61.43713pt too wide) in paragraph at lines 175--181
+<plots/h0FullUL95logGuess-L1.eps>
+File: plots/ScoX1ULs.eps Graphic file (type eps)
+ <plots/ScoX1ULs.eps>
+Overfull \hbox (61.43713pt too wide) in paragraph at lines 195--201
  [] 
  []
 
 
-Overfull \hbox (49.88899pt too wide) detected at line 181
+Overfull \hbox (49.88899pt too wide) detected at line 201
 \OT1/cmr/m/n/10 Figure 6.6: []
  []
 
-[154] [155] [156]
+[155] [156] [157] [158]
 File: plots/DFvsFresultsProb-H1_pulsar-434.eps Graphic file (type eps)
  <plots/DFvsFresultsProb-H1_pulsar-434.eps>
 File: plots/DFvsFresultsProb-L1_pulsar-434.eps Graphic file (type eps)
@@ -1512,11 +1517,7 @@ File: plots/DFvsFresultsProb-H1_pulsar-620.eps Graphic file (type eps)
 <plots/DFvsFresultsProb-H1_pulsar-620.eps>
 File: plots/DFvsFresultsProb-L1_pulsar-620.eps Graphic file (type eps)
 
-<plots/DFvsFresultsProb-L1_pulsar-620.eps>
-Underfull \vbox (badness 3439) has occurred while \output is active []
-
- [157]
-[158] [159]) [160]
+<plots/DFvsFresultsProb-L1_pulsar-620.eps> [159] [160] [161]) [162]
 CHAPTER VII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1570,7 +1571,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 173.
 
-(./chap7.tex [161
+(./chap7.tex [163
 
 ]
 Overfull \hbox (29.60022pt too wide) in paragraph at lines 27--28
@@ -1592,9 +1593,9 @@ Overfull \hbox (45.8334pt too wide) detected at line 90
  []
 
 File: ifo_schematic.eps Graphic file (type eps)
-<ifo_schematic.eps> [162] [163]
+<ifo_schematic.eps> [164] [165]
 File: WSF_AA_fringes.eps Graphic file (type eps)
- <WSF_AA_fringes.eps> [164]
+ <WSF_AA_fringes.eps> [166]
 Overfull \hbox (45.8334pt too wide) detected at line 157
 \OT1/cmr/m/n/10 Table 7.2: []
  []
@@ -1631,7 +1632,7 @@ Overfull \hbox (49.88899pt too wide) detected at line 232
 \OT1/cmr/m/n/10 Figure 7.8: []
  []
 
-[165] [166]) [167] [168] [169] [170]
+[167] [168]) [169] [170] [171] [172]
 CHAPTER VIII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1685,7 +1686,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 177.
 
-(./conclusion.tex [171
+(./conclusion.tex [173
 
 ]
 File: LIGOpanoramasmall.eps Graphic file (type eps)
@@ -1694,23 +1695,23 @@ Overfull \hbox (49.88899pt too wide) detected at line 67
 \OT1/cmr/m/n/10 Figure 8.1: []
  []
 
-[172]
+[174]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [173])
-[174] [175
+ [175])
+[176] [177
 
 ]
 APPENDIX A.
 Package hyperref Info: bookmark level for unknown appendix defaults to 0 on inp
 ut line 184.
-(./appendix.tex [176
+(./appendix.tex [178
 
 ]
 Underfull \vbox (badness 2435) has occurred while \output is active []
 
- [177]
-[178] [179] [180]) [181]
+ [179]
+[180] [181] [182]) [183]
 APPENDIX B.
 (./appendix2.tex
 File: plots/detectionEfficiencyh0-162-0Hz.eps Graphic file (type eps)
@@ -1741,11 +1742,11 @@ File: plots/h0FullUL50log-H1.eps Graphic file (type eps)
 <plots/h0FullUL50log-H1.eps>
 File: plots/h0FullUL50log-L1.eps Graphic file (type eps)
  <plots/h0FullUL50log-L1.eps>) (./thesis.bbl
-[182
+[184
 
-] [183] [184] [185] [186
+] [185] [186] [187] [188] [189] [190
 
-] [187] [188] [189] [190]
+] [191] [192] [193] [194]
 Underfull \hbox (badness 10000) in paragraph at lines 553--559
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1756,25 +1757,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 553--559
 r&
  []
 
-[191] [192] [193]
+[195] [196] [197]
 Underfull \hbox (badness 1803) in paragraph at lines 821--824
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-[194]) [195]
+[198]) [199]
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4974 strings out of 256217
- 68549 string characters out of 1917094
- 182491 words of memory out of 1500000
- 8034 multiletter control sequences out of 10000+200000
+ 4976 strings out of 256217
+ 68577 string characters out of 1917094
+ 182793 words of memory out of 1500000
+ 8036 multiletter control sequences out of 10000+200000
  15555 words of font info for 59 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (213 pages, 951308 bytes).
+Output written on thesis.dvi (217 pages, 958348 bytes).
