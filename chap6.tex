@@ -134,9 +134,25 @@ into S6 data at 142 Hz (injections also done at 162, 222 Hz)}
 \end{center}
 \end{figure}
 
+Using the same set of injections as for detection efficiency, one can also recover estimated $h_0$, as Figure~\ref{S6_ULs_142} illustrates.
+TwoSpect returns an $h_0$ proportional to $R^{1/4}$, but the proportionality constant was found to be slightly off in the MDC, prompting an empirical rescaling by 1.11.
+Moreover, studies of the $\cos \iota$ uncertainty had let us to correct $h_0$ estimates further when assuming random polarization: a uniform distribution of $\cos \iota$ values near the detection threshold induced a $1.74 \pm 0.37$ factor, so we multiplied the S6 injections by $1.74$.
+The real data injections were necessary to clarify how these $h_0$ levels corresponded to a given confidence level. 
+In other words, the reported UL should be above the injected $h_0$ at least 95\% of the time.
+
+Figure~\ref{S6_ULs_142} reports the fraction of the total injection set for which our final formula yields a UL greater than the injected $h_0$, which is higher than 95\% because the formula must hold locally over the entire range.
+When attention is restricted to $h_0 > 2\times10^{-24}$, we find that the confidence level multiplier must be 2.0.
+Assembled, a UL for each 0.1 Hz band is reported by the formula,
+
+\begin{equation}
+h_{0,\textup{ UL, band}} = 2.0 \times 1.74 \times 1.11 \times \textup{sup}(\{h_{0, \textup{ reported, band}}\}).
+\label{S6_UL_formula}
+\end{equation}
+
+\noindent With coincident analysis of interferometers, the lowest UL reported for a band is taken as the joint UL.
+This criterion and Equation~\ref{S6_UL_formula} supercede the single MDC UL with a frequency-dependent UL, calculated for each 0.1 Hz band between 40 and 2040 Hz.
+
 See Appendix~\ref{appendix2} for further injection studies.
-
-
 
 %\section{S6: Scorpius X-1}
 
@@ -192,7 +208,7 @@ L1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\paperwidth,height=0.4\paperheight]{plots/ScoX1ULs.eps}
+\includegraphics[width=0.65\paperwidth,height=0.35\paperheight]{plots/ScoX1ULs.eps}
 \caption{
 Joint upper limits for Scorpius X-1, using a confidence interval given by reported $h_0 \times \left( 1 + 1.0 \right) \times \left[\cos\iota \textup{ factor}\right]$ in 0.1 Hz bands. 
 This spectrum covers 40 to 2040 Hz using the lower upper limit from either interferomer (H1 or L1) when both yielded data. 

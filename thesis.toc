@@ -71,56 +71,56 @@
 \contentsline {subsubsection}{Figures of merit: inspiral range}{102}{section*.6}
 \contentsline {section}{\numberline {4.3}Squeezing large interferometers: success and prospects}{104}{section.4.3}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf TwoSpect: Search for a Simulated Scorpius X-1}}{106}{chapter.5}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf TwoSpect: Search for a Simulated Scorpius X-1}}{105}{chapter.5}
 \hbox { }
-\contentsline {section}{\numberline {5.1}Neutron stars in binary systems}{106}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Continuous gravitational waves from neutron stars}{107}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Binary spin-up and detectable lifetime}{108}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Detection rate projections}{109}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}TwoSpect searches}{109}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Two spectra: a double Fourier transform}{111}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Infering neutron stars with companions}{111}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}TwoSpect algorithm detection statistic}{111}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Directed TwoSpect's greater sensitivity}{117}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Sky maps using exact templates}{118}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Scorpius X-1 mock data challenge}{120}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Fully-templated search for Scorpius X-1}{120}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Narrow-band heat maps in parameter space}{120}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Wide-band heat maps in parameter space}{120}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Revisiting \& refining detection criteria}{124}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Mock Data Challenge procedure}{124}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Detection Claims}{126}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Detection criteria}{127}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Parameter Estimation}{127}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Upper Limits and Detection Efficiency}{129}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}$\qopname \relax o{cos}\iota $ Ambiguity}{129}{subsection.5.5.5}
-\contentsline {section}{\numberline {5.6}Summary of the MDC}{141}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Mock data challenge results}{141}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Binary search summary beyond the MDC}{141}{subsection.5.6.2}
-\contentsline {section}{\numberline {5.7}Plans for improvement}{142}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Coherent interferometer synthesis}{143}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {5.7.2}Circular \& elliptical polarization}{143}{subsection.5.7.2}
-\contentsline {subsection}{\numberline {5.7.3}Orbital phase \& beyond}{144}{subsection.5.7.3}
-\contentsline {subsection}{\numberline {5.7.4}Parameter space patterns}{145}{subsection.5.7.4}
-\contentsline {subsection}{\numberline {5.7.5}Relevance to follow-up}{146}{subsection.5.7.5}
-\contentsline {section}{\numberline {5.8}Addendum}{147}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}Scorpius X-1 parameters}{147}{subsection.5.8.1}
+\contentsline {section}{\numberline {5.1}Neutron stars in binary systems}{105}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Continuous gravitational waves from neutron stars}{106}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Binary spin-up and detectable lifetime}{107}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Detection rate projections}{108}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}TwoSpect searches}{108}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Two spectra: a double Fourier transform}{110}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Infering neutron stars with companions}{110}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}TwoSpect algorithm detection statistic}{110}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Directed TwoSpect's greater sensitivity}{116}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Sky maps using exact templates}{117}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Scorpius X-1 mock data challenge}{119}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Fully-templated search for Scorpius X-1}{119}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Narrow-band heat maps in parameter space}{119}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Wide-band heat maps in parameter space}{119}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Revisiting \& refining detection criteria}{123}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Mock Data Challenge procedure}{123}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Detection Claims}{125}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Detection criteria}{126}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Parameter Estimation}{126}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Upper Limits and Detection Efficiency}{128}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}$\qopname \relax o{cos}\iota $ Ambiguity}{128}{subsection.5.5.5}
+\contentsline {section}{\numberline {5.6}Summary of the MDC}{140}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Mock data challenge results}{140}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Binary search summary beyond the MDC}{140}{subsection.5.6.2}
+\contentsline {section}{\numberline {5.7}Plans for improvement}{141}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Coherent interferometer synthesis}{142}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}Circular \& elliptical polarization}{142}{subsection.5.7.2}
+\contentsline {subsection}{\numberline {5.7.3}Orbital phase \& beyond}{143}{subsection.5.7.3}
+\contentsline {subsection}{\numberline {5.7.4}Parameter space patterns}{144}{subsection.5.7.4}
+\contentsline {subsection}{\numberline {5.7.5}Relevance to follow-up}{145}{subsection.5.7.5}
+\contentsline {section}{\numberline {5.8}Addendum}{146}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Scorpius X-1 parameters}{146}{subsection.5.8.1}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Directed TwoSpect: Scorpius X-1 and XTE J1751-305}}{148}{chapter.6}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Directed TwoSpect: Scorpius X-1 and XTE J1751-305}}{147}{chapter.6}
 \hbox { }
-\contentsline {section}{\numberline {6.1}Directed TwoSpect}{148}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Targeted, directed and all-sky search sensitivity}{149}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Enhancements enabled by directed searching}{151}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Quantifying directedness: sensitivity studies in real data}{152}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Real S6 data: detection efficiency}{153}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Real S6 data: $h_0$ recovered vs injected}{155}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.1}Directed TwoSpect}{147}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Targeted, directed and all-sky search sensitivity}{148}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Enhancements enabled by directed searching}{150}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Quantifying directedness: sensitivity studies in real data}{151}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Real S6 data: detection efficiency}{152}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Real S6 data: $h_0$ recovered vs injected}{154}{subsection.6.2.2}
 \contentsline {section}{\numberline {6.3}Scorpius X-1 search using Directed TwoSpect in S6}{155}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}S6: Scorpius X-1 search plan}{155}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}S6: Scorpius X-1 heatmaps}{155}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}S6: Scorpius X-1 upper limits, random polarization}{155}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}S6: Scorpius X-1 outliers}{155}{subsection.6.3.4}
-\contentsline {section}{\numberline {6.4}XTE J1751-305 search using Directed TwoSpect in S6}{155}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}S6: XTE J1751-305 background}{155}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.3.2}S6: Scorpius X-1 heatmaps}{158}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}S6: Scorpius X-1 upper limits, random polarization}{158}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}S6: Scorpius X-1 outliers}{158}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}XTE J1751-305 search using Directed TwoSpect in S6}{158}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}S6: XTE J1751-305 background}{158}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}S6: XTE J1751-305 heatmaps}{159}{subsection.6.4.2}
 \contentsline {section}{\numberline {6.5}Summary of Directed TwoSpect S6 searches}{159}{section.6.5}
 \hbox { }
