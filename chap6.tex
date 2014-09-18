@@ -188,8 +188,16 @@ Thus the author derives the following ULs for 40 to 360 Hz from the 840-s SFTs a
 \includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/DFvsFresultsh0-H1_pulsar-0045.eps}
 \caption{
 S6 $h_0$ heatmap shows real data features, such as 46.7 Hz cal line}
+\label{S6_cal_line_heatmap}
 \end{center}
 \end{figure}
+
+As the S6 search was run on the Atlas cluster at AEI Hannover, individual bands could be checked for consistency with known artifacts.
+Heatmaps plotting the intensity of $R$, $\log_{10}p$ and estimated $h_0$ (as reported, not corrected by Equation~\ref{S6_UL_formula}) were generated.
+Figure~\ref{S6_cal_line_heatmap} shows one set of 50 bands, spanning 5 Hz, on H1.
+This band clearly shows the presence of the 46.7 Hz \textit{calibration line}\footnote{These lines help calibrate the $h_0$ amplitude spectral density~\cite{MeadorsFeedforward2014}, although their TwoSpect reported amplitude may not match the intended $h_0$ because the lines are not modulated like neutron stars in binary systems.}.
+Seeing known spectral features at their expected frequencies confirms that TwoSpect is reading data accurately. 
+The heatmaps can also be used to follow-up on interesting outliers.
 
 \subsection{S6: Scorpius X-1 upper limits, random polarization}
 
@@ -197,7 +205,8 @@ S6 $h_0$ heatmap shows real data features, such as 46.7 Hz cal line}
 \begin{center}
 \includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/h0FullUL95logGuess-H1.eps}
 \caption{
-H1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands}
+H1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands. This formula corresponds to about 90\% confidence in random polarization ULs in the final analysis.}
+\label{S6_H1_UL}
 \end{center}
 \end{figure}
 
@@ -205,7 +214,8 @@ H1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ 
 \begin{center}
 \includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{plots/h0FullUL95logGuess-L1.eps}
 \caption{
-L1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands}
+L1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands. This formula corresponds to about 90\% confidence in random polarization ULs in the final analysis.}
+\label{S6_L1_UL}
 \end{center}
 \end{figure}
 
@@ -218,8 +228,19 @@ This spectrum covers 40 to 2040 Hz using the lower upper limit from either inter
 A total of 28.8 Hz were in bands that yielded no real upper limit (because the quarter root of the test statistic was imaginary) in either interferometer, generally due to excessive noise in that band.
 Bands were left-closed and right open, e.g., $\left[ 40.0,40.1\right), \left[ 40.1,40.2\right)\ldots \left[2039.9,2040.0\right)$.
 }
+\label{S6_H1L1_UL}
 \end{center}
 \end{figure}
+
+Most important are the upper limits (ULs).
+Figures~\ref{S6_H1_UL} and~\ref{S6_L1_UL} show tentative ULs that, in the final analysis, correspond to approximately 90\% confidence for random polarization.
+These figures also illustrate the most sensitive part of the LIGO spectrum.
+The entire spectrum, with the final 95\% confidence UL for random polarization, is shown in Figure~\ref{S6_H1L1_UL}.
+
+Previous Radiometer surveys using S5 data~\cite{AbadieStoch2011} may appear to show a better, lower UL, but the results are not directly comparable.
+The Radiometer UL is calculated for 90\% and is for circular (optimal) rather than random, polarization.
+TwoSpect's S6 UL is competitive (possibly better, pending deeper understanding of the algorithmic differences), particularly given that S6 has half the data of S5.
+Moreover, given an outlier, TwoSpect could do something not yet possible with other comparable pipeline: identify the projected semimajor axis, $a \sin i$.
 
 \subsection{S6: Scorpius X-1 outliers}
 
@@ -228,28 +249,28 @@ Bands were left-closed and right open, e.g., $\left[ 40.0,40.1\right), \left[ 40
 \begin{tabular}{r r l}
 Outlier Number & Frequency (Hz) & Explanation \\
 \hline
-1 & 42.00 & \\
-2 & 64.00 & \\
-3 & 108.10 & \\
-4 & 108.85 & \\
-5 & 109.50 & \\
-6 & 111.02 & \\
-7 & 128.00 & \\
-8 & 139.52 & \\
-9 & 154.04 & \\
-10 & 156.82 & \\
-11 & 157.99 & \\
-12 & 158.36 & \\
-13 & 158.87 & \\
-14 & 190.86 & \\
+1 & 42.00 & -- \\
+2 & 64.00 & -- \\
+3 & 108.10 & -- \\
+4 & 108.85 & -- \\
+5 & 109.50 & -- \\
+6 & 111.02 & -- \\
+7 & 128.00 & -- \\
+8 & 139.52 & -- \\
+9 & 154.04 & -- \\
+10 & 156.82 & -- \\
+11 & 157.99 & -- \\
+12 & 158.36 & -- \\
+13 & 158.87 & -- \\
+14 & 190.86 & -- \\
 15 & 192.54 & Injected pulsar 8? \\
-16 & 200.53 & \\
-17 & 200.60 & \\
-18 & 209.21 & \\
-19 & 209.28 & \\
-20 & 223.66 & \\
-21 & 256.02 & \\
-22 & 268.13 & \\
+16 & 200.53 & -- \\
+17 & 200.60 & -- \\
+18 & 209.21 & -- \\
+19 & 209.28 & -- \\
+20 & 223.66 & -- \\
+21 & 256.02 & -- \\
+22 & 268.13 & -- \\
 \end{tabular}
 \caption{List of Scorpius X-1 outliers in the search of S6 data. This list covers 40 to 360 Hz.}
 \label{ScoX1S6outlierTable}
