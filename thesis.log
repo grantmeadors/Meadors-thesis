@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  18 SEP 2014 14:06
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  18 SEP 2014 15:52
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1582,24 +1582,27 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 173.
 
-(./chap7.tex [166
+(./chap7.tex
+Underfull \vbox (badness 2409) has occurred while \output is active []
+
+ [166
 
 ]
-Overfull \hbox (29.60022pt too wide) in paragraph at lines 29--30
+Overfull \hbox (29.60022pt too wide) in paragraph at lines 36--37
 [][][]$\OT1/cmtt/m/n/12 http : //$[][][][][]$gallatin.$[][][][][]$physics.$[][]
 [][][]$lsa.$[][][][][]$umich.$[][][][][]$edu/$[][][][][]$[]keithr/$[][][][][]$o
 utreach/$[][][][][]$LIGOExhibitParts_$[][]
  []
 
 
-Overfull \hbox (11.07521pt too wide) in paragraph at lines 33--39
+Overfull \hbox (11.07521pt too wide) in paragraph at lines 40--46
 [][][]$\OT1/cmtt/m/n/12 http : //$[][][][][]$gallatin.$[][][][][]$physics.$[][]
 [][][]$lsa.$[][][][][]$umich.$[][][][][]$edu/$[][][][][]$[]keithr/$[][][][][]$o
 utreach/$[][][][][]$ifo_$[][][][][]$schematic.$[][]
  []
 
 
-Overfull \hbox (45.8334pt too wide) detected at line 92
+Overfull \hbox (45.8334pt too wide) detected at line 99
 \OT1/cmr/m/n/10 Table 7.1: []
  []
 
@@ -1607,44 +1610,44 @@ File: ifo_schematic.eps Graphic file (type eps)
 <ifo_schematic.eps> [167] [168] [169]
 File: WSF_AA_fringes.eps Graphic file (type eps)
  <WSF_AA_fringes.eps>
-Overfull \hbox (45.8334pt too wide) detected at line 168
+Overfull \hbox (45.8334pt too wide) detected at line 175
 \OT1/cmr/m/n/10 Table 7.2: []
  []
 
 File: view-corner.eps Graphic file (type eps)
 <view-corner.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 181
+Overfull \hbox (49.88899pt too wide) detected at line 188
 \OT1/cmr/m/n/10 Figure 7.3: []
  []
 
-[170]
 File: view-front.eps Graphic file (type eps)
- <view-front.eps>
+<view-front.eps>
 File: view-top-plate-3.eps Graphic file (type eps)
  <view-top-plate-3.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 199
+Overfull \hbox (49.88899pt too wide) detected at line 206
 \OT1/cmr/m/n/10 Figure 7.5: []
  []
 
 File: WSF_under_construction.eps Graphic file (type eps)
 <WSF_under_construction.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 208
+Overfull \hbox (49.88899pt too wide) detected at line 215
 \OT1/cmr/m/n/10 Figure 7.6: []
  []
 
 File: WSF_in_NY.eps Graphic file (type eps)
 <WSF_in_NY.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 224
+Overfull \hbox (49.88899pt too wide) detected at line 231
 \OT1/cmr/m/n/10 Figure 7.7: []
  []
 
+[170] [171] [172] [173]
 File: WSF_me_NY.eps Graphic file (type eps)
-<WSF_me_NY.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 243
+ <WSF_me_NY.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 250
 \OT1/cmr/m/n/10 Figure 7.8: []
  []
 
-[171] [172]) [173] [174] [175] [176]
+) [174] [175] [176] [177]
 CHAPTER VIII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1698,7 +1701,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\ignorespaces' on input line 177.
 
-(./conclusion.tex [177
+(./conclusion.tex [178
 
 ]
 File: LIGOpanoramasmall.eps Graphic file (type eps)
@@ -1707,23 +1710,23 @@ Overfull \hbox (49.88899pt too wide) detected at line 67
 \OT1/cmr/m/n/10 Figure 8.1: []
  []
 
-[178]
+[179]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [179])
-[180] [181
+ [180])
+[181] [182
 
 ]
 APPENDIX A.
 Package hyperref Info: bookmark level for unknown appendix defaults to 0 on inp
 ut line 184.
-(./appendix.tex [182
+(./appendix.tex [183
 
 ]
 Underfull \vbox (badness 2435) has occurred while \output is active []
 
- [183]
-[184] [185] [186]) [187]
+ [184]
+[185] [186] [187]) [188]
 APPENDIX B.
 (./appendix2.tex
 File: plots/detectionEfficiencyh0-162-0Hz.eps Graphic file (type eps)
@@ -1738,9 +1741,9 @@ Overfull \hbox (51.97234pt too wide) detected at line 39
 \OT1/cmr/m/n/10 Figure B.2: []
  []
 
-[188
+[189
 
-] [189]
+] [190]
 File: plots/detectionEfficiencyh0-222-0Hz.eps Graphic file (type eps)
  <plots/detectionEfficiencyh0-222-0Hz.eps>
 Overfull \hbox (51.97234pt too wide) detected at line 68
@@ -1750,7 +1753,7 @@ Overfull \hbox (51.97234pt too wide) detected at line 68
 
 Underfull \vbox (badness 6658) has occurred while \output is active []
 
- [190]
+ [191]
 File: plots/h0UL-vs-h0injected-222-0Hz.eps Graphic file (type eps)
 
 <plots/h0UL-vs-h0injected-222-0Hz.eps>
@@ -1761,10 +1764,10 @@ Overfull \hbox (51.97234pt too wide) detected at line 82
 File: plots/h0FullUL50log-H1.eps Graphic file (type eps)
 <plots/h0FullUL50log-H1.eps>
 File: plots/h0FullUL50log-L1.eps Graphic file (type eps)
- <plots/h0FullUL50log-L1.eps>) [191] [192] [193]
-(./thesis.bbl [194] [195
+ <plots/h0FullUL50log-L1.eps>) [192] [193] [194]
+(./thesis.bbl [195] [196
 
-] [196] [197] [198] [199]
+] [197] [198] [199] [200]
 Underfull \hbox (badness 10000) in paragraph at lines 558--564
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1775,13 +1778,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--564
 r&
  []
 
-[200] [201] [202]
+[201] [202] [203]
 Underfull \hbox (badness 1803) in paragraph at lines 831--834
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-[203]) [204]
+[204]) [205]
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
@@ -1800,4 +1803,4 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  33i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (222 pages, 985704 bytes).
+Output written on thesis.dvi (223 pages, 987240 bytes).
