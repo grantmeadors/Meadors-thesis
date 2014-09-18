@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  18 SEP 2014 00:18
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  18 SEP 2014 00:29
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1500,7 +1500,7 @@ File: plots/h0FullUL95logGuess-L1.eps Graphic file (type eps)
 <plots/h0FullUL95logGuess-L1.eps>
 File: plots/ScoX1ULs.eps Graphic file (type eps)
  <plots/ScoX1ULs.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 217
+Overfull \hbox (49.88899pt too wide) detected at line 220
 \OT1/cmr/m/n/10 Figure 6.6: []
  []
 
@@ -1515,7 +1515,11 @@ File: plots/DFvsFresultsProb-H1_pulsar-620.eps Graphic file (type eps)
 <plots/DFvsFresultsProb-H1_pulsar-620.eps>
 File: plots/DFvsFresultsProb-L1_pulsar-620.eps Graphic file (type eps)
 
-<plots/DFvsFresultsProb-L1_pulsar-620.eps> [159] [160] [161]) [162]
+<plots/DFvsFresultsProb-L1_pulsar-620.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [159]
+[160] [161]) [162]
 CHAPTER VII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1776,4 +1780,4 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  35i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (217 pages, 962028 bytes).
+Output written on thesis.dvi (217 pages, 962460 bytes).

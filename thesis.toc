@@ -116,13 +116,13 @@
 \contentsline {subsection}{\numberline {6.2.2}Real S6 data: $h_0$ recovered vs injected}{154}{subsection.6.2.2}
 \contentsline {section}{\numberline {6.3}Scorpius X-1 search using Directed TwoSpect in S6}{155}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}S6: Scorpius X-1 search plan}{155}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}S6: Scorpius X-1 heatmaps}{158}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}S6: Scorpius X-1 upper limits, random polarization}{158}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}S6: Scorpius X-1 outliers}{158}{subsection.6.3.4}
-\contentsline {section}{\numberline {6.4}XTE J1751-305 search using Directed TwoSpect in S6}{158}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}S6: XTE J1751-305 background}{158}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}S6: XTE J1751-305 heatmaps}{159}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Summary of Directed TwoSpect S6 searches}{159}{section.6.5}
+\contentsline {subsection}{\numberline {6.3.2}S6: Scorpius X-1 heatmaps}{155}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}S6: Scorpius X-1 upper limits, random polarization}{155}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}S6: Scorpius X-1 outliers}{155}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}XTE J1751-305 search using Directed TwoSpect in S6}{155}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}S6: XTE J1751-305 background}{155}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}S6: XTE J1751-305 heatmaps}{161}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Summary of Directed TwoSpect S6 searches}{161}{section.6.5}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Outreach: Exhibit at the World Science Festival}}{163}{chapter.7}
 \hbox { }
