@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  18 SEP 2014 13:33
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  18 SEP 2014 14:06
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1728,37 +1728,43 @@ APPENDIX B.
 (./appendix2.tex
 File: plots/detectionEfficiencyh0-162-0Hz.eps Graphic file (type eps)
  <plots/detectionEfficiencyh0-162-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 18
+Overfull \hbox (51.97234pt too wide) detected at line 22
 \OT1/cmr/m/n/10 Figure B.1: []
  []
 
 File: plots/h0UL-vs-h0injected-162-0Hz.eps Graphic file (type eps)
 <plots/h0UL-vs-h0injected-162-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 29
+Overfull \hbox (51.97234pt too wide) detected at line 39
 \OT1/cmr/m/n/10 Figure B.2: []
  []
 
+[188
+
+] [189]
 File: plots/detectionEfficiencyh0-222-0Hz.eps Graphic file (type eps)
-<plots/detectionEfficiencyh0-222-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 49
+ <plots/detectionEfficiencyh0-222-0Hz.eps>
+Overfull \hbox (51.97234pt too wide) detected at line 68
 \OT1/cmr/m/n/10 Figure B.3: []
  []
 
+
+Underfull \vbox (badness 6658) has occurred while \output is active []
+
+ [190]
 File: plots/h0UL-vs-h0injected-222-0Hz.eps Graphic file (type eps)
+
 <plots/h0UL-vs-h0injected-222-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 60
+Overfull \hbox (51.97234pt too wide) detected at line 82
 \OT1/cmr/m/n/10 Figure B.4: []
  []
 
 File: plots/h0FullUL50log-H1.eps Graphic file (type eps)
 <plots/h0FullUL50log-H1.eps>
 File: plots/h0FullUL50log-L1.eps Graphic file (type eps)
- <plots/h0FullUL50log-L1.eps>) (./thesis.bbl
-[188
+ <plots/h0FullUL50log-L1.eps>) [191] [192] [193]
+(./thesis.bbl [194] [195
 
-] [189] [190] [191] [192] [193] [194
-
-] [195] [196] [197] [198]
+] [196] [197] [198] [199]
 Underfull \hbox (badness 10000) in paragraph at lines 558--564
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1769,13 +1775,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--564
 r&
  []
 
-[199] [200] [201]
+[200] [201] [202]
 Underfull \hbox (badness 1803) in paragraph at lines 831--834
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-[202]) [203]
+[203]) [204]
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
@@ -1786,12 +1792,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4982 strings out of 256217
- 68677 string characters out of 1917094
- 184013 words of memory out of 1500000
- 8043 multiletter control sequences out of 10000+200000
+ 4988 strings out of 256217
+ 68775 string characters out of 1917094
+ 184833 words of memory out of 1500000
+ 8049 multiletter control sequences out of 10000+200000
  15196 words of font info for 58 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  33i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (221 pages, 976824 bytes).
+Output written on thesis.dvi (222 pages, 985704 bytes).
