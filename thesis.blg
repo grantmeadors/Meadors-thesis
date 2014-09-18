@@ -17,10 +17,6 @@ I was expecting a `{' or a `('---line 6 of file bibliography.bib
  : @ARTICLE{feyn54,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Illegal end of database file---line 2964 of file bibliography.bib
- : doi = {10.1088/0004-637X/784/1/72}
- :                                   
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "GoetzTwoSpectResults2011"
 Warning--to sort, need author or key in SRT
 Warning--empty title in LSCPulsarS4
@@ -85,4 +81,4 @@ warning$ -- 22
 while$ -- 386
 width$ -- 172
 write$ -- 1814
-(There were 4 error messages)
+(There were 3 error messages)
