@@ -17,6 +17,10 @@ I was expecting a `{' or a `('---line 6 of file bibliography.bib
  : @ARTICLE{feyn54,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Illegal end of database file---line 2964 of file bibliography.bib
+ : doi = {10.1088/0004-637X/784/1/72}
+ :                                   
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in SRT
 Warning--empty title in LSCPulsarS4
 Warning--empty title in LSCPulsar2006
@@ -39,45 +43,45 @@ Warning--empty title in Sathyaprakash2009
 Warning--empty title in Takahashi1965
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 168 entries,
+You've used 169 entries,
             2118 wiz_defined-function locations,
-            1455 strings with 26968 characters,
-and the built_in function-call counts, 45215 in all, are:
-= -- 4283
-> -- 2398
+            1460 strings with 27098 characters,
+and the built_in function-call counts, 45466 in all, are:
+= -- 4307
+> -- 2411
 < -- 20
-+ -- 970
-- -- 788
-* -- 3056
-:= -- 8299
-add.period$ -- 485
-call.type$ -- 168
-change.case$ -- 809
++ -- 976
+- -- 792
+* -- 3072
+:= -- 8345
+add.period$ -- 488
+call.type$ -- 169
+change.case$ -- 814
 chr.to.int$ -- 0
-cite$ -- 190
-duplicate$ -- 1714
-empty$ -- 3288
-format.name$ -- 788
-if$ -- 9037
+cite$ -- 191
+duplicate$ -- 1724
+empty$ -- 3306
+format.name$ -- 792
+if$ -- 9087
 int.to.chr$ -- 0
-int.to.str$ -- 168
-missing$ -- 146
-newline$ -- 823
-num.names$ -- 336
-pop$ -- 720
+int.to.str$ -- 169
+missing$ -- 147
+newline$ -- 828
+num.names$ -- 338
+pop$ -- 723
 preamble$ -- 1
-purify$ -- 692
+purify$ -- 696
 quote$ -- 0
-skip$ -- 1226
+skip$ -- 1235
 stack$ -- 0
-substring$ -- 1614
-swap$ -- 166
+substring$ -- 1620
+swap$ -- 167
 text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 630
+type$ -- 634
 warning$ -- 22
-while$ -- 384
-width$ -- 171
-write$ -- 1803
-(There were 3 error messages)
+while$ -- 386
+width$ -- 172
+write$ -- 1814
+(There were 4 error messages)

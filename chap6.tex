@@ -17,7 +17,7 @@ Scorpius X-1 broadband upper limits from S6 are the direction of this chapter.
             \subsection{Targeted, directed and all-sky search sensitivity}
             \label{tradeoffs}
 
-Several approaches exist toward a search from GW from known objects such as Scorpius X-1.
+Several approaches exist toward a search from GW from known objects such as Scorpius X-1\footnote{Discovered by Riccardo Giacconi.}.
 When seeking continuous GW, these methods are classified as all-sky, directed, or targeted, in order of increasing focus of the search.
 More focused searches make sense as more prior information is known, such as sky location, neutron star frequency and binary system orbital parameters.
 Additional information lets some CW searches refine, for instance, their template models of GW signals.If the search is designed for minimal information, in particular if sky location is unknown, it is generally called an \textit{all-sky search}.
@@ -233,6 +233,12 @@ Bands were left-closed and right open, e.g., $\left[ 40.0,40.1\right), \left[ 40
 \end{figure}
 
 Most important are the upper limits (ULs).
+TwoSpect has been configured to analyze only `usable SFTs', which must pass a Kuiper's test.
+Non-Gaussian or otherwise extremely noisy data is not used.
+The 60 Hz and first three harmonic lines (120, 180, 240) Hz harmonic lines, as well as frequencies new the violin modes around 330 Hz, are excluded by these tests.
+Altogether, the 40 to 360 Hz H1 search excluded 16.4 Hz and L1 16.2 Hz, while the 360 to 2040 Hz H1 search excluded 21.4 Hz and L1 16.9 Hz of search bands.
+For generating upper limits, only 28.8 out of 2000.0 Hz could not be determined from either interferometer.
+
 Figures~\ref{S6_H1_UL} and~\ref{S6_L1_UL} show tentative ULs that, in the final analysis, correspond to approximately 90\% confidence for random polarization.
 These figures also illustrate the most sensitive part of the LIGO spectrum.
 The entire spectrum, with the final 95\% confidence UL for random polarization, is shown in Figure~\ref{S6_H1L1_UL}.
@@ -250,12 +256,12 @@ Moreover, given an outlier, TwoSpect could do something not yet possible with ot
 Outlier Number & Frequency (Hz) & Explanation \\
 \hline
 1 & 42.00 & -- \\
-2 & 64.00 & -- \\
+2 & 64.00 & Power of 2 line \\
 3 & 108.10 & -- \\
 4 & 108.85 & -- \\
 5 & 109.50 & -- \\
 6 & 111.02 & -- \\
-7 & 128.00 & -- \\
+7 & 128.00 & Power of 2 line \\
 8 & 139.52 & -- \\
 9 & 154.04 & -- \\
 10 & 156.82 & -- \\
@@ -269,7 +275,7 @@ Outlier Number & Frequency (Hz) & Explanation \\
 18 & 209.21 & -- \\
 19 & 209.28 & -- \\
 20 & 223.66 & -- \\
-21 & 256.02 & -- \\
+21 & 256.02 & Power of 2 line \\
 22 & 268.13 & -- \\
 \end{tabular}
 \caption{List of Scorpius X-1 outliers in the search of S6 data. This list covers 40 to 360 Hz.}
@@ -277,13 +283,24 @@ Outlier Number & Frequency (Hz) & Explanation \\
 \end{center}
 \end{table}
 
-Table~\ref{ScoX1S6outlierTable} presents a list of outliers present in both intereferometers.
+Table~\ref{ScoX1S6outlierTable} presents a list of outliers present in both intereferometers between 40 and 360 Hz.
+Analysis of outliers from 360 to 2040 Hz is forthcoming.
+Some coincident outliers present in the initial analysis include lines at powers of 2 and a probable trace of a hardware-injected pulsar.
+As noted earlier, power line frequencies and violin modes were automatically dismissed by TwoSpect because.
+More exhaustive study of the candidates in Table~\ref{ScoX1S6outlierTable} will continue, although GW detection would be a rather too-optimistic prospect given the torque-balance limit for Scorpius X-1~\cite{Bildsten1998} and estimated detection efficiency.
+
+The search for GW from Scorpius X-1 continues, and the imminent observational runs of aLIGO give hope that its signature may soon be detected.
+With continued improvements to CW algorithms and the enhanced sensitivity of future interferometers, we expect that Giacconi's discovery of the first and brightest extrasolar X-ray source will be paralleled with a GW discovery.
 
 \section{XTE J1751-305 search using Directed TwoSpect in S6}
 
 \subsection{S6: XTE J1751-305 background}
 
-Discovered by Markwardt et al in 2002~\cite{Markwardt2002}.
+Discovered by Markwardt in 2002~\cite{Markwardt2002}, the X-ray transient (XTE) J1751-305 has indications it too could emit GW~\cite{Strohmayer2014}.
+As detailed by Strohmayer and Mahmoodifar, J1751 has been searched for signs of non-radial oscillation modes, such as $r$- (and $g$-) modes.
+Preliminary results suggested that $r$-modes might be consistent with X-ray observations.
+Although no $r$-modes have so far been detected, J1751 is an intriguing candidate in its own right and highlights the different kinds of directed GW search that TwoSpect can conduct.
+
 
 \textbf{XTE with shortest period, 42 minutes}\\
 (P $\approx$$ $ 2545.3 s, $a \sin i$ $\approx0.010\pm0.003$s):\\
