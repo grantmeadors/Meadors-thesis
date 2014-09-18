@@ -25,10 +25,12 @@ Charlie Stout wrote an interactive Flash program for the kiosk.
 
 In the small interferometer, a 0.9 mW Helium-Neon laser beam passes through a beam spliter, travels down two arms of slightly different length, and reflects off retroreflecting mirrors at the end of each arm.
 The retroreflectors contain three mutually-perpendicular planes that redirect the beam parallel and opposite to its incident path, offset by twice the distance from the retroreflector corner.
+Retroreflectors are more robust against misalignment than flat mirrors, although reflected images cast a six-spoke shadow pattern due to the three intersecting lines between the planes.
+Slight beam offset away from the center avoids these spokes.
 These optical elements are mounted on a portable breadboard with pre-fabricated optical table-style holes.
 Recombined at the beam splitter, some light goes to a beam dump while the remainder is directed to a screen.
 As the path length of the beams and consequent phase delay changes -- due to thermal expansion of the breadboard, vibrations, and so on -- the screen shows a fluctuating fringe pattern that illustrates the constructive and destructive interference of light waves.
-Thanks to the arm length asymmetry, this fringe pattern has a well-defined circular shape.
+Mismatched wavefront curvatures, arising from travel along the different-length arms, give this fringe pattern a well-defined circular shape.
 Speakers, when used, let exhibit-goers hear how vibrations, which they themselves can make by tapping on the kiosk, reverberate through the mirrors and and be both seen on-screen and heard as fringes pass the photodiode. 
 In the kiosk, a swinging lever arm, controlled by whoever stands at the kiosk, can block the light from one of the arms, blocking the inteference; the user can see that the fringe pattern indeed comes from the wave nature of light.
 
@@ -36,9 +38,7 @@ A full set of parts for the kiosk interferometer was assembled by the author (Ta
 This additional interferometer went on travelling exhibition, organized by Marco Cavaglia of the University of Mississipi, across the United States starting with the 2009 WSF, and it was most recently on display at Stanford University in August 2014.
 It is durable, but for the LIGO `Astronomy's New Messengers' 2010 WSF exhibit, the MGWG crafted something more dramatic.
 
-    \textbf{Bill of materials}
-
-    \textit{Interferometer parts}
+    \subsubsection{Bill of materials: interferometer parts}
 
 Equipment as below builds one interferometer for our Ann Arbor Hands-On
 Museum outreach design. 
@@ -56,10 +56,11 @@ in particular the parts list (plain text file) written by the author,
 and the schematic 
 
 \url{http://gallatin.physics.lsa.umich.edu/~keithr/outreach/ifo_schematic.jpg}. 
-See Table~\ref{WSF_IFO_BOM} for details on parts from each of the manufacturers: 
-CVI Melles-Griot\footnote{CVI Melles-Griot: \href{tel:15052969541}{\texttt{+1 505 296 9541}}; press 2 at menu},
-Edmund Optics\footnote{Edmund Optics: \href{tel:18003631992}{\texttt{+1 800 363 1992}}; press 1 (?) for sales},
-OptoSigma\footnote{OptoSigma: \href{tel:19498515881}{\texttt{+1 949 851 5881}} }, and
+
+See Table~\ref{WSF_IFO_BOM} for details on parts from each of the manufacturers: \\
+CVI Melles-Griot\footnote{CVI Melles-Griot: \href{tel:15052969541}{\texttt{+1 505 296 9541}}; press 2 at menu},\\
+Edmund Optics\footnote{Edmund Optics: \href{tel:18003631992}{\texttt{+1 800 363 1992}}; press 1 (?) for sales},\\
+OptoSigma\footnote{OptoSigma: \href{tel:19498515881}{\texttt{+1 949 851 5881}} }, and\\
 ThorLabs\footnote{ThorLabs: \href{tel:19735797227}{\texttt{+1 973 579 7227}}; press 1 (?) for sales}.
 
 \begin{table}
@@ -133,10 +134,9 @@ Figure~\ref{kiosk_ifo_schematic} shows the base structural dimensions of this ki
     \section{World Science Festival interferometer manufacture}
     \label{manufacture}
 
-        World Science Festival interferometer in isolation.
-
+        %World Science Festival interferometer in isolation.
     
-Based on the kiosk interferometer, we collaborated with Marco Cavaglia on a larger interferometer for the WSF.
+Based on the kiosk interferometer, we collaborated with Cavaglia on a larger interferometer for the WSF.
 Displayed first in June 2010 in New York City, the WSF interferometer incorporates new features.
 The projection screen was enlarged, made free-standing,
 % despite screen manufacture in display section
