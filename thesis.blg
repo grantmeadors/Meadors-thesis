@@ -21,6 +21,7 @@ Illegal end of database file---line 2964 of file bibliography.bib
  : doi = {10.1088/0004-637X/784/1/72}
  :                                   
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "GoetzTwoSpectResults2011"
 Warning--to sort, need author or key in SRT
 Warning--empty title in LSCPulsarS4
 Warning--empty title in LSCPulsar2006
@@ -45,7 +46,7 @@ Warning--empty title in Welch1967
 Warning--empty title in Willke2002
 You've used 169 entries,
             2118 wiz_defined-function locations,
-            1460 strings with 27098 characters,
+            1462 strings with 27146 characters,
 and the built_in function-call counts, 45466 in all, are:
 = -- 4307
 > -- 2411
