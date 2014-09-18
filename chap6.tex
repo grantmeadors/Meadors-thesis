@@ -19,14 +19,65 @@ Scorpius X-1 broadband upper limits from S6 are the direction of this chapter.
 
 Several approaches exist toward a search from GW from known objects such as Scorpius X-1.
 When seeking continuous GW, these methods are classified as all-sky, directed, or targeted, in order of increasing focus of the search.
-More focused searches make sense as more prior information is known, such as neutron star frequency and binary system orbital parameters.
+More focused searches make sense as more prior information is known, such as sky location, neutron star frequency and binary system orbital parameters.
+Additional information lets some CW searches refine, for instance, their template models of GW signals.If the search is designed for minimal information, in particular if sky location is unknown, it is generally called an \textit{all-sky search}.
+Some information -- such as a low-uncertainty sky-location, much less than a square radian -- helps what are called \textit{directed searches} gain sensitivity.
+Sources with comprehensively-documented parameters, such as rotation frequency and spindown rate, lend themselves to \textit{targeted searches} that search over a very narrow range of parameters, \textit{e.g.,} putative GW phase, that cannot be deduced with other instruments.
+
+TwoSpect was designed~\cite{GoetzThesis,GoetzTwoSpectMethods2011} as an all-sky search for unknown neutron stars.
+The voluminous parameter space of that search, as described in Chapter~\ref{chap5}, prompted tradeoffs in sensitivity vs computational cost, in particular the limitation of test statistic calculation to only those outlier candidates that survived an incoherent harmonic sum stage. 
+For objects with constrained sky location and NS parameters, thorough calculations of the $R$ test statistic become feasible.
+
+For Scorpius X-1, many parameters are known (updated ephemerides were calculated in 2014 by Galloway~\cite{Galloway2014}), but critically, rotation frequency is not.
+Sky location is known, and the period is $0.7873114 \pm 0.0000005$ days, \textit{i.e.,} $68023.70 \pm 0.04$ s with 1-$\sigma$ uncertainty\footnote{Access to a preliminary ephemeris in the MDC led us to use $P = 68023.8259 s$ in for searches in the MDC and S6; MDC simulations justify assuming that this variation has negligible impact on TwoSpect, which would only be able to discriminate between different periods around $68023 s$ at a resolution of about $40 s$ or greater, depending on Fourier transform coherence time.}.
+The projected semimajor axis, $a \sin i$, is $1.44 \pm 0.18 s$ with 1-$\sigma$ uncertainty\footnote{Orbital parameters interpreted in correspondence between C. Messenger and D. Galloway.}.
+Rotation frequency uncertainty drives the cost of the search.
+While the Chakrabarty speed limit~\cite{Chakrabarty2003} and neutron star breakup limit limit $2\nu$, the GW emission frequency of an NS quadrupole, to $\mathcal{O}(2\textup{ to }3)$ kHz, the dominant high frequency limit $f_h$ is driven as much by the noise floor of the LIGO detectors.
+This noise floor increases proportionally to the square root of frequency and at 2 kHz is an order of magnitude worse than its most sensitive, about $2\times10^{-23}$ in dimensionless strain between 150 and 200 Hz.
+Photon shot noise, that is, quantum vacuum fluctuations are the limiting noise source at those frequencies.
+The low frequency limit, $f_l$, is also driven by the noise floor of the detector, which becomes contaminated by seismic noise below about 40 Hz.
+
+A search for Scorpius X-1 in S6 data should thus take place between about 40 and 2000 Hz. 
+TwoSpect requires shortened Short Fourier Transforms (SFTs)~\cite{GoetzTwoSpectMethods2011} to fully capture the spectral power if a GW source has a high frequency or $a \sin i$. 
+This suggests dividing the main search: 40 to 360 Hz can be searched in 840 s coherence time SFTs and 360 to 2040 Hz in 360 s coherence time SFTs.
+These sets constitute the primary search.
+Although MDC and simulation experience suggests spectral power is lost only slowly as GW frequency exceeds optimal coherence time, we have also prepared 260 to 360 Hz SFTs with 360 s coherence time and 1400 to 2040 Hz SFTs with 300 s coherence time; these are most useful for high $a \sin i$ signal models.
+These additional sets constitute the `overlap' search.
+Calculating the number of templates in the primary search (the overlap search is smaller because of shorter coherence times) over these frequencies and $\pm 3 \sigma_{a \sin i}$, if analyzed in 0.1 Hz computational bands\footnote{0.1 Hz computational bands fit efficiently on cluster memory in under 2 GB of RAM; for convenience, templates are (redundantly) tested at both the lower \& upper bounds of the 0.1 Hz.} using Equation~\ref{N_template_simple},
+
+\begin{equation}
+N_\textup{template} = 2 (840.1)\left[1+ \frac{3360\pi}{68023.8} 400.1 \right](320) + 2 (360.1)\left[1+ \frac{1440\pi}{68023.8}2400.1\right](1680),
+\label{S6_N_templates}
+\end{equation}
+
+\noindent or $3.392\times 10^7$ templates in 840 s SFTs and $1.9434\times 10^8$ templates in 360 s SFTs, per interferometer.
+Searching both LHO's H1 interferometer and LLO's L1 interferometer, the grand total is $4.5652\times10^8$ templates.
+
+Each of these templates takes between 0.3 and 3 s to run on late 2000s to early 2010s CPUs, depending on vector extensions (such as SSE) and clock speed.
+Given approximately two thousand cores at a cluster such as the LIGO Data Grid at the California Institute of Technology and the LIGO observatories or Atlas at the Albert Einstein Institute in Hannover, Germany, a fully templated TwoSpect search for Scorpius X-1 in S6 data can be completed in roughly a month.
+This has been carried out by the author and is the subject of the remainder of this chapter.
+Because of the enhanced sensitivity and wider frequency range of the directed search, this analysis can improve on the TwoSpect all-sky limits by Goetz~\cite{GoetzTwoSpectResults2014} while consuming comparable computational resources (albeit for a single, promising source).
 
              %   Targeted (known object) vs directed (region)vs all-sky (everything).
 
-
-
             \subsection{Enhancements enabled by directed searching}
             \label{directed_enhancements}
+
+Directed TwoSpect as used for the search in this chapter closely resembles the all-sky TwoSpect pipeline, except for post-processing. 
+The post-processing is discussed below.
+The bulk of the processing,skipping the incoherent harmonic sum stage that reduces the number of templates search, involves generating the test statistic, $R$, for each point in a rectangular grid spaced at $1/(2T_\textup{coh})$ in frequency and $1/(4T_\textup{coh})$ in $a \sin i$, which keeps mismatch between putative signal and template to within 0.2 of the peak $R$ value~\cite{GoetzTwoSpectMethods2011}.
+Since sky location and period are fixed, the search is two-dimensional on the $f$ and $a \sin i$. 
+Because the detector frame realization of $a \sin i$ is as a frequency modulation, $df$, this search space can be describes as the `$df$ vs $f$' plane.
+Each pixel in the `$df$ vs $f$' plane has an $h_0$ and $\log_{10} p$-value associated with its $R$ statistic, as noted in Chapter~\ref{chap5}.
+The $h_0$ is proportional to $R^{1/4}$; $\log_{10} p$ is more complicated but loosely scales with $R$ in Gaussian noise and has been calibrated into an accurate, single-template $p$-value using Davies' method.
+Our search uses $\mathcal{O}(10^8)$ templates, not single-templates nor a few, distant-and-uncorrelated templates as in the all-sky search.
+Thus the directed search necessitates enhancements to post-processing.
+
+In the near future, enhancements enabled by the directed search will be possible.
+Sensitivity from full templating is the first step.
+The next steps can involve a search over orbital phase and polarization with additional computation steps and templating techniques.
+Before these extra dimensions, however, the author has had to validate new approaches to analyzing this dense 2D parameter space.
+
 
              %   Modifications for directed search.
 
