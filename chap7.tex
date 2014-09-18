@@ -150,7 +150,7 @@ This interferometer stood at the center of the WSF exhibition on LIGO, which rec
         \subsection{Laser, optics and display}
         \label{laser_display}
 
-            Laser and optics (and display).
+            %Laser and optics (and display).
 
 	\begin{figure}
 	\begin{center}
@@ -160,18 +160,41 @@ This interferometer stood at the center of the WSF exhibition on LIGO, which rec
 	\end{center}
 	\end{figure}
 
+Starting from the request for a larger interferometer, the MGWG found a brighter laser with longer coherence length.
+Laser Lab Components, Incorporated (LLCI) manufactured a 60 mW Nd-YAG 532 nm laser rated to a coherence length of 50 meters, plenty for the longer path length.
+The laser intensity was so bright that we installed a times-8 attenuator to provide just 7.5 mW of visible light.
+As the wavelength is green, it is even more visible to the human eye than the red HeNe of the kiosk laser.
+To protect visitors' eyes, the author designed a system of eight black-painted, wooden baffles to intercept all ghost beams and secondary reflections.
+
+These baffles were manufactured, along with the free-standing display screen, in Ann Arbor by Fingerle Lumber.
+Additional black, corrugated cardboard baffles were made by the author to shield the multiple reflections immediately around the laser and the retroreflectors.
+This display screen was hollow in order to accomodate a photodiode, BNC connection, and cable for the aforementioned speaker system.
+Installation of the photodiode assembly and hookup to a speaker system was performed by the MGWG.
+
+Optical installation and alignment was done by the author.
+Retroreflector and beam-splitter follow the kiosk model except in size, using a 3-inch diameter beam-splitter to avoid beam clipping.
+The large interferometer adds a beam-focusing lens between the laser and beam-splitter, which serves with the beam-splitter to steer the beams onto the retroflectors.
+In order to avoid clipping the beam-splitter and to avoid the retroreflector spoke shadows, the retroreflector mounts allow for one-dimensional sliding on the shorter X arm and two-dimensional sliding on the longer Y arm.
+These adjustments are typically fine-tuned after an initial image is formed on the output port of the beam-splitter.
+
+A trio of first steering mirror, beam-expanding lens, and second steering mirror project the beam from the beam-splitter output onto the display screen.
+The steering mirrors are both flat; the first is at a ninety degree angle, in-plane with the other optics, and the second is also ninety degrees in the main optical plane but tilted upwards to shine toward the screen.
+In between, the beam-expanding lens is chosen to maximize the width of the image on-screen, constrained by the clipping of the second steering mirror,
+Unfortunately, the beam path after the second steering mirror is too high for a conventional lens mount to insert the lens there.
+In practice, the arrangement highlights the fringe pattern.
+
+Initial estimation of optics locations was done in Matlab with a Gaussian beam, ABCD matrix model, followed by physical fine-tuning, both done by the author.
 
         \subsection{Aluminum baseboard}
         \label{baseplate}
 
-            Aluminum base plate.
+            %Aluminum base plate.
 
-Table~\ref{aluminum_baseboard_hole_locations} references the positions of holes in the aluminum baseboard that must be tapped. These holes permit the attachment of plexiglass blocks with perpendicular screw tappings that in turn allow the attachment of the plexiglass enclosure described in Section~\ref{enclosure}.
 
 \begin{table}[t]
 \begin{center}
 \begin{tabular}{ c c }
-x-position & y-position \\
+x-position (in) & y-position (in) \\
 \hline \\
 10 & 80\\
 04 & 18\\
@@ -195,10 +218,17 @@ x-position & y-position \\
 \end{center}
 \end{table}
 
+All optics are mounted on a purpose-made aluminum baseboard.
+Prototyping was conducted on an optical table, which would be too large to ship conveniently.
+No breadboards were known of adequate size, and typical honeycomb construction would also likely be heavy.
+The aluminum baseboard as manufactured, by 
+
+Table~\ref{aluminum_baseboard_hole_locations} references the positions of holes in the aluminum baseboard that must be tapped. These holes permit the attachment of plexiglass blocks with perpendicular screw tappings that in turn allow the attachment of the plexiglass enclosure described in Section~\ref{enclosure}.
+
         \subsection{Plexiglass enclosure}
         \label{enclosure}
 
-            Plexiglass, many lessons learned.
+            %Plexiglass, many lessons learned.
 
         \begin{figure}
         \begin{center}
