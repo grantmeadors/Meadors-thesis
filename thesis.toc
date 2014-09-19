@@ -130,26 +130,26 @@
 \contentsline {subsubsection}{Bill of materials: interferometer parts}{168}{section*.7}
 \contentsline {section}{\numberline {7.2}World Science Festival interferometer manufacture}{169}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Laser, optics and display}{171}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Aluminum baseboard}{174}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Plexiglass enclosure}{177}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{177}{section.7.3}
+\contentsline {subsection}{\numberline {7.2.2}Aluminum baseboard}{173}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Plexiglass enclosure}{174}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{178}{section.7.3}
 \contentsline {subsection}{\numberline {7.3.1}Exhibit overview}{178}{subsection.7.3.1}
 \contentsline {subsection}{\numberline {7.3.2}World Science Festival 2010}{178}{subsection.7.3.2}
 \contentsline {subsection}{\numberline {7.3.3}Portsmouth and Fort Wayne}{178}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Future LIGO outreach}{179}{section.7.4}
+\contentsline {section}{\numberline {7.4}Future LIGO outreach}{180}{section.7.4}
 \hbox { }
-\contentsline {chap}{\numberline {\hbox { }\hfill \bf VIII.\hspace {5pt}}{\bf Conclusion}}{180}{chapter.8}
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VIII.\hspace {5pt}}{\bf Conclusion}}{181}{chapter.8}
 \hbox { }
-\contentsline {section}{\numberline {8.1}Cycles of science}{180}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Improvements to observatories}{180}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Understanding instruments}{180}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Refining data}{180}{subsection.8.1.3}
-\contentsline {subsection}{\numberline {8.1.4}Searching deep-space}{180}{subsection.8.1.4}
-\contentsline {subsection}{\numberline {8.1.5}Reaching out, looking up}{180}{subsection.8.1.5}
-\contentsline {section}{\numberline {8.2}Scientific merit: filtering and analysis}{180}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Feedforward improvement to LIGO data}{181}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}TwoSpect directed search for neutron stars in binary systems}{181}{subsection.8.2.2}
-\contentsline {section}{\numberline {8.3}Entering the advanced detector era}{181}{section.8.3}
-\contentsline {section}{\numberline {8.4}Vision of a dark sky}{181}{section.8.4}
-\contentsline {chapter}{APPENDICES}{184}{figure.8.1}
-\contentsline {chapter}{BIBLIOGRAPHY}{198}{figure.2.6}
+\contentsline {section}{\numberline {8.1}Cycles of science}{181}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Improvements to observatories}{181}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Understanding instruments}{181}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Refining data}{181}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Searching deep-space}{181}{subsection.8.1.4}
+\contentsline {subsection}{\numberline {8.1.5}Reaching out, looking up}{181}{subsection.8.1.5}
+\contentsline {section}{\numberline {8.2}Scientific merit: filtering and analysis}{181}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Feedforward improvement to LIGO data}{182}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}TwoSpect directed search for neutron stars in binary systems}{182}{subsection.8.2.2}
+\contentsline {section}{\numberline {8.3}Entering the advanced detector era}{182}{section.8.3}
+\contentsline {section}{\numberline {8.4}Vision of a dark sky}{182}{section.8.4}
+\contentsline {chapter}{APPENDICES}{185}{figure.8.1}
+\contentsline {chapter}{BIBLIOGRAPHY}{199}{figure.2.6}

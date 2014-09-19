@@ -57,10 +57,10 @@ and the schematic
 
 \url{http://gallatin.physics.lsa.umich.edu/~keithr/outreach/ifo_schematic.jpg}. 
 
-See Table~\ref{WSF_IFO_BOM} for details on parts from each of the manufacturers: \\
-CVI Melles-Griot\footnote{CVI Melles-Griot: \href{tel:15052969541}{\texttt{+1 505 296 9541}}; press 2 at menu},\\
-Edmund Optics\footnote{Edmund Optics: \href{tel:18003631992}{\texttt{+1 800 363 1992}}; press 1 (?) for sales},\\
-OptoSigma\footnote{OptoSigma: \href{tel:19498515881}{\texttt{+1 949 851 5881}} }, and\\
+See Table~\ref{WSF_IFO_BOM} for details on parts from each of the manufacturers:
+CVI Melles-Griot\footnote{CVI Melles-Griot: \href{tel:15052969541}{\texttt{+1 505 296 9541}}; press 2 at menu},
+Edmund Optics\footnote{Edmund Optics: \href{tel:18003631992}{\texttt{+1 800 363 1992}}; press 1 (?) for sales},
+OptoSigma\footnote{OptoSigma: \href{tel:19498515881}{\texttt{+1 949 851 5881}} }, and
 ThorLabs\footnote{ThorLabs: \href{tel:19735797227}{\texttt{+1 973 579 7227}}; press 1 (?) for sales}.
 
 \begin{table}
@@ -174,7 +174,7 @@ Installation of the photodiode assembly and hookup to a speaker system was perfo
 Optical installation and alignment was done by the author.
 Retroreflector and beam-splitter follow the kiosk model except in size, using a 3-inch diameter beam-splitter to avoid beam clipping.
 The large interferometer adds a beam-focusing lens between the laser and beam-splitter, which serves with the beam-splitter to steer the beams onto the retroflectors.
-In order to avoid clipping the beam-splitter and to avoid the retroreflector spoke shadows, the retroreflector mounts allow for one-dimensional sliding on the shorter X arm and two-dimensional sliding on the longer Y arm.
+In order to avoid clipping the beam-splitter and to avoid the retroreflector spoke shadows, the retroreflector mounts allow for one-dimensional sliding on the shorter $X$ arm and two-dimensional sliding on the longer $Y$ arm.
 These adjustments are typically fine-tuned after an initial image is formed on the output port of the beam-splitter.
 
 A trio of first steering mirror, beam-expanding lens, and second steering mirror project the beam from the beam-splitter output onto the display screen.
@@ -186,6 +186,16 @@ In practice, the arrangement highlights the fringe pattern.
 While the fringe pattern fluctuates considerably, with an amplitude sometimes of several wavelengths, this is to be expected in a meter-scale instrument with path-length in air and without an insulation from ground motion.
 
 Initial estimation of optics locations was done in Matlab with a Gaussian beam, ABCD matrix model, followed by physical fine-tuning, both done by the author.
+The BOM of large interferometer core optics (superceding Table~\ref{WSF_IFO_BOM}'s beamsplitter and retroreflectors) includes the following:
+
+\begin{itemize}
+\item (1 unit) OptoSigma, 112-2855 (50 mm gimbal, 360 degree rotation): \$305
+\item (2 units) OptoSigma, 055-2370 (50 mm retroreflector, 425-675 nm): \$315 each
+\item (2 units) Edmunds Optics, NT63-114 (50 mm mirror, 532 nm): \$220 each
+\item (1 unit) Newport Optics, Fused Silica Broadband Dielectric Beamsplitter (76.2 Dia, 12.45mm, $\lambda$/
+  20, 480-700nm): \$1190.00 
+\item (8 units) Thorlabs, 50 mm lens holders
+\end{itemize}
 
         \subsection{Aluminum baseboard}
         \label{baseplate}
@@ -236,7 +246,7 @@ Table~\ref{aluminum_baseboard_hole_locations} and Figure~\ref{al_top_plate} refe
         \begin{figure}
         \begin{center}
         \includegraphics[height=60mm, width=100mm]{view-corner.eps}
-        \caption{AutoCAD corner view of plexiglass and aluminum interferometer enclosure. Plexiglass in light gray, aluminum in dark gray. Plexiglass is attached to aluminum with small plexiglass blocks (a refinement to the design), placed three to the long $y$-arm, two to the short $x$-arm, and three to the corner station. The triangular prism is not anchored to the aluminum block. It is open to the bottom so that a projection screen can be inserted, typically atop a flexible rubber sheet. In the World Science Festival exhibit, this projection screen included a photodiode and attached signal cable.}
+        \caption{AutoCAD corner view of plexiglass and aluminum interferometer enclosure. Plexiglass in light gray, aluminum in dark gray. Plexiglass is attached to aluminum with small plexiglass blocks (a refinement to the design), placed three to the long $Y$-arm, two to the short $X$-arm, and three to the corner station. The triangular prism is not anchored to the aluminum block. It is open to the bottom so that a projection screen can be inserted, typically atop a flexible rubber sheet. In the World Science Festival exhibit, this projection screen included a photodiode and attached signal cable.}
         \label{plex-view-corner}
         \end{center}
         \end{figure}
@@ -274,12 +284,23 @@ The AutoCAD design file can be found online:
 
 \url{http://gallatin.physics.lsa.umich.edu/~keithr/outreach/meadors_wsf_draft_08-unified.dwg}
 
-%Should calculate lower bound on $h(t)$ sensitivity based on Saulson, compare to Robert Forward's interferometer.
+To manufacture the enclosure, the author visited and contracted with Plex Lab Corporation (formerly of Warren, Michigan).
+The enclosure was fabricated in pieces: the arms were made from joined half-tube ceilings together with straight walls.
+A laser 'end station' and triangular prism enclosure for the projection screen were joined to it.
+Joints endured significant stresses during transport and the arms became detached; in the future it would be better to fabricate the enclosure with detachable arms from the start.
+Plexiglass enclosure pieces attached to the baseboard using small rectangular plexiglass blocks.
+Blocks were fastened to the tapped baseboard with screws, then the enclosure lowered overhead (requiring at least two people to handle the prism section).
+Through-holes through the enclosure allowed security screws to clamp into tapped, perpendicular holes in the blocks from the outside.
+
+A unified view of the plexiglass and aluminum, with aluminum screw-holes indicated for the optics, is seen in Figure~\ref{al_top_plate}, and a view of the finished product (minus the projection screen) in Figure~\ref{WSF_in_AA}.
+
+
 
 
     \section{Exhibitions: New York City, Portsmouth, Fort Wayne}
     \label{exhibitions}
 
+%Should calculate lower bound on $h(t)$ sensitivity based on Saulson, compare to Robert Forward's interferometer.
         World Science Festival interferometer installed.
 
 	\begin{figure}
