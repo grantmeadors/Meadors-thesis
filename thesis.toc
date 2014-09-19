@@ -136,7 +136,7 @@
 \contentsline {subsection}{\numberline {7.3.1}Exhibit overview}{179}{subsection.7.3.1}
 \contentsline {subsection}{\numberline {7.3.2}World Science Festival 2010}{179}{subsection.7.3.2}
 \contentsline {subsection}{\numberline {7.3.3}Portsmouth and Fort Wayne}{179}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Future LIGO outreach}{180}{section.7.4}
+\contentsline {section}{\numberline {7.4}Future LIGO outreach}{179}{section.7.4}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VIII.\hspace {5pt}}{\bf Conclusion}}{181}{chapter.8}
 \hbox { }

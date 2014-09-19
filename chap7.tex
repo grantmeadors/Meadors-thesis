@@ -300,19 +300,6 @@ A unified view of the plexiglass and aluminum, with aluminum screw-holes indicat
     \section{Exhibitions: New York City, Portsmouth, Fort Wayne}
     \label{exhibitions}
 
-%Should calculate lower bound on $h(t)$ sensitivity based on Saulson, compare to Robert Forward's interferometer.
-
-Built in Michigan, our interferomter was transported for exhibition at the WSF.
-According to Equation~\ref{strain-to-power-eq}, the small interferometer, if limited only by shot noise, could transduce GW strain to power $P$:
-
-\begin{equation}
-P = \left[ 4 (1 \textup{m}) \frac{2\pi c}{532 \textup{nm}} \frac{(60/8) \textup{mW}}{c} \sin \left(\frac{2\pi}{532 \textup{nm}} (L_s+L_0) \right) \right] h_+.
-\end{equation}
-
-\noindent 
-
-        World Science Festival interferometer installed.
-
 	\begin{figure}
 	\begin{center}
 	\includegraphics[height=111mm, width=148mm]{WSF_in_NY.eps}
@@ -320,6 +307,27 @@ P = \left[ 4 (1 \textup{m}) \frac{2\pi c}{532 \textup{nm}} \frac{(60/8) \textup{
 	\label{WSF_IFO_photo}
 	\end{center}
 	\end{figure}
+
+%Should calculate lower bound on $h(t)$ sensitivity based on Saulson, compare to Robert Forward's interferometer.
+Built in Michigan, our interferometer was transported for exhibition at the WSF.
+
+According to Equation~\ref{strain-to-power-eq}, the interferometer, if limited only by shot noise, could transduce GW strain to power $P$:
+
+\begin{equation}
+P = \left[ 4 (1 \textup{m}) \frac{2\pi c}{532 \textup{nm}} \frac{(60/8) \textup{mW}}{c} \sin \left(\frac{2\pi}{532 \textup{nm}} (L_s+L_0) \right) \right] h_+.
+\end{equation}
+
+\noindent If operated where the sine term equalled one (not done in LIGO for reasons noted in Chapter~\ref{chap2}), then this would give yield $3.5\times 10^8$ Watts per unit strain, or 7 attoWatts for a gravitational wave at the initial LIGO noise floor, $h_0 = 2\times 10^{-23}$.
+Though we never measured the photodiode dark current, it seems dubious that such a signal would be detectable.
+In the audio band the interferometer was visibly noisy, as the plexiglass enclosure and aluminum baseboard afforded little acoustic isolation.
+Though no measurements were taken, it is conceivable that it was quieter at several kiloHertz, where the shot noise argument would be valid.
+Were isolation better, the full 60 mW laser power used, and photodiodes calibrated, it would not be so strained to compare the WSF larger interferometer to Robert Forward's~\cite{Forward1978}, which had 35 to 55 mW single-mode laser power and a 8.5 m folded arm length.
+Scaling down from Forward, we could expect $10^{-15} \textup{(strain)}/\sqrt{\textup{Hz}}$.
+
+
+        %World Science Festival interferometer installed.
+
+While rather worse scientifically than LIGO, our WSF large interferometer proved significantly more accessible.
 
 
         \subsection{Exhibit overview}
