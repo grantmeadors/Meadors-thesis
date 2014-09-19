@@ -133,9 +133,9 @@
 \contentsline {subsection}{\numberline {7.2.2}Aluminum baseboard}{173}{subsection.7.2.2}
 \contentsline {subsection}{\numberline {7.2.3}Plexiglass enclosure}{174}{subsection.7.2.3}
 \contentsline {section}{\numberline {7.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{178}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Exhibit overview}{178}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}World Science Festival 2010}{178}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Portsmouth and Fort Wayne}{178}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.1}Exhibit overview}{179}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}World Science Festival 2010}{179}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Portsmouth and Fort Wayne}{179}{subsection.7.3.3}
 \contentsline {section}{\numberline {7.4}Future LIGO outreach}{180}{section.7.4}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VIII.\hspace {5pt}}{\bf Conclusion}}{181}{chapter.8}
