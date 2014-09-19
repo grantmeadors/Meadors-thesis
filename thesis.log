@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  19 SEP 2014 00:10
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  19 SEP 2014 00:53
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1733,26 +1733,26 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 (./conclusion.tex [183
 
-] [184]
+] [184] [185] [186]
 File: LIGOpanoramasmall.eps Graphic file (type eps)
  <LIGOpanoramasmall.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 90
+Overfull \hbox (49.88899pt too wide) detected at line 131
 \OT1/cmr/m/n/10 Figure 8.1: []
  []
 
-[185]) [186] [187
+[187]) [188] [189
 
 ]
 APPENDIX A.
 Package hyperref Info: bookmark level for unknown appendix defaults to 0 on inp
 ut line 184.
-(./appendix.tex [188
+(./appendix.tex [190
 
 ]
 Underfull \vbox (badness 2435) has occurred while \output is active []
 
- [189]
-[190] [191] [192]) [193]
+ [191]
+[192] [193] [194]) [195]
 APPENDIX B.
 (./appendix2.tex
 File: plots/detectionEfficiencyh0-162-0Hz.eps Graphic file (type eps)
@@ -1767,9 +1767,9 @@ Overfull \hbox (51.97234pt too wide) detected at line 39
 \OT1/cmr/m/n/10 Figure B.2: []
  []
 
-[194
+[196
 
-] [195]
+] [197]
 File: plots/detectionEfficiencyh0-222-0Hz.eps Graphic file (type eps)
  <plots/detectionEfficiencyh0-222-0Hz.eps>
 Overfull \hbox (51.97234pt too wide) detected at line 68
@@ -1779,7 +1779,7 @@ Overfull \hbox (51.97234pt too wide) detected at line 68
 
 Underfull \vbox (badness 6658) has occurred while \output is active []
 
- [196]
+ [198]
 File: plots/h0UL-vs-h0injected-222-0Hz.eps Graphic file (type eps)
 
 <plots/h0UL-vs-h0injected-222-0Hz.eps>
@@ -1790,10 +1790,10 @@ Overfull \hbox (51.97234pt too wide) detected at line 82
 File: plots/h0FullUL50log-H1.eps Graphic file (type eps)
 <plots/h0FullUL50log-H1.eps>
 File: plots/h0FullUL50log-L1.eps Graphic file (type eps)
- <plots/h0FullUL50log-L1.eps>) [197] [198] [199]
-(./thesis.bbl [200] [201
+ <plots/h0FullUL50log-L1.eps>) [199] [200] [201]
+(./thesis.bbl [202] [203
 
-] [202] [203] [204] [205]
+] [204] [205] [206] [207]
 Underfull \hbox (badness 10000) in paragraph at lines 558--564
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
@@ -1804,13 +1804,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--564
 r&
  []
 
-[206] [207] [208]
+[208] [209] [210]
 Underfull \hbox (badness 1803) in paragraph at lines 831--834
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
 
-[209]) [210]
+[211]) [212]
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
@@ -1829,4 +1829,4 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  33i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (228 pages, 1016772 bytes).
+Output written on thesis.dvi (230 pages, 1024340 bytes).
