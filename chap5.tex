@@ -5,17 +5,17 @@
         \section{Neutron stars in binary systems}
         \label{binary_NS}
 
-Continuous waves from neutron stars in binary systems are doubly distinctive.
-As Section~\ref{continuous_waves} comments, binary systems constitute perhaps a substantial fraction (see the ATNF catalog~\cite{ManchesterATNF2005}), perhaps half, of continuous wave (CW) sources.
-CW search methods prove both powerful, probing well below the LIGO amplitude spectral density (ASD) noise floor given year-length science runs, and computationally-demanding.
-Taken together, a non-trivial possibility exists that there are CW from neutron stars (NS) in binary systems, buried in existing or forthcoming data, that could be seen with a fast, tractable search method.
+Continuous waves from neutron stars in binary systems are distinctive.
+As Section~\ref{continuous_waves} comments, binary systems constitute perhaps a substantial fraction (see the ATNF catalog~\cite{ManchesterATNF2005}), perhaps half, of millisecond pulsars.
+CW search methods prove powerful, probing well below the LIGO amplitude spectral density (ASD) noise floor given year-length science runs, yet computationally-demanding.
+A non-trivial possibility exists that there are CW from neutron stars (NS) in binary systems, buried in existing or forthcoming data, that could be seen with a fast, tractable search method.
 
 TwoSpect~\cite{GoetzThesis,GoetzTwoSpectMethods2011,GoetzTwoSpectResults2014} is such a method. 
-Developed as a search for pulsars in binary systems with unknown sky location, orbital period, projected semi-major axis or frequency, it has been tested and run on S6 data.
+Developed as a search for neutron stars in binary systems with unknown sky location, orbital period, projected semi-major axis or frequency, it has been tested and run on S6 data.
 In such a mode it accepts some degradation of sensitivity in order to scan the entire parameter space.
 If some parameters are known, a deeper search becomes possible.
 This chapter describes the development of this `directed' search and its application to a simulated data set (a `Mock Data Challenge' or MDC).
-The next chapter elaborates the results when applied to data from the last science run, S6.
+The next chapter summarizes the preliminary results when applied to data from the last science run, S6.
 
             %Astrophysical prospects for binary pulsar detection. 
             %Binary pulsars are perhaps our best hope for detecting continuous gravitational waves.
@@ -34,18 +34,18 @@ Choosing to pursue binary sources is itself a choice of search direction.
 Neutron stars can be in isolated systems as well, for which many searches have been conducted (summarized in Section~\ref{continuous_waves}).
 Yet isolated stars have several issues that make them challenging to detect.
 Isolated stars have a finite lifetime (albeit many millions of years) over which they are hypothesized to emit detectable GWs.
-During this detectable lifetime, they are losing energy to GWs -- this energy loss results in a continually-slowing frequency, denoted by the spindown rate $\dot{f} = df /dt$.
-GWs are not the only contributor to spindown: non-gravitational energy loss due to friction or magnetic interactions will also sap the rotational energy of the star and thus its GW emission amplitude.
+During this detectable lifetime, they are losing energy to GWs -- this energy loss results in a continually slowing frequency, denoted by the spindown rate $\dot{f} = df /dt$.
+GWs are not the only contributor to spindown: non-gravitational energy loss due to friction or magnetic interactions with an accretion disk will also sap the rotational energy of the star and thus its GW emission amplitude.
 Non-GW losses broaden the uncertainty in spindown rate.
 Spindown in turn makes GW searches more computationally challenging: templated-phase mismatch over a science run of many months is often significant enough to require additional templates to search over putative spindown values. 
 Since many searches are already computationally limited, a GW source without these challenges would arouse interest.
 
-Binary systems generate such interest.
-LMXBs, low-mass X-ray binaries, of which Scorpius X-1 (Sco X-1) is typical, are at the focus.
+Accreting binary systems generate such interest.
+LMXBs, low-mass X-ray binaries, of which Scorpius X-1 (Sco X-1) is an exemplar, are at the focus.
 As understood from the work of Papaloizou \& Pringle~\cite{PapaloizouPringle1978} and Wagoner~\cite{Wagoner1984}, LMXBs might exhibit several key properties:
 
 \begin{itemize}
-\item Longer lifetime than isolated sources, due to accretion recycling
+\item Longer GW lifetime than isolated sources, due to accretion recycling
 \item Ellipticity \& hot spots, due to accretion
 \item Hypothetical \textit{torque balance} frequencies
 \end{itemize}
@@ -70,26 +70,26 @@ Let us review the points of lifetime, ellipticity, and torque balance in further
          
                 %GW pulsar lifetime alone vs companion.
 As stated, isolated, elliptical, rotating NS will lose energy to GW.
-This intrinsically makes their interesting GW radiation short-lived.
+This intrinsically makes their GW radiation short-lived.
 Binary systems, in contrast, can be recycled by accretion.
 Not necessarily a steady process, recycling of infalling matter from an orbital partner can raise the spin frequency of a neutron star by conservation of angular momentum.
 Energy is released as heat and radiation on impact with the surface of the NS, in particular as X-rays in the case of an LMXB.
 The work of Papaloizou, Pringle and Wagoner elucidates the implications for GW detection.
-As infalling matter hits an NS, the matter stream can not only increase the spin frequency -- and thus GW radiation amplitude -- of the NS, but it can also increase ellipticity at the hot spot.
-Equation~\ref{cw_radiation_eps_eq} shows that this further increases radiated GW ampltitude.
+As infalling matter hits an NS, the matter stream can not only increase the spin frequency -- and thus GW radiation amplitude -- of the NS, but it can also increase NS ellipticity from matter accumulated at the hot spot.
+Equation~\ref{cw_radiation_eps_eq} shows that this further increases radiated GW amplitude.
 Insofar as the infall stream continues, the NS can be `spun-up' to rotation frequencies with non-negligible GW emission, potentially for a far longer detectable lifetime than an isolated star.
 
 Spin-up might proceed, as Wagoner derives, only up to a specific frequency.
-In this \textit{torque balance} hypothesis, the matter infall delivers a torque offset by GW emission; since GW emission rises with frequency squared, an NS that is spinning up due to accretion will eventually reach a limiting frequency beyond which GW emission prevents it from spinning faster.
+In this \textit{torque balance} hypothesis, the matter infall delivers a torque offset by angular momentum loss from GW emission; since GW emission rises with frequency squared, an NS that is spinning up due to accretion will eventually reach a limiting frequency beyond which GW emission prevents it from spinning faster.
 This idea, developed by Bildsten~\cite{Bildsten1998}, connects accretion rate with GW emission.
 Since accretion rate can be measured electromagnetically, in X-ray flux $F_\textup{X-ray}$, this lets us estimate what level of GW emission at frequency $f$ could be expected for a star rotating at frequency $\nu = f/2$ (Equation~\ref{torque_bal_eq} in general, Equation~\ref{ScoX1_torque_bal} for Scorpius X-1~\cite{GoetzThesis,Bildsten1998}): 
 
 \begin{equation}
-h_{0}=5\times10^{-27}\left(\frac{300\textup{Hz}}{\nu}\right)^{1/2}\left(\frac{F_\textup{X-ray}}{10^{-8}\textup{erg cm}^{-2}\textup{s}^{-1}}\right)^{1/2},
+h_{0} \approx 5\times10^{-27}\left(\frac{300\textup{Hz}}{\nu}\right)^{1/2}\left(\frac{F_\textup{X-ray}}{10^{-8}\textup{erg cm}^{-2}\textup{s}^{-1}}\right)^{1/2},
 \label{torque_bal_eq}
 \end{equation}
 \begin{equation}
-h_{0}=2.8\times10^{-26}\left(\frac{600\textup{Hz}}{f}\right)^{1/2}.
+h_{0} \approx 2.8\times10^{-26}\left(\frac{600\textup{Hz}}{f}\right)^{1/2}.
 \label{ScoX1_torque_bal}
 \end{equation}
 
@@ -104,7 +104,7 @@ This frequency stationarity is computationally useful.
                 %aLIGO rate projections.
 Equation~\ref{torque_bal_eq} is incentive to develop searches especially for LMXBs.
 Although the predicted $h_0$ is still low, it is conceivable that high-luminosity such as Scorpius X-1 (see Section~\ref{scox1_parameters} for full parameters) might just be within reach of advanced detectors such as aLIGO.
-Unknown sources with potentially higher GW luminosity, perhaps with X-ray flux not directed toward our solar system, are a motivation for making this search capable of scanning the entire sky.
+Unknown sources with potentially higher GW luminosity are a motivation for making this search capable of scanning the entire sky.
 It is difficult to infer how many sources might exist, but over 50 accretion-powered X-ray pulsars were already known as of 2005~\cite{ManchesterATNF2005}.
 Known, especially-promising sources such as Scorpius X-1 warrant scrutiny with a deeper, \textit{directed search} over their known parameter space.
 Such searches are the purpose of TwoSpect.
@@ -114,23 +114,23 @@ Such searches are the purpose of TwoSpect.
 
 TwoSpect offers a way to calculate a statistic and infer detection probability for a putative template waveform of a neutron star emitting continuous GW in a binary system.
 LIGO CW searches generally use matched filters, like inspiral searches. 
-Although the filter is easier than the inspiral waveform to calculate, the net computational cost is much higher, since integration covers a longer timespan, compensating for weaker signals. 
-Matched filtering a binary pulsar search in the time-domain, with complete phase information, appears be computationally intractable for terascale computer clusters in the early 2010s. 
+Although the filter is easier than the inspiral waveform to calculate, the net computational cost is much higher, since integration covers a much longer timespan, compensating for weaker signals. 
+Matched filtering a binary pulsar search in the time-domain, with complete phase information, appears to be computationally intractable for terascale computer clusters in the early 2010s. 
 By switching the problem to frequency domain power instead of amplitude, the search becomes feasible, albeit at a cost in sensitivity.
 
 TwoSpect performs two transforms: it first parcels a science run (year-scale) into overlapping short Fourier Transforms (SFTs, hour-scale or less).
 SFT frequency bins for a given data stretch are then adjusted to the frequency at the solar system barycenter, accounting for Doppler shifting that would be induced at the sky location, frequency, and time under investigation.
 Each row of constant-barycentered frequency bins is then treated as a time series.
 That time series is then Fourier transformed too -- the two in TwoSpect.
-This transformed yields a plane of pixels: the frequency-prime $f'$ vs frequency $f$ plane.
-Goetz~\cite{GoetzThesis} developed this technique in the context of GW.
+This transform yields a plane of pixels: the frequency-prime $f'$ vs frequency $f$ plane.
+Goetz and Riles~\cite{GoetzTwoSpectMethods2011,GoetzThesis} developed this technique in the context of GW.
 The plane of pixels provides a tractable data set on which binary CW templates can be tested.
 
-Detectable strain $h$ scales poorly with time, $T^{1/4}$, due to the double transform, instead of $T^{1/2}$ for a coherent search, but matched templating techniques are powerful enough that being able to use them is promising.
+Detectable strain sensitivity $h$ scales poorly with time, $T^{1/8}$, due to the double transform, instead of $T^{1/2}$ for a coherent search or $T^{1/4}$ for semi-coherent, but matched templating techniques are powerful enough that being able to use them is promising.
 Goetz developed a noise-subtracted $R$-statistic to measure the cumulative power in each binary CW template.
 This statistic follows a distribution as the sum of many $\chi$-squared distributions (see Taylor~\cite{taylor} as well as Casella and Berger~\cite{CasellaBerger2001} for statistical reference) and yields consistent $p$-values.
 These $p$-values can be extrapolated from Davies' method, having been vetted by Monte Carlo~\cite{GoetzTwoSpectMethods2011}.
-By providing these statistics, TwoSpect yields information on a large fraction of parameter space heretofor unsearchable.
+By providing these statistics, TwoSpect yields information on a large fraction of parameter space hereto unsearchable.
 The code is open source and available online~\cite{LALAPPSrepo}.
 
 %            TwoSpect methods as-is. These are described in detail in Evan Goetz's thesis~\cite{GoetzThesis}. %Note that the code is located on the web freely accessible in the LALApps repository~\cite{LALAPPSrepo}.
@@ -163,7 +163,7 @@ Although GW phase information is lost (and, for now, templates ignore orbital ph
 \end{center}
 \end{figure}
 
-            \subsection{Infering neutron stars with companions}
+            \subsection{Inferring neutron stars with companions}
             \label{inference}
  
                 %Infer whether modulation is due to a companion star.
@@ -172,11 +172,11 @@ The modulation induced by LMXB partners on their NS companions is typically frac
 Modulation depth is, more precisely~\cite{GoetzTwoSpectMethods2011},
 
 \begin{equation}
-\Delta f = \frac{2 \pi f (a \sin i)}{P},
+\Delta f = \frac{2 \pi f (a \sin i)}{c P},
 \label{TwoSpect_mod_depth}
 \end{equation}
 
-\noindent where in $f$ is GW emission frequency, $a \sin i$ is projected semi-major axis, and $P$ is orbital period.
+\noindent where $f$ is GW emission frequency, $a \sin i$ is projected semi-major axis, and $P$ is orbital period.
 Equation~\ref{TwoSpect_mod_depth} specifies the amplitude of the sinusoid seen in Figure~\ref{tfplane-figure}, though it must be noted again that it is the power of the transform of that sinusoid in Figure~\ref{ffplane-figure} that is actually template-tested.
 
 
@@ -939,7 +939,7 @@ The first LIGO search was published in 2007~\cite{AbbottScoX12007}.
 
 \textbf{Sco X-1 torque-balance limit (from X-rays)}~\cite{Bildsten1998,GoetzThesis}:
 \[
-h_{0}=2.8\times10^{-26}\left(\frac{600\textup{Hz}}{f}\right)^{1/2}.
+h_{0} \approx 2.8\times10^{-26}\left(\frac{600\textup{Hz}}{f}\right)^{1/2}.
 \]
 
 
