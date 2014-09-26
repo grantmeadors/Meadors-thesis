@@ -82,12 +82,18 @@ Insofar as the infall stream continues, the NS can be `spun-up' to rotation freq
 Spin-up might proceed, as Wagoner derives, only up to a specific frequency.
 In this \textit{torque balance} hypothesis, the matter infall delivers a torque offset by GW emission; since GW emission rises with frequency squared, an NS that is spinning up due to accretion will eventually reach a limiting frequency beyond which GW emission prevents it from spinning faster.
 This idea, developed by Bildsten~\cite{Bildsten1998}, connects accretion rate with GW emission.
-Since accretion rate can be measured electromagnetically, in X-ray flux $F_\times$, this lets us estimate what level of GW emission could be expected for a star rotating at frequency $\nu$ (Equation~\ref{torque_bal_eq}): 
+Since accretion rate can be measured electromagnetically, in X-ray flux $F_\textup{X-ray}$, this lets us estimate what level of GW emission at frequency $f$ could be expected for a star rotating at frequency $\nu = f/2$ (Equation~\ref{torque_bal_eq} in general, Equation~\ref{ScoX1_torque_bal} for Scorpius X-1~\cite{GoetzThesis,Bildsten1998}): 
 
 \begin{equation}
-h_{0}=5\times10^{-27}\left(\frac{300\textup{Hz}}{\nu}\right)^{1/2}\left(\frac{F_{\times}}{10^{-8}\textup{erg cm}^{-2}\textup{s}^{-1}}\right)^{1/2}.
+h_{0}=5\times10^{-27}\left(\frac{300\textup{Hz}}{\nu}\right)^{1/2}\left(\frac{F_\textup{X-ray}}{10^{-8}\textup{erg cm}^{-2}\textup{s}^{-1}}\right)^{1/2},
 \label{torque_bal_eq}
 \end{equation}
+\begin{equation}
+h_{0}=2.8\times10^{-26}\left(\frac{600\textup{Hz}}{f}\right)^{1/2}.
+\label{ScoX1_torque_bal}
+\end{equation}
+
+
 
 \noindent Torque-balanced neutron stars would remain at their torque-balance frequency: accretion would counteract spindown.
 This frequency stationarity is computationally useful.
@@ -912,10 +918,10 @@ The first LIGO search was published in 2007~\cite{AbbottScoX12007}.
 \end{itemize}
 
 \textbf{Sco X-1 torque-balance limit (from X-rays)}~\cite{Bildsten1998,GoetzThesis}:
-\begin{equation}
-h_{0}=3\times10^{-26}\left(\frac{540\textup{Hz}}{f}\right)^{1/2}
-\label{ScoX1_torque_bal}
-\end{equation}
+\[
+h_{0}=3\times10^{-26}\left(\frac{540\textup{Hz}}{f}\right)^{1/2}.
+\]
+
 
 Note that Chakrabarty~\cite{Chakrabarty2003} has hypothesized the existence of an LMXB speed limit; given a fastest known millisecond pulsar of 716 Hz, this could imply that a search up to $2\nu \approx 2\times716 Hz = 1432$ Hz, plus a margin of error, should suffice to cover the astrophysical parameter space. 
 
