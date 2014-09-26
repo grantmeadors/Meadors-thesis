@@ -492,7 +492,7 @@ We plotted the error in the $h_0$ reported by TwoSpect versus $h_0$-effective fo
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{detectedHerrVsHeffective.eps}
+\includegraphics[trim=0 10 10 15, clip, width=0.72\paperwidth,height=0.48\paperheight]{detectedHerrVsHeffective.eps}
 \caption{ Error in strain estimation versus circular-effective injected strain. Higher injected strain results in higher absolute errors.
 \label{fig:detectedherrvsheffective}} 
 \end{center}
@@ -506,7 +506,7 @@ Blue lines indicate the less stringent uncertainty. Red lines (on plots vs $p$-v
 
 \begin{figure}
 \begin{center}
-\includegraphics[trim=5 10 10 15, clip, width=0.52\paperwidth,height=0.36\paperheight]{Errorh0.eps}
+\includegraphics[trim=0 10 10 15, clip, width=0.52\paperwidth,height=0.36\paperheight]{Errorh0.eps}
 %\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0vsF.eps}
 \includegraphics[trim=0 0 0 10, clip, width=0.52\paperwidth,height=0.36\paperheight]{plots/Errorh0vsF-overall.eps}
 \caption{Parameter estimation: error in strain and dependence on recovered $p$-value (top) and frequency (bottom). The strain appears broadly distributed, without any systematic patterns. The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read-in at high frequencies.
@@ -517,7 +517,7 @@ Blue lines indicate the less stringent uncertainty. Red lines (on plots vs $p$-v
 
 \begin{figure}
 \begin{center}
-\includegraphics[trim=5 10 10 15, clip, width=0.52\paperwidth,height=0.36\paperheight]{ErrorF.eps}
+\includegraphics[trim=0 10 10 15, clip, width=0.52\paperwidth,height=0.36\paperheight]{ErrorF.eps}
 %\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorFvsF.eps}
 \includegraphics[trim=0 0 0 10, clip, width=0.52\paperwidth,height=0.36\paperheight]{plots/ErrorFvsF-overall.eps}
 \caption{Parameter estimation: error in frequency and dependence on recovered $p$-value (top) and frequency (bottom). 
@@ -531,7 +531,7 @@ The overall error vs frequency is shown at bottom after a rerun to fix a misconf
 
 \begin{figure}
 \begin{center}
-\includegraphics[trim=5 10 10 15, clip, width=0.52\paperwidth,height=0.36\paperheight]{ErrorAsini.eps}
+\includegraphics[trim=0 10 10 15, clip, width=0.52\paperwidth,height=0.36\paperheight]{ErrorAsini.eps}
 %\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsinivsF.eps}
 \includegraphics[trim=0 0 0 10, clip, width=0.52\paperwidth,height=0.36\paperheight]{plots/ErrorAsinivsF-overall.eps}
 \caption{Parameter estimation: $a \sin\iota$ (projected semi-major axis; directly proportional to modulation depth for a given frequency and period) and dependence on recovered $p$-value (top) and frequency (bottom). The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read-in at high frequencies.
@@ -552,7 +552,7 @@ Binomial uncertainty was also calculated and each bin's 1-$\sigma$ worst case wa
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{detectionVsHeffective.eps}
+\includegraphics[trim=0 10 10 15, clip, width=0.72\paperwidth,height=0.48\paperheight]{detectionVsHeffective.eps}
 \caption{ Open pulsar detection efficiency curve.
 Because only 50 pulsars were in the open set, this curve is relatively-poorly defined -- the binning has been chosen to give the most accurate representation based on the chosen thresholds.
 The 95\% level is approximately about $3 \times 10^{-25}$ (again, without the corrective factors of 1.74 and 1.11) but is imprecise to judge using this method.
@@ -566,7 +566,7 @@ Consequently we plotted the distribution of recovered $h_0$ versus injected $h_0
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{HrecoveredVsHeffectiveFullUL.eps}
+\includegraphics[trim=0 10 10 5, clip, width=0.70\paperwidth,height=0.48\paperheight]{HrecoveredVsHeffectiveFullUL.eps}
 \caption{Detections and upper limit determination.
 Depending on whether a injection was seen in three, one, or no detectors, it was assigned a color-coded circle and plotted in recovered strain versus effective circular strain injected.
 Color-coding red pulsars as non-detected, blue as single pairwise detection, and green as triple pairwise detection, we identified a shelf of non-detected pulsars that was 95\% contained by an upper limit about $2.19 \times 10^{-25}$. This number, when corrected, yielded the upper limit of 1.74*1.11*$2.19 \times 10^{-25}$ = $4.23 \times 10^{-25}$ for TwoSpect. 
@@ -589,7 +589,7 @@ We made a toy model of our detection efficiency, assuming no pulsars were detect
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{PlotHeffDistH0DetectionEfficiency200breaks.eps}
+\includegraphics[trim=0 10 10 5, clip, width=0.70\paperwidth,height=0.48\paperheight]{PlotHeffDistH0DetectionEfficiency200breaks.eps}
 \caption{ Simulated detection efficiency curve. Because the $\cos \iota$ ambiguity simulation require a priori model of detection efficiency, we described it simply. Here, no detections were claimed below $1\times 10^{-25}$, all were detected above $3\times 10^{-25}$, and the probability of detection rose uniformly on the intervening interval.
 \label{fig:plotheffdisth0detectionefficiency200breaks}}
 \end{center}
@@ -600,7 +600,7 @@ Together with a uniform $\cos \iota$ distribution on [-1, 1], this led to a trap
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{PlotHEffDistH0Detected.eps}
+\includegraphics[trim=0 10 10 5, clip, width=0.72\paperwidth,height=0.48\paperheight]{PlotHEffDistH0Detected.eps}
 \caption{Distribution of 2 million simulated stars, strain between $3\times 10^{-26}$ and $3\times 10^{-24}$ under a log-uniform distribution, following application of cos $\iota$ and detection efficiency cuts.
 \label{fig:plotheffdisth0detected}}
 \end{center}
@@ -613,7 +613,7 @@ In turn, we looked for the relationship between the recovered $h_0$ of this ``de
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{PlotHeffVsH0TrueRegressions.eps}
+\includegraphics[trim=0 10 10 5, clip, width=0.72\paperwidth,height=0.48\paperheight]{PlotHeffVsH0TrueRegressions.eps}
 \caption{Regression using grid. By binning the simulated stars on the true strain vs detected (recovered) strain plane, an accurate mean slope for the $\cos \iota$ correction was ascertained. It had to be modified downwards by the equivalent of one bin, to 1.74. However suggestive, the 1-$\sigma$ thresholds proved inaccurate, probably due to noise fluctuations.
 \label{fig:plotheffvsh0trueregressions}}
 \end{center}
@@ -622,7 +622,7 @@ In turn, we looked for the relationship between the recovered $h_0$ of this ``de
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{PlotHEffVsH0TrueWithLines.eps}
+\includegraphics[trim=0 10 10 5, clip, width=0.72\paperwidth,height=0.48\paperheight]{PlotHEffVsH0TrueWithLines.eps}
 \caption{Simulation with fit lines as given by the bin-method regression.
 \label{fig:plotheffvsh0truewithlines}}
 \end{center}
@@ -637,7 +637,7 @@ especially toward the high $h_0$ end of the distribution. Instead, we manually a
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.5\paperwidth,height=0.35\paperheight]{PlotSigmaDiffVsH0Eff.eps}
+\includegraphics[trim=0 10 10 5, clip, width=0.72\paperwidth,height=0.48\paperheight]{PlotSigmaDiffVsH0Eff.eps}
 \caption{Confidence intervals with final fit. After manual optimization of the cumulative distribution function, and constraint to the region with a full bijective mapping between injected and recovered strains (below $1 \times 10^{-24}$), a 1-$\sigma$ value of 0.37 in the slope was found to give accurate confidence intervals.
 The reason for the aforementioned restriction of the plot to $h_0$-effective $<$ $1 \times 10^{-24}$ can be seen in the distortion at levels above that. 
 The chosen $1.74 \pm 0.37 \sigma$, however, yielded the necessary correction factor. \label{fig:plotsigmadiffvsh0eff}
