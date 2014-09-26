@@ -96,7 +96,7 @@
 \contentsline {subsection}{\numberline {5.5.5}$\qopname \relax o{cos}\iota $ Ambiguity}{133}{subsection.5.5.5}
 \contentsline {section}{\numberline {5.6}Summary of the MDC}{141}{section.5.6}
 \contentsline {subsection}{\numberline {5.6.1}Mock data challenge results}{141}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Binary search summary beyond the MDC}{141}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.2}Binary search summary beyond the MDC}{142}{subsection.5.6.2}
 \contentsline {section}{\numberline {5.7}Plans for improvement}{142}{section.5.7}
 \contentsline {subsection}{\numberline {5.7.1}Coherent interferometer synthesis}{143}{subsection.5.7.1}
 \contentsline {subsection}{\numberline {5.7.2}Circular \& elliptical polarization}{143}{subsection.5.7.2}

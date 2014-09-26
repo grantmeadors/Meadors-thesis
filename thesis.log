@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  26 SEP 2014 03:11
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  26 SEP 2014 04:07
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -535,7 +535,7 @@ Underfull \vbox (badness 3514) has occurred while \output is active []
  [9]
 [10] [11]
 Overfull \hbox (6.72157pt too wide) in paragraph at lines 168--170
-\OT1/cmr/m/n/12 are use-ful ref-er-ences [[][][]53[][][][], [][][]124[][][][]],
+\OT1/cmr/m/n/12 are use-ful ref-er-ences [[][][]54[][][][], [][][]128[][][][]],
  con-sult-ing other sources for the Einstein-Hilbert/Palatini
  []
 
@@ -565,7 +565,7 @@ Overfull \hbox (49.88899pt too wide) detected at line 427
 [22] [23]
 Overfull \hbox (8.83018pt too wide) in paragraph at lines 477--480
 \OT1/cmr/m/n/12 to-ries re-quired ex-ten-sive pro-to-typ-ing and com-mis-sion-i
-ng both dur-ing Ini-tial LIGO [[][][]116[][][][],
+ng both dur-ing Ini-tial LIGO [[][][]118[][][][],
  []
 
 [24] [25] [26] [27]
@@ -1402,7 +1402,7 @@ Overfull \hbox (54.889pt too wide) detected at line 650
  []
 
 [137] [138] [139] [140] [141] [142]
-Overfull \hbox (2.61513pt too wide) in paragraph at lines 753--756
+Overfull \hbox (2.61513pt too wide) in paragraph at lines 757--760
 []\OT1/cmr/m/n/12 Coherent in-ter-fer-om-e-ter syn-the-sis for H1-L1-V1 is al-r
 eady well-underway by Goetz.
  []
@@ -1803,18 +1803,18 @@ File: plots/h0FullUL50log-L1.eps Graphic file (type eps)
 [207] (./thesis.bbl [208] [209
 
 ] [210] [211] [212] [213] [214]
-Underfull \hbox (badness 10000) in paragraph at lines 571--577
+Underfull \hbox (badness 10000) in paragraph at lines 581--587
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--577
+Underfull \hbox (badness 10000) in paragraph at lines 581--587
 \OT1/cmr/m/n/10 http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detecto
 r&
  []
 
 [215] [216]
-Underfull \hbox (badness 1803) in paragraph at lines 850--853
+Underfull \hbox (badness 1803) in paragraph at lines 872--875
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
@@ -1826,12 +1826,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4989 strings out of 256217
- 68783 string characters out of 1917094
- 185213 words of memory out of 1500000
- 8050 multiletter control sequences out of 10000+200000
+ 4995 strings out of 256217
+ 68919 string characters out of 1917094
+ 185482 words of memory out of 1500000
+ 8056 multiletter control sequences out of 10000+200000
  15196 words of font info for 58 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  33i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (236 pages, 1032344 bytes).
+Output written on thesis.dvi (236 pages, 1036836 bytes).

@@ -230,6 +230,11 @@ S.~W. Ballmer.
   application to gravitational radiometry}.
 \newblock PhD thesis, Massachusetts Institute of Technology, 2006.
 
+\bibitem{Ballmer2006CQG}
+Stefan~W Ballmer.
+\newblock A radiometer for stochastic gravitational waves.
+\newblock {\em Classical and Quantum Gravity}, 23(S179), 2006.
+
 \bibitem{Radiometer2006}
 S.W. Ballmer.
 \newblock A radiometer for stochastic gravitiatonal waves.
@@ -276,7 +281,7 @@ H.J Bulten, S.G. Crowder, V.~Dergachev, D.~Galloway, E.~Goetz, R.J.G. Jonker,
   P.D. Lasky, G.D. Meadors, C.~Messenger, S.~Premachandra, K.~Riles, L.~Sammut,
   E.H. Thrane, J.T. Whelan, and Y.~Zhang.
 \newblock Gravitational waves from sco x-1: a comparison of search methods.
-\newblock Technical Report DCC-P12XXXXX-x0, LIGO, 2014.
+\newblock Technical Report P12XXXXX-x0, LIGO, 2014.
 
 \bibitem{Buskulic2000}
 D.~Buskulic, L.~Derome, R.~Flaminio, R.~Hermel, J.C. Lacotte, F.~Marion,
@@ -353,6 +358,11 @@ H.~Collins.
 V.~Dergachev.
 \newblock {\em An all-sky search for continuous gravitational waves}.
 \newblock PhD thesis, University of Michigan, 2009.
+
+\bibitem{DergachevRiles2005}
+V.~Dergachev and K.~Riles.
+\newblock Description of {PowerFlux} algorithms and implementation.
+\newblock Technical Report T050186-00-Z, LIGO, 2005.
 
 \bibitem{DeRosa2012FF}
 Ryan De{R}osa, Jennifer~C. Driggers, Dani Atkinson, Haixing Miao, Valera
@@ -681,6 +691,18 @@ Grant~David Meadors, Keita Kawabe, and Keith Riles.
   length control noise.
 \newblock {\em Classical and {Q}uantum {G}ravity}, 31(105014), 2014.
 
+\bibitem{MendellWette2008}
+G.~Mendell and K.~Wette.
+\newblock Using generalized {PowerFlux} methods to estimate the parameters of
+  periodic gravitational waves.
+\newblock {\em Class. {Q}uant. {G}rav.}, 25(144044), 2008.
+
+\bibitem{Messenger2007CQG}
+C.~Messenger and G.~Woan.
+\newblock A fast search strategy for gravitational waves from low-mass x-ray
+  binaries.
+\newblock {\em {C}lassical and {Q}uantum {G}ravity}, 24(S469), 2007.
+
 \bibitem{michelson}
 A.A. Michelson.
 \newblock {\em The velocity of light}.
@@ -873,6 +895,13 @@ K.S. Thorne.
 \newblock 300 {Y}ears of {G}ravitation.
 \newblock In S.W. Hawking and W.~Israel, editors, {\em 300 {Y}ears of
   {G}ravitation}. Cambridge, Cambridge, 1987.
+
+\bibitem{2010JPhCS.228a2005V}
+S.~{van~der~Putten}, H.~J. {Bulten}, J.~F.~J. {van~den~Brand}, and
+  M.~{Holtrop}.
+\newblock {Searching for gravitational waves from pulsars in binary systems: An
+  all-sky search}.
+\newblock {\em Journal of Physics Conference Series}, 228(1):012005, May 2010.
 
 \bibitem{Vitale2014}
 S.~Vitale.
