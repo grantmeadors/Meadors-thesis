@@ -79,18 +79,18 @@
 \contentsline {subsection}{\numberline {5.1.3}Detection rate projections}{108}{subsection.5.1.3}
 \contentsline {section}{\numberline {5.2}TwoSpect searches}{108}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Two spectra: a double Fourier transform}{110}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Infering neutron stars with companions}{110}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}TwoSpect algorithm detection statistic}{110}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Directed TwoSpect's greater sensitivity}{116}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.2}Infering neutron stars with companions}{112}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}TwoSpect algorithm detection statistic}{112}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Directed TwoSpect's greater sensitivity}{113}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Sky maps using exact templates}{117}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Scorpius X-1 mock data challenge}{119}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Fully-templated search for Scorpius X-1}{119}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Narrow-band heat maps in parameter space}{119}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Wide-band heat maps in parameter space}{119}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Revisiting \& refining detection criteria}{123}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Mock Data Challenge procedure}{123}{section.5.5}
+\contentsline {section}{\numberline {5.4}Scorpius X-1 mock data challenge}{117}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Fully-templated search for Scorpius X-1}{117}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Narrow-band heat maps in parameter space}{121}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Wide-band heat maps in parameter space}{121}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Revisiting \& refining detection criteria}{121}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Mock Data Challenge procedure}{124}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Detection Claims}{125}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Detection criteria}{126}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.2}Detection criteria}{125}{subsection.5.5.2}
 \contentsline {subsection}{\numberline {5.5.3}Parameter Estimation}{126}{subsection.5.5.3}
 \contentsline {subsection}{\numberline {5.5.4}Upper Limits and Detection Efficiency}{128}{subsection.5.5.4}
 \contentsline {subsection}{\numberline {5.5.5}$\qopname \relax o{cos}\iota $ Ambiguity}{128}{subsection.5.5.5}
