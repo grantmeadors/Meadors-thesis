@@ -466,24 +466,29 @@ uncertainty is largely due to the distribution of $\cos \iota$.
 
 After studying the Gaussian noise in the Scorpius X-1 MDC open data set, we were able to set thresholds for detection claims.
 
-TwoSpect's $R$-statistic and $p$-value space on {frequency}x{modulation depth} showed significant structures, particular around loud injections, corresponding to the distribution of power into pixels by way of modulation depth, Earth's Doppler motion, and possibly spectral leakage. These regions of the open data set parameter space were excised before proceeding with the Gaussian noise study.
+TwoSpect's $R$-statistic and $p$-value space on the {frequency} vs {modulation depth} plane showed significant structures, particular around loud injections. These structures corresponded to the distribution of power into pixels by way of modulation depth, Earth's Doppler motion, and possibly spectral leakage. These regions of the open data set parameter space were excised before proceeding with the Gaussian noise study.
 
-TwoSpect also found differences in the noise between the 360 s SFTs, used for pulsar bands above 360 Hz, and the 840 s SFTs, used for those bands below. The shorter SFTs were noisier.
+TwoSpect also found later-explained differences in the noise between the 360-s SFTs, used for pulsar bands above 360 Hz, and the 840-s SFTs, used for those bands below. 
+The shorter SFTs were ostensibly noisier, requiring a more extreme $log_{10}p$ of $-12.0$, rather than $-7.75$ as in the longer SFTs, to cut single-IFO outliers and prevent any false alarms from surviving the coincident test between IFOs.
+On revisiting the issue after the MDC, it was found that a misconfiguration bug explains the discrepancy (along with the larger number of templates and imprecise order statistics).
+With the bug-contaminated Gaussian noise excluded, removing 3 million of 21 million Gaussian noise templates, the required $\log_{10}p$ for 360-s SFTs would only be $-8.80$.
+This conclusion is consistent with our expectation that the $p$-value calculation should be independent of coherence time.
 
-After studying the effect of pairwise coincidence requirements on surviving Gaussian noise outliers, we were satisfied that we would achieve a false alarm rate of 0.01 or better by setting the following detection criteria. Note that the $\log_{10} p$ values refer to single-template $p$-values, which are generally correlated with each other.
+After studying the effect of pairwise coincidence requirements on surviving Gaussian noise outliers, we were satisfied that we would achieve a false alarm rate of 0.01 or better by setting the following detection criteria. 
+Note that the $\log_{10} p$ values refer to single-template $p$-values; nearby templates are correlated in the presence of signal.
 
 \subsection{Detection criteria}
 
 \begin{itemize}
 \item each candidate must survive at least one double-IFO coincidence test, involving a pairwise comparison of single-IFO candidates to see whether they are within 1/$T_{\textup{SFT}}$ in both frequency ($f$) and modulation depth ($df$).
-\item single-IFO candidates are the up-to-200 most extreme $p$-value outliers in a 5 Hz band that had a $\log_{10}p \leq$ threshold, where threshold = -7.75 if $f <$ 360.0 Hz (those that used 840 s SFTs) or -12.0 if $f \geq$ 360.0 Hz (those that used 360 s SFTs).
+\item single-IFO candidates are the up-to-200 most extreme $p$-value outliers in a 5-Hz band that had a $\log_{10}p \leq$ threshold, where threshold = $-7.75$ if $f <$ 360.0 Hz (those that used 840-s SFTs) or $-12.0$ if $f \geq$ 360.0 Hz (those that used 360-s SFTs).
 \end{itemize}
 
-$\rightarrow$ if there is any candidate surviving these criteria in a 5 Hz band, we mark detected, else not detected
+$\rightarrow$ if there is any candidate surviving these criteria in a 5 Hz band, we mark detected, else not detected.
 
 \subsection{Parameter Estimation}
 
-Open MDC data gave TwoSpect the the ability to check its parameter estimation on the 31 pulsars detected in the open data set.
+MDC data allowed checking TwoSpect's parameter estimation on the 31 pulsars detected in the open data set.
 
 Note that the $h_0$ reported in this section had not yet been recalibrated for either the $\cos \iota$ ambiguity due to assumed circular polarization (see subsequent section, factor of 1.74) or a systematic rescaling endemic to TwoSpect (factor of 1.11). 
 Instead, the first step was to rescale the known $h_0$-injected from the MDC open data table into an $h_0$-effective. 
@@ -491,7 +496,7 @@ This $h_0$-effective equaled,
 
 \begin{equation} h_{0-\textup{effective}} = \frac{1}{\sqrt{2}}\sqrt{ \left(\frac{1+\cos^2 \iota}{2}\right)^2 + \left(\cos \iota\right)^2 } \times h_{0\textup{-injected}},
 \end{equation}
-\noindent the rescaling necessary to convert the strain into effective units of circular polarization strain. 
+\noindent the rescaling necessary to convert the strain into effective units of detected strain. 
 Any pipeline that assumes circular polarization should require a similar procedure.
 
 We plotted the error in the $h_0$ reported by TwoSpect versus $h_0$-effective for the 31 open pulsars detected.
@@ -508,14 +513,17 @@ This same error was also plotted vs $p$-value and frequency, for $h_0$ in Figure
 %As will be seen on the plots for error in frequency and asini, high-frequency outliers were found in the open data set. These outliers could be categorized heuristically as having $f >$ 1050 Hz and abs($\log_{10}p$) $<$ 300. These 4 outliers were assigned into the \textit{loose} category, with a corresponding $\sigma$. The remaining 27 were in the \textit{tight} category, to which we could assign a more stringent $\sigma$. Later, it was found that the high-frequency outlier behavior could mostly be explained by a misconfiguration bug where TwoSpect was not asked to retrieve needed SFT data; the rerun plots show a lower \textit{overall} uncertainty. 
 These values are reported in the header of the graphs.
 
-Blue lines indicate the less stringent uncertainty. Red lines (on plots vs $p$-value) indicate a least squares power law regression.
+Blue lines indicate the less stringent uncertainty. 
+Red lines (on plots vs $p$-value) indicate a least-squares power-law regression.
 
 \begin{figure}
 \begin{center}
 \includegraphics[trim=0 10 10 15, clip, width=0.52\paperwidth,height=0.36\paperheight]{Errorh0.eps}
 %\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{Errorh0vsF.eps}
 \includegraphics[trim=0 0 0 10, clip, width=0.52\paperwidth,height=0.36\paperheight]{plots/Errorh0vsF-overall.eps}
-\caption{Parameter estimation: error in strain and dependence on recovered $p$-value (top) and frequency (bottom). The strain appears broadly distributed, without any systematic patterns. The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read-in at high frequencies.
+\caption{Parameter estimation: error in strain and dependence on recovered $p$-value (top) and frequency (bottom). 
+The strain appears broadly distributed, without any systematic patterns. 
+The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read in at high frequencies.
 \label{fig:errorh0}}
 \end{center}
 \end{figure}
@@ -529,7 +537,7 @@ Blue lines indicate the less stringent uncertainty. Red lines (on plots vs $p$-v
 \caption{Parameter estimation: error in frequency and dependence on recovered $p$-value (top) and frequency (bottom). 
 %A systematic, high error group can be seen, composed of four outliers in these graphs of the open data set. 
 %These defined the \textit{loose} fit category and prompted further investigation. 
-The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read-in at high frequencies.
+The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read in at high frequencies.
 \label{fig:errorf}}
 \end{center}
 \end{figure}
@@ -540,7 +548,8 @@ The overall error vs frequency is shown at bottom after a rerun to fix a misconf
 \includegraphics[trim=0 10 10 15, clip, width=0.52\paperwidth,height=0.36\paperheight]{ErrorAsini.eps}
 %\includegraphics[width=0.3\paperwidth,height=0.2\paperheight]{ErrorAsinivsF.eps}
 \includegraphics[trim=0 0 0 10, clip, width=0.52\paperwidth,height=0.36\paperheight]{plots/ErrorAsinivsF-overall.eps}
-\caption{Parameter estimation: $a \sin\iota$ (projected semi-major axis; directly proportional to modulation depth for a given frequency and period) and dependence on recovered $p$-value (top) and frequency (bottom). The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read-in at high frequencies.
+\caption{Parameter estimation: $a \sin\iota$ (projected semi-major axis; directly proportional to modulation depth for a given frequency and period) and dependence on recovered $p$-value (top) and frequency (bottom). 
+The overall error vs frequency is shown at bottom after a rerun to fix a misconfiguration where inadequate data was read in at high frequencies.
 %Here the same \textit{loose} outliers suffer large errors.
 \label{fig:errorasini}}
 \end{center}
@@ -574,10 +583,10 @@ Consequently we plotted the distribution of recovered $h_0$ versus injected $h_0
 \begin{center}
 \includegraphics[trim=0 10 10 5, clip, width=0.70\paperwidth,height=0.48\paperheight]{HrecoveredVsHeffectiveFullUL.eps}
 \caption{Detections and upper limit determination.
-Depending on whether a injection was seen in three, one, or no detectors, it was assigned a color-coded circle and plotted in recovered strain versus effective circular strain injected.
+Depending on whether a injection was seen in three, one, or no detector pairs, it was assigned a color-coded circle and plotted in recovered strain versus effective circular strain injected.
 Color-coding red pulsars as non-detected, blue as single pairwise detection, and green as triple pairwise detection, we identified a shelf of non-detected pulsars that was 95\% contained by an upper limit about $2.19 \times 10^{-25}$. This number, when corrected, yielded the upper limit of 1.74*1.11*$2.19 \times 10^{-25}$ = $4.23 \times 10^{-25}$ for TwoSpect. 
 The unity-slope line is shown to ascertain whether a further empirical rescaling factor was needed (it was: constant 1.11).
-The zero-slope line is shown to indicate the ninety-five percent confidence upper limit.
+The zero-slope line is shown to indicate the ninety-five percent confidence upper limit in the absence of detection.
 \label{fig:hrecoveredvsheffectivefullul}}
 \end{center}
 \end{figure}
@@ -585,11 +594,13 @@ The zero-slope line is shown to indicate the ninety-five percent confidence uppe
 
 \subsection{$\cos \iota$ Ambiguity}
 
-The cosine of the inclination angle of the pulsar, $\cos \iota$, casts an ambiguity over the determination of $h_0$. For TwoSpect, which assumes circular polarization, the true value of $h_0$ will indeed be as reported if $\cos \iota$ = 1, but will be greater if $\cos \iota$ is less (i.e., the gravitational wave is elliptically polarized). In the case of linear polarization, $h_0$ will be $2^{3/2}$ times larger than reported.
+The cosine of the inclination angle of the pulsar, $\cos \iota$, casts an ambiguity over the determination of $h_0$. 
+For TwoSpect, which assumes circular polarization, the approximate true value of $h_0$ will indeed be as reported if $\cos \iota$ = 1, but will be greater if $\cos \iota$ is less (i.e., the gravitational wave is elliptically polarized). 
+In the case of linear polarization, $h_0$ will be about $2^{3/2}$ times larger than reported.
 
 While an analytical calculation of the expectation value of the correction factor is easy, it will not easily take into account the circular bias of detected signals. That is, a pipeline will tend to see a slightly greater proportion of signals that are more circularly polarized, because the effective $h_0$ of those signals is greater. This ``circularizes" the correction factor in a way dependent on the detection efficiency of the pipeline and the assumed prior distribution of pulsars. Although the effect is relatively minor, we decided to simulate it because the size of the effect was unknown at the time.
 
-In this simulation, 2 million pulsars were generated with $h_0$ between 3$\times 10^{-26}$ and 3$\times 10^{-24}$ (a rough guess at the scope of the MDC) with a distribution of 1/$h_0$.
+In this simulation, 2 million pulsars were generated with $h_0$ between 3$\times 10^{-26}$ and 3$\times 10^{-24}$ with a distribution of 1/$h_0$.
 
 We made a toy model of our detection efficiency, assuming no pulsars were detected below 1$\times 10^{-25}$ effective, all were above 3$\times 10^{-25}$, and the fraction detected was linear in $h_0$ between those values (Figure~\ref{fig:plotheffdisth0detectionefficiency200breaks}).
 
@@ -615,7 +626,7 @@ Together with a uniform $\cos \iota$ distribution on [-1, 1], this led to a trap
 
 The upper end of the distribution (right side of the trapezoid, Figure~\ref{fig:plotheffdisth0detected}) was excluded because we are trying to find the average bijective mapping (slope) f: (detected $h_0$) $\rightarrow$ (true $h_0$), and including detected $h_0>$ 1$\times 10^{-24}$ meant that we were failing to see the complete injected $h_0$ space. There was f$^{-1}$: (true $h_0$) $\rightarrow$ (detected $h_0$), but not $f$. More plainly, suppose we looked at a detected $h_0$ reported as 1.5$\times 10^{-24}$, and that our average corrected factor had been calculated to be 2.5 (it was not) -- this would imply that the true $h_0$ was 3.75 $\times 10^{-24}$ -- but this would be outside the domain of the simulation, so there would be no way to check it. The analogous problem should not happen at the lower end of the distribution (left side of the trapezoid).
 
-In turn, we looked for the relationship between the recovered $h_0$ of this ``detected" distribution and the corresponding original, true $h_0$. The slope would give us the conversion factor. The first attempt was to grid the (detected $h_0$)$\times$(true $h_0$) space into 2D pixels. This was suggestive, and yielded the following regressed slope in Figure~\ref{fig:plotheffvsh0trueregressions}
+In turn, we looked for the relationship between the recovered $h_0$ of this ``detected" distribution and the corresponding original, true $h_0$. The slope would give us the conversion factor. The first attempt was to grid the (detected $h_0$)$\times$(true $h_0$) space into 2D pixels. This was suggestive, and yielded the regressed slope in Figure~\ref{fig:plotheffvsh0trueregressions}.
 
 \begin{figure}
 \begin{center}
@@ -655,10 +666,10 @@ The chosen $1.74 \pm 0.37 \sigma$, however, yielded the necessary correction fac
 
 Finally, we tested all of our calibration factors for $h_0$ with the associated confidence intervals and found the fraction of open data estimated $h_0$, f and asini within their 1 $\sigma$ error bars. The results were conservative:
 
-$h_0$: 0.7741935 (77.4\%)
-f: 0.7419355 (74.2\%)
-asini: 0.6774194 (67.7\%)
-Period: 1.00 (100\%) [n.b., we only tested one period, 68023.8259 s]
+$h_0$: 77.4\%,
+f: 74.2\%
+asini: 67.7\%,
+Period: 100\%, [\textit{n.b.}, we tested only one period, 68023.8259 s].
 
 These error bars were then used without modification for claiming uncertainties on the closed pulsars.
 
