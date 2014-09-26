@@ -203,6 +203,12 @@ Bruce Allen, Wensheng Hua, and Adrian~C. Ottewill.
 \newblock Automatic cross-talk removal from multi-channel data.
 \newblock Technical Report gr-qc/9909083v1, arXiv, 1999.
 
+\bibitem{Andersson2014}
+N.~Andersson, D.I. Jones, and W.C.G. Ho.
+\newblock Implications of an r mode in {XTE J1751-305}: mass, radius and spin
+  evolution.
+\newblock {\em Mon. {N}ot. {R}. {A}str. {S}oc.}, 442:1786--1793, 2014.
+
 \bibitem{Ando2010}
 M.~Ando.
 \newblock {DECIGO} and {DECIGO} pathfinder.
@@ -264,6 +270,13 @@ M.~Boas.
 P.R. Brady, T.~Creighton, C.~Cutler, and B.F. Schutz.
 \newblock Searching for periodic sources with {LIGO}.
 \newblock {\em Phys. {R}ev. {D}}, 57(4):2101, 1998.
+
+\bibitem{ScoX1MDC2014DCC}
+H.J Bulten, S.G. Crowder, V.~Dergachev, D.~Galloway, E.~Goetz, R.J.G. Jonker,
+  P.D. Lasky, G.D. Meadors, C.~Messenger, S.~Premachandra, K.~Riles, L.~Sammut,
+  E.H. Thrane, J.T. Whelan, and Y.~Zhang.
+\newblock Gravitational waves from sco x-1: a comparison of search methods.
+\newblock Technical Report DCC-P12XXXXX-x0, LIGO, 2014.
 
 \bibitem{Buskulic2000}
 D.~Buskulic, L.~Derome, R.~Flaminio, R.~Hermel, J.C. Lacotte, F.~Marion,
@@ -588,6 +601,12 @@ J.M. Lattimer and M.~Prakash.
 \newblock Neutron star observations: prognosis for equation of state
   constraints.
 \newblock {\em Physics reports}, 442:109, 2007.
+
+\bibitem{Lee2014}
+U.~Lee.
+\newblock Excitation of a non-radial mode in a millisecond {X}-ray pulsar {XTE
+  J1751-305}.
+\newblock {\em Mon. {N}ot. {R}. {A}str. {S}oc.}, 442:3037--3043, 2014.
 
 \bibitem{CDAnderson}
 R.B. Leighton, C.D. Anderson, and A.J. Seriff.

@@ -17,7 +17,16 @@ I was expecting a `{' or a `('---line 6 of file bibliography.bib
  : @ARTICLE{feyn54,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "GoetzTwoSpectResults2011"
+I was expecting a `,' or a `}'---line 2982 of file bibliography.bib
+ : 
+ : doi = {10.1093/mnras/stu870}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2992 of file bibliography.bib
+ : 
+ : doi = {10.1093/mnras/stu1077}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in SRT
 Warning--empty title in LSCPulsarS4
 Warning--empty title in LSCPulsar2006
@@ -40,45 +49,45 @@ Warning--empty title in Sathyaprakash2009
 Warning--empty title in Takahashi1965
 Warning--empty title in Welch1967
 Warning--empty title in Willke2002
-You've used 169 entries,
+You've used 172 entries,
             2118 wiz_defined-function locations,
-            1462 strings with 27146 characters,
-and the built_in function-call counts, 45466 in all, are:
-= -- 4307
-> -- 2411
-< -- 20
-+ -- 976
-- -- 792
-* -- 3072
-:= -- 8345
-add.period$ -- 488
-call.type$ -- 169
-change.case$ -- 814
+            1475 strings with 27719 characters,
+and the built_in function-call counts, 46774 in all, are:
+= -- 4424
+> -- 2514
+< -- 21
++ -- 1017
+- -- 830
+* -- 3187
+:= -- 8581
+add.period$ -- 497
+call.type$ -- 172
+change.case$ -- 842
 chr.to.int$ -- 0
-cite$ -- 191
-duplicate$ -- 1724
-empty$ -- 3306
-format.name$ -- 792
-if$ -- 9087
+cite$ -- 194
+duplicate$ -- 1755
+empty$ -- 3377
+format.name$ -- 830
+if$ -- 9339
 int.to.chr$ -- 0
-int.to.str$ -- 169
-missing$ -- 147
-newline$ -- 828
-num.names$ -- 338
-pop$ -- 723
+int.to.str$ -- 172
+missing$ -- 149
+newline$ -- 843
+num.names$ -- 344
+pop$ -- 746
 preamble$ -- 1
-purify$ -- 696
+purify$ -- 721
 quote$ -- 0
-skip$ -- 1235
+skip$ -- 1254
 stack$ -- 0
-substring$ -- 1620
-swap$ -- 167
-text.length$ -- 20
+substring$ -- 1689
+swap$ -- 170
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 634
+type$ -- 646
 warning$ -- 22
-while$ -- 386
-width$ -- 172
-write$ -- 1814
-(There were 3 error messages)
+while$ -- 394
+width$ -- 175
+write$ -- 1847
+(There were 5 error messages)
