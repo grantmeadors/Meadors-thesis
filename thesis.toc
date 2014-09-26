@@ -134,9 +134,9 @@
 \contentsline {subsection}{\numberline {7.2.3}Plexiglass enclosure}{178}{subsection.7.2.3}
 \contentsline {section}{\numberline {7.3}Exhibitions: New York City, Portsmouth, Fort Wayne}{182}{section.7.3}
 \contentsline {subsection}{\numberline {7.3.1}Exhibit overview}{183}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}World Science Festival 2010}{185}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Portsmouth and Fort Wayne}{185}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Future LIGO outreach}{185}{section.7.4}
+\contentsline {subsection}{\numberline {7.3.2}World Science Festival 2010}{184}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Portsmouth and Fort Wayne}{184}{subsection.7.3.3}
+\contentsline {section}{\numberline {7.4}Future LIGO outreach}{186}{section.7.4}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VIII.\hspace {5pt}}{\bf Conclusion}}{187}{chapter.8}
 \hbox { }

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  26 SEP 2014 00:31
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  26 SEP 2014 00:59
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1689,11 +1689,7 @@ Overfull \hbox (49.88899pt too wide) detected at line 358
 \OT1/cmr/m/n/10 Figure 7.8: []
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [184]
-[185]) [186]
+[184] [185]) [186]
 CHAPTER VIII.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -1749,14 +1745,18 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 (./conclusion.tex [187
 
-] [188] [189] [190]
+]
+Underfull \vbox (badness 1789) has occurred while \output is active []
+
+ [188]
+[189]
 File: LIGOpanoramasmall.eps Graphic file (type eps)
  <LIGOpanoramasmall.eps>
 Overfull \hbox (49.88899pt too wide) detected at line 131
 \OT1/cmr/m/n/10 Figure 8.1: []
  []
 
-[191]) [192] [193
+[190] [191]) [192] [193
 
 ]
 APPENDIX A.
@@ -1773,13 +1773,13 @@ APPENDIX B.
 (./appendix2.tex
 File: plots/detectionEfficiencyh0-162-0Hz.eps Graphic file (type eps)
  <plots/detectionEfficiencyh0-162-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 22
+Overfull \hbox (51.97234pt too wide) detected at line 23
 \OT1/cmr/m/n/10 Figure B.1: []
  []
 
 File: plots/h0UL-vs-h0injected-162-0Hz.eps Graphic file (type eps)
 <plots/h0UL-vs-h0injected-162-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 39
+Overfull \hbox (51.97234pt too wide) detected at line 40
 \OT1/cmr/m/n/10 Figure B.2: []
  []
 
@@ -1792,13 +1792,13 @@ Underfull \vbox (badness 6725) has occurred while \output is active []
 File: plots/detectionEfficiencyh0-222-0Hz.eps Graphic file (type eps)
 
 <plots/detectionEfficiencyh0-222-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 68
+Overfull \hbox (51.97234pt too wide) detected at line 69
 \OT1/cmr/m/n/10 Figure B.3: []
  []
 
 File: plots/h0UL-vs-h0injected-222-0Hz.eps Graphic file (type eps)
 <plots/h0UL-vs-h0injected-222-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 82
+Overfull \hbox (51.97234pt too wide) detected at line 83
 \OT1/cmr/m/n/10 Figure B.4: []
  []
 
@@ -1845,4 +1845,4 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  33i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (235 pages, 1027260 bytes).
+Output written on thesis.dvi (235 pages, 1026932 bytes).
