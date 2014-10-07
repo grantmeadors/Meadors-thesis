@@ -2,6 +2,7 @@
 \contentsline {chapter}{ACKNOWLEDGEMENTS}{iii}{section*.1}
 \contentsline {chapter}{LIST OF FIGURES}{viii}{section*.1}
 \contentsline {chapter}{LIST OF TABLES}{xvi}{section*.1}
+\contentsline {chapter}{LIST OF APPENDICES}{xvii}{section*.1}
 \mbox { }\newline \noindent {\bf CHAPTER}\newline 
 \hbox { }
 \hbox { }
