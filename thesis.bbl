@@ -5,6 +5,12 @@ Web: http://web.haystack.mit.edu/SRT/.
 \newblock Thanks to Haystack Observatory and the Massachusetts Institute of
   Technology.
 
+\bibitem{Aartsen2014}
+M.G. Aartsen et~al.
+\newblock Observation of high-energy astrophysical neutrinos in three years of
+  {IceCube} data.
+\newblock {\em Phys. {R}ev. {L}ett.}, 113(101101), 2014.
+
 \bibitem{AasiGalacticCenter2013}
 J.~Aasi et~al.
 \newblock Directed search for continuous gravitational waves from the
@@ -373,6 +379,11 @@ Ryan De{R}osa, Jennifer~C. Driggers, Dani Atkinson, Haixing Miao, Valera
 \bibitem{Deschrijver2008}
 D.~Deschrijver et~al.
 \newblock {\em IEEE {M}icrowave {W}ire. {Comp}. Lett.}, 18(6), 2008.
+
+\bibitem{Dimopoulos2009}
+S.~Dimopoulos, P.W. Graham, J.M. Hogan, M.A. Kasevich, and S.~Rajendran.
+\newblock Gravitational wave detection with atom interferometry.
+\newblock {\em Physics {L}etters {B}}, 678(1):37--40, 2009.
 
 \bibitem{DooleyThesis}
 Katherine~Laird Dooley.

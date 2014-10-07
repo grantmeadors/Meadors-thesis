@@ -12,12 +12,12 @@
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf II.\hspace {5pt}}{\bf Gravitational Waves and LIGO}}{3}{chapter.2}
 \hbox { }
 \contentsline {section}{\numberline {2.1}Cosmic sources of gravitational waves}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}History from general relativity}{8}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}History from General Relativity}{8}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Contrast with electromagnetic and particle astronomy}{10}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}General relativity}{11}{section.2.2}
+\contentsline {section}{\numberline {2.2}General relativity}{12}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Symmetry and action principles}{12}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Derivation of field equations}{13}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Radiation from quadrupoles}{17}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Radiation from quadrupoles}{18}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Astrophysical estimates}{19}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Sources: burst, continuous, inspiral and stochastic}{19}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Continuous waves from neutron stars}{22}{subsection.2.3.2}
