@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  7 OCT 2014 18:22
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  7 OCT 2014 18:47
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1759,14 +1759,17 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Underfull \vbox (badness 1789) has occurred while \output is active []
 
  [190]
-[191]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [191]
+[192]
 File: LIGOpanoramasmall.eps Graphic file (type eps)
  <LIGOpanoramasmall.eps>
 Overfull \hbox (49.88899pt too wide) detected at line 131
 \OT1/cmr/m/n/10 Figure 8.1: []
  []
 
-[192] [193]) [194] [195
+[193]) [194] [195
 
 ]
 APPENDIX A.
@@ -1783,13 +1786,13 @@ APPENDIX B.
 (./appendix2.tex
 File: plots/detectionEfficiencyh0-162-0Hz.eps Graphic file (type eps)
  <plots/detectionEfficiencyh0-162-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 23
+Overfull \hbox (51.97234pt too wide) detected at line 25
 \OT1/cmr/m/n/10 Figure B.1: []
  []
 
 File: plots/h0UL-vs-h0injected-162-0Hz.eps Graphic file (type eps)
 <plots/h0UL-vs-h0injected-162-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 40
+Overfull \hbox (51.97234pt too wide) detected at line 42
 \OT1/cmr/m/n/10 Figure B.2: []
  []
 
@@ -1802,13 +1805,13 @@ Underfull \vbox (badness 6725) has occurred while \output is active []
 File: plots/detectionEfficiencyh0-222-0Hz.eps Graphic file (type eps)
 
 <plots/detectionEfficiencyh0-222-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 69
+Overfull \hbox (51.97234pt too wide) detected at line 71
 \OT1/cmr/m/n/10 Figure B.3: []
  []
 
 File: plots/h0UL-vs-h0injected-222-0Hz.eps Graphic file (type eps)
 <plots/h0UL-vs-h0injected-222-0Hz.eps>
-Overfull \hbox (51.97234pt too wide) detected at line 83
+Overfull \hbox (51.97234pt too wide) detected at line 85
 \OT1/cmr/m/n/10 Figure B.4: []
  []
 
@@ -1854,4 +1857,4 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  33i,18n,58p,1511b,477s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (238 pages, 1043592 bytes).
+Output written on thesis.dvi (238 pages, 1043680 bytes).

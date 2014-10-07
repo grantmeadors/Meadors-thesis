@@ -354,15 +354,15 @@ H.~Collins.
   Twenty-first Century}.
 \newblock Chicago, Chicago, Illinois, 2013.
 
+\bibitem{DergachevRiles2005}
+V.~Dergachev.
+\newblock Description of {PowerFlux} algorithms and implementation.
+\newblock Technical Report T050186-00-Z, LIGO, 2005.
+
 \bibitem{DergachevThesis}
 V.~Dergachev.
 \newblock {\em An all-sky search for continuous gravitational waves}.
 \newblock PhD thesis, University of Michigan, 2009.
-
-\bibitem{DergachevRiles2005}
-V.~Dergachev and K.~Riles.
-\newblock Description of {PowerFlux} algorithms and implementation.
-\newblock Technical Report T050186-00-Z, LIGO, 2005.
 
 \bibitem{DeRosa2012FF}
 Ryan De{R}osa, Jennifer~C. Driggers, Dani Atkinson, Haixing Miao, Valera

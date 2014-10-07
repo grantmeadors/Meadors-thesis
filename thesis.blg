@@ -51,34 +51,34 @@ Warning--empty title in Welch1967
 Warning--empty title in Willke2002
 You've used 177 entries,
             2118 wiz_defined-function locations,
-            1504 strings with 28523 characters,
-and the built_in function-call counts, 48102 in all, are:
-= -- 4551
-> -- 2583
+            1503 strings with 28496 characters,
+and the built_in function-call counts, 48066 in all, are:
+= -- 4548
+> -- 2577
 < -- 22
-+ -- 1046
-- -- 852
-* -- 3279
-:= -- 8824
++ -- 1044
+- -- 850
+* -- 3275
+:= -- 8818
 add.period$ -- 512
 call.type$ -- 177
-change.case$ -- 868
+change.case$ -- 867
 chr.to.int$ -- 0
 cite$ -- 199
 duplicate$ -- 1805
 empty$ -- 3472
-format.name$ -- 852
-if$ -- 9603
+format.name$ -- 850
+if$ -- 9596
 int.to.chr$ -- 0
 int.to.str$ -- 177
 missing$ -- 153
 newline$ -- 868
 num.names$ -- 354
-pop$ -- 763
+pop$ -- 762
 preamble$ -- 1
-purify$ -- 742
+purify$ -- 741
 quote$ -- 0
-skip$ -- 1293
+skip$ -- 1292
 stack$ -- 0
 substring$ -- 1734
 swap$ -- 175

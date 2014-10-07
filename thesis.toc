@@ -148,7 +148,7 @@
 \contentsline {subsection}{\numberline {8.1.4}Reaching out, looking up}{191}{subsection.8.1.4}
 \contentsline {section}{\numberline {8.2}Scientific merit: filtering and analysis}{191}{section.8.2}
 \contentsline {subsection}{\numberline {8.2.1}Feedforward improvement to LIGO data}{191}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}TwoSpect directed search for neutron stars in binary systems}{191}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.2}TwoSpect directed search for neutron stars in binary systems}{192}{subsection.8.2.2}
 \contentsline {section}{\numberline {8.3}Entering the advanced detector era}{192}{section.8.3}
 \contentsline {section}{\numberline {8.4}Vision of a dark sky}{193}{section.8.4}
 \contentsline {chapter}{APPENDICES}{195}{figure.8.1}
