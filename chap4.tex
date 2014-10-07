@@ -64,14 +64,14 @@ Hence squeezing: the standard quantum limit can be achieved through another mean
 
 %\begin{definition}
 
-Squeezing as used in the context of gravitational made interferometer has a specific meaning.
+Squeezing as used in the context of gravitational wave interferometry has a specific meaning.
 While no alterations are made to the input laser light, the output `dark' port of the interferometer, whence comes the light received by the photodetector, is changed.
 The output port in a squeezed interferometer receives a squeezed vacuum state from the opposite direction to the laser light.
 This squeezed vacuum state is prepared on a `squeezer' table.
 This beam is injected with the correct polarization, using a Faraday isolator and wave plates to guard against laser light entering the squeezer, and propagates through the interferometer arms (requiring proper alignment) until it and the laser light are both incident on the same output photodetector.
 The desired effect is altering $\Delta E\Delta\phi$ uncertainty for the vacuum state of the electromagnetic field.
 Reducing $\Delta \phi$ at the cost of still-acceptable $\Delta E$ permits\footnote{$\Delta E$ can also be squeezed; see Section~\ref{third-gen_squeezing}} a more precise measurement, equivalent to the beneficial effect of increasing laser power but without heating the mirrors.
-Casually, more laser power boosts the shot-noise limited `signal' of a high-frequency measurement whereas squeezing reduces the `noise'. 
+Loosely, more laser power boosts the shot-noise limited `signal' of a high-frequency measurement whereas squeezing reduces the `noise'. 
 Formally, the expectation value of quantum operators is improved.
 
 %\begin{theorem}
@@ -92,7 +92,7 @@ S(\zeta)=\exp[\frac{1}{2}\zeta^{*}a^{2}-\frac{1}{2}\zeta(a^{\dagger})^{2}],\;\ze
 
 \noindent thereby reducing shot noise by a factor of $e^{-r}$. The optimum power changes accordingly: Caves shows that $P_\textup{opt} = P_0 e^{-2r}$, so long as $|\alpha|\gg\sinh^2r$ and $|\alpha|\gg e^{2r}\sinh^2 r$. 
 
-For a 20 W interferometer using 1.064 nm to measure at 100 Hz, the latter squeezing condition would be an issue around $r\geq10$, but to reduce optimal power by $1/2$ only requires $r \approx 0.34$. 
+For a 20-W interferometer using 1.064 nm to measure at 100 Hz, the latter squeezing condition would be an issue around $r\geq10$, but to reduce optimal power by $1/2$ only requires $r \approx 0.34$. 
 Trying to reduce optimal power by orders of magnitude is unlikely to occur any time soon: rather, a modest laser as would ordinarily be used in an interferometer can be supplemented with a squeezed beam to increase its effective power. 
 Squeezing is an addition, not a replacement.
 Yet the squeeze beam still must be physically generated, and this along with optical losses in the interferometer prove a much more significant challenge than theoretical constraints.
@@ -114,10 +114,10 @@ r = \left(\frac{4\pi \omega_s L}{c n_s} \right) d |E_p|.
 \end{equation} 
 
 \noindent Another, heuristic\footnote{Popularized by Daniel Sigg, formally described as sidebands in Dwyer~\cite{DwyerThesis}.}, understanding of the OPO (when $\omega_p = 2\omega)$ is that a vacuum fluctuation $\epsilon$ at $A e^{i\omega_\epsilon t + \phi_\epsilon}$ couples to the pump and so induces a second beam at amplitude $A e^{i\left(2\omega - (\omega_\epsilon t + \phi_\epsilon)\right)}$.
-The superposition of these two beams has amplitude $\approx 2 A$ but phase $\approx (\phi_\epsilon - \phi_\epsilon)$, \textit{i.e.}, the ampltitude fluctuations (radiation pressure) have increased but the phase fluctuations (shot noise) have been reduced.
+The superposition of these two beams has amplitude $\approx 2 A$ but phase $\approx (\phi_\epsilon - \phi_\epsilon)$, \textit{i.e.}, the amplititude fluctuations (radiation pressure) have increased but the phase fluctuations (shot noise) have been reduced.
 
 One caveat: the pump must be phase matched to the main laser (at $\omega$) of the overall interferometer.
-This is usually accomplished (as at the Hanford experiment) with a small beamsplitter siphoning a portion of the laser (then, at Hanford, through a polarization-preserving fiber) and directing it to a second harmonic generator (SHG), which yielded $\omega_p = 2\omega$.
+This is usually accomplished (as at the Hanford experiment) with a small beamsplitter diverting a portion of the laser (then, at Hanford, through a polarization-preserving fiber) and directing it to a second harmonic generator (SHG), which yielded $\omega_p = 2\omega$.
 SHGs themselves operate using non-linear crystals to frequency-double incident laser light.
 Imperfect phase matching is one of two chief reasons why squeezing can underperform.
 
@@ -158,7 +158,7 @@ Equation~\ref{squeeze_operator_caves} includes an angle $\omega$. When $\zeta$ i
 The converse, $\zeta$ negative, yields anti-squeezing, where amplitude fluctuations are smaller. 
 This angle $\omega$ is controlled by adjusting the phase of the main laser pickoff as it enters the OPO.
 It would be benefical if amplitude fluctuations could be reduced at the frequencies where they are the dominant noise sources and likewise simultaneously with phase fluctuations at other frequencies. 
-Such simultaneous reduction can in principle be accomplished with a filter cavity, which can rotate the squeezing uncertainty ellipse in a frequency-dependent way, as Chua summarizes~\cite{ChuaThesis}.
+Such simultaneous reduction can, in principle, be accomplished with a filter cavity, which can rotate the squeezing uncertainty ellipse in a frequency-dependent way, as Chua summarizes~\cite{ChuaThesis}.
 Prototypes at gravitational wave interferometer frequencies are under construction.
 If promising, they might be tested at the observatories in a few years time.
 
@@ -194,7 +194,7 @@ Some interest existed in using the prototype legs together with added spacers ra
 After several design iterations, the author designed and ordered four table leg spacers. These closely followed the design of Figure~\ref{spacer_legs_figure} with several subsequent adjustments (see caption).
 On arrival in March 2011 (Figure~\ref{table_leg_testing}), the full leg assemblage was installed (with a clear, also spare, optical table on top) at the final site with the help of Landry, Dani Atkinson, the Apollo Sheetmetal crew, and the author.
 The vibration isolation on the table was measured by Schofield and Chua, using mechanical shakers to obtain the transfer function \footnote{Later, final numbers were measured in October 2011: \url{http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detector&date_to_view=10/03/2011&anchor_to_scroll_to=2011:10:03:23:49:25-lisabar}}.
-Having decent performance, Schofield recommended grouting the legs to the floor to achieve better stability.
+The legs having decent performance, Schofield recommended grouting the legs to the floor to achieve better stability.
 Once this was done in June, the clean optical table was deinstalled and the now-reassembled squeezer table emplaced on top\footnote{See \url{http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detector&date_to_view=06/24/2011&anchor_to_scroll_to=2011:06:24:11:49:32-gmeadors} (public URL) for details}.
 Cables, including the optical fiber transporting light from the main laser for the phase-locked pump, were laid again.
 Finally, surrounded by a physically seperate platform for accessibility onto the table, the squeezer was in position to inject a beam into H1.
@@ -242,7 +242,7 @@ These numbers sufficed to proceed with in-vacuum installation.
             \subsubsection{In-vacuum installation}
             \label{In-vacuum}
 
-Installing the the additionally Faraday isolation in vacuum was necessary before the squeezed beam from the table could be injected directly into the dark port.
+Installing the additional Faraday isolation in vacuum was necessary before the squeezed beam from the table could be injected directly into the dark port.
 The new Faraday, but not the existing initial LIGO Faraday, had an opening to accommodate the beam. 
 Because Advanced LIGO installation, concurrent with the squeezing experiment, involved opening the vacuum, our own installation team (Kawabe, Barsotti, Dwyer, Chua, Gustafson, and the author) were able to emplace and align the new Faraday isolation on the optical table inside HAM4, move a baffle in HAM5 (optically downstream), and direct the beam onto HAM6 (the optical terminus), the location of the output photodiode\footnote{Detailed in \url{http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detector&date_to_view=06/29/2011&anchor_to_scroll_to=2011:06:29:18:31:51-lisabar} on the electronic log.}.
                 %In-vacuum Faraday and baffle installation with "".
@@ -354,7 +354,7 @@ Chua proposes a path toward reduced backscattered light noise.
 As we develop an understanding of these two principal problems, work at MIT is progressing (led by Tomoki Isogai) on realizing a filter cavity suitable for the LIGO frequency band.
 With it, future interferometers will be able to introduce frequency-dependent squeezing to finally reduce, not just shot noise, but radiation pressure as well, below the standard quantum limit.
 %If all else works, 
-Gravitational wave interferometers may thus soon detect a variety of astrophysically interesting sources.
+%Gravitational wave interferometers may thus soon detect a variety of astrophysically interesting sources.
 
 %Discuss Lisa Barsotti's talk about the future prospect for LIGO using filter cavities, work that Tomoki Isogai is doing. With filter cavities, we can acheive frequency-dependent squeezing, having the best of both works by reducing quantum radiation pressure noise at low frequencies and shot noise at high, by using the filter cavity to produce a squeezed vacuum with a squeeze angle that varies as a function of frequency. Though as yet this filter cavity has yet to be constructed, it is in the works at MIT.
 
