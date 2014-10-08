@@ -587,6 +587,7 @@ Consequently we plotted the distribution of recovered $h_0$ versus injected $h_0
 \includegraphics[trim=0 10 10 5, clip, width=0.70\paperwidth,height=0.48\paperheight]{HrecoveredVsHeffectiveFullUL.eps}
 \caption{Detections and upper limit determination.
 Depending on whether a injection was seen in three, one, or no detector pairs, it was assigned a color-coded circle and plotted in recovered strain versus effective circular strain injected.
+(There are no injections seen with two detection pairs, because this plot only shows the loudest outlier from each 5 Hz band; if some injection were seen in two and not three pairs, it would mean two distinct coincidences were seen, only one of which would be the loudest).
 Color-coding red pulsars as non-detected, blue as single pairwise detection, and green as triple pairwise detection, we identified a shelf of non-detected pulsars that was 95\% contained by an upper limit about $2.19 \times 10^{-25}$. This number, when corrected, yielded the upper limit of 1.74*1.11*$2.19 \times 10^{-25}$ = $4.23 \times 10^{-25}$ for TwoSpect. 
 The unity-slope line is shown to ascertain whether a further empirical rescaling factor was needed (it was: constant 1.11).
 The zero-slope line is shown to indicate the ninety-five percent confidence upper limit in the absence of detection.
@@ -598,10 +599,10 @@ The zero-slope line is shown to indicate the ninety-five percent confidence uppe
 \subsection{$\cos \iota$ Ambiguity}
 
 The cosine of the inclination angle of the pulsar, $\cos \iota$, casts an ambiguity over the determination of $h_0$. 
-For TwoSpect, which assumes circular polarization, the approximate true value of $h_0$ will indeed be as reported if $|\cos \iota|$ = 1, but will be greater if $\cos \iota$ is less (i.e., the gravitational wave is elliptically polarized). 
+For TwoSpect, which assumes circular polarization, the approximate true value of $h_0$ will indeed be as reported if $|\cos \iota|$ = 1, but will be greater for smaller $| \cos \iota |$ is less (i.e., the gravitational wave is elliptically polarized). 
 In the case of linear polarization, $h_0$ will be about $2^{3/2}$ times larger than reported.
 
-While an analytical calculation of the expectation value of the correction factor is easy, it will not easily take into account the circular bias of detected signals. That is, a pipeline will tend to see a slightly greater proportion of signals that are more circularly polarized, because the effective $h_0$ of those signals is greater. This ``circularizes" the correction factor in a way dependent on the detection efficiency of the pipeline and the assumed prior distribution of pulsars. Although the effect is relatively minor, we decided to simulate it because the size of the effect was unknown at the time.
+While an analytical calculation of the expectation value of the correction factor is easy, it will not easily take into account the circular bias of detected signals. That is, a pipeline will tend to see a slightly greater proportion of signals that are more circularly polarized, because the effective $h_0$ of those signals is greater. This ``circularizes" the correction factor in a way dependent on the detection efficiency of the pipeline and on the assumed prior distribution of pulsars. Although the effect is relatively minor, we decided to simulate it because the size of the effect was unknown at the time.
 
 In this simulation, 2 million pulsars were generated with $h_0$ between 3$\times 10^{-26}$ and 3$\times 10^{-24}$ with a distribution of 1/$h_0$.
 
@@ -667,7 +668,7 @@ The chosen $1.74 \pm 0.37 \sigma$, however, yielded the necessary correction fac
 
 The chosen $1.74 \pm 0.37 \sigma$, however, yielded the necessary correction factor.
 
-Finally, we tested all of our calibration factors for $h_0$ with the associated confidence intervals and found the fraction of open data estimated $h_0$, f and asini within their 1 $\sigma$ error bars. The results were conservative:
+Finally, we tested all of our calibration factors for $h_0$ with the associated confidence intervals and found the fraction of open data estimated $h_0$, $f$ and $a \sin i$ within their 1 $\sigma$ error bars. The results were conservative:
 
 $h_0$: 77.4\%,
 f: 74.2\%
@@ -707,7 +708,7 @@ This MDC also validated our ability to recover orbital and GW parameters accurat
 \subsection{Binary search summary beyond the MDC}
 %\begin{itemize}
 TwoSpect is well-suited to the Scorpius X-1 mock data challenge.
-With this experience, the author is pursuing Scorpius X-1 (and J1751-305) searches in real data, as in Chapter~\ref{chap6}.
+With this experience, the author is pursuing Scorpius X-1 (and J1751-305) searches in real data, as described in Chapter~\ref{chap6}.
 It is also believed that directed binary searches can be made more sensitive with straightforward changes (see Section~\ref{chap5_addendum}).
 %\end{itemize}
 %\begin{itemize}
@@ -738,7 +739,7 @@ In the long term, this work will enhance all searches, the bridge of accreting b
 \section{Plans for improvement}
 %\begin{frame}{Plans for improvement}
 
-TwoSpect presents a viable obtion for seeking continuous gravitational waves from neutron stars in binary systems, yet more sensitivity would reveal a richer sky.
+TwoSpect presents a viable obtion for seeking continuous gravitational waves from neutron stars in binary systems; yet more sensitivity would reveal a richer sky.
 Indeed, aLIGO designs and the Scorpius X-1 torque-balance limit do not guarantee detection in the coming generation of intereferometers.
 Several improvements can thus be investigated.
 
@@ -773,7 +774,7 @@ Data from multiple interferometers can be added in-phase for a putative signal m
 To wit, the synthetized $h$ is given by Equation~\ref{TwoSpect_h_synth}:
 
 \begin{equation}
-h(f,t)=\Sigma_{j}\left(h_{j}(f,t)+\phi_{j}(f,\alpha,\delta)\right),
+h(f,t)=\Sigma_{j}\left(h_{j}(f,t)e^{i\phi_{j}(f,\alpha,\delta)}\right),
 \label{TwoSpect_h_synth}
 \end{equation}
 \begin{equation}
