@@ -6,7 +6,7 @@
         \label{binary_NS}
 
 Continuous waves from neutron stars in binary systems are distinctive.
-As Section~\ref{continuous_waves} comments, binary systems constitute perhaps a substantial fraction (see the ATNF catalog~\cite{ManchesterATNF2005}), perhaps half, of millisecond pulsars.
+As Section~\ref{continuous_waves} comments, binary systems constitute 211 of 379, or 55\%, of known pulsars with rotation frequency above 10 Hz and thus in the LIGO band (see the ATNF catalog, currently containing 2328 pulsars total~\cite{ManchesterATNF2005}).
 CW search methods prove powerful, probing well below the LIGO amplitude spectral density (ASD) noise floor given year-length science runs, yet computationally-demanding.
 A non-trivial possibility exists that there are CW from neutron stars (NS) in binary systems, buried in existing or forthcoming data, that could be seen with a fast, tractable search method.
 
@@ -80,7 +80,7 @@ Equation~\ref{cw_radiation_eps_eq} shows that this further increases radiated GW
 Insofar as the infall stream continues, the NS can be `spun-up' to rotation frequencies with non-negligible GW emission, potentially for a far longer detectable lifetime than an isolated star.
 
 Spin-up might proceed, as Wagoner derives, only up to a specific frequency.
-In this \textit{torque balance} hypothesis, the matter infall delivers a torque offset by angular momentum loss from GW emission; since GW emission rises with frequency squared, an NS that is spinning up due to accretion will eventually reach a limiting frequency beyond which GW emission prevents it from spinning faster.
+In this \textit{torque balance} hypothesis, the matter infall delivers a torque offset by angular momentum loss from GW emission; since GW emission rises with frequency, an NS that is spinning up due to accretion will eventually reach a limiting frequency beyond which GW emission prevents it from spinning faster.
 This idea, developed by Bildsten~\cite{Bildsten1998}, connects accretion rate with GW emission.
 Since accretion rate can be measured electromagnetically, in X-ray flux $F_\textup{X-ray}$, this lets us estimate what level of GW emission at frequency $f$ could be expected for a star rotating at frequency $\nu = f/2$ (Equation~\ref{torque_bal_eq} in general, Equation~\ref{ScoX1_torque_bal} for Scorpius X-1~\cite{GoetzThesis,Bildsten1998}): 
 
@@ -103,8 +103,8 @@ This frequency stationarity is computationally useful.
 
                 %aLIGO rate projections.
 Equation~\ref{torque_bal_eq} is incentive to develop searches especially for LMXBs.
-Although the predicted $h_0$ is still low, it is conceivable that high-luminosity such as Scorpius X-1 (see Section~\ref{scox1_parameters} for full parameters) might just be within reach of advanced detectors such as aLIGO.
-Unknown sources with potentially higher GW luminosity are a motivation for making this search capable of scanning the entire sky.
+Although the predicted $h_0$ is still low, it is conceivable that high-luminosity sources such as Scorpius X-1 (see Section~\ref{scox1_parameters} for full parameters) or possible transients might just be within reach of advanced detectors such as aLIGO.
+Unknown sources with potentially higher GW flux are a motivation for making this search capable of scanning the entire sky.
 It is difficult to infer how many sources might exist, but over 50 accretion-powered X-ray pulsars were already known as of 2005~\cite{ManchesterATNF2005}.
 Known, especially-promising sources such as Scorpius X-1 warrant scrutiny with a deeper, \textit{directed search} over their known parameter space.
 Such searches are the purpose of TwoSpect.
@@ -114,7 +114,7 @@ Such searches are the purpose of TwoSpect.
 
 TwoSpect offers a way to calculate a statistic and infer detection probability for a putative template waveform of a neutron star emitting continuous GW in a binary system.
 LIGO CW searches generally use matched filters, like inspiral searches. 
-Although the filter is easier than the inspiral waveform to calculate, the net computational cost is much higher, since integration covers a much longer timespan, compensating for weaker signals. 
+Although the CW filter is easier to calculate than inspiral filters for merging black holes, the net computational cost is much higher, since integration covers a much longer timespan, compensating for weaker signals. 
 Matched filtering a binary pulsar search in the time-domain, with complete phase information, appears to be computationally intractable for terascale computer clusters in the early 2010s. 
 By switching the problem to frequency domain power instead of amplitude, the search becomes feasible, albeit at a cost in sensitivity.
 
@@ -126,7 +126,7 @@ This transform yields a plane of pixels: the frequency-prime $f'$ vs frequency $
 Goetz and Riles~\cite{GoetzTwoSpectMethods2011,GoetzThesis} developed this technique in the context of GW.
 The plane of pixels provides a tractable data set on which binary CW templates can be tested.
 
-Detectable strain sensitivity $h$ scales poorly with time, $T^{1/8}$, due to the double transform, instead of $T^{1/2}$ for a coherent search or $T^{1/4}$ for semi-coherent, but matched templating techniques are powerful enough that being able to use them is promising.
+Detectable strain sensitivity $h$ scales poorly with time, $T^{-1/8}$, due to the double transform, instead of $T^{-1/2}$ for a coherent search or $T^{-1/4}$ for semi-coherent, but matched templating techniques are powerful enough that being able to use them is promising.
 Goetz developed a noise-subtracted $R$-statistic to measure the cumulative power in each binary CW template.
 This statistic follows a distribution as the sum of many $\chi$-squared distributions (see Taylor~\cite{taylor} as well as Casella and Berger~\cite{CasellaBerger2001} for statistical reference) and yields consistent $p$-values.
 These $p$-values can be extrapolated from Davies' method, having been vetted by Monte Carlo~\cite{GoetzTwoSpectMethods2011}.
@@ -226,12 +226,12 @@ R=\frac{\Sigma_{i=0}^{M-1}w_{i}[Z_{i}-\lambda_{i}]}{\Sigma_{i=0}^{M-1}[w_{i}]^{2
 \end{center}
 \end{figure}
 
-Testing various template models against simulated neutron stars in binary systems shows the value of $R$-statistic.
+Testing various template models against simulated neutron stars in binary systems reveals the benefit of the $R$-statistic.
 Figure~\ref{inj_R_statistic} shows that the statistic responds markedly when the input template values match the simulated `injection' sufficiently well.
 The sharp response assures accurate parameter estimation.
-Furthermore, Monte Carlo simulations by Goetz quantify the probability of high $R$ statistics arising in noise.
+Furthermore, Monte Carlo simulations by Goetz quantify the probability of high $R$ statistics arising from Gaussian noise.
 Using generating functions and Davies' method, this probability has already been incorporated into a single-template $p$-value, seen in figure~\ref{inj_log10p}.
-Further, multi-trial Monte Carlo studies done by the author have validated the probability of $R$- and $p$-values arising in noise.
+Further, multi-trial Monte Carlo studies done by the author have validated the probability of $R$- and $p$-values arising from Gaussian noise.
 
 
 %\end{frame}
@@ -247,15 +247,15 @@ can multiply computational times for gravitational wave searches by many orders 
 Each GW frequency needs to be corrected for Doppler shift and antenna pattern unique to each sky location.
 %Historical interest: the system of right ascension and declination were fixed by the time of Corpernicus, \textit{De revolutionibus orbium coelestium}~\cite{Hawking2002}.
 The number of distinct sky points needed is discretized by the allowed mismatch in sensitivity between points.
-Typically, we search over the parameter space with a grid that allows $0.2$ relative mismatch in $R$ statistic; the space is smooth enough that this grid can be smooth and rectangular.
+Typically, we search over the parameter space with a grid that allows a $0.2$ relative mismatch in $R$ statistic; the space is smooth enough that this grid can be smooth and rectangular.
 Looking across all LIGO frequencies requires over $10^{18}$ templates, of order $\mathcal{O}(10^9)$ more templates~\cite{GoetzTwoSpectMethods2011} to do an all-sky analysis than a search at a single location and known period.
 Thus the all-sky search is, in practice, only feasible when the $R$-statistic is the last in a stage of hierarchical statistics for candidate GW signals.
 The initial stage of this hierarchy, an incoherent harmonic sum, is known~\cite{GoetzTwoSpectMethods2011} to reduce potential sensitivity.
 
-A \textit{directed} search could be narrowly focused enough to calculate $R$-statistics for all interesting binary CW models at a particular point in parameter space.
+A \textit{directed} search could be narrowly focused enough to calculate $R$-statistics for all interesting binary CW models for a point in the sky.
 %There are several reasons to pursue more \textit{directed} searches in addition to the all-sky search.
 With a known electromagnetic counterpart, such as an LMXB or X-ray transient (XTE), the parameter space can often be reduced to a particular sky location (known to a few milliradians or better) and period (known to fractions of a second).
-Frequency may (as with XTE J1751-305~\cite{Markwardt2002}) or may not (as with Scorpius X-1~\cite{Galloway2014}) be known\footnote{At our 8.5 kiloparsec galactic radius~\cite{KerrLyndenBell1986} that both these sources are located in the direction of the galactic center.}.
+Frequency may (as with XTE J1751-305~\cite{Markwardt2002}) or may not (as with Scorpius X-1~\cite{Galloway2014}) be known\footnote{At our 8.5 kiloparsec galactic radius~\cite{KerrLyndenBell1986} both these sources are located in the direction of the galactic center.}.
 %\emph{All-sky search: }parameter space $\gg10^{18}$ templates
 %\begin{itemize}
 %\item Hierachical search; incoherent harmonic sum to consolidate\\
@@ -290,7 +290,7 @@ Such a search is tractable, since a single template test requires on the order o
 This search promises to be significantly more sensitive than the all-sky search.
 We chose to test this new method first in a Mock Data Challenge (MDC).
 This MDC lets us ascertain our sensitivity relative to other GW-search algorithms.
-TwoSpect is 1 of up to 6 algorithms looking for 50 ``open'' and 50 ``closed/blind'' Sco X-1-like ``pulsars'' (LMXBs).
+TwoSpect is 1 of up to 6 existing programs looking for 50 ``open'' and 50 ``closed/blind'' Sco X-1-like ``pulsars'' (LMXBs).
 Full MDC results are the subject of a forthcoming paper.
 The rest of this chapter expounds on the development and testing of methods in the course of this MDC.
 
@@ -435,7 +435,7 @@ of highest $p$-value outliers in 5 Hz bands was produced for each
 interferometer, subject to a $p$-value threshold inferred from Gaussian noise.
 These sets were compared in pairwise coincidence (H1-L1, H1-V1, or L1-V1),
 where coincidence required proximity within a few grid points in the 
-parameter space. Any surviving outliers were classified as a detection. 
+parameter space. Any surviving outliers were classified as detections. 
 
 The highest $p$-value outlier in a single interferometer in that band 
 yielded the estimated parameters. Uncertainties in these parameters were also
@@ -483,8 +483,8 @@ Note that the $\log_{10} p$ values refer to single-template $p$-values; nearby t
 \subsection{Detection criteria}
 
 \begin{itemize}
-\item each candidate must survive at least one double-IFO coincidence test, involving a pairwise comparison of single-IFO candidates to see whether they are within 1/$T_{\textup{SFT}}$ in both frequency ($f$) and modulation depth ($df$).
 \item single-IFO candidates are the up-to-200 most extreme $p$-value outliers in a 5-Hz band that had a $\log_{10}p \leq$ threshold, where threshold = $-7.75$ if $f <$ 360.0 Hz (those that used 840-s SFTs) or $-12.0$ if $f \geq$ 360.0 Hz (those that used 360-s SFTs).
+\item each candidate must survive at least one double-IFO coincidence test, involving a pairwise comparison of single-IFO candidates to see whether they are within 1/$T_{\textup{SFT}}$ in both frequency ($f$) and modulation depth ($df$).
 \end{itemize}
 
 $\rightarrow$ if there is any candidate surviving these criteria in a 5 Hz band, we mark detected, else not detected.
@@ -502,7 +502,7 @@ This $h_0$-effective equaled,
 \noindent the rescaling necessary to convert the strain into effective units of detected strain. 
 Any pipeline that assumes circular polarization should require a similar procedure.
 
-We plotted the error in the $h_0$ reported by TwoSpect versus $h_0$-effective for the 31 open pulsars detected.
+We plotted the error ($h_0$-effective, as inferred, minus $h_0$-effective, as calculated from the true injection parameters) in the $h_0$ reported by TwoSpect versus $h_0$-effective for the 31 open pulsars detected.
 
 \begin{figure}
 \begin{center}
@@ -516,7 +516,7 @@ This same error was also plotted vs $p$-value and frequency, for $h_0$ in Figure
 %As will be seen on the plots for error in frequency and asini, high-frequency outliers were found in the open data set. These outliers could be categorized heuristically as having $f >$ 1050 Hz and abs($\log_{10}p$) $<$ 300. These 4 outliers were assigned into the \textit{loose} category, with a corresponding $\sigma$. The remaining 27 were in the \textit{tight} category, to which we could assign a more stringent $\sigma$. Later, it was found that the high-frequency outlier behavior could mostly be explained by a misconfiguration bug where TwoSpect was not asked to retrieve needed SFT data; the rerun plots show a lower \textit{overall} uncertainty. 
 These values are reported in the header of the graphs.
 
-Blue lines indicate the less stringent uncertainty. 
+Blue lines indicate the overall uncertainty. 
 Red lines (on plots vs $p$-value) indicate a least-squares power-law regression.
 
 \begin{figure}
@@ -580,7 +580,7 @@ The 95\% level is approximately about $3 \times 10^{-25}$ (again, without the co
 \end{figure}
 
 
-Consequently we plotted the distribution of recovered $h_0$ versus injected $h_0$-effective (the error of which is shown above, for detected pulsars)  in Figure~\ref{fig:hrecoveredvsheffectivefullul}. Further injection studies should show how this upper limit varies with frequency as injected $h_0$, but at the time of the MDC, we did not feel confident in extrapolating this relationship.
+Consequently we plotted the distribution of recovered $h_0$ versus injected $h_0$-effective (the error of which is shown above, for detected pulsars)  in Figure~\ref{fig:hrecoveredvsheffectivefullul}. Further injection studies should show how this upper limit varies with frequency, for a given injected $h_0$, but at the time of the MDC, we did not feel confident in extrapolating this relationship.
 
 \begin{figure}
 \begin{center}
@@ -598,7 +598,7 @@ The zero-slope line is shown to indicate the ninety-five percent confidence uppe
 \subsection{$\cos \iota$ Ambiguity}
 
 The cosine of the inclination angle of the pulsar, $\cos \iota$, casts an ambiguity over the determination of $h_0$. 
-For TwoSpect, which assumes circular polarization, the approximate true value of $h_0$ will indeed be as reported if $\cos \iota$ = 1, but will be greater if $\cos \iota$ is less (i.e., the gravitational wave is elliptically polarized). 
+For TwoSpect, which assumes circular polarization, the approximate true value of $h_0$ will indeed be as reported if $|\cos \iota|$ = 1, but will be greater if $\cos \iota$ is less (i.e., the gravitational wave is elliptically polarized). 
 In the case of linear polarization, $h_0$ will be about $2^{3/2}$ times larger than reported.
 
 While an analytical calculation of the expectation value of the correction factor is easy, it will not easily take into account the circular bias of detected signals. That is, a pipeline will tend to see a slightly greater proportion of signals that are more circularly polarized, because the effective $h_0$ of those signals is greater. This ``circularizes" the correction factor in a way dependent on the detection efficiency of the pipeline and the assumed prior distribution of pulsars. Although the effect is relatively minor, we decided to simulate it because the size of the effect was unknown at the time.
