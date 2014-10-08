@@ -86,7 +86,7 @@ Before these extra dimensions, however, the author has had to validate new appro
         \section{Quantifying directedness: sensitivity studies in real data}
         \label{quant_directed}
 
-Gaussian noise studies, of which the Mock Data Challenge was one, led to the development of most of the code for detection, parameter estimation, as well as a set of upper limits (ULs).
+Gaussian noise studies, of which the Mock Data Challenge was one, led to the development of most of the code for detection and parameter estimation, as well as a set of upper limits (ULs).
 UL determination in the MDC was severely constrained by the sample size of 50 unblinded `open' injections.
 While detection criteria and parameter estimation were sound, ULs demanded more simulated injections.
 With the MDC complete, resources were free to conduct these injections into several frequency bands of S6 data, at 142 Hz as well as 162 and 222 Hz (the latter two are consistent, detailed in Appendix~\ref{appendix2}).
@@ -114,7 +114,8 @@ Since the 95\% efficiency region is the most interesting, the relatively poor fi
 \end{figure}
 
 Figure~\ref{S6_det_eff_142} plots the \textit{detection efficiency} of TwoSpect in a 0.1 Hz test band starting at 142 Hz.
-Five hundred signals are injected, with the same astrophysical parameters, into each LIGO interferometer (H1 and L1), with correspondingly different antenna pattern and detector responses.
+Five hundred signals are injected into each LIGO interferometer (H1 and L1).
+For each injection, the astrophysical parameters were the same, but antenna pattern and detector responses were applied per interferometer.
 A separate TwoSpect analysis was run for each injection simulation to avoid cross-contamination.
 The results of corresponding analyses were compared between IFOs.
 Templates meeting the detection criteria of the Mock Data Challenge (as discussed in Chapter~\ref{chap5}, having a single-template $\log_{10} p \leq -7.75$) were, if coincident in both interferometers by being in adjacent $df$, $f$ pixels, counted as detections.
@@ -138,7 +139,7 @@ into S6 data at 142 Hz (injections also done at 162, 222 Hz)}
 \end{figure}
 
 Using the same set of injections as for detection efficiency, one can also recover estimated $h_0$ values, as Figure~\ref{S6_ULs_142} illustrates.
-TwoSpect returns an $h_0$ proportional to $R^{1/4}$, but the proportionality constant was found to be slightly off in the MDC from that used in all-sky searches, prompting an empirical rescaling by 1.11.
+TwoSpect returns an $h_0$ proportional to $R^{1/4}$, but the proportionality constant was found to be slightly off in the MDC from that used in all-sky searches, prompting an empirical rescaling by 1.11~\footnote{As Riles notes, this can be explained by declination. A table, computed by Santiago Caride for a different search, shows that the Sco X-1 declination of -0.27 radians should see an average of 405/364 = 1.11 times higher $F$-statistic than the all-sky average, which is identical to the correction needed for the $R$-statistic.}.
 Moreover, studies of the $\cos \iota$ uncertainty had led us to correct $h_0$ estimates further when assuming random polarization: a uniform distribution of $\cos \iota$ values near the detection threshold induced a $1.74 \pm 0.37$ factor, so we multiplied the S6 injections by $1.74$.
 The real data injections were necessary to clarify how these $h_0$ levels corresponded to a given confidence level. 
 In other words, the reported UL should be above the injected $h_0$ at least 95\% of the time.
@@ -180,7 +181,7 @@ Stated again briefly, we analyzed the following:
 %\item Search over 300+1100 Hz = 1.4 kHz complete on H1
 %\item Search over 300+1700 Hz = 2.0 kHz complete on L1
 \end{itemize}
-As of this writing, the first three items are complete and the fourth well under way.
+As of this writing, all of these production searches are complete.
 The similarity in results between primary (840-s SFT) and overlapping (360-s SFT) bands between 260 and 360 Hz suggests that the high frequency overlap will also yield concordant results.
 Thus the author derives ULs for 40 to 360 Hz from the 840-s SFTs and 360 to 2040 Hz from the 360-s SFTs, as described below.
 
@@ -198,7 +199,7 @@ S6 $h_0$ heatmap shows real data features, such as 46.7 Hz cal line}
 As the S6 search was run on the Atlas cluster at AEI Hannover, individual bands could be checked for consistency with known artifacts.
 Heatmaps plotting the intensity of $R$, $\log_{10}p$ and estimated $h_0$ (as reported, not corrected by Equation~\ref{S6_UL_formula}) were generated.
 Figure~\ref{S6_cal_line_heatmap} shows one set of 50 bands, spanning 5 Hz, on H1.
-This band clearly shows the presence of the 46.7 Hz \textit{calibration line}\footnote{These lines help calibrate the $h_0$ amplitude spectral density~\cite{MeadorsFeedforward2014}, although their TwoSpect reported amplitude may not match the intended $h_0$ because the lines are not modulated like neutron stars in binary systems.}.
+This band clearly shows the presence of the 46.7 Hz \textit{calibration line}\footnote{These lines help calibrate the $h_0$ amplitude spectral density~\cite{MeadorsFeedforward2014}, although their TwoSpect reported amplitude do not match the intended $h_0$ because the lines are not modulated like neutron stars in binary systems.}.
 Seeing known spectral features at their expected frequencies confirms that TwoSpect is reading data accurately. 
 The heatmaps can also be used to follow-up on interesting outliers.
 
@@ -208,7 +209,9 @@ The heatmaps can also be used to follow-up on interesting outliers.
 \begin{center}
 \includegraphics[width=0.68\paperwidth,height=0.48\paperheight]{plots/h0FullUL95logGuess-H1.eps}
 \caption{
-H1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands. This formula corresponds to about 90\% confidence in random polarization ULs in the final analysis.}
+H1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands. 
+The `Tentative $h_0$ 95 percent UL' statement was later revised; the 95\% confidence level is higher by $2.0/1.8$.
+This plot shown corresponds to about 90\% confidence in random polarization ULs in the final analysis.}
 \label{S6_H1_UL}
 \end{center}
 \end{figure}
@@ -217,7 +220,9 @@ H1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ 
 \begin{center}
 \includegraphics[width=0.68\paperwidth,height=0.48\paperheight]{plots/h0FullUL95logGuess-L1.eps}
 \caption{
-L1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands. This formula corresponds to about 90\% confidence in random polarization ULs in the final analysis.}
+L1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands. 
+The `Tentative $h_0$ 95 percent UL' statement was later revised; the 95\% confidence level is higher by $2.0/1.8$.
+This plot shown corresponds to about 90\% confidence in random polarization ULs in the final analysis.}
 \label{S6_L1_UL}
 \end{center}
 \end{figure}
@@ -226,7 +231,7 @@ L1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ 
 \begin{center}
 \includegraphics[width=0.68\paperwidth,height=0.48\paperheight]{plots/ScoX1ULs.eps}
 \caption{
-Joint upper limits for Scorpius X-1, using a confidence interval given by reported $h_0 \times \left( 1 + 1.0 \right) \times \left[\cos\iota \textup{ factor}\right]$ in 0.1 Hz bands. 
+Joint 95\% upper limits for Scorpius X-1, using a confidence interval given by reported $h_0 \times \left( 1 + 1.0 \right) \times \left[\cos\iota \textup{ factor}\right]$ in 0.1 Hz bands. 
 This spectrum covers 40 to 2040 Hz using the lower upper limit from either interferomer (H1 or L1) when both yielded data. 
 A total of 28.8 Hz were in bands that yielded no real upper limit (because the quarter root of the test statistic was imaginary) in either interferometer, generally due to excessive noise in that band.
 Bands were left-closed and right open, e.g., $\left[ 40.0,40.1\right), \left[ 40.1,40.2\right)\ldots \left[2039.9,2040.0\right)$.
@@ -240,16 +245,19 @@ TwoSpect has been configured to analyze only `usable SFTs', which must pass a Ku
 Non-Gaussian or otherwise extremely noisy data is not used.
 The 60 Hz and first three harmonic lines (120, 180, 240) Hz harmonic lines, as well as frequencies near the violin modes around 330 Hz, are excluded by these tests.
 Altogether, the 40 to 360 Hz H1 search excluded 16.4 Hz and L1 16.2 Hz, while the 360 to 2040 Hz H1 search excluded 21.4 Hz and L1 16.9 Hz of search bands.
-For generating upper limits, only 28.8 out of 2000.0 Hz could not be determined from either interferometer.
+For generating upper limits, only 28.8 Hz out of 2000.0 Hz could not be determined from either interferometer.
 
 Figures~\ref{S6_H1_UL} and~\ref{S6_L1_UL} show tentative ULs that, in the final analysis, correspond to approximately 90\% confidence for random polarization.
+The 90\% confidence level requires a correction factor of $h_0 \times \left(1+0.8 \right) \left[\cos \iota \textup{ factor} \right]$.
 These figures also illustrate the most sensitive part of the LIGO spectrum.
+A higher, 95\% confidence level requires (Equation~\ref{S6_UL_formula}) a correction factor of $h_0 \times \left(1+2.0 \right) \left[\cos \iota \textup{ factor} \right]$.
 The entire spectrum, with the final 95\% confidence UL for random polarization, is shown in Figure~\ref{S6_H1L1_UL}.
 
-Previous Radiometer surveys using S5 data~\cite{AbadieStoch2011} may appear to show a better, lower UL, but the results are not directly comparable.
+Previous Radiometer searches using S5 data~\cite{AbadieStoch2011} may appear to show a better, lower UL, but the results are not directly comparable.
 The Radiometer UL is calculated for 90\% and is for circular (optimal) rather than random, polarization.
 In addition, signal leakage across the 0.25 Hz bins used in the Radiometer search leads to UL degradation by as much as 70\% at a frequency of 1500 Hz\footnote{Confirmed in private communication and will be noted in the forthcoming Bulten \textit{et al} Sco X-1 paper~\cite{ScoX1MDC2014DCC}.}.
-TwoSpect's S6 UL is competitive (possibly better, pending deeper understanding of the algorithmic differences).
+The complete transformation from Radiometer $h_\textup{RMS}$ to an upper limit is believed to be $h_\textup{UL} = 2.43\times1.2\times1.7\times h_\textup{RMS}$ at 1500 Hz, based on current understanding of the differences in algorithm.
+TwoSpect's S6 ULs are then an improvement.
 Moreover, given an outlier, TwoSpect could do something not yet possible with other comparable pipelines: measure the projected semimajor axis, $a \sin i$.
 
 \subsection{S6: Scorpius X-1 outliers}
@@ -446,9 +454,9 @@ With continued improvements to CW algorithms and the enhanced sensitivity of fut
 
 Discovered by Markwardt \textit{et al} in 2002~\cite{Markwardt2002}, the X-ray transient (XTE) J1751-305 has indications it too could emit GW~\cite{Strohmayer2014}.
 As detailed by Strohmayer and Mahmoodifar, J1751 has been searched for signs of non-radial oscillation modes, such as $r$- (and $g$-) modes.
-No $r$-modes have so far been seen.
+%No $r$-modes have so far been seen.
 Preliminary results suggested that $r$-modes might be consistent with X-ray observations.
-Subsequently, Andersson \textit{et al}~\cite{Andersson2014} argued that an $r$-mode would have already spundown below detectable levels, but Lee~\cite{Lee2014} reflected that a crust-only surface $r$-mode might still be present. 
+Subsequently, Andersson \textit{et al}~\cite{Andersson2014} argued that an $r$-mode would have already spun down below detectable levels, but Lee~\cite{Lee2014} suggested that a crust-only surface $r$-mode might still be present. 
  J1751 is an intriguing candidate in its own right and highlights the different kinds of directed GW search that TwoSpect can conduct.
 
 J1751 is the XTE with the shortest known period,
@@ -541,7 +549,7 @@ The analysis from 40 to 360 Hz used 840-s SFTs,
 and from 360 to 2040 Hz used 360-s SFTs,
 (to prevent spectral leakage).
 This primary analysis (4 kHz of data between the two detectors) has yielded preliminary joint upper limits over the 2 kHz from 40 to 2040 Hz.
-Overlapping bands are underway to confirm the results using
+Overlapping bands are being used to confirm the results using
 360 s SFTs to validate the 260 to 360 Hz band and
 300 s SFTs to validate 1400 to 2040 Hz, but initial output justifies treating the existing results as valid. 
 %\item Search over 300+1700 Hz = 2.0 kHz complete on H1
@@ -551,7 +559,7 @@ Overlapping bands are underway to confirm the results using
 Primary analysis for this S6 search was 100\% done in roughly 30 days.
 In the process, our post-processing methodology has been adjusted from all-sky techniques~\cite{GoetzTwoSpectResults2014} to one appropriate for a densely-sampled, correlated `$df$ vs $f$' parameter space.
 The remaining questions are in the identification of outliers -- already $\sim 22$ coincident features have been noted between 40 and 360 Hz -- and explanation of too quiet bands.
-Too quiet bands, seen in Figure~\ref{S6_H1L1_UL}, appear due to the noise subtraction in the $R$ statistic;further investigation will see whether these presumably non-genuine `good' bands can be systematically rectified.
+Too quiet bands, seen in Figure~\ref{S6_H1L1_UL}, appear due to the noise subtraction in the $R$ statistic; further investigation will see whether these presumably non-genuine `good' bands can be systematically rectified.
 
 In addition, a search for XTE J1751-305 has been completed, with its own post-processing underway.
 

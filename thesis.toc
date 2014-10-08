@@ -114,16 +114,16 @@
 \contentsline {subsection}{\numberline {6.1.2}Enhancements enabled by directed searching}{151}{subsection.6.1.2}
 \contentsline {section}{\numberline {6.2}Quantifying directedness: sensitivity studies in real data}{152}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Real S6 data: detection efficiency}{153}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Real S6 data: $h_0$ recovered vs injected}{156}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Scorpius X-1 search using Directed TwoSpect in S6}{157}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}S6: Scorpius X-1 search plan}{157}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.2.2}Real S6 data: $h_0$ recovered vs injected}{155}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Scorpius X-1 search using Directed TwoSpect in S6}{156}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}S6: Scorpius X-1 search plan}{156}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}S6: Scorpius X-1 heatmaps}{157}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}S6: Scorpius X-1 upper limits, random polarization}{162}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}S6: Scorpius X-1 outliers}{163}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.3}S6: Scorpius X-1 upper limits, random polarization}{157}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}S6: Scorpius X-1 outliers}{162}{subsection.6.3.4}
 \contentsline {section}{\numberline {6.4}XTE J1751-305 search using Directed TwoSpect in S6}{166}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}S6: XTE J1751-305 background}{166}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}S6: XTE J1751-305 heatmaps}{167}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Summary of Directed TwoSpect S6 searches}{167}{section.6.5}
+\contentsline {subsection}{\numberline {6.4.2}S6: XTE J1751-305 heatmaps}{173}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Summary of Directed TwoSpect S6 searches}{173}{section.6.5}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Outreach: Exhibit at the World Science Festival}}{175}{chapter.7}
 \hbox { }
