@@ -811,7 +811,7 @@ F_{+}(t,\alpha,\delta,\psi)\cos(\iota)\sin[\Phi(t)]\right).
 \end{equation}
 
 Presently, TwoSpect effectively searches only for circular polarization, making it most sensitive when $\cos \iota = 1$.
-If antenna pattern weighting is adjusted to test for $F_\times$ and $F_+$ according to a general, elliptical polarization model, sensitivity to other values of $\cos \iota$ might hypothetically be enhanced.
+If antenna pattern weighting is adjusted to test for $F_\times$ and $F_+$ according to a general, elliptical polarization model, sensitivity to other values of $\cos \iota$ should be enhanced.
 It remains unclear whether this test would be sufficient by itself to remove the $\cos \iota$ ambiguity in estimated $h_0$ if a detection is obtained, but earlier work on the PowerFlux all-sky, isolated star pipeline suggests improved parameter estimation is achievable~\cite{DergachevRiles2005,MendellWette2008}.
 
 The current algorithm calculates pixel powers $P$ for SFT $n$, bin $k$:
@@ -850,14 +850,17 @@ F^{2}(t,\alpha,\delta,\psi)=aF_{\times}^{2}(t,\alpha,\delta,i,\psi)+bF_{+}^{2}(t
 
 Orbital phase is currently ignored.
 Only power information in the 2nd Fourier plane is used to inform $R$-statistic templates.
-Considerable information in the orbital phase is available.
-Orbital phase should be more robust than gravitational wave phase against effects analogous to spin-wandering and timing glitches, in particular because the time resolution of orbital phase is relatively low.
-Even for extremely short SFTs, a year-long science run produces only hundreds of thousands of SFTs, not billions of time samples.
-Perhaps just an approximate orbital phase-match would be possible, by verifying that given time-frequency plane sinusoid powers (ignoring GW phase information) correspond to power in the 2nd Fourier (frequency prime-frequency) plane.
-Such a change may be sufficient to warrant revising the $R$-statistic weighting scheme, and if successful would improve sensitivity for some systems with known time of ascension.
+Epherimis data (\textit{e.g.,} time of ascension or periapsis) to inform the orbital phase is often available for LMXBs..
+%Orbital phase should be more robust than gravitational wave phase against effects analogous to spin-wandering and timing glitches, in particular because the time resolution of orbital phase is relatively low.
+Orbital phase might be incorporated into the $R$-statistic calculcation, by checking the phase of the 2nd Fourier plane pixels (the 2nd transform obscures GW phase information but should preserve orbital phase).
+Even for extremely short SFTs, a year-long science run produces only hundreds of thousands of SFTs, not billions of time samples, so a rough orbital phase-match would be attempted.
+This step might reduce the noise background in a directed search with a known orbital phase, allowing a weak signal to stand out.
+Conversely, it could be used to infer orbital phase.
+Depending on the computational costs of this step, it might be aimed toward follow-up searches.
+%Such a change may be sufficient to warrant revising the $R$-statistic weighting scheme, and if successful would improve sensitivity for some systems with known time of ascension.
 
 \subsection{Parameter space patterns}
-Common questions arise. 
+Computational costs for TwoSpect have led to suggestions for ways to exploit the $R$ statistic's behavior over our parameter space. 
 Simulated annealing\footnote{Discussed with Maria Alessandra Papa, Sam Finn and others.} would address the wrong issues in our high-noise, weak-signal analyses. 
 `Hill-climbers'\footnote{Proposed by Ethan Obie Romero-Severson.} could explore the parameter space until encountering one of the $X$-pattern arms. 
 Low SNR compared to available computational resources means this climbing strategy will probably not be necessary. 
@@ -910,10 +913,10 @@ Coherent synthesis, elliptical polarization, and orbital phase improvements
 need implementation, validation and testing.
 It can be hoped that they will provide additional sensitivity for TwoSpect to yield more detections, and possibly to add new parameters to the list of what TwoSpect can estimate.
 Although these enhancements will increase computational cost, we can also attempt to offload some of that cost to distributed computing, such at the Einstein@home project.
-Together with the quieter noise floors of advanced detectors, we may yet detect gravitational waves from neutron stars in binary systems.
+Together with the quieter noise floors of advanced detectors, we may reasonably hope to detect gravitational waves from neutron stars in binary systems.
 
-Since data from the initial detectors exists now, it does not hurt to check to see whether, despite the astrophysical predictions, a signal might already be seen.
-Chapter~\ref{chap6} presents this survey.
+Since data from the initial detectors exists now, it is, in fact, prudent to see whether, despite the astrophysical predictions, a signal might already be seen.
+Chapter~\ref{chap6} presents this search.
 
 \section{Addendum}
 \label{chap5_addendum}
@@ -924,14 +927,14 @@ Chapter~\ref{chap6} presents this survey.
 \subsection{Scorpius X-1 parameters}
 \label{scox1_parameters}
 
-Scorpius X-1 parameters are known to high accuracy, except for frequency~\cite{Galloway2014}.
+Many Scorpius X-1 parameters are known to high accuracy~\cite{Galloway2014}.
 The first LIGO search was published in 2007~\cite{AbbottScoX12007}.
 
 \begin{itemize}
 \item Distance: 9000 light-years (2.8 kpc)
 \item Eccentricity: $<3\times10^{-3}$
 \item Sky location: $\alpha$=16h19m55.1s, $\delta$=-15d38m24.9s
-\item X-ray luminosity: 2.3 $\times10^{31}$W, 60000 $L_{Sol}$
+\item X-ray luminosity: $2.3 \times10^{31}$W, 60000 $L_{Sol}$ ($2.5\times10^{-10}$ Wm$^{-2}$ at Earth)
 \item Period: $68023.70 \pm 0.04$ s
 %\item First LIGO search: Phys. Rev. D 76 (2007) 082001; gr-qc/0605028
 %\item Torque-balance (Papaloizou and Pringle 1978) equation (Wagoner 1984),
