@@ -6,10 +6,10 @@
         \label{directed}
 
 TwoSpect performed aptly in Chapter~\ref{chap5}'s Mock Data Challenge, which warrants using the program to analyze the best existing GW data.
-At the time of writing, the best consistent stretch of data remains Science Run 6 (S6) taken from 2009 July 09 to 2010 October 20 by LIGO Hanford Observatory (LHO) and LIGO Livingston Observatory (LLO).
+At the time of this writing, the best consistent stretch of GW data remains that of Science Run 6 (S6) taken from 2009 July 09 to 2010 October 20 by LIGO Hanford Observatory (LHO) and LIGO Livingston Observatory (LLO).
 Advanced LIGO (aLIGO) commissioning is already surpassing the sensitivity of S6 for short periods of time.
 While early LIGO continuous wave (CW) searches used short science runs such as S2~\cite{AbbottScoX12007}, aLIGO data duration is for now too short for an analysis competitive with present upper limits, in particular the 2011 Radiometer~\cite{AbadieStoch2011} S5 high frequency results and 2014 TwoSpect~\cite{GoetzTwoSpectResults2014} S6 low frequency results.
-The increased sensitivity anticipated from aLIGO Observing Run 1 (O1), which is planned to last several months in summer 2015, could yield interesting results, and the 9-month O3 is planned before the end of the decade.
+The increased sensitivity anticipated from aLIGO Observing Run 1 (O1), which is planned to last several months in summer 2015, could yield interesting results, and the 9-month O3 is planned for 2017.
 Preliminary Scorpius X-1 broadband upper limits from S6 are presented in this chapter.
 
             %TwoSpect improvements myself (to do).
@@ -29,11 +29,11 @@ TwoSpect was designed~\cite{GoetzThesis,GoetzTwoSpectMethods2011} as an all-sky 
 The voluminous parameter space of that search, as described in Chapter~\ref{chap5}, prompted tradeoffs in sensitivity vs computational cost, in particular the limitation of test statistic calculation to only those outlier candidates that survived an incoherent harmonic sum stage. 
 For objects with constrained sky location and NS parameters, thorough calculations of the $R$ test statistic become feasible.
 
-For Scorpius X-1, many parameters are known (updated ephemerides were calculated in 2014 by Galloway~\cite{Galloway2014}), but critically, rotation frequency is not.
+For Scorpius X-1, many parameters are known (updated ephemerides were determined in 2014 by Galloway~\cite{Galloway2014}), but critically, rotation frequency is not.
 Sky location is known, and the period is $0.7873114 \pm 0.0000005$ days, \textit{i.e.,} $68023.70 \pm 0.04$ s with 1-$\sigma$ uncertainty\footnote{Access to a preliminary ephemeris in the MDC led us to use $P = 68023.8259 s$ in for searches in the MDC and S6; MDC simulations justify assuming that this variation has negligible impact on TwoSpect, which would only be able to discriminate between different periods around $68023 s$ at a resolution of about $40 s$ or greater, depending on Fourier transform coherence time.}.
 The projected semimajor axis, $a \sin i$, is $1.44 \pm 0.18 s$ with 1-$\sigma$ uncertainty\footnote{Orbital parameters interpreted in correspondence between C. Messenger and D. Galloway.}.
 Rotation frequency uncertainty drives the cost of the search.
-While the Chakrabarty speed limit~\cite{Chakrabarty2003} and neutron star breakup limit limit $2\nu$, the GW emission frequency of an NS quadrupole, to $\mathcal{O}(2\textup{ to }3)$ kHz, the dominant high frequency limit $f_h$ is driven as much by the noise floor of the LIGO detectors.
+While the Chakrabarty speed limit~\cite{Chakrabarty2003} and neutron star breakup limit $2\nu$, the GW emission frequency of an NS quadrupole, to $\mathcal{O}(2\textup{ to }3)$ kHz, the dominant high frequency limit $f_h$ is driven as much by the noise floor of the LIGO detectors.
 This noise floor increases linearly with frequency and at 2 kHz is an order of magnitude worse than its most sensitive, about $2\times10^{-23}$ in dimensionless strain between 150 and 200 Hz.
 Photon shot noise, that is, quantum vacuum fluctuations are the limiting noise source at those frequencies.
 The low-frequency limit, $f_l$, is also driven by the noise floor of the detector, which becomes contaminated by seismic noise below about 40~Hz.
@@ -77,7 +77,7 @@ Thus the directed search necessitates enhancements to post-processing.
 
 In the near future, enhancements enabled by the directed search will be possible.
 Sensitivity from full templating is the first step.
-The next steps can involve a search over orbital phase and polarization with additional computation steps and templating techniques.
+The next steps can involve a search over orbital phase and polarization with additional computation steps and templating techniques, as discussed in Section~\ref{plans_for_TwoSpect_improvement}.
 Before these extra dimensions, however, the author has had to validate new approaches to analyzing this dense 2D parameter space.
 
 
