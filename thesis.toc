@@ -123,7 +123,7 @@
 \contentsline {section}{\numberline {6.4}XTE J1751-305 search using Directed TwoSpect in S6}{166}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}S6: XTE J1751-305 background}{166}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}S6: XTE J1751-305 heatmaps}{167}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Summary of Directed TwoSpect S6 searches}{173}{section.6.5}
+\contentsline {section}{\numberline {6.5}Summary of Directed TwoSpect S6 searches}{167}{section.6.5}
 \hbox { }
 \contentsline {chap}{\numberline {\hbox { }\hfill \bf VII.\hspace {5pt}}{\bf Outreach: Exhibit at the World Science Festival}}{175}{chapter.7}
 \hbox { }
