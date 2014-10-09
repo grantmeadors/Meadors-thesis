@@ -5,7 +5,7 @@
         \section{Directed TwoSpect}
         \label{directed}
 
-TwoSpect performed aptly in Chapter~\ref{chap5}'s Mock Data Challenge, which warrants using the program to analyze the best existing GW data.
+TwoSpect performed well in Chapter~\ref{chap5}'s Mock Data Challenge, which warrants using the program to analyze the best existing GW data.
 At the time of this writing, the best consistent stretch of GW data remains that of Science Run 6 (S6) taken from 2009 July 09 to 2010 October 20 by LIGO Hanford Observatory (LHO) and LIGO Livingston Observatory (LLO).
 Advanced LIGO (aLIGO) commissioning is already surpassing the sensitivity of S6 for short periods of time.
 While early LIGO continuous wave (CW) searches used short science runs such as S2~\cite{AbbottScoX12007}, aLIGO data duration is for now too short for an analysis competitive with present upper limits, in particular the 2011 Radiometer~\cite{AbadieStoch2011} S5 high frequency results and 2014 TwoSpect~\cite{GoetzTwoSpectResults2014} S6 low frequency results.
@@ -17,8 +17,8 @@ Preliminary Scorpius X-1 broadband upper limits from S6 are presented in this ch
             \subsection{Targeted, directed and all-sky search sensitivity}
             \label{tradeoffs}
 
-Several approaches exist toward a search for GW from known objects such as Scorpius X-1\footnote{Discovered by Riccardo Giacconi.}.
-When seeking continuous GW, these methods are classified as all-sky, directed, or targeted, in order of increasing focus of the search.
+Several approaches exist toward a search for GWs from known objects such as Scorpius X-1\footnote{Discovered by Riccardo Giacconi in 1962 with a sounding rocket.}.
+When seeking continuous GWs, these methods are classified as all-sky, directed, or targeted, in order of increasing focus of the search.
 More focused searches make sense as more prior information is known, such as sky location, neutron star frequency and binary system orbital parameters.
 Additional information lets some CW searches refine, for instance, their template models of GW signals.
 If the search is designed for minimal information, in particular if sky location is unknown, it is generally called an \textit{all-sky search}.
@@ -34,7 +34,7 @@ Sky location is known, and the period is $0.7873114 \pm 0.0000005$ days, \textit
 The projected semimajor axis, $a \sin i$, is $1.44 \pm 0.18 s$ with 1-$\sigma$ uncertainty\footnote{Orbital parameters interpreted in correspondence between C. Messenger and D. Galloway.}.
 Rotation frequency uncertainty drives the cost of the search.
 While the Chakrabarty speed limit~\cite{Chakrabarty2003} and neutron star breakup limit $2\nu$, the GW emission frequency of an NS quadrupole, to $\mathcal{O}(2\textup{ to }3)$ kHz, the dominant high frequency limit $f_h$ is driven as much by the noise floor of the LIGO detectors.
-This noise floor increases linearly with frequency and at 2 kHz is an order of magnitude worse than its most sensitive, about $2\times10^{-23}$ in dimensionless strain between 150 and 200 Hz.
+This noise floor increases linearly with frequency and at 2 kHz is an order of magnitude worse than its most sensitive, about $2\times10^{-23}$ strain Hz$^{1/2}$ between 150 and 200 Hz.
 Photon shot noise, that is, quantum vacuum fluctuations are the limiting noise source at those frequencies.
 The low-frequency limit, $f_l$, is also driven by the noise floor of the detector, which becomes contaminated by seismic noise below about 40~Hz.
 
@@ -54,7 +54,7 @@ N_\textup{template} = 2 (840.1)\left[1+ \frac{3360\pi}{68023.8} 400.1 \right](32
 \noindent or $3.392\times 10^7$ templates in 840-s SFTs and $1.9434\times 10^8$ templates in 360-s SFTs, per interferometer.
 Searching both LHO's H1 interferometer and LLO's L1 interferometer, the grand total is $4.5652\times10^8$ templates.
 
-Each of these templates takes between 0.3 and 3 s to run on late 2000s to early 2010s CPUs, depending on vector extensions (such as SSE) and clock speed.
+Each of these templates takes between 0.3 and 3 s to run on late-2000s to early-2010s CPUs, depending on vector extensions (such as SSE) and clock speed.
 Given approximately two thousand cores at a cluster such as the LIGO Data Grid at the California Institute of Technology and the LIGO observatories or Atlas at the Albert Einstein Institute in Hannover, Germany, a fully templated TwoSpect search for Scorpius X-1 in S6 data can be completed in roughly a month.
 This has been carried out by the author and is the subject of the remainder of this chapter.
 Because of the enhanced sensitivity and wider frequency range of the directed search, this analysis can improve on the TwoSpect all-sky limits by Goetz~\cite{GoetzTwoSpectResults2014} despite consuming much fewer computational resources (albeit for a single, promising source).
@@ -72,7 +72,8 @@ Because the detector-frame realization of $a \sin i$ is as a frequency modulatio
 Each pixel in the `$df$ vs $f$' plane has an $h_0$ and $\log_{10} p$-value associated with its $R$ statistic, as noted in Chapter~\ref{chap5}.
 The $h_0$ is proportional to $R^{1/4}$.
 Estimating $\log_{10} p$ is more complicated, but it loosely scales with $R$ in Gaussian noise and has been calibrated into an accurate, single-template $p$-value using Davies' method, a computational implementation of the Gil-Pelaez formula\footnote{Gil-Pelaez lets us solve $R$ statistic as a sum of weighted $\chi^2$ variables. For such sums, the joint probability distibution can be derived using characteristic functions~\cite{GoetzThesis} or generating functions~\cite{RomeroThesis}.}.
-Our search uses $\mathcal{O}(10^8)$ templates, not single-templates nor a few, distant-and-uncorrelated templates as in the all-sky search.
+Our search uses $\mathcal{O}(10^8)$ templates. 
+This number is in contrast to the few, distant-and-uncorrelated, templates used for outlier follow-up in the all-sky search.
 Thus the directed search necessitates enhancements to post-processing.
 
 In the near future, enhancements enabled by the directed search will be possible.
@@ -115,7 +116,7 @@ Since the 95\% efficiency region is the most interesting, the relatively poor fi
 
 Figure~\ref{S6_det_eff_142} plots the \textit{detection efficiency} of TwoSpect in a 0.1 Hz test band starting at 142 Hz.
 Five hundred signals are injected into each LIGO interferometer (H1 and L1).
-For each injection, the astrophysical parameters were the same, but antenna pattern and detector responses were applied per interferometer.
+For each injection, the astrophysical parameters were the same, but antenna pattern detector responses were applied per interferometer.
 A separate TwoSpect analysis was run for each injection simulation to avoid cross-contamination.
 The results of corresponding analyses were compared between IFOs.
 Templates meeting the detection criteria of the Mock Data Challenge (as discussed in Chapter~\ref{chap5}, having a single-template $\log_{10} p \leq -7.75$) were, if coincident in both interferometers by being in adjacent $df$, $f$ pixels, counted as detections.
@@ -139,7 +140,7 @@ into S6 data at 142 Hz (injections also done at 162, 222 Hz)}
 \end{figure}
 
 Using the same set of injections as for detection efficiency, one can also recover estimated $h_0$ values, as Figure~\ref{S6_ULs_142} illustrates.
-TwoSpect returns an $h_0$ proportional to $R^{1/4}$, but the proportionality constant was found to be slightly off in the MDC from that used in all-sky searches, prompting an empirical rescaling by 1.11~\footnote{As Riles notes, this can be explained by declination. A table, computed by Santiago Caride for a different search, shows that the Sco X-1 declination of -0.27 radians should see an average of 405/364 = 1.11 times higher $F$-statistic than the all-sky average, which is identical to the correction needed for the $R$-statistic.}.
+TwoSpect returns an $h_0$ proportional to $R^{1/4}$, but the proportionality constant was found to be slightly off in the MDC from that used in all-sky searches, prompting an empirical rescaling by 1.11~\footnote{This might be qualitatively explained by declination.}.
 Moreover, studies of the $\cos \iota$ uncertainty had led us to correct $h_0$ estimates further when assuming random polarization: a uniform distribution of $\cos \iota$ values near the detection threshold induced a $1.74 \pm 0.37$ factor, so we multiplied the S6 injections by $1.74$.
 The real data injections were necessary to clarify how these $h_0$ levels corresponded to a given confidence level. 
 In other words, the reported UL should be above the injected $h_0$ at least 95\% of the time.
@@ -171,7 +172,7 @@ See Appendix~\ref{appendix2} for more details on injection studies.
 
 \subsection{S6: Scorpius X-1 search plan}
 
-Studies completed, the author has conducted a 2 kHz, $\pm 3 \sigma_{a \sin i}$ search over all S6 data from H1 \& L1.
+MDC studies completed, the author has conducted a 2 kHz, $\pm 3 \sigma_{a \sin i}$ search over all S6 data from H1 \& L1.
 Stated again briefly, we analyzed the following:
 \begin{itemize}
 \item 40 to 360 Hz with 840-s SFTs,
@@ -183,7 +184,7 @@ Stated again briefly, we analyzed the following:
 \end{itemize}
 As of this writing, all of these production searches are complete.
 The similarity in results between primary (840-s SFT) and overlapping (360-s SFT) bands between 260 and 360 Hz suggests that the high frequency overlap will also yield concordant results.
-Thus the author derives ULs for 40 to 360 Hz from the 840-s SFTs and 360 to 2040 Hz from the 360-s SFTs, as described below.
+Thus the author derives preliminary ULs for 40 to 360 Hz from the 840-s SFTs and 360 to 2040 Hz from the 360-s SFTs, as described below.
 
 \subsection{S6: Scorpius X-1 heatmaps}
 
@@ -199,33 +200,12 @@ S6 $h_0$ heatmap shows real data features, such as 46.7 Hz cal line}
 As the S6 search was run on the Atlas cluster at AEI Hannover, individual bands could be checked for consistency with known artifacts.
 Heatmaps plotting the intensity of $R$, $\log_{10}p$ and estimated $h_0$ (as reported, not corrected by Equation~\ref{S6_UL_formula}) were generated.
 Figure~\ref{S6_cal_line_heatmap} shows one set of 50 bands, spanning 5 Hz, on H1.
-This band clearly shows the presence of the 46.7 Hz \textit{calibration line}\footnote{These lines help calibrate the $h_0$ amplitude spectral density~\cite{MeadorsFeedforward2014}, although their TwoSpect reported amplitude do not match the intended $h_0$ because the lines are not modulated like neutron stars in binary systems.}.
+This band clearly shows the presence of the 46.7 Hz \textit{calibration line}\footnote{These lines help calibrate the $h_0$ amplitude spectral density~\cite{MeadorsFeedforward2014}, although their TwoSpect reported amplitudes do not match the intended $h_0$ because the lines are not modulated like neutron stars in binary systems.}.
 Seeing known spectral features at their expected frequencies confirms that TwoSpect is reading data accurately. 
-The heatmaps can also be used to follow-up on interesting outliers.
+The heatmaps can also be used to follow up on interesting outliers.
 
 \subsection{S6: Scorpius X-1 upper limits, random polarization}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.68\paperwidth,height=0.48\paperheight]{plots/h0FullUL95logGuess-H1.eps}
-\caption{
-H1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands. 
-The `Tentative $h_0$ 95 percent UL' statement was later revised; the 95\% confidence level is higher by $2.0/1.8$.
-This plot shown corresponds to about 90\% confidence in random polarization ULs in the final analysis.}
-\label{S6_H1_UL}
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.68\paperwidth,height=0.48\paperheight]{plots/h0FullUL95logGuess-L1.eps}
-\caption{
-L1: loudest $h_0 \times \left( 1 + 0.8 \right) \times \left[\cos \iota \textup{ factor}\right]$ in 0.1 Hz bands. 
-The `Tentative $h_0$ 95 percent UL' statement was later revised; the 95\% confidence level is higher by $2.0/1.8$.
-This plot shown corresponds to about 90\% confidence in random polarization ULs in the final analysis.}
-\label{S6_L1_UL}
-\end{center}
-\end{figure}
 
 \begin{figure}
 \begin{center}
@@ -243,14 +223,11 @@ Bands were left-closed and right open, e.g., $\left[ 40.0,40.1\right), \left[ 40
 Most important are the upper limits (ULs).
 TwoSpect has been configured to analyze only `usable SFTs', which must pass a Kuiper's test.
 Non-Gaussian or otherwise extremely noisy data is not used.
-The 60 Hz and first three harmonic lines (120, 180, 240) Hz harmonic lines, as well as frequencies near the violin modes around 330 Hz, are excluded by these tests.
+The 60 Hz and first three harmonic lines (120, 180, 240) Hz harmonic lines, as well as frequencies near the violin modes around 340 to 350 Hz, are excluded by these tests.
 Altogether, the 40 to 360 Hz H1 search excluded 16.4 Hz and L1 16.2 Hz, while the 360 to 2040 Hz H1 search excluded 21.4 Hz and L1 16.9 Hz of search bands.
 For generating upper limits, only 28.8 Hz out of 2000.0 Hz could not be determined from either interferometer.
 
-Figures~\ref{S6_H1_UL} and~\ref{S6_L1_UL} show tentative ULs that, in the final analysis, correspond to approximately 90\% confidence for random polarization.
-The 90\% confidence level requires a correction factor of $h_0 \times \left(1+0.8 \right) \left[\cos \iota \textup{ factor} \right]$.
-These figures also illustrate the most sensitive part of the LIGO spectrum.
-A higher, 95\% confidence level requires (Equation~\ref{S6_UL_formula}) a correction factor of $h_0 \times \left(1+2.0 \right) \left[\cos \iota \textup{ factor} \right]$.
+A 95\% confidence level requires (Equation~\ref{S6_UL_formula}) a correction factor of $h_0 \times \left(1+2.0 \right) \left[\cos \iota \textup{ factor} \right]$.
 The entire spectrum, with the final 95\% confidence UL for random polarization, is shown in Figure~\ref{S6_H1L1_UL}.
 
 Previous Radiometer searches using S5 data~\cite{AbadieStoch2011} may appear to show a better, lower UL, but the results are not directly comparable.
@@ -304,14 +281,14 @@ Some coincident outliers present in the initial analysis include lines at powers
 As noted earlier, power line frequencies and violin modes were automatically dismissed by TwoSpect because.
 More exhaustive study of the candidates in Tables~\ref{ScoX1S6outlierTable} and~\ref{ScoX1S6outlierTableHF1} through~\ref{ScoX1S6outlierTableHF3} will continue, although GW detection would be a rather too-optimistic prospect given the torque-balance limit for Scorpius X-1~\cite{Bildsten1998} and estimated detection efficiency.
 
-The search for GW from Scorpius X-1 continues, and the imminent observational runs of aLIGO give hope that its signature may soon be detected.
+The search for GWs from Scorpius X-1 continues, and the imminent observational runs of aLIGO give hope that its signature may soon be detected.
 With continued improvements to CW algorithms and the enhanced sensitivity of future interferometers, we expect that Giacconi's discovery of the first and brightest extrasolar X-ray source will be paralleled with a GW discovery.
 
 \section{XTE J1751-305 search using Directed TwoSpect in S6}
 
 \subsection{S6: XTE J1751-305 background}
 
-Discovered by Markwardt \textit{et al} in 2002~\cite{Markwardt2002}, the X-ray transient (XTE) J1751-305 has indications it too could emit GW~\cite{Strohmayer2014}.
+Discovered by Markwardt \textit{et al} in 2002~\cite{Markwardt2002}, the X-ray transient (XTE) J1751-305 has indications it too could emit GWs~\cite{Strohmayer2014}.
 As detailed by Strohmayer and Mahmoodifar, J1751 has been searched for signs of non-radial oscillation modes, such as $r$- (and $g$-) modes.
 %No $r$-modes have so far been seen.
 Preliminary results suggested that $r$-modes might be consistent with X-ray observations.
@@ -432,9 +409,9 @@ In addition, a search for XTE J1751-305 has been completed, with its own post-pr
 %\emph{Random polarization} $h_0$ lower limit might be $< 1.3\times10^{-24}$
 %\emph{Outliers} incoming: already $\sim 22$ coincident features in [40, 360] Hz
 
-Scorpius X-1 and XTE J1751-305 are among the best potential sources of GW in the sky.
+Scorpius X-1 and XTE J1751-305 are among the best potential sources of GWs in the sky.
 This chapter shows that we can extract an upper limit around $1.3\times10^{-24}$ from Scorpius X-1 in S6 data and demonstrates that these searches will be practicable in the future.
-Advanced LIGO will turn on for O1 in summer 2015: TwoSpect, one of the prime algorithms for finding continuous GW from neutron stars in binary systems, is ready.
+Advanced LIGO will turn on for O1 in summer 2015: TwoSpect, one of the prime algorithms for finding continuous GWs from neutron stars in binary systems, is ready.
 %Plans for O1, first aLIGO run
 
 \textit{As previously noted, results from this chapter are preliminary and have not been reviewed yet by the LIGO Scientific Collaboration.}
