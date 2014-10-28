@@ -1,8 +1,8 @@
 \contentsline {chapter}{DEDICATION}{ii}{section*.1}
 \contentsline {chapter}{ACKNOWLEDGEMENTS}{iii}{section*.1}
-\contentsline {chapter}{LIST OF FIGURES}{viii}{section*.1}
-\contentsline {chapter}{LIST OF TABLES}{xvi}{section*.1}
-\contentsline {chapter}{LIST OF APPENDICES}{xvii}{section*.1}
+\contentsline {chapter}{LIST OF FIGURES}{ix}{section*.1}
+\contentsline {chapter}{LIST OF TABLES}{xvii}{section*.1}
+\contentsline {chapter}{LIST OF APPENDICES}{xviii}{section*.1}
 \mbox { }\newline \noindent {\bf CHAPTER}\newline 
 \hbox { }
 \hbox { }
