@@ -106,27 +106,29 @@ As Takahashi noted~\cite{Takahashi1965} (and others, see Wall for a review~\cite
 
 By placing a degenerate amplifier in the cavity resonant at $\omega_s$, the amplifier becomes an optical parameter \textit{oscillator}, with high effective interaction length and thus squeeze factor.
 Nonlinear media come in many varieties, but the material used in LIGO squeezing experiments (as in this chapter) has typically been PPKTP (periodically-poled potassium titanyl phosphate).
-For an effective second-order nonlinear susceptability $d$, pump electric field amplitude $E_p$, effective interaction length $L$, and index of refraction at the signal frequency $n_s$, the amount of squeezing is~\cite{Caves1981},
+For an effective second-order nonlinear susceptibility $d$, pump electric field amplitude $E_p$, effective interaction length $L$, and index of refraction at the signal frequency $n_s$, the amount of squeezing is~\cite{Caves1981},
 
 \begin{equation}
 r = \left(\frac{4\pi \omega_s L}{c n_s} \right) d |E_p|.
 \label{how_much_squeezing}
 \end{equation} 
 
-\noindent Another, heuristic\footnote{Popularized by Daniel Sigg, formally described as sidebands in Dwyer~\cite{DwyerThesis}.}, understanding of the OPO (when $\omega_p = 2\omega)$ is that a vacuum fluctuation $\epsilon$ at $A e^{i\omega_\epsilon t + \phi_\epsilon}$ couples to the pump and so induces a second beam at amplitude $A e^{i\left(2\omega - (\omega_\epsilon t + \phi_\epsilon)\right)}$.
-The superposition of these two beams has amplitude $\approx 2 A$ but phase $\approx (\phi_\epsilon - \phi_\epsilon)$, \textit{i.e.}, the amplititude fluctuations (radiation pressure) have increased but the phase fluctuations (shot noise) have been reduced.
+\noindent Another, heuristic\footnote{Popularized by Daniel Sigg, formally described as sidebands in Dwyer~\cite{DwyerThesis}.}, understanding of the OPO (when $\omega_p = 2\omega)$ is that a vacuum fluctuation $\epsilon$ at $A e^{i\omega_\epsilon t + \phi_\epsilon}$ couples to the pump and so induces a second beam, $A e^{i\left(2\omega - (\omega_\epsilon t + \phi_\epsilon)\right)}$.
+The superposition of these two beams has amplitude $\approx 2 A$ but phase $\approx (\phi_\epsilon - \phi_\epsilon)$, \textit{i.e.}, the amplitude fluctuations (radiation pressure) have increased but the phase fluctuations (shot noise) have been reduced.
 
 One caveat: the pump must be phase matched to the main laser (at $\omega$) of the overall interferometer.
 This is usually accomplished (as at the Hanford experiment) with a small beamsplitter diverting a portion of the laser (then, at Hanford, through a polarization-preserving fiber) and directing it to a second harmonic generator (SHG), which yielded $\omega_p = 2\omega$.
 SHGs themselves operate using non-linear crystals to frequency-double incident laser light.
 Imperfect phase matching is one of two chief reasons why squeezing can underperform.
-
+Phase matching the squeezer requires stable optical fiber over distances of at least 10 meters.
 The other reason for degraded squeezing is optical losses.
-These can include absorption, scattering, and imperfect mode-matching.
+
+Optical losses can include absorption, scattering, and imperfect mode-matching.
 While beyond the scope of this chapter, these optical losses are the principal reason that interferometer squeezing at the H1 photodetector in our experiment was about half what was generated in the OPO and must be addressed as squeezed light sources become more widespread.
 
 Demonstrated first at GEO600~\cite{GEO600NatureSqueezing}, then on H1 at the LIGO Hanford Observatory~\cite{BarsottiNatureSqueezing}, squeezing is now a proven technique.
 At Hanford, the subject of this chapter, 2.15 dB of squeezing (28\%, equivalent to a 64\% increase in laser power~\cite{BarsottiNatureSqueezing}) was achieved with the combined efforts of Sheila Dwyer, Sheon Chua, Lisa Barsotti, Matt Evans, Keita Kawabe, Daniel Sigg, Conor Mow-Lowry, Alexander Khalaidovski, Maxim Factourovich, Nicol\'{a}s Smith-Lefebvre, Robert Schofield, Mike Landry, Cheryl Vorvick, and Richard Gustafson, along with the author.
+Figure~\ref{squeezer_table_diagram_Grant} shows a diagram of the squeezer in relation to the interferometer.
 A picture of the squeezer and some of its scientists is shown in Figure~\ref{squeezing_team_pictured}.
 The squeezing experiment was well supported by the entire staff\footnote{Quite busy themselves with Advanced LIGO installation.} of Hanford Observatory, to whom the squeezers were grateful.
 This success encourages development of a production-quality squeezed light source for a future upgrade to Advanced LIGO, along the lines of Section~\ref{third-gen_squeezing}.
@@ -134,10 +136,22 @@ Squeezed light should increase aLIGO's performance and could prove critical to i
 
 \begin{figure}
 \begin{center}
+\includegraphics[width=0.6\paperwidth]{plots/postdefense/squeezer-table-diagram.eps}
+\caption{
+Diagram of squeezer integration into the LIGO inteferometer.
+Red lines show 1064 nm laser light, green 532 nm; dashed are squeezed (1064 nm) beams. A pump laser, phase-locked to the PSL, generated laser light at 1064 nm, boosted to 532 nm by the second harmonic generator (SHG). This 532 nm beam resonates in the optical parametric oscillator, containing a periodically-poled KTP crystal for non-linear optical effects. The squeezed beam is generated there and exits the OPO, passes through the Faraday isolator and into the interferometer. Simplified and adapted figure~\cite{BarsottiNatureSqueezing}.
+}
+\label{squeezer_table_diagram_Grant}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
 %\protect\caption{\protect\includegraphics[width=0.33\paperwidth]{lisabar-1289966130}}
 \includegraphics[width=0.6\paperwidth]{lisabar-1289966130.eps}
 %\protect\caption{\protect\includegraphics[width=0.33\paperwidth]{lisabar-1300943141}}
-\caption{Image by Lisa Barsotti in Hanford eLog.
+\caption{
+Image by Lisa Barsotti in Hanford eLog.
 \newline Counterclockise from lower left: Sheila Dwyer, Lisa Barsotti, Conor Mow-Lowry, Grant Meadors. This photograph shows the uncovered squeezer table with components from the MIT squeezer experiment unpacked at LIGO Hanford Observatory in November 2010. The table sat in a temporary location by HAM6, where it was recommissioned by Dwyer, Mow-Lowry, Sheon Chua, and Alexander Khalaidovksi until H1 could be brought back online for the squeezing experiment in late 2011. 
 }
 \label{squeezing_team_pictured}
