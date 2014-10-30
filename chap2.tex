@@ -52,7 +52,7 @@ While sometimes invisible -- except as short-hard gamma ray bursts (GRBs) -- the
 Were GW observatories to see their waveforms, they could be compared with those predicted through post-Newtonian approximation and numerical relativity. 
 As GW amplitude should diminish inversely with distance, we would then have standard candles or \textit{standard sirens} by which to calibrate and measure the universe. 
 Advanced LIGO~\cite{aLIGOrefDesign,aLIGOsysDesign} may prove sensitive to neutron star-neutron star and stellar mass black hole-neutron star mergers, and, if low-frequency sensitivity is sufficient and the sources exist, to intermediate-mass black holes. 
-Proposed space-based observatories such as the long-suffering Laser Interferometer Space Antenna (LISA) and ensuing DeciHertz Gravitational-wave Observatory (DECIGO) \& Big Bang Observer (BBO) could detect supermassive black hole mergers. If launched, they would see a low-frequency noise floor due not to seismic vibration, as in LIGO, but to white dwarf binaries throughout the galaxy. 
+Proposed space-based observatories such as the Laser Interferometer Space Antenna (LISA) and ensuing DeciHertz Gravitational-wave Observatory (DECIGO) \& Big Bang Observer (BBO) could detect supermassive black hole mergers. If launched, they would see a low-frequency noise floor due not to seismic vibration, as in LIGO, but to white dwarf binaries throughout the galaxy. 
 Since the waveforms are well-predicted, we could even investigate deviations from General Relativity, perhaps seeing new physics in the ringdown of highly massive black holes.
 
 Physical insight could also come from burst searches. 
@@ -60,7 +60,7 @@ Bursts searches share with inspiral searches the property of looking for a singl
 Analytical programs for bursts can sometimes be applied to inspiral or detector characterization tasks as well; rare noise events are a limit on their astronomical sensitivity.
 Yet the immediate focus lies with supernovae~\cite{Chandrasekhar1969,Ott2009} and perhaps gamma-ray bursts. 
 Because the waveform is unknown, burst searches rely significantly more on the coincidence between multiple detectors to distinguish signal from noise. 
-Just as with neutrino observations of supernova 1987A, the burst program would hope for a fortuitously nearby cataclysm to be seen simultaneously -- or nearly so, the time of flight indicating a direction -- in a global gravitational-wave detector network. 
+Just as with neutrino observations of supernova 1987A, the burst program would hope for a fortuitously nearby cataclysm to be seen simultaneously -- or nearly so, the time of flight indicating a direction -- by multiple detectors in a global gravitational-wave detector network. 
 Due to the versatility of this method, some researchers have proposed looking for longitudinal polarization in addition to plus and cross orthogonal polarization (possible in non-general relativistic terms; see Section~\ref{history_GR}). 
 Any detection would be quite exciting for probing still mysterious systems with electromagnetic and neutrino measurements, and it would help, in conjunction with multi-messenger coordinated searches with those observatories, to ascertain at precisely what speed gravity travels through space-time and to what extent it is attenuated or altered.
 
@@ -87,7 +87,7 @@ To appreciate our choice of focus in these nascent days of the field, we must tu
             %Historical brief of Einstein.
         Einstein's theory unified a sequence of historical insights. 
 Since 1676, when Roemer used the moons of Jupiter to measure the finite speed of light, just before Newton's 1687 \textit{Principia Mathematica}~\cite{Hawking2002}, the question of gravity's propagation beckoned. 
-Bringing together the work of Minkowski and Poincar\'{e}, the 1905 special theory of relativity highlighted the naturalness of the speed of light, but only in 1915, with the presentation of the Einstein field equations of General Relativity, based in Riemannian geometry, did a means to an answer emerge. 
+Bringing together the work of Minkowski and Poincar\'{e}, the 1905 special theory of relativity highlighted the universality of the speed of light, but only in 1915, with the presentation of the Einstein field equations of General Relativity, based in Riemannian geometry, did a means to an answer emerge. 
 In 1916, Einstein predicted GWs. 
 At last, gravity had a theoretical speed: the same as for electromagnetism, that of light in the vacuum, $c$.
 In the linear approximation to the nonlinear theory of General Relativity (henceforth GR), the waves were mathematically similar to the waves of electromagnetism, as will be shown in Section~\ref{general_relativity}.
@@ -165,7 +165,7 @@ The curvature of spacetime is described by the Riemann tensor, $R^\mu_{\nu\rho\s
 Section~\ref{field_equations} clarifies the connection between these field equations and the Ricci scalar curvature $R$, a trace of the Riemann tensor, whence they can be derived. 
 This Riemann tensor is constructed from the Christoffel connection, $\Gamma^\mu_{\rho\sigma}$, which in turn can be expressed in terms of the metric, $g_{\mu \nu}$.
 It is the metric that measures distance across spacetime: $ds^2 = g_{\mu\nu} dx^\mu dx^\nu$.
-Hence the psuedoforce of gravity is, in GR, curvature distortions (arising from matter) that change the distance along worldlines and thus affect trajectories.
+Hence the pseudoforce of gravity is, in GR, curvature distortions (arising from matter) that change the distance along worldlines and thus affect trajectories.
 
 For more mathematical detail, please see the Appendix.
  Carroll and \textit{Gravitation} are useful references~\cite{Carroll1997,MisnerThorneWheeler}, consulting other sources for the Einstein-Hilbert/Palatini action~\cite{FarrThesis}.
@@ -500,7 +500,7 @@ Gravitational wave interferometry has carried the prospects for GW astronomy tow
 
 % Maybe organize this section better
 
-	Michelson invented modern interferometry~\cite{michelson} in his 1887 experiments with Morley to try to measure the velocity of the Earth with respect to the lumineferous ether.
+	Michelson invented modern interferometry~\cite{michelson} in his 1887 experiments with Morley to try to measure the velocity of the Earth with respect to the luminiferous ether.
 Although commonly claimed to have spurred the work of Minkowski, the implications of this work for special relativity may not have been fully understood for several decades~\cite{CollinsGravityGhost}.
 Yet the value of the experimental technique was undeniable.
 Michelson \& Morley had invented an accurate relative phase-meter for light.
@@ -679,7 +679,7 @@ Effective engines for tracking and, preferably, eliminating glitches and persist
 Feedback servos keep LIGO operational, holding the relative positions of the mirrors and auxiliary systems in stationary `lock' points.
 Closing the loop in feedback requires a way to actuate a physical control signal to cancel out whatever influence is causing an error signal that pushes the system away from its lock point.
 When this direct cancellation is not possible -- for instance, when ambient magnetic fields due to 60 Hz mains lines cannot be escaped -- feedforward remains.
-Feedforward, an open-loop technique, be done purely in software, but it requires an accurate estimator for the influence of a noise source into the system.
+Feedforward, an open-loop technique, can be done purely in software, but it requires an accurate estimator for the influence of a noise source into the system.
 
 In the case of Enhanced LIGO commissioning, an example was implemented with the aforementioned 60 Hz line using a magnetometer to supply the feedforward correction~\cite{SmithThesis}, which greatly enhanced sensitivity near the Crab pulsar frequency by suppressing magnetic-coupled noise.
 Subsequently, into the following years, this author began to work on the long-known~\cite{AdhikariThesis,BallmerThesis} potential improvement from cancelling the influence of auxiliary length control noises.
@@ -701,7 +701,7 @@ This filter reduced the noisiest residual coupling, from the differential inner 
 	\begin{figure}
 	\begin{center}
 	\includegraphics[height=111mm, width=148mm]{newNOISEfilter.eps}
-	\caption{Real-time work on a LIGO noise filter. This Bode plot, made in Matlab, shows the correction to the existing MICH damping (cancellation) loop needed mid-2010, toward the end of Science Run 6. The correction is small, because the majority of the coupling fits the flat model expected from theory. This transfer function estimate suffices for post-factor correction. However, in order to be incorporated into the control scheme shown in Figure~\ref{servo_loop_realtime}, measurements of the open loop gain $G$ and actuation function AC are necessary to yield incorporate the filter correctly into the closed loop response.} 
+	\caption{Real-time work on a LIGO noise filter. This Bode plot, made in Matlab, shows the correction to the existing MICH damping (cancellation) loop needed mid-2010, toward the end of Science Run 6. The correction is small, because the majority of the coupling fits the flat model expected from theory. This transfer function estimate suffices for post-factor correction. However, in order to be incorporated into the control scheme shown in Figure~\ref{servo_loop_realtime}, measurements of the open loop gain $G$ and actuation function AC are necessary to incorporate the filter correctly into the closed loop response.} 
 	\label{newNOISEfilter}
 	\end{center}
 	\end{figure}
@@ -787,27 +787,32 @@ The full program, for investigating a multi-pixel RF sensor with digital (in-sof
 	Advanced LIGO (aLIGO)~\cite{aLIGOrefDesign,aLIGOsysDesign} is intended to improve upon the first-generation LIGO inspiral range tenfold, to 200 Mpc.
 To accomplish this, it simultaneously must lower the noise floor at the most sensitive frequencies, to a strain noise  $4\times10^{-24}/\sqrt{\textup{Hz}}$, and push the low-frequency wall of seismic noise down, so that frequencies as low as 10 Hz (rather than about 50 Hz) can be probed.
 %While maintained in the same vacuum envelope,
+
 The aLIGO optical systems are far superior to those of initial LIGO.
 The 10-kg fused silica test mass mirrors have been upgraded to 40 kg for better radiation pressure performance.
 Fused silica fibers with high $Q$ suspend the mirrors, instead of steel piano wire; fibers are welded directly to the test mass.
+Using fused silica in this manner is intended to reduce the suspension thermal noise that dominates in the middle of the LIGO frequency band.
 Rather than a single pendulum, each test mass sits at the bottom of a four-stage `quad', actively-servoed pendulum chain, reducing seismic noise, in principle, by a factor of $(f/f_0)^8$.
 The quad pendulum itself is attached to a new in-vacuum seismic isolation table (similar tables hold the auxiliary optics).
+This multi-stage pendula-and-seismic-isolation scheme is needed to reduce the effect of ground motion, which was the limiting factor for frequencies below about 40 Hz in initial LIGO.
+Images of the quadruple pendula and the mirror weld can be found on the observatory webpages (\textit{e.g.,} \url{http://www.ligo-wa.caltech.edu/galleries/gallery_092311.html}).
+
 These test masses indeed need to be heavier.
 Laser power has increased from 20 W in Enhanced LIGO to 200 W in aLIGO.
 Fabry-Perot arm cavity finesse has also increased, raising the stored arm power.
 The arm cavities can be locked independently of each other and brought into the Michelson interferometer gradually, which should improve ease of use, allow quick recovery from lock-losses, and thereby improve reliable duty cycle, coupled with other system-wide improvements in control architecture.
-Resonant sideband extraction is one of the most inventive changes, adding an additional signal recycling mirror to the optical configuration, which allows tuning the cavity pole of the Fabry-Perot arms and trading between different levels of high- and- medium-frequency shot noise-limited performance.
+Resonant sideband extraction~\cite{Saulson,aLIGOsysDesign} is one of the most inventive changes, adding an additional signal recycling mirror to the optical configuration, which allows tuning the cavity pole of the Fabry-Perot arms and trading between different levels of high- and- medium-frequency shot noise-limited performance.
 
 Although not part of the reference design, the success of the LIGO Hanford squeezing experiment~\cite{BarsottiNatureSqueezing,ChuaBackscatteredLight,DwyerPhaseNoise} noted in Chapter~\ref{chap4} make quantum optics a likely feature of any enhanced follow-up.
 
 Once commissioned, aLIGO's second-generation design should make possible detections at the rate of 40 per year~\cite{AbadieRates2010}. 
 Hanford and Livingston have both upgraded their 4 km interferometers and have begun commissioning.
-The 2-km Hanford interferometer had been intended to be upgraded, but its optics have found a new and likely more useful propect -- part of the growing network of observatories described in Section~\ref{worldwide}.
+The 2-km Hanford interferometer had been intended to be upgraded, but its optics have found a new and likely more useful prospect -- part of the growing network of observatories described in Section~\ref{worldwide}.
 
         \subsection{Worldwide network}
         \label{worldwide}
  
-Gravitational wave signals are new to astronomy.
+Gravitational wave observations are new to astronomy.
 It has long been recognized that multiple observatories with independent confirmation of a signal would be more persuasive evidence of detection than an isolated site.
 Yet even once the field is established, additional observatories will permit better science.
 Sky localization of inspiral and burst sources relies on relative arrival times of a GW signal~\cite{Saulson}.
