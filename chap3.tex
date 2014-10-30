@@ -337,7 +337,7 @@ Nevertheless, two checks were performed to see if there is any unknown mechanism
 
 Safeguards and vetoes then verify data integrity against possible issues. These issues include degrading data, offsetting and incorrectly time-stamping the data, incorrectly subtracting $h(t)$ from itself, and introducing windowing artifacts.
 
-Amplitude spectral density (using Welch's method~\cite{Welch1967}) leads to an estimate of inspiral range $\mathcal{R}$. Inspiral range~\cite{FinnInspiral1993} in LIGO detector characterization refers to the orientation-and-direction-averaged distance at which a 1.4-1.4 solar mass neutron star binary coalescence could be detected with an SNR of 8. A window's filtered data is used only if it passes two cuts. The post-filter $\mathcal{R}$ must be at least 99.9\% of unfiltered $\mathcal{R}$. None of the 40 points in a `comb' (each point being 5/16 Hz wide) of quiet bands can be noisier than 1.2 times uncorrected $h(t)$. The factors are chosen empirically to permit expected noise fluctuations; most surviving data is superior.  
+Amplitude spectral density (using Welch's method~\cite{Welch1967}) leads to an estimate of inspiral range $\mathcal{R}$. Inspiral range~\cite{FinnInspiral1993} in LIGO detector characterization refers to the orientation-and-direction-averaged distance at which a 1.4-1.4 solar mass neutron star binary coalescence could be detected with an SNR of 8 (for further details, see Section~\ref{range_est}; the range is given precisely by Equation~\ref{inspiral_range_squeezing}). A window's filtered data is used only if it passes two cuts. The post-filter $\mathcal{R}$ must be at least 99.9\% of unfiltered $\mathcal{R}$. None of the 40 points in a `comb' (each point being 5/16 Hz wide) of quiet bands can be noisier than 1.2 times uncorrected $h(t)$. The factors are chosen empirically to permit expected noise fluctuations; most surviving data is superior.  
 
 If cuts are triggered, the filter is rejected. To avoid discontinuities and add robustness against non-stationarity, the windowing procedure (Section~\ref{filter_fitting-out-of-loop}) is re-run to merge successfully-filtered data smoothly with unfiltered $h_0$. Cut tests are also re-run; if passed, the data is used, else the unfiltered data is progressively weighted further for eight more attempts. If all fail, the final attempt is written and the program proceeds. Empirically, almost all written data is an improvement.
 
@@ -496,7 +496,9 @@ Inspiral range $\mathcal{R}$ increases for both S6 LIGO observatories, which sho
 \includegraphics[height=75mm, width=150mm]{figure14a.eps}
 \includegraphics[height=75mm, width=150mm]{figure14b.eps}
 \caption{Inspiral range vs time for S6 (starting 2009 July 07) before GPS time 9.33e8 (2009 July 30):
-LIGO Hanford Observatory, H1 (top) gains 0.23 Mpc; LIGO Livingston Observatory, L1 (bottom) gains 0.84 Mpc. In this first month of S6, L1 saw greater benefit from post-facto feedforward correction; later data from H1 and L1 would improve by fluctuating amounts thanks to better real-time feedforward servos. Although H1 is less improved than L1 here, real-time tunings were made soon after.}
+Each frequency band with reduced noise and consequent enhanced sensitivity contributes to the inspiral range integral, detailed further in Section~\ref{range_est}. 
+LIGO Hanford Observatory, H1 (top) gains 0.23 Mpc; LIGO Livingston Observatory, L1 (bottom) gains 0.84 Mpc. In this first month of S6, L1 saw greater benefit from post-facto feedforward correction; later data from H1 and L1 would improve by fluctuating amounts thanks to better real-time feedforward servos. Although H1 is less improved than L1 here, real-time tunings were made soon after.
+}
 \label{S6inspiralRange}
 \end{center}
 \end{figure}
