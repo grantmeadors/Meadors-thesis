@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  29 OCT 2014 22:24
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  29 OCT 2014 22:30
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -542,7 +542,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 Overfull \hbox (6.72157pt too wide) in paragraph at lines 170--172
-\OT1/cmr/m/n/12 are use-ful ref-er-ences [[][][]55[][][][], [][][]130[][][][]],
+\OT1/cmr/m/n/12 are use-ful ref-er-ences [[][][]55[][][][], [][][]131[][][][]],
  con-sult-ing other sources for the Einstein-Hilbert/Palatini
  []
 
@@ -576,7 +576,7 @@ Overfull \hbox (49.88899pt too wide) detected at line 429
 [24] [25]
 Overfull \hbox (8.83018pt too wide) in paragraph at lines 479--482
 \OT1/cmr/m/n/12 to-ries re-quired ex-ten-sive pro-to-typ-ing and com-mis-sion-i
-ng both dur-ing Ini-tial LIGO [[][][]120[][][][],
+ng both dur-ing Ini-tial LIGO [[][][]121[][][][],
  []
 
 [26] [27] [28] [29]
@@ -1868,18 +1868,18 @@ Overfull \hbox (48.05562pt too wide) detected at line 173
 
 ] [218] [219] [220]
 [221] [222]
-Underfull \hbox (badness 10000) in paragraph at lines 592--598
+Underfull \hbox (badness 10000) in paragraph at lines 597--603
 []\OT1/cmr/m/n/10 J. Kissel.  Mich and prc cou-pling into darm.  Web:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--598
+Underfull \hbox (badness 10000) in paragraph at lines 597--603
 \OT1/cmr/m/n/10 http://ilog.ligo-wa.caltech.edu/ilog/pub/ilog.cgi?group=detecto
 r&
  []
 
 [223] [224]
-Underfull \hbox (badness 1803) in paragraph at lines 883--886
+Underfull \hbox (badness 1803) in paragraph at lines 888--891
 []\OT1/cmr/m/n/10 The LIGO Sci-en-tific Col-lab-o-ra-tion.  LALApps repos-i-tor
 y.  Web: http://www.lsc-
  []
@@ -1897,12 +1897,12 @@ fer-om-e-ter Gravitational-
 
 [0] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5019 strings out of 256217
- 69577 string characters out of 1917094
- 193672 words of memory out of 1500000
- 8068 multiletter control sequences out of 10000+200000
+ 5020 strings out of 256217
+ 69591 string characters out of 1917094
+ 193707 words of memory out of 1500000
+ 8069 multiletter control sequences out of 10000+200000
  15196 words of font info for 58 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  33i,18n,58p,1511b,481s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (247 pages, 1078436 bytes).
+Output written on thesis.dvi (247 pages, 1079272 bytes).
