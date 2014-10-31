@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  31 OCT 2014 12:58
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  31 OCT 2014 13:10
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -355,16 +355,13 @@ Overfull \hbox (17.3886pt too wide) in paragraph at lines 7--7
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-Underfull \vbox (badness 2961) has occurred while \output is active []
-
- [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
+ [11]
+[12]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
-
-[13]
+ [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
@@ -566,7 +563,12 @@ m/it/12 x[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U\OT1/cmr/m/n/12 )$ fol-lows the
 
 [18] [19] [20]
 File: plots/postdefense/GW-polarizations.eps Graphic file (type eps)
- <plots/postdefense/GW-polarizations.eps> [21] [22] [23]
+ <plots/postdefense/GW-polarizations.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 389
+\OT1/cmr/m/n/10 Figure 2.2: []
+ []
+
+[21] [22] [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
@@ -575,7 +577,7 @@ File: plots/a_neutron_star.eps Graphic file (type eps)
 <plots/a_neutron_star.eps>
 File: neutron_star_structure.eps Graphic file (type eps)
  <neutron_star_structure.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 451
+Overfull \hbox (49.88899pt too wide) detected at line 456
 \OT1/cmr/m/n/10 Figure 2.3: []
  []
 
@@ -584,13 +586,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
 [26] [27]
-Overfull \hbox (8.83018pt too wide) in paragraph at lines 501--504
+Overfull \hbox (8.83018pt too wide) in paragraph at lines 506--509
 \OT1/cmr/m/n/12 to-ries re-quired ex-ten-sive pro-to-typ-ing and com-mis-sion-i
 ng both dur-ing Ini-tial LIGO [[][][]121[][][][],
  []
 
 [28] [29] [30]
-Overfull \hbox (11.51372pt too wide) in paragraph at lines 573--576
+Overfull \hbox (11.51372pt too wide) in paragraph at lines 578--581
 \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 =f$\OT1/cmr/m/n/12 . This as-sump-tion is eas
 -ily re-laxed by ac-count-ing for the de-struc-tive self-interference
  []
@@ -598,13 +600,13 @@ Overfull \hbox (11.51372pt too wide) in paragraph at lines 573--576
 [31] [32]
 File: LIGODiagramnew.eps Graphic file (type eps)
  <LIGODiagramnew.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 626
+Overfull \hbox (49.88899pt too wide) detected at line 631
 \OT1/cmr/m/n/10 Figure 2.4: []
  []
 
 File: Screen_shot_2010-07-21_at_042516.eps Graphic file (type eps)
 <Screen_shot_2010-07-21_at_042516.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 637
+Overfull \hbox (49.88899pt too wide) detected at line 642
 \OT1/cmr/m/n/10 Figure 2.5: []
  []
 
@@ -619,34 +621,34 @@ Missing character: There is no ’ in font cmr8!
  [36]
 File: aglitch928228390_new.eps Graphic file (type eps)
  <aglitch928228390_new.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 678
+Overfull \hbox (49.88899pt too wide) detected at line 683
 \OT1/cmr/m/n/10 Figure 2.6: []
  []
 
 [37] [38]
 File: servo_loop.eps Graphic file (type eps)
  <servo_loop.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 718
+Overfull \hbox (49.88899pt too wide) detected at line 723
 \OT1/cmr/m/n/10 Figure 2.7: []
  []
 
 File: newNOISEfilter.eps Graphic file (type eps)
 <newNOISEfilter.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 726
+Overfull \hbox (49.88899pt too wide) detected at line 731
 \OT1/cmr/m/n/10 Figure 2.8: []
  []
 
 [39] [40]
 File: 2011-03-08_filter-01.eps Graphic file (type eps)
  <2011-03-08_filter-01.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 739
+Overfull \hbox (49.88899pt too wide) detected at line 744
 \OT1/cmr/m/n/10 Figure 2.9: []
  []
 
 [41]
 File: Optical_table_phase_camera.eps Graphic file (type eps)
  <Optical_table_phase_camera.eps>
-Overfull \hbox (54.889pt too wide) detected at line 757
+Overfull \hbox (54.889pt too wide) detected at line 762
 \OT1/cmr/m/n/10 Figure 2.10: []
  []
 
@@ -1909,10 +1911,10 @@ fer-om-e-ter Gravitational-
 Here is how much of TeX's memory you used:
  5028 strings out of 256217
  69806 string characters out of 1917094
- 195634 words of memory out of 1500000
+ 196196 words of memory out of 1500000
  8074 multiletter control sequences out of 10000+200000
  15196 words of font info for 58 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  33i,18n,58p,1511b,481s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (252 pages, 1100300 bytes).
+Output written on thesis.dvi (252 pages, 1102424 bytes).
