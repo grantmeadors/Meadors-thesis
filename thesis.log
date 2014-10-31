@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  31 OCT 2014 16:47
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.11.20)  31 OCT 2014 17:16
 entering extended mode
  %&-line parsing enabled.
 **thesis
@@ -1785,21 +1785,17 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (./conclusion.tex [195
 
 ] [196] [197]
-Underfull \vbox (badness 1902) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [198]
+[199]
 File: LIGOpanoramasmall.eps Graphic file (type eps)
-
-<LIGOpanoramasmall.eps>
-Overfull \hbox (49.88899pt too wide) detected at line 145
+ <LIGOpanoramasmall.eps>
+Overfull \hbox (49.88899pt too wide) detected at line 161
 \OT1/cmr/m/n/10 Figure 8.1: []
  []
 
-[199]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [200])
-[201] [202
+[200]) [201] [202
 
 ]
 APPENDIX A.
@@ -1930,4 +1926,4 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  33i,18n,58p,1511b,481s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on thesis.dvi (256 pages, 1113720 bytes).
+Output written on thesis.dvi (256 pages, 1115928 bytes).

@@ -55,18 +55,23 @@ Great care is taken to ensure that these fixes do not add any noise or unphysica
 These methods can both be applied \textit{post facto} and, without the surrounding machinery, in real-time.
 The author's work began at the end of the last science run, S6, and similar techniques may make such challenges a smaller obstacle in the future.
 
-Advanced observatories are becoming ever more complex: we need means to see and disentangle their ties.
+Advanced observatories are becoming ever more complex: as Section~\ref{feedforward_end} will summarize, we need means to see and disentangle their ties.
 This thesis shows how automated techniques can loosen some knots in our servo loops.
 
         \subsection{Searching deep-space}
         \label{searching_space}
 
         %    ...TwoSpect and other searches benefit
+Data analysis itself must be sophisticated.
 Even the quietest, most sensitive gravitational wave interferometer is uninteresting if we cannot understand it.
+Here we present the interpretation of S6 in the context of low-mass X-ray binaries (LMXBs). 
+
 There are four key ways to listen to the gravitational wave sky: inspirals, bursts, stochastic, and continuous wave.
 Our search in Chapters~\ref{chap5} and~\ref{chap6} has been for the last: continuous waves from neutron stars in binary systems.
-TwoSpect is already a capable search for unknown systems across the entire sky; the author modified the search to focus on Scorpius X-1 and XTE J1751-305, having honed methods on a simulated set of data in collaboration (and friendly competition) with fellow searchers.
-These preliminary results will soon be presented and appear to be best so far for frequencies above 500 Hz.
+TwoSpect is already a capable search for unknown systems across the entire sky; the author modified the search to focus on Scorpius X-1 and XTE J1751-305, having honed methods on simulated data in collaboration (and friendly competition) with fellow searchers.
+
+Preliminary TwoSpect results from Sco X-1 and J1751, as Section~\ref{TwoSpect_end} will conclude, will soon be presented and appear to be best so far for frequencies above 500 Hz.
+Given Advanced LIGO data, these techniques should take gravitational wave analyses to the verge of the torque-balance limit and start to tell us about the astrophysics of LMXBs.
 
         \subsection{Reaching out, looking up}
         \label{reaching_out}
@@ -76,6 +81,8 @@ The sky excites the mind.
 Just as astronomy with light and X-rays, radio waves and neutrinos has caught the popular imagination, it is the hope of projects like those in Chapter~\ref{chap7} to inspire others to ponder gravitational wave astronomy.
 While increasingly confident in the sources we see, the adventure lies in the unknown.
 The author has shown a simple and effective tool, a model interferometer, for showing a new kind of antenna, a new sort of observatory, to search out that unknown.
+Over two thousand people saw the model interferometer on exhibit at the World Science Festival.
+As interest in gravitational waves grows, we hope to communicate our findings even more broadly.
 
     \section{Scientific merit: filtering and analysis}
     \label{merit}
@@ -89,12 +96,15 @@ The author has shown a simple and effective tool, a model interferometer, for sh
 Quantitative enhancements to LIGO are hard.
 The LIGO Scientific Collaboration is composed of over a thousand scientists, and most contributions are indirect.
 Feedforward subtraction of auxiliary channel noise is a rare case where an individual can directly improve the scientific power of a gravitational wave interferometer operating at full sensitivity after the data taking.
-This algorithm enhanced inspiral range by about four percent in S6 (4.14\% H1, 3.60\% L1), potentially allowing twelve percent more inspiral events to be detected.
+This algorithm enhanced inspiral range by about four percent in S6 (4.14\% H1, 3.60\% L1), potentially allowing 12\% more inspiral events to be detected.
 
 More exciting still is the community forming behind a family of related techniques.
 Automated subtraction of a large class of noise sources -- not only length control but glitches, gravitational gradients, and Schumann resonances of the Earth's magnetic field -- could be cancelled, according to work underway by fellow LIGO researchers.
 One of the author's chief interests in this project was in proving that such a technique can be both effective and safe for the data.
 We believe that this has been shown.
+
+Although the 12\% increase in inspiral events detectable in S6 will soon be eclipsed by Advanced LIGO, Advanced LIGO in turn is built of the success of techniques akin to the feedforward this chapter proves valid.
+We hope that commissioning silences most noise sources, but we are glad to offer this filtering method for consideration in case it is needed.
 
         \subsection{TwoSpect directed search for neutron stars in binary systems}
         \label{TwoSpect_end}
@@ -104,6 +114,9 @@ We believe that this has been shown.
            % One thought that might develop into something more fruitful is as follows.
 
             %Someday deconvolve, maybe Bayesian, the skymaps and parameter space spread of TwoSpect with simulation to understand what we are really seeing. Cannot do all templates in paramter space, but only need a few to compare -- in a way, it already does.
+
+Neutron stars are the densest laboratories in the universe.
+This thesis does not detect gravitational waves from neutron stars, but it does help validate a method for finding them as they emanate from LMXBs.
 
 Detecting gravitational waves is not easy, or else it would have been done long ago.
 Nonetheless, our algorithms, like our observatories, are better than they have ever been.
@@ -117,6 +130,9 @@ TwoSpect is already prepared for better data to arrive when Advanced LIGO begins
 Indeed, enhancements are possible between now and then that may make it yet more capable.
 Neutron stars, the heaviest compact objects entirely in our universe -- black holes in some sense having left the universe behind -- remain opaque to our scrutiny for now.
 Gravitational waves will unveil some of their secrets.
+
+With TwoSpect's sensitivity demonstrated in this thesis, we think that seeing gravitational waves from LMXBs is a serious possibility in the Advanced LIGO era.
+
 %The pull of neutron stars gathers many disciplines together that they shine more brightly, and perhaps a jet will be shot off to launch physics in new directions. 
 
     \section{Entering the advanced detector era}
@@ -150,7 +166,7 @@ Should more be there than we expect, then all our curiosity will be justified.
         Why gravitational wave astronomy at all? What could be out there?
 
         At the dawn of the twenty-first century, the Standard Model of physics, and quantum field theory in general, can be studied on curved spacetime, but the spacetime itself remains scarcely better understood than when Einstein first proposed it general relativity. 
-After almost a century, the fabric of the universe is still unyielding of its secrets. 
+After almost a century, the fabric of the universe still keeps its secrets. 
 Gravitational wave astronomy will be the first science to perceive that fabric directly. 
 
         In this thesis, we have made inroads to this new astronomy. Superficially seperate, the common thread is the pursuit of fundamental issues by skillful choice of perspective. 
